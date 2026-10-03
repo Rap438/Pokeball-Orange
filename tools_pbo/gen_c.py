@@ -9,7 +9,9 @@ def camel(n): return ''.join(p.capitalize() for p in n.split('_'))
 # name -> kind
 NPC16 = ['chichi', 'roshi', 'krillin', 'yamcha', 'tien', 'bulma', 'videl', 'android18', 'supreme_kai', 'piccolo',
          'mr_satan', 'great_saiyaman', 'uub', 'trunks', 'baba', 'goten', 'dende', 'announcer', 'fat_buu', 'broly',
-         'yamu', 'majin_soldier', 'saiyan_soldier', 'lime', 'dr_brief', 'oolong', 'gohan_kid']
+         'yamu', 'majin_soldier', 'saiyan_soldier', 'lime', 'dr_brief', 'oolong', 'gohan_kid',
+         'police', 'purple_man', 'pink_woman', 'pigtail_girl', 'old_man', 'village_woman', 'blue_kid', 'farm_girl',
+         'brown_woman', 'cap_kid', 'green_kid', 'striped_man', 'blonde_girl']
 FORMS = ['goku_ssj', 'goku_ssj2', 'goku_ssj3']
 
 # graphics id -> graphics info symbol
@@ -19,6 +21,10 @@ REPOINT = {
     'TATE': 'goten', 'LIZA': 'trunks', 'JUAN': 'piccolo', 'PHOEBE': 'baba', 'GLACIA': 'android18', 'DRAKE': 'dende',
     'WALLACE': 'mr_satan', 'STEVEN': 'supreme_kai', 'SCOTT': 'announcer', 'MAXIE': 'fat_buu', 'ARCHIE': 'broly',
     'MAGMA_MEMBER_M': 'yamu', 'MAGMA_MEMBER_F': 'lime', 'AQUA_MEMBER_M': 'saiyan_soldier', 'AQUA_MEMBER_F': 'majin_soldier',
+    'OLD_MAN': 'old_man', 'WOMAN_1': 'pink_woman', 'WOMAN_2': 'village_woman', 'WOMAN_3': 'brown_woman',
+    'MAN_1': 'purple_man', 'MAN_2': 'police', 'MAN_3': 'striped_man', 'LITTLE_BOY': 'cap_kid',
+    'LITTLE_GIRL': 'pigtail_girl', 'BOY_1': 'blue_kid', 'GIRL_1': 'blonde_girl', 'PICNICKER': 'farm_girl',
+    'NINJA_BOY': 'green_kid',
     'UNUSED_NATU_DOLL': 'goku_ssj', 'UNUSED_MAGNEMITE_DOLL': 'goku_ssj2', 'UNUSED_SQUIRTLE_DOLL': 'goku_ssj3',
     'RIVAL_MAY_NORMAL': 'vegeta', 'RIVAL_MAY_MACH_BIKE': 'vegeta_mach_bike', 'RIVAL_MAY_ACRO_BIKE': 'vegeta_acro_bike',
     'RIVAL_MAY_SURFING': 'vegeta_surfing', 'RIVAL_MAY_FIELD_MOVE': 'vegeta_field_move',

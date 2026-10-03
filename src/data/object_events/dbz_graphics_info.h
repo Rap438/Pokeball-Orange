@@ -836,6 +836,409 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_GohanKid = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+static const struct SpriteFrameImage sPicTable_DBZ_Police[] = {
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_Police, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_Police = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_POLICE,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_Police,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_PurpleMan[] = {
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_PurpleMan, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_PurpleMan = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_PURPLE_MAN,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_PurpleMan,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_PinkWoman[] = {
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_PinkWoman, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_PinkWoman = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_PINK_WOMAN,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_PinkWoman,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_PigtailGirl[] = {
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_PigtailGirl, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_PigtailGirl = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_PIGTAIL_GIRL,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_PigtailGirl,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_OldMan[] = {
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_OldMan, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_OldMan = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_OLD_MAN,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_OldMan,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_VillageWoman[] = {
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_VillageWoman, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_VillageWoman = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_VILLAGE_WOMAN,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_VillageWoman,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_BlueKid[] = {
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_BlueKid, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_BlueKid = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_BLUE_KID,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_BlueKid,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_FarmGirl[] = {
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_FarmGirl, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_FarmGirl = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_FARM_GIRL,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_FarmGirl,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_BrownWoman[] = {
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_BrownWoman, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_BrownWoman = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_BROWN_WOMAN,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_BrownWoman,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_CapKid[] = {
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_CapKid, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_CapKid = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_CAP_KID,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_CapKid,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_GreenKid[] = {
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_GreenKid, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_GreenKid = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_GREEN_KID,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_GreenKid,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_StripedMan[] = {
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_StripedMan, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_StripedMan = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_STRIPED_MAN,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_StripedMan,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
+static const struct SpriteFrameImage sPicTable_DBZ_BlondeGirl[] = {
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_BlondeGirl, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_BlondeGirl = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_BLONDE_GIRL,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_BlondeGirl,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 static const struct SpriteFrameImage sPicTable_DBZ_GokuSsj[] = {
     overworld_frame(gObjectEventPic_DBZ_GokuSsj, 2, 4, 0),
     overworld_frame(gObjectEventPic_DBZ_GokuSsj, 2, 4, 1),

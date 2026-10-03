@@ -23,6 +23,7 @@
 #define VAR_DBZ_GOKU_EXP_HI     VAR_UNUSED_0x4091
 #define VAR_DBZ_GOKU_ANNOUNCED  VAR_UNUSED_0x409B   // last level we told the player about
 #define VAR_DBZ_PENDING_FIGHT   VAR_UNUSED_0x409D   // gym leader local id + 1 waiting to fight
+#define VAR_DBZ_TOD_OVERRIDE    VAR_UNUSED_0x40A1   // debug: 0 = clock, 1 day, 2 morning, 3 evening, 4 night
 #define DBZ_GOKU_MAX_LEVEL      100
 #define LOCALID_DBZ_ENEMY       240
 

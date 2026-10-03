@@ -177,6 +177,11 @@ NPCS = {
     'announcer': L5(47), 'fat_buu': L5(242), 'broly': L5(1501), 'yamu': L5(359),
     'majin_soldier': L5(384), 'saiyan_soldier': L5(1654), 'lime': L5(2043),
     'dr_brief': L5(420), 'oolong': L5(1926), 'gohan_kid': L5(1961),
+    # Buu's Fury townsfolk, mixed in with Emerald's own pedestrians
+    'police': L5(336), 'purple_man': L5(1706), 'pink_woman': L5(1729), 'pigtail_girl': L5(1752),
+    'old_man': L5(1872), 'village_woman': L5(1894), 'blue_kid': L5(2214), 'farm_girl': L5(2726),
+    'brown_woman': L5(2748), 'cap_kid': L5(142), 'green_kid': L5(169), 'striped_man': L5(2235),
+    'blonde_girl': L5(2768),
 }
 for name, spec in NPCS.items():
     fr = sheet_frames(spec)

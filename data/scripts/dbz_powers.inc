@@ -139,6 +139,8 @@ EventScript_DBZ_Debug::
 	lockall
 	msgbox Text_DBZ_DebugFight, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Fight
+	msgbox Text_DBZ_DebugTime, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Time
 	msgbox Text_DBZ_Debug, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Badges
 	msgbox Text_DBZ_DebugWarp116, MSGBOX_YESNO
@@ -224,3 +226,24 @@ EventScript_DBZ_Debug_Fight::
 
 Text_DBZ_DebugFight:
 	.string "DEBUG: fight a soldier now?$"
+
+EventScript_DBZ_Debug_Time::
+	addvar VAR_DBZ_TOD_OVERRIDE, 1
+	call_if_gt VAR_DBZ_TOD_OVERRIDE, 4, EventScript_DBZ_Debug_TimeWrap
+	buffernumberstring STR_VAR_1, VAR_DBZ_TOD_OVERRIDE
+	msgbox Text_DBZ_DebugTimeSet, MSGBOX_DEFAULT
+	closemessage
+	warpsilent MAP_MAUVILLE_CITY, 22, 10
+	waitstate
+	releaseall
+	end
+
+EventScript_DBZ_Debug_TimeWrap::
+	setvar VAR_DBZ_TOD_OVERRIDE, 0
+	return
+
+Text_DBZ_DebugTime:
+	.string "DEBUG: change time of day?$"
+
+Text_DBZ_DebugTimeSet:
+	.string "Time mode {STR_VAR_1} (0 clock 1 day\n2 morning 3 evening 4 night)$"

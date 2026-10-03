@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz.h"
 #include "constants/songs.h"
 #include "constants/weather.h"
 #include "constants/rgb.h"
@@ -811,6 +812,8 @@ void UpdateSpritePaletteWithWeather(u8 spritePaletteIndex)
 {
     u16 paletteIndex = 16 + spritePaletteIndex;
     u16 i;
+
+    DBZ_ApplyTimeTintToObjSlotOnce(spritePaletteIndex);
 
     switch (gWeatherPtr->palProcessingState)
     {

@@ -71,4 +71,9 @@ void DBZ_QueueGymFight(void);
 void DBZ_ShowGokuStatus(void);
 void DBZ_Debug_SetGokuLevel(void);
 
+// overworld style
+void DBZ_UpdateShadows(void);
+void DBZ_ApplyTimeTint(u16 offset, u16 count);
+void DBZ_ApplyTimeTintToObjSlotOnce(u8 slot);
+
 #endif // GUARD_DBZ_H

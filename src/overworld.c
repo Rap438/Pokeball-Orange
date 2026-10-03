@@ -1475,6 +1475,7 @@ static void OverworldBasic(void)
 {
     ScriptContext_RunScript();
     RunTasks();
+    DBZ_UpdateShadows();
     AnimateSprites();
     CameraUpdate();
     UpdateCameraPanning();
