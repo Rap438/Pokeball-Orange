@@ -144,8 +144,9 @@ BattleFrontier_Lounge2_Text_BattleTowerIsHottest::
 
 BattleFrontier_Lounge2_Text_SalonMaidenIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
+	.string "One of those top TRAINERS that\n"
+	.string "ANNOUNCER calls the FRONTIER BRAINS is\l"
+	.string "there.\p"
 	.string "It's this mysterious TRAINER called\n"
 	.string "the SALON MAIDEN that runs the place.$"
 
@@ -168,8 +169,9 @@ BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
 
 BattleFrontier_Lounge2_Text_DomeAceIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
+	.string "One of those top TRAINERS that\n"
+	.string "ANNOUNCER calls the FRONTIER BRAINS is\l"
+	.string "there.\p"
 	.string "It's this flamboyant TRAINER called\n"
 	.string "the DOME ACE that runs the place.$"
 
@@ -193,8 +195,9 @@ BattleFrontier_Lounge2_Text_DomeAceGoldMons::
 
 BattleFrontier_Lounge2_Text_FactoryHeadIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
+	.string "One of those top TRAINERS that\n"
+	.string "ANNOUNCER calls the FRONTIER BRAINS is\l"
+	.string "there.\p"
 	.string "It's this freaky TRAINER called\n"
 	.string "the FACTORY HEAD that runs the place.$"
 
@@ -216,8 +219,9 @@ BattleFrontier_Lounge2_Text_FactoryHeadGoldMons::
 
 BattleFrontier_Lounge2_Text_PikeQueenIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
+	.string "One of those top TRAINERS that\n"
+	.string "ANNOUNCER calls the FRONTIER BRAINS is\l"
+	.string "there.\p"
 	.string "It's this scary TRAINER called\n"
 	.string "the PIKE QUEEN that runs the place.$"
 
@@ -242,8 +246,9 @@ BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
 
 BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
+	.string "One of those top TRAINERS that\n"
+	.string "ANNOUNCER calls the FRONTIER BRAINS is\l"
+	.string "there.\p"
 	.string "It's this cute TRAINER called\n"
 	.string "the ARENA TYCOON that runs the place.$"
 
@@ -268,8 +273,9 @@ BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
+	.string "One of those top TRAINERS that\n"
+	.string "ANNOUNCER calls the FRONTIER BRAINS is\l"
+	.string "there.\p"
 	.string "It's this sinister TRAINER called\n"
 	.string "the PALACE MAVEN that runs the place.$"
 
@@ -293,8 +299,9 @@ BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::
 	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
+	.string "One of those top TRAINERS that\n"
+	.string "ANNOUNCER calls the FRONTIER BRAINS is\l"
+	.string "there.\p"
 	.string "It's this fiery-hot TRAINER called\n"
 	.string "the PYRAMID KING that runs the place.$"
 

@@ -23,6 +23,7 @@ u16 DBZ_GetNextForm(void);
 void DBZ_StartAura(void);
 void DBZ_ApplyNextForm(void);
 void DBZ_FireBlast(void);
+u16 DBZ_GetNewFormHint(void);
 
 // Dragon Balls
 extern bool8 gDBZNimbusFly;

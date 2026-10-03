@@ -630,7 +630,7 @@ DewfordTown_Text_TownSign:
 
 DewfordTown_Text_GymSign:
 	.string "DEWFORD TOWN POKéMON GYM\n"
-	.string "LEADER: BRAWLY\l"
+	.string "LEADER: TIEN\l"
 	.string "“A big wave in fighting!”$"
 
 DewfordTown_Text_HallSign:
@@ -641,7 +641,7 @@ Route104_Text_LandedInDewfordDeliverLetter:
 	.string "MR. BRINEY: Ahoy!\n"
 	.string "We've hit land in DEWFORD.\p"
 	.string "I suppose you're off to deliver that\n"
-	.string "LETTER to, who was it now, STEVEN!$"
+	.string "LETTER to, who was it now, SUPREME KAI!$"
 
 DewfordTown_Text_SetSailBackToPetalburg:
 	.string "MR. BRINEY: Have you delivered your\n"

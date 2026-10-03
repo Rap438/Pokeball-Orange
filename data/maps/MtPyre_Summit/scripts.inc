@@ -407,7 +407,7 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "No! Those TEAM MAGMA goons got\n"
+	.string "No! Those MAJIN ARMY goons got\n"
 	.string "here ahead of us!\p"
 	.string "We can't fall behind!$"
 
@@ -423,13 +423,13 @@ MtPyre_Summit_Text_Grunt2Intro:
 	.string "Hah!\n"
 	.string "Too bad for you!\p"
 	.string "If you came earlier, you only would've\n"
-	.string "had to battle the wimpy TEAM MAGMA.\p"
+	.string "had to battle the wimpy MAJIN ARMY.\p"
 	.string "But since you arrived now, you have\n"
 	.string "to take on us toughies!$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
 	.string "Urgh… I should've let you take on\n"
-	.string "TEAM MAGMA first…$"
+	.string "MAJIN ARMY first…$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
 	.string "You don't know anything!\n"
@@ -443,7 +443,7 @@ MtPyre_Summit_Text_Grunt3Intro:
 
 MtPyre_Summit_Text_Grunt3Defeat:
 	.string "If you're going to mess with anyone,\n"
-	.string "let it be TEAM MAGMA…$"
+	.string "let it be MAJIN ARMY…$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
 	.string "Heh, it doesn't matter!\n"
@@ -453,13 +453,13 @@ MtPyre_Summit_Text_Grunt3PostBattle:
 
 MtPyre_Summit_Text_Grunt4Intro:
 	.string "Oh, I know!\n"
-	.string "You tried to join TEAM MAGMA,\l"
+	.string "You tried to join MAJIN ARMY,\l"
 	.string "but they wouldn't have you!\p"
 	.string "Well, don't think that we'll let you\n"
-	.string "join our TEAM AQUA!$"
+	.string "join our SAIYAN ARMY!$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM AQUA that\n"
+	.string "If you want to join SAIYAN ARMY that\n"
 	.string "badly, we can consider it…$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
@@ -467,10 +467,11 @@ MtPyre_Summit_Text_Grunt4PostBattle:
 	.string "with us members and our leader.$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
-	.string "of us, but we also got what we wanted.\p"
+	.string "BROLY: MAJIN ARMY's MAJIN BUU got\n"
+	.string "ahead of us, but we also got what we\l"
+	.string "wanted.\p"
 	.string "The RED ORB preserved at MT. PYRE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
+	.string "I, BROLY, now have it in my possession!\p"
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
 	.string "Okay, TEAM!\n"
@@ -487,7 +488,7 @@ MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "the two ORBS?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Oh, yes. Was it TEAM MAGMA who came\n"
+	.string "Oh, yes. Was it MAJIN ARMY who came\n"
 	.string "and took the BLUE ORB first?\p"
 	.string "Well, in their haste, they left this\n"
 	.string "behind.\p"
@@ -569,7 +570,7 @@ MtPyre_Summit_Text_WellThatTooIsFine:
 	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "MAXIE: {PLAYER}…\p"
+	.string "MAJIN BUU: {PLAYER}…\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …$"
 

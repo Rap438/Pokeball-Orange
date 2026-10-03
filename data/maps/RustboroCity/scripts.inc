@@ -915,8 +915,8 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "The DEVON CORPORATION…\n"
-	.string "We all just shorten it to DEVON.\p"
+	.string "The CAPSULE CORP.…\n"
+	.string "We all just shorten it to CAPSULE CORP.\p"
 	.string "That company makes all sorts of\n"
 	.string "convenient products.$"
 
@@ -1001,7 +1001,7 @@ RustboroCity_Text_HelpMeIWasRobbed:
 	.string "Oh, it's you!\p"
 	.string "You're that fantastic TRAINER who\n"
 	.string "helped me in PETALBURG WOODS!\p"
-	.string "Help me! I was robbed by TEAM AQUA!\n"
+	.string "Help me! I was robbed by SAIYAN ARMY!\n"
 	.string "I have to get the CC GOODS back!\p"
 	.string "If I don't…\n"
 	.string "I'm going to be in serious trouble.$"
@@ -1028,7 +1028,7 @@ RustboroCity_Text_PleaseComeWithMe:
 	.string "Please come with me!$"
 
 RustboroCity_Text_MayHiLetsRegister:
-	.string "MAY: Oh, hi, {PLAYER}{KUN}!\p"
+	.string "VEGETA: Oh, hi, {PLAYER}{KUN}!\p"
 	.string "You had a MATCH CALL feature put\n"
 	.string "on your POKéNAV!\p"
 	.string "Let's register each other so we can\n"
@@ -1036,31 +1036,32 @@ RustboroCity_Text_MayHiLetsRegister:
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredMay:
-	.string "Registered MAY\n"
+	.string "Registered VEGETA\n"
 	.string "in the POKéNAV.$"
 
 RustboroCity_Text_MayPassedBrineyWantToBattle:
-	.string "MAY: Oh, by the way, I passed\n"
+	.string "VEGETA: Oh, by the way, I passed\n"
 	.string "MR. BRINEY in PETALBURG WOODS.\p"
 	.string "I guess he's on his way home to his\n"
 	.string "cottage by the sea.\p"
 	.string "How's your POKéDEX coming along,\n"
-	.string "{PLAYER}{KUN}? Mine's looking pretty decent!\p"
+	.string "{PLAYER}{KUN}? Mine's looking pretty\l"
+	.string "decent!\p"
 	.string "So…\n"
 	.string "How about a little battle?$"
 
 RustboroCity_Text_MayOhHaventRaisedPokemonEnough:
-	.string "MAY: Oh, what's the matter?\p"
+	.string "VEGETA: Oh, what's the matter?\p"
 	.string "Haven't you caught or raised your\n"
 	.string "POKéMON very much?\p"
 	.string "That's not very good for a TRAINER!$"
 
 RustboroCity_Text_MayWantToBattle:
-	.string "MAY: So, what do you think?\n"
+	.string "VEGETA: So, what do you think?\n"
 	.string "How about a little battle here?$"
 
 RustboroCity_Text_MayImNotGoingToLose:
-	.string "MAY: You just became a TRAINER,\n"
+	.string "VEGETA: You just became a TRAINER,\n"
 	.string "{PLAYER}{KUN}. I'm not going to lose!$"
 
 RustboroCity_Text_MayDefeat:
@@ -1068,14 +1069,14 @@ RustboroCity_Text_MayDefeat:
 	.string "You're better than I expected!$"
 
 RustboroCity_Text_MayMrBrineyHint:
-	.string "MAY: Oh, by the way, MR. BRINEY, who\n"
+	.string "VEGETA: Oh, by the way, MR. BRINEY, who\n"
 	.string "I just passed…\p"
-	.string "{PLAYER}{KUN}, you just moved here so you\n"
-	.string "might not know this, but MR. BRINEY\l"
+	.string "{PLAYER}{KUN}, you just moved here so\n"
+	.string "you might not know this, but MR. BRINEY\l"
 	.string "was once a revered seafarer.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "BRENDAN: Oh, hey, {PLAYER}!\p"
+	.string "VEGETA: Oh, hey, {PLAYER}!\p"
 	.string "You had a MATCH CALL feature put\n"
 	.string "on your POKéNAV! Cool!\p"
 	.string "Let's register each other so we can\n"
@@ -1083,11 +1084,11 @@ RustboroCity_Text_BrendanHiLetsRegister:
 	.string "… … … … … …$"
 
 RustboroCity_Text_RegisteredBrendan:
-	.string "Registered BRENDAN\n"
+	.string "Registered VEGETA\n"
 	.string "in the POKéNAV.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "BRENDAN: By the way, {PLAYER}, I walked\n"
+	.string "VEGETA: By the way, {PLAYER}, I walked\n"
 	.string "by MR. BRINEY in PETALBURG WOODS.\p"
 	.string "I bet he was on his way home to his\n"
 	.string "cottage by the sea.\p"
@@ -1098,15 +1099,15 @@ RustboroCity_Text_BrendanPassedBrineyWantToBattle:
 	.string "far you've progressed?$"
 
 RustboroCity_Text_BrendanNoConfidenceInPokemon:
-	.string "BRENDAN: What's the matter? Don't have\n"
+	.string "VEGETA: What's the matter? Don't have\n"
 	.string "any confidence in your POKéMON?$"
 
 RustboroCity_Text_BrendanWantToBattle:
-	.string "BRENDAN: What's up?\n"
+	.string "VEGETA: What's up?\n"
 	.string "Want to have a battle with me?$"
 
 RustboroCity_Text_BrendanIWontGoEasy:
-	.string "BRENDAN: I know you just became\n"
+	.string "VEGETA: I know you just became\n"
 	.string "a TRAINER, but I won't go easy!$"
 
 RustboroCity_Text_BrendanDefeat:
@@ -1114,7 +1115,7 @@ RustboroCity_Text_BrendanDefeat:
 	.string "You're pretty good.$"
 
 RustboroCity_Text_BrendanMrBrineyHint:
-	.string "BRENDAN: By the way, you know\n"
+	.string "VEGETA: By the way, you know\n"
 	.string "MR. BRINEY? The guy I just passed?\p"
 	.string "I bet you didn't know this, since you\n"
 	.string "just moved here, {PLAYER}, but\l"
@@ -1128,19 +1129,19 @@ RustboroCity_Text_TunnelNearingCompletion:
 	.string "across it in red paint…$"
 
 RustboroCity_Text_DevonCorpSign:
-	.string "DEVON CORPORATION\p"
+	.string "CAPSULE CORP.\p"
 	.string "“For all your living needs, we make\n"
 	.string "it all.”$"
 
 RustboroCity_Text_GymSign:
 	.string "RUSTBORO CITY POKéMON GYM\n"
-	.string "LEADER: ROXANNE\p"
+	.string "LEADER: YAMCHA\p"
 	.string "“The ROCK-loving honors student!”$"
 
 RustboroCity_Text_DevonCorpBranchOfficeSign:
-	.string "DEVON CORP. BRANCH OFFICE\p"
-	.string "“Access limited to DEVON employees\n"
-	.string "and authorized personnel.”$"
+	.string "CAPSULE CORP. BRANCH OFFICE\p"
+	.string "“Access limited to CAPSULE CORP.\n"
+	.string "employees and authorized personnel.”$"
 
 RustboroCity_Text_CitySign:
 	.string "RUSTBORO CITY\p"

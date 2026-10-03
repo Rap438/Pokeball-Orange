@@ -407,7 +407,7 @@ LilycoveCity_EventScript_DontKnowAboutBerryBlender::
 	return
 
 LilycoveCity_Text_MayShoppingLetsBattle:
-	.string "MAY: Oh, hey?\n"
+	.string "VEGETA: Oh, hey?\n"
 	.string "{PLAYER}{KUN}, are you shopping, too?\p"
 	.string "I bought a whole bunch of DOLLS and\n"
 	.string "POSTERS.\p"
@@ -415,23 +415,25 @@ LilycoveCity_Text_MayShoppingLetsBattle:
 	.string "POKéMON, and I'm raising them\l"
 	.string "properly, too.\p"
 	.string "Actually, I'm more worried if you're\n"
-	.string "raising POKéMON properly, {PLAYER}{KUN}.\p"
+	.string "raising POKéMON properly,\l"
+	.string "{PLAYER}{KUN}.\p"
 	.string "I'll battle with you, so you can show\n"
 	.string "me your POKéMON, {PLAYER}{KUN}.$"
 
 LilycoveCity_Text_MayNotRaisingPokemon:
-	.string "MAY: Oh, why? {PLAYER}{KUN}, haven't you\n"
-	.string "been raising your POKéMON?\p"
+	.string "VEGETA: Oh, why? {PLAYER}{KUN},\n"
+	.string "haven't you been raising your POKéMON?\p"
 	.string "That's not a very good showing as a\n"
 	.string "TRAINER…$"
 
 LilycoveCity_Text_MayBattleMe:
-	.string "MAY: Come on, battle with me, so I can\n"
-	.string "check out your POKéMON!$"
+	.string "VEGETA: Come on, battle with me, so I\n"
+	.string "can check out your POKéMON!$"
 
 LilycoveCity_Text_MayWontBeBeaten:
-	.string "MAY: The POKéMON I raised won't be\n"
-	.string "beaten by your POKéMON, {PLAYER}{KUN}!$"
+	.string "VEGETA: The POKéMON I raised won't be\n"
+	.string "beaten by your POKéMON,\l"
+	.string "{PLAYER}{KUN}!$"
 
 LilycoveCity_Text_MayDefeat:
 	.string "… … … … … … … …\p"
@@ -441,7 +443,7 @@ LilycoveCity_Text_MayDefeat:
 	.string "strong, {PLAYER}{KUN}, didn't it?$"
 
 LilycoveCity_Text_MayGoingBackToLittleroot:
-	.string "MAY: I'm thinking of going back to\n"
+	.string "VEGETA: I'm thinking of going back to\n"
 	.string "LITTLEROOT soon.\p"
 	.string "I've caught a decent group of POKéMON,\n"
 	.string "and my POKéDEX is coming along, so\l"
@@ -477,7 +479,7 @@ LilycoveCity_Text_MayYouGoingToBattleFrontier:
 	.string "See you!$"
 
 LilycoveCity_Text_BrendanShoppingLetsBattle:
-	.string "BRENDAN: Oh, hey, it's {PLAYER}.\p"
+	.string "VEGETA: Oh, hey, it's {PLAYER}.\p"
 	.string "I'm running an errand for my dad.\n"
 	.string "No, I'm not buying any DOLLS.\p"
 	.string "Anyways, it's been a while.\p"
@@ -485,15 +487,15 @@ LilycoveCity_Text_BrendanShoppingLetsBattle:
 	.string "raising POKéMON better?$"
 
 LilycoveCity_Text_BrendanNoConfidence:
-	.string "BRENDAN: Oh, what's the matter?\n"
+	.string "VEGETA: Oh, what's the matter?\n"
 	.string "Don't have the confidence?$"
 
 LilycoveCity_Text_BrendanBattleMe:
-	.string "BRENDAN: Want to battle to see who's\n"
+	.string "VEGETA: Want to battle to see who's\n"
 	.string "been raising POKéMON better?$"
 
 LilycoveCity_Text_BrendanWontBeBeaten:
-	.string "BRENDAN: Aww, but you know I'm not\n"
+	.string "VEGETA: Aww, but you know I'm not\n"
 	.string "going to lose to no {PLAYER}.$"
 
 LilycoveCity_Text_BrendanDefeat:
@@ -503,7 +505,7 @@ LilycoveCity_Text_BrendanDefeat:
 	.string "on you as a TRAINER…$"
 
 LilycoveCity_Text_BrendanGoingBackToLittleroot:
-	.string "BRENDAN: I…\n"
+	.string "VEGETA: I…\n"
 	.string "I plan on going home to LITTLEROOT.\p"
 	.string "You know I'm helping out my dad on his\n"
 	.string "POKéDEX. It's coming together pretty\l"
@@ -549,8 +551,8 @@ LilycoveCity_Text_MovedLootIntoHideoutToday:
 LilycoveCity_Text_ChanceToDoBigThings:
 	.string "I'm just a GRUNT, so I don't know what\n"
 	.string "the BOSS is thinking…\p"
-	.string "But being on TEAM AQUA, I know I'll get\n"
-	.string "the chance to do big things!\p"
+	.string "But being on SAIYAN ARMY, I know I'll\n"
+	.string "get the chance to do big things!\p"
 	.string "Wh-who are you?!\n"
 	.string "I was just talking to myself!$"
 
@@ -562,7 +564,7 @@ LilycoveCity_Text_DontGoNearCaveInCove:
 
 LilycoveCity_Text_IfWorldBecomesOurs:
 	.string "If this whole wide world becomes ours,\n"
-	.string "TEAM AQUA's, it will be a happier\l"
+	.string "SAIYAN ARMY's, it will be a happier\l"
 	.string "place for POKéMON, too.$"
 
 LilycoveCity_Text_WailmerLeapOutOfWater:
@@ -600,14 +602,14 @@ LilycoveCity_Text_ImFromKanto:
 	.string "only in this area?$"
 
 LilycoveCity_Text_TeamAquaBeenTrainingWailmer:
-	.string "TEAM AQUA's been training their\n"
+	.string "SAIYAN ARMY's been training their\n"
 	.string "WAILMER in the cove.\p"
 	.string "We SAILORS can't get our boats out\n"
 	.string "to sea with them in the way!$"
 
 LilycoveCity_Text_SomeonePuntedTeamAquaOut:
 	.string "Ahoy, did you know?\p"
-	.string "Someone punted TEAM AQUA out of\n"
+	.string "Someone punted SAIYAN ARMY out of\n"
 	.string "the way for us!\p"
 	.string "That got the WAILMER out of the cove,\n"
 	.string "so we can get our boats out again.$"
@@ -617,7 +619,7 @@ LilycoveCity_Text_SomeoneStoleMyPokemon:
 	.string "seaside inn to the sound of waves…\p"
 	.string "When someone stole my POKéMON!\p"
 	.string "Who's the abductor?\n"
-	.string "TEAM AQUA? Is it TEAM AQUA?$"
+	.string "SAIYAN ARMY? Is it SAIYAN ARMY?$"
 
 LilycoveCity_Text_MissingPokemonCameBack:
 	.string "My missing POKéMON…\n"
@@ -646,10 +648,10 @@ LilycoveCity_Text_TeamAquaRenovatedCavern:
 	.string "Hm, you know of the peculiar cavern\n"
 	.string "in this cove?\p"
 	.string "That had been a natural formation,\n"
-	.string "but then that TEAM AQUA lot came\l"
+	.string "but then that SAIYAN ARMY lot came\l"
 	.string "along and made their renovations.\p"
 	.string "They call themselves\n"
-	.string "the “nature-loving TEAM AQUA”!\p"
+	.string "the “nature-loving SAIYAN ARMY”!\p"
 	.string "But what they do and what they say\n"
 	.string "don't match at all!$"
 
@@ -657,7 +659,7 @@ LilycoveCity_Text_TeamAquaLotGoneForGood:
 	.string "That cave in the cove…\p"
 	.string "I didn't notice it right away,\n"
 	.string "but it's completely empty now.\p"
-	.string "That TEAM AQUA lot, they must\n"
+	.string "That SAIYAN ARMY lot, they must\n"
 	.string "have gone away for good.$"
 
 LilycoveCity_Text_CitySign:

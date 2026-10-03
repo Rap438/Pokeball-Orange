@@ -17,6 +17,10 @@ EventScript_DBZ_Return::
 
 EventScript_DBZ_GymFight::
 	lockall
+	specialvar VAR_0x8009, DBZ_GetNewFormHint
+	call_if_eq VAR_0x8009, DBZ_FORM_SSJ, EventScript_DBZ_HintSSJ
+	call_if_eq VAR_0x8009, DBZ_FORM_SSJ2, EventScript_DBZ_HintSSJ2
+	call_if_eq VAR_0x8009, DBZ_FORM_SSJ3, EventScript_DBZ_HintSSJ3
 	specialvar VAR_RESULT, DBZ_CanFightTrainer
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DBZ_FightDone
 	msgbox Text_DBZ_GymFightIntro, MSGBOX_DEFAULT
@@ -25,6 +29,18 @@ EventScript_DBZ_GymFight::
 	special DBZ_StartFight
 	releaseall
 	end
+
+EventScript_DBZ_HintSSJ::
+	msgbox Text_DBZ_HintSSJ, MSGBOX_DEFAULT
+	return
+
+EventScript_DBZ_HintSSJ2::
+	msgbox Text_DBZ_HintSSJ2, MSGBOX_DEFAULT
+	return
+
+EventScript_DBZ_HintSSJ3::
+	msgbox Text_DBZ_HintSSJ3, MSGBOX_DEFAULT
+	return
 
 EventScript_DBZ_Ambush::
 	lockall
@@ -151,3 +167,21 @@ Text_DBZ_MonNoRoom:
 Text_DBZ_FightLost:
 	.string "GOKU got knocked down by {STR_VAR_1}…\p"
 	.string "He needs more training!$"
+
+Text_DBZ_HintSSJ:
+	.string "The BADGE's power surges through\n"
+	.string "GOKU… Something is awakening!\p"
+	.string "Press R to go SUPER SAIYAN!\n"
+	.string "SSJ + KAMEHAMEHA can cut trees.$"
+
+Text_DBZ_HintSSJ2:
+	.string "GOKU's ki is crackling with\n"
+	.string "lightning!\p"
+	.string "SUPER SAIYAN 2 unlocked!\n"
+	.string "Its KAMEHAMEHA smashes rocks.$"
+
+Text_DBZ_HintSSJ3:
+	.string "GOKU's hair grows long and his\n"
+	.string "power shakes the ground!\p"
+	.string "SUPER SAIYAN 3 unlocked!\n"
+	.string "Now GOKU can push big boulders.$"

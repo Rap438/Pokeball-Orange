@@ -247,7 +247,7 @@ SSTidalCorridor_Movement_SailorReturn:
 	step_end
 
 SSTidalCorridor_Text_ScottBattleFrontierInvite:
-	.string "SCOTT: Well, hi, hi!\n"
+	.string "ANNOUNCER: Well, hi, hi!\n"
 	.string "{PLAYER}{KUN}, {PLAYER}{KUN}!\p"
 	.string "Something's come up, so I have to\n"
 	.string "disembark, but am I glad to see you!\p"
@@ -263,8 +263,8 @@ SSTidalCorridor_Text_ScottBattleFrontierInvite:
 	.string "The next time you take a ferry,\n"
 	.string "you should be able to sail to\l"
 	.string "the BATTLE FRONTIER.\p"
-	.string "Okay, {PLAYER}{KUN}, I'll be waiting for you\n"
-	.string "at the BATTLE FRONTIER!$"
+	.string "Okay, {PLAYER}{KUN}, I'll be waiting\n"
+	.string "for you at the BATTLE FRONTIER!$"
 
 SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage:
 	.string "This ferry is built to plow through\n"

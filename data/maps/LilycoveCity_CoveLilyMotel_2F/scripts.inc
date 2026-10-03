@@ -112,7 +112,7 @@ LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy:
 	.string "my GAME BOY ADVANCE.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
-	.string "SCOTT: … … … … …\n"
+	.string "ANNOUNCER: … … … … …\n"
 	.string "… … … … … Zzz…\p"
 	.string "… … … … … Huh?!\n"
 	.string "Oh, sorry, sorry! I was snoozing!\p"
@@ -123,13 +123,13 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "Consider me a purist--I prefer\n"
 	.string "battles and tough TRAINERS.\p"
 	.string "But that's just me.\p"
-	.string "{PLAYER}{KUN}, I hope you'll enjoy everything\n"
-	.string "like the GYMS, CONTESTS, BATTLE TENT,\l"
-	.string "the whole works!$"
+	.string "{PLAYER}{KUN}, I hope you'll enjoy\n"
+	.string "everything like the GYMS, CONTESTS,\l"
+	.string "BATTLE TENT, the whole works!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
-	.string "SCOTT: I think it does take strategy\n"
-	.string "to win a CONTEST.\p"
+	.string "ANNOUNCER: I think it does take\n"
+	.string "strategy to win a CONTEST.\p"
 	.string "Devising CONTEST strategies is one way\n"
 	.string "of becoming a better TRAINER, I'd say.$"
 

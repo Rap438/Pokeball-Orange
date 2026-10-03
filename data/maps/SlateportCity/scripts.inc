@@ -982,7 +982,7 @@ SlateportCity_Text_QuitPushing:
 	.string "This is the line, can't you see?$"
 
 SlateportCity_Text_AquaHasPolicy:
-	.string "TEAM AQUA has a policy of\n"
+	.string "SAIYAN ARMY has a policy of\n"
 	.string "assembling and dispersing at\l"
 	.string "the operation site.$"
 
@@ -1142,7 +1142,7 @@ SlateportCity_Text_OhPlayerWeMadeDiscovery:
 SlateportCity_Text_AquaWillAssumeControlOfSubmarine:
 	.string "Fufufu…\n"
 	.string "CAPT. STERN, I presume.\p"
-	.string "We of TEAM AQUA will assume\n"
+	.string "We of SAIYAN ARMY will assume\n"
 	.string "control of your submarine!\p"
 	.string "Your objections are meaningless!\n"
 	.string "We expect your total cooperation!\p"
@@ -1279,42 +1279,43 @@ SlateportCity_Text_ComeBackToTradeBerryPowder:
 	.string "Did you know?$"
 
 SlateportCity_Text_YouDroveTeamAquaAway:
-	.string "SCOTT: Huh?\n"
+	.string "ANNOUNCER: Huh?\n"
 	.string "I'm sure I met you somewhere before.\p"
 	.string "Have I introduced myself to you?\n"
-	.string "If not, my name's SCOTT.\p"
-	.string "I just saw TEAM AQUA run away from\n"
+	.string "If not, my name's ANNOUNCER.\p"
+	.string "I just saw SAIYAN ARMY run away from\n"
 	.string "here like they were stung.\p"
 	.string "Let me guess--you drove them away?$"
 
 SlateportCity_Text_MaybeThisTrainer:
-	.string "SCOTT: Hmm…\n"
+	.string "ANNOUNCER: Hmm…\n"
 	.string "Maybe, just maybe, this TRAINER…$"
 
 SlateportCity_Text_LetsRegisterEachOther:
-	.string "SCOTT: All right! I think you're going\n"
-	.string "to become a good friend.\p"
+	.string "ANNOUNCER: All right! I think you're\n"
+	.string "going to become a good friend.\p"
 	.string "So, let's register each other in our\n"
 	.string "POKéNAVS.\p"
 	.string "… … … … … …$"
 
 SlateportCity_Text_RegisteredScott:
-	.string "Registered this SCOTT person\n"
+	.string "Registered this ANNOUNCER person\n"
 	.string "in the POKéNAV.$"
 
 SlateportCity_Text_KeepEyeOnTrainersBeSeeingYou:
-	.string "SCOTT: What I'd like to do is tag along\n"
-	.string "with you, but I do want to keep an eye\l"
-	.string "on the talents of other people, too.\p"
+	.string "ANNOUNCER: What I'd like to do is tag\n"
+	.string "along with you, but I do want to keep an\l"
+	.string "eye on the talents of other people, too.\p"
 	.string "So, I'll be off to roam other towns\n"
 	.string "a bit more.\p"
 	.string "Be seeing you, {PLAYER}{KUN}!$"
 
 SlateportCity_Text_TakingBattleTentChallenge:
-	.string "SCOTT: Oh, hey!\n"
+	.string "ANNOUNCER: Oh, hey!\n"
 	.string "If it isn't {PLAYER}{KUN}!\p"
-	.string "{PLAYER}{KUN}, let me guess--you're going\n"
-	.string "to take the BATTLE TENT challenge?\p"
+	.string "{PLAYER}{KUN}, let me guess--you're\n"
+	.string "going to take the BATTLE TENT\l"
+	.string "challenge?\p"
 	.string "Yeah! That's a good idea!\n"
 	.string "That's a really great idea!\p"
 	.string "After all, a tough TRAINER is\n"

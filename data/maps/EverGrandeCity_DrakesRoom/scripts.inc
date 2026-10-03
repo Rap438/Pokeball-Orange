@@ -63,7 +63,7 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "I am the last of the POKéMON LEAGUE\n"
-	.string "ELITE FOUR, DRAKE the DRAGON master!\p"
+	.string "ELITE FOUR, DENDE the DRAGON master!\p"
 	.string "In their natural state, POKéMON are\n"
 	.string "wild living things. They are free.\p"
 	.string "At times, they hinder us.\n"

@@ -178,9 +178,9 @@ SootopolisCity_Gym_1F_EventScript_GymStatue::
 SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "Yo! How's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
-	.string "SOOTOPOLIS's GYM LEADER JUAN is\n"
+	.string "SOOTOPOLIS's GYM LEADER PICCOLO is\n"
 	.string "a master of WATER-type POKéMON.\p"
-	.string "And, to get to JUAN, an icy floor\n"
+	.string "And, to get to PICCOLO, an icy floor\n"
 	.string "will hamper your progress…\p"
 	.string "Listen, I'm sorry, but that's all the\n"
 	.string "advice that I have for you.\p"
@@ -188,7 +188,7 @@ SootopolisCity_Gym_1F_Text_GymGuideAdvice:
 	.string "go for it yourself!$"
 
 SootopolisCity_Gym_1F_Text_GymGuidePostVictory:
-	.string "Yow! You've beaten even JUAN, who\n"
+	.string "Yow! You've beaten even PICCOLO, who\n"
 	.string "was supposedly the best in all HOENN!\p"
 	.string "Okay! Check out your TRAINER CARD.\p"
 	.string "If you've gotten all the BADGES, you're\n"
@@ -198,11 +198,12 @@ SootopolisCity_Gym_1F_Text_JuanIntro:
 	.string "Let me ask you.\n"
 	.string "Did you know?\l"
 	.string "Ah, I should not be so coy.\p"
-	.string "It was I who taught WALLACE everything\n"
-	.string "there is to know about POKéMON.\p"
+	.string "It was I who taught MR. SATAN\n"
+	.string "everything there is to know about\l"
+	.string "POKéMON.\p"
 	.string "Once, I had given up my position as\n"
 	.string "the GYM LEADER.\p"
-	.string "In my place, I had entrusted WALLACE\n"
+	.string "In my place, I had entrusted MR. SATAN\n"
 	.string "with the GYM.\p"
 	.string "However, a compelling reason arose for\n"
 	.string "me to make a comeback.\p"
@@ -234,7 +235,7 @@ SootopolisCity_Gym_1F_Text_JuanDefeat:
 
 SootopolisCity_Gym_1F_Text_ReceivedRainBadge:
 	.string "{PLAYER} received the RAIN BADGE\n"
-	.string "from JUAN.$"
+	.string "from PICCOLO.$"
 
 SootopolisCity_Gym_1F_Text_ExplainRainBadgeTakeThis:
 	.string "Having the RAIN BADGE shall assure you\n"
@@ -254,7 +255,7 @@ SootopolisCity_Gym_1F_Text_ExplainWaterPulse:
 	.string "… … … … … …$"
 
 SootopolisCity_Gym_1F_Text_RegisteredJuan:
-	.string "Registered GYM LEADER JUAN\n"
+	.string "Registered GYM LEADER PICCOLO\n"
 	.string "in the POKéNAV.$"
 
 SootopolisCity_Gym_1F_Text_JuanPostBattle:
@@ -283,8 +284,8 @@ SootopolisCity_Gym_1F_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 SootopolisCity_Gym_1F_Text_JuanPreRematch:
-	.string "JUAN: Ah, this GYM had returned to its\n"
-	.string "usual state of serenity…\p"
+	.string "PICCOLO: Ah, this GYM had returned to\n"
+	.string "its usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"
 	.string "Well, my friend, most certainly!\p"
@@ -296,7 +297,7 @@ SootopolisCity_Gym_1F_Text_JuanRematchDefeat:
 	.string "You have defeated me again!$"
 
 SootopolisCity_Gym_1F_Text_JuanPostRematch:
-	.string "JUAN: If I told you to become my\n"
+	.string "PICCOLO: If I told you to become my\n"
 	.string "apprentice, you will refuse, I am sure.\p"
 	.string "I would like to make a gift of my coat\n"
 	.string "to you.\p"
@@ -306,8 +307,8 @@ SootopolisCity_Gym_1F_Text_JuanPostRematch:
 	.string "of nobility!$"
 
 SootopolisCity_Gym_1F_Text_JuanRematchNeedTwoMons:
-	.string "JUAN: Ah, this GYM had returned to its\n"
-	.string "usual state of serenity…\p"
+	.string "PICCOLO: Ah, this GYM had returned to\n"
+	.string "its usual state of serenity…\p"
 	.string "But our young typhoon has returned\n"
 	.string "to put us to the test again!\p"
 	.string "Well, my friend, most certainly!\n"

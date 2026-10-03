@@ -191,8 +191,8 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay::
 	end
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
-	.string "I'm MR. STONE, the PRESIDENT of\n"
-	.string "the DEVON CORPORATION.\p"
+	.string "I'm DR. BRIEF, the PRESIDENT of\n"
+	.string "the CAPSULE CORP.\p"
 	.string "I'd just got word about you!\p"
 	.string "You saved our staff not just once,\n"
 	.string "but twice!\p"
@@ -203,10 +203,10 @@ RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
 	.string "Well, on the way, could you stop off in\n"
 	.string "DEWFORD TOWN?\p"
 	.string "I was hoping that you'd deliver a\n"
-	.string "LETTER to STEVEN in DEWFORD.$"
+	.string "LETTER to SUPREME KAI in DEWFORD.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneWantYouToHaveThis:
-	.string "MR. STONE: Now, you should know that\n"
+	.string "DR. BRIEF: Now, you should know that\n"
 	.string "I am a great PRESIDENT.\p"
 	.string "So, I'd never be so cheap as to ask\n"
 	.string "a favor for nothing in return.\p"
@@ -216,7 +216,7 @@ RustboroCity_DevonCorp_3F_Text_ReceivedPokenav:
 	.string "{PLAYER} received a POKéNAV.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
-	.string "MR. STONE: That device…\p"
+	.string "DR. BRIEF: That device…\p"
 	.string "It's a POKéMON NAVIGATOR, or POKéNAV\n"
 	.string "for short.\p"
 	.string "It's an indispensable tool for any\n"
@@ -225,26 +225,27 @@ RustboroCity_DevonCorp_3F_Text_MrStoneExplainPokenavRestUp:
 	.string "You can check the locations of\n"
 	.string "DEWFORD and SLATEPORT easily!\p"
 	.string "By the way, I've heard that sinister\n"
-	.string "criminals--MAGMA and AQUA, I believe--\l"
-	.string "have been making trouble far and wide.\p"
+	.string "criminals--MAJIN and SAIYAN, I\l"
+	.string "believe-- have been making trouble far\l"
+	.string "and wide.\p"
 	.string "I think it would be best if you rested\n"
 	.string "up before you go on your way.$"
 
 RustboroCity_DevonCorp_3F_Text_MrStoneGoWithCautionAndCare:
-	.string "MR. STONE: Well, then, {PLAYER}{KUN},\n"
+	.string "DR. BRIEF: Well, then, {PLAYER}{KUN},\n"
 	.string "go with caution and care!$"
 
 RustboroCity_DevonCorp_3F_Text_CountingOnYou:
-	.string "MR. STONE: I'm counting on you!$"
+	.string "DR. BRIEF: I'm counting on you!$"
 
 RustboroCity_DevonCorp_3F_Text_ThankYouForDeliveringLetter:
-	.string "MR. STONE: You delivered my LETTER?\n"
+	.string "DR. BRIEF: You delivered my LETTER?\n"
 	.string "Thank you kindly!\p"
 	.string "This is my way of thanking you.\n"
 	.string "It should help you, a TRAINER.$"
 
 RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
-	.string "MR. STONE: A POKéMON holding that\n"
+	.string "DR. BRIEF: A POKéMON holding that\n"
 	.string "TRAINING GI will be given some of the\l"
 	.string "EXP Points from battle.\p"
 	.string "It will get EXP Points even if it didn't\n"
@@ -253,7 +254,7 @@ RustboroCity_DevonCorp_3F_Text_ExplainExpShare:
 	.string "for raising weak POKéMON.$"
 
 RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
-	.string "MR. STONE: Since my youth, I've immersed\n"
+	.string "DR. BRIEF: Since my youth, I've immersed\n"
 	.string "myself in work.\p"
 	.string "Consequently, I'm not familiar with\n"
 	.string "trends and that sort of thing.\p"
@@ -261,7 +262,7 @@ RustboroCity_DevonCorp_3F_Text_NotFamiliarWithTrends:
 	.string "TRAINERS in the POKéMON LEAGUE?$"
 
 RustboroCity_DevonCorp_3F_Text_ThisIs3rdFloorWaitHere:
-	.string "This is the DEVON CORPORATION's\n"
+	.string "This is the CAPSULE CORP.'s\n"
 	.string "third floor.\p"
 	.string "Our PRESIDENT's OFFICE is on\n"
 	.string "this floor.\p"
@@ -291,9 +292,9 @@ RustboroCity_DevonCorp_3F_Text_VisitCaptSternShipyard:
 	.string "you should go see CAPT. STERN.$"
 
 RustboroCity_DevonCorp_3F_Text_RepeatAndTimerHugelyPopular:
-	.string "DEVON's new products, the REPEAT BALL\n"
-	.string "and TIMER BALL, have become hugely\l"
-	.string "popular among TRAINERS.$"
+	.string "CAPSULE CORP.'s new products, the\n"
+	.string "REPEAT BALL and TIMER BALL, have\l"
+	.string "become hugely popular among TRAINERS.$"
 
 RustboroCity_DevonCorp_3F_Text_RareRocksDisplay:
 	.string "It's a collection of rare rocks and\n"

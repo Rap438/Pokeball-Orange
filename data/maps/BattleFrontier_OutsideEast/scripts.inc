@@ -287,7 +287,7 @@ BattleFrontier_OutsideEast_Text_PutTogetherUltimateTeam:
 	.string "We're storming the BATTLE ARENA!$"
 
 BattleFrontier_OutsideEast_Text_DidScottBringYouHere:
-	.string "Did SCOTT bring you here, too?\n"
+	.string "Did ANNOUNCER bring you here, too?\n"
 	.string "What is it with that guy?\p"
 	.string "It sounds like he really does know\n"
 	.string "how to spot talented TRAINERS, but…\p"
@@ -409,7 +409,7 @@ BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers:
 	.string "for tough TRAINERS.\p"
 	.string "Many people with special abilities\n"
 	.string "have been invited, it seems.\p"
-	.string "That man SCOTT…\p"
+	.string "That man ANNOUNCER…\p"
 	.string "He may have built this place to serve\n"
 	.string "a bigger objective…$"
 

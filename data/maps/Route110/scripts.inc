@@ -711,7 +711,7 @@ Route110_Movement_BirchExit4:
 	step_end
 
 Route110_Text_WeCantTalkAboutAquaActivities:
-	.string "TEAM AQUA's activities…\n"
+	.string "SAIYAN ARMY's activities…\n"
 	.string "We can't talk about them yet.$"
 
 Route110_Text_KickUpARuckus:
@@ -720,14 +720,15 @@ Route110_Text_KickUpARuckus:
 
 Route110_Text_MyFirstJobInAqua:
 	.string "This is my first job after joining\n"
-	.string "TEAM AQUA. It's a little scary.$"
+	.string "SAIYAN ARMY. It's a little scary.$"
 
 Route110_Text_AquaActionsBringSmiles:
-	.string "TEAM AQUA's actions should bring\n"
+	.string "SAIYAN ARMY's actions should bring\n"
 	.string "smiles to people's faces!$"
 
 Route110_Text_MayLetsBattle:
-	.string "MAY: Hi, {PLAYER}{KUN}, long time no see!\p"
+	.string "VEGETA: Hi, {PLAYER}{KUN}, long time\n"
+	.string "no see!\p"
 	.string "While I was searching for other\n"
 	.string "POKéMON, my POKéMON grew stronger.\p"
 	.string "So…\n"
@@ -738,13 +739,13 @@ Route110_Text_MayDefeated:
 	.string "You're better than I expected!$"
 
 Route110_Text_MayTakeThis:
-	.string "MAY: {PLAYER}{KUN}, you've been busy\n"
-	.string "training, too, haven't you?\p"
+	.string "VEGETA: {PLAYER}{KUN}, you've been\n"
+	.string "busy training, too, haven't you?\p"
 	.string "I think you deserve a reward!\n"
 	.string "This is from me!$"
 
 Route110_Text_MayExplainItemfinder:
-	.string "MAY: That's an ITEMFINDER.\p"
+	.string "VEGETA: That's an ITEMFINDER.\p"
 	.string "Try it out. If there is an item that's\n"
 	.string "not visible, it emits a sound.\p"
 	.string "Okay, {PLAYER}{KUN}, let's meet again!\p"
@@ -753,7 +754,7 @@ Route110_Text_MayExplainItemfinder:
 	.string "harder for the next time.$"
 
 Route110_Text_BrendanLetsBattle:
-	.string "BRENDAN: Hey, {PLAYER}.\n"
+	.string "VEGETA: Hey, {PLAYER}.\n"
 	.string "So this is where you were.\l"
 	.string "How's it going?\p"
 	.string "Have you been raising your POKéMON?\n"
@@ -764,13 +765,13 @@ Route110_Text_BrendanDefeated:
 	.string "You're pretty good.$"
 
 Route110_Text_BrendanTakeThis:
-	.string "BRENDAN: {PLAYER}, you've trained\n"
+	.string "VEGETA: {PLAYER}, you've trained\n"
 	.string "without me noticing…\p"
 	.string "Good enough!\n"
 	.string "Here, take this.$"
 
 Route110_Text_BrendanExplainItemfinder:
-	.string "BRENDAN: That's an ITEMFINDER.\p"
+	.string "VEGETA: That's an ITEMFINDER.\p"
 	.string "Use it to root around for items that\n"
 	.string "aren't visible.\p"
 	.string "If it senses something, it emits\n"
@@ -888,10 +889,10 @@ Route110_Text_CyclingRoadSign:
 	.string "SEASIDE CYCLING ROAD$"
 
 Route110_Text_AquaWasHere:
-	.string "“TEAM AQUA was here!”\p"
+	.string "“SAIYAN ARMY was here!”\p"
 	.string "Someone painted that onto this sign,\n"
 	.string "but then someone else painted over it.\p"
-	.string "“TEAM MAGMA rules!” is what it\n"
+	.string "“MAJIN ARMY rules!” is what it\n"
 	.string "says now.$"
 
 Route110_Text_Route103Sign:
@@ -932,7 +933,7 @@ Route110_Text_ThereIsNoRecord:
 	.string "challenge. There is no record…$"
 
 Route110_Text_ImagineSeeingYouHere:
-	.string "PROF. BIRCH: Oh, {PLAYER}{KUN}!\n"
+	.string "MASTER ROSHI: Oh, {PLAYER}{KUN}!\n"
 	.string "Imagine seeing you here!\p"
 	.string "And where might my {RIVAL} be?$"
 
@@ -949,11 +950,11 @@ Route110_Text_HeardYouInstallMatchCall:
 	.string "… … … … … …$"
 
 Route110_Text_RegisteredBirchInPokenav:
-	.string "Registered PROF. BIRCH\n"
+	.string "Registered MASTER ROSHI\n"
 	.string "in the POKéNAV.$"
 
 Route110_Text_KeepAnEyeOutForRival:
-	.string "PROF. BIRCH: {PLAYER}{KUN}…\p"
+	.string "MASTER ROSHI: {PLAYER}{KUN}…\p"
 	.string "Please keep an eye out for my {RIVAL}.\n"
 	.string "… … … … … …\p"
 	.string "Well, I had better get going.\n"

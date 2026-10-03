@@ -158,6 +158,23 @@ u16 DBZ_GetNextForm(void)
     return cur + 1;
 }
 
+// after a badge: returns a form that just became available and hasn't been hinted yet, else 0
+u16 DBZ_GetNewFormHint(void)
+{
+    u8 max = DBZ_GetMaxForm();
+    u16 seen = VarGet(VAR_DBZ_SEEN_FORMS);
+    u8 f;
+    for (f = DBZ_FORM_SSJ; f <= max; f++)
+    {
+        if (!(seen & (0x10 << f)))
+        {
+            VarSet(VAR_DBZ_SEEN_FORMS, seen | (0x10 << f));
+            return f;
+        }
+    }
+    return 0;
+}
+
 // returns the form number the first time it is reached (for the intro message), else 0
 u16 DBZ_ShouldShowFormIntro(void)
 {

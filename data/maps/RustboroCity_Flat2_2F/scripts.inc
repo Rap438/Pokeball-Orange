@@ -22,8 +22,8 @@ RustboroCity_Flat2_2F_EventScript_GavePremierBall::
 	end
 
 RustboroCity_Flat2_2F_Text_DevonWasTinyInOldDays:
-	.string "Way back in the old days, DEVON was just\n"
-	.string "a teeny, tiny company.$"
+	.string "Way back in the old days, CAPSULE CORP.\n"
+	.string "was just a teeny, tiny company.$"
 
 RustboroCity_Flat2_2F_Text_MyDaddyMadeThisYouCanHaveIt:
 	.string "My daddy's working at the CORPORATION.\p"

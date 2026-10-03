@@ -232,7 +232,7 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "ARCHIE: What happened…\n"
+	.string "BROLY: What happened…\n"
 	.string "What is this wretched scene…\p"
 	.string "Did I…make a horrible mistake?$"
 
@@ -241,7 +241,7 @@ Route128_Text_ArchieIOnlyWanted:
 	.string "I only wanted…$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "MAXIE: Do you understand now,\n"
+	.string "MAJIN BUU: Do you understand now,\n"
 	.string "ARCHIE?\p"
 	.string "Do you finally see how disastrous\n"
 	.string "your dream turned out to be?\p"
@@ -250,25 +250,25 @@ Route128_Text_MaxieDoYouUnderstandNow:
 	.string "completely out of control!$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "MAXIE: {PLAYER}, don't say anything.\p"
+	.string "MAJIN BUU: {PLAYER}, don't say anything.\p"
 	.string "I know that I have no right to be\n"
-	.string "critical of ARCHIE…\p"
+	.string "critical of BROLY…\p"
 	.string "But the way things are now, I doubt\n"
 	.string "that we humans will be capable of\l"
 	.string "doing anything about it.\p"
 	.string "But neither can we stand by and\n"
 	.string "just watch helplessly.\p"
 	.string "The responsibility for putting an end\n"
-	.string "to this falls to ARCHIE and me…$"
+	.string "to this falls to BROLY and me…$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "MAXIE: This defies belief…\p"
+	.string "MAJIN BUU: This defies belief…\p"
 	.string "Those super-ancient POKéMON…\p"
 	.string "Their power is unbelievable.\n"
 	.string "They've upset the balance of nature…$"
 
 Route128_Text_StevenWhatIsHappening:
-	.string "STEVEN: {PLAYER}{KUN}!\n"
+	.string "SUPREME KAI: {PLAYER}{KUN}!\n"
 	.string "What is happening?$"
 
 Route128_Text_StevenWholeWorldWillDrown:

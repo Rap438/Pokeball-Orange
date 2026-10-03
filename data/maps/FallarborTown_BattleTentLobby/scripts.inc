@@ -324,7 +324,7 @@ FallarborTown_BattleTentLobby_Text_CameToCampOut:
 	.string "my hand at battling!$"
 
 FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
-	.string "SCOTT: Hi, {PLAYER}{KUN}!\n"
+	.string "ANNOUNCER: Hi, {PLAYER}{KUN}!\n"
 	.string "So you came out to this BATTLE TENT!\p"
 	.string "The people in these parts tend to be\n"
 	.string "easygoing and laid-back.\p"
@@ -339,7 +339,7 @@ FallarborTown_BattleTentLobby_Text_ScottLookingForSomeone:
 	.string "Keep working at it!$"
 
 FallarborTown_BattleTentLobby_Text_ScottMakeChallenge:
-	.string "SCOTT: Instead of wasting your\n"
+	.string "ANNOUNCER: Instead of wasting your\n"
 	.string "time with the likes of me, why not\l"
 	.string "make a challenge?$"
 

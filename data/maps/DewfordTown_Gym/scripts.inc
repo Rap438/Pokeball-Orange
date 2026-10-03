@@ -286,7 +286,7 @@ DewfordTown_Gym_EventScript_GymStatue::
 DewfordTown_Gym_Text_GymGuideAdvice:
 	.string "Hey, how's it going, CHAMPION-\n"
 	.string "bound {PLAYER}?\p"
-	.string "DEWFORD's GYM LEADER BRAWLY commands\n"
+	.string "DEWFORD's GYM LEADER TIEN commands\n"
 	.string "FIGHTING-type POKéMON.\p"
 	.string "Going against him with NORMAL-type\n"
 	.string "POKéMON is asking for trouble.\p"
@@ -315,7 +315,7 @@ DewfordTown_Gym_Text_TakaoPostBattle:
 	.string "Your technique is commendable!$"
 
 DewfordTown_Gym_Text_JocelynIntro:
-	.string "There's no need for BRAWLY to be\n"
+	.string "There's no need for TIEN to be\n"
 	.string "involved!\p"
 	.string "I'll crush you!$"
 
@@ -342,7 +342,7 @@ DewfordTown_Gym_Text_LauraPostBattle:
 	.string "I battle in the dark to make my heart\n"
 	.string "stronger.\p"
 	.string "But because it's so dark, I can never\n"
-	.string "see BRAWLY's face…$"
+	.string "see TIEN's face…$"
 
 DewfordTown_Gym_Text_LilithIntro:
 	.string "Ufufu…\n"
@@ -381,7 +381,7 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "Go after that BADGE!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "I'm BRAWLY!\n"
+	.string "I'm TIEN!\n"
 	.string "DEWFORD's GYM LEADER!\p"
 	.string "I've been churned in the rough waves\n"
 	.string "of these parts, and I've grown tough\l"
@@ -398,7 +398,7 @@ DewfordTown_Gym_Text_BrawlyDefeat:
 
 DewfordTown_Gym_Text_ReceivedKnuckleBadge:
 	.string "{PLAYER} received the KNUCKLE BADGE\n"
-	.string "from BRAWLY.$"
+	.string "from TIEN.$"
 
 DewfordTown_Gym_Text_KnuckleBadgeInfoTakeThis:
 	.string "The KNUCKLE BADGE makes all POKéMON\n"
@@ -416,7 +416,7 @@ DewfordTown_Gym_Text_ExplainBulkUp:
 	.string "… … … … … …$"
 
 DewfordTown_Gym_Text_RegisteredBrawly:
-	.string "Registered GYM LEADER BRAWLY\n"
+	.string "Registered GYM LEADER TIEN\n"
 	.string "in the POKéNAV.$"
 
 DewfordTown_Gym_Text_BrawlyPostBattle:
@@ -433,7 +433,7 @@ DewfordTown_Gym_Text_GymStatueCertified:
 	.string "{PLAYER}$"
 
 DewfordTown_Gym_Text_BrawlyPreRematch:
-	.string "BRAWLY: A wave may draw back, but it\n"
+	.string "TIEN: A wave may draw back, but it\n"
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
 	.string "I knew you would return!\p"
@@ -445,12 +445,12 @@ DewfordTown_Gym_Text_BrawlyRematchDefeat:
 	.string "Swamped again!$"
 
 DewfordTown_Gym_Text_BrawlyPostRematch:
-	.string "BRAWLY: Battling is vast and it's deep.\n"
+	.string "TIEN: Battling is vast and it's deep.\n"
 	.string "You can't see the bottom.\l"
 	.string "It's just like the sea of HOENN!$"
 
 DewfordTown_Gym_Text_BrawlyRematchNeedTwoMons:
-	.string "BRAWLY: A wave may draw back, but it\n"
+	.string "TIEN: A wave may draw back, but it\n"
 	.string "always returns to the shore.\p"
 	.string "A giant wave of a talent like you…\n"
 	.string "I knew you would return!\p"

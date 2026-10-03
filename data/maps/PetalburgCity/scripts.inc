@@ -679,7 +679,7 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
+	.string "Where has our UUB gone?\p"
 	.string "We have to leave for VERDANTURF TOWN\n"
 	.string "very soon…$"
 
@@ -713,7 +713,7 @@ PetalburgCity_Text_FullPartyExplanation:
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
+	.string "LEADER: KRILLIN\l"
 	.string "“A man in pursuit of power!”$"
 
 PetalburgCity_Text_CitySign:
@@ -721,7 +721,7 @@ PetalburgCity_Text_CitySign:
 	.string "“Where people mingle with nature.”$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "WALLY'S HOUSE$"
+	.string "UUB'S HOUSE$"
 
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"

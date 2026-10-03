@@ -258,7 +258,7 @@ SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts:
 	.string "Yes? If you're looking for STERN,\n"
 	.string "that would be me.\p"
 	.string "Ah! Those must be the parts I ordered\n"
-	.string "from MR. STONE of DEVON.\p"
+	.string "from DR. BRIEF of CAPSULE CORP.\p"
 	.string "Thank you! That's great!\n"
 	.string "We can prepare for our expedition now.$"
 
@@ -271,7 +271,7 @@ SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
 	.string "Who are you people?$"
 
 SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
-	.string "We're TEAM AQUA!\p"
+	.string "We're SAIYAN ARMY!\p"
 	.string "Our BOSS wants those parts!\n"
 	.string "Shut your yap and fork them over!$"
 
@@ -303,20 +303,20 @@ SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 	.string "simps are held up by a mere child?$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
-	.string "We are TEAM AQUA,\n"
+	.string "We are SAIYAN ARMY,\n"
 	.string "and we love the sea!\p"
-	.string "And I am TEAM AQUA's leader,\n"
+	.string "And I am SAIYAN ARMY's leader,\n"
 	.string "ARCHIE!\p"
 	.string "What makes you interfere with us?\p"
 	.string "…No! You can't be!\n"
-	.string "You're not one of TEAM MAGMA?\p"
+	.string "You're not one of MAJIN ARMY?\p"
 	.string "Wait, that can't be right.\n"
 	.string "You're not dressed for the part.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
 	.string "POKéMON, people… All life depends on\n"
 	.string "the sea.\p"
-	.string "So, TEAM AQUA is dedicated to\n"
+	.string "So, SAIYAN ARMY is dedicated to\n"
 	.string "the expansion of the sea.\p"
 	.string "Don't you agree? What we are doing\n"
 	.string "is a magnificent undertaking.\p"
@@ -334,8 +334,8 @@ SlateportCity_OceanicMuseum_2F_Text_SternThankYouForSavingUs:
 	.string "Ah, okay, you're {PLAYER}{KUN}…\p"
 	.string "Anyway, that was a tense situation!\n"
 	.string "Thank you for saving us!\p"
-	.string "Oh, yes, I almost forgot that you\n"
-	.string "even brought the parts from DEVON!$"
+	.string "Oh, yes, I almost forgot that you even\n"
+	.string "brought the parts from CAPSULE CORP.!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
 	.string "CAPT. STERN: Whoops!\n"

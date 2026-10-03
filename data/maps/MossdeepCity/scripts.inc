@@ -302,7 +302,7 @@ MossdeepCity_Movement_ScottExitEast:
 	step_end
 
 MossdeepCity_Text_WantKingsRockStevenGaveMe:
-	.string "I got this from STEVEN, but I don't\n"
+	.string "I got this from SUPREME KAI, but I don't\n"
 	.string "know what it's good for.\p"
 	.string "I think it's called KING'S ROCK.\n"
 	.string "Do you want it?$"
@@ -311,10 +311,11 @@ MossdeepCity_Text_YouCanKeepIt:
 	.string "Why would you want it?\n"
 	.string "You're weird.\p"
 	.string "You can keep it, but keep it a secret\n"
-	.string "from STEVEN.$"
+	.string "from SUPREME KAI.$"
 
 MossdeepCity_Text_StevensHouseOverThere:
-	.string "STEVEN's house is right over there!$"
+	.string "SUPREME KAI's house is right over\n"
+	.string "there!$"
 
 MossdeepCity_Text_WhatToDoWithWeirdRock:
 	.string "Yeah, you think so, too! What are you\n"
@@ -340,11 +341,11 @@ MossdeepCity_Text_SpaceCenterLaunchingRockets:
 
 MossdeepCity_Text_MossdeepTargetedByMagma:
 	.string "I heard from a SAILOR buddy that\n"
-	.string "TEAM AQUA set up shop in LILYCOVE.\p"
+	.string "SAIYAN ARMY set up shop in LILYCOVE.\p"
 	.string "I also heard that someone came along\n"
 	.string "and wiped the floor with them!\p"
 	.string "But MOSSDEEP here's been targeted\n"
-	.string "by that TEAM MAGMA.\p"
+	.string "by that MAJIN ARMY.\p"
 	.string "If you want to know what they're up to,\n"
 	.string "go visit the SPACE CENTER.$"
 
@@ -390,7 +391,7 @@ MossdeepCity_Text_ItsAWhiteRock:
 
 MossdeepCity_Text_GymSign:
 	.string "MOSSDEEP CITY POKéMON GYM\n"
-	.string "LEADERS: LIZA & TATE\p"
+	.string "LEADERS: TRUNKS & GOTEN\p"
 	.string "“The mystic combination!”$"
 
 MossdeepCity_Text_CitySign:
@@ -402,8 +403,8 @@ MossdeepCity_Text_SpaceCenterSign:
 	.string "“The closest place to space.”$"
 
 MossdeepCity_Text_ScottSomethingWrongWithTown:
-	.string "SCOTT: {PLAYER}{KUN}, feeling good?\n"
-	.string "I'm doing great!\p"
+	.string "ANNOUNCER: {PLAYER}{KUN}, feeling\n"
+	.string "good? I'm doing great!\p"
 	.string "I'd heard MOSSDEEP's GYM LEADER is\n"
 	.string "pretty strong, so I decided to come\l"
 	.string "take a look-see for myself.\p"
@@ -422,5 +423,5 @@ MossdeepCity_Text_SootopolisNewGymLeader:
 	.string "I think the GYM there had a new\n"
 	.string "LEADER come in.\p"
 	.string "People tell me the new LEADER once\n"
-	.string "mentored WALLACE.$"
+	.string "mentored MR. SATAN.$"
 

@@ -50,6 +50,6 @@ FortreeCity_PokemonCenter_1F_Text_DoYouKnowAboutPokenav:
 	.string "registered TRAINERS anytime.\p"
 	.string "It also shows you which TRAINERS\n"
 	.string "want a rematch with you.\p"
-	.string "It's really nifty! Those DEVON guys\n"
-	.string "sure know what they're doing!$"
+	.string "It's really nifty! Those CAPSULE CORP.\n"
+	.string "guys sure know what they're doing!$"
 

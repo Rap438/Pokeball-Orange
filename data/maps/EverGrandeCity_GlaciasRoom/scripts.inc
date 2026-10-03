@@ -59,7 +59,7 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is GLACIA\n"
+	.string "Welcome, my name is ANDROID 18\n"
 	.string "of the ELITE FOUR.\p"
 	.string "I've traveled from afar to HOENN\n"
 	.string "so that I may hone my ice skills.\p"

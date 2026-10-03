@@ -69,9 +69,9 @@ Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
 	.string "That's so nice… It's so dreamy…\p"
 	.string "What are you going to do with that\n"
 	.string "FOSSIL?\p"
-	.string "From what I've heard, DEVON is doing\n"
-	.string "research on reviving POKéMON from\l"
-	.string "FOSSILS…\p"
+	.string "From what I've heard, CAPSULE CORP. is\n"
+	.string "doing research on reviving POKéMON\l"
+	.string "from FOSSILS…\p"
 	.string "I love my FOSSILS, so I would never\n"
 	.string "do anything like that…$"
 

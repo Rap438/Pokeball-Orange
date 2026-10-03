@@ -44,12 +44,12 @@ SootopolisCity_PokemonCenter_1F_EventScript_WomanNoLegendaries::
 	end
 
 SootopolisCity_PokemonCenter_1F_Text_WallaceToughestInHoenn:
-	.string "WALLACE is rumored to be the toughest\n"
+	.string "MR. SATAN is rumored to be the toughest\n"
 	.string "TRAINER in the whole HOENN region.\p"
 	.string "This town's GYM is led by the TRAINER\n"
-	.string "who taught WALLACE.\p"
+	.string "who taught MR. SATAN.\p"
 	.string "But the ELITE FOUR… They're said to be\n"
-	.string "even stronger than WALLACE's mentor.\p"
+	.string "even stronger than MR. SATAN's mentor.\p"
 	.string "How strong could they be?$"
 
 SootopolisCity_PokemonCenter_1F_Text_EveryoneTakenRefuge:

@@ -566,3 +566,4 @@ gSpecials::
 	def_special DBZ_QueueGymFight
 	def_special DBZ_ShowGokuStatus
 	def_special DBZ_Debug_SetGokuLevel
+	def_special DBZ_GetNewFormHint

@@ -79,7 +79,7 @@ RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay::
 	end
 
 RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
-	.string "Hello and welcome to the DEVON\n"
+	.string "Hello and welcome to the CAPSULE CORP.\n"
 	.string "CORPORATION.\p"
 	.string "We're proud producers of items and\n"
 	.string "medicine that enhance your life.$"
@@ -122,14 +122,15 @@ RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay:
 	.string "displayed in the glass case.\p"
 	.string "There's a panel with some writing\n"
 	.string "on it…\p"
-	.string "“DEVON CORPORATION got its start as\n"
+	.string "“CAPSULE CORP. got its start as\n"
 	.string "a producer of stones from quarries.\p"
 	.string "“The company also produced iron from\n"
 	.string "filings in the sand.\p"
 	.string "“From that humble start as a producer\n"
-	.string "of raw materials, DEVON developed.\p"
-	.string "“DEVON is now a manufacturer of a wide\n"
-	.string "range of industrial products.”$"
+	.string "of raw materials, CAPSULE CORP.\l"
+	.string "developed.\p"
+	.string "“CAPSULE CORP. is now a manufacturer\n"
+	.string "of a wide range of industrial products.”$"
 
 RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "Prototypes and test products fill\n"
@@ -138,7 +139,8 @@ RustboroCity_DevonCorp_1F_Text_ProductDisplay:
 	.string "“In addition to industrial products,\n"
 	.string "DEVON now markets sundries and\l"
 	.string "pharmaceuticals for better lifestyles.\p"
-	.string "“Recently, DEVON has begun marketing\n"
-	.string "tools for POKéMON TRAINERS, including\l"
-	.string "POKé BALLS and POKéNAV systems.”$"
+	.string "“Recently, CAPSULE CORP. has begun\n"
+	.string "marketing tools for POKéMON TRAINERS,\l"
+	.string "including POKé BALLS and POKéNAV\l"
+	.string "systems.”$"
 

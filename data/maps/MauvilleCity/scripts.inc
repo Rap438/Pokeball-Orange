@@ -448,25 +448,25 @@ MauvilleCity_Text_UncleHesTooPeppy:
 	.string "But he's become a bit too peppy…$"
 
 MauvilleCity_Text_WallyWantToChallengeGym:
-	.string "WALLY: Aww, UNCLE, please?\p"
+	.string "UUB: Aww, UNCLE, please?\p"
 	.string "I want to challenge this GYM and see\n"
 	.string "how much better I've become.\p"
 	.string "Please? May I, please?$"
 
 MauvilleCity_Text_UncleYourePushingIt:
-	.string "UNCLE: Now hold on, WALLY.\p"
+	.string "UNCLE: Now hold on, UUB.\p"
 	.string "Since you started living with POKéMON,\n"
 	.string "you have grown quite a lot stronger.\p"
 	.string "But don't you think you're pushing it\n"
 	.string "to suddenly challenge a GYM?$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone:
-	.string "WALLY: I'm not pushing it.\p"
+	.string "UUB: I'm not pushing it.\p"
 	.string "If I combine forces with RALTS,\n"
 	.string "we can beat anyone!$"
 
 MauvilleCity_Text_WallyWillYouBattleMe:
-	.string "WALLY: Oh! Hi, {PLAYER}!\p"
+	.string "UUB: Oh! Hi, {PLAYER}!\p"
 	.string "I've gotten a lot stronger since\n"
 	.string "we met.\p"
 	.string "{PLAYER}, I want you and my UNCLE to\n"
@@ -475,32 +475,32 @@ MauvilleCity_Text_WallyWillYouBattleMe:
 	.string "a battle with me?$"
 
 MauvilleCity_Text_WallyMyUncleWontKnowImStrong:
-	.string "WALLY: Oh… If you won't battle me,\n"
+	.string "UUB: Oh… If you won't battle me,\n"
 	.string "{PLAYER}, my UNCLE won't know that I've\l"
 	.string "become really strong.$"
 
 MauvilleCity_Text_UncleCanYouBattleWally:
 	.string "UNCLE: {PLAYER}{KUN}, was it?\n"
-	.string "On WALLY's behalf, can I ask you to\l"
+	.string "On UUB's behalf, can I ask you to\l"
 	.string "battle with him just this once?\p"
 	.string "I don't think he's going to listen to\n"
 	.string "any reason the way he is now.$"
 
 MauvilleCity_Text_WallyPleaseBattleMe:
-	.string "WALLY: {PLAYER}, please!\n"
+	.string "UUB: {PLAYER}, please!\n"
 	.string "Battle with me, please.$"
 
 MauvilleCity_Text_WallyHereICome:
-	.string "WALLY: {PLAYER}, thank you.\p"
+	.string "UUB: {PLAYER}, thank you.\p"
 	.string "Okay… Here I come!$"
 
 MauvilleCity_Text_WallyDefeat:
-	.string "WALLY: … … … … … … …\p"
+	.string "UUB: … … … … … … …\p"
 	.string "… … … … … … … …\p"
 	.string "I lost…$"
 
 MauvilleCity_Text_WallyIllGoBackToVerdanturf:
-	.string "WALLY: UNCLE…\n"
+	.string "UUB: UNCLE…\n"
 	.string "I'll go back to VERDANTURF…$"
 
 MauvilleCity_Text_ThankYouNotEnoughToBattle:
@@ -511,7 +511,7 @@ MauvilleCity_Text_ThankYouNotEnoughToBattle:
 	.string "being a real TRAINER is about.$"
 
 MauvilleCity_Text_UncleNoNeedToBeDown:
-	.string "UNCLE: WALLY, there's no need to be so\n"
+	.string "UNCLE: UUB, there's no need to be so\n"
 	.string "down on yourself.\p"
 	.string "Why, what's keeping you from becoming\n"
 	.string "stronger and stronger?\p"
@@ -519,13 +519,13 @@ MauvilleCity_Text_UncleNoNeedToBeDown:
 	.string "Everyone's waiting for you.$"
 
 MauvilleCity_Text_UncleVisitUsSometime:
-	.string "UNCLE: {PLAYER}{KUN}, it just dawned on me\n"
-	.string "that you must be the TRAINER who kept\l"
-	.string "an eye out for WALLY when he caught\l"
+	.string "UNCLE: {PLAYER}{KUN}, it just dawned\n"
+	.string "on me that you must be the TRAINER who\l"
+	.string "kept an eye out for UUB when he caught\l"
 	.string "his POKéMON.\p"
 	.string "Why don't you visit us in VERDANTURF\n"
 	.string "sometime?\l"
-	.string "I'm sure WALLY would enjoy it.$"
+	.string "I'm sure UUB would enjoy it.$"
 
 
 MauvilleCity_Text_WallyPokenavCall:
@@ -540,13 +540,13 @@ MauvilleCity_Text_WallyPokenavCall:
 	.string "… … … … … Click!$"
 
 MauvilleCity_Text_RegisteredWally:
-	.string "Registered WALLY\n"
+	.string "Registered UUB\n"
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Text_ScottYouDidntHoldBack:
-	.string "SCOTT: Hehe…\n"
+	.string "ANNOUNCER: Hehe…\n"
 	.string "I was watching that match!\p"
-	.string "You're friends with that boy WALLY,\n"
+	.string "You're friends with that boy UUB,\n"
 	.string "aren't you?\p"
 	.string "But you didn't hold anything back\n"
 	.string "and beat him impressively.\p"
@@ -557,22 +557,22 @@ MauvilleCity_Text_ScottYouDidntHoldBack:
 	.string "I'll be cheering for you!$"
 
 MauvilleCity_Text_WattsonNeedFavorTakeKey:
-	.string "WATTSON: Oh, {PLAYER}{KUN}!\n"
+	.string "BULMA: Oh, {PLAYER}{KUN}!\n"
 	.string "You look like you have a lot of zip!\l"
 	.string "That's a good thing, wahahahaha!\p"
 	.string "Fine! I've decided!\n"
 	.string "I need a favor, {PLAYER}{KUN}!\p"
 	.string "MAUVILLE CITY has an underground\n"
 	.string "sector called NEW MAUVILLE.\p"
-	.string "{PLAYER}{KUN}, I'd like you to go there and\n"
-	.string "switch off the GENERATOR.\p"
+	.string "{PLAYER}{KUN}, I'd like you to go\n"
+	.string "there and switch off the GENERATOR.\p"
 	.string "The GENERATOR has been running a bit\n"
 	.string "haywire. It's getting unsafe.\p"
 	.string "Here, this is the KEY to get into\n"
 	.string "NEW MAUVILLE.$"
 
 MauvilleCity_Text_WattsonWontBeChallenge:
-	.string "WATTSON: Don't you worry about it.\n"
+	.string "BULMA: Don't you worry about it.\n"
 	.string "It won't be a challenge to you.\p"
 	.string "The entrance to NEW MAUVILLE is just\n"
 	.string "a short SURF away from ROUTE 110.\p"
@@ -580,15 +580,15 @@ MauvilleCity_Text_WattsonWontBeChallenge:
 	.string "Wahahahaha!$"
 
 MauvilleCity_Text_WattsonThanksTakeTM:
-	.string "WATTSON: Wahahahaha!\p"
-	.string "I knew it, {PLAYER}{KUN}! I knew I'd made\n"
-	.string "the right choice asking you!\p"
+	.string "BULMA: Wahahahaha!\p"
+	.string "I knew it, {PLAYER}{KUN}! I knew I'd\n"
+	.string "made the right choice asking you!\p"
 	.string "This is my thanks--a TM containing\n"
 	.string "THUNDERBOLT!\p"
 	.string "Go on, you've earned it!$"
 
 MauvilleCity_Text_WattsonYoungTakeCharge:
-	.string "WATTSON: Wahahahaha!\p"
+	.string "BULMA: Wahahahaha!\p"
 	.string "It pleases me to no end to see\n"
 	.string "the young step up and take charge!$"
 
@@ -619,7 +619,7 @@ MauvilleCity_Text_CitySign:
 
 MauvilleCity_Text_GymSign:
 	.string "MAUVILLE CITY POKéMON GYM\n"
-	.string "LEADER: WATTSON\l"
+	.string "LEADER: BULMA\l"
 	.string "“The cheerfully electrifying man!”$"
 
 MauvilleCity_Text_BikeShopSign:
