@@ -22,9 +22,17 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on the [pret/pokeemeral
 - **DBZ item names.** Senzu Bean, Korin Water, Kaio-Ken, Scouter, Capsule Bike and others. Every item keeps its original effect.
 - **Restyled overworld.** Buu's Fury–inspired colors with textured grass and dirt. The map layouts are unchanged.
 - **Custom title screen.**
+- **Overworld DBZ fights** happen in real time on the map. Controls: A punches, tapping L fires a ki blast, holding L fires a Kamehameha, R powers up and B dashes.
+  - Saiyan and Majin soldiers ambush Goku on routes and in cities. A KI HIDER keeps them away.
+  - Trainers you've already beaten can be challenged hand to hand.
+  - Every gym leader fights Goku after handing over the badge.
+- **Goku levels up** the way he does in Buu's Fury.
+  - Overworld fights give Goku most of the EXP and give the team a share.
+  - Pokémon battles give the team the full EXP and give Goku a share.
+  - Super Saiyan forms multiply Goku's power.
 - Turn-based Pokémon battles are unchanged.
 
-Work in progress: overworld DBZ fights with Goku's own level and EXP, the story text pass, location-based battle backgrounds, and the trainer power-up on their last Pokémon.
+Work in progress: an overworld pass for shading, shadows and day/night, mixed DBZ pedestrians, the story text pass, location-based battle backgrounds, and the trainer power-up on their last Pokémon.
 
 ## Building
 

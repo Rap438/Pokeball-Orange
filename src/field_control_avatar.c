@@ -157,6 +157,11 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
     GetPlayerPosition(&position);
     metatileBehavior = MapGridGetMetatileBehaviorAt(position.x, position.y);
 
+    if (DBZ_IsFighting())
+        return DBZ_HandleFightInput(input);
+    if (DBZ_TryStartPendingFieldEvent())
+        return TRUE;
+
     if (CheckForTrainersWantingBattle() == TRUE)
         return TRUE;
 
@@ -567,6 +572,8 @@ static bool8 TryStartStepCountScript(u16 metatileBehavior)
             ScriptContext_SetupScript(EventScript_FieldPoison);
             return TRUE;
         }
+        if (DBZ_TryAmbush())
+            return TRUE;
         if (ShouldEggHatch())
         {
             IncrementGameStat(GAME_STAT_HATCHED_EGGS);

@@ -1448,12 +1448,13 @@ static void DoCB1_Overworld(u16 newKeys, u16 heldKeys)
     FieldGetPlayerInput(&inputStruct, newKeys, heldKeys);
     if (!ArePlayerFieldControlsLocked())
     {
-        if (ProcessPlayerFieldInput(&inputStruct) == 1)
+        int result = ProcessPlayerFieldInput(&inputStruct);
+        if (result == 1)
         {
             LockPlayerFieldControls();
             HideMapNamePopUpWindow();
         }
-        else if (DBZ_IsChargingBlast())
+        else if (result == 2 || DBZ_IsChargingBlast())   // 2: input used by a DBZ fight action
         {
             PlayerStep(DIR_NONE, 0, 0);
         }

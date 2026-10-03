@@ -555,3 +555,14 @@ gSpecials::
 	def_special DBZ_GrantWish
 	def_special DBZ_Debug_WarpToDragonBall
 	def_special DBZ_Debug_GiveSixBalls
+	def_special DBZ_StartFight
+	def_special DBZ_PrepareAmbush
+	def_special DBZ_CanFightTrainer
+	def_special DBZ_SetupTrainerFight
+	def_special DBZ_FightAwardExp
+	def_special DBZ_NextFightReport
+	def_special DBZ_TryEvolveAfterFight
+	def_special DBZ_StartFightEvolution
+	def_special DBZ_QueueGymFight
+	def_special DBZ_ShowGokuStatus
+	def_special DBZ_Debug_SetGokuLevel

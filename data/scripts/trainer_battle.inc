@@ -17,6 +17,7 @@ EventScript_TryDoNormalTrainerBattle::
 	goto EventScript_ShowTrainerIntroMsg
 
 EventScript_NoNormalTrainerBattle::
+	call EventScript_DBZ_OfferTrainerFight
 	gotopostbattlescript
 
 EventScript_TryDoDoubleTrainerBattle::
@@ -39,6 +40,7 @@ EventScript_NotEnoughMonsForDoubleBattle::
 	end
 
 EventScript_NoDoubleTrainerBattle::
+	call EventScript_DBZ_OfferTrainerFight
 	gotopostbattlescript
 
 EventScript_DoNoIntroTrainerBattle::

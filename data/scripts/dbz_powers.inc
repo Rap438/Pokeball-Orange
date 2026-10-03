@@ -137,6 +137,8 @@ Text_DBZ_BoulderSSJ3:
 
 EventScript_DBZ_Debug::
 	lockall
+	msgbox Text_DBZ_DebugFight, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Fight
 	msgbox Text_DBZ_Debug, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Badges
 	msgbox Text_DBZ_DebugWarp116, MSGBOX_YESNO
@@ -188,6 +190,8 @@ EventScript_DBZ_Debug_Badges::
 	setflag FLAG_SYS_POKEDEX_GET
 	givemon SPECIES_MUDKIP, 50
 	givemon SPECIES_SWELLOW, 50
+	setvar VAR_0x8004, 40
+	special DBZ_Debug_SetGokuLevel
 	closemessage
 	msgbox Text_DBZ_DebugDone, MSGBOX_DEFAULT
 	releaseall
@@ -210,3 +214,13 @@ Text_DBZ_DebugBalls:
 
 Text_DBZ_DebugWarpBall:
 	.string "DEBUG: warp to a DRAGON BALL?$"
+
+EventScript_DBZ_Debug_Fight::
+	setvar VAR_0x8004, 25
+	special DBZ_Debug_SetGokuLevel
+	closemessage
+	releaseall
+	goto EventScript_DBZ_Ambush
+
+Text_DBZ_DebugFight:
+	.string "DEBUG: fight a soldier now?$"

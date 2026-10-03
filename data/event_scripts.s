@@ -1024,6 +1024,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/scripts/field_move_scripts.inc"
 	.include "data/scripts/dbz_powers.inc"
 	.include "data/scripts/dbz_dragonballs.inc"
+	.include "data/scripts/dbz_fight.inc"
 	.include "data/scripts/item_ball_scripts.inc"
 	.include "data/scripts/profile_man.inc"
 	.include "data/scripts/day_care.inc"

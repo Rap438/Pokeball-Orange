@@ -101,6 +101,7 @@ static const struct SpriteTemplate sSpriteTemplate_Aura = {
 static EWRAM_DATA u8 sChargeFrames = 0;
 static EWRAM_DATA u8 sGlowSpriteId = MAX_SPRITES;
 static EWRAM_DATA u8 sHandlerTick = 0;
+static EWRAM_DATA bool8 sFightBlast = FALSE;   // blast fired during an overworld fight (no script)
 
 // ------------------------------------------------------------------ forms
 u8 DBZ_GetForm(void)
@@ -282,6 +283,53 @@ bool8 DBZ_IsChargingBlast(void)
     return sChargeFrames != 0;
 }
 
+bool8 DBZ_IsFightBlastActive(void)
+{
+    return sFightBlast;
+}
+
+// ------------------------------------------------------------------ fx helpers for the fight engine
+static void SpriteCB_Impact(struct Sprite *sprite)
+{
+    SetFxFrame(sprite, FX_IMPACT_0 + (sprite->data[0] / 3) % 2);
+    if (++sprite->data[0] > 12)
+    {
+        DestroySprite(sprite);
+        FreeFxGraphicsIfUnused();
+    }
+}
+
+void DBZ_SpawnImpactAt(s16 x, s16 y)
+{
+    u8 id;
+    LoadFxGraphics();
+    id = CreateFxSprite(&sSpriteTemplate_Fx, x, y, 0);
+    if (id != MAX_SPRITES)
+    {
+        gSprites[id].data[0] = 0;
+        gSprites[id].callback = SpriteCB_Impact;
+        SetFxFrame(&gSprites[id], FX_IMPACT_0);
+    }
+}
+
+u8 DBZ_CreateKiSprite(s16 x, s16 y)
+{
+    LoadFxGraphics();
+    return CreateFxSprite(&sSpriteTemplate_Fx, x, y, 0);
+}
+
+void DBZ_AnimateKiSprite(u8 spriteId, u8 t)
+{
+    SetFxFrame(&gSprites[spriteId], (t / 2) % 2 ? FX_KI_1 : FX_KI_0);
+}
+
+void DBZ_DestroyFxSprite(u8 spriteId)
+{
+    if (spriteId < MAX_SPRITES && gSprites[spriteId].inUse)
+        DestroySprite(&gSprites[spriteId]);
+    FreeFxGraphicsIfUnused();
+}
+
 // input_field_1_0 = R pressed, input_field_1_1 = L pressed, input_field_1_2 = L held
 bool8 DBZ_HandleFieldInput(struct FieldInput *input)
 {
@@ -334,6 +382,12 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
     // released
     gSpecialVar_0x8004 = (sChargeFrames >= KAME_CHARGE_FRAMES) ? 1 : 0;
     DBZ_ResetFieldInputState();
+    if (DBZ_IsFighting())
+    {
+        sFightBlast = TRUE;
+        DBZ_FireBlast();
+        return TRUE;
+    }
     ScriptContext_SetupScript(EventScript_DBZ_Fire);
     return TRUE;
 }
@@ -475,6 +529,13 @@ static void BlastFinish(u8 taskId)
         if (data[tSegs + i] != MAX_SPRITES)
             DestroySprite(&gSprites[data[tSegs + i]]);
     FreeFxGraphicsIfUnused();
+    if (sFightBlast)
+    {
+        sFightBlast = FALSE;
+        DBZ_FightOnBlast(tHitType, tHitLocal, tKame);
+        DestroyTask(taskId);
+        return;
+    }
     gSpecialVar_Result = tHitType;
     gSpecialVar_LastTalked = tHitLocal;
     DestroyTask(taskId);
