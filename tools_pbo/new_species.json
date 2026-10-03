@@ -1,0 +1,8201 @@
+{
+ "UXIE": {
+  "baseHP": 75,
+  "baseAttack": 75,
+  "baseDefense": 130,
+  "baseSpeed": 95,
+  "baseSpAttack": 75,
+  "baseSpDefense": 130,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 80,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 2,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 1,
+  "types": [
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "140",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_LEVITATE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_YELLOW",
+  "name": "Uxie",
+  "learnset": "sUxieLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   56,
+   56
+  ],
+  "backSize": [
+   56,
+   48
+  ],
+  "frontY": 6,
+  "backY": 8,
+  "iconPal": 0,
+  "elevation": 6,
+  "gfx": "Uxie",
+  "frontAnimId": "ANIM_SWING_CONCAVE",
+  "moves": [
+   [
+    1,
+    "MOVE_REST"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    6,
+    "MOVE_IMPRISON"
+   ],
+   [
+    16,
+    "MOVE_ENDURE"
+   ],
+   [
+    21,
+    "MOVE_SWIFT"
+   ],
+   [
+    31,
+    "MOVE_YAWN"
+   ],
+   [
+    36,
+    "MOVE_FUTURE_SIGHT"
+   ],
+   [
+    46,
+    "MOVE_AMNESIA"
+   ],
+   [
+    51,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    61,
+    "MOVE_FLAIL"
+   ],
+   [
+    66,
+    "MOVE_NATURAL_GIFT"
+   ],
+   [
+    76,
+    "MOVE_MEMENTO"
+   ]
+  ]
+ },
+ "MESPRIT": {
+  "baseHP": 80,
+  "baseAttack": 105,
+  "baseDefense": 105,
+  "baseSpeed": 80,
+  "baseSpAttack": 105,
+  "baseSpDefense": 105,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 80,
+  "evYield_HP": 0,
+  "evYield_Attack": 1,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 1,
+  "evYield_SpDefense": 1,
+  "types": [
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "140",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_LEVITATE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_PINK",
+  "name": "Mesprit",
+  "learnset": "sMespritLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   48,
+   56
+  ],
+  "backSize": [
+   64,
+   48
+  ],
+  "frontY": 4,
+  "backY": 8,
+  "iconPal": 0,
+  "elevation": 6,
+  "gfx": "Mesprit",
+  "frontAnimId": "ANIM_H_SLIDE_WOBBLE",
+  "moves": [
+   [
+    1,
+    "MOVE_REST"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    6,
+    "MOVE_IMPRISON"
+   ],
+   [
+    16,
+    "MOVE_PROTECT"
+   ],
+   [
+    21,
+    "MOVE_SWIFT"
+   ],
+   [
+    31,
+    "MOVE_LUCKY_CHANT"
+   ],
+   [
+    36,
+    "MOVE_FUTURE_SIGHT"
+   ],
+   [
+    46,
+    "MOVE_CHARM"
+   ],
+   [
+    51,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    61,
+    "MOVE_COPYCAT"
+   ],
+   [
+    66,
+    "MOVE_NATURAL_GIFT"
+   ],
+   [
+    76,
+    "MOVE_HEALING_WISH"
+   ]
+  ]
+ },
+ "AZELF": {
+  "baseHP": 75,
+  "baseAttack": 125,
+  "baseDefense": 70,
+  "baseSpeed": 115,
+  "baseSpAttack": 125,
+  "baseSpDefense": 70,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 80,
+  "evYield_HP": 0,
+  "evYield_Attack": 2,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 1,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "140",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_LEVITATE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Azelf",
+  "learnset": "sAzelfLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   48,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 0,
+  "backY": 6,
+  "iconPal": 0,
+  "elevation": 6,
+  "gfx": "Azelf",
+  "frontAnimId": "ANIM_V_SLIDE_WOBBLE",
+  "moves": [
+   [
+    1,
+    "MOVE_REST"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    6,
+    "MOVE_IMPRISON"
+   ],
+   [
+    16,
+    "MOVE_DETECT"
+   ],
+   [
+    21,
+    "MOVE_SWIFT"
+   ],
+   [
+    31,
+    "MOVE_UPROAR"
+   ],
+   [
+    36,
+    "MOVE_FUTURE_SIGHT"
+   ],
+   [
+    46,
+    "MOVE_NASTY_PLOT"
+   ],
+   [
+    51,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    61,
+    "MOVE_LAST_RESORT"
+   ],
+   [
+    66,
+    "MOVE_NATURAL_GIFT"
+   ],
+   [
+    76,
+    "MOVE_EXPLOSION"
+   ]
+  ]
+ },
+ "DIALGA": {
+  "baseHP": 100,
+  "baseAttack": 120,
+  "baseDefense": 120,
+  "baseSpeed": 90,
+  "baseSpAttack": 150,
+  "baseSpDefense": 100,
+  "catchRate": 3,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_STEEL",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRESSURE",
+   "ABILITY_NONE",
+   "ABILITY_TELEPATHY"
+  ],
+  "bodyColor": "BODY_COLOR_WHITE",
+  "name": "Dialga",
+  "learnset": "sDialgaLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 0,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "Dialga",
+  "frontAnimId": "ANIM_H_SHAKE",
+  "moves": [
+   [
+    1,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    1,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    6,
+    "MOVE_METAL_CLAW"
+   ],
+   [
+    10,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    15,
+    "MOVE_SLASH"
+   ],
+   [
+    19,
+    "MOVE_POWER_GEM"
+   ],
+   [
+    24,
+    "MOVE_METAL_BURST"
+   ],
+   [
+    28,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    33,
+    "MOVE_EARTH_POWER"
+   ],
+   [
+    37,
+    "MOVE_AURA_SPHERE"
+   ],
+   [
+    42,
+    "MOVE_IRON_TAIL"
+   ],
+   [
+    46,
+    "MOVE_ROAR_OF_TIME"
+   ],
+   [
+    50,
+    "MOVE_FLASH_CANNON"
+   ]
+  ]
+ },
+ "PALKIA": {
+  "baseHP": 90,
+  "baseAttack": 120,
+  "baseDefense": 100,
+  "baseSpeed": 100,
+  "baseSpAttack": 150,
+  "baseSpDefense": 120,
+  "catchRate": 3,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_WATER",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRESSURE",
+   "ABILITY_NONE",
+   "ABILITY_TELEPATHY"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Palkia",
+  "learnset": "sPalkiaLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 6,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "Palkia",
+  "frontAnimId": "ANIM_V_SHAKE",
+  "moves": [
+   [
+    1,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    1,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    6,
+    "MOVE_WATER_PULSE"
+   ],
+   [
+    10,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    15,
+    "MOVE_SLASH"
+   ],
+   [
+    19,
+    "MOVE_POWER_GEM"
+   ],
+   [
+    28,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    33,
+    "MOVE_AQUA_TAIL"
+   ],
+   [
+    33,
+    "MOVE_EARTH_POWER"
+   ],
+   [
+    37,
+    "MOVE_AURA_SPHERE"
+   ],
+   [
+    46,
+    "MOVE_SPACIAL_REND"
+   ],
+   [
+    50,
+    "MOVE_HYDRO_PUMP"
+   ]
+  ]
+ },
+ "HEATRAN": {
+  "baseHP": 91,
+  "baseAttack": 90,
+  "baseDefense": 106,
+  "baseSpeed": 77,
+  "baseSpAttack": 130,
+  "baseSpDefense": 106,
+  "catchRate": 3,
+  "expYield": 300,
+  "eggCycles": 10,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FIRE",
+   "TYPE_STEEL"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "100",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_FLASH_FIRE",
+   "ABILITY_NONE",
+   "ABILITY_FLAME_BODY"
+  ],
+  "bodyColor": "BODY_COLOR_BROWN",
+  "name": "Heatran",
+  "learnset": "sHeatranLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   56
+  ],
+  "backSize": [
+   64,
+   40
+  ],
+  "frontY": 5,
+  "backY": 13,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Heatran",
+  "frontAnimId": "ANIM_GLOW_ORANGE",
+  "moves": [
+   [
+    1,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    9,
+    "MOVE_LEER"
+   ],
+   [
+    17,
+    "MOVE_FIRE_FANG"
+   ],
+   [
+    25,
+    "MOVE_METAL_SOUND"
+   ],
+   [
+    33,
+    "MOVE_CRUNCH"
+   ],
+   [
+    41,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    49,
+    "MOVE_LAVA_PLUME"
+   ],
+   [
+    57,
+    "MOVE_FIRE_SPIN"
+   ],
+   [
+    65,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    73,
+    "MOVE_EARTH_POWER"
+   ],
+   [
+    81,
+    "MOVE_HEAT_WAVE"
+   ],
+   [
+    88,
+    "MOVE_STONE_EDGE"
+   ],
+   [
+    96,
+    "MOVE_MAGMA_STORM"
+   ]
+  ]
+ },
+ "REGIGIGAS": {
+  "baseHP": 110,
+  "baseAttack": 160,
+  "baseDefense": 110,
+  "baseSpeed": 100,
+  "baseSpAttack": 80,
+  "baseSpDefense": 110,
+  "catchRate": 3,
+  "expYield": 335,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_NORMAL"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_SLOW_START",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_WHITE",
+  "name": "Regigigas",
+  "learnset": "sRegigigasLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   40
+  ],
+  "frontY": 4,
+  "backY": 13,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Regigigas",
+  "frontAnimId": "ANIM_V_SHAKE",
+  "moves": [
+   [
+    1,
+    "MOVE_FIRE_PUNCH"
+   ],
+   [
+    1,
+    "MOVE_ICE_PUNCH"
+   ],
+   [
+    1,
+    "MOVE_THUNDER_PUNCH"
+   ],
+   [
+    1,
+    "MOVE_DIZZY_PUNCH"
+   ],
+   [
+    1,
+    "MOVE_KNOCK_OFF"
+   ],
+   [
+    1,
+    "MOVE_CONFUSE_RAY"
+   ],
+   [
+    1,
+    "MOVE_FORESIGHT"
+   ],
+   [
+    25,
+    "MOVE_REVENGE"
+   ],
+   [
+    40,
+    "MOVE_WIDE_GUARD"
+   ],
+   [
+    50,
+    "MOVE_ZEN_HEADBUTT"
+   ],
+   [
+    65,
+    "MOVE_PAYBACK"
+   ],
+   [
+    75,
+    "MOVE_CRUSH_GRIP"
+   ],
+   [
+    90,
+    "MOVE_HEAVY_SLAM"
+   ],
+   [
+    100,
+    "MOVE_GIGA_IMPACT"
+   ]
+  ]
+ },
+ "GIRATINA": {
+  "baseHP": 150,
+  "baseAttack": 100,
+  "baseDefense": 120,
+  "baseSpeed": 90,
+  "baseSpAttack": 100,
+  "baseSpDefense": 120,
+  "catchRate": 3,
+  "expYield": 306,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_GHOST",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRESSURE",
+   "ABILITY_NONE",
+   "ABILITY_TELEPATHY"
+  ],
+  "bodyColor": "BODY_COLOR_BLACK",
+  "name": "Giratina",
+  "learnset": "sGiratinaLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 4,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "GiratinaAltered",
+  "frontAnimId": "ANIM_GROW_VIBRATE",
+  "moves": [
+   [
+    1,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    1,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    6,
+    "MOVE_OMINOUS_WIND"
+   ],
+   [
+    10,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    15,
+    "MOVE_SLASH"
+   ],
+   [
+    19,
+    "MOVE_SHADOW_SNEAK"
+   ],
+   [
+    24,
+    "MOVE_DESTINY_BOND"
+   ],
+   [
+    28,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    33,
+    "MOVE_EARTH_POWER"
+   ],
+   [
+    37,
+    "MOVE_AURA_SPHERE"
+   ],
+   [
+    42,
+    "MOVE_SHADOW_CLAW"
+   ],
+   [
+    46,
+    "MOVE_SHADOW_FORCE"
+   ],
+   [
+    50,
+    "MOVE_HEX"
+   ]
+  ]
+ },
+ "CRESSELIA": {
+  "baseHP": 120,
+  "baseAttack": 70,
+  "baseDefense": 110,
+  "baseSpeed": 85,
+  "baseSpAttack": 75,
+  "baseSpDefense": 120,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 3,
+  "types": [
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_FEMALE",
+  "friendship": "100",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_LEVITATE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_YELLOW",
+  "name": "Cresselia",
+  "learnset": "sCresseliaLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   56,
+   64
+  ],
+  "frontY": 2,
+  "backY": 0,
+  "iconPal": 0,
+  "elevation": 3,
+  "gfx": "Cresselia",
+  "frontAnimId": "ANIM_H_SLIDE_WOBBLE",
+  "moves": [
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    1,
+    "MOVE_DOUBLE_TEAM"
+   ],
+   [
+    11,
+    "MOVE_SAFEGUARD"
+   ],
+   [
+    20,
+    "MOVE_MIST"
+   ],
+   [
+    29,
+    "MOVE_AURORA_BEAM"
+   ],
+   [
+    38,
+    "MOVE_FUTURE_SIGHT"
+   ],
+   [
+    47,
+    "MOVE_SLASH"
+   ],
+   [
+    57,
+    "MOVE_MOONLIGHT"
+   ],
+   [
+    66,
+    "MOVE_PSYCHO_CUT"
+   ],
+   [
+    75,
+    "MOVE_PSYCHO_SHIFT"
+   ],
+   [
+    84,
+    "MOVE_LUNAR_DANCE"
+   ],
+   [
+    93,
+    "MOVE_PSYCHIC"
+   ]
+  ]
+ },
+ "COBALION": {
+  "baseHP": 91,
+  "baseAttack": 90,
+  "baseDefense": 129,
+  "baseSpeed": 108,
+  "baseSpAttack": 90,
+  "baseSpDefense": 72,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 80,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 3,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_STEEL",
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_JUSTIFIED",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Cobalion",
+  "learnset": "sCobalionLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   48,
+   64
+  ],
+  "backSize": [
+   48,
+   64
+  ],
+  "frontY": 0,
+  "backY": 6,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Cobalion",
+  "frontAnimId": "ANIM_V_STRETCH",
+  "moves": [
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    7,
+    "MOVE_DOUBLE_KICK"
+   ],
+   [
+    13,
+    "MOVE_METAL_CLAW"
+   ],
+   [
+    19,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    25,
+    "MOVE_HELPING_HAND"
+   ],
+   [
+    31,
+    "MOVE_RETALIATE"
+   ],
+   [
+    37,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    42,
+    "MOVE_SACRED_SWORD"
+   ],
+   [
+    49,
+    "MOVE_SWORDS_DANCE"
+   ],
+   [
+    55,
+    "MOVE_QUICK_GUARD"
+   ],
+   [
+    61,
+    "MOVE_WORK_UP"
+   ],
+   [
+    67,
+    "MOVE_METAL_BURST"
+   ],
+   [
+    73,
+    "MOVE_CLOSE_COMBAT"
+   ]
+  ]
+ },
+ "TERRAKION": {
+  "baseHP": 91,
+  "baseAttack": 129,
+  "baseDefense": 90,
+  "baseSpeed": 108,
+  "baseSpAttack": 72,
+  "baseSpDefense": 90,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 80,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_ROCK",
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_JUSTIFIED",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Terrakion",
+  "learnset": "sTerrakionLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   56
+  ],
+  "backSize": [
+   64,
+   48
+  ],
+  "frontY": 5,
+  "backY": 8,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "Terrakion",
+  "frontAnimId": "ANIM_V_SHAKE_TWICE",
+  "moves": [
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    7,
+    "MOVE_DOUBLE_KICK"
+   ],
+   [
+    13,
+    "MOVE_SMACK_DOWN"
+   ],
+   [
+    19,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    25,
+    "MOVE_HELPING_HAND"
+   ],
+   [
+    31,
+    "MOVE_RETALIATE"
+   ],
+   [
+    37,
+    "MOVE_ROCK_SLIDE"
+   ],
+   [
+    42,
+    "MOVE_SACRED_SWORD"
+   ],
+   [
+    49,
+    "MOVE_SWORDS_DANCE"
+   ],
+   [
+    55,
+    "MOVE_QUICK_GUARD"
+   ],
+   [
+    61,
+    "MOVE_WORK_UP"
+   ],
+   [
+    67,
+    "MOVE_STONE_EDGE"
+   ],
+   [
+    73,
+    "MOVE_CLOSE_COMBAT"
+   ]
+  ]
+ },
+ "VIRIZION": {
+  "baseHP": 91,
+  "baseAttack": 90,
+  "baseDefense": 72,
+  "baseSpeed": 108,
+  "baseSpAttack": 90,
+  "baseSpDefense": 129,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 80,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 3,
+  "types": [
+   "TYPE_GRASS",
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_JUSTIFIED",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Virizion",
+  "learnset": "sVirizionLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   48,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 2,
+  "backY": 8,
+  "iconPal": 1,
+  "elevation": 0,
+  "gfx": "Virizion",
+  "frontAnimId": "ANIM_GROW_VIBRATE",
+  "moves": [
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    7,
+    "MOVE_DOUBLE_KICK"
+   ],
+   [
+    13,
+    "MOVE_MAGICAL_LEAF"
+   ],
+   [
+    19,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    25,
+    "MOVE_HELPING_HAND"
+   ],
+   [
+    31,
+    "MOVE_RETALIATE"
+   ],
+   [
+    37,
+    "MOVE_GIGA_DRAIN"
+   ],
+   [
+    42,
+    "MOVE_SACRED_SWORD"
+   ],
+   [
+    49,
+    "MOVE_SWORDS_DANCE"
+   ],
+   [
+    55,
+    "MOVE_QUICK_GUARD"
+   ],
+   [
+    61,
+    "MOVE_WORK_UP"
+   ],
+   [
+    67,
+    "MOVE_LEAF_BLADE"
+   ],
+   [
+    73,
+    "MOVE_CLOSE_COMBAT"
+   ]
+  ]
+ },
+ "TORNADUS": {
+  "baseHP": 79,
+  "baseAttack": 115,
+  "baseDefense": 70,
+  "baseSpeed": 111,
+  "baseSpAttack": 125,
+  "baseSpDefense": 80,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FLYING"
+  ],
+  "genderRatio": "MON_MALE",
+  "friendship": "90",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRANKSTER",
+   "ABILITY_NONE",
+   "ABILITY_DEFIANT"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Tornadus",
+  "learnset": "sTornadusLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 0,
+  "iconPal": 1,
+  "elevation": 7,
+  "gfx": "TornadusIncarnate",
+  "frontAnimId": "ANIM_FIGURE_8",
+  "moves": [
+   [
+    1,
+    "MOVE_UPROAR"
+   ],
+   [
+    1,
+    "MOVE_ASTONISH"
+   ],
+   [
+    1,
+    "MOVE_GUST"
+   ],
+   [
+    7,
+    "MOVE_SWAGGER"
+   ],
+   [
+    13,
+    "MOVE_BITE"
+   ],
+   [
+    19,
+    "MOVE_REVENGE"
+   ],
+   [
+    25,
+    "MOVE_AIR_CUTTER"
+   ],
+   [
+    31,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    37,
+    "MOVE_AGILITY"
+   ],
+   [
+    43,
+    "MOVE_AIR_SLASH"
+   ],
+   [
+    49,
+    "MOVE_CRUNCH"
+   ],
+   [
+    55,
+    "MOVE_TAILWIND"
+   ],
+   [
+    61,
+    "MOVE_RAIN_DANCE"
+   ],
+   [
+    67,
+    "MOVE_HURRICANE"
+   ],
+   [
+    73,
+    "MOVE_DARK_PULSE"
+   ],
+   [
+    79,
+    "MOVE_HAMMER_ARM"
+   ],
+   [
+    85,
+    "MOVE_THRASH"
+   ]
+  ]
+ },
+ "THUNDURUS": {
+  "baseHP": 79,
+  "baseAttack": 115,
+  "baseDefense": 70,
+  "baseSpeed": 111,
+  "baseSpAttack": 125,
+  "baseSpDefense": 80,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_ELECTRIC",
+   "TYPE_FLYING"
+  ],
+  "genderRatio": "MON_MALE",
+  "friendship": "90",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRANKSTER",
+   "ABILITY_NONE",
+   "ABILITY_DEFIANT"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Thundurus",
+  "learnset": "sThundurusLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 0,
+  "iconPal": 0,
+  "elevation": 7,
+  "gfx": "ThundurusIncarnate",
+  "frontAnimId": "ANIM_FIGURE_8",
+  "moves": [
+   [
+    1,
+    "MOVE_UPROAR"
+   ],
+   [
+    1,
+    "MOVE_ASTONISH"
+   ],
+   [
+    1,
+    "MOVE_THUNDER_SHOCK"
+   ],
+   [
+    7,
+    "MOVE_SWAGGER"
+   ],
+   [
+    13,
+    "MOVE_BITE"
+   ],
+   [
+    19,
+    "MOVE_REVENGE"
+   ],
+   [
+    25,
+    "MOVE_SHOCK_WAVE"
+   ],
+   [
+    31,
+    "MOVE_HEAL_BLOCK"
+   ],
+   [
+    37,
+    "MOVE_AGILITY"
+   ],
+   [
+    43,
+    "MOVE_DISCHARGE"
+   ],
+   [
+    49,
+    "MOVE_CRUNCH"
+   ],
+   [
+    55,
+    "MOVE_CHARGE"
+   ],
+   [
+    61,
+    "MOVE_NASTY_PLOT"
+   ],
+   [
+    67,
+    "MOVE_THUNDER"
+   ],
+   [
+    73,
+    "MOVE_DARK_PULSE"
+   ],
+   [
+    79,
+    "MOVE_HAMMER_ARM"
+   ],
+   [
+    85,
+    "MOVE_THRASH"
+   ]
+  ]
+ },
+ "RESHIRAM": {
+  "baseHP": 100,
+  "baseAttack": 120,
+  "baseDefense": 100,
+  "baseSpeed": 90,
+  "baseSpAttack": 150,
+  "baseSpDefense": 120,
+  "catchRate": 3,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_FIRE"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TURBOBLAZE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_WHITE",
+  "name": "Reshiram",
+  "learnset": "sReshiramLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 7,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Reshiram",
+  "frontAnimId": "ANIM_V_SHAKE",
+  "moves": [
+   [
+    1,
+    "MOVE_FIRE_FANG"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    15,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    22,
+    "MOVE_FLAMETHROWER"
+   ],
+   [
+    29,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    36,
+    "MOVE_IMPRISON"
+   ],
+   [
+    36,
+    "MOVE_SLASH"
+   ],
+   [
+    43,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    50,
+    "MOVE_FUSION_FLARE"
+   ],
+   [
+    54,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    71,
+    "MOVE_CRUNCH"
+   ],
+   [
+    78,
+    "MOVE_FIRE_BLAST"
+   ],
+   [
+    85,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    92,
+    "MOVE_HYPER_VOICE"
+   ],
+   [
+    100,
+    "MOVE_BLUE_FLARE"
+   ]
+  ]
+ },
+ "ZEKROM": {
+  "baseHP": 100,
+  "baseAttack": 150,
+  "baseDefense": 120,
+  "baseSpeed": 90,
+  "baseSpAttack": 120,
+  "baseSpDefense": 100,
+  "catchRate": 3,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_ELECTRIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TERAVOLT",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLACK",
+  "name": "Zekrom",
+  "learnset": "sZekromLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 3,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "Zekrom",
+  "frontAnimId": "ANIM_V_SHAKE",
+  "moves": [
+   [
+    1,
+    "MOVE_THUNDER_FANG"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    15,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    22,
+    "MOVE_THUNDERBOLT"
+   ],
+   [
+    29,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    36,
+    "MOVE_IMPRISON"
+   ],
+   [
+    36,
+    "MOVE_SLASH"
+   ],
+   [
+    43,
+    "MOVE_ZEN_HEADBUTT"
+   ],
+   [
+    50,
+    "MOVE_FUSION_BOLT"
+   ],
+   [
+    54,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    71,
+    "MOVE_CRUNCH"
+   ],
+   [
+    78,
+    "MOVE_THUNDER"
+   ],
+   [
+    85,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    92,
+    "MOVE_HYPER_VOICE"
+   ],
+   [
+    100,
+    "MOVE_BOLT_STRIKE"
+   ]
+  ]
+ },
+ "LANDORUS": {
+  "baseHP": 89,
+  "baseAttack": 125,
+  "baseDefense": 90,
+  "baseSpeed": 101,
+  "baseSpAttack": 115,
+  "baseSpDefense": 80,
+  "catchRate": 3,
+  "expYield": 300,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_GROUND",
+   "TYPE_FLYING"
+  ],
+  "genderRatio": "MON_MALE",
+  "friendship": "90",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_SAND_FORCE",
+   "ABILITY_NONE",
+   "ABILITY_SHEER_FORCE"
+  ],
+  "bodyColor": "BODY_COLOR_BROWN",
+  "name": "Landorus",
+  "learnset": "sLandorusLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 0,
+  "iconPal": 0,
+  "elevation": 7,
+  "gfx": "LandorusIncarnate",
+  "frontAnimId": "ANIM_FIGURE_8",
+  "moves": [
+   [
+    1,
+    "MOVE_BLOCK"
+   ],
+   [
+    1,
+    "MOVE_MUD_SHOT"
+   ],
+   [
+    1,
+    "MOVE_ROCK_TOMB"
+   ],
+   [
+    7,
+    "MOVE_IMPRISON"
+   ],
+   [
+    13,
+    "MOVE_PUNISHMENT"
+   ],
+   [
+    19,
+    "MOVE_BULLDOZE"
+   ],
+   [
+    25,
+    "MOVE_ROCK_THROW"
+   ],
+   [
+    31,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    37,
+    "MOVE_SWORDS_DANCE"
+   ],
+   [
+    43,
+    "MOVE_EARTH_POWER"
+   ],
+   [
+    49,
+    "MOVE_ROCK_SLIDE"
+   ],
+   [
+    55,
+    "MOVE_EARTHQUAKE"
+   ],
+   [
+    61,
+    "MOVE_SANDSTORM"
+   ],
+   [
+    67,
+    "MOVE_FISSURE"
+   ],
+   [
+    73,
+    "MOVE_STONE_EDGE"
+   ],
+   [
+    79,
+    "MOVE_HAMMER_ARM"
+   ],
+   [
+    85,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "KYUREM": {
+  "baseHP": 125,
+  "baseAttack": 130,
+  "baseDefense": 90,
+  "baseSpeed": 95,
+  "baseSpAttack": 130,
+  "baseSpDefense": 90,
+  "catchRate": 3,
+  "expYield": 330,
+  "eggCycles": 120,
+  "evYield_HP": 1,
+  "evYield_Attack": 1,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 1,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_ICE"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRESSURE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Kyurem",
+  "learnset": "sKyuremLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   40
+  ],
+  "frontY": 6,
+  "backY": 12,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Kyurem",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_ICY_WIND"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    15,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    22,
+    "MOVE_ICE_BEAM"
+   ],
+   [
+    29,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    36,
+    "MOVE_IMPRISON"
+   ],
+   [
+    36,
+    "MOVE_SLASH"
+   ],
+   [
+    43,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    50,
+    "MOVE_GLACIATE"
+   ],
+   [
+    57,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    71,
+    "MOVE_ENDEAVOR"
+   ],
+   [
+    78,
+    "MOVE_BLIZZARD"
+   ],
+   [
+    85,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    92,
+    "MOVE_HYPER_VOICE"
+   ]
+  ]
+ },
+ "XERNEAS": {
+  "baseHP": 126,
+  "baseAttack": 131,
+  "baseDefense": 95,
+  "baseSpeed": 99,
+  "baseSpAttack": 131,
+  "baseSpDefense": 98,
+  "catchRate": 45,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FAIRY"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_FAIRY_AURA",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Xerneas",
+  "learnset": "sXerneasLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 0,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "XerneasNeutral",
+  "frontAnimId": "ANIM_GROW_VIBRATE",
+  "moves": [
+   [
+    1,
+    "MOVE_HEAL_PULSE"
+   ],
+   [
+    1,
+    "MOVE_AROMATHERAPY"
+   ],
+   [
+    1,
+    "MOVE_INGRAIN"
+   ],
+   [
+    1,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    5,
+    "MOVE_LIGHT_SCREEN"
+   ],
+   [
+    10,
+    "MOVE_AURORA_BEAM"
+   ],
+   [
+    18,
+    "MOVE_GRAVITY"
+   ],
+   [
+    26,
+    "MOVE_GEOMANCY"
+   ],
+   [
+    35,
+    "MOVE_MOONBLAST"
+   ],
+   [
+    44,
+    "MOVE_MEGAHORN"
+   ],
+   [
+    51,
+    "MOVE_NIGHT_SLASH"
+   ],
+   [
+    55,
+    "MOVE_HORN_LEECH"
+   ],
+   [
+    59,
+    "MOVE_PSYCH_UP"
+   ],
+   [
+    63,
+    "MOVE_MISTY_TERRAIN"
+   ],
+   [
+    72,
+    "MOVE_NATURE_POWER"
+   ],
+   [
+    80,
+    "MOVE_CLOSE_COMBAT"
+   ],
+   [
+    88,
+    "MOVE_GIGA_IMPACT"
+   ],
+   [
+    93,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "YVELTAL": {
+  "baseHP": 126,
+  "baseAttack": 131,
+  "baseDefense": 95,
+  "baseSpeed": 99,
+  "baseSpAttack": 131,
+  "baseSpDefense": 98,
+  "catchRate": 45,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_FLYING"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_DARK_AURA",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_RED",
+  "name": "Yveltal",
+  "learnset": "sYveltalLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   48
+  ],
+  "frontY": 0,
+  "backY": 10,
+  "iconPal": 0,
+  "elevation": 5,
+  "gfx": "Yveltal",
+  "frontAnimId": "ANIM_FRONT_FLIP",
+  "moves": [
+   [
+    1,
+    "MOVE_HURRICANE"
+   ],
+   [
+    1,
+    "MOVE_RAZOR_WIND"
+   ],
+   [
+    1,
+    "MOVE_TAUNT"
+   ],
+   [
+    1,
+    "MOVE_ROOST"
+   ],
+   [
+    5,
+    "MOVE_DOUBLE_TEAM"
+   ],
+   [
+    10,
+    "MOVE_AIR_SLASH"
+   ],
+   [
+    18,
+    "MOVE_SNARL"
+   ],
+   [
+    26,
+    "MOVE_OBLIVION_WING"
+   ],
+   [
+    35,
+    "MOVE_DISABLE"
+   ],
+   [
+    44,
+    "MOVE_DARK_PULSE"
+   ],
+   [
+    51,
+    "MOVE_FOUL_PLAY"
+   ],
+   [
+    55,
+    "MOVE_PHANTOM_FORCE"
+   ],
+   [
+    59,
+    "MOVE_PSYCHIC"
+   ],
+   [
+    63,
+    "MOVE_DRAGON_RUSH"
+   ],
+   [
+    72,
+    "MOVE_FOCUS_BLAST"
+   ],
+   [
+    80,
+    "MOVE_SUCKER_PUNCH"
+   ],
+   [
+    88,
+    "MOVE_HYPER_BEAM"
+   ],
+   [
+    93,
+    "MOVE_SKY_ATTACK"
+   ]
+  ]
+ },
+ "ZYGARDE": {
+  "baseHP": 108,
+  "baseAttack": 100,
+  "baseDefense": 121,
+  "baseSpeed": 95,
+  "baseSpAttack": 81,
+  "baseSpDefense": 95,
+  "catchRate": 3,
+  "expYield": 300,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_GROUND"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_AURA_BREAK",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Zygarde",
+  "learnset": "sZygardeLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 4,
+  "iconPal": 1,
+  "elevation": 0,
+  "gfx": "Zygarde50",
+  "frontAnimId": "ANIM_TIP_MOVE_FORWARD",
+  "moves": [
+   [
+    1,
+    "MOVE_GLARE"
+   ],
+   [
+    1,
+    "MOVE_BULLDOZE"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    5,
+    "MOVE_SAFEGUARD"
+   ],
+   [
+    10,
+    "MOVE_DIG"
+   ],
+   [
+    18,
+    "MOVE_BIND"
+   ],
+   [
+    26,
+    "MOVE_LANDS_WRATH"
+   ],
+   [
+    35,
+    "MOVE_SANDSTORM"
+   ],
+   [
+    44,
+    "MOVE_HAZE"
+   ],
+   [
+    51,
+    "MOVE_CRUNCH"
+   ],
+   [
+    55,
+    "MOVE_EARTHQUAKE"
+   ],
+   [
+    59,
+    "MOVE_CAMOUFLAGE"
+   ],
+   [
+    63,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    72,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    80,
+    "MOVE_COIL"
+   ],
+   [
+    88,
+    "MOVE_EXTREME_SPEED"
+   ],
+   [
+    93,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "TYPE_NULL": {
+  "baseHP": 95,
+  "baseAttack": 95,
+  "baseDefense": 95,
+  "baseSpeed": 59,
+  "baseSpAttack": 95,
+  "baseSpDefense": 95,
+  "catchRate": 3,
+  "expYield": 107,
+  "eggCycles": 120,
+  "evYield_HP": 2,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_NORMAL"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_BATTLE_ARMOR",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Type: Null",
+  "learnset": "sTypeNullLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "0",
+    "SILVALLY_NORMAL"
+   ]
+  ],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   56,
+   64
+  ],
+  "frontY": 2,
+  "backY": 1,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "TypeNull",
+  "frontAnimId": "ANIM_H_SHAKE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    5,
+    "MOVE_RAGE"
+   ],
+   [
+    10,
+    "MOVE_PURSUIT"
+   ],
+   [
+    15,
+    "MOVE_IMPRISON"
+   ],
+   [
+    20,
+    "MOVE_AERIAL_ACE"
+   ],
+   [
+    25,
+    "MOVE_CRUSH_CLAW"
+   ],
+   [
+    30,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    35,
+    "MOVE_X_SCISSOR"
+   ],
+   [
+    40,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    45,
+    "MOVE_METAL_SOUND"
+   ],
+   [
+    50,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    55,
+    "MOVE_DOUBLE_HIT"
+   ],
+   [
+    60,
+    "MOVE_AIR_SLASH"
+   ],
+   [
+    65,
+    "MOVE_PUNISHMENT"
+   ],
+   [
+    70,
+    "MOVE_RAZOR_WIND"
+   ],
+   [
+    75,
+    "MOVE_TRI_ATTACK"
+   ],
+   [
+    80,
+    "MOVE_DOUBLE_EDGE"
+   ],
+   [
+    85,
+    "MOVE_HEAL_BLOCK"
+   ]
+  ]
+ },
+ "SILVALLY": {
+  "baseHP": 95,
+  "baseAttack": 95,
+  "baseDefense": 95,
+  "baseSpeed": 95,
+  "baseSpAttack": 95,
+  "baseSpDefense": 95,
+  "catchRate": 3,
+  "expYield": 285,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_NORMAL"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_RKS_SYSTEM",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Silvally",
+  "learnset": "sSilvallyLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   56,
+   64
+  ],
+  "frontY": 0,
+  "backY": 0,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Silvally",
+  "frontAnimId": "ANIM_BACK_AND_LUNGE",
+  "moves": [
+   [
+    0,
+    "MOVE_MULTI_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_MULTI_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_HEAL_BLOCK"
+   ],
+   [
+    1,
+    "MOVE_IMPRISON"
+   ],
+   [
+    1,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    1,
+    "MOVE_POISON_FANG"
+   ],
+   [
+    1,
+    "MOVE_FIRE_FANG"
+   ],
+   [
+    1,
+    "MOVE_ICE_FANG"
+   ],
+   [
+    1,
+    "MOVE_THUNDER_FANG"
+   ],
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    5,
+    "MOVE_RAGE"
+   ],
+   [
+    10,
+    "MOVE_PURSUIT"
+   ],
+   [
+    15,
+    "MOVE_BITE"
+   ],
+   [
+    20,
+    "MOVE_AERIAL_ACE"
+   ],
+   [
+    25,
+    "MOVE_CRUSH_CLAW"
+   ],
+   [
+    30,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    35,
+    "MOVE_X_SCISSOR"
+   ],
+   [
+    40,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    45,
+    "MOVE_METAL_SOUND"
+   ],
+   [
+    50,
+    "MOVE_CRUNCH"
+   ],
+   [
+    55,
+    "MOVE_DOUBLE_HIT"
+   ],
+   [
+    60,
+    "MOVE_AIR_SLASH"
+   ],
+   [
+    65,
+    "MOVE_PUNISHMENT"
+   ],
+   [
+    70,
+    "MOVE_RAZOR_WIND"
+   ],
+   [
+    75,
+    "MOVE_TRI_ATTACK"
+   ],
+   [
+    80,
+    "MOVE_DOUBLE_EDGE"
+   ],
+   [
+    85,
+    "MOVE_PARTING_SHOT"
+   ]
+  ]
+ },
+ "TAPU_KOKO": {
+  "baseHP": 70,
+  "baseAttack": 115,
+  "baseDefense": 85,
+  "baseSpeed": 130,
+  "baseSpAttack": 95,
+  "baseSpDefense": 75,
+  "catchRate": 3,
+  "expYield": 285,
+  "eggCycles": 15,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 3,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_ELECTRIC",
+   "TYPE_FAIRY"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_ELECTRIC_SURGE",
+   "ABILITY_NONE",
+   "ABILITY_TELEPATHY"
+  ],
+  "bodyColor": "BODY_COLOR_YELLOW",
+  "name": "Tapu Koko",
+  "learnset": "sTapuKokoLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 2,
+  "iconPal": 0,
+  "elevation": 9,
+  "gfx": "TapuKoko",
+  "frontAnimId": "ANIM_TRIANGLE_DOWN_TWICE",
+  "moves": [
+   [
+    1,
+    "MOVE_ELECTRIC_TERRAIN"
+   ],
+   [
+    1,
+    "MOVE_BRAVE_BIRD"
+   ],
+   [
+    1,
+    "MOVE_POWER_SWAP"
+   ],
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_FALSE_SWIPE"
+   ],
+   [
+    1,
+    "MOVE_WITHDRAW"
+   ],
+   [
+    1,
+    "MOVE_THUNDER_SHOCK"
+   ],
+   [
+    8,
+    "MOVE_SPARK"
+   ],
+   [
+    14,
+    "MOVE_SHOCK_WAVE"
+   ],
+   [
+    20,
+    "MOVE_SCREECH"
+   ],
+   [
+    26,
+    "MOVE_CHARGE"
+   ],
+   [
+    32,
+    "MOVE_WILD_CHARGE"
+   ],
+   [
+    38,
+    "MOVE_MIRROR_MOVE"
+   ],
+   [
+    43,
+    "MOVE_NATURES_MADNESS"
+   ],
+   [
+    48,
+    "MOVE_DISCHARGE"
+   ],
+   [
+    53,
+    "MOVE_AGILITY"
+   ],
+   [
+    58,
+    "MOVE_ELECTRO_BALL"
+   ]
+  ]
+ },
+ "TAPU_LELE": {
+  "baseHP": 70,
+  "baseAttack": 85,
+  "baseDefense": 75,
+  "baseSpeed": 95,
+  "baseSpAttack": 130,
+  "baseSpDefense": 115,
+  "catchRate": 3,
+  "expYield": 285,
+  "eggCycles": 15,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_PSYCHIC",
+   "TYPE_FAIRY"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PSYCHIC_SURGE",
+   "ABILITY_NONE",
+   "ABILITY_TELEPATHY"
+  ],
+  "bodyColor": "BODY_COLOR_PINK",
+  "name": "Tapu Lele",
+  "learnset": "sTapuLeleLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   48,
+   56
+  ],
+  "backSize": [
+   56,
+   56
+  ],
+  "frontY": 6,
+  "backY": 6,
+  "iconPal": 0,
+  "elevation": 8,
+  "gfx": "TapuLele",
+  "frontAnimId": "ANIM_V_SLIDE_WOBBLE_SMALL",
+  "moves": [
+   [
+    1,
+    "MOVE_PSYCHIC_TERRAIN"
+   ],
+   [
+    1,
+    "MOVE_AROMATIC_MIST"
+   ],
+   [
+    1,
+    "MOVE_AROMATHERAPY"
+   ],
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    1,
+    "MOVE_DRAINING_KISS"
+   ],
+   [
+    1,
+    "MOVE_ASTONISH"
+   ],
+   [
+    1,
+    "MOVE_WITHDRAW"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    8,
+    "MOVE_PSYWAVE"
+   ],
+   [
+    14,
+    "MOVE_PSYBEAM"
+   ],
+   [
+    20,
+    "MOVE_SWEET_SCENT"
+   ],
+   [
+    26,
+    "MOVE_SKILL_SWAP"
+   ],
+   [
+    32,
+    "MOVE_PSYSHOCK"
+   ],
+   [
+    38,
+    "MOVE_TICKLE"
+   ],
+   [
+    43,
+    "MOVE_NATURES_MADNESS"
+   ],
+   [
+    48,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    53,
+    "MOVE_FLATTER"
+   ],
+   [
+    58,
+    "MOVE_MOONBLAST"
+   ]
+  ]
+ },
+ "TAPU_BULU": {
+  "baseHP": 70,
+  "baseAttack": 130,
+  "baseDefense": 115,
+  "baseSpeed": 75,
+  "baseSpAttack": 85,
+  "baseSpDefense": 95,
+  "catchRate": 3,
+  "expYield": 285,
+  "eggCycles": 15,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_GRASS",
+   "TYPE_FAIRY"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_GRASSY_SURGE",
+   "ABILITY_NONE",
+   "ABILITY_TELEPATHY"
+  ],
+  "bodyColor": "BODY_COLOR_RED",
+  "name": "Tapu Bulu",
+  "learnset": "sTapuBuluLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   56,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 1,
+  "iconPal": 2,
+  "elevation": 5,
+  "gfx": "TapuBulu",
+  "frontAnimId": "ANIM_V_SHAKE_TWICE",
+  "moves": [
+   [
+    1,
+    "MOVE_GRASSY_TERRAIN"
+   ],
+   [
+    1,
+    "MOVE_WOOD_HAMMER"
+   ],
+   [
+    1,
+    "MOVE_SUPERPOWER"
+   ],
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    1,
+    "MOVE_DISABLE"
+   ],
+   [
+    1,
+    "MOVE_WHIRLWIND"
+   ],
+   [
+    1,
+    "MOVE_WITHDRAW"
+   ],
+   [
+    1,
+    "MOVE_LEAFAGE"
+   ],
+   [
+    8,
+    "MOVE_HORN_ATTACK"
+   ],
+   [
+    14,
+    "MOVE_GIGA_DRAIN"
+   ],
+   [
+    20,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    26,
+    "MOVE_LEECH_SEED"
+   ],
+   [
+    32,
+    "MOVE_HORN_LEECH"
+   ],
+   [
+    38,
+    "MOVE_ROTOTILLER"
+   ],
+   [
+    43,
+    "MOVE_NATURES_MADNESS"
+   ],
+   [
+    48,
+    "MOVE_ZEN_HEADBUTT"
+   ],
+   [
+    53,
+    "MOVE_MEGAHORN"
+   ],
+   [
+    58,
+    "MOVE_SKULL_BASH"
+   ]
+  ]
+ },
+ "TAPU_FINI": {
+  "baseHP": 70,
+  "baseAttack": 75,
+  "baseDefense": 115,
+  "baseSpeed": 85,
+  "baseSpAttack": 95,
+  "baseSpDefense": 130,
+  "catchRate": 3,
+  "expYield": 285,
+  "eggCycles": 15,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 3,
+  "types": [
+   "TYPE_WATER",
+   "TYPE_FAIRY"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_MISTY_SURGE",
+   "ABILITY_NONE",
+   "ABILITY_TELEPATHY"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Tapu Fini",
+  "learnset": "sTapuFiniLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   56,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 2,
+  "backY": 4,
+  "iconPal": 2,
+  "elevation": 6,
+  "gfx": "TapuFini",
+  "frontAnimId": "ANIM_SHAKE_GLOW_BLUE_SLOW",
+  "moves": [
+   [
+    1,
+    "MOVE_MISTY_TERRAIN"
+   ],
+   [
+    1,
+    "MOVE_MOONBLAST"
+   ],
+   [
+    1,
+    "MOVE_HEAL_PULSE"
+   ],
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    1,
+    "MOVE_HAZE"
+   ],
+   [
+    1,
+    "MOVE_MIST"
+   ],
+   [
+    1,
+    "MOVE_WITHDRAW"
+   ],
+   [
+    1,
+    "MOVE_WATER_GUN"
+   ],
+   [
+    8,
+    "MOVE_WATER_PULSE"
+   ],
+   [
+    14,
+    "MOVE_WHIRLPOOL"
+   ],
+   [
+    20,
+    "MOVE_SOAK"
+   ],
+   [
+    26,
+    "MOVE_REFRESH"
+   ],
+   [
+    32,
+    "MOVE_BRINE"
+   ],
+   [
+    38,
+    "MOVE_DEFOG"
+   ],
+   [
+    43,
+    "MOVE_NATURES_MADNESS"
+   ],
+   [
+    48,
+    "MOVE_MUDDY_WATER"
+   ],
+   [
+    53,
+    "MOVE_AQUA_RING"
+   ],
+   [
+    58,
+    "MOVE_HYDRO_PUMP"
+   ]
+  ]
+ },
+ "COSMOG": {
+  "baseHP": 43,
+  "baseAttack": 29,
+  "baseDefense": 31,
+  "baseSpeed": 37,
+  "baseSpAttack": 29,
+  "baseSpDefense": 31,
+  "catchRate": 3,
+  "expYield": 40,
+  "eggCycles": 120,
+  "evYield_HP": 1,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_UNAWARE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Cosmog",
+  "learnset": "sCosmogLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "43",
+    "COSMOEM"
+   ]
+  ],
+  "frontSize": [
+   56,
+   48
+  ],
+  "backSize": [
+   64,
+   48
+  ],
+  "frontY": 10,
+  "backY": 10,
+  "iconPal": 2,
+  "elevation": 7,
+  "gfx": "Cosmog",
+  "frontAnimId": "ANIM_H_JUMPS_V_STRETCH",
+  "moves": [
+   [
+    1,
+    "MOVE_SPLASH"
+   ],
+   [
+    23,
+    "MOVE_TELEPORT"
+   ]
+  ]
+ },
+ "COSMOEM": {
+  "baseHP": 43,
+  "baseAttack": 29,
+  "baseDefense": 131,
+  "baseSpeed": 37,
+  "baseSpAttack": 29,
+  "baseSpDefense": 131,
+  "catchRate": 3,
+  "expYield": 140,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 1,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 1,
+  "types": [
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_STURDY",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Cosmoem",
+  "learnset": "sCosmoemLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "53",
+    "SOLGALEO"
+   ],
+   [
+    "EVO_LEVEL",
+    "53",
+    "LUNALA"
+   ]
+  ],
+  "frontSize": [
+   48,
+   48
+  ],
+  "backSize": [
+   64,
+   40
+  ],
+  "frontY": 9,
+  "backY": 17,
+  "iconPal": 0,
+  "elevation": 3,
+  "gfx": "Cosmoem",
+  "frontAnimId": "ANIM_V_SLIDE_SLOW",
+  "moves": [
+   [
+    0,
+    "MOVE_COSMIC_POWER"
+   ],
+   [
+    1,
+    "MOVE_COSMIC_POWER"
+   ],
+   [
+    1,
+    "MOVE_TELEPORT"
+   ]
+  ]
+ },
+ "SOLGALEO": {
+  "baseHP": 137,
+  "baseAttack": 137,
+  "baseDefense": 107,
+  "baseSpeed": 97,
+  "baseSpAttack": 113,
+  "baseSpDefense": 89,
+  "catchRate": 3,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_PSYCHIC",
+   "TYPE_STEEL"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_FULL_METAL_BODY",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_WHITE",
+  "name": "Solgaleo",
+  "learnset": "sSolgaleoLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 3,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "Solgaleo",
+  "frontAnimId": "ANIM_SHRINK_GROW_VIBRATE_SLOW",
+  "moves": [
+   [
+    0,
+    "MOVE_SUNSTEEL_STRIKE"
+   ],
+   [
+    1,
+    "MOVE_SUNSTEEL_STRIKE"
+   ],
+   [
+    1,
+    "MOVE_COSMIC_POWER"
+   ],
+   [
+    1,
+    "MOVE_WAKE_UP_SLAP"
+   ],
+   [
+    1,
+    "MOVE_TELEPORT"
+   ],
+   [
+    1,
+    "MOVE_METAL_CLAW"
+   ],
+   [
+    7,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    13,
+    "MOVE_METAL_SOUND"
+   ],
+   [
+    19,
+    "MOVE_ZEN_HEADBUTT"
+   ],
+   [
+    23,
+    "MOVE_FLASH_CANNON"
+   ],
+   [
+    31,
+    "MOVE_MORNING_SUN"
+   ],
+   [
+    37,
+    "MOVE_CRUNCH"
+   ],
+   [
+    43,
+    "MOVE_METAL_BURST"
+   ],
+   [
+    47,
+    "MOVE_SOLAR_BEAM"
+   ],
+   [
+    59,
+    "MOVE_NOBLE_ROAR"
+   ],
+   [
+    61,
+    "MOVE_FLARE_BLITZ"
+   ],
+   [
+    67,
+    "MOVE_WIDE_GUARD"
+   ],
+   [
+    73,
+    "MOVE_GIGA_IMPACT"
+   ]
+  ]
+ },
+ "LUNALA": {
+  "baseHP": 137,
+  "baseAttack": 113,
+  "baseDefense": 89,
+  "baseSpeed": 97,
+  "baseSpAttack": 137,
+  "baseSpDefense": 107,
+  "catchRate": 3,
+  "expYield": 340,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_PSYCHIC",
+   "TYPE_GHOST"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_SHADOW_SHIELD",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Lunala",
+  "learnset": "sLunalaLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 2,
+  "iconPal": 2,
+  "elevation": 6,
+  "gfx": "Lunala",
+  "frontAnimId": "ANIM_CIRCULAR_VIBRATE",
+  "moves": [
+   [
+    0,
+    "MOVE_MOONGEIST_BEAM"
+   ],
+   [
+    1,
+    "MOVE_MOONGEIST_BEAM"
+   ],
+   [
+    1,
+    "MOVE_COSMIC_POWER"
+   ],
+   [
+    1,
+    "MOVE_HYPNOSIS"
+   ],
+   [
+    1,
+    "MOVE_TELEPORT"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    7,
+    "MOVE_NIGHT_SHADE"
+   ],
+   [
+    13,
+    "MOVE_CONFUSE_RAY"
+   ],
+   [
+    19,
+    "MOVE_AIR_SLASH"
+   ],
+   [
+    23,
+    "MOVE_SHADOW_BALL"
+   ],
+   [
+    31,
+    "MOVE_MOONLIGHT"
+   ],
+   [
+    37,
+    "MOVE_NIGHT_DAZE"
+   ],
+   [
+    43,
+    "MOVE_MAGIC_COAT"
+   ],
+   [
+    47,
+    "MOVE_MOONBLAST"
+   ],
+   [
+    59,
+    "MOVE_DREAM_EATER"
+   ],
+   [
+    61,
+    "MOVE_PHANTOM_FORCE"
+   ],
+   [
+    67,
+    "MOVE_WIDE_GUARD"
+   ],
+   [
+    73,
+    "MOVE_HYPER_BEAM"
+   ]
+  ]
+ },
+ "NECROZMA": {
+  "baseHP": 97,
+  "baseAttack": 107,
+  "baseDefense": 101,
+  "baseSpeed": 79,
+  "baseSpAttack": 127,
+  "baseSpDefense": 89,
+  "catchRate": 3,
+  "expYield": 300,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 1,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 2,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRISM_ARMOR",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLACK",
+  "name": "Necrozma",
+  "learnset": "sNecrozmaLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 2,
+  "backY": 4,
+  "iconPal": 1,
+  "elevation": 6,
+  "gfx": "Necrozma",
+  "frontAnimId": "ANIM_GROW_VIBRATE",
+  "moves": [
+   [
+    1,
+    "MOVE_MOONLIGHT"
+   ],
+   [
+    1,
+    "MOVE_MORNING_SUN"
+   ],
+   [
+    1,
+    "MOVE_CHARGE_BEAM"
+   ],
+   [
+    1,
+    "MOVE_MIRROR_SHOT"
+   ],
+   [
+    1,
+    "MOVE_METAL_CLAW"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    7,
+    "MOVE_SLASH"
+   ],
+   [
+    13,
+    "MOVE_STORED_POWER"
+   ],
+   [
+    19,
+    "MOVE_ROCK_BLAST"
+   ],
+   [
+    23,
+    "MOVE_NIGHT_SLASH"
+   ],
+   [
+    31,
+    "MOVE_GRAVITY"
+   ],
+   [
+    37,
+    "MOVE_PSYCHO_CUT"
+   ],
+   [
+    43,
+    "MOVE_POWER_GEM"
+   ],
+   [
+    47,
+    "MOVE_AUTOTOMIZE"
+   ],
+   [
+    50,
+    "MOVE_PHOTON_GEYSER"
+   ],
+   [
+    53,
+    "MOVE_STEALTH_ROCK"
+   ],
+   [
+    59,
+    "MOVE_IRON_DEFENSE"
+   ],
+   [
+    67,
+    "MOVE_WRING_OUT"
+   ],
+   [
+    73,
+    "MOVE_PRISMATIC_LASER"
+   ]
+  ]
+ },
+ "ZACIAN": {
+  "baseHP": 92,
+  "baseAttack": 120,
+  "baseDefense": 115,
+  "baseSpeed": 138,
+  "baseSpAttack": 80,
+  "baseSpDefense": 115,
+  "catchRate": 10,
+  "expYield": 330,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 3,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FAIRY"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_INTREPID_SWORD",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Zacian",
+  "learnset": "sZacianLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 3,
+  "backY": 6,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "ZacianHero",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_SACRED_SWORD"
+   ],
+   [
+    1,
+    "MOVE_QUICK_GUARD"
+   ],
+   [
+    1,
+    "MOVE_METAL_CLAW"
+   ],
+   [
+    1,
+    "MOVE_HOWL"
+   ],
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    11,
+    "MOVE_SLASH"
+   ],
+   [
+    22,
+    "MOVE_SWORDS_DANCE"
+   ],
+   [
+    33,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    44,
+    "MOVE_LASER_FOCUS"
+   ],
+   [
+    55,
+    "MOVE_CRUNCH"
+   ],
+   [
+    66,
+    "MOVE_MOONBLAST"
+   ],
+   [
+    77,
+    "MOVE_CLOSE_COMBAT"
+   ],
+   [
+    88,
+    "MOVE_GIGA_IMPACT"
+   ]
+  ]
+ },
+ "ZAMAZENTA": {
+  "baseHP": 92,
+  "baseAttack": 120,
+  "baseDefense": 115,
+  "baseSpeed": 138,
+  "baseSpAttack": 80,
+  "baseSpDefense": 115,
+  "catchRate": 10,
+  "expYield": 330,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 3,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_DAUNTLESS_SHIELD",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_RED",
+  "name": "Zamazenta",
+  "learnset": "sZamazentaLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 0,
+  "backY": 5,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "ZamazentaHero",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_METAL_BURST"
+   ],
+   [
+    1,
+    "MOVE_WIDE_GUARD"
+   ],
+   [
+    1,
+    "MOVE_METAL_CLAW"
+   ],
+   [
+    1,
+    "MOVE_HOWL"
+   ],
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    11,
+    "MOVE_SLASH"
+   ],
+   [
+    22,
+    "MOVE_IRON_DEFENSE"
+   ],
+   [
+    33,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    44,
+    "MOVE_LASER_FOCUS"
+   ],
+   [
+    55,
+    "MOVE_CRUNCH"
+   ],
+   [
+    66,
+    "MOVE_MOONBLAST"
+   ],
+   [
+    77,
+    "MOVE_CLOSE_COMBAT"
+   ],
+   [
+    88,
+    "MOVE_GIGA_IMPACT"
+   ]
+  ]
+ },
+ "ETERNATUS": {
+  "baseHP": 140,
+  "baseAttack": 85,
+  "baseDefense": 95,
+  "baseSpeed": 130,
+  "baseSpAttack": 145,
+  "baseSpDefense": 95,
+  "catchRate": 255,
+  "expYield": 345,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_POISON",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_PRESSURE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Eternatus",
+  "learnset": "sEternatusLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 2,
+  "iconPal": 0,
+  "elevation": 4,
+  "gfx": "Eternatus",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_POISON_TAIL"
+   ],
+   [
+    1,
+    "MOVE_CONFUSE_RAY"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_TAIL"
+   ],
+   [
+    1,
+    "MOVE_AGILITY"
+   ],
+   [
+    8,
+    "MOVE_TOXIC"
+   ],
+   [
+    16,
+    "MOVE_VENOSHOCK"
+   ],
+   [
+    24,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    32,
+    "MOVE_CROSS_POISON"
+   ],
+   [
+    40,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    48,
+    "MOVE_FLAMETHROWER"
+   ],
+   [
+    56,
+    "MOVE_DYNAMAX_CANNON"
+   ],
+   [
+    64,
+    "MOVE_COSMIC_POWER"
+   ],
+   [
+    72,
+    "MOVE_RECOVER"
+   ],
+   [
+    80,
+    "MOVE_HYPER_BEAM"
+   ],
+   [
+    88,
+    "MOVE_ETERNABEAM"
+   ]
+  ]
+ },
+ "KUBFU": {
+  "baseHP": 60,
+  "baseAttack": 90,
+  "baseDefense": 60,
+  "baseSpeed": 72,
+  "baseSpAttack": 53,
+  "baseSpDefense": 50,
+  "catchRate": 3,
+  "expYield": 77,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 1,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "PERCENT_FEMALE(12.5)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_INNER_FOCUS",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Kubfu",
+  "learnset": "sKubfuLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_SCRIPT_TRIGGER",
+    "EVO_TRIGGER_DARK_SCROLL",
+    "URSHIFU_SINGLE_STRIKE"
+   ],
+   [
+    "EVO_SCRIPT_TRIGGER",
+    "EVO_TRIGGER_WATER_SCROLL",
+    "URSHIFU_RAPID_STRIKE"
+   ],
+   [
+    "EVO_ITEM",
+    "ITEM_SCROLL_OF_DARKNESS",
+    "URSHIFU_SINGLE_STRIKE"
+   ],
+   [
+    "EVO_ITEM",
+    "ITEM_SCROLL_OF_WATERS",
+    "URSHIFU_RAPID_STRIKE"
+   ]
+  ],
+  "frontSize": [
+   40,
+   48
+  ],
+  "backSize": [
+   56,
+   48
+  ],
+  "frontY": 8,
+  "backY": 9,
+  "iconPal": 1,
+  "elevation": 0,
+  "gfx": "Kubfu",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_ROCK_SMASH"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    4,
+    "MOVE_ENDURE"
+   ],
+   [
+    8,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    12,
+    "MOVE_AERIAL_ACE"
+   ],
+   [
+    16,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    20,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    24,
+    "MOVE_BRICK_BREAK"
+   ],
+   [
+    28,
+    "MOVE_DETECT"
+   ],
+   [
+    32,
+    "MOVE_BULK_UP"
+   ],
+   [
+    36,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    40,
+    "MOVE_DYNAMIC_PUNCH"
+   ],
+   [
+    44,
+    "MOVE_COUNTER"
+   ],
+   [
+    48,
+    "MOVE_CLOSE_COMBAT"
+   ],
+   [
+    52,
+    "MOVE_FOCUS_PUNCH"
+   ]
+  ]
+ },
+ "URSHIFU": {
+  "baseHP": 100,
+  "baseAttack": 130,
+  "baseDefense": 100,
+  "baseSpeed": 97,
+  "baseSpAttack": 63,
+  "baseSpDefense": 60,
+  "catchRate": 3,
+  "expYield": 275,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FIGHTING",
+   "TYPE_DARK"
+  ],
+  "genderRatio": "PERCENT_FEMALE(12.5)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_UNSEEN_FIST",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Urshifu",
+  "learnset": "sUrshifuSingleStrikeLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   56,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 0,
+  "backY": 4,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "UrshifuSingleStrike",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    0,
+    "MOVE_WICKED_BLOW"
+   ],
+   [
+    1,
+    "MOVE_WICKED_BLOW"
+   ],
+   [
+    1,
+    "MOVE_SUCKER_PUNCH"
+   ],
+   [
+    1,
+    "MOVE_ROCK_SMASH"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    1,
+    "MOVE_ENDURE"
+   ],
+   [
+    1,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    12,
+    "MOVE_AERIAL_ACE"
+   ],
+   [
+    16,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    20,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    24,
+    "MOVE_BRICK_BREAK"
+   ],
+   [
+    28,
+    "MOVE_DETECT"
+   ],
+   [
+    32,
+    "MOVE_BULK_UP"
+   ],
+   [
+    36,
+    "MOVE_IRON_HEAD"
+   ],
+   [
+    40,
+    "MOVE_DYNAMIC_PUNCH"
+   ],
+   [
+    44,
+    "MOVE_COUNTER"
+   ],
+   [
+    48,
+    "MOVE_CLOSE_COMBAT"
+   ],
+   [
+    52,
+    "MOVE_FOCUS_PUNCH"
+   ]
+  ]
+ },
+ "REGIELEKI": {
+  "baseHP": 80,
+  "baseAttack": 100,
+  "baseDefense": 50,
+  "baseSpeed": 200,
+  "baseSpAttack": 100,
+  "baseSpDefense": 50,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 3,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_ELECTRIC"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TRANSISTOR",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_YELLOW",
+  "name": "Regieleki",
+  "learnset": "sRegielekiLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   56
+  ],
+  "backSize": [
+   64,
+   48
+  ],
+  "frontY": 5,
+  "backY": 9,
+  "iconPal": 0,
+  "elevation": 8,
+  "gfx": "Regieleki",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_THUNDER_SHOCK"
+   ],
+   [
+    1,
+    "MOVE_RAPID_SPIN"
+   ],
+   [
+    6,
+    "MOVE_ELECTROWEB"
+   ],
+   [
+    12,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    18,
+    "MOVE_SHOCK_WAVE"
+   ],
+   [
+    24,
+    "MOVE_THUNDER_WAVE"
+   ],
+   [
+    30,
+    "MOVE_EXTREME_SPEED"
+   ],
+   [
+    36,
+    "MOVE_THUNDER_CAGE"
+   ],
+   [
+    42,
+    "MOVE_THUNDERBOLT"
+   ],
+   [
+    48,
+    "MOVE_MAGNET_RISE"
+   ],
+   [
+    54,
+    "MOVE_THRASH"
+   ],
+   [
+    60,
+    "MOVE_LOCK_ON"
+   ],
+   [
+    66,
+    "MOVE_ZAP_CANNON"
+   ],
+   [
+    72,
+    "MOVE_HYPER_BEAM"
+   ],
+   [
+    78,
+    "MOVE_EXPLOSION"
+   ]
+  ]
+ },
+ "REGIDRAGO": {
+  "baseHP": 200,
+  "baseAttack": 100,
+  "baseDefense": 50,
+  "baseSpeed": 80,
+  "baseSpAttack": 100,
+  "baseSpDefense": 50,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_DRAGONS_MAW",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Regidrago",
+  "learnset": "sRegidragoLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 1,
+  "backY": 7,
+  "iconPal": 0,
+  "elevation": 5,
+  "gfx": "Regidrago",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TWISTER"
+   ],
+   [
+    1,
+    "MOVE_VISE_GRIP"
+   ],
+   [
+    6,
+    "MOVE_BITE"
+   ],
+   [
+    12,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    18,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    24,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    30,
+    "MOVE_CRUNCH"
+   ],
+   [
+    36,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    42,
+    "MOVE_HAMMER_ARM"
+   ],
+   [
+    48,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    54,
+    "MOVE_THRASH"
+   ],
+   [
+    60,
+    "MOVE_LASER_FOCUS"
+   ],
+   [
+    66,
+    "MOVE_DRAGON_ENERGY"
+   ],
+   [
+    72,
+    "MOVE_HYPER_BEAM"
+   ],
+   [
+    78,
+    "MOVE_EXPLOSION"
+   ]
+  ]
+ },
+ "GLASTRIER": {
+  "baseHP": 100,
+  "baseAttack": 145,
+  "baseDefense": 130,
+  "baseSpeed": 30,
+  "baseSpAttack": 65,
+  "baseSpDefense": 110,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_ICE"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_CHILLING_NEIGH",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_WHITE",
+  "name": "Glastrier",
+  "learnset": "sGlastrierLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   56,
+   64
+  ],
+  "frontY": 0,
+  "backY": 5,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Glastrier",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_TAIL_WHIP"
+   ],
+   [
+    6,
+    "MOVE_DOUBLE_KICK"
+   ],
+   [
+    12,
+    "MOVE_AVALANCHE"
+   ],
+   [
+    18,
+    "MOVE_STOMP"
+   ],
+   [
+    24,
+    "MOVE_TORMENT"
+   ],
+   [
+    30,
+    "MOVE_MIST"
+   ],
+   [
+    36,
+    "MOVE_ICICLE_CRASH"
+   ],
+   [
+    42,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    48,
+    "MOVE_IRON_DEFENSE"
+   ],
+   [
+    54,
+    "MOVE_THRASH"
+   ],
+   [
+    60,
+    "MOVE_TAUNT"
+   ],
+   [
+    66,
+    "MOVE_DOUBLE_EDGE"
+   ],
+   [
+    72,
+    "MOVE_SWORDS_DANCE"
+   ]
+  ]
+ },
+ "SPECTRIER": {
+  "baseHP": 100,
+  "baseAttack": 65,
+  "baseDefense": 60,
+  "baseSpeed": 130,
+  "baseSpAttack": 145,
+  "baseSpDefense": 80,
+  "catchRate": 3,
+  "expYield": 290,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_GHOST"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_GRIM_NEIGH",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLACK",
+  "name": "Spectrier",
+  "learnset": "sSpectrierLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   56,
+   56
+  ],
+  "frontY": 0,
+  "backY": 5,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Spectrier",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_TAIL_WHIP"
+   ],
+   [
+    6,
+    "MOVE_DOUBLE_KICK"
+   ],
+   [
+    12,
+    "MOVE_HEX"
+   ],
+   [
+    18,
+    "MOVE_STOMP"
+   ],
+   [
+    24,
+    "MOVE_CONFUSE_RAY"
+   ],
+   [
+    30,
+    "MOVE_HAZE"
+   ],
+   [
+    36,
+    "MOVE_SHADOW_BALL"
+   ],
+   [
+    42,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    48,
+    "MOVE_AGILITY"
+   ],
+   [
+    54,
+    "MOVE_THRASH"
+   ],
+   [
+    60,
+    "MOVE_DISABLE"
+   ],
+   [
+    66,
+    "MOVE_DOUBLE_EDGE"
+   ],
+   [
+    72,
+    "MOVE_NASTY_PLOT"
+   ]
+  ]
+ },
+ "CALYREX": {
+  "baseHP": 100,
+  "baseAttack": 80,
+  "baseDefense": 80,
+  "baseSpeed": 80,
+  "baseSpAttack": 80,
+  "baseSpDefense": 80,
+  "catchRate": 3,
+  "expYield": 250,
+  "eggCycles": 120,
+  "evYield_HP": 3,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_PSYCHIC",
+   "TYPE_GRASS"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "100",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_UNNERVE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Calyrex",
+  "learnset": "sCalyrexLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   48,
+   64
+  ],
+  "backSize": [
+   56,
+   48
+  ],
+  "frontY": 2,
+  "backY": 10,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Calyrex",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_POUND"
+   ],
+   [
+    1,
+    "MOVE_MEGA_DRAIN"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    1,
+    "MOVE_GROWTH"
+   ],
+   [
+    8,
+    "MOVE_LIFE_DEW"
+   ],
+   [
+    16,
+    "MOVE_GIGA_DRAIN"
+   ],
+   [
+    24,
+    "MOVE_PSYSHOCK"
+   ],
+   [
+    32,
+    "MOVE_HELPING_HAND"
+   ],
+   [
+    40,
+    "MOVE_AROMATHERAPY"
+   ],
+   [
+    48,
+    "MOVE_ENERGY_BALL"
+   ],
+   [
+    56,
+    "MOVE_PSYCHIC"
+   ],
+   [
+    64,
+    "MOVE_LEECH_SEED"
+   ],
+   [
+    72,
+    "MOVE_HEAL_PULSE"
+   ],
+   [
+    80,
+    "MOVE_SOLAR_BEAM"
+   ],
+   [
+    88,
+    "MOVE_FUTURE_SIGHT"
+   ]
+  ]
+ },
+ "ENAMORUS": {
+  "baseHP": 74,
+  "baseAttack": 115,
+  "baseDefense": 70,
+  "baseSpeed": 106,
+  "baseSpAttack": 135,
+  "baseSpDefense": 80,
+  "catchRate": 3,
+  "expYield": 116,
+  "eggCycles": 20,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FAIRY",
+   "TYPE_FLYING"
+  ],
+  "genderRatio": "MON_FEMALE",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_CUTE_CHARM",
+   "ABILITY_NONE",
+   "ABILITY_CONTRARY"
+  ],
+  "bodyColor": "BODY_COLOR_PINK",
+  "name": "Enamorus",
+  "learnset": "sEnamorusLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 0,
+  "iconPal": 1,
+  "elevation": 7,
+  "gfx": "EnamorusIncarnate",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    7,
+    "MOVE_BITE"
+   ],
+   [
+    11,
+    "MOVE_TWISTER"
+   ],
+   [
+    14,
+    "MOVE_DRAINING_KISS"
+   ],
+   [
+    22,
+    "MOVE_IRON_DEFENSE"
+   ],
+   [
+    31,
+    "MOVE_EXTRASENSORY"
+   ],
+   [
+    41,
+    "MOVE_CRUNCH"
+   ],
+   [
+    47,
+    "MOVE_MOONBLAST"
+   ],
+   [
+    52,
+    "MOVE_SPRINGTIDE_STORM"
+   ]
+  ]
+ },
+ "WO_CHIEN": {
+  "baseHP": 85,
+  "baseAttack": 85,
+  "baseDefense": 100,
+  "baseSpeed": 70,
+  "baseSpAttack": 95,
+  "baseSpDefense": 135,
+  "catchRate": 6,
+  "expYield": 285,
+  "eggCycles": 50,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 3,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_GRASS"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TABLETS_OF_RUIN",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BROWN",
+  "name": "Wo-Chien",
+  "learnset": "sWoChienLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 3,
+  "iconPal": 1,
+  "elevation": 0,
+  "gfx": "WoChien",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_ABSORB"
+   ],
+   [
+    1,
+    "MOVE_SPITE"
+   ],
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    5,
+    "MOVE_TICKLE"
+   ],
+   [
+    10,
+    "MOVE_PAYBACK"
+   ],
+   [
+    15,
+    "MOVE_POISON_POWDER"
+   ],
+   [
+    15,
+    "MOVE_STUN_SPORE"
+   ],
+   [
+    20,
+    "MOVE_MEGA_DRAIN"
+   ],
+   [
+    25,
+    "MOVE_LEECH_SEED"
+   ],
+   [
+    30,
+    "MOVE_GROWTH"
+   ],
+   [
+    35,
+    "MOVE_INGRAIN"
+   ],
+   [
+    40,
+    "MOVE_DARK_PULSE"
+   ],
+   [
+    45,
+    "MOVE_GIGA_DRAIN"
+   ],
+   [
+    50,
+    "MOVE_RUINATION"
+   ],
+   [
+    55,
+    "MOVE_FOUL_PLAY"
+   ],
+   [
+    60,
+    "MOVE_POWER_WHIP"
+   ],
+   [
+    65,
+    "MOVE_GRASSY_TERRAIN"
+   ],
+   [
+    70,
+    "MOVE_KNOCK_OFF"
+   ],
+   [
+    75,
+    "MOVE_LEAF_STORM"
+   ]
+  ]
+ },
+ "CHIEN_PAO": {
+  "baseHP": 80,
+  "baseAttack": 120,
+  "baseDefense": 80,
+  "baseSpeed": 135,
+  "baseSpAttack": 90,
+  "baseSpDefense": 65,
+  "catchRate": 6,
+  "expYield": 285,
+  "eggCycles": 50,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 3,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_ICE"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_SWORD_OF_RUIN",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_WHITE",
+  "name": "Chien-Pao",
+  "learnset": "sChienPaoLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 5,
+  "backY": 5,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "ChienPao",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_SPITE"
+   ],
+   [
+    1,
+    "MOVE_POWDER_SNOW"
+   ],
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    5,
+    "MOVE_ICY_WIND"
+   ],
+   [
+    10,
+    "MOVE_PAYBACK"
+   ],
+   [
+    15,
+    "MOVE_MIST"
+   ],
+   [
+    15,
+    "MOVE_HAZE"
+   ],
+   [
+    20,
+    "MOVE_ICE_SHARD"
+   ],
+   [
+    25,
+    "MOVE_SWORDS_DANCE"
+   ],
+   [
+    30,
+    "MOVE_SNOWSCAPE"
+   ],
+   [
+    35,
+    "MOVE_NIGHT_SLASH"
+   ],
+   [
+    40,
+    "MOVE_DARK_PULSE"
+   ],
+   [
+    45,
+    "MOVE_ICICLE_CRASH"
+   ],
+   [
+    50,
+    "MOVE_RUINATION"
+   ],
+   [
+    55,
+    "MOVE_SUCKER_PUNCH"
+   ],
+   [
+    60,
+    "MOVE_SACRED_SWORD"
+   ],
+   [
+    65,
+    "MOVE_RECOVER"
+   ],
+   [
+    70,
+    "MOVE_THROAT_CHOP"
+   ],
+   [
+    75,
+    "MOVE_SHEER_COLD"
+   ]
+  ]
+ },
+ "TING_LU": {
+  "baseHP": 155,
+  "baseAttack": 110,
+  "baseDefense": 125,
+  "baseSpeed": 45,
+  "baseSpAttack": 55,
+  "baseSpDefense": 80,
+  "catchRate": 6,
+  "expYield": 285,
+  "eggCycles": 50,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 3,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_GROUND"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_VESSEL_OF_RUIN",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BROWN",
+  "name": "Ting-Lu",
+  "learnset": "sTingLuLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 14,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "TingLu",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    1,
+    "MOVE_SAND_TOMB"
+   ],
+   [
+    1,
+    "MOVE_SPITE"
+   ],
+   [
+    5,
+    "MOVE_SPIKES"
+   ],
+   [
+    10,
+    "MOVE_PAYBACK"
+   ],
+   [
+    15,
+    "MOVE_STOMP"
+   ],
+   [
+    20,
+    "MOVE_BULLDOZE"
+   ],
+   [
+    25,
+    "MOVE_WHIRLWIND"
+   ],
+   [
+    30,
+    "MOVE_TAUNT"
+   ],
+   [
+    35,
+    "MOVE_THRASH"
+   ],
+   [
+    40,
+    "MOVE_DARK_PULSE"
+   ],
+   [
+    45,
+    "MOVE_STOMPING_TANTRUM"
+   ],
+   [
+    50,
+    "MOVE_RUINATION"
+   ],
+   [
+    55,
+    "MOVE_THROAT_CHOP"
+   ],
+   [
+    60,
+    "MOVE_ROCK_SLIDE"
+   ],
+   [
+    65,
+    "MOVE_MEMENTO"
+   ],
+   [
+    70,
+    "MOVE_EARTHQUAKE"
+   ],
+   [
+    75,
+    "MOVE_FISSURE"
+   ]
+  ]
+ },
+ "CHI_YU": {
+  "baseHP": 55,
+  "baseAttack": 80,
+  "baseDefense": 80,
+  "baseSpeed": 100,
+  "baseSpAttack": 135,
+  "baseSpDefense": 120,
+  "catchRate": 6,
+  "expYield": 285,
+  "eggCycles": 50,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_FIRE"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_BEADS_OF_RUIN",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_RED",
+  "name": "Chi-Yu",
+  "learnset": "sChiYuLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 10,
+  "backY": 14,
+  "iconPal": 0,
+  "elevation": 15,
+  "gfx": "ChiYu",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_EMBER"
+   ],
+   [
+    1,
+    "MOVE_SPITE"
+   ],
+   [
+    1,
+    "MOVE_MEAN_LOOK"
+   ],
+   [
+    5,
+    "MOVE_FLAME_WHEEL"
+   ],
+   [
+    10,
+    "MOVE_PAYBACK"
+   ],
+   [
+    15,
+    "MOVE_WILL_O_WISP"
+   ],
+   [
+    20,
+    "MOVE_FLAME_CHARGE"
+   ],
+   [
+    25,
+    "MOVE_INCINERATE"
+   ],
+   [
+    30,
+    "MOVE_CONFUSE_RAY"
+   ],
+   [
+    35,
+    "MOVE_NASTY_PLOT"
+   ],
+   [
+    40,
+    "MOVE_DARK_PULSE"
+   ],
+   [
+    45,
+    "MOVE_LAVA_PLUME"
+   ],
+   [
+    50,
+    "MOVE_RUINATION"
+   ],
+   [
+    55,
+    "MOVE_BOUNCE"
+   ],
+   [
+    60,
+    "MOVE_SWAGGER"
+   ],
+   [
+    65,
+    "MOVE_INFERNO"
+   ],
+   [
+    70,
+    "MOVE_MEMENTO"
+   ],
+   [
+    75,
+    "MOVE_OVERHEAT"
+   ]
+  ]
+ },
+ "KORAIDON": {
+  "baseHP": 100,
+  "baseAttack": 135,
+  "baseDefense": 115,
+  "baseSpeed": 135,
+  "baseSpAttack": 85,
+  "baseSpDefense": 100,
+  "catchRate": 3,
+  "expYield": 335,
+  "eggCycles": 50,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_FIGHTING",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_ORICHALCUM_PULSE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_RED",
+  "name": "Koraidon",
+  "learnset": "sKoraidonLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 2,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Koraidon",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_SUNNY_DAY"
+   ],
+   [
+    1,
+    "MOVE_BREAKING_SWIPE"
+   ],
+   [
+    7,
+    "MOVE_ROCK_SMASH"
+   ],
+   [
+    14,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    21,
+    "MOVE_DRAIN_PUNCH"
+   ],
+   [
+    28,
+    "MOVE_BRICK_BREAK"
+   ],
+   [
+    35,
+    "MOVE_AGILITY"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    49,
+    "MOVE_FLAMETHROWER"
+   ],
+   [
+    56,
+    "MOVE_COLLISION_COURSE"
+   ],
+   [
+    63,
+    "MOVE_SCREECH"
+   ],
+   [
+    70,
+    "MOVE_COUNTER"
+   ],
+   [
+    77,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    84,
+    "MOVE_CLOSE_COMBAT"
+   ],
+   [
+    91,
+    "MOVE_FLARE_BLITZ"
+   ],
+   [
+    98,
+    "MOVE_GIGA_IMPACT"
+   ]
+  ]
+ },
+ "MIRAIDON": {
+  "baseHP": 100,
+  "baseAttack": 85,
+  "baseDefense": 100,
+  "baseSpeed": 135,
+  "baseSpAttack": 135,
+  "baseSpDefense": 115,
+  "catchRate": 3,
+  "expYield": 335,
+  "eggCycles": 50,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_ELECTRIC",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "MON_GENDERLESS",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_HADRON_ENGINE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Miraidon",
+  "learnset": "sMiraidonLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 2,
+  "iconPal": 2,
+  "elevation": 8,
+  "gfx": "Miraidon",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_THUNDER_SHOCK"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    1,
+    "MOVE_ELECTRIC_TERRAIN"
+   ],
+   [
+    7,
+    "MOVE_SHOCK_WAVE"
+   ],
+   [
+    14,
+    "MOVE_CHARGE"
+   ],
+   [
+    21,
+    "MOVE_PARABOLIC_CHARGE"
+   ],
+   [
+    28,
+    "MOVE_DISCHARGE"
+   ],
+   [
+    35,
+    "MOVE_AGILITY"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    56,
+    "MOVE_ELECTRO_DRIFT"
+   ],
+   [
+    63,
+    "MOVE_METAL_SOUND"
+   ],
+   [
+    70,
+    "MOVE_MIRROR_COAT"
+   ],
+   [
+    77,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    84,
+    "MOVE_THUNDER"
+   ],
+   [
+    91,
+    "MOVE_OVERHEAT"
+   ],
+   [
+    98,
+    "MOVE_HYPER_BEAM"
+   ]
+  ]
+ },
+ "OKIDOGI": {
+  "baseHP": 88,
+  "baseAttack": 128,
+  "baseDefense": 115,
+  "baseSpeed": 80,
+  "baseSpAttack": 58,
+  "baseSpDefense": 86,
+  "catchRate": 3,
+  "expYield": 278,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_POISON",
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "MON_MALE",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TOXIC_CHAIN",
+   "ABILITY_NONE",
+   "ABILITY_GUARD_DOG"
+  ],
+  "bodyColor": "BODY_COLOR_BLACK",
+  "name": "Okidogi",
+  "learnset": "sOkidogiLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 2,
+  "backY": 12,
+  "iconPal": 1,
+  "elevation": 0,
+  "gfx": "Okidogi",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    1,
+    "MOVE_LOW_KICK"
+   ],
+   [
+    1,
+    "MOVE_BULK_UP"
+   ],
+   [
+    8,
+    "MOVE_HOWL"
+   ],
+   [
+    16,
+    "MOVE_POISON_FANG"
+   ],
+   [
+    24,
+    "MOVE_FORCE_PALM"
+   ],
+   [
+    32,
+    "MOVE_COUNTER"
+   ],
+   [
+    40,
+    "MOVE_POISON_JAB"
+   ],
+   [
+    48,
+    "MOVE_BRUTAL_SWING"
+   ],
+   [
+    56,
+    "MOVE_CRUNCH"
+   ],
+   [
+    64,
+    "MOVE_SUPERPOWER"
+   ],
+   [
+    72,
+    "MOVE_GIGA_IMPACT"
+   ]
+  ]
+ },
+ "MUNKIDORI": {
+  "baseHP": 88,
+  "baseAttack": 75,
+  "baseDefense": 66,
+  "baseSpeed": 106,
+  "baseSpAttack": 130,
+  "baseSpDefense": 90,
+  "catchRate": 3,
+  "expYield": 278,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_POISON",
+   "TYPE_PSYCHIC"
+  ],
+  "genderRatio": "MON_MALE",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TOXIC_CHAIN",
+   "ABILITY_NONE",
+   "ABILITY_FRISK"
+  ],
+  "bodyColor": "BODY_COLOR_BLACK",
+  "name": "Munkidori",
+  "learnset": "sMunkidoriLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 5,
+  "backY": 2,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Munkidori",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_SCRATCH"
+   ],
+   [
+    1,
+    "MOVE_CONFUSION"
+   ],
+   [
+    1,
+    "MOVE_FAKE_OUT"
+   ],
+   [
+    1,
+    "MOVE_FLATTER"
+   ],
+   [
+    8,
+    "MOVE_HELPING_HAND"
+   ],
+   [
+    16,
+    "MOVE_PSYBEAM"
+   ],
+   [
+    24,
+    "MOVE_CLEAR_SMOG"
+   ],
+   [
+    32,
+    "MOVE_POISON_JAB"
+   ],
+   [
+    40,
+    "MOVE_PSYCHIC"
+   ],
+   [
+    48,
+    "MOVE_SLUDGE_WAVE"
+   ],
+   [
+    56,
+    "MOVE_NASTY_PLOT"
+   ],
+   [
+    64,
+    "MOVE_FUTURE_SIGHT"
+   ],
+   [
+    72,
+    "MOVE_PARTING_SHOT"
+   ]
+  ]
+ },
+ "FEZANDIPITI": {
+  "baseHP": 88,
+  "baseAttack": 91,
+  "baseDefense": 82,
+  "baseSpeed": 99,
+  "baseSpAttack": 70,
+  "baseSpDefense": 125,
+  "catchRate": 3,
+  "expYield": 278,
+  "eggCycles": 120,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 3,
+  "types": [
+   "TYPE_POISON",
+   "TYPE_FAIRY"
+  ],
+  "genderRatio": "MON_MALE",
+  "friendship": "0",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TOXIC_CHAIN",
+   "ABILITY_NONE",
+   "ABILITY_TECHNICIAN"
+  ],
+  "bodyColor": "BODY_COLOR_BLACK",
+  "name": "Fezandipiti",
+  "learnset": "sFezandipitiLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 0,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Fezandipiti",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_DOUBLE_KICK"
+   ],
+   [
+    1,
+    "MOVE_PECK"
+   ],
+   [
+    1,
+    "MOVE_POISON_GAS"
+   ],
+   [
+    1,
+    "MOVE_DISARMING_VOICE"
+   ],
+   [
+    8,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    16,
+    "MOVE_ATTRACT"
+   ],
+   [
+    24,
+    "MOVE_WING_ATTACK"
+   ],
+   [
+    32,
+    "MOVE_CROSS_POISON"
+   ],
+   [
+    40,
+    "MOVE_TAIL_SLAP"
+   ],
+   [
+    48,
+    "MOVE_BEAT_UP"
+   ],
+   [
+    56,
+    "MOVE_SWAGGER"
+   ],
+   [
+    56,
+    "MOVE_FLATTER"
+   ],
+   [
+    64,
+    "MOVE_ROOST"
+   ],
+   [
+    72,
+    "MOVE_MOONBLAST"
+   ]
+  ]
+ },
+ "OGERPON": {
+  "baseHP": 80,
+  "baseAttack": 120,
+  "baseDefense": 84,
+  "baseSpeed": 110,
+  "baseSpAttack": 60,
+  "baseSpDefense": 96,
+  "catchRate": 5,
+  "expYield": 275,
+  "eggCycles": 10,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_GRASS",
+   "TYPE_GRASS"
+  ],
+  "genderRatio": "MON_FEMALE",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_DEFIANT",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Ogerpon",
+  "learnset": "sOgerponLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 2,
+  "backY": 0,
+  "iconPal": 1,
+  "elevation": 0,
+  "gfx": "OgerponTeal",
+  "frontAnimId": null,
+  "moves": [
+   [
+    1,
+    "MOVE_DOUBLE_KICK"
+   ],
+   [
+    1,
+    "MOVE_COUNTER"
+   ],
+   [
+    1,
+    "MOVE_RETALIATE"
+   ],
+   [
+    1,
+    "MOVE_HORN_LEECH"
+   ],
+   [
+    1,
+    "MOVE_VINE_WHIP"
+   ],
+   [
+    1,
+    "MOVE_LEECH_SEED"
+   ],
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_FOLLOW_ME"
+   ],
+   [
+    6,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    12,
+    "MOVE_GROWTH"
+   ],
+   [
+    18,
+    "MOVE_SLAM"
+   ],
+   [
+    24,
+    "MOVE_LOW_SWEEP"
+   ],
+   [
+    30,
+    "MOVE_IVY_CUDGEL"
+   ],
+   [
+    36,
+    "MOVE_THROAT_CHOP"
+   ],
+   [
+    42,
+    "MOVE_SYNTHESIS"
+   ],
+   [
+    48,
+    "MOVE_SPIKY_SHIELD"
+   ],
+   [
+    54,
+    "MOVE_POWER_WHIP"
+   ],
+   [
+    60,
+    "MOVE_SUPERPOWER"
+   ],
+   [
+    66,
+    "MOVE_WOOD_HAMMER"
+   ]
+  ]
+ },
+ "TERAPAGOS": {
+  "baseHP": 90,
+  "baseAttack": 65,
+  "baseDefense": 85,
+  "baseSpeed": 60,
+  "baseSpAttack": 65,
+  "baseSpDefense": 85,
+  "catchRate": 255,
+  "expYield": 90,
+  "eggCycles": 5,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 1,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_NORMAL"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_NO_EGGS_DISCOVERED"
+  ],
+  "abilities": [
+   "ABILITY_TERA_SHIFT",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Terapagos",
+  "learnset": "sTerapagosLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 10,
+  "backY": 9,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "TerapagosNormal",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_WITHDRAW"
+   ],
+   [
+    1,
+    "MOVE_TRI_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_RAPID_SPIN"
+   ],
+   [
+    10,
+    "MOVE_ANCIENT_POWER"
+   ],
+   [
+    20,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    30,
+    "MOVE_PROTECT"
+   ],
+   [
+    40,
+    "MOVE_EARTH_POWER"
+   ],
+   [
+    50,
+    "MOVE_HEAVY_SLAM"
+   ],
+   [
+    60,
+    "MOVE_TERA_STARSTORM"
+   ],
+   [
+    70,
+    "MOVE_DOUBLE_EDGE"
+   ],
+   [
+    80,
+    "MOVE_ROCK_POLISH"
+   ],
+   [
+    90,
+    "MOVE_GYRO_BALL"
+   ]
+  ]
+ },
+ "GIBLE": {
+  "baseHP": 58,
+  "baseAttack": 70,
+  "baseDefense": 45,
+  "baseSpeed": 42,
+  "baseSpAttack": 40,
+  "baseSpDefense": 45,
+  "catchRate": 45,
+  "expYield": 60,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 1,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_GROUND"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_MONSTER",
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_SAND_VEIL",
+   "ABILITY_NONE",
+   "ABILITY_ROUGH_SKIN"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Gible",
+  "learnset": "sGibleLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "24",
+    "GABITE"
+   ]
+  ],
+  "frontSize": [
+   48,
+   48
+  ],
+  "backSize": [
+   56,
+   48
+  ],
+  "frontY": 9,
+  "backY": 9,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Gible",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    3,
+    "MOVE_SAND_ATTACK"
+   ],
+   [
+    7,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    13,
+    "MOVE_SANDSTORM"
+   ],
+   [
+    15,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    19,
+    "MOVE_SAND_TOMB"
+   ],
+   [
+    25,
+    "MOVE_SLASH"
+   ],
+   [
+    27,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    31,
+    "MOVE_DIG"
+   ],
+   [
+    37,
+    "MOVE_DRAGON_RUSH"
+   ]
+  ]
+ },
+ "GABITE": {
+  "baseHP": 68,
+  "baseAttack": 90,
+  "baseDefense": 65,
+  "baseSpeed": 82,
+  "baseSpAttack": 50,
+  "baseSpDefense": 55,
+  "catchRate": 45,
+  "expYield": 144,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 2,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_GROUND"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_MONSTER",
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_SAND_VEIL",
+   "ABILITY_NONE",
+   "ABILITY_ROUGH_SKIN"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Gabite",
+  "learnset": "sGabiteLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "48",
+    "GARCHOMP"
+   ]
+  ],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 2,
+  "backY": 3,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Gabite",
+  "frontAnimId": "ANIM_V_STRETCH",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_SAND_ATTACK"
+   ],
+   [
+    3,
+    "MOVE_SAND_ATTACK"
+   ],
+   [
+    7,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    13,
+    "MOVE_SANDSTORM"
+   ],
+   [
+    15,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    19,
+    "MOVE_SAND_TOMB"
+   ],
+   [
+    24,
+    "MOVE_DUAL_CHOP"
+   ],
+   [
+    28,
+    "MOVE_SLASH"
+   ],
+   [
+    33,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    40,
+    "MOVE_DIG"
+   ],
+   [
+    49,
+    "MOVE_DRAGON_RUSH"
+   ]
+  ]
+ },
+ "GARCHOMP": {
+  "baseHP": 108,
+  "baseAttack": 130,
+  "baseDefense": 95,
+  "baseSpeed": 102,
+  "baseSpAttack": 80,
+  "baseSpDefense": 85,
+  "catchRate": 45,
+  "expYield": 300,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_GROUND"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_MONSTER",
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_SAND_VEIL",
+   "ABILITY_NONE",
+   "ABILITY_ROUGH_SKIN"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Garchomp",
+  "learnset": "sGarchompLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 0,
+  "backY": 4,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Garchomp",
+  "frontAnimId": "ANIM_V_SHAKE_TWICE",
+  "moves": [
+   [
+    1,
+    "MOVE_FIRE_FANG"
+   ],
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_SAND_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    1,
+    "MOVE_SANDSTORM"
+   ],
+   [
+    3,
+    "MOVE_SAND_ATTACK"
+   ],
+   [
+    7,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    13,
+    "MOVE_SANDSTORM"
+   ],
+   [
+    15,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    19,
+    "MOVE_SAND_TOMB"
+   ],
+   [
+    24,
+    "MOVE_DUAL_CHOP"
+   ],
+   [
+    28,
+    "MOVE_SLASH"
+   ],
+   [
+    33,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    40,
+    "MOVE_DIG"
+   ],
+   [
+    48,
+    "MOVE_CRUNCH"
+   ],
+   [
+    55,
+    "MOVE_DRAGON_RUSH"
+   ]
+  ]
+ },
+ "DEINO": {
+  "baseHP": 52,
+  "baseAttack": 65,
+  "baseDefense": 50,
+  "baseSpeed": 38,
+  "baseSpAttack": 45,
+  "baseSpDefense": 50,
+  "catchRate": 45,
+  "expYield": 60,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 1,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_HUSTLE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Deino",
+  "learnset": "sDeinoLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "50",
+    "ZWEILOUS"
+   ]
+  ],
+  "frontSize": [
+   40,
+   48
+  ],
+  "backSize": [
+   48,
+   48
+  ],
+  "frontY": 10,
+  "backY": 14,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "Deino",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    4,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    9,
+    "MOVE_BITE"
+   ],
+   [
+    12,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    17,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    20,
+    "MOVE_ROAR"
+   ],
+   [
+    25,
+    "MOVE_CRUNCH"
+   ],
+   [
+    28,
+    "MOVE_SLAM"
+   ],
+   [
+    32,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    38,
+    "MOVE_WORK_UP"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_RUSH"
+   ],
+   [
+    48,
+    "MOVE_BODY_SLAM"
+   ],
+   [
+    52,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    58,
+    "MOVE_HYPER_VOICE"
+   ],
+   [
+    62,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "ZWEILOUS": {
+  "baseHP": 72,
+  "baseAttack": 85,
+  "baseDefense": 70,
+  "baseSpeed": 58,
+  "baseSpAttack": 65,
+  "baseSpDefense": 70,
+  "catchRate": 45,
+  "expYield": 147,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 2,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_HUSTLE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Zweilous",
+  "learnset": "sZweilousLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "64",
+    "HYDREIGON"
+   ]
+  ],
+  "frontSize": [
+   64,
+   56
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 6,
+  "backY": 9,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "Zweilous",
+  "frontAnimId": "ANIM_H_STRETCH",
+  "moves": [
+   [
+    1,
+    "MOVE_DOUBLE_HIT"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    1,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    4,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    9,
+    "MOVE_BITE"
+   ],
+   [
+    12,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    17,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    20,
+    "MOVE_ROAR"
+   ],
+   [
+    25,
+    "MOVE_CRUNCH"
+   ],
+   [
+    28,
+    "MOVE_SLAM"
+   ],
+   [
+    32,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    38,
+    "MOVE_WORK_UP"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_RUSH"
+   ],
+   [
+    48,
+    "MOVE_BODY_SLAM"
+   ],
+   [
+    55,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    64,
+    "MOVE_HYPER_VOICE"
+   ],
+   [
+    71,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "HYDREIGON": {
+  "baseHP": 92,
+  "baseAttack": 105,
+  "baseDefense": 90,
+  "baseSpeed": 98,
+  "baseSpAttack": 125,
+  "baseSpDefense": 90,
+  "catchRate": 45,
+  "expYield": 300,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 3,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DARK",
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_LEVITATE",
+   "ABILITY_NONE",
+   "ABILITY_NONE"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Hydreigon",
+  "learnset": "sHydreigonLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 0,
+  "backY": 11,
+  "iconPal": 2,
+  "elevation": 3,
+  "gfx": "Hydreigon",
+  "frontAnimId": "ANIM_RISING_WOBBLE",
+  "moves": [
+   [
+    1,
+    "MOVE_TRI_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_RAGE"
+   ],
+   [
+    1,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    4,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    9,
+    "MOVE_BITE"
+   ],
+   [
+    12,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    17,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    20,
+    "MOVE_ROAR"
+   ],
+   [
+    25,
+    "MOVE_CRUNCH"
+   ],
+   [
+    28,
+    "MOVE_SLAM"
+   ],
+   [
+    32,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    38,
+    "MOVE_WORK_UP"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_RUSH"
+   ],
+   [
+    48,
+    "MOVE_BODY_SLAM"
+   ],
+   [
+    55,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    68,
+    "MOVE_HYPER_VOICE"
+   ],
+   [
+    79,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "GOOMY": {
+  "baseHP": 45,
+  "baseAttack": 50,
+  "baseDefense": 35,
+  "baseSpeed": 40,
+  "baseSpAttack": 55,
+  "baseSpDefense": 75,
+  "catchRate": 45,
+  "expYield": 60,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 1,
+  "types": [
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_SAP_SIPPER",
+   "ABILITY_HYDRATION",
+   "ABILITY_GOOEY"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Goomy",
+  "learnset": "sGoomyLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "40",
+    "SLIGGOO"
+   ],
+   [
+    "EVO_LEVEL",
+    "40",
+    "SLIGGOO_HISUI"
+   ]
+  ],
+  "frontSize": [
+   32,
+   40
+  ],
+  "backSize": [
+   48,
+   56
+  ],
+  "frontY": 13,
+  "backY": 9,
+  "iconPal": 5,
+  "elevation": 0,
+  "gfx": "Goomy",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE_SLOW",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_BUBBLE"
+   ],
+   [
+    5,
+    "MOVE_ABSORB"
+   ],
+   [
+    9,
+    "MOVE_PROTECT"
+   ],
+   [
+    13,
+    "MOVE_BIDE"
+   ],
+   [
+    18,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    25,
+    "MOVE_RAIN_DANCE"
+   ],
+   [
+    28,
+    "MOVE_FLAIL"
+   ],
+   [
+    32,
+    "MOVE_BODY_SLAM"
+   ],
+   [
+    38,
+    "MOVE_MUDDY_WATER"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_PULSE"
+   ]
+  ]
+ },
+ "SLIGGOO": {
+  "baseHP": 68,
+  "baseAttack": 75,
+  "baseDefense": 53,
+  "baseSpeed": 60,
+  "baseSpAttack": 83,
+  "baseSpDefense": 113,
+  "catchRate": 45,
+  "expYield": 158,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 2,
+  "types": [
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_SAP_SIPPER",
+   "ABILITY_HYDRATION",
+   "ABILITY_GOOEY"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Sliggoo",
+  "learnset": "sSliggooLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "50",
+    "GOODRA"
+   ],
+   [
+    "EVO_LEVEL",
+    "50",
+    "GOODRA"
+   ]
+  ],
+  "frontSize": [
+   32,
+   64
+  ],
+  "backSize": [
+   48,
+   64
+  ],
+  "frontY": 6,
+  "backY": 0,
+  "iconPal": 5,
+  "elevation": 0,
+  "gfx": "Sliggoo",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_BUBBLE"
+   ],
+   [
+    5,
+    "MOVE_ABSORB"
+   ],
+   [
+    9,
+    "MOVE_PROTECT"
+   ],
+   [
+    13,
+    "MOVE_BIDE"
+   ],
+   [
+    18,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    25,
+    "MOVE_RAIN_DANCE"
+   ],
+   [
+    28,
+    "MOVE_FLAIL"
+   ],
+   [
+    32,
+    "MOVE_BODY_SLAM"
+   ],
+   [
+    38,
+    "MOVE_MUDDY_WATER"
+   ],
+   [
+    47,
+    "MOVE_DRAGON_PULSE"
+   ]
+  ]
+ },
+ "GOODRA": {
+  "baseHP": 90,
+  "baseAttack": 100,
+  "baseDefense": 70,
+  "baseSpeed": 80,
+  "baseSpAttack": 110,
+  "baseSpDefense": 150,
+  "catchRate": 45,
+  "expYield": 300,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 3,
+  "types": [
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "35",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_SAP_SIPPER",
+   "ABILITY_HYDRATION",
+   "ABILITY_GOOEY"
+  ],
+  "bodyColor": "BODY_COLOR_PURPLE",
+  "name": "Goodra",
+  "learnset": "sGoodraLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 0,
+  "backY": 0,
+  "iconPal": 5,
+  "elevation": 0,
+  "gfx": "Goodra",
+  "frontAnimId": "ANIM_V_SHAKE",
+  "moves": [
+   [
+    1,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    1,
+    "MOVE_FEINT"
+   ],
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_BUBBLE"
+   ],
+   [
+    5,
+    "MOVE_ABSORB"
+   ],
+   [
+    9,
+    "MOVE_PROTECT"
+   ],
+   [
+    13,
+    "MOVE_BIDE"
+   ],
+   [
+    18,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    25,
+    "MOVE_RAIN_DANCE"
+   ],
+   [
+    28,
+    "MOVE_FLAIL"
+   ],
+   [
+    32,
+    "MOVE_BODY_SLAM"
+   ],
+   [
+    38,
+    "MOVE_MUDDY_WATER"
+   ],
+   [
+    47,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    50,
+    "MOVE_AQUA_TAIL"
+   ],
+   [
+    55,
+    "MOVE_POWER_WHIP"
+   ],
+   [
+    63,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "JANGMO_O": {
+  "baseHP": 45,
+  "baseAttack": 55,
+  "baseDefense": 65,
+  "baseSpeed": 45,
+  "baseSpAttack": 45,
+  "baseSpDefense": 45,
+  "catchRate": 45,
+  "expYield": 60,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 1,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_BULLETPROOF",
+   "ABILITY_SOUNDPROOF",
+   "ABILITY_OVERCOAT"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Jangmo-o",
+  "learnset": "sJangmoOLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "35",
+    "HAKAMO_O"
+   ]
+  ],
+  "frontSize": [
+   36,
+   43
+  ],
+  "backSize": [
+   42,
+   56
+  ],
+  "frontY": 9,
+  "backY": 5,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "JangmoO",
+  "frontAnimId": "ANIM_H_STRETCH",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    5,
+    "MOVE_LEER"
+   ],
+   [
+    9,
+    "MOVE_BIDE"
+   ],
+   [
+    13,
+    "MOVE_PROTECT"
+   ],
+   [
+    17,
+    "MOVE_DRAGON_TAIL"
+   ],
+   [
+    21,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    25,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    29,
+    "MOVE_WORK_UP"
+   ],
+   [
+    33,
+    "MOVE_SCREECH"
+   ],
+   [
+    37,
+    "MOVE_IRON_DEFENSE"
+   ],
+   [
+    41,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    45,
+    "MOVE_NOBLE_ROAR"
+   ],
+   [
+    49,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    53,
+    "MOVE_OUTRAGE"
+   ]
+  ]
+ },
+ "HAKAMO_O": {
+  "baseHP": 55,
+  "baseAttack": 75,
+  "baseDefense": 90,
+  "baseSpeed": 65,
+  "baseSpAttack": 65,
+  "baseSpDefense": 70,
+  "catchRate": 45,
+  "expYield": 147,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 2,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_BULLETPROOF",
+   "ABILITY_SOUNDPROOF",
+   "ABILITY_OVERCOAT"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Hakamo-o",
+  "learnset": "sHakamoOLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "45",
+    "KOMMO_O"
+   ],
+   [
+    "EVO_NONE",
+    "0",
+    "KOMMO_O_TOTEM"
+   ]
+  ],
+  "frontSize": [
+   53,
+   61
+  ],
+  "backSize": [
+   49,
+   56
+  ],
+  "frontY": 1,
+  "backY": 5,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "HakamoO",
+  "frontAnimId": "ANIM_H_STRETCH",
+  "moves": [
+   [
+    0,
+    "MOVE_SKY_UPPERCUT"
+   ],
+   [
+    1,
+    "MOVE_SKY_UPPERCUT"
+   ],
+   [
+    1,
+    "MOVE_AUTOTOMIZE"
+   ],
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    1,
+    "MOVE_BIDE"
+   ],
+   [
+    1,
+    "MOVE_PROTECT"
+   ],
+   [
+    5,
+    "MOVE_LEER"
+   ],
+   [
+    9,
+    "MOVE_BIDE"
+   ],
+   [
+    13,
+    "MOVE_PROTECT"
+   ],
+   [
+    17,
+    "MOVE_DRAGON_TAIL"
+   ],
+   [
+    21,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    25,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    29,
+    "MOVE_WORK_UP"
+   ],
+   [
+    33,
+    "MOVE_SCREECH"
+   ],
+   [
+    38,
+    "MOVE_IRON_DEFENSE"
+   ],
+   [
+    43,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    48,
+    "MOVE_NOBLE_ROAR"
+   ],
+   [
+    53,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    58,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    63,
+    "MOVE_CLOSE_COMBAT"
+   ]
+  ]
+ },
+ "KOMMO_O": {
+  "baseHP": 75,
+  "baseAttack": 110,
+  "baseDefense": 125,
+  "baseSpeed": 85,
+  "baseSpAttack": 100,
+  "baseSpDefense": 105,
+  "catchRate": 45,
+  "expYield": 300,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 3,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_FIGHTING"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_BULLETPROOF",
+   "ABILITY_SOUNDPROOF",
+   "ABILITY_OVERCOAT"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Kommo-o",
+  "learnset": "sKommoOLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   63,
+   63
+  ],
+  "backSize": [
+   60,
+   60
+  ],
+  "frontY": 0,
+  "backY": 2,
+  "iconPal": 2,
+  "elevation": 0,
+  "gfx": "KommoO",
+  "frontAnimId": "ANIM_SHRINK_GROW_VIBRATE_FAST",
+  "moves": [
+   [
+    0,
+    "MOVE_CLANGING_SCALES"
+   ],
+   [
+    1,
+    "MOVE_CLANGING_SCALES"
+   ],
+   [
+    1,
+    "MOVE_SKY_UPPERCUT"
+   ],
+   [
+    1,
+    "MOVE_BELLY_DRUM"
+   ],
+   [
+    1,
+    "MOVE_AUTOTOMIZE"
+   ],
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    1,
+    "MOVE_BIDE"
+   ],
+   [
+    1,
+    "MOVE_PROTECT"
+   ],
+   [
+    5,
+    "MOVE_LEER"
+   ],
+   [
+    9,
+    "MOVE_BIDE"
+   ],
+   [
+    13,
+    "MOVE_PROTECT"
+   ],
+   [
+    17,
+    "MOVE_DRAGON_TAIL"
+   ],
+   [
+    21,
+    "MOVE_SCARY_FACE"
+   ],
+   [
+    25,
+    "MOVE_HEADBUTT"
+   ],
+   [
+    29,
+    "MOVE_WORK_UP"
+   ],
+   [
+    33,
+    "MOVE_SCREECH"
+   ],
+   [
+    38,
+    "MOVE_IRON_DEFENSE"
+   ],
+   [
+    43,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    51,
+    "MOVE_NOBLE_ROAR"
+   ],
+   [
+    59,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    67,
+    "MOVE_OUTRAGE"
+   ],
+   [
+    75,
+    "MOVE_CLOSE_COMBAT"
+   ]
+  ]
+ },
+ "DREEPY": {
+  "baseHP": 28,
+  "baseAttack": 60,
+  "baseDefense": 30,
+  "baseSpeed": 82,
+  "baseSpAttack": 40,
+  "baseSpDefense": 30,
+  "catchRate": 45,
+  "expYield": 54,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 1,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_GHOST"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_AMORPHOUS",
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_CLEAR_BODY",
+   "ABILITY_INFILTRATOR",
+   "ABILITY_CURSED_BODY"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Dreepy",
+  "learnset": "sDreepyLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "50",
+    "DRAKLOAK"
+   ]
+  ],
+  "frontSize": [
+   48,
+   40
+  ],
+  "backSize": [
+   56,
+   40
+  ],
+  "frontY": 14,
+  "backY": 15,
+  "iconPal": 0,
+  "elevation": 5,
+  "gfx": "Dreepy",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_ASTONISH"
+   ],
+   [
+    1,
+    "MOVE_INFESTATION"
+   ],
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ]
+  ]
+ },
+ "DRAKLOAK": {
+  "baseHP": 68,
+  "baseAttack": 80,
+  "baseDefense": 50,
+  "baseSpeed": 102,
+  "baseSpAttack": 60,
+  "baseSpDefense": 50,
+  "catchRate": 45,
+  "expYield": 144,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 2,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_GHOST"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_AMORPHOUS",
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_CLEAR_BODY",
+   "ABILITY_INFILTRATOR",
+   "ABILITY_CURSED_BODY"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Drakloak",
+  "learnset": "sDrakloakLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "60",
+    "DRAGAPULT"
+   ]
+  ],
+  "frontSize": [
+   64,
+   56
+  ],
+  "backSize": [
+   64,
+   48
+  ],
+  "frontY": 7,
+  "backY": 11,
+  "iconPal": 0,
+  "elevation": 5,
+  "gfx": "Drakloak",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    0,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_PULSE"
+   ],
+   [
+    1,
+    "MOVE_ASTONISH"
+   ],
+   [
+    1,
+    "MOVE_INFESTATION"
+   ],
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    6,
+    "MOVE_LOCK_ON"
+   ],
+   [
+    12,
+    "MOVE_ASSURANCE"
+   ],
+   [
+    18,
+    "MOVE_HEX"
+   ],
+   [
+    24,
+    "MOVE_AGILITY"
+   ],
+   [
+    30,
+    "MOVE_DOUBLE_HIT"
+   ],
+   [
+    36,
+    "MOVE_U_TURN"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    48,
+    "MOVE_PHANTOM_FORCE"
+   ],
+   [
+    54,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    61,
+    "MOVE_DRAGON_RUSH"
+   ],
+   [
+    66,
+    "MOVE_DOUBLE_EDGE"
+   ],
+   [
+    72,
+    "MOVE_LAST_RESORT"
+   ]
+  ]
+ },
+ "DRAGAPULT": {
+  "baseHP": 88,
+  "baseAttack": 120,
+  "baseDefense": 75,
+  "baseSpeed": 142,
+  "baseSpAttack": 100,
+  "baseSpDefense": 75,
+  "catchRate": 45,
+  "expYield": 300,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 0,
+  "evYield_Defense": 0,
+  "evYield_Speed": 3,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_GHOST"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_AMORPHOUS",
+   "EGG_GROUP_DRAGON"
+  ],
+  "abilities": [
+   "ABILITY_CLEAR_BODY",
+   "ABILITY_INFILTRATOR",
+   "ABILITY_CURSED_BODY"
+  ],
+  "bodyColor": "BODY_COLOR_GREEN",
+  "name": "Dragapult",
+  "learnset": "sDragapultLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   56
+  ],
+  "frontY": 2,
+  "backY": 4,
+  "iconPal": 0,
+  "elevation": 3,
+  "gfx": "Dragapult",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    0,
+    "MOVE_DRAGON_DARTS"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_DARTS"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    1,
+    "MOVE_SUCKER_PUNCH"
+   ],
+   [
+    1,
+    "MOVE_ASTONISH"
+   ],
+   [
+    1,
+    "MOVE_INFESTATION"
+   ],
+   [
+    1,
+    "MOVE_QUICK_ATTACK"
+   ],
+   [
+    1,
+    "MOVE_BITE"
+   ],
+   [
+    6,
+    "MOVE_LOCK_ON"
+   ],
+   [
+    12,
+    "MOVE_ASSURANCE"
+   ],
+   [
+    18,
+    "MOVE_HEX"
+   ],
+   [
+    24,
+    "MOVE_AGILITY"
+   ],
+   [
+    30,
+    "MOVE_DOUBLE_HIT"
+   ],
+   [
+    36,
+    "MOVE_U_TURN"
+   ],
+   [
+    42,
+    "MOVE_DRAGON_DANCE"
+   ],
+   [
+    48,
+    "MOVE_PHANTOM_FORCE"
+   ],
+   [
+    54,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    63,
+    "MOVE_DRAGON_RUSH"
+   ],
+   [
+    70,
+    "MOVE_DOUBLE_EDGE"
+   ],
+   [
+    78,
+    "MOVE_LAST_RESORT"
+   ]
+  ]
+ },
+ "FRIGIBAX": {
+  "baseHP": 65,
+  "baseAttack": 75,
+  "baseDefense": 45,
+  "baseSpeed": 55,
+  "baseSpAttack": 35,
+  "baseSpDefense": 45,
+  "catchRate": 45,
+  "expYield": 64,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 1,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_ICE"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON",
+   "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+   "ABILITY_THERMAL_EXCHANGE",
+   "ABILITY_NONE",
+   "ABILITY_ICE_BODY"
+  ],
+  "bodyColor": "BODY_COLOR_GRAY",
+  "name": "Frigibax",
+  "learnset": "sFrigibaxLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "35",
+    "ARCTIBAX"
+   ]
+  ],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 13,
+  "backY": 13,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Frigibax",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_TAIL"
+   ],
+   [
+    6,
+    "MOVE_ICY_WIND"
+   ],
+   [
+    12,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    18,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    24,
+    "MOVE_BITE"
+   ],
+   [
+    29,
+    "MOVE_ICE_FANG"
+   ],
+   [
+    32,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    36,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    40,
+    "MOVE_ICE_BEAM"
+   ],
+   [
+    44,
+    "MOVE_CRUNCH"
+   ],
+   [
+    48,
+    "MOVE_ICICLE_CRASH"
+   ]
+  ]
+ },
+ "ARCTIBAX": {
+  "baseHP": 90,
+  "baseAttack": 95,
+  "baseDefense": 66,
+  "baseSpeed": 62,
+  "baseSpAttack": 45,
+  "baseSpDefense": 65,
+  "catchRate": 25,
+  "expYield": 148,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 2,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_ICE"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON",
+   "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+   "ABILITY_THERMAL_EXCHANGE",
+   "ABILITY_NONE",
+   "ABILITY_ICE_BODY"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Arctibax",
+  "learnset": "sArctibaxLevelUpLearnset",
+  "evolutions": [
+   [
+    "EVO_LEVEL",
+    "54",
+    "BAXCALIBUR"
+   ]
+  ],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 6,
+  "backY": 10,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Arctibax",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_TAIL"
+   ],
+   [
+    6,
+    "MOVE_ICY_WIND"
+   ],
+   [
+    12,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    18,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    24,
+    "MOVE_BITE"
+   ],
+   [
+    29,
+    "MOVE_ICE_FANG"
+   ],
+   [
+    40,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    45,
+    "MOVE_ICE_BEAM"
+   ],
+   [
+    50,
+    "MOVE_CRUNCH"
+   ],
+   [
+    55,
+    "MOVE_ICICLE_CRASH"
+   ]
+  ]
+ },
+ "BAXCALIBUR": {
+  "baseHP": 115,
+  "baseAttack": 145,
+  "baseDefense": 92,
+  "baseSpeed": 87,
+  "baseSpAttack": 75,
+  "baseSpDefense": 86,
+  "catchRate": 10,
+  "expYield": 300,
+  "eggCycles": 40,
+  "evYield_HP": 0,
+  "evYield_Attack": 3,
+  "evYield_Defense": 0,
+  "evYield_Speed": 0,
+  "evYield_SpAttack": 0,
+  "evYield_SpDefense": 0,
+  "types": [
+   "TYPE_DRAGON",
+   "TYPE_ICE"
+  ],
+  "genderRatio": "PERCENT_FEMALE(50)",
+  "friendship": "STANDARD_FRIENDSHIP",
+  "growthRate": "GROWTH_SLOW",
+  "eggGroups": [
+   "EGG_GROUP_DRAGON",
+   "EGG_GROUP_MINERAL"
+  ],
+  "abilities": [
+   "ABILITY_THERMAL_EXCHANGE",
+   "ABILITY_NONE",
+   "ABILITY_ICE_BODY"
+  ],
+  "bodyColor": "BODY_COLOR_BLUE",
+  "name": "Baxcalibur",
+  "learnset": "sBaxcaliburLevelUpLearnset",
+  "evolutions": [],
+  "frontSize": [
+   64,
+   64
+  ],
+  "backSize": [
+   64,
+   64
+  ],
+  "frontY": 1,
+  "backY": 5,
+  "iconPal": 0,
+  "elevation": 0,
+  "gfx": "Baxcalibur",
+  "frontAnimId": "ANIM_V_SQUISH_AND_BOUNCE",
+  "moves": [
+   [
+    0,
+    "MOVE_GLAIVE_RUSH"
+   ],
+   [
+    1,
+    "MOVE_SNOWSCAPE"
+   ],
+   [
+    1,
+    "MOVE_BREAKING_SWIPE"
+   ],
+   [
+    1,
+    "MOVE_DRAGON_TAIL"
+   ],
+   [
+    1,
+    "MOVE_ICE_SHARD"
+   ],
+   [
+    1,
+    "MOVE_TACKLE"
+   ],
+   [
+    1,
+    "MOVE_LEER"
+   ],
+   [
+    6,
+    "MOVE_ICY_WIND"
+   ],
+   [
+    12,
+    "MOVE_DRAGON_BREATH"
+   ],
+   [
+    18,
+    "MOVE_FOCUS_ENERGY"
+   ],
+   [
+    24,
+    "MOVE_BITE"
+   ],
+   [
+    29,
+    "MOVE_ICE_FANG"
+   ],
+   [
+    35,
+    "MOVE_DRAGON_CLAW"
+   ],
+   [
+    42,
+    "MOVE_TAKE_DOWN"
+   ],
+   [
+    48,
+    "MOVE_ICE_BEAM"
+   ],
+   [
+    55,
+    "MOVE_CRUNCH"
+   ],
+   [
+    62,
+    "MOVE_ICICLE_CRASH"
+   ]
+  ]
+ }
+}
