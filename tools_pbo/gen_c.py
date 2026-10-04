@@ -12,7 +12,7 @@ NPC16 = ['chichi', 'roshi', 'krillin', 'yamcha', 'tien', 'bulma', 'videl', 'andr
          'yamu', 'majin_soldier', 'saiyan_soldier', 'lime', 'dr_brief', 'oolong', 'gohan_kid',
          'police', 'purple_man', 'pink_woman', 'pigtail_girl', 'old_man', 'village_woman', 'blue_kid', 'farm_girl',
          'brown_woman', 'cap_kid', 'green_kid', 'striped_man', 'blonde_girl', 'super_buu']
-FORMS = ['goku_ssj', 'goku_ssj2', 'goku_ssj3']
+FORMS = ['goku_ssj', 'goku_ssj2', 'goku_ssj3', 'goku_vegito']
 
 # graphics id -> graphics info symbol
 REPOINT = {
@@ -25,7 +25,7 @@ REPOINT = {
     'MAN_1': 'purple_man', 'MAN_2': 'police', 'MAN_3': 'striped_man', 'LITTLE_BOY': 'cap_kid',
     'LITTLE_GIRL': 'pigtail_girl', 'BOY_1': 'blue_kid', 'GIRL_1': 'blonde_girl', 'PICNICKER': 'farm_girl',
     'NINJA_BOY': 'green_kid', 'SIDNEY': 'super_buu',
-    'UNUSED_PIKACHU_DOLL': 'bulma', 'UNUSED_NATU_DOLL': 'goku_ssj', 'UNUSED_MAGNEMITE_DOLL': 'goku_ssj2', 'UNUSED_SQUIRTLE_DOLL': 'goku_ssj3',
+    'UNUSED_PIKACHU_DOLL': 'bulma', 'UNUSED_NATU_DOLL': 'goku_ssj', 'UNUSED_MAGNEMITE_DOLL': 'goku_ssj2', 'UNUSED_SQUIRTLE_DOLL': 'goku_ssj3', 'UNUSED_PORYGON2_DOLL': 'goku_vegito',
     'RIVAL_MAY_NORMAL': 'vegeta', 'RIVAL_MAY_MACH_BIKE': 'vegeta_mach_bike', 'RIVAL_MAY_ACRO_BIKE': 'vegeta_acro_bike',
     'RIVAL_MAY_SURFING': 'vegeta_surfing', 'RIVAL_MAY_FIELD_MOVE': 'vegeta_field_move',
     'RIVAL_BRENDAN_NORMAL': 'vegeta', 'RIVAL_BRENDAN_MACH_BIKE': 'vegeta_mach_bike', 'RIVAL_BRENDAN_ACRO_BIKE': 'vegeta_acro_bike',

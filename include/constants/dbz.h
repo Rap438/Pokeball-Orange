@@ -37,6 +37,29 @@
 #define DBZ_ENEMY_SAIYAN_SOLDIER 1
 #define DBZ_ENEMY_MAJIN_SOLDIER  2
 #define DBZ_ENEMY_VEGETA         3
+#define DBZ_ENEMY_GENERAL_BLUE   4
+#define DBZ_ENEMY_DR_GERO        5
+#define DBZ_ENEMY_KID_BUU        6
+#define DBZ_ENEMY_SPARRING       7
+#define DBZ_ENEMY_FIGHTER        8
+
+// story flags (permanent, unused in Emerald)
+#define FLAG_DBZ_BOSS_BLUE      FLAG_UNUSED_0x020
+#define FLAG_DBZ_BOSS_BUU       FLAG_UNUSED_0x021
+#define FLAG_DBZ_BOSS_GERO      FLAG_UNUSED_0x022
+#define FLAG_DBZ_FINALE         FLAG_UNUSED_0x023
+#define FLAG_DBZ_TOURNAMENT     FLAG_UNUSED_0x024
+#define FLAG_DBZ_GRAVITY_INTRO  FLAG_UNUSED_0x025
+#define FLAG_DBZ_CHAMBER_CLEAR  FLAG_UNUSED_0x026
+#define FLAG_DBZ_TOURNEY_ROUND1 FLAG_UNUSED_0x027
+#define FLAG_DBZ_TOURNEY_ROUND2 FLAG_UNUSED_0x028
+#define FLAG_DBZ_TOURNEY_ROUND3 FLAG_UNUSED_0x029
+
+// VAR_0x8008 for special DBZ_SetNextFightFlags
+#define DBZ_FIGHTF_FUSION    (1 << 0)
+#define DBZ_FIGHTF_SCRIPTED  (1 << 1)
+#define DBZ_FIGHTF_CHAMBER   (1 << 2)
+#define DBZ_FIGHTF_FIGHTER(n) ((n) << 4)
 
 // VAR_DBZ_OPTIONS layout (all zero = defaults)
 #define DBZ_OPT_DAYNIGHT_OFF   (1 << 0)
@@ -49,6 +72,18 @@
 #define DBZ_OPT_HINTS_OFF      (1 << 9)
 #define DBZ_OPT_HUD_OFF        (1 << 10)
 #define DBZ_OPT_SHINY_SHIFT    11         // 3 bits: 0 1/8192, 1 1/4096, 2 1/1024, 3 1/256, 4 always
+#define DBZ_OPT_AUTORUN_OFF    (1 << 14)
+
+// VAR_DBZ_MISC bits
+#define DBZ_MISC_MOVE_MASK     0x0003     // selected special: 0 ki blast, 1 Kamehameha, 2 Spirit Bomb
+#define DBZ_MISC_HIDE_KI       (1 << 2)
+#define DBZ_MISC_GRAVITY_SHIFT 3          // bits 3-12: gravity-training steps left / 2
+#define DBZ_MISC_GRAVITY_MASK  (0x3FF << DBZ_MISC_GRAVITY_SHIFT)
+
+// techniques (unlocked by badges, announced once via VAR_DBZ_SEEN_FORMS bits 8-10)
+#define DBZ_TECH_KAIOKEN        1
+#define DBZ_TECH_INSTANT_TRANS  2
+#define DBZ_TECH_SPIRIT_BOMB    3
 
 #define DBZ_DIFF_EASY   0
 #define DBZ_DIFF_NORMAL 1

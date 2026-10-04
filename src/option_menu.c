@@ -31,8 +31,8 @@ enum
     MENUITEM_SOUND,
     MENUITEM_BUTTONMODE,
     MENUITEM_FRAMETYPE,
-    MENUITEM_DBZ_FIRST,                       // DBZ settings 0..9, in DBZ_GetOptionValue order
-    MENUITEM_CANCEL = MENUITEM_DBZ_FIRST + 10,
+    MENUITEM_DBZ_FIRST,                       // DBZ settings 0..10, in DBZ_GetOptionValue order
+    MENUITEM_CANCEL = MENUITEM_DBZ_FIRST + 11,
     MENUITEM_COUNT,
 };
 
@@ -65,6 +65,7 @@ static const u8 sText_Opt_Sparks[] = _("SSJ2 SPARKS");
 static const u8 sText_Opt_PowerUp[] = _("POWER-UPS");
 static const u8 sText_Opt_Hints[] = _("FORM HINTS");
 static const u8 sText_Opt_Shiny[] = _("SHINY ODDS");
+static const u8 sText_Opt_AutoRun[] = _("AUTO-RUN");
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
@@ -84,6 +85,7 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_DBZ_FIRST + 7] = sText_Opt_PowerUp,
     [MENUITEM_DBZ_FIRST + 8] = sText_Opt_Hints,
     [MENUITEM_DBZ_FIRST + 9] = sText_Opt_Shiny,
+    [MENUITEM_DBZ_FIRST + 10] = sText_Opt_AutoRun,
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
 };
 
@@ -296,7 +298,7 @@ void CB2_InitOptionMenu(void)
         sOptionValues[MENUITEM_SOUND] = gSaveBlock2Ptr->optionsSound;
         sOptionValues[MENUITEM_BUTTONMODE] = gSaveBlock2Ptr->optionsButtonMode;
         sOptionValues[MENUITEM_FRAMETYPE] = gSaveBlock2Ptr->optionsWindowFrameType;
-        for (i = 0; i < 10; i++)
+        for (i = 0; i < 11; i++)
             sOptionValues[MENUITEM_DBZ_FIRST + i] = DBZ_GetOptionValue(i);
         PutWindowTilemap(WIN_OPTIONS);
         DrawOptionMenuTexts(0, 0);
@@ -389,7 +391,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound = sOptionValues[MENUITEM_SOUND];
     gSaveBlock2Ptr->optionsButtonMode = sOptionValues[MENUITEM_BUTTONMODE];
     gSaveBlock2Ptr->optionsWindowFrameType = sOptionValues[MENUITEM_FRAMETYPE];
-    for (i = 0; i < 10; i++)
+    for (i = 0; i < 11; i++)
         DBZ_SetOptionValue(i, sOptionValues[MENUITEM_DBZ_FIRST + i]);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);

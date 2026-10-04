@@ -91,6 +91,17 @@ int main(int argc, char** argv) {
 			FILE* i = fopen(a, "rb"); if (!i) { fprintf(stderr, "no state %s\n", a); return 1; }
 			fread(st, 1, sz, i); fclose(i);
 			core->loadState(core, st); free(st);
+		} else if (!strcmp(cmd, "poke8") || !strcmp(cmd, "poke16")) {
+			unsigned addr, v; sscanf(line, "%*s %x %x", &addr, &v);
+			if (cmd[4] == '8') core->busWrite8(core, addr, v); else core->busWrite16(core, addr, v);
+		} else if (!strcmp(cmd, "setvar")) {
+			unsigned var, v; sscanf(line, "%*s %x %x", &var, &v);
+			unsigned sb1 = core->busRead32(core, 0x03005dac);
+			core->busWrite16(core, sb1 + 0x139C + (var - 0x4000) * 2, v);
+		} else if (!strcmp(cmd, "getvar")) {
+			unsigned var; sscanf(line, "%*s %x", &var);
+			unsigned sb1 = core->busRead32(core, 0x03005dac);
+			printf("var %04X = %04X\n", var, core->busRead16(core, sb1 + 0x139C + (var - 0x4000) * 2));
 		} else if (!strncmp(cmd, "peek", 4)) {
 			unsigned addr; sscanf(line, "%*s %x", &addr);
 			if (!strcmp(cmd, "peek8")) printf("%08X: %02X\n", addr, core->busRead8(core, addr));

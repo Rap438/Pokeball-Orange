@@ -1309,8 +1309,14 @@ SootopolisCity_EventScript_Maxie::
 
 SootopolisCity_EventScript_MaxieRayquaza::
 	msgbox SootopolisCity_Text_AfterAllOurScheming, MSGBOX_DEFAULT
+	call EventScript_DBZ_Finale
+	goto_if_unset FLAG_DBZ_FINALE, SootopolisCity_EventScript_FinaleRetry
 	setflag FLAG_MET_MAXIE_SOOTOPOLIS
 	goto_if_set FLAG_MET_ARCHIE_SOOTOPOLIS, SootopolisCity_EventScript_MaxieArchieLeave
+	releaseall
+	end
+
+SootopolisCity_EventScript_FinaleRetry::
 	releaseall
 	end
 

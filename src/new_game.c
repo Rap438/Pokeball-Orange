@@ -195,6 +195,7 @@ void NewGameInitData(void)
     ResetLotteryCorner();
     WarpToTruck();
     RunScriptImmediately(EventScript_ResetAllMapFlags);
+    FlagSet(FLAG_SYS_B_DASH);   // PokeBall Orange: Goku can always run
     DBZ_ScatterDragonBalls();
     ResetMiniGamesRecords();
     InitUnionRoomChatRegisteredTexts();

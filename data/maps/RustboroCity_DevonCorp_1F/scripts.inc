@@ -14,7 +14,7 @@ RustboroCity_DevonCorp_1F_EventScript_BlockStairs::
 RustboroCity_DevonCorp_1F_EventScript_Employee::
 	lock
 	faceplayer
-	goto_if_set FLAG_RETURNED_DEVON_GOODS, RustboroCity_DevonCorp_1F_EventScript_GoodsRecovered
+	goto_if_set FLAG_RETURNED_DEVON_GOODS, EventScript_DBZ_GravityRoom
 	goto_if_set FLAG_DEVON_GOODS_STOLEN, RustboroCity_DevonCorp_1F_EventScript_RobberWasntBright
 	msgbox RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct, MSGBOX_DEFAULT
 	release

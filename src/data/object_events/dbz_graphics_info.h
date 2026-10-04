@@ -1390,6 +1390,46 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_GokuSsj3 = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+static const struct SpriteFrameImage sPicTable_DBZ_GokuVegito[] = {
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegito, 2, 4, 8),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_GokuVegitoRunning, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_GokuVegito = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_GOKU_VEGITO,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_BRIDGE_REFLECTION,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_PLAYER,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_BrendanMayNormal,
+    .images = sPicTable_DBZ_GokuVegito,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 static const struct SpriteFrameImage sPicTable_DBZ_Vegeta[] = {
     overworld_frame(gObjectEventPic_DBZ_Vegeta, 2, 4, 0),
     overworld_frame(gObjectEventPic_DBZ_Vegeta, 2, 4, 1),

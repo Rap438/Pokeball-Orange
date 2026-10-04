@@ -11,6 +11,8 @@
 #include "overworld.h"
 #include "palette.h"
 #include "pokemon.h"
+#include "task.h"
+#include "trig.h"
 #include "constants/map_types.h"
 #include "constants/rgb.h"
 
@@ -91,6 +93,55 @@ static bool8 TileTouchesPlatform(s16 tx, s16 ty)
     return FALSE;
 }
 
+// ------------------------------------------------------------------ living backgrounds
+// Water and grass colours of the battle view gently ripple (computed from the unfaded palette, so fades,
+// the time-of-day tint and move animations are left alone: it pauses while either is running).
+static EWRAM_DATA bool8 sMapBgDrawn = FALSE;
+
+static void Task_BgShimmer(u8 taskId);
+
+// battle_main: once the battle's tasks are set up
+void DBZ_StartBattleBgShimmer(void)
+{
+    if (sMapBgDrawn == TRUE && !FuncIsActiveTask(Task_BgShimmer))
+        CreateTask(Task_BgShimmer, 1);
+    sMapBgDrawn = FALSE;
+}
+
+static void Task_BgShimmer(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    u8 i, c;
+    if (!gMain.inBattle)
+    {
+        DestroyTask(taskId);
+        return;
+    }
+    if (++data[0] % 4 != 0 || gPaletteFade.active || gAnimScriptActive)
+        return;
+    data[1] += 3;
+    for (i = 0; i < 6; i++)
+    {
+        u16 base = BG_PLTT_ID(sPalSlots[i]);
+        for (c = 1; c < 16; c++)
+        {
+            u16 col = gPlttBufferUnfaded[base + c];
+            s16 r = col & 31, g = (col >> 5) & 31, b = (col >> 10) & 31, d;
+            if (b > r + 3 && b >= g)
+                d = Sin((data[1] * 4 + c * 40) & 0xFF, 3);           // water: sparkle
+            else if (g > r + 2 && g > b + 2)
+                d = Sin((data[1] * 2 + c * 24 + i * 64) & 0xFF, 2);  // grass: sway
+            else
+                continue;
+            r += d; g += d; b += d;
+            r = r < 0 ? 0 : (r > 31 ? 31 : r);
+            g = g < 0 ? 0 : (g > 31 ? 31 : g);
+            b = b < 0 ? 0 : (b > 31 ? 31 : b);
+            gPlttBufferFaded[base + c] = r | (g << 5) | (b << 10);
+        }
+    }
+}
+
 bool8 DBZ_TryDrawMapBattleBackground(void)
 {
     const struct DbzBattleView *view;
@@ -164,6 +215,7 @@ bool8 DBZ_TryDrawMapBattleBackground(void)
         LoadPalette(&view->palettes[i * 16], BG_PLTT_ID(sPalSlots[i]), PLTT_SIZE_4BPP);
         DBZ_ApplyTimeTint(BG_PLTT_ID(sPalSlots[i]), 16);
     }
+    sMapBgDrawn = TRUE;
     return TRUE;
 }
 

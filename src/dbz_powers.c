@@ -32,6 +32,10 @@ extern const u8 EventScript_DBZ_Debug[];
 #define TAG_DBZ_FX      0x2F00
 #define TAG_DBZ_AURA    0x2F01
 #define TAG_DBZ_FX_PAL  0x2F00
+#define TAG_DBZ_FX_PAL_E 0x2F02   // enemy ki (purple)
+#define TAG_DBZ_SPIRIT  0x2F03
+#define TAG_DBZ_SPIRIT_PAL 0x2F03
+#define SPIRIT_CHARGE_FRAMES 120
 
 #define KAME_CHARGE_FRAMES 36
 #define KI_RANGE   5
@@ -46,6 +50,12 @@ enum {
 static const u32 sDbzFxGfx[] = INCGFX_U32("graphics/dbz/fx.png", ".4bpp", "-mwidth 2 -mheight 2");
 static const u16 sDbzFxPal[] = INCGFX_U16("graphics/dbz/fx.png", ".gbapal");
 static const u32 sDbzAuraGfx[] = INCGFX_U32("graphics/dbz/aura.png", ".4bpp", "-mwidth 4 -mheight 4");
+
+static const u32 sSpiritBombGfx[] = INCGFX_U32("graphics/dbz/spirit_bomb.png", ".4bpp", "-mwidth 4 -mheight 4");
+static const u16 sSpiritBombPal[] = INCGFX_U16("graphics/dbz/spirit_bomb.png", ".gbapal");
+static const struct SpriteSheet sSpiritBombSheet = { sSpiritBombGfx, 2 * 512, TAG_DBZ_SPIRIT };
+static const struct SpritePalette sSpiritBombPalette = { sSpiritBombPal, TAG_DBZ_SPIRIT_PAL };
+static EWRAM_DATA u16 sEnemyFxPal[16] = {0};
 
 static const struct SpriteSheet sDbzFxSheet = { sDbzFxGfx, FX_COUNT * 128, TAG_DBZ_FX };
 static const struct SpriteSheet sDbzAuraSheet = { sDbzAuraGfx, 3 * 512, TAG_DBZ_AURA };
@@ -69,9 +79,45 @@ static const struct OamData sOam_Aura32 = {
 
 static void SpriteCB_ChargeGlow(struct Sprite *sprite);
 
+static const struct OamData sOam_Spirit = {
+    .affineMode = ST_OAM_AFFINE_DOUBLE,
+    .objMode = ST_OAM_OBJ_NORMAL,
+    .shape = SPRITE_SHAPE(32x32),
+    .size = SPRITE_SIZE(32x32),
+    .priority = 1,
+};
+
+static const union AffineAnimCmd sAffine_SpiritGrow[] = {
+    AFFINEANIMCMD_FRAME(64, 64, 0, 0),
+    AFFINEANIMCMD_FRAME(2, 2, 0, 96),     // grows to 2.5x while charging (2s)
+    AFFINEANIMCMD_END,
+};
+static const union AffineAnimCmd *const sAffineAnims_Spirit[] = { sAffine_SpiritGrow };
+
+static void SpriteCB_SpiritBall(struct Sprite *sprite);
+static const struct SpriteTemplate sSpriteTemplate_Spirit = {
+    .tileTag = TAG_DBZ_SPIRIT,
+    .paletteTag = TAG_DBZ_SPIRIT_PAL,
+    .oam = &sOam_Spirit,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = sAffineAnims_Spirit,
+    .callback = SpriteCB_SpiritBall,
+};
+
 static const struct SpriteTemplate sSpriteTemplate_Fx = {
     .tileTag = TAG_DBZ_FX,
     .paletteTag = TAG_DBZ_FX_PAL,
+    .oam = &sOam_Fx16,
+    .anims = gDummySpriteAnimTable,
+    .images = NULL,
+    .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCallbackDummy,
+};
+
+static const struct SpriteTemplate sSpriteTemplate_FxEnemy = {
+    .tileTag = TAG_DBZ_FX,
+    .paletteTag = TAG_DBZ_FX_PAL_E,
     .oam = &sOam_Fx16,
     .anims = gDummySpriteAnimTable,
     .images = NULL,
@@ -103,6 +149,11 @@ static EWRAM_DATA u8 sChargeFrames = 0;
 static EWRAM_DATA u8 sGlowSpriteId = MAX_SPRITES;
 static EWRAM_DATA u8 sHandlerTick = 0;
 static EWRAM_DATA bool8 sFightBlast = FALSE;   // blast fired during an overworld fight (no script)
+static EWRAM_DATA u8 sSpiritSpriteId = MAX_SPRITES;
+static EWRAM_DATA u8 sAuraTick = 0;
+static EWRAM_DATA bool8 sLWasHeld = FALSE;
+static bool8 SpiritValid(void);
+static void DestroySpiritBall(void);
 
 // ------------------------------------------------------------------ forms
 u8 DBZ_GetForm(void)
@@ -139,6 +190,8 @@ static u8 FormToGfx(u8 form)
 
 u8 DBZ_GetPlayerNormalGfx(void)
 {
+    if (DBZ_IsFused())
+        return OBJ_EVENT_GFX_UNUSED_PORYGON2_DOLL;   // VEGITO
     return FormToGfx(DBZ_GetForm());
 }
 
@@ -210,13 +263,18 @@ static void FreeFxGraphicsIfUnused(void)
     for (i = 0; i < MAX_SPRITES; i++)
     {
         if (gSprites[i].inUse && (gSprites[i].template == &sSpriteTemplate_Fx
+                               || gSprites[i].template == &sSpriteTemplate_FxEnemy
+                               || gSprites[i].template == &sSpriteTemplate_Spirit
                                || gSprites[i].template == &sSpriteTemplate_Glow
                                || gSprites[i].template == &sSpriteTemplate_Aura))
             return;
     }
     FreeSpriteTilesByTag(TAG_DBZ_FX);
     FreeSpriteTilesByTag(TAG_DBZ_AURA);
+    FreeSpriteTilesByTag(TAG_DBZ_SPIRIT);
     FreeSpritePaletteByTag(TAG_DBZ_FX_PAL);
+    FreeSpritePaletteByTag(TAG_DBZ_FX_PAL_E);
+    FreeSpritePaletteByTag(TAG_DBZ_SPIRIT_PAL);
 }
 
 static void SetFxFrame(struct Sprite *sprite, u8 frame)
@@ -247,7 +305,7 @@ static u8 CreateFxSprite(const struct SpriteTemplate *template, s16 x, s16 y, u8
     if (spriteId != MAX_SPRITES)
     {
         gSprites[spriteId].coordOffsetEnabled = TRUE;
-        if (template == &sSpriteTemplate_Fx || template == &sSpriteTemplate_Glow)
+        if (template == &sSpriteTemplate_Fx || template == &sSpriteTemplate_Glow || template == &sSpriteTemplate_FxEnemy)
             SetFxFrame(&gSprites[spriteId], FX_KI_0);
     }
     return spriteId;
@@ -269,12 +327,17 @@ static void HandsPos(u8 dir, s16 *x, s16 *y)
 static void SpriteCB_ChargeGlow(struct Sprite *sprite)
 {
     s16 x, y;
+    // in a fight, getting knocked around doesn't break Goku's focus (only a script or the fight ending does)
+    if (DBZ_IsFighting() && !ScriptContext_IsEnabled() && sChargeFrames != 0)
+        sHandlerTick = 0;
     if (++sHandlerTick > 3 || sChargeFrames == 0)
     {
         // the field input handler stopped running (script, warp...) -> cancel the charge
         sChargeFrames = 0;
         sGlowSpriteId = MAX_SPRITES;
         DestroySprite(sprite);
+        if (SpiritValid() && gSprites[sSpiritSpriteId].data[0] == 0)
+            DestroySpiritBall();
         FreeFxGraphicsIfUnused();
         return;
     }
@@ -296,6 +359,8 @@ void DBZ_ResetFieldInputState(void)
     if (sGlowSpriteId < MAX_SPRITES && gSprites[sGlowSpriteId].inUse && gSprites[sGlowSpriteId].callback == SpriteCB_ChargeGlow)
         DestroySprite(&gSprites[sGlowSpriteId]);
     sGlowSpriteId = MAX_SPRITES;
+    if (SpiritValid() && gSprites[sSpiritSpriteId].data[0] == 0)
+        DestroySpiritBall();
 }
 
 bool8 DBZ_IsChargingBlast(void)
@@ -305,7 +370,12 @@ bool8 DBZ_IsChargingBlast(void)
 
 u8 DBZ_GetSelectedMove(void)
 {
-    return VarGet(VAR_DBZ_MISC) & 1;
+    u8 m = VarGet(VAR_DBZ_MISC) & DBZ_MISC_MOVE_MASK;
+    if (m >= 2 && !DBZ_HasTechnique(DBZ_TECH_SPIRIT_BOMB))
+        m = 0;
+    if (m > 2)
+        m = 0;
+    return m;
 }
 
 // 0..16 for the HUD meter (a ki blast is ready instantly)
@@ -315,6 +385,8 @@ u8 DBZ_GetChargeLevel(void)
         return 0;
     if (DBZ_GetSelectedMove() == 0)
         return 16;
+    if (DBZ_GetSelectedMove() == 2)
+        return sChargeFrames >= SPIRIT_CHARGE_FRAMES ? 16 : sChargeFrames * 16 / SPIRIT_CHARGE_FRAMES;
     if (sChargeFrames >= KAME_CHARGE_FRAMES)
         return 16;
     return sChargeFrames * 16 / KAME_CHARGE_FRAMES;
@@ -405,16 +477,236 @@ void DBZ_AnimateKiSprite(u8 spriteId, u8 t)
 
 void DBZ_DestroyFxSprite(u8 spriteId)
 {
-    if (spriteId < MAX_SPRITES && gSprites[spriteId].inUse)
+    // only ever our own effect sprites (a stale id must not take out the camera or an NPC)
+    if (spriteId < MAX_SPRITES && gSprites[spriteId].inUse && gSprites[spriteId].template->tileTag == TAG_DBZ_FX)
         DestroySprite(&gSprites[spriteId]);
     FreeFxGraphicsIfUnused();
 }
+
+static void LoadEnemyFxPalette(void)
+{
+    struct SpritePalette pal;
+    u8 i;
+    if (IndexOfSpritePaletteTag(TAG_DBZ_FX_PAL_E) != 0xFF)
+        return;
+    for (i = 0; i < 16; i++)
+    {
+        u16 c = sDbzFxPal[i];
+        u16 r = c & 31, g = (c >> 5) & 31, b = (c >> 10) & 31;
+        sEnemyFxPal[i] = (b > r ? b : r) | ((g / 3) << 5) | (b << 10);   // blue ki -> purple ki
+    }
+    pal.data = sEnemyFxPal;
+    pal.tag = TAG_DBZ_FX_PAL_E;
+    LoadSpritePalette(&pal);
+}
+
+u8 DBZ_CreateFxSpriteFor(s16 x, s16 y, bool8 enemy)
+{
+    LoadFxGraphics();
+    if (enemy)
+    {
+        LoadEnemyFxPalette();
+        return CreateFxSprite(&sSpriteTemplate_FxEnemy, x, y, 0);
+    }
+    return CreateFxSprite(&sSpriteTemplate_Fx, x, y, 0);
+}
+
+void DBZ_SetFxSpriteFrame(u8 spriteId, u8 frame)
+{
+    if (spriteId < MAX_SPRITES)
+        SetFxFrame(&gSprites[spriteId], frame);
+}
+
+void DBZ_GokuHandsPos(u8 dir, s16 *x, s16 *y)
+{
+    HandsPos(dir, x, y);
+}
+
+// sparks rising around Goku while he gathers ki
+static void SpriteCB_AuraSpark(struct Sprite *sprite)
+{
+    struct Sprite *ps = PlayerSprite();
+    sprite->x = ps->x + ps->x2 + sprite->data[1];
+    sprite->y = ps->y + ps->y2 + sprite->data[2] - sprite->data[0] * 2;
+    sprite->subpriority = ps->subpriority - 1;
+    sprite->oam.priority = ps->oam.priority;
+    SetFxFrame(sprite, sprite->data[3] + (sprite->data[0] / 2) % 2);
+    if (++sprite->data[0] > 9)
+    {
+        DestroySprite(sprite);
+        FreeFxGraphicsIfUnused();
+    }
+}
+
+void DBZ_SpawnAuraSpark(bool8 red)
+{
+    u8 id;
+    struct Sprite *ps = PlayerSprite();
+    LoadFxGraphics();
+    if (red)
+    {
+        LoadEnemyFxPalette();
+        id = CreateFxSprite(&sSpriteTemplate_FxEnemy, ps->x, ps->y, 0);
+    }
+    else
+    {
+        id = CreateFxSprite(&sSpriteTemplate_Fx, ps->x, ps->y, 0);
+    }
+    if (id == MAX_SPRITES)
+        return;
+    gSprites[id].data[0] = 0;
+    gSprites[id].data[1] = (s16)(Random() % 21) - 10;
+    gSprites[id].data[2] = (s16)(Random() % 12) - 2;
+    gSprites[id].data[3] = red ? FX_CHARGE_0 : FX_SPARK_0;
+    gSprites[id].callback = SpriteCB_AuraSpark;
+    SpriteCB_AuraSpark(&gSprites[id]);
+}
+
+// ------------------------------------------------------------------ spirit bomb
+static bool8 SpiritValid(void)
+{
+    return sSpiritSpriteId < MAX_SPRITES && gSprites[sSpiritSpriteId].inUse
+        && gSprites[sSpiritSpriteId].callback == SpriteCB_SpiritBall;
+}
+
+static void DestroySpiritBall(void)
+{
+    if (SpiritValid())
+    {
+        FreeOamMatrix(gSprites[sSpiritSpriteId].oam.matrixNum);
+        DestroySprite(&gSprites[sSpiritSpriteId]);
+    }
+    sSpiritSpriteId = MAX_SPRITES;
+    FreeFxGraphicsIfUnused();
+}
+
+static void SpriteCB_SpiritBall(struct Sprite *sprite)
+{
+    struct Sprite *ps = PlayerSprite();
+    if (sprite->data[0] == 0)   // held overhead while charging
+    {
+        sprite->x = ps->x + ps->x2;
+        sprite->y = ps->y + ps->y2 - 34;
+    }
+    sprite->oam.tileNum = GetSpriteTileStartByTag(TAG_DBZ_SPIRIT) + ((sprite->data[2]++ / 6) % 2) * 16;
+}
+
+static void CreateSpiritBall(void)
+{
+    struct Sprite *ps = PlayerSprite();
+    if (GetSpriteTileStartByTag(TAG_DBZ_SPIRIT) == 0xFFFF)
+        LoadSpriteSheet(&sSpiritBombSheet);
+    if (IndexOfSpritePaletteTag(TAG_DBZ_SPIRIT_PAL) == 0xFF)
+        LoadSpritePalette(&sSpiritBombPalette);
+    sSpiritSpriteId = CreateSprite(&sSpriteTemplate_Spirit, ps->x, ps->y - 34, 0);
+    if (sSpiritSpriteId != MAX_SPRITES)
+    {
+        gSprites[sSpiritSpriteId].coordOffsetEnabled = TRUE;
+        gSprites[sSpiritSpriteId].data[0] = 0;
+    }
+}
+
+#define tState   data[0]
+#define tTimer   data[1]
+#define tDir     data[2]
+#define tMaxLen  data[3]
+#define tLen     data[4]
+#define tHitType data[5]
+#define tHitLocal data[6]
+#define tStartX  data[7]
+#define tStartY  data[8]
+
+static void ComputeBlastPath(u8 dir, u8 maxTiles, s16 *lenPx, s16 *hitType, s16 *hitLocal);
+
+static void Task_SpiritThrow(u8 taskId)
+{
+    s16 *data = gTasks[taskId].data;
+    s16 dx = 0, dy = 0;
+    switch (tDir)
+    {
+    case DIR_SOUTH: dy = 1; break;
+    case DIR_NORTH: dy = -1; break;
+    case DIR_WEST:  dx = -1; break;
+    default:        dx = 1; break;
+    }
+    switch (tState)
+    {
+    case 0: // fly
+        tLen += 4;
+        if (SpiritValid())
+        {
+            gSprites[sSpiritSpriteId].x = tStartX + dx * tLen;
+            gSprites[sSpiritSpriteId].y = tStartY + dy * tLen + (dy == 0 ? tLen / 4 : 0);
+        }
+        if (tLen >= tMaxLen + 30)
+        {
+            s16 x = SpiritValid() ? gSprites[sSpiritSpriteId].x : tStartX;
+            s16 y = SpiritValid() ? gSprites[sSpiritSpriteId].y : tStartY;
+            DestroySpiritBall();
+            DBZ_SpawnImpactAt(x, y);
+            DBZ_SpawnImpactAt(x - 10, y + 6);
+            DBZ_SpawnImpactAt(x + 10, y - 6);
+            PlaySE(SE_M_EXPLOSION);
+            tState = 1;
+            tTimer = 0;
+        }
+        break;
+    case 1: // white-out flash
+        BlendPalettes(PALETTES_ALL, tTimer < 8 ? 14 - tTimer : 0, RGB_WHITE);
+        if (++tTimer > 8)
+        {
+            BlendPalettes(PALETTES_ALL, 0, RGB_WHITE);
+            sFightBlast = FALSE;
+            DBZ_FightOnBlast(tHitType, tHitLocal, 2);
+            DestroyTask(taskId);
+        }
+        break;
+    }
+}
+
+static void ThrowSpiritBomb(void)
+{
+    u8 taskId = CreateTask(Task_SpiritThrow, 80);
+    s16 *data = gTasks[taskId].data;
+    tState = 0;
+    tTimer = 0;
+    tDir = GetPlayerFacingDirection();
+    tLen = 0;
+    ComputeBlastPath(tDir, 6, &tMaxLen, &tHitType, &tHitLocal);
+    if (SpiritValid())
+    {
+        gSprites[sSpiritSpriteId].data[0] = 1;
+        tStartX = gSprites[sSpiritSpriteId].x;
+        tStartY = gSprites[sSpiritSpriteId].y;
+    }
+    else
+    {
+        tStartX = PlayerSprite()->x;
+        tStartY = PlayerSprite()->y - 34;
+    }
+    sFightBlast = TRUE;
+    PlaySE(SE_M_HYPER_BEAM);
+}
+#undef tState
+#undef tTimer
+#undef tDir
+#undef tMaxLen
+#undef tLen
+#undef tHitType
+#undef tHitLocal
+#undef tStartX
+#undef tStartY
 
 // input_field_1_0 = R pressed, input_field_1_1 = L pressed, input_field_1_2 = L held
 bool8 DBZ_HandleFieldInput(struct FieldInput *input)
 {
     s16 x, y;
+    bool8 lNew;
     sHandlerTick = 0;
+    // a press can land on a frame where field input isn't read (mid-step, knocked back): count the first
+    // frame we see L held as the press
+    lNew = input->input_field_1_1 || (input->input_field_1_2 && !sLWasHeld);
+    sLWasHeld = input->input_field_1_2;
 
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
     {
@@ -432,12 +724,12 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
             return TRUE;
         }
 #endif
-        if (input->input_field_1_0)
+        if (input->input_field_1_0 && !DBZ_IsFused())
         {
             ScriptContext_SetupScript(EventScript_DBZ_PowerUp);
             return TRUE;
         }
-        if (input->input_field_1_1)
+        if (lNew)
         {
             sChargeFrames = 1;
             LoadFxGraphics();
@@ -448,10 +740,12 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
         return FALSE;
     }
 
-    // hold L + tap R: swap the selected special move
+    // hold L + tap R: swap the selected special move (KI BLAST -> KAMEHAMEHA -> SPIRIT BOMB once learned)
     if (input->input_field_1_0)
     {
-        VarSet(VAR_DBZ_MISC, VarGet(VAR_DBZ_MISC) ^ 1);
+        u16 misc = VarGet(VAR_DBZ_MISC);
+        u8 next = (DBZ_GetSelectedMove() + 1) % (DBZ_HasTechnique(DBZ_TECH_SPIRIT_BOMB) ? 3 : 2);
+        VarSet(VAR_DBZ_MISC, (misc & ~DBZ_MISC_MOVE_MASK) | next);
         DBZ_ResetFieldInputState();
         PlaySE(SE_SELECT);
         return FALSE;
@@ -459,29 +753,56 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
 
     if (input->input_field_1_2)
     {
+        u8 move = DBZ_GetSelectedMove();
         if (sChargeFrames < 250)
             sChargeFrames++;
-        if (DBZ_GetSelectedMove() == 1)
+        if (move >= 1 && (++sAuraTick % 5) == 0)
+            DBZ_SpawnAuraSpark(FALSE);
+        if (move == 1)
         {
             if (sChargeFrames == 8)
                 PlaySE(SE_M_CHARGE);
             if (sChargeFrames == KAME_CHARGE_FRAMES)
                 PlaySE(SE_M_DETECT);
         }
+        else if (move == 2)
+        {
+            if (sChargeFrames == 4)
+            {
+                CreateSpiritBall();
+                PlaySE(SE_M_CHARGE);
+            }
+            if (sChargeFrames == SPIRIT_CHARGE_FRAMES / 2)
+                PlaySE(SE_M_CHARGE);
+            if (sChargeFrames == SPIRIT_CHARGE_FRAMES)
+                PlaySE(SE_M_DETECT);
+        }
         return FALSE;
     }
 
-    // released: fire the selected move (an under-charged Kamehameha fizzles)
-    if (DBZ_GetSelectedMove() == 1 && sChargeFrames < KAME_CHARGE_FRAMES)
+    // released: fire the selected move (an under-charged Kamehameha / Spirit Bomb fizzles)
+    if ((DBZ_GetSelectedMove() == 1 && sChargeFrames < KAME_CHARGE_FRAMES)
+     || (DBZ_GetSelectedMove() == 2 && sChargeFrames < SPIRIT_CHARGE_FRAMES))
     {
         DBZ_ResetFieldInputState();
         PlaySE(SE_FAILURE);
         return FALSE;
     }
-    gSpecialVar_0x8004 = DBZ_GetSelectedMove();
+    if (DBZ_GetSelectedMove() == 2 && DBZ_IsFighting())
+    {
+        sChargeFrames = 0;
+        if (sGlowSpriteId < MAX_SPRITES && gSprites[sGlowSpriteId].inUse && gSprites[sGlowSpriteId].callback == SpriteCB_ChargeGlow)
+            DestroySprite(&gSprites[sGlowSpriteId]);
+        sGlowSpriteId = MAX_SPRITES;
+        ThrowSpiritBomb();
+        return TRUE;
+    }
+    gSpecialVar_0x8004 = DBZ_GetSelectedMove() != 0;   // outside fights the Spirit Bomb works like a Kamehameha
     DBZ_ResetFieldInputState();
     if (DBZ_IsFighting())
     {
+        if (gSpecialVar_0x8004 == 1 && DBZ_FightTryBeamStruggle())
+            return TRUE;
         sFightBlast = TRUE;
         DBZ_FireBlast();
         return TRUE;

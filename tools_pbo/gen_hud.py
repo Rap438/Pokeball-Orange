@@ -76,7 +76,8 @@ def icon(path):
 icons = [icon(f'{PE}/graphics/object_events/pics/people/brendan/walking.png'),
          icon(f'{PE}/graphics/object_events/pics/dbz/goku_ssj.png'),
          icon(f'{PE}/graphics/object_events/pics/dbz/goku_ssj2.png'),
-         icon(f'{PE}/graphics/object_events/pics/dbz/goku_ssj3.png')]
+         icon(f'{PE}/graphics/object_events/pics/dbz/goku_ssj3.png'),
+         icon(f'{PE}/graphics/object_events/pics/dbz/goku_vegito.png')]
 
 # panel: rounded box, orange rim
 W, H = 64, 32
@@ -91,7 +92,7 @@ out.append('const u16 gDBZHudPalette[16] = {' + ','.join(
     str((r >> 3) | ((g >> 3) << 5) | ((b >> 3) << 10)) for r, g, b in PAL) + '};')
 out.append('static const u8 sHudPanel[32][64] = {' + ','.join(
     '{' + ','.join(map(str, row)) + '}' for row in panel) + '};')
-out.append('static const u8 sHudIcons[4][16][16] = {' + ','.join(
+out.append('static const u8 sHudIcons[5][16][16] = {' + ','.join(
     '{' + ','.join('{' + ','.join(map(str, row)) + '}' for row in ic) + '}' for ic in icons) + '};')
 glyphs = []
 for ch in ORDER:
@@ -101,10 +102,10 @@ out.append(f'static const u8 sHudFont[{len(ORDER)}][5] = {{' + ','.join(glyphs) 
 out.append(f'static const u8 sHudFontOrder[] = "{ORDER}";')
 open(f'{PE}/src/data/dbz_hud.h', 'w').write('\n'.join(out) + '\n')
 # preview
-prev = np.zeros((32, 64 + 4 * 18, 3), np.uint8)
+prev = np.zeros((32, 64 + 5 * 18, 3), np.uint8)
 P = np.array(PAL, np.uint8)
 prev[:, :64] = P[panel]
 for i, ic in enumerate(icons):
     prev[:16, 66 + i * 18:82 + i * 18] = P[ic]
-Image.fromarray(prev).resize(((64 + 72) * 4, 128), 0).save('/tmp/claude-0/hud_assets.png')
+Image.fromarray(prev).resize(((64 + 90) * 4, 128), 0).save('/tmp/claude-0/hud_assets.png')
 print('ok')

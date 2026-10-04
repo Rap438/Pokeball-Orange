@@ -762,6 +762,64 @@ static const struct MenuAction MultichoiceList_FallarborTentRules[] =
     {gText_Exit},
 };
 
+static const u8 sText_DBZ_Status[] = _("STATUS");
+static const u8 sText_DBZ_InstantTrans[] = _("INSTANT TRANS.");
+static const u8 sText_DBZ_HideKi[] = _("HIDE KI");
+static const u8 sText_DBZ_WishPokemon[] = _("A POKéMON");
+static const u8 sText_DBZ_WishPower[] = _("GOKU'S POWER");
+static const u8 sText_DBZ_WishTeam[] = _("TEAM POWER");
+static const u8 sText_DBZ_WishZeni[] = _("ZENI");
+
+static const u8 sText_DBG_Soldier[] = _("SOLDIER");
+static const u8 sText_DBG_Vegeta[] = _("VEGETA");
+static const u8 sText_DBG_Blue[] = _("GEN. BLUE");
+static const u8 sText_DBG_Gero[] = _("DR. GERO");
+static const u8 sText_DBG_Buu[] = _("KID BUU");
+static const u8 sText_DBG_Finale[] = _("FINALE");
+static const u8 sText_DBG_More[] = _("MORE…");
+static const u8 sText_DBG_Badges[] = _("BADGES+TEAM");
+static const u8 sText_DBG_Time[] = _("TIME OF DAY");
+static const u8 sText_DBG_Wild[] = _("WILD BATTLE");
+static const u8 sText_DBG_Trainer[] = _("TRAINER");
+static const u8 sText_DBG_Warp116[] = _("WARP RT116");
+static const u8 sText_DBG_Warp114[] = _("WARP RT114");
+static const u8 sText_DBG_Balls[] = _("6 BALLS");
+static const u8 sText_DBG_WarpBall[] = _("WARP BALL");
+static const u8 sText_DBG_Tourney[] = _("TOURNAMENT");
+static const u8 sText_DBG_Chamber[] = _("TIME CHAMBER");
+static const u8 sText_DBG_Gravity[] = _("GRAVITY");
+static const u8 sText_DBG_Wish[] = _("7 BALLS");
+static const u8 sText_DBG_Clear[] = _("GAME CLEAR");
+
+static const struct MenuAction MultichoiceList_DBZDebug1[] =
+{
+    {sText_DBG_Soldier}, {sText_DBG_Vegeta}, {sText_DBG_Blue}, {sText_DBG_Gero}, {sText_DBG_Buu}, {sText_DBG_Finale}, {sText_DBG_More},
+};
+static const struct MenuAction MultichoiceList_DBZDebug2[] =
+{
+    {sText_DBG_Badges}, {sText_DBG_Time}, {sText_DBG_Wild}, {sText_DBG_Trainer}, {sText_DBG_Warp116}, {sText_DBG_Warp114}, {sText_DBG_More},
+};
+static const struct MenuAction MultichoiceList_DBZDebug3[] =
+{
+    {sText_DBG_Balls}, {sText_DBG_WarpBall}, {sText_DBG_Tourney}, {sText_DBG_Chamber}, {sText_DBG_Gravity}, {sText_DBG_Wish}, {sText_DBG_Clear},
+};
+
+static const struct MenuAction MultichoiceList_DBZGoku[] =
+{
+    {sText_DBZ_Status},
+    {sText_DBZ_InstantTrans},
+    {sText_DBZ_HideKi},
+    {gText_Exit},
+};
+
+static const struct MenuAction MultichoiceList_DBZWish[] =
+{
+    {sText_DBZ_WishPokemon},
+    {sText_DBZ_WishPower},
+    {sText_DBZ_WishTeam},
+    {sText_DBZ_WishZeni},
+};
+
 static const struct MenuAction MultichoiceList_TagMatchType[] =
 {
     {gText_NormalTagMatch},
@@ -898,6 +956,11 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SLATEPORT_TENT_RULES]       = MULTICHOICE(MultichoiceList_SlateportTentRules),
     [MULTI_FALLARBOR_TENT_RULES]       = MULTICHOICE(MultichoiceList_FallarborTentRules),
     [MULTI_TAG_MATCH_TYPE]             = MULTICHOICE(MultichoiceList_TagMatchType),
+    [MULTI_DBZ_GOKU]                   = MULTICHOICE(MultichoiceList_DBZGoku),
+    [MULTI_DBZ_WISH]                   = MULTICHOICE(MultichoiceList_DBZWish),
+    [MULTI_DBZ_DEBUG1]                 = MULTICHOICE(MultichoiceList_DBZDebug1),
+    [MULTI_DBZ_DEBUG2]                 = MULTICHOICE(MultichoiceList_DBZDebug2),
+    [MULTI_DBZ_DEBUG3]                 = MULTICHOICE(MultichoiceList_DBZDebug3),
 };
 
 const u8 *const gStdStrings[] =

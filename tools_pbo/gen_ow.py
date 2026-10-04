@@ -140,6 +140,8 @@ ssj1 = L5(1223); form_sheet('goku_ssj', sheet_frames(ssj1), run_from(ssj1, 1223)
 ssj2 = L5(1081); ssj2['B'] = 1081 + 9; form_sheet('goku_ssj2', sheet_frames(ssj2), run_from(ssj2, 1081))
 s3 = ssj3_frames(ssj1)
 form_sheet('goku_ssj3', s3, s3)
+# Super Vegito (Goku + Vegeta Potara fusion) for the finale
+vegito = L5(517); form_sheet('goku_vegito', sheet_frames(vegito), sheet_frames(vegito))
 
 # ---------------------------------------------------------------- Vegeta (rival)
 VEG = 2463

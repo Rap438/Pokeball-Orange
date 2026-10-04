@@ -17,6 +17,7 @@ bool8 DBZ_OptSparks(void)     { return !(Opts() & DBZ_OPT_SPARKS_OFF); }
 bool8 DBZ_OptPowerUp(void)    { return !(Opts() & DBZ_OPT_POWERUP_OFF); }
 bool8 DBZ_OptHints(void)      { return !(Opts() & DBZ_OPT_HINTS_OFF); }
 bool8 DBZ_OptHud(void)        { return !(Opts() & DBZ_OPT_HUD_OFF); }
+bool8 DBZ_OptAutoRun(void)    { return !(Opts() & DBZ_OPT_AUTORUN_OFF); }
 
 // 0 off, 1 rare, 2 normal, 3 often
 u8 DBZ_OptAmbush(void)
@@ -57,6 +58,7 @@ u8 DBZ_GetOptionValue(u8 id)
     case 7: return (o & DBZ_OPT_POWERUP_OFF) ? 1 : 0;
     case 8: return (o & DBZ_OPT_HINTS_OFF) ? 1 : 0;
     case 9: return DBZ_OptShiny();
+    case 10: return (o & DBZ_OPT_AUTORUN_OFF) ? 1 : 0;
     }
     return 0;
 }
@@ -91,6 +93,7 @@ void DBZ_SetOptionValue(u8 id, u8 v)
     case 7: o = SetBit(o, DBZ_OPT_POWERUP_OFF, v); break;
     case 8: o = SetBit(o, DBZ_OPT_HINTS_OFF, v); break;
     case 9: o = (o & ~(7 << DBZ_OPT_SHINY_SHIFT)) | ((v % 5) << DBZ_OPT_SHINY_SHIFT); break;
+    case 10: o = SetBit(o, DBZ_OPT_AUTORUN_OFF, v); break;
     }
     VarSet(VAR_DBZ_OPTIONS, o);
 }

@@ -114,9 +114,16 @@ static void Bar(u8 x, u8 y, u8 w, u8 h, u16 cur, u16 max, u8 color)
         Rect(x, y, fill, h, color);
 }
 
+static void DrawCharge(u8 charge)
+{
+    Bar(20, 11, 41, 3, charge, 16, charge >= 16 ? 10 : 9);
+}
+
 static void Draw(u16 hp, u16 maxHp, u8 move, u8 charge, u8 form, u32 pl)
 {
-    static const char *const sForms[] = {"BASE", "SSJ", "SSJ2", "SSJ3"};
+    static const char *const sForms[] = {"BASE", "SSJ", "SSJ2", "SSJ3", "FUSE"};
+    static const char *const sMoves[] = {"KI BLAST", "KAMEHAMEHA", "SPIRIT BOMB"};
+    static const u8 sMoveColors[] = {10, 9, 3};
     u8 x, y, hpColor;
 
     for (y = 0; y < 32; y++)
@@ -132,8 +139,10 @@ static void Draw(u16 hp, u16 maxHp, u8 move, u8 charge, u8 form, u32 pl)
             if (sHudIcons[form][y][x])
                 Px(2 + x, 1 + y, sHudIcons[form][y][x]);
 
-    Text(20, 3, move ? "KAMEHAMEHA" : "KI BLAST", move ? 9 : 10);
-    Bar(20, 11, 41, 3, charge, 16, charge >= 16 ? 10 : 9);
+    if (move > 2)
+        move = 0;
+    Text(move == 2 ? 18 : 20, 3, sMoves[move], sMoveColors[move]);
+    DrawCharge(charge);
 
     hpColor = (hp * 5 <= maxHp) ? 8 : ((hp * 2 <= maxHp) ? 7 : 6);
     Text(2, 18, "HP", 3);
@@ -192,14 +201,23 @@ void DBZ_UpdateHud(void)
     gSprites[sHudSprite].invisible = FALSE;
 
     hp = DBZ_GokuHp();
-    maxHp = DBZ_GokuMaxHp();
+    maxHp = DBZ_GokuHpMaxNow();
     move = DBZ_GetSelectedMove();
     charge = DBZ_GetChargeLevel();
-    form = DBZ_GetForm();
-    pl = DBZ_GokuPowerLevel();
+    form = DBZ_IsFused() ? 4 : DBZ_GetForm();
+    pl = DBZ_CurrentPowerLevel();
     if (sHudLast.valid && sHudLast.hp == hp && sHudLast.maxHp == maxHp && sHudLast.move == move
      && sHudLast.charge == charge && sHudLast.form == form && sHudLast.pl == pl)
         return;
+    if (sHudLast.valid && sHudLast.hp == hp && sHudLast.maxHp == maxHp && sHudLast.move == move
+     && sHudLast.form == form && sHudLast.pl == pl)
+    {
+        // only the charge meter moved: redraw just that (a full redraw costs most of a frame)
+        sHudLast.charge = charge;
+        DrawCharge(charge);
+        RequestDma3Copy(sHudTiles + 8 * 32, (void *)(OBJ_VRAM0 + (GetSpriteTileStartByTag(TAG_DBZ_HUD) + 8) * TILE_SIZE_4BPP), 8 * 32, 1);   // tile row 1
+        return;
+    }
     sHudLast.valid = TRUE;
     sHudLast.hp = hp;
     sHudLast.maxHp = maxHp;

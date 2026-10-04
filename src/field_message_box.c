@@ -5,6 +5,7 @@
 #include "text.h"
 #include "match_call.h"
 #include "field_message_box.h"
+#include "dbz.h"
 
 static EWRAM_DATA u8 sFieldMessageBoxMode = 0;
 
@@ -118,18 +119,21 @@ bool8 ShowFieldMessageFromBuffer(void)
 static void ExpandStringAndStartDrawFieldMessage(const u8 *str, bool32 allowSkippingDelayWithButtonPress)
 {
     StringExpandPlaceholders(gStringVar4, str);
+    DBZ_PortraitForMessage(gStringVar4);
     AddTextPrinterForMessage(allowSkippingDelayWithButtonPress);
     CreateTask_DrawFieldMessage();
 }
 
 static void StartDrawFieldMessage(void)
 {
+    DBZ_PortraitForMessage(gStringVar4);
     AddTextPrinterForMessage(TRUE);
     CreateTask_DrawFieldMessage();
 }
 
 void HideFieldMessageBox(void)
 {
+    DBZ_HidePortrait();
     DestroyTask_DrawFieldMessage();
     ClearDialogWindowAndFrame(0, TRUE);
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;

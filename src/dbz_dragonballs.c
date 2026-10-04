@@ -788,7 +788,7 @@ static u8 HighestPartyLevel(void)
 // VAR_0x8006 = species. Returns MON_GIVEN_TO_PARTY / MON_GIVEN_TO_PC / MON_CANT_GIVE.
 u16 DBZ_GrantWish(void)
 {
-    u8 i, result;
+    u8 result;
     u16 species = gSpecialVar_0x8006;
     u16 dexNum;
 
@@ -802,7 +802,14 @@ u16 DBZ_GrantWish(void)
         GetSetPokedexFlag(dexNum, FLAG_SET_SEEN);
         GetSetPokedexFlag(dexNum, FLAG_SET_CAUGHT);
     }
-    // the balls turn to stone and scatter
+    DBZ_ConsumeDragonBalls();
+    return result;
+}
+
+// after a wish: the balls turn to stone and scatter
+void DBZ_ConsumeDragonBalls(void)
+{
+    u8 i;
     for (i = 0; i < DBZ_DB_COUNT; i++)
     {
         RemoveBagItem(ITEM_DRAGON_BALL_1 + i, 1);
@@ -811,5 +818,4 @@ u16 DBZ_GrantWish(void)
     VarSet(VAR_DBZ_DB_STONE_STEPS, DBZ_DB_STONE_STEPS);
     if (VarGet(VAR_DBZ_WISHES) < 999)
         VarSet(VAR_DBZ_WISHES, VarGet(VAR_DBZ_WISHES) + 1);
-    return result;
 }

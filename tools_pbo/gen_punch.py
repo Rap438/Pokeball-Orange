@@ -44,8 +44,10 @@ def rgba(i, hair=None):
         im[h & (dist == 1), :3] = hair[2]
     return im
 
-for name, hair in [('goku', None)] + list(GOLD.items()):
-    frs = [rgba(i, hair) for i in FRAMES]
+SETS = [('goku', None, FRAMES)] + [(n, h, FRAMES) for n, h in GOLD.items()]
+SETS.append(('vegito', None, [f - 566 for f in FRAMES]))   # Super Vegito: same layout in Buu's Fury, 566 frames earlier
+for name, hair, frames in SETS:
+    frs = [rgba(i, hair) for i in frames]
     idx, pal = quantize(frs)
     save_indexed(idx, pal, f'{OUT}/{name}.png', horizontal=False)
     save_jasc(pal, f'{OUT}/{name}.pal')

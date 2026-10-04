@@ -130,6 +130,7 @@ static const u8 sRegionMapPlayerIcon_MayGfx[] = INCGFX_U8("graphics/pokenav/regi
 
 #include "data/region_map/region_map_layout.h"
 #include "data/region_map/region_map_entries.h"
+static const u8 sText_DBZTeleportWhere[] = _("Sense whose ki?");
 
 static const mapsec_u16_t sRegionMap_SpecialPlaceLocations[][2] =
 {
@@ -1711,7 +1712,7 @@ void CB2_OpenFlyMap(void)
         LoadPalette(sRegionMapFramePal, BG_PLTT_ID(1), sizeof(sRegionMapFramePal));
         PutWindowTilemap(WIN_FLY_TO_WHERE);
         FillWindowPixelBuffer(WIN_FLY_TO_WHERE, PIXEL_FILL(0));
-        AddTextPrinterParameterized(WIN_FLY_TO_WHERE, FONT_NORMAL, gText_FlyToWhere, 0, 1, 0, NULL);
+        AddTextPrinterParameterized(WIN_FLY_TO_WHERE, FONT_NORMAL, gDBZInstantTransmission ? sText_DBZTeleportWhere : gText_FlyToWhere, 0, 1, 0, NULL);
         ScheduleBgCopyTilemapToVram(0);
         gMain.state++;
         break;
@@ -2019,6 +2020,7 @@ static void CB_ExitFlyMap(void)
             else if (gDBZNimbusFly)
             {
                 gDBZNimbusFly = FALSE;
+                gDBZInstantTransmission = FALSE;
                 SetMainCallback2(CB2_ReturnToField);
             }
             else

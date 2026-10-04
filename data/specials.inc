@@ -574,3 +574,22 @@ gSpecials::
 	def_special DBZ_ReviveGokuWeak
 	def_special DBZ_QueueFightEvolveCheck
 	def_special DBZ_HealGoku
+	def_special DBZ_GetNewTechniqueHint
+	def_special DBZ_ToggleHideKi
+	def_special DBZ_GravityStepsLeft
+	def_special DBZ_StartGravityTraining
+	def_special DBZ_CanUseInstantTransmission
+	def_special DBZ_QueueInstantTransmission
+	def_special DBZ_SetNextFightFlags
+	def_special DBZ_EndFusion
+	def_special DBZ_SetupBossFight
+	def_special DBZ_TrainerIsPendingBoss
+	def_special DBZ_SpawnVegetaAlly
+	def_special DBZ_StartFusion
+	def_special DBZ_RestoreFightPositions
+	def_special DBZ_GrantPowerWish
+	def_special DBZ_SetupTourneyFight
+	def_special DBZ_SetupChamberFight
+	def_special DBZ_ConsumeDragonBalls
+	def_special DBZ_RestGoku
+	def_special DBZ_RefreshPlayerGfx

@@ -1,6 +1,8 @@
 @ PokeBall Orange: Goku's overworld fights
 
 EventScript_DBZ_OfferTrainerFight::
+	specialvar VAR_RESULT, DBZ_TrainerIsPendingBoss
+	goto_if_eq VAR_RESULT, TRUE, EventScript_DBZ_Return
 	specialvar VAR_RESULT, DBZ_CanFightTrainer
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DBZ_Return
 	msgbox Text_DBZ_OfferFight, MSGBOX_YESNO
@@ -21,6 +23,7 @@ EventScript_DBZ_GymFight::
 	call_if_eq VAR_0x8009, DBZ_FORM_SSJ, EventScript_DBZ_HintSSJ
 	call_if_eq VAR_0x8009, DBZ_FORM_SSJ2, EventScript_DBZ_HintSSJ2
 	call_if_eq VAR_0x8009, DBZ_FORM_SSJ3, EventScript_DBZ_HintSSJ3
+	call EventScript_DBZ_TechniqueHints
 	specialvar VAR_RESULT, DBZ_GokuCanFight
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DBZ_TooHurtForGym
 	specialvar VAR_RESULT, DBZ_CanFightTrainer

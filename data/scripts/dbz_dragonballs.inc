@@ -34,6 +34,15 @@ EventScript_DBZ_SummonShenron::
 EventScript_DBZ_ChooseWish::
 	message Text_DBZ_NameYourWish
 	waitmessage
+	multichoice 17, 0, MULTI_DBZ_WISH, FALSE
+	goto_if_eq VAR_RESULT, MULTI_B_PRESSED, EventScript_DBZ_WishCancel
+	goto_if_eq VAR_RESULT, 0, EventScript_DBZ_ChoosePokemonWish
+	copyvar VAR_0x8005, VAR_RESULT
+	goto EventScript_DBZ_PowerWish
+
+EventScript_DBZ_ChoosePokemonWish::
+	message Text_DBZ_NameYourPokemon
+	waitmessage
 	special DBZ_ChooseWish
 	waitstate
 	goto_if_eq VAR_RESULT, SPECIES_NONE, EventScript_DBZ_WishCancel
@@ -98,11 +107,14 @@ Text_DBZ_ShenronSpeaks:
 	.string "You who have gathered the seven\n"
 	.string "DRAGON BALLS…\p"
 	.string "I shall grant you one wish.\n"
-	.string "Any POKéMON in the world shall\l"
-	.string "be yours.$"
+	.string "Any POKéMON in the world, power\l"
+	.string "beyond measure, or riches…$"
 
 Text_DBZ_NameYourWish:
 	.string "Now, speak your wish!$"
+
+Text_DBZ_NameYourPokemon:
+	.string "Which POKéMON do you wish for?$"
 
 Text_DBZ_ConfirmWish:
 	.string "SHENRON: You wish for\n"

@@ -12419,6 +12419,26 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Leaf[] = {
     }
 };
 
+// PokeBall Orange: World Martial Arts Tournament
+static const struct TrainerMonNoItemDefaultMoves sParty_DBZJackieChun[] = {
+    { .iv = 120, .lvl = 31, .species = SPECIES_MACHOKE },
+    { .iv = 120, .lvl = 31, .species = SPECIES_HITMONTOP },
+    { .iv = 120, .lvl = 32, .species = SPECIES_MEDICHAM },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_DBZMightyMask[] = {
+    { .iv = 150, .lvl = 32, .species = SPECIES_PLUSLE },
+    { .iv = 150, .lvl = 32, .species = SPECIES_MINUN },
+    { .iv = 150, .lvl = 33, .species = SPECIES_KIRLIA },
+};
+
+static const struct TrainerMonNoItemDefaultMoves sParty_DBZVegetaTourney[] = {
+    { .iv = 200, .lvl = 34, .species = SPECIES_MANECTRIC },
+    { .iv = 200, .lvl = 34, .species = SPECIES_BRELOOM },
+    { .iv = 200, .lvl = 35, .species = SPECIES_METANG },
+    { .iv = 200, .lvl = 36, .species = SPECIES_SALAMENCE },
+};
+
 static const struct TrainerMonNoItemDefaultMoves sParty_BrendanLinkPlaceholder[] = {
     {
     .iv = 0,

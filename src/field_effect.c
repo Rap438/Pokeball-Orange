@@ -1361,6 +1361,12 @@ static void Task_UseFly(u8 taskId)
         if (!IsWeatherNotFadingIn())
             return;
 
+        if (gDBZInstantTransmission)
+        {
+            DBZ_StartInstantTransmissionOut();
+            task->data[0]++;
+            return;
+        }
         gFieldEffectArguments[0] = GetCursorSelectionMonId();
         if ((int)gFieldEffectArguments[0] > PARTY_SIZE - 1)
             gFieldEffectArguments[0] = 0;
@@ -1368,7 +1374,7 @@ static void Task_UseFly(u8 taskId)
         FieldEffectStart(FLDEFF_USE_FLY);
         task->data[0]++;
     }
-    if (!FieldEffectActiveListContains(FLDEFF_USE_FLY))
+    if (gDBZInstantTransmission ? !DBZ_InstantTransmissionOutActive() : !FieldEffectActiveListContains(FLDEFF_USE_FLY))
     {
         Overworld_ResetStateAfterFly();
         WarpIntoMap();
@@ -1403,10 +1409,13 @@ static void Task_FlyIntoMap(u8 taskId)
         {
             return;
         }
-        FieldEffectStart(FLDEFF_FLY_IN);
+        if (gDBZInstantTransmission)
+            DBZ_StartInstantTransmissionIn();   // Goku just appears
+        else
+            FieldEffectStart(FLDEFF_FLY_IN);
         task->data[0]++;
     }
-    if (!FieldEffectActiveListContains(FLDEFF_FLY_IN))
+    if (gDBZInstantTransmission || DBZ_InstantTransmissionInActive() ? !DBZ_InstantTransmissionInActive() : !FieldEffectActiveListContains(FLDEFF_FLY_IN))
     {
         UnlockPlayerFieldControls();
         UnfreezeObjectEvents();

@@ -137,26 +137,96 @@ Text_DBZ_BoulderSSJ3:
 
 EventScript_DBZ_Debug::
 	lockall
-	msgbox Text_DBZ_DebugFight, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Fight
-	msgbox Text_DBZ_DebugVegeta, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Vegeta
-	msgbox Text_DBZ_DebugTime, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Time
-	msgbox Text_DBZ_DebugWild, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Wild
-	msgbox Text_DBZ_DebugTrainer, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Trainer
-	msgbox Text_DBZ_Debug, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Badges
-	msgbox Text_DBZ_DebugWarp116, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Warp116
-	msgbox Text_DBZ_DebugWarp114, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Warp114
-	msgbox Text_DBZ_DebugBalls, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Balls
-	msgbox Text_DBZ_DebugWarpBall, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_WarpBall
+	multichoice 19, 0, MULTI_DBZ_DEBUG1, FALSE
+	switch VAR_RESULT
+	case 0, EventScript_DBZ_Debug_Fight
+	case 1, EventScript_DBZ_Debug_Vegeta
+	case 2, EventScript_DBZ_Debug_Blue
+	case 3, EventScript_DBZ_Debug_Gero
+	case 4, EventScript_DBZ_Debug_Buu
+	case 5, EventScript_DBZ_Debug_Finale
+	case 6, EventScript_DBZ_Debug2
+	releaseall
+	end
+
+EventScript_DBZ_Debug2::
+	multichoice 18, 0, MULTI_DBZ_DEBUG2, FALSE
+	switch VAR_RESULT
+	case 0, EventScript_DBZ_Debug_Badges
+	case 1, EventScript_DBZ_Debug_Time
+	case 2, EventScript_DBZ_Debug_Wild
+	case 3, EventScript_DBZ_Debug_Trainer
+	case 4, EventScript_DBZ_Debug_Warp116
+	case 5, EventScript_DBZ_Debug_Warp114
+	case 6, EventScript_DBZ_Debug3
+	releaseall
+	end
+
+EventScript_DBZ_Debug3::
+	multichoice 17, 0, MULTI_DBZ_DEBUG3, FALSE
+	switch VAR_RESULT
+	case 0, EventScript_DBZ_Debug_Balls
+	case 1, EventScript_DBZ_Debug_WarpBall
+	case 2, EventScript_DBZ_Debug_Tourney
+	case 3, EventScript_DBZ_Debug_Chamber
+	case 4, EventScript_DBZ_Debug_Gravity
+	case 5, EventScript_DBZ_Debug_SevenBalls
+	case 6, EventScript_DBZ_Debug_Clear
+	releaseall
+	end
+
+EventScript_DBZ_Debug_Blue::
+	setvar VAR_0x800A, DBZ_ENEMY_GENERAL_BLUE
+	call EventScript_DBZ_BossFight
+	releaseall
+	end
+
+EventScript_DBZ_Debug_Gero::
+	setvar VAR_0x800A, DBZ_ENEMY_DR_GERO
+	call EventScript_DBZ_BossFight
+	releaseall
+	end
+
+EventScript_DBZ_Debug_Buu::
+	setvar VAR_0x800A, DBZ_ENEMY_KID_BUU
+	call EventScript_DBZ_BossFight
+	releaseall
+	end
+
+EventScript_DBZ_Debug_Finale::
+	clearflag FLAG_DBZ_FINALE
+	call EventScript_DBZ_Finale
+	releaseall
+	end
+
+EventScript_DBZ_Debug_Tourney::
+	setflag FLAG_BADGE04_GET
+	closemessage
+	warp MAP_SLATEPORT_CITY_BATTLE_TENT_LOBBY, 11, 7
+	waitstate
+	releaseall
+	end
+
+EventScript_DBZ_Debug_Chamber::
+	setflag FLAG_SYS_GAME_CLEAR
+	closemessage
+	warp MAP_EVER_GRANDE_CITY_POKEMON_LEAGUE_1F, 12, 6
+	waitstate
+	releaseall
+	end
+
+EventScript_DBZ_Debug_Gravity::
+	setflag FLAG_RETURNED_DEVON_GOODS
+	goto EventScript_DBZ_GravityRoom
+
+EventScript_DBZ_Debug_SevenBalls::
+	special DBZ_Debug_GiveSixBalls
+	additem ITEM_DRAGON_BALL_7
+	goto EventScript_DBZ_SummonShenron
+
+EventScript_DBZ_Debug_Clear::
+	setflag FLAG_SYS_GAME_CLEAR
+	msgbox Text_DBZ_DebugDone, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -209,6 +279,22 @@ EventScript_DBZ_Debug_Badges::
 	setflag FLAG_BADGE08_GET
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
+	setflag FLAG_VISITED_LITTLEROOT_TOWN
+	setflag FLAG_VISITED_OLDALE_TOWN
+	setflag FLAG_VISITED_DEWFORD_TOWN
+	setflag FLAG_VISITED_LAVARIDGE_TOWN
+	setflag FLAG_VISITED_FALLARBOR_TOWN
+	setflag FLAG_VISITED_VERDANTURF_TOWN
+	setflag FLAG_VISITED_PACIFIDLOG_TOWN
+	setflag FLAG_VISITED_PETALBURG_CITY
+	setflag FLAG_VISITED_SLATEPORT_CITY
+	setflag FLAG_VISITED_MAUVILLE_CITY
+	setflag FLAG_VISITED_RUSTBORO_CITY
+	setflag FLAG_VISITED_FORTREE_CITY
+	setflag FLAG_VISITED_LILYCOVE_CITY
+	setflag FLAG_VISITED_MOSSDEEP_CITY
+	setflag FLAG_VISITED_SOOTOPOLIS_CITY
+	setflag FLAG_VISITED_EVER_GRANDE_CITY
 	givemon SPECIES_MUDKIP, 50
 	givemon SPECIES_SWELLOW, 50
 	setvar VAR_0x8004, 40

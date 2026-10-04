@@ -39,6 +39,29 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on the [pret/pokeemeral
 - **Battle UI** restyled: navy panels with orange and gold frames for the text box, FIGHT/BAG/POKéMON/RUN menu, move list and healthboxes.
 - Turn-based Pokémon battles are unchanged.
 
+### New in v0.3.0
+
+- **Talking portraits.** Buu's Fury portraits appear above the text box when the cast speaks: Goku, Vegeta, Vegito, Chi-Chi, Bulma, Roshi, Krillin, the gym leaders, the Elite Four, Mr. Satan, Kid Buu, Dr. Gero and more.
+- **Deeper fights.**
+  - Hold B while standing still to guard. A perfectly timed guard takes no damage, stuns the attacker and makes your next hit a counter.
+  - A A A is a three-hit combo; the finisher knocks the opponent back two tiles.
+  - Big hits shake the screen and flash white, charging throws aura sparks, and every fight plays its own Emerald battle theme.
+  - **Beam struggles:** fire a Kamehameha at an opponent who uses beams and the two can lock. Mash A to push your beam through.
+- **Boss fights with phases.** General Blue (paralysis stare) after his battle on Mt. Chimney, Kid Buu (teleports and regenerates) in the Red Ribbon base, Dr. Gero (drinks ki attacks) in the Seafloor Cavern. Each gets stronger at two-thirds and one-third HP.
+- **Fusion finale.** In Sootopolis, Kid Buu can't be beaten alone. Vegeta arrives with the Potara and the two fuse into **Vegito** for the last fight.
+- **Goku's techniques** (START → GOKU):
+  - **Kaio-ken** (badge 5): press SELECT in a fight for 1.5x power that slowly drains HP.
+  - **Instant Transmission** (badge 6): lock on to the ki of anyone in a town you've visited. No Pokémon needed.
+  - **Spirit Bomb** (badge 8): hold L and tap R until it's selected, hold L to gather energy, let go to throw it.
+  - **Hide Ki:** a reusable KI HIDER.
+- **Capsule Corp. Gravity Room** (Rustboro, after you return the goods): 600 steps of 10x gravity, double fight EXP.
+- **World Martial Arts Tournament** (Slateport Battle Tent, after badge 4), hosted by Mr. Satan: Jackie Chun (Pokémon), Spopovich (hand to hand), Mighty Mask (Pokémon), then Vegeta with Pokémon and then fists.
+- **Hyperbolic Time Chamber** (Pokémon League lobby, after the credits): Dende sends you into the white void for five waves of sparring with triple EXP.
+- **Bigger Shenron wishes:** a Pokémon, Goku's power (+5 levels), your team's power (+3 levels each), or ¥50,000.
+- **Living battle backgrounds:** water sparkles and grass sways in the map-view battle backgrounds.
+- **Auto-run** (on by default; B walks; toggle in OPTION). Goku no longer needs the Running Shoes.
+- **Fixes:** a full Kamehameha now charges at full speed (the HUD redraw was halving the frame rate), a stray sprite clean-up that could scroll the camera away after a fight, and a missed L press while Goku was mid-step.
+
 - **Overworld style:**
   - Soft drop shadows under every character.
   - Deeper cel-style shading.
@@ -58,7 +81,9 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on the [pret/pokeemeral
 
 Apply `PokeBall_Orange.bps` (from Releases) to a clean **Pokémon Emerald (USA)** ROM with [Flips](https://github.com/Alcaro/Flips) or any BPS patcher. The ROM's SHA-1 should be `f3ae088181bf583e55daf962a92bb46f4f1d07b7`.
 
-The debug build turns on R+SELECT for test shortcuts (badges, warps, fights, Dragon Balls, time of day). To get it, uncomment `#define DBZ_DEBUG` in `include/constants/dbz.h`.
+The debug build turns on R+SELECT for a three-page test menu (soldier, Vegeta and boss fights, the finale, badges and team, time of day, warps, Dragon Balls and Shenron, the tournament, the Time Chamber, the Gravity Room) and lets START end a fight in Goku's favor (B+START: Goku loses). To get it, uncomment `#define DBZ_DEBUG` in `include/constants/dbz.h`.
+
+Fight music reuses Emerald's own battle themes; there's no original soundtrack.
 
 ## Building
 
