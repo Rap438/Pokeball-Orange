@@ -3400,6 +3400,13 @@ BattleScript_SpikesOnAttackerFainted::
 	moveendall
 	goto BattleScript_HandleFaintedMon
 
+BattleScript_DBZTrainerPowerUp::
+	printstring STRINGID_DBZ_POWERUP
+	waitmessage B_WAIT_TIME_LONG
+	playanimation BS_SCRIPTING, B_ANIM_DBZ_POWER_UP
+	waitanimation
+	return
+
 BattleScript_SpikesOnTarget::
 	orword gHitMarker, HITMARKER_IGNORE_SUBSTITUTE | HITMARKER_PASSIVE_HP_UPDATE
 	healthbarupdate BS_TARGET

@@ -410,6 +410,7 @@ gBattleAnims_General::
 	.4byte General_FocusPunchSetUp          @ B_ANIM_FOCUS_PUNCH_SETUP
 	.4byte General_IngrainHeal              @ B_ANIM_INGRAIN_HEAL
 	.4byte General_WishHeal                 @ B_ANIM_WISH_HEAL
+	.4byte General_DBZPowerUp               @ B_ANIM_DBZ_POWER_UP
 
 	.align 2
 gBattleAnims_Special::
@@ -10639,6 +10640,22 @@ General_FocusPunchSetUp:
 	delay 8
 	blend_color_cycle priority=2, selector=F_PAL_ATTACKER, delay=2, num_blends=2, initial_blend_y=0, target_blend_y=11, color=RGB_RED
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 1, 0, 32, 1
+	call EndureEffect
+	delay 8
+	call EndureEffect
+	waitforvisualfinish
+	end
+
+General_DBZPowerUp:
+	loadspritegfx ANIM_TAG_FOCUS_ENERGY
+	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
+	createvisualtask AnimTask_HorizontalShake, 5, (MAX_BATTLERS_COUNT + 1), 6, 40
+	call EndureEffect
+	blend_color_cycle priority=2, selector=F_PAL_ATTACKER, delay=2, num_blends=3, initial_blend_y=0, target_blend_y=12, color=RGB(31, 28, 6)
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_ATTACKER, 2, 0, 40, 1
+	call EndureEffect
+	delay 8
+	playsewithpan SE_M_DRAGON_RAGE, SOUND_PAN_ATTACKER
 	call EndureEffect
 	delay 8
 	call EndureEffect

@@ -141,6 +141,10 @@ EventScript_DBZ_Debug::
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Fight
 	msgbox Text_DBZ_DebugTime, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Time
+	msgbox Text_DBZ_DebugWild, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Wild
+	msgbox Text_DBZ_DebugTrainer, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Trainer
 	msgbox Text_DBZ_Debug, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Badges
 	msgbox Text_DBZ_DebugWarp116, MSGBOX_YESNO
@@ -247,3 +251,23 @@ Text_DBZ_DebugTime:
 
 Text_DBZ_DebugTimeSet:
 	.string "Time mode {STR_VAR_1} (0 clock 1 day\n2 morning 3 evening 4 night)$"
+
+EventScript_DBZ_Debug_Wild::
+	closemessage
+	setwildbattle SPECIES_ZIGZAGOON, 12
+	dowildbattle
+	releaseall
+	end
+
+Text_DBZ_DebugWild:
+	.string "DEBUG: wild battle here?$"
+
+EventScript_DBZ_Debug_Trainer::
+	closemessage
+	cleartrainerflag TRAINER_ROXANNE_1
+	trainerbattle_no_intro TRAINER_ROXANNE_1, Text_DBZ_DebugDone
+	releaseall
+	end
+
+Text_DBZ_DebugTrainer:
+	.string "DEBUG: trainer battle (YAMCHA)?$"

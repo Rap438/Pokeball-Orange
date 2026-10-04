@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz.h"
 #include "battle.h"
 #include "battle_bg.h"
 #include "battle_main.h"
@@ -808,6 +809,8 @@ void DrawMainBattleBackground(void)
         {
         default:
         case MAP_BATTLE_SCENE_NORMAL:
+            if (DBZ_TryDrawMapBattleBackground())
+                break;
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tileset, (void *)(BG_CHAR_ADDR(2)));
             LZDecompressVram(sBattleEnvironmentTable[gBattleEnvironment].tilemap, (void *)(BG_SCREEN_ADDR(26)));
             LoadCompressedPalette(sBattleEnvironmentTable[gBattleEnvironment].palette, BG_PLTT_ID(2), 3 * PLTT_SIZE_4BPP);

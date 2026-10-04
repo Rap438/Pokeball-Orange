@@ -5296,6 +5296,12 @@ static void Cmd_switchineffects(void)
                 }
             }
             gBattlescriptCurrInstr += 2;
+            if (DBZ_ShouldTrainerPowerUp(gActiveBattler))
+            {
+                gBattleScripting.battler = gActiveBattler;
+                BattleScriptPushCursor();
+                gBattlescriptCurrInstr = BattleScript_DBZTrainerPowerUp;
+            }
         }
     }
 }

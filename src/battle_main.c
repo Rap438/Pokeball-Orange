@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz.h"
 #include "battle.h"
 #include "battle_anim.h"
 #include "battle_ai_script_commands.h"
@@ -3037,6 +3038,7 @@ static void BattleStartClearSetData(void)
     u32 j;
     u8 *dataPtr;
 
+    DBZ_ResetTrainerPowerUp();
     TurnValuesCleanUp(FALSE);
     SpecialStatusesClear();
 
