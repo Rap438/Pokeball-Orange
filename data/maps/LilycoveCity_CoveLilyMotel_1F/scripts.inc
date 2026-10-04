@@ -64,56 +64,56 @@ LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn:
 	step_end
 
 LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot:
-	.string "Hm, so they doubled the guests by\n"
-	.string "using POKéMON as attractions?\p"
-	.string "Hm, well, maybe I should make a cute\n"
-	.string "POKéMON our inn's mascot.\p"
-	.string "I wonder if that will attract more\n"
-	.string "guests to stay with us?$"
+	.string "Hm, so that inn doubled its guests by\n"
+	.string "using POKéMON as an attraction?\p"
+	.string "Well, maybe I should make a cute\n"
+	.string "POKéMON our motel's mascot.\p"
+	.string "I wonder if that would bring in more\n"
+	.string "guests?$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua:
 	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "Since that SAIYAN ARMY came to town,\n"
-	.string "the tourists have been staying away.$"
+	.string "I got caught up watching TV!\p"
+	.string "Since the RED RIBBON ARMY moved into\n"
+	.string "town, the tourists have been staying\l"
+	.string "away.$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV:
 	.string "Hey, down in front!\n"
 	.string "I can't see the TV!$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem:
-	.string "Amazing! You're telling me a POKéMON\n"
-	.string "found someone's lost item?\p"
-	.string "That's something. If we had some smart\n"
+	.string "Amazing! You mean a POKéMON found\n"
+	.string "somebody's lost item?\p"
+	.string "Now that's something. If we had a smart\n"
 	.string "POKéMON like that…\p"
-	.string "We could recover anything that our\n"
-	.string "guests mislaid…$"
+	.string "We could track down anything our\n"
+	.string "guests left behind…$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted:
 	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "I heard that someone busted\n"
-	.string "the SAIYAN ARMY HIDEOUT.\p"
-	.string "Thanks to that, we just booked\n"
-	.string "a reservation from a big group.\p"
-	.string "It was a company called… Uh…\n"
-	.string "GAME something…$"
+	.string "I got caught up watching TV!\p"
+	.string "I heard someone busted up the RED\n"
+	.string "RIBBON ARMY's SEA BASE.\p"
+	.string "Thanks to that, we just got a\n"
+	.string "reservation from a big group.\p"
+	.string "They're from a company called… uh…\n"
+	.string "CAPSULE something…$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar:
 	.string "Amazing! A house-sitting POKéMON\n"
 	.string "caught a burglar?\p"
-	.string "That's something. If we had a tough\n"
-	.string "POKéMON as a security guard…\p"
-	.string "We would be able to provide our guests\n"
-	.string "with greater safety.$"
+	.string "Now that's something. If we had a tough\n"
+	.string "POKéMON as a guard…\p"
+	.string "We could keep our guests much safer.$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner:
 	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV.\p"
-	.string "Oh, yes. A big group of guests arrived\n"
-	.string "a little while ago.\p"
-	.string "They booked in as GAME FREAK,\n"
-	.string "so I guess they must make games.\p"
-	.string "Uh-oh, I'd better get working on\n"
-	.string "their dinner!$"
+	.string "I got caught up watching TV.\p"
+	.string "Oh, right. A big group of guests checked\n"
+	.string "in a little while ago.\p"
+	.string "They signed in as CAPSULE CORP., so I\n"
+	.string "guess they build gadgets.\p"
+	.string "Uh-oh, I'd better get started on their\n"
+	.string "dinner! That crowd looks hungry!$"
 

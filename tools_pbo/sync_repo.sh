@@ -5,7 +5,7 @@ SRC=/home/claude/pokeemerald; DST=/home/claude/pokeball-orange
 MSG="$1"
 TMP=$(mktemp -d); (cd $SRC && git archive HEAD | tar -x -C $TMP)
 mkdir -p $TMP/tools_pbo/assets
-(cd /home/claude/tools && cp *.py *.sh runner.c new_species.json $TMP/tools_pbo/ 2>/dev/null || true)
+(cd /home/claude/tools && cp *.py *.sh *.md runner.c new_species.json $TMP/tools_pbo/ 2>/dev/null || true)
 cp /home/claude/title/src.png $TMP/tools_pbo/assets/title_art.png
 find $DST -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 cp -a $TMP/. $DST/

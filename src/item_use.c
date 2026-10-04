@@ -72,6 +72,7 @@ static void Task_UseRepel(u8);
 static void Task_CloseCantUseKeyItemMessage(u8);
 static void SetDistanceOfClosestHiddenItem(u8, s16, s16);
 static void CB2_OpenPokeblockFromBag(void);
+static void RemoveUsedItem(void);
 
 // EWRAM variables
 EWRAM_DATA static TaskFunc sItemUseOnFieldCB = NULL;
@@ -741,8 +742,50 @@ static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8 taskId)
     DestroyTask(taskId);
 }
 
+// PokeBall Orange: healing items work on Goku too
+static const u8 sText_DBZ_UseOnGoku[] = _("Use it on GOKU?");
+static const u8 sText_DBZ_GokuHealed[] = _("GOKU recovered {STR_VAR_1} HP!");
+
+static void DBZ_UseOnGokuYes(u8 taskId)
+{
+    if (DBZ_UseItemOnGoku(gSpecialVar_ItemId))
+    {
+        PlaySE(SE_USE_ITEM);
+        RemoveUsedItem();
+        StringExpandPlaceholders(gStringVar4, sText_DBZ_GokuHealed);
+        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+    }
+    else
+    {
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_WontHaveEffect, CloseItemMessage);
+    }
+}
+
+static void DBZ_UseOnGokuNo(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_Medicine;
+    SetUpItemUseCallback(taskId);
+}
+
+static const struct YesNoFuncTable sDBZ_UseOnGokuYesNo =
+{
+    .yesFunc = DBZ_UseOnGokuYes,
+    .noFunc = DBZ_UseOnGokuNo,
+};
+
+static void DBZ_AskUseOnGoku(u8 taskId)
+{
+    BagMenu_YesNo(taskId, ITEMWIN_YESNO_HIGH, &sDBZ_UseOnGokuYesNo);
+}
+
 void ItemUseOutOfBattle_Medicine(u8 taskId)
 {
+    if (DBZ_GokuItemHealPercent(gSpecialVar_ItemId) != 0 && DBZ_GokuHp() < DBZ_GokuMaxHp()
+     && CurrentBattlePyramidLocation() == PYRAMID_LOCATION_NONE)
+    {
+        DisplayItemMessage(taskId, FONT_NORMAL, sText_DBZ_UseOnGoku, DBZ_AskUseOnGoku);
+        return;
+    }
     gItemUseCB = ItemUseCB_Medicine;
     SetUpItemUseCallback(taskId);
 }

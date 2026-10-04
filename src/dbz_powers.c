@@ -1,7 +1,7 @@
 // PokeBall Orange: Goku's overworld powers.
 // R            : power up to the next unlocked Super Saiyan form (wraps back to base)
-// L (tap)      : ki blast
-// L (hold+let) : Kamehameha
+// L            : fire the selected special (KI BLAST: tap, KAMEHAMEHA: hold to charge, then let go)
+// hold L + R   : swap the selected special
 // SSJ  + Kamehameha cuts trees, SSJ2 smashes rocks, SSJ3 pushes boulders.
 #include "global.h"
 #include "dbz.h"
@@ -170,7 +170,7 @@ u16 DBZ_GetNewFormHint(void)
         if (!(seen & (0x10 << f)))
         {
             VarSet(VAR_DBZ_SEEN_FORMS, seen | (0x10 << f));
-            return f;
+            return DBZ_OptHints() ? f : 0;
         }
     }
     return 0;
@@ -184,7 +184,7 @@ u16 DBZ_ShouldShowFormIntro(void)
     if (form == DBZ_FORM_BASE || (seen & (1 << form)))
         return 0;
     VarSet(VAR_DBZ_SEEN_FORMS, seen | (1 << form));
-    return form;
+    return DBZ_OptHints() ? form : 0;
 }
 
 // ------------------------------------------------------------------ helpers
@@ -281,7 +281,9 @@ static void SpriteCB_ChargeGlow(struct Sprite *sprite)
     HandsPos(GetPlayerFacingDirection(), &x, &y);
     sprite->x = x;
     sprite->y = y;
-    if (sChargeFrames >= KAME_CHARGE_FRAMES)
+    if (DBZ_GetSelectedMove() == 0)
+        SetFxFrame(sprite, (sprite->data[0]++ / 4) % 2 ? FX_KI_1 : FX_KI_0);
+    else if (sChargeFrames >= KAME_CHARGE_FRAMES)
         SetFxFrame(sprite, (sprite->data[0]++ / 4) % 2 ? FX_HEAD_1 : FX_HEAD_0);
     else
         SetFxFrame(sprite, (sprite->data[0]++ / 4) % 2 ? FX_CHARGE_1 : FX_CHARGE_0);
@@ -299,6 +301,23 @@ void DBZ_ResetFieldInputState(void)
 bool8 DBZ_IsChargingBlast(void)
 {
     return sChargeFrames != 0;
+}
+
+u8 DBZ_GetSelectedMove(void)
+{
+    return VarGet(VAR_DBZ_MISC) & 1;
+}
+
+// 0..16 for the HUD meter (a ki blast is ready instantly)
+u8 DBZ_GetChargeLevel(void)
+{
+    if (sChargeFrames == 0)
+        return 0;
+    if (DBZ_GetSelectedMove() == 0)
+        return 16;
+    if (sChargeFrames >= KAME_CHARGE_FRAMES)
+        return 16;
+    return sChargeFrames * 16 / KAME_CHARGE_FRAMES;
 }
 
 bool8 DBZ_IsFightBlastActive(void)
@@ -341,7 +360,7 @@ void DBZ_UpdateFormFx(void)
     struct Sprite *ps;
     if (gPlayerAvatar.spriteId >= MAX_SPRITES || !gSprites[gPlayerAvatar.spriteId].inUse)
         return;
-    if (DBZ_GetForm() != DBZ_FORM_SSJ2 || !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
+    if (DBZ_GetForm() != DBZ_FORM_SSJ2 || !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT) || !DBZ_OptSparks())
         return;
     if (++sSparkTimer < 22 + (Random() % 30))
         return;
@@ -429,19 +448,37 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
         return FALSE;
     }
 
+    // hold L + tap R: swap the selected special move
+    if (input->input_field_1_0)
+    {
+        VarSet(VAR_DBZ_MISC, VarGet(VAR_DBZ_MISC) ^ 1);
+        DBZ_ResetFieldInputState();
+        PlaySE(SE_SELECT);
+        return FALSE;
+    }
+
     if (input->input_field_1_2)
     {
         if (sChargeFrames < 250)
             sChargeFrames++;
-        if (sChargeFrames == 8)
-            PlaySE(SE_M_CHARGE);
-        if (sChargeFrames == KAME_CHARGE_FRAMES)
-            PlaySE(SE_M_DETECT);
+        if (DBZ_GetSelectedMove() == 1)
+        {
+            if (sChargeFrames == 8)
+                PlaySE(SE_M_CHARGE);
+            if (sChargeFrames == KAME_CHARGE_FRAMES)
+                PlaySE(SE_M_DETECT);
+        }
         return FALSE;
     }
 
-    // released
-    gSpecialVar_0x8004 = (sChargeFrames >= KAME_CHARGE_FRAMES) ? 1 : 0;
+    // released: fire the selected move (an under-charged Kamehameha fizzles)
+    if (DBZ_GetSelectedMove() == 1 && sChargeFrames < KAME_CHARGE_FRAMES)
+    {
+        DBZ_ResetFieldInputState();
+        PlaySE(SE_FAILURE);
+        return FALSE;
+    }
+    gSpecialVar_0x8004 = DBZ_GetSelectedMove();
     DBZ_ResetFieldInputState();
     if (DBZ_IsFighting())
     {

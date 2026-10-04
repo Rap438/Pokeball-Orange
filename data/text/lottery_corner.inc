@@ -1,18 +1,22 @@
 LilycoveCity_DepartmentStore_1F_Text_LotteryCornerDrawTicket:
-	.string "This is the POKéMON LOTTERY CORNER.\p"
+	.string "Welcome to the POKéMON LOTTERY CORNER,\n"
+	.string "sponsored by MR. SATAN himself!\p"
 	.string "All shoppers at our DEPARTMENT STORE\n"
 	.string "get to draw a POKéMON LOTO TICKET.\p"
 	.string "If the LOTO TICKET's number matches\n"
 	.string "the ID number of any of your POKéMON,\l"
-	.string "you will receive a fabulous gift.\p"
+	.string "you will receive a fabulous prize.\p"
 	.string "Would you like to draw a POKéMON\n"
 	.string "LOTO TICKET?$"
 
 LilycoveCity_DepartmentStore_1F_Text_ComeBackTomorrow:
-	.string "Please come back tomorrow.$"
+	.string "Please come back tomorrow.\p"
+	.string "The World Champion says one lucky\n"
+	.string "draw a day is plenty!$"
 
 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain:
-	.string "Please do visit again.$"
+	.string "Please do visit again.\n"
+	.string "Good luck out there, fighter!$"
 
 LilycoveCity_DepartmentStore_1F_Text_PleasePickTicket:
 	.string "Please pick a LOTO TICKET.\n"
@@ -38,7 +42,8 @@ LilycoveCity_DepartmentStore_1F_Text_TicketMatchesPCMon:
 
 LilycoveCity_DepartmentStore_1F_Text_NoNumbersMatched:
 	.string "I'm sorry.\n"
-	.string "None of the numbers matched.$"
+	.string "None of the numbers matched.\p"
+	.string "Better luck next time!$"
 
 LilycoveCity_DepartmentStore_1F_Text_TwoDigitsMatched:
 	.string "Two digits matched, so you win the\n"
@@ -74,4 +79,5 @@ LilycoveCity_DepartmentStore_1F_Text_PrizeWeveBeenHolding:
 	.string "for you.$"
 
 LilycoveCity_DepartmentStore_1F_Text_PleaseVisitAgain2:
-	.string "Please do visit again.$"
+	.string "Please do visit again.\n"
+	.string "Good luck out there, fighter!$"

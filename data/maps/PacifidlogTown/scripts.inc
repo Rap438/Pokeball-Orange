@@ -29,26 +29,26 @@ PacifidlogTown_EventScript_TownSign::
 
 PacifidlogTown_Text_FastRunningCurrent:
 	.string "The sea between PACIFIDLOG and\n"
-	.string "SLATEPORT has a fast-running tide.\p"
-	.string "If you decide to SURF, you could end\n"
-	.string "up swept away somewhere else.$"
+	.string "SLATEPORT has a swift tide.\p"
+	.string "If you SURF across, you could get swept\n"
+	.string "off to somewhere else entirely.$"
 
 PacifidlogTown_Text_NeatHousesOnWater:
-	.string "See, isn't it neat?\n"
-	.string "These houses are on water!\p"
+	.string "See, isn't it neat?\p"
+	.string "These houses float on the water!\p"
 	.string "I was born here!$"
 
 PacifidlogTown_Text_SkyPillarTooScary:
 	.string "The SKY PILLAR?\p"
-	.string "…Oh, you must mean that tall, tall\n"
-	.string "tower a little further out.\p"
-	.string "If you asked me, I wouldn't climb it.\n"
-	.string "It's too scary to get up that high.\p"
-	.string "Life at sea level in PACIFIDLOG,\n"
-	.string "that suits me fine.$"
+	.string "…Oh, you mean that tall, tall tower a\n"
+	.string "little further out.\p"
+	.string "If you ask me, I wouldn't climb it. It's\n"
+	.string "way too scary up that high.\p"
+	.string "Life at sea level in PACIFIDLOG suits\n"
+	.string "me fine.$"
 
 PacifidlogTown_Text_TownSign:
 	.string "PACIFIDLOG TOWN\p"
-	.string "“Where the morning sun smiles upon\n"
-	.string "the waters.”$"
+	.string "“Where the morning sun greets the\n"
+	.string "waves.”$"
 

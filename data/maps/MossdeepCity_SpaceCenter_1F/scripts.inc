@@ -265,140 +265,148 @@ MossdeepCity_SpaceCenter_1F_Movement_MoveGruntFromStairs:
 	step_end
 
 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchImminent:
-	.string "The rocket's launch is imminent!$"
+	.string "Stand clear! The rocket's launch is\n"
+	.string "imminent!$"
 
 MossdeepCity_SpaceCenter_1F_Text_SuccessfulLaunchNumber:
-	.string "The rocket launched safely!\n"
-	.string "That's successful launch no. {STR_VAR_1}!$"
+	.string "Liftoff went perfectly! That makes\n"
+	.string "successful launch no. {STR_VAR_1}!$"
 
 MossdeepCity_SpaceCenter_1F_Text_HaywireButRocketLaunchImminent:
-	.string "I know that things are a little\n"
-	.string "haywire right now, but…\p"
+	.string "I know RED RIBBON ARMY has everyone on\n"
+	.string "edge, but…\p"
 	.string "The rocket's launch is imminent!$"
 
 MossdeepCity_SpaceCenter_1F_Text_HaywireButSuccessfulLaunchNumber:
-	.string "I know that things are a little\n"
-	.string "haywire right now, but…\p"
-	.string "The rocket launched safely!\n"
-	.string "That's successful launch no. {STR_VAR_1}!$"
+	.string "I know RED RIBBON ARMY has everyone on\n"
+	.string "edge, but…\p"
+	.string "The rocket launched safely! That makes\n"
+	.string "successful launch no. {STR_VAR_1}!$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketLaunchDemandsPerfection:
 	.string "A rocket launch demands perfection.\n"
 	.string "Not even a 1% margin of error is allowed.\p"
-	.string "Even if it's 99% okay, the whole thing\n"
-	.string "is useless if 1% happens to be no good.\p"
-	.string "Despite that, we never stop trying.\n"
-	.string "Why? It's a dream that never ends.$"
+	.string "Even if it's 99% okay, the whole thing is\n"
+	.string "useless if the last 1% is no good.\p"
+	.string "Still, we never stop trying. Why?\n"
+	.string "Because it's a dream that never ends.\l"
+	.string "Just like training.$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaHaveSightsOnSpaceCenter:
-	.string "Those MAJIN thugs have their sights\n"
-	.string "set on our SPACE CENTER.\p"
-	.string "But we can't allow anything that minor\n"
-	.string "to interfere with our rocket launch!$"
+	.string "Those RED RIBBON thugs have set their\n"
+	.string "sights on our SPACE CENTER.\p"
+	.string "But we won't let a bunch of saluting\n"
+	.string "clowns interfere with our rocket\l"
+	.string "launch!$"
 
 MossdeepCity_SpaceCenter_1F_Text_FoundThisYouCanHaveIt:
-	.string "I was taking a stroll down the beach\n"
-	.string "when I found this.\p"
-	.string "It's not anything I need, so you can\n"
-	.string "have it.$"
+	.string "I was strolling down the beach when I\n"
+	.string "found this.\p"
+	.string "It glows like a little sun. I don't need\n"
+	.string "it, so you can have it.$"
 
 MossdeepCity_SpaceCenter_1F_Text_HoennFamousForMeteorShowers:
-	.string "The HOENN region has been famous for \n"
-	.string "its meteor showers for a long time.$"
+	.string "The HOENN region has long been famous\n"
+	.string "for its meteor showers. Shooting stars\l"
+	.string "all season!$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaCantStealFuelTakeThis:
-	.string "MAJIN ARMY can't be allowed to steal\n"
-	.string "the rocket fuel.\p"
-	.string "Oh, by the way, you can have this stone\n"
-	.string "I found on the beach.$"
+	.string "We can't let RED RIBBON ARMY steal the\n"
+	.string "rocket fuel.\p"
+	.string "Oh, by the way, take this stone I found\n"
+	.string "on the beach.$"
 
 MossdeepCity_SpaceCenter_1F_Text_CantStrollOnBeachWithMagma:
-	.string "With MAJIN ARMY around, I guess\n"
-	.string "strolls on the beach aren't safe.$"
+	.string "With RED RIBBON ARMY around, strolls on\n"
+	.string "the beach just aren't safe anymore.$"
 
 MossdeepCity_SpaceCenter_1F_Text_DidPokemonComeFromSpace:
-	.string "Some people claim that POKéMON came\n"
-	.string "from space. Could it be true?$"
+	.string "Some people claim POKéMON came from\n"
+	.string "space. Could it be true?\p"
+	.string "Then again, I hear a whole warrior race\n"
+	.string "fell from the sky once…$"
 
 MossdeepCity_SpaceCenter_1F_Text_AquaShouldBeatMagma:
-	.string "SAIYAN ARMY should take care of\n"
-	.string "MAJIN ARMY!\p"
-	.string "But if they did that, SAIYAN ARMY will\n"
-	.string "become bold and brazen, won't they?$"
+	.string "RED RIBBON ARMY's LAND squad and SEA\n"
+	.string "squad are always competing for their\l"
+	.string "boss's favor. Let them wear each other\l"
+	.string "out!\p"
+	.string "But if one side wins, the winner will only\n"
+	.string "get bolder and brasher, won't they?$"
 
 MossdeepCity_SpaceCenter_1F_Text_RocketsBoggleMyMind:
-	.string "A giant chunk of metal bursts through\n"
-	.string "the skies and flies into space…\p"
-	.string "It boggles my mind!$"
+	.string "A giant hunk of metal tears through the\n"
+	.string "sky and flies into space…\p"
+	.string "It blows my mind!$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaWantsToSpoilMyDream:
-	.string "A giant chunk of metal bursts through\n"
-	.string "the skies and flies into space…\p"
-	.string "But MAJIN ARMY wants to spoil\n"
-	.string "that dream of mine!\p"
-	.string "I'm not having any of that!$"
+	.string "A giant hunk of metal tears through the\n"
+	.string "sky and flies into space…\p"
+	.string "But the LAND squad wants to spoil that\n"
+	.string "dream of mine!\p"
+	.string "Not on my watch!$"
 
 MossdeepCity_SpaceCenter_1F_Text_StevenMagmaCantBeAllowedToTakeFuel:
-	.string "SUPREME KAI: {PLAYER}{KUN}, have you\n"
-	.string "read that proclamation already?\p"
-	.string "MAJIN ARMY is coming after the rocket\n"
+	.string "SUPREME KAI: {PLAYER}{KUN}, have you read\n"
+	.string "that proclamation already?\p"
+	.string "RED RIBBON ARMY is after the rocket\n"
 	.string "fuel on this island.\p"
-	.string "I don't know what they'd need it for,\n"
-	.string "but they can't be allowed to take it.\p"
-	.string "I'll keep an eye on things for\n"
-	.string "a while longer.\p"
-	.string "In the meantime, why don't you go\n"
-	.string "check out the town?$"
+	.string "I don't know what they want it for, but\n"
+	.string "I sense a dark ki behind it. They can't\l"
+	.string "be allowed to take it.\p"
+	.string "I'll keep watch a while longer.\p"
+	.string "In the meantime, why don't you go look\n"
+	.string "around town?$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Intro:
-	.string "As promised, we've come for\n"
-	.string "the rocket fuel!$"
+	.string "As promised, we've come for the rocket\n"
+	.string "fuel! Sir, yes sir!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3Defeat:
-	.string "Ran out of fuel…$"
+	.string "Out of fuel… and out of ki…$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt3PostBattle:
 	.string "Don't think you're on a roll just\n"
-	.string "because you've beaten me!$"
+	.string "because you beat me! The general is way\l"
+	.string "tougher!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Intro:
 	.string "We gave you fair warning!\n"
-	.string "There's nothing sneaky about us!$"
+	.string "Nobody can say we were sneaky!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1Defeat:
-	.string "Grrr…\n"
-	.string "We should've used sneaky treachery…$"
+	.string "Grrr… We should've gone with sneaky\n"
+	.string "treachery…$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt1PostBattle:
-	.string "Okay, I get it already! The next time,\n"
-	.string "we'll come unannounced.$"
+	.string "Okay, okay, I get it already! Next time\n"
+	.string "we'll show up unannounced.$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Intro:
-	.string "The rocket fuel the SPACE CENTER has\n"
-	.string "in storage--that's what we're after.\p"
-	.string "We mean to take every last bit of it!$"
+	.string "The rocket fuel in storage\n"
+	.string "here--that's what we're after.\p"
+	.string "We're taking every last drop!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4Defeat:
-	.string "Please, can you spare some fuel?\n"
-	.string "Even a chintzy cup will do!$"
+	.string "Please, spare us some fuel!\n"
+	.string "Even a teeny cup will do!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt4PostBattle:
-	.string "What are we going to do with\n"
-	.string "the rocket fuel?\p"
-	.string "How would I know?\n"
-	.string "Ask our leader upstairs!$"
+	.string "What are we going to do with the rocket\n"
+	.string "fuel?\p"
+	.string "How should I know? Ask the big boss\n"
+	.string "upstairs! If you dare!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Intro:
-	.string "Our leader said no one, but no one,\n"
-	.string "gets past me!$"
+	.string "The boss said no one, but no one, gets\n"
+	.string "past me!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2Defeat:
 	.string "Ack! Ack! Aaack!$"
 
 MossdeepCity_SpaceCenter_1F_Text_Grunt2PostBattle:
-	.string "Please, tell our leader that\n"
-	.string "I never abandoned my post.\l"
-	.string "That I stayed to the bitter end…$"
+	.string "Please, tell the boss I never abandoned\n"
+	.string "my post. I stayed to the bitter end…$"
 
 MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "This is…\n"
@@ -409,5 +417,5 @@ MossdeepCity_SpaceCenter_1F_Text_MagmaIntentToStealNotice:
 	.string "rocket fuel.\p"
 	.string "“Please don't try to stop us.\n"
 	.string "We will take the fuel no matter what.\p"
-	.string "“Let there be more land!\n"
-	.string "                                          MAJIN ARMY”$"
+	.string "“Let there be more land! RED RIBBON\n"
+	.string "ARMY, LAND SQUAD”$"

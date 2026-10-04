@@ -679,63 +679,66 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our UUB gone?\p"
+	.string "Where did our UUB wander off to?\p"
 	.string "We have to leave for VERDANTURF TOWN\n"
 	.string "very soon…$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "Hiya! Are you maybe…\n"
+	.string "Hiya! Are you by any chance…\n"
 	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
-	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+	.string "Know what a POKéMON TRAINER does the\n"
+	.string "moment he reaches a new town?\p"
+	.string "He checks what kind of GYM the town\n"
+	.string "has, and who runs it.$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PETALBURG CITY's GYM.$"
+	.string "See? That's PETALBURG CITY's GYM.\n"
+	.string "A fighter's proving ground!$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+	.string "That's the GYM's sign. Whenever you\n"
+	.string "need a GYM, look for one of those.$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+	.string "I can see my face in the water.\p"
+	.string "A shining grin, full of hope…\p"
+	.string "Or maybe a quiet, somber stare, fighting\n"
+	.string "off fear…\p"
+	.string "What do you see when you look at\n"
+	.string "your own reflection?$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
-	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+	.string "Say you already have six POKéMON,\n"
+	.string "and you catch a seventh…\p"
+	.string "It's sent straight to a STORAGE BOX\n"
+	.string "through the PC network, so nobody\l"
+	.string "gets left behind.$"
 
 PetalburgCity_Text_GymSign:
 	.string "PETALBURG CITY POKéMON GYM\n"
 	.string "LEADER: KRILLIN\l"
-	.string "“A man in pursuit of power!”$"
+	.string "“The strongest human on Earth!”$"
 
 PetalburgCity_Text_CitySign:
 	.string "PETALBURG CITY\n"
-	.string "“Where people mingle with nature.”$"
+	.string "“Where city and nature meet.”$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "UUB'S HOUSE$"
+	.string "UUB'S FAMILY HOME$"
 
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"
-	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+	.string "Let me guess. Judging by your outfit,\n"
+	.string "you're a POKéMON TRAINER?$"
 
 PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
+	.string "Hmm, maybe not.\n"
+	.string "Your clothes aren't dusty enough.\p"
 	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+	.string "or just an ordinary kid.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+	.string "I'm roaming the land scouting for\n"
+	.string "talented fighters and TRAINERS.\p"
+	.string "Sorry to have taken up your time.$"

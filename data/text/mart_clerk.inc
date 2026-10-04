@@ -7,4 +7,4 @@ gText_PleaseComeAgain::
 
 gText_PlayerWhatCanIDoForYou::
 	.string "{PLAYER}{KUN}, welcome!\p"
-	.string "What can I do for you?$"
+	.string "What can I do for you today?$"

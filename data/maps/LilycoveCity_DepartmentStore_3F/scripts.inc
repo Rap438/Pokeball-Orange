@@ -55,18 +55,19 @@ LilycoveCity_DepartmentStore_3F_EventScript_Woman::
 	end
 
 LilycoveCity_DepartmentStore_3F_Text_ItemsBestForTougheningPokemon:
-	.string "For quickly toughening up POKéMON,\n"
-	.string "items are the best.\p"
-	.string "PROTEIN boosts ATTACK,\n"
-	.string "and CALCIUM raises SP. ATK.$"
+	.string "For toughening up POKéMON fast,\n"
+	.string "nothing beats items.\p"
+	.string "WEIGHTED GI boosts ATTACK, and KI\n"
+	.string "SCROLL raises SP. ATK.$"
 
 LilycoveCity_DepartmentStore_3F_Text_WantMoreEndurance:
 	.string "I want my POKéMON to have more\n"
 	.string "endurance.\p"
-	.string "I'm trying to decide whether to raise\n"
-	.string "DEFENSE with IRON, or SP. DEF with ZINC.$"
+	.string "I can't decide whether to raise DEFENSE\n"
+	.string "with SAIYAN ARMOR, or SP. DEF with\l"
+	.string "SPIRIT CHARM.$"
 
 LilycoveCity_DepartmentStore_3F_Text_GaveCarbosToSpeedUpMon:
-	.string "I gave a CARBOS to my POKéMON,\n"
-	.string "and its SPEED went up.$"
+	.string "I gave KAIO WEIGHTS to my POKéMON, and\n"
+	.string "its SPEED went up.$"
 

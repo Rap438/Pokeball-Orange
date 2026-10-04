@@ -36,16 +36,15 @@ MauvilleCity_Mart_EventScript_Man::
 	end
 
 MauvilleCity_Mart_Text_ItemsToTemporarilyElevateStats:
-	.string "There are items that temporarily\n"
-	.string "elevate the stats of POKéMON.\p"
-	.string "The ones I know you use in battle\n"
-	.string "are KAIO-KEN and KI BARRIER…\p"
-	.string "I do believe that there are others\n"
-	.string "like them.$"
+	.string "Some items give your POKéMON a\n"
+	.string "temporary power-up in battle.\p"
+	.string "I know KAIO-KEN and KI BARRIER do. I'm\n"
+	.string "sure there are more like them.$"
 
 MauvilleCity_Mart_Text_DecisionsDetermineBattle:
-	.string "Use a certain move, or use an item\n"
+	.string "Attack with a move, or use an item\n"
 	.string "instead…\p"
-	.string "The TRAINER's decisions determine how\n"
-	.string "battles turn out, I think.$"
+	.string "The TRAINER's call decides how a battle\n"
+	.string "turns out, I think. Every fighter learns\l"
+	.string "that sooner or later.$"
 

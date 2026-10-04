@@ -17,37 +17,34 @@ MagmaHideout_1F_EventScript_Grunt2::
 	end
 
 MagmaHideout_1F_Text_Grunt1Intro:
-	.string "When MAJIN ARMY has roll call, we get\n"
-	.string "important guarding assignments in\l"
-	.string "the order that we line up.\p"
-	.string "That's why I'm stuck off in this corner.\n"
-	.string "I'm always late to roll call!$"
+	.string "At RED RIBBON ARMY roll call, we get our\n"
+	.string "guard posts in the order we line up.\p"
+	.string "That's how I got stuck in this corner,\n"
+	.string "sir! I'm always late to roll call!$"
 
 MagmaHideout_1F_Text_Grunt1Defeat:
-	.string "I'm always late for training sessions,\n"
-	.string "too!\p"
-	.string "I hate to say it, but I'm wimpy…$"
+	.string "I'm always late to training, too!\p"
+	.string "I hate to admit it, but I'm a wimp…$"
 
 MagmaHideout_1F_Text_Grunt1PostBattle:
-	.string "Okay, I'll try to put a little more\n"
-	.string "effort into things from now on…$"
+	.string "Okay… I'll put a little more effort into\n"
+	.string "things from now on. Sir!$"
 
 MagmaHideout_1F_Text_Grunt2Intro:
-	.string "Our leader told us to dig into\n"
-	.string "MT. CHIMNEY, so we dug and dug.\p"
-	.string "And in the course of digging, we came\n"
-	.string "across something that blew our minds!\p"
-	.string "What did we find?\p"
-	.string "Fuhahaha!\n"
-	.string "I'll tell you if you beat me!$"
+	.string "KID BUU ordered us to dig into MT.\n"
+	.string "CHIMNEY, so we dug and dug and dug.\p"
+	.string "And while we were digging, we found\n"
+	.string "something that blew our minds!\p"
+	.string "What was it?\p"
+	.string "Fuhahaha! Beat me and I'll tell you!$"
 
 MagmaHideout_1F_Text_Grunt2Defeat:
-	.string "Arrgh!\n"
-	.string "Taken down!$"
+	.string "Arrgh! Knocked flat!$"
 
 MagmaHideout_1F_Text_Grunt2PostBattle:
-	.string "I won't tell you after all.\n"
-	.string "You'll find out when you get there!\p"
-	.string "It'd be better if you saved surprises\n"
-	.string "to the end, don't you think?$"
+	.string "Never mind, I'm not telling! KID BUU\n"
+	.string "might turn me into candy!\p"
+	.string "You'll see it when you get there.\n"
+	.string "Surprises are best saved for the end,\l"
+	.string "don't you think?$"
 

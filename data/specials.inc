@@ -567,3 +567,10 @@ gSpecials::
 	def_special DBZ_ShowGokuStatus
 	def_special DBZ_Debug_SetGokuLevel
 	def_special DBZ_GetNewFormHint
+	def_special DBZ_GokuCanFight
+	def_special DBZ_SetupVegetaFight
+	def_special DBZ_StartFightAndWait
+	def_special DBZ_WarpToLastHeal
+	def_special DBZ_ReviveGokuWeak
+	def_special DBZ_QueueFightEvolveCheck
+	def_special DBZ_HealGoku

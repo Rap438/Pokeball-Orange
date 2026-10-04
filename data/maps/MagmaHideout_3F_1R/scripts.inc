@@ -13,31 +13,30 @@ MagmaHideout_3F_1R_EventScript_Grunt16::
 
 MagmaHideout_3F_1R_Text_Grunt9Intro:
 	.string "What did I do to deserve this guard\n"
-	.string "posting?\p"
+	.string "post?\p"
 	.string "My left ear is burning up!$"
 
 MagmaHideout_3F_1R_Text_Grunt9Defeat:
 	.string "I'm getting heat exhaustion…$"
 
 MagmaHideout_3F_1R_Text_Grunt9PostBattle:
-	.string "Do you think it's odd that we're wearing\n"
-	.string "hoods in this magma-filled volcano?$"
+	.string "Don't you think it's odd that we wear\n"
+	.string "these thick uniforms inside a volcano\l"
+	.string "full of magma?$"
 
 MagmaHideout_3F_1R_Text_Grunt16Intro:
-	.string "We joined so we can help our leader\n"
-	.string "achieve his fantastic vision.\p"
-	.string "I don't care if you're with SAIYAN ARMY\n"
-	.string "or if you're just some kid passing by.\p"
-	.string "No one interferes with us and gets\n"
+	.string "We joined up to help KID BUU achieve his\n"
+	.string "fantastic vision.\p"
+	.string "I don't care if you're with the SEA\n"
+	.string "squad or just some kid passing by.\p"
+	.string "Nobody interferes with us and gets\n"
 	.string "away with it!$"
 
 MagmaHideout_3F_1R_Text_Grunt16Defeat:
-	.string "Oh, no!\n"
-	.string "You're not to be trusted at all!$"
+	.string "Oh, no! You can't be trusted at all!$"
 
 MagmaHideout_3F_1R_Text_Grunt16PostBattle:
-	.string "Listen to me.\n"
-	.string "MAJIN ARMY is right!\p"
-	.string "Don't listen to SAIYAN ARMY.\n"
-	.string "Don't believe their lies!$"
+	.string "Listen to me. The LAND squad is right!\p"
+	.string "Don't listen to the SEA squad. Don't\n"
+	.string "believe DR. GERO's lies!$"
 

@@ -265,7 +265,7 @@ static const u8 sProteinDesc[] = _(
     "ATTACK stat.");
 
 static const u8 sIronDesc[] = _(
-    "SAIYAN army armor.\n"
+    "SAIYAN battle gear.\n"
     "Raises the base\n"
     "DEFENSE stat.");
 
@@ -1545,8 +1545,8 @@ static const u8 sSapphireDesc[] = _(
 // Emerald-specific key items
 static const u8 sMagmaEmblemDesc[] = _(
     "The mark of\n"
-    "BABIDI's MAJIN\n"
-    "army.");
+    "KID BUU's RED\n"
+    "RIBBON ARMY.");
 
 static const u8 sOldSeaMapDesc[] = _(
     "A faded sea chart\n"

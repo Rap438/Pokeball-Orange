@@ -200,123 +200,127 @@ Route119_WeatherInstitute_2F_EventScript_WeatherScientist::
 	end
 
 Route119_WeatherInstitute_2F_Text_Grunt2Intro:
-	.string "The INSTITUTE created a type of\n"
-	.string "POKéMON that has something to do with\l"
-	.string "the weather. We're here to take them!$"
+	.string "The INSTITUTE created a POKéMON\n"
+	.string "that's tied to the weather.\p"
+	.string "DR. GERO wants it, so we're taking it!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2Defeat:
-	.string "Our plan's being spoiled by a kid?$"
+	.string "Our plan is being ruined by a kid?!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt2PostBattle:
 	.string "If the POKéMON they made here can\n"
-	.string "control the weather freely, then we of\l"
-	.string "SAIYAN ARMY definitely need it!$"
+	.string "control the weather freely, then the\l"
+	.string "RED RIBBON ARMY definitely needs it for\l"
+	.string "the, uh… the big plan!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Intro:
-	.string "We're SAIYAN ARMY!\n"
-	.string "We appear wherever anything rare is\l"
-	.string "found!$"
+	.string "We are the RED RIBBON ARMY!\p"
+	.string "Wherever something rare turns up, there\n"
+	.string "we are!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3Defeat:
-	.string "You got me!$"
+	.string "Ouch! You got me!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt3PostBattle:
-	.string "You don't have any idea what we of\n"
-	.string "SAIYAN ARMY are working towards!\l"
-	.string "You stay out of our way!$"
+	.string "You've got no idea what the RED RIBBON\n"
+	.string "ARMY is working toward!\p"
+	.string "Stay out of our way!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Intro:
-	.string "Don't tell me you're looking for that\n"
-	.string "weather POKéMON, too?\p"
-	.string "That's a no-no!\n"
-	.string "We were here to get it first!$"
+	.string "Don't tell me you're after that weather\n"
+	.string "POKéMON, too?!\p"
+	.string "No way! We got here first, so back off!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5Defeat:
-	.string "Oh, will you look at my POKéMON?$"
+	.string "Aw, look at my poor POKéMON!$"
 
 Route119_WeatherInstitute_2F_Text_Grunt5PostBattle:
-	.string "Humph, so what?\n"
-	.string "What we want…\p"
-	.string "What we really want isn't here…\n"
+	.string "Hmph, so what?\n"
+	.string "What we really want isn't here!\p"
 	.string "Ihihihihi…$"
 
 Route119_WeatherInstitute_2F_Text_ShellyIntro:
 	.string "Ahahahaha!\p"
-	.string "You're going to meddle in SAIYAN ARMY's\n"
-	.string "affairs?\p"
-	.string "You're either absolutely fearless,\n"
-	.string "simply ignorant, or both!\p"
-	.string "You're so cute, you're disgusting!\n"
-	.string "I'll put you down, kiddy!$"
+	.string "You dare meddle in the RED RIBBON\n"
+	.string "ARMY's affairs, right under COLONEL\l"
+	.string "VIOLET's nose?\p"
+	.string "You're either totally fearless,\n"
+	.string "hopelessly ignorant, or both!\p"
+	.string "You're so cute, you're disgusting! I'll\n"
+	.string "put you down, kiddy!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyDefeat:
 	.string "Ahahahaha!\n"
-	.string "You're disgustingly strong!$"
+	.string "Disgustingly strong! Marvelous!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
-	.string "It's bad enough to have MAJIN ARMY\n"
-	.string "blunder about, but now there's you!\p"
-	.string "What makes you want to sniff around\n"
-	.string "in our business, anyway?$"
+	.string "It's bad enough that the LAND squad\n"
+	.string "keeps blundering around, begging KID\l"
+	.string "BUU for attention, but now there's you!\p"
+	.string "What makes you want to sniff around in\n"
+	.string "our business, anyway?$"
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
 	.string "We have a situation here!\p"
-	.string "A MAJIN ARMY mob just passed\n"
-	.string "the WEATHER INSTITUTE.\p"
-	.string "They appear to be headed for\n"
-	.string "MT. PYRE!$"
+	.string "A mob of RED RIBBON soldiers in red\n"
+	.string "uniforms just marched past the WEATHER\l"
+	.string "INSTITUTE.\p"
+	.string "They seem to be heading for MT. PYRE!$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:
 	.string "What?!\p"
-	.string "We can't waste any more time here!\n"
-	.string "We have to hurry to MT. PYRE, too!\p"
+	.string "We can't waste any more time here! We\n"
+	.string "have to hurry to MT. PYRE, too!\p"
 	.string "Ahahahaha!\n"
-	.string "MAJIN ARMY, just you wait!$"
+	.string "LAND squad, just you wait!$"
 
 Route119_WeatherInstitute_2F_Text_ThanksPleaseTakePokemon:
-	.string "Thanks!\n"
+	.string "Thank you!\n"
 	.string "Thanks to you, we're safe!\p"
-	.string "It might be an odd way of thanking you,\n"
-	.string "but take this POKéMON.$"
+	.string "It may be an odd way to say thanks, but\n"
+	.string "please take this POKéMON.$"
 
 @ Unused
 Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
-	.string "Hm? You don't seem to have any room\n"
-	.string "for this POKéMON.$"
+	.string "Hm? Your party is full, so I can't hand\n"
+	.string "over this POKéMON.$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
 	.string "{PLAYER} received CASTFORM!$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
-	.string "That POKéMON changes shape according\n"
-	.string "to the weather conditions.\p"
-	.string "There're plenty of them in the\n"
-	.string "INSTITUTE--go ahead and take it.$"
+	.string "That POKéMON changes shape to match\n"
+	.string "the weather conditions.\p"
+	.string "There are plenty of them in the\n"
+	.string "INSTITUTE, so go ahead and take it.$"
 
 Route119_WeatherInstitute_2F_Text_ChangingWeatherRidiculous:
-	.string "I've been researching rain for many\n"
-	.string "years, but it's ridiculous to think that\l"
-	.string "humans can freely change the weather.$"
+	.string "I've studied rain for many years, and\n"
+	.string "the idea that anyone could change the\l"
+	.string "weather at will is absurd.\p"
+	.string "Then again, I did once see a fighter\n"
+	.string "scatter a thunderstorm with a single\l"
+	.string "punch…$"
 
 Route119_WeatherInstitute_2F_Text_GroudonWeather:
-	.string "I track weather patterns over\n"
-	.string "the HOENN region.\p"
-	.string "Presently, a drought has been recorded\n"
-	.string "in {STR_VAR_1}.\p"
-	.string "Could that mean, somewhere near\n"
-	.string "{STR_VAR_1}…$"
+	.string "I monitor the weather across the HOENN\n"
+	.string "region.\p"
+	.string "Right now, a drought is being recorded\n"
+	.string "around {STR_VAR_1}.\p"
+	.string "Could it be that something is stirring\n"
+	.string "near {STR_VAR_1}…$"
 
 Route119_WeatherInstitute_2F_Text_KyogreWeather:
-	.string "I track weather patterns over\n"
-	.string "the HOENN region.\p"
-	.string "Presently, heavy rainfall has been\n"
+	.string "I monitor the weather across the HOENN\n"
+	.string "region.\p"
+	.string "Right now, torrential rain is being\n"
 	.string "recorded over {STR_VAR_1}.\p"
-	.string "Could that mean, somewhere near\n"
-	.string "{STR_VAR_1}…$"
+	.string "Could it be that something is stirring\n"
+	.string "near {STR_VAR_1}…$"
 
 Route119_WeatherInstitute_2F_Text_NoAbnormalWeather:
-	.string "Abnormal weather conditions are\n"
-	.string "no longer being reported.\p"
-	.string "The occasional rainfall is a blessing,\n"
-	.string "really.$"
+	.string "No more abnormal weather is being\n"
+	.string "reported.\p"
+	.string "A little rain now and then is a blessing,\n"
+	.string "truly.$"
 

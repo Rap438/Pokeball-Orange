@@ -37,22 +37,24 @@ MossdeepCity_Mart_EventScript_Sailor::
 	end
 
 MossdeepCity_Mart_Text_ReviveIsFantastic:
-	.string "DENDE'S HEAL is fantastic!\p"
-	.string "Give it to a fainted POKéMON,\n"
-	.string "and the POKéMON will arise.\p"
-	.string "But be careful, DENDE'S HEAL doesn't\n"
-	.string "restore the used-up PP of moves.$"
+	.string "DENDE'S HEAL is fantastic! It's like a\n"
+	.string "touch from the young Guardian himself.\p"
+	.string "Give it to a fainted POKéMON, and it\n"
+	.string "springs right back up.\p"
+	.string "But be careful, it doesn't restore the\n"
+	.string "used-up PP of moves.$"
 
 MossdeepCity_Mart_Text_MaxRepelLastsLongest:
-	.string "KI VOID keeps all weak POKéMON away.\p"
+	.string "KI VOID hides your ki so well that every\n"
+	.string "weak POKéMON keeps its distance.\p"
 	.string "Out of all the KI HIDER sprays, it lasts\n"
 	.string "the longest.$"
 
 MossdeepCity_Mart_Text_NetAndDiveBallsRare:
-	.string "The NET and DIVE BALLS are rare POKé\n"
-	.string "BALLS that are only made in MOSSDEEP.\p"
-	.string "A NET BALL is effective against\n"
-	.string "BUG-type and WATER-type POKéMON.\p"
+	.string "NET BALLS and DIVE BALLS are rare POKé\n"
+	.string "BALLS made only in MOSSDEEP.\p"
+	.string "A NET BALL works well on BUG-type and\n"
+	.string "WATER-type POKéMON.\p"
 	.string "A DIVE BALL works best on POKéMON\n"
-	.string "at the bottom of the sea.$"
+	.string "found at the bottom of the sea.$"
 

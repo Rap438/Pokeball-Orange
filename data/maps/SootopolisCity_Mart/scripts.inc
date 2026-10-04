@@ -54,22 +54,23 @@ SootopolisCity_Mart_EventScript_GentlemanNoLegendaries::
 
 SootopolisCity_Mart_Text_PPUpIsGreat:
 	.string "KI BOOST is great!\p"
-	.string "It raises the POWER POINTS, the PP,\n"
-	.string "of a POKéMON move.$"
+	.string "It raises the POWER POINTS, the PP, of a\n"
+	.string "POKéMON move.$"
 
 SootopolisCity_Mart_Text_TooScaryOutside:
-	.string "What…\n"
+	.string "What…\p"
 	.string "What is happening?\p"
-	.string "I really want to know, but it's too\n"
-	.string "scary to go outside.$"
+	.string "I really want to know, but it's too scary\n"
+	.string "to go outside.$"
 
 SootopolisCity_Mart_Text_FullRestoreItemOfDreams:
 	.string "Do you know SENZU BEAN?\p"
-	.string "Full restoration of HP!\n"
-	.string "Eradication of all status problems!\p"
+	.string "Full restoration of HP! Cures every\n"
+	.string "status problem! Eat one and you're\l"
+	.string "ready to fight again!\p"
 	.string "It's truly an item of your dreams!$"
 
 SootopolisCity_Mart_Text_DidSomethingAwaken:
-	.string "This weather…\n"
+	.string "This weather…\p"
 	.string "Did something awaken?$"
 

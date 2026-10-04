@@ -59,25 +59,26 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
-	.string "Welcome, my name is ANDROID 18\n"
-	.string "of the ELITE FOUR.\p"
-	.string "I've traveled from afar to HOENN\n"
-	.string "so that I may hone my ice skills.\p"
-	.string "But all I have seen are challenges by\n"
-	.string "weak TRAINERS and their POKéMON.\p"
+	.string "Welcome. I'm ANDROID 18 of the ELITE\n"
+	.string "FOUR.\p"
+	.string "I came all the way to HOENN to sharpen\n"
+	.string "my ice skills.\p"
+	.string "All I've found are weak TRAINERS and\n"
+	.string "their weak POKéMON. Yawn.\p"
 	.string "What about you?\p"
-	.string "It would please me to no end if I could\n"
-	.string "go all out against you!$"
+	.string "It'd really make my day if I could\n"
+	.string "finally cut loose on someone.$"
 
 EverGrandeCity_GlaciasRoom_Text_Defeat:
 	.string "You and your POKéMON…\n"
-	.string "How hot your spirits burn!\p"
-	.string "The all-consuming heat overwhelms.\p"
-	.string "It's no surprise that my icy skills\n"
-	.string "failed to harm you.$"
+	.string "Your spirits burn way too hot.\p"
+	.string "All that heat… no wonder my ice couldn't\n"
+	.string "touch you.\p"
+	.string "Hmph. Fine. That was actually fun.$"
 
 EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
-	.string "Advance to the next room.\p"
-	.string "And there, confirm the truly fearsome\n"
-	.string "side of the POKéMON LEAGUE.$"
+	.string "Go on to the next room.\p"
+	.string "There, you'll meet the truly frightening\n"
+	.string "side of the POKéMON LEAGUE.\p"
+	.string "Try not to scream. …Just kidding. Maybe.$"
 

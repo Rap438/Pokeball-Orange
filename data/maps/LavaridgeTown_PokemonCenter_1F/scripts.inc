@@ -29,20 +29,22 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:
-	.string "I think POKéMON get closer to their\n"
-	.string "TRAINERS if they spend time together.\p"
-	.string "The longer the better.\n"
-	.string "That's what I think.$"
+	.string "I think POKéMON grow closer to their\n"
+	.string "TRAINERS the more time they spend\l"
+	.string "together.\p"
+	.string "The longer the better. Training side by\n"
+	.string "side is how real bonds are made.$"
 
 LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
-	.string "It's sort of magical how just sitting\n"
-	.string "in a hot-spring pool can invigorate.\p"
-	.string "I wish I could let my POKéMON\n"
-	.string "soak, too.$"
+	.string "It's almost magical how a soak in a hot\n"
+	.string "spring can recharge you.\p"
+	.string "I wish my POKéMON could soak with me,\n"
+	.string "too.$"
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
-	.string "Hohoho! Hey, kid, you can reach\n"
-	.string "the hot springs from here.\p"
-	.string "If POKéMON are getting rest, so too\n"
-	.string "should their TRAINERS.$"
+	.string "Hohoho! Hey, kid, you can get to the hot\n"
+	.string "springs from here.\p"
+	.string "If POKéMON need rest, so do their\n"
+	.string "TRAINERS. Even a Saiyan has to rest\l"
+	.string "sometime!$"
 

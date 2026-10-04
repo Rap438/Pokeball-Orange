@@ -258,32 +258,33 @@ PlayersHouse_2F_EventScript_GameCube::
 	end
 
 PlayersHouse_2F_Text_ClockIsStopped:
-	.string "The clock is stopped…\p"
-	.string "Better set it and start it!$"
+	.string "The clock has stopped…\p"
+	.string "Better set it and get it running!$"
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
 	.string "CHI-CHI: {PLAYER}, how do you like your\n"
 	.string "new room?\p"
 	.string "Good! Everything's put away neatly!\p"
-	.string "They finished moving everything in\n"
-	.string "downstairs, too.\p"
-	.string "POKéMON movers are so convenient!\p"
-	.string "Oh, you should make sure that\n"
-	.string "everything's all there on your desk.$"
+	.string "The movers finished carrying\n"
+	.string "everything in downstairs, too.\p"
+	.string "Those POKéMON movers are so handy!\p"
+	.string "Oh, and make sure everything's\n"
+	.string "there on your desk.$"
 
 PlayersHouse_2F_Text_Notebook:
 	.string "{PLAYER} flipped open the notebook.\p"
-	.string "ADVENTURE RULE NO. 1\n"
-	.string "Open the MENU with START.\p"
-	.string "ADVENTURE RULE NO. 2\n"
-	.string "Record your progress with SAVE.\p"
+	.string "TRAINING RULE NO. 1\n"
+	.string "Press START to open the MENU.\p"
+	.string "TRAINING RULE NO. 2\n"
+	.string "SAVE to record your progress.\p"
 	.string "The remaining pages are blank…$"
 
 Common_Text_LookCloserAtMap:
-	.string "{PLAYER} took a closer look at the\n"
-	.string "HOENN region map.$"
+	.string "{PLAYER} studied the HOENN region map.\n"
+	.string "So many places to train!$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
-	.string "A Game Boy Advance is connected to\n"
-	.string "serve as the Controller.$"
+	.string "A Game Boy Advance is hooked up to\n"
+	.string "serve as the Controller.\p"
+	.string "CHI-CHI would rather you studied!$"

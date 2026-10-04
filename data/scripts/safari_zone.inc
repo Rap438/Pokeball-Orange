@@ -99,8 +99,8 @@ Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
 	.string "Welcome to the SAFARI ZONE!\p"
 	.string "Here, you may witness many kinds of\n"
 	.string "POKéMON rarely seen in HOENN.\p"
-	.string "And, you'll see them in their wild,\n"
-	.string "untamed state in natural habitats.\p"
+	.string "The wilds in here feel like the days\n"
+	.string "when dinosaurs still roamed the Earth.\p"
 	.string "What's more, we've thrown open the\n"
 	.string "gates to POKéMON TRAINERS.\p"
 	.string "You're encouraged to catch POKéMON\n"
@@ -130,10 +130,11 @@ Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
 
 Route121_SafariZoneEntrance_Text_PlayAnotherTime:
 	.string "Okay.\n"
-	.string "Please play another time!$"
+	.string "Come back and train with us\l"
+	.string "another time!$"
 
 Route121_SafariZoneEntrance_Text_NotEnoughMoney:
-	.string "You don't have enough money.\n"
+	.string "You don't have enough ZENI.\n"
 	.string "Sorry.$"
 
 Route121_SafariZoneEntrance_Text_ThatWillBe500Please:
@@ -186,26 +187,28 @@ SafariZone_South_Text_GoodLuck:
 
 SafariZone_South_Text_Boy:
 	.string "Did you know?\p"
-	.string "If you put a {POKEBLOCK} in that square box,\n"
-	.string "POKéMON gather around.$"
+	.string "If you put a {POKEBLOCK} in that square\n"
+	.string "box, POKéMON gather around.$"
 
 SafariZone_South_Text_Man:
 	.string "I want to keep going deeper, but I\n"
-	.string "forgot to bring a BIKE.\p"
+	.string "forgot to bring a CAPSULE BIKE.\p"
 	.string "Something tells me that rare POKéMON\n"
 	.string "live in the outlying areas.$"
 
 SafariZone_Southwest_Text_Woman:
-	.string "Sometimes, when I toss a {POKEBLOCK} at \n"
+	.string "Sometimes, when I toss a {POKEBLOCK} at\n"
 	.string "POKéMON, it gets ignored.\p"
 	.string "Do POKéMON have likes and dislikes\n"
-	.string "about what they eat?$"
+	.string "about what they eat?\p"
+	.string "My husband would eat anything, and\n"
+	.string "then ask for seconds!$"
 
 SafariZone_Northwest_Text_Man:
 	.string "Gasp… Gasp…\n"
 	.string "I…made it out here…but…\p"
-	.string "I'm exhausted… I don't have the\n"
-	.string "energy to catch POKéMON…$"
+	.string "My power level is nearly zero… I don't\n"
+	.string "have the energy to catch POKéMON…$"
 
 SafariZone_North_Text_Fisherman:
 	.string "I'm on a mission to find WATER POKéMON\n"
@@ -220,7 +223,8 @@ SafariZone_South_Text_Youngster:
 	.string "I put a {POKEBLOCK} on the {POKEBLOCK} FEEDER.\n"
 	.string "But it seems to have disappeared.\p"
 	.string "I guess POKéMON must have eaten it\n"
-	.string "without me noticing.$"
+	.string "without me noticing.\p"
+	.string "They sure have big appetites!$"
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
 	.string "SAFARI ZONE TRAINER TIP!\p"
@@ -236,7 +240,9 @@ SafariZone_RestHouse_Text_Youngster:
 	.string "a good number of POKéMON.\p"
 	.string "You can improve your chances of making\n"
 	.string "a catch by getting closer to them\l"
-	.string "before throwing a SAFARI BALL.$"
+	.string "before throwing a SAFARI BALL.\p"
+	.string "Sneak up like a true martial artist,\n"
+	.string "hiding your ki!$"
 
 SafariZone_RestHouse_Text_PsychicM:
 	.string "If you use {POKEBLOCK}S, wild POKéMON won't\n"
@@ -265,17 +271,21 @@ SafariZone_South_Text_AreaOffLimits2:
 
 SafariZone_Southeast_Text_LittleGirl:
 	.string "Wow! Whee! I haven't seen any of\n"
-	.string "these POKéMON before!$"
+	.string "these POKéMON before!\p"
+	.string "I want to train with all of them!$"
 
 SafariZone_Southeast_Text_FatMan:
 	.string "The POKéMON in this area are all\n"
 	.string "new to me.\p"
 	.string "And I'm allowed to catch these rare\n"
-	.string "POKéMON! Too cool!$"
+	.string "POKéMON! I'm so pumped I could eat\l"
+	.string "a whole feast!$"
 
 SafariZone_Southeast_Text_RichBoy:
 	.string "The POKéMON around here seem to be\n"
-	.string "from somewhere other than HOENN.$"
+	.string "from somewhere other than HOENN.\p"
+	.string "Maybe a CAPSULE CORP. scientist\n"
+	.string "brought them in.$"
 
 SafariZone_Northeast_Text_Boy:
 	.string "I only have a couple SAFARI BALLS left.\p"
@@ -284,10 +294,12 @@ SafariZone_Northeast_Text_Boy:
 
 SafariZone_Northeast_Text_Woman:
 	.string "I heard that you can see PIKACHU here.\n"
-	.string "Where might one be?$"
+	.string "Where might one be?\p"
+	.string "My kid says it'd make a great\n"
+	.string "sparring partner.$"
 
 SafariZone_Northeast_Text_Girl:
 	.string "Oh, boo!\n"
 	.string "I can't seem to catch anything!\p"
 	.string "I'll end up wasting the admission\n"
-	.string "price if I don't catch something!$"
+	.string "ZENI if I don't catch something!$"

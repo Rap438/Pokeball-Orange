@@ -23,33 +23,34 @@ Roulette_EventScript_Play::
 	end
 
 Roulette_Text_PlayMinimumWagerIsX::
-	.string "The minimum wager at this table\n"
-	.string "is {STR_VAR_1}. Do you want to play?$"
+	.string "The minimum bet at this table is\n"
+	.string "{STR_VAR_1}. Care to spin the wheel?$"
 
 Roulette_Text_NotEnoughCoins::
 	.string "You don't have enough COINS.$"
 
 Roulette_Text_SpecialRateTable::
-	.string "Special rate table right now!$"
+	.string "This is today's special rate table!$"
 
 Roulette_Text_ControlsInstruction::
-	.string "Place your wager with the + Control\n"
+	.string "Place your bet with the + Control\n"
 	.string "Pad, then press the A Button.$"
 
 Roulette_Text_ItsAHit::
-	.string "It's a hit!$"
+	.string "A hit! Nice read!$"
 
 Roulette_Text_Jackpot::
-	.string "Jackpot!$"
+	.string "Jackpot! Your luck is off the\n"
+	.string "scale!$"
 
 Roulette_Text_NothingDoing::
 	.string "Nothing doing!$"
 
 Roulette_Text_YouveWonXCoins::
-	.string "You've won {STR_VAR_1} COINS!$"
+	.string "You won {STR_VAR_1} COINS!$"
 
 Roulette_Text_NoCoinsLeft::
-	.string "No COINS left…$"
+	.string "You're out of COINS…$"
 
 Roulette_Text_KeepPlaying::
 	.string "Keep playing?$"
@@ -63,4 +64,4 @@ Roulette_Text_YouDontHaveACoinCase::
 
 Roulette_Text_CoinCaseIsFull::
 	.string "Your COIN CASE is full!\n"
-	.string "Coins can be exchanged for prizes.$"
+	.string "Trade COINS in for prizes.$"

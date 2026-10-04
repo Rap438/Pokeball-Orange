@@ -54,32 +54,32 @@ AbandonedShip_Corridors_B1F_EventScript_Duncan::
 	end
 
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:
-	.string "When we go out to sea, we SAILORS\n"
-	.string "always bring our POKéMON.\l"
-	.string "How about a quick battle?$"
+	.string "We SAILORS never put out to sea\n"
+	.string "without our POKéMON.\p"
+	.string "How about a quick spar?$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
-	.string "Whoops, I'm sunk!$"
+	.string "Gah, I'm sunk!$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
-	.string "The ship's bottom has sunk into the\n"
-	.string "depths.\p"
-	.string "If a POKéMON knew how to go underwater,\n"
-	.string "we might make some progress…$"
+	.string "The bottom of this ship has sunk deep\n"
+	.string "into the water.\p"
+	.string "If a POKéMON knew how to dive down\n"
+	.string "there, we might make some progress…$"
 
 AbandonedShip_Corridors_B1F_Text_YayItsAShip:
-	.string "Yay!\n"
-	.string "It's a ship!$"
+	.string "Yay!\p"
+	.string "A real ship! Let's go exploring!$"
 
 AbandonedShip_Corridors_B1F_Text_DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“STORAGE” is painted on the door.$"
+	.string "The door is locked tight.\p"
+	.string "“STORAGE” is painted across it.$"
 
 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey:
-	.string "{PLAYER} inserted and turned the\n"
-	.string "STORAGE KEY.\p"
-	.string "The inserted KEY stuck fast,\n"
-	.string "but the door opened.$"
+	.string "{PLAYER} slid the STORAGE KEY in and\n"
+	.string "turned it.\p"
+	.string "The KEY stuck fast, but the door swung\n"
+	.string "open.$"
 
 AbandonedShip_Text_TheDoorIsOpen:
 	.string "The door is open.$"

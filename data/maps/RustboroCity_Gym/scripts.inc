@@ -106,36 +106,37 @@ RustboroCity_Gym_EventScript_RegisterRoxanne::
 
 RustboroCity_Gym_Text_GymGuideAdvice:
 	.string "Yo, how's it going?\p"
-	.string "Listen, my friend!\n"
-	.string "Would you like to become the CHAMPION?\p"
-	.string "I'm no TRAINER, not me, but I can\n"
-	.string "sure give you winning advice.\p"
+	.string "Listen, my friend! Would you like to\n"
+	.string "become the CHAMPION?\p"
+	.string "I'm no TRAINER, not me, but I've watched\n"
+	.string "enough tournaments to give you winning\l"
+	.string "advice.\p"
 	.string "That's settled, then! We'll aim for the\n"
 	.string "POKéMON CHAMPIONSHIP together!\p"
 	.string "It's your job as a TRAINER to collect\n"
 	.string "GYM BADGES, am I right?\p"
 	.string "But GYM LEADERS aren't pushovers!\p"
-	.string "And that's where I come in!\n"
-	.string "I'm here to provide expert advice!\p"
-	.string "ROXANNE, the GYM LEADER, is a user\n"
-	.string "of ROCK-type POKéMON.\p"
-	.string "The ROCK type is very durable, but\n"
-	.string "it can't stand WATER-type and\l"
-	.string "GRASS-type moves.\p"
-	.string "Come see me afterwards, if you beat\n"
-	.string "the GYM LEADER.\p"
+	.string "And that's where I come in! I'm here to\n"
+	.string "provide expert advice!\p"
+	.string "YAMCHA, the GYM LEADER, used to be a\n"
+	.string "desert bandit, believe it or not. Now he\l"
+	.string "uses ROCK-type POKéMON.\p"
+	.string "The ROCK type is very durable, but it\n"
+	.string "can't stand WATER-type and GRASS-type\l"
+	.string "moves.\p"
+	.string "Come see me afterwards if you beat the\n"
+	.string "GYM LEADER.\p"
 	.string "Well, go for it!$"
 
 RustboroCity_Gym_Text_GymGuidePostVictory:
-	.string "Whoa! What a breathtaking victory!\n"
-	.string "My cheering must've worked!\p"
-	.string "Great!\n"
-	.string "Check your TRAINER CARD.\p"
-	.string "The STONE BADGE you got should be\n"
+	.string "Whoa! What a breathtaking victory! My\n"
+	.string "cheering must've worked!\p"
+	.string "Great! Check your TRAINER CARD.\p"
+	.string "The STONE BADGE you earned should be\n"
 	.string "properly recorded on it.\p"
 	.string "In other words…\p"
-	.string "You've climbed the first step on\n"
-	.string "the stairs to the CHAMPIONSHIP!\p"
+	.string "You've climbed the first step on the\n"
+	.string "stairs to the CHAMPIONSHIP!\p"
 	.string "That's got to feel awesome!$"
 
 RustboroCity_Gym_Text_JoshIntro:
@@ -143,29 +144,28 @@ RustboroCity_Gym_Text_JoshIntro:
 	.string "I'll show you why we're better!$"
 
 RustboroCity_Gym_Text_JoshDefeat:
-	.string "You were too good for me…$"
+	.string "You were too strong for me…$"
 
 RustboroCity_Gym_Text_JoshPostBattle:
-	.string "You haven't seen anything of the ROCK\n"
-	.string "type's terrifying power!$"
+	.string "You haven't seen anything yet of the\n"
+	.string "ROCK type's terrifying power!$"
 
 RustboroCity_Gym_Text_TommyIntro:
-	.string "If you can't beat me, you won't stand\n"
-	.string "a chance against YAMCHA!$"
+	.string "If you can't beat me, you don't stand a\n"
+	.string "chance against YAMCHA!$"
 
 RustboroCity_Gym_Text_TommyDefeat:
-	.string "Wow! You've got some potential!$"
+	.string "Wow! You've got serious potential!$"
 
 RustboroCity_Gym_Text_TommyPostBattle:
-	.string "YAMCHA is stronger than me by\n"
-	.string "several times.\p"
+	.string "YAMCHA is several times stronger than\n"
+	.string "me.\p"
 	.string "You'd better be on your guard!$"
 
 RustboroCity_Gym_Text_MarcIntro:
-	.string "We might be in the middle of town,\n"
-	.string "but so what?\p"
-	.string "My ROCK POKéMON need room to\n"
-	.string "rampage!$"
+	.string "We might be in the middle of town, but so\n"
+	.string "what?\p"
+	.string "My ROCK POKéMON need room to rampage!$"
 
 RustboroCity_Gym_Text_MarcDefeat:
 	.string "Oh, man oh man!\n"
@@ -173,27 +173,30 @@ RustboroCity_Gym_Text_MarcDefeat:
 
 RustboroCity_Gym_Text_MarcPostBattle:
 	.string "I have to hand it to our LEADER.\p"
-	.string "It took smarts and sense for her to\n"
-	.string "pick the ROCK type at her young age.$"
+	.string "Turning his life around and choosing\n"
+	.string "the ROCK type took real brains and\l"
+	.string "guts.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Hello, I am YAMCHA, the RUSTBORO\n"
-	.string "POKéMON GYM LEADER.\p"
-	.string "I became a GYM LEADER so that I might\n"
-	.string "apply what I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL in battle.\p"
-	.string "Would you kindly demonstrate how you\n"
-	.string "battle, and with which POKéMON?$"
+	.string "Yo! I'm YAMCHA, the RUSTBORO POKéMON\n"
+	.string "GYM LEADER.\p"
+	.string "I took this job so I could put\n"
+	.string "everything I learned at the POKéMON\l"
+	.string "TRAINER'S SCHOOL to use in battle.\p"
+	.string "So show me how you fight, and with which\n"
+	.string "POKéMON! Fair warning, I'm not all that\l"
+	.string "lucky, but I don't plan on losing today.$"
 
 RustboroCity_Gym_Text_RoxanneDefeat:
 	.string "So…\n"
 	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
+	.string "Figures. Bad luck follows me everywhere,\n"
+	.string "but that was all you.\p"
+	.string "It seems I still have much to learn…\p"
 	.string "I understand.\p"
-	.string "The POKéMON LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
+	.string "The POKéMON LEAGUE's rules say\n"
+	.string "TRAINERS are to be given this if they\l"
+	.string "defeat a GYM LEADER.\p"
 	.string "Please accept the official POKéMON\n"
 	.string "LEAGUE STONE BADGE.$"
 
@@ -202,50 +205,50 @@ RustboroCity_Gym_Text_ReceivedStoneBadge:
 	.string "from YAMCHA.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis:
-	.string "The STONE BADGE heightens the ATTACK\n"
+	.string "The STONE BADGE boosts the ATTACK\n"
 	.string "power of your POKéMON.\p"
-	.string "It also enables them to use the HM move\n"
-	.string "CUT outside of battle.\p"
-	.string "Please take this with you, too.$"
+	.string "It also lets them use the HM move CUT\n"
+	.string "outside of battle.\p"
+	.string "Take this with you, too.$"
 
 RustboroCity_Gym_Text_ExplainRockTomb:
-	.string "That TECHNICAL MACHINE, TM39,\n"
-	.string "contains ROCK TOMB.\p"
-	.string "It not only inflicts damage by dropping\n"
+	.string "That TECHNICAL MACHINE, TM39, contains\n"
+	.string "ROCK TOMB.\p"
+	.string "It not only does damage by dropping\n"
 	.string "rocks, it also lowers SPEED.\p"
 	.string "If you use a TM, it instantly teaches\n"
 	.string "the move to a POKéMON.\p"
-	.string "Remember, a TM can be used only once,\n"
-	.string "so think before you use it.$"
+	.string "Remember, a TM can be used only once, so\n"
+	.string "think before you use it.$"
 
 RustboroCity_Gym_Text_RoxannePostBattle:
-	.string "Since you are so strong, you should\n"
-	.string "challenge other GYM LEADERS.\p"
-	.string "By battling many TRAINERS, you should\n"
-	.string "learn many things.$"
+	.string "You're strong enough to challenge the\n"
+	.string "other GYM LEADERS.\p"
+	.string "By battling many TRAINERS, you'll learn\n"
+	.string "many things.$"
 
 RustboroCity_Gym_Text_GymStatue:
 	.string "RUSTBORO CITY POKéMON GYM$"
 
 RustboroCity_Gym_Text_GymStatueCertified:
 	.string "RUSTBORO CITY POKéMON GYM\p"
-	.string "ROXANNE'S CERTIFIED TRAINERS:\n"
+	.string "YAMCHA'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 RustboroCity_Gym_Text_RoxanneRegisterCall:
 	.string "… … … … … …\n"
 	.string "… … … … … Beep!\p"
-	.string "ROXANNE: Oh, hello, {PLAYER}?\n"
-	.string "This is YAMCHA of RUSTBORO CITY.\p"
-	.string "I heard from TIEN that you're\n"
-	.string "moving up through the ranks of\l"
-	.string "TRAINERS at an incredible clip.\p"
-	.string "Well, I'd rather not think that\n"
-	.string "I can't beat you.\p"
-	.string "I promise, I will shape up my GYM\n"
-	.string "so that you may challenge us again.\p"
-	.string "I hope you'll be looking forward to\n"
-	.string "that occasion as much as me!\p"
+	.string "YAMCHA: Oh, hey, {PLAYER}? It's YAMCHA,\n"
+	.string "from RUSTBORO CITY.\p"
+	.string "I heard from TIEN that you're climbing\n"
+	.string "the ranks of TRAINERS at an incredible\l"
+	.string "clip.\p"
+	.string "Heh, I'd rather not think that I can't\n"
+	.string "beat you.\p"
+	.string "I promise I'll whip my GYM into shape so\n"
+	.string "you can challenge us again.\p"
+	.string "I hope you're looking forward to it as\n"
+	.string "much as I am!\p"
 	.string "… … … … … …\n"
 	.string "… … … … … Click!$"
 
@@ -254,31 +257,31 @@ RustboroCity_Gym_Text_RegisteredRoxanne:
 	.string "in the POKéNAV.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "YAMCHA: I'm so glad to see you again.\n"
-	.string "I'm YAMCHA, the GYM LEADER here.\p"
-	.string "I'm sure we've both experienced many\n"
+	.string "YAMCHA: Great to see you again! I'm\n"
+	.string "YAMCHA, the GYM LEADER here.\p"
+	.string "I'm sure we've both fought plenty of\n"
 	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become. Let us battle!$"
+	.string "I'd like to see how much stronger we've\n"
+	.string "gotten. Let's go!$"
 
 RustboroCity_Gym_Text_RoxanneRematchDefeat:
 	.string "Grr…\n"
-	.string "Again, I have lost…$"
+	.string "I lost again…$"
 
 RustboroCity_Gym_Text_RoxannePostRematch:
-	.string "YAMCHA: I still have much to learn\n"
-	.string "when it comes to battling POKéMON.\p"
-	.string "That awareness makes me love battling\n"
-	.string "all that much more!$"
+	.string "YAMCHA: I still have a lot to learn about\n"
+	.string "battling POKéMON.\p"
+	.string "Knowing that makes me love battling\n"
+	.string "even more!$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "YAMCHA: I'm so glad to see you again.\n"
-	.string "I'm YAMCHA, the GYM LEADER here.\p"
-	.string "I'm sure we've both experienced many\n"
+	.string "YAMCHA: Great to see you again! I'm\n"
+	.string "YAMCHA, the GYM LEADER here.\p"
+	.string "I'm sure we've both fought plenty of\n"
 	.string "battles since we last met.\p"
-	.string "I would like to see how much better\n"
-	.string "we've become…\p"
+	.string "I'd like to see how much stronger we've\n"
+	.string "gotten…\p"
 	.string "Oh, no…\n"
 	.string "You only have one POKéMON with you?\p"
-	.string "Please return with at least one more\n"
+	.string "Please come back with at least one more\n"
 	.string "POKéMON.$"

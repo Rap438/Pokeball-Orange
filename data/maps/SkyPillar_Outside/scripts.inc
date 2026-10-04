@@ -132,33 +132,33 @@ SkyPillar_Outside_EventScript_ClosedDoor::
 	end
 
 SkyPillar_Outside_Text_DoorIsClosed:
-	.string "The door is closed.$"
+	.string "The door is shut tight.$"
 
 SkyPillar_Outside_Text_OpenedDoorToSkyPillar:
-	.string "MR. SATAN: Oh, my, I'm terribly sorry!\p"
-	.string "In my haste, I didn't notice that\n"
-	.string "I'd left you behind!\p"
-	.string "I've opened the locked door of\n"
-	.string "the SKY PILLAR.\p"
-	.string "{PLAYER}{KUN}, let's be on our way!$"
+	.string "MR. SATAN: Oh my, I'm terribly sorry!\p"
+	.string "In all my excitement, I forgot you were\n"
+	.string "behind me!\p"
+	.string "I've opened the locked door of the SKY\n"
+	.string "PILLAR.\p"
+	.string "{PLAYER}{KUN}, let's go!$"
 
 SkyPillar_Outside_Text_EarthquakeNotMomentToWaste:
-	.string "MR. SATAN: It's an earthquake!\p"
-	.string "There's not a moment to waste!\n"
-	.string "We've got to hurry!$"
+	.string "MR. SATAN: An earthquake!\p"
+	.string "There's no time to waste! Hurry!$"
 
 SkyPillar_Outside_Text_SituationGettingWorse:
-	.string "MR. SATAN: Hmm…\n"
-	.string "The situation is getting worse…$"
+	.string "MR. SATAN: Hmm…\p"
+	.string "Things are getting worse…$"
 
 SkyPillar_Outside_Text_GotToGoBackForSootopolis:
 	.string "MR. SATAN: This isn't good…\p"
 	.string "The weather distortion is spreading\n"
 	.string "even here…\p"
 	.string "{PLAYER}{KUN}.\p"
-	.string "RAYQUAZA should be farther up\n"
-	.string "from here.\p"
-	.string "I'm worried about SOOTOPOLIS.\n"
-	.string "I've got to go back.\p"
-	.string "Everything is in your hands now.\n"
-	.string "Don't fail us!$"
+	.string "RAYQUAZA should be farther up from\n"
+	.string "here.\p"
+	.string "I'm worried about SOOTOPOLIS. The\n"
+	.string "WORLD CHAMPION has to protect its\l"
+	.string "people, so I must go back.\p"
+	.string "Everything is in your hands now. Don't\n"
+	.string "let us down!$"

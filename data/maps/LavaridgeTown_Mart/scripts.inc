@@ -33,13 +33,14 @@ LavaridgeTown_Mart_EventScript_OldWoman::
 	end
 
 LavaridgeTown_Mart_Text_XSpeedFirstStrike:
-	.string "Use ZANZOKEN to add to a POKéMON's\n"
+	.string "Use ZANZOKEN to boost a POKéMON's\n"
 	.string "SPEED in battle.\p"
-	.string "That will help it get in the first\n"
-	.string "strike--a decided advantage!$"
+	.string "That helps it land the first strike, and\n"
+	.string "that's a huge advantage!$"
 
 LavaridgeTown_Mart_Text_LocalSpecialtyOnMtChimney:
-	.string "On MT. CHIMNEY's peak, there's a local\n"
-	.string "specialty that you can buy only there.\p"
-	.string "Give it to a POKéMON--it will be elated.$"
+	.string "Up at the peak of MT. CHIMNEY, there's a\n"
+	.string "local specialty you can buy only there.\p"
+	.string "Give it to a POKéMON and it'll be\n"
+	.string "thrilled.$"
 

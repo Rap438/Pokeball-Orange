@@ -1,4 +1,6 @@
 #include "global.h"
+#include "dbz.h"
+#include "event_data.h"
 #include "scanline_effect.h"
 #include "palette.h"
 #include "task.h"
@@ -948,8 +950,103 @@ static bool8 PrintAllOnCardFront(void)
     return FALSE;
 }
 
+// ------------------------------------------------------------------ PokeBall Orange: Goku's stats on the card back
+static const u8 sText_Dbz_CardTitle[] = _("GOKU'S STATS");
+static const u8 sText_Dbz_PowerLevel[] = _("POWER LV");
+static const u8 sText_Dbz_Level[] = _("LEVEL");
+static const u8 sText_Dbz_Exp[] = _("EXP");
+static const u8 sText_Dbz_Next[] = _("NEXT LV");
+static const u8 sText_Dbz_Hp[] = _("HP");
+static const u8 sText_Dbz_Power[] = _("POWER");
+static const u8 sText_Dbz_Defense[] = _("DEFENSE");
+static const u8 sText_Dbz_Form[] = _("FORM");
+static const u8 sText_Dbz_MaxForm[] = _("MAX");
+static const u8 sText_Dbz_Balls[] = _("D.BALLS");
+static const u8 sText_Dbz_Wishes[] = _("WISHES");
+static const u8 sText_Dbz_WinLoss[] = _("WON/LOST");
+static const u8 sText_Dbz_Base[] = _("BASE");
+static const u8 sText_Dbz_Ssj[] = _("SSJ");
+static const u8 sText_Dbz_Ssj2[] = _("SSJ2");
+static const u8 sText_Dbz_Ssj3[] = _("SSJ3");
+static const u8 *const sText_Dbz_Forms[] = {sText_Dbz_Base, sText_Dbz_Ssj, sText_Dbz_Ssj2, sText_Dbz_Ssj3};
+
+static bool8 ShowGokuStatsOnBack(void)
+{
+    return !sData->isLink;
+}
+
+// one row, two label/value pairs (second pair optional)
+static void PrintDbzRow(u8 row, const u8 *l1, const u8 *v1, const u8 *l2, const u8 *v2)
+{
+    u8 y = row * 16 + 33;
+    AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, 16, y, sTrainerCardTextColors, TEXT_SKIP_DRAW, l1);
+    if (l2 == NULL)
+    {
+        AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, v1, 216), y, sTrainerCardStatColors, TEXT_SKIP_DRAW, v1);
+        return;
+    }
+    AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, v1, 110), y, sTrainerCardStatColors, TEXT_SKIP_DRAW, v1);
+    AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, 120, y, sTrainerCardTextColors, TEXT_SKIP_DRAW, l2);
+    AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, v2, 216), y, sTrainerCardStatColors, TEXT_SKIP_DRAW, v2);
+}
+
+static void PrintGokuStatsOnCard(u8 part)
+{
+    u8 a[16], b[16];
+    u8 *end;
+    switch (part)
+    {
+    case 0:
+        AddTextPrinterParameterized3(WIN_CARD_TEXT, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, sText_Dbz_CardTitle, 216), 9, sTrainerCardTextColors, TEXT_SKIP_DRAW, sText_Dbz_CardTitle);
+        ConvertIntToDecimalStringN(a, DBZ_GokuPowerLevel(), STR_CONV_MODE_LEFT_ALIGN, 7);
+        end = ConvertIntToDecimalStringN(b, VarGet(VAR_DBZ_FIGHTS_WON), STR_CONV_MODE_LEFT_ALIGN, 4);
+        *end++ = CHAR_SLASH;
+        ConvertIntToDecimalStringN(end, VarGet(VAR_DBZ_FIGHTS_LOST), STR_CONV_MODE_LEFT_ALIGN, 4);
+        PrintDbzRow(0, sText_Dbz_PowerLevel, a, sText_Dbz_WinLoss, b);
+        break;
+    case 1:
+        ConvertIntToDecimalStringN(a, DBZ_GokuLevel(), STR_CONV_MODE_LEFT_ALIGN, 3);
+        ConvertIntToDecimalStringN(b, DBZ_GokuExpTotal(), STR_CONV_MODE_LEFT_ALIGN, 7);
+        PrintDbzRow(1, sText_Dbz_Level, a, sText_Dbz_Exp, b);
+        break;
+    case 2:
+        end = ConvertIntToDecimalStringN(a, DBZ_GokuHp(), STR_CONV_MODE_LEFT_ALIGN, 4);
+        *end++ = CHAR_SLASH;
+        ConvertIntToDecimalStringN(end, DBZ_GokuMaxHp(), STR_CONV_MODE_LEFT_ALIGN, 4);
+        ConvertIntToDecimalStringN(b, DBZ_GokuExpToNext(), STR_CONV_MODE_LEFT_ALIGN, 7);
+        PrintDbzRow(2, sText_Dbz_Hp, a, sText_Dbz_Next, b);
+        break;
+    case 3:
+        ConvertIntToDecimalStringN(a, DBZ_GokuPowerStat(), STR_CONV_MODE_LEFT_ALIGN, 4);
+        ConvertIntToDecimalStringN(b, DBZ_GokuDefenseStat(), STR_CONV_MODE_LEFT_ALIGN, 4);
+        PrintDbzRow(3, sText_Dbz_Power, a, sText_Dbz_Defense, b);
+        break;
+    case 4:
+        PrintDbzRow(4, sText_Dbz_Form, sText_Dbz_Forms[DBZ_GetForm()], sText_Dbz_MaxForm, sText_Dbz_Forms[DBZ_GetMaxForm()]);
+        break;
+    case 5:
+        end = ConvertIntToDecimalStringN(a, DBZ_CountDragonBallsInBag(), STR_CONV_MODE_LEFT_ALIGN, 1);
+        *end++ = CHAR_SLASH;
+        *end++ = CHAR_7;
+        *end = EOS;
+        ConvertIntToDecimalStringN(b, VarGet(VAR_DBZ_WISHES), STR_CONV_MODE_LEFT_ALIGN, 3);
+        PrintDbzRow(5, sText_Dbz_Balls, a, sText_Dbz_Wishes, b);
+        break;
+    }
+}
+
 static bool8 PrintAllOnCardBack(void)
 {
+    if (ShowGokuStatsOnBack())
+    {
+        if (sData->printState >= 6)
+        {
+            sData->printState = 0;
+            return TRUE;
+        }
+        PrintGokuStatsOnCard(sData->printState++);
+        return FALSE;
+    }
     switch (sData->printState)
     {
     case 0:
@@ -1524,6 +1621,11 @@ static void DrawStarsAndBadgesOnCard(void)
 
 static void DrawCardBackStats(void)
 {
+    if (ShowGokuStatsOnBack())
+    {
+        CopyBgTilemapBufferToVram(3);
+        return;
+    }
     if (sData->cardType == CARD_TYPE_FRLG)
     {
         if (sData->hasTrades)

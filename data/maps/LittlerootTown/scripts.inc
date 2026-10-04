@@ -852,77 +852,81 @@ LittlerootTown_EventScript_GiveRunningShoes::
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "CHI-CHI: {PLAYER}, we're here, honey!\p"
-	.string "It must be tiring riding with our things\n"
-	.string "in the moving truck.\p"
-	.string "Well, this is LITTLEROOT TOWN.\p"
+	.string "Riding in the back of that moving truck\n"
+	.string "must have worn you out.\p"
+	.string "Well, this is LITTLEROOT TOWN!\p"
 	.string "How do you like it?\n"
 	.string "This is our new home!\p"
-	.string "It has a quaint feel, but it seems to be\n"
-	.string "an easy place to live, don't you think?\p"
-	.string "And, you get your own room, {PLAYER}!\n"
-	.string "Let's go inside.$"
+	.string "It's quiet and cozy, with lots of open\n"
+	.string "land to train on. Don't you think?\p"
+	.string "And there's a room of your very own\n"
+	.string "upstairs, {PLAYER}! Let's go inside.$"
 
 LittlerootTown_Text_WaitPlayer:
-	.string "CHI-CHI: Wait, {PLAYER}!$"
+	.string "CHI-CHI: Hold on, {PLAYER}!$"
 
 LittlerootTown_Text_WearTheseRunningShoes:
-	.string "CHI-CHI: {PLAYER}! {PLAYER}! Did you\n"
-	.string "introduce yourself to MASTER ROSHI?\p"
+	.string "CHI-CHI: {PLAYER}! {PLAYER}! Did you say\n"
+	.string "hello to MASTER ROSHI?\p"
 	.string "Oh! What an adorable POKéMON!\n"
-	.string "You got it from MASTER ROSHI. How nice!\p"
-	.string "You're KRILLIN's best buddy, all right.\n"
-	.string "You look good together with POKéMON!\p"
-	.string "Here, honey! If you're going out on an\n"
-	.string "adventure, wear these RUNNING SHOES.\p"
-	.string "They'll put a zip in your step!$"
+	.string "MASTER ROSHI gave it to you? How nice!\p"
+	.string "You really are KRILLIN's best friend.\n"
+	.string "You and POKéMON look great together!\p"
+	.string "Here, honey! If you're heading out to\n"
+	.string "train, wear these RUNNING SHOES.\p"
+	.string "They'll put a zip in your step! And be\n"
+	.string "home in time for supper, understood?$"
 
 LittlerootTown_Text_SwitchShoesWithRunningShoes:
-	.string "{PLAYER} switched shoes with the\n"
+	.string "{PLAYER} laced up the\n"
 	.string "RUNNING SHOES.$"
 
 LittlerootTown_Text_ExplainRunningShoes:
-	.string "CHI-CHI: {PLAYER}, those shoes came\n"
-	.string "with instructions.\p"
-	.string "“Press the B Button while wearing these\n"
-	.string "RUNNING SHOES to run extra-fast!\p"
-	.string "“Slip on these RUNNING SHOES and race\n"
-	.string "in the great outdoors!”$"
+	.string "CHI-CHI: {PLAYER}, there was a note in\n"
+	.string "the box with those shoes.\p"
+	.string "“Hold the B Button while wearing the\n"
+	.string "RUNNING SHOES to dash at top speed!\p"
+	.string "“Slip them on and tear across the\n"
+	.string "great outdoors!”$"
 
 LittlerootTown_Text_ComeHomeIfAnythingHappens:
 	.string "… … … … … … … …\n"
 	.string "… … … … … … … …\p"
-	.string "To think that you have your very own\n"
-	.string "POKéMON now…\l"
-	.string "KRILLIN will be overjoyed.\p"
-	.string "…But please be careful.\n"
-	.string "If anything happens, you can come home.\p"
-	.string "Go on, go get them, honey!$"
+	.string "My {PLAYER}, off with his very own\n"
+	.string "POKéMON…\l"
+	.string "KRILLIN will be thrilled to hear it.\p"
+	.string "…But promise me you'll be careful. If\n"
+	.string "anything happens, come straight home.\p"
+	.string "Go on, honey! Show them what you\n"
+	.string "can do!$"
 
 LittlerootTown_Text_CanUsePCToStoreItems:
-	.string "If you use a PC, you can store items\n"
-	.string "and POKéMON.\p"
-	.string "The power of science is staggering!$"
+	.string "A PC can store your items and\n"
+	.string "POKéMON, you know.\p"
+	.string "CAPSULE CORP. science is simply\n"
+	.string "staggering!$"
 
 LittlerootTown_Text_BirchSpendsDaysInLab:
-	.string "MASTER ROSHI spends days in his LAB\n"
-	.string "studying, then he'll suddenly go out in\l"
-	.string "the wild to do more research…\p"
-	.string "When does MASTER ROSHI spend time\n"
-	.string "at home?$"
+	.string "MASTER ROSHI locks himself in his LAB\n"
+	.string "for days, then he vanishes into the wild\l"
+	.string "for more “field research”…\p"
+	.string "I hear that mostly means beaches.\n"
+	.string "When does he ever spend time at home?$"
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
-	.string "Um, um, um!\p"
-	.string "If you go outside and go in the grass,\n"
-	.string "wild POKéMON will jump out!$"
+	.string "Hey, hey, hey!\p"
+	.string "If you walk out into the tall grass,\n"
+	.string "wild POKéMON will leap out at you!$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
-	.string "It's dangerous if you don't have\n"
-	.string "your own POKéMON.$"
+	.string "Don't go out there without a POKéMON\n"
+	.string "of your own. Even a tough fighter\l"
+	.string "needs a partner.$"
 
 LittlerootTown_Text_CanYouGoSeeWhatsHappening:
 	.string "Um, hi!\p"
-	.string "There are scary POKéMON outside!\n"
-	.string "I can hear their cries!\p"
+	.string "There's something scary outside!\n"
+	.string "I can hear a POKéMON roaring!\p"
 	.string "I want to go see what's going on,\n"
 	.string "but I don't have any POKéMON…\p"
 	.string "Can you go see what's happening\n"
@@ -930,34 +934,36 @@ LittlerootTown_Text_CanYouGoSeeWhatsHappening:
 
 LittlerootTown_Text_YouSavedBirch:
 	.string "You saved MASTER ROSHI!\n"
-	.string "I'm so glad!$"
+	.string "Thank goodness!$"
 
 LittlerootTown_Text_GoodLuckCatchingPokemon:
-	.string "Are you going to catch POKéMON?\n"
-	.string "Good luck!$"
+	.string "Are you going out to catch POKéMON?\n"
+	.string "Good luck out there!$"
 
 LittlerootTown_Text_TownSign:
 	.string "LITTLEROOT TOWN\n"
-	.string "“A town that can't be shaded any hue.”$"
+	.string "“Where every journey begins.”$"
 
 LittlerootTown_Text_ProfBirchsLab:
-	.string "MASTER ROSHI'S POKéMON LAB$"
+	.string "MASTER ROSHI'S POKéMON LAB\n"
+	.string "“Turtle Hermit Research Station”$"
 
 LittlerootTown_Text_PlayersHouse:
-	.string "{PLAYER}'s HOUSE$"
+	.string "{PLAYER} & CHI-CHI'S HOME$"
 
 LittlerootTown_Text_ProfBirchsHouse:
-	.string "MASTER ROSHI'S HOUSE$"
+	.string "MASTER ROSHI'S HOUSE\n"
+	.string "“Knock first. Please.”$"
 
 LittlerootTown_Text_BirchSomethingToShowYouAtLab:
-	.string "MASTER ROSHI: Well, well,\n"
-	.string "{PLAYER}{KUN}! That was good work\l"
+	.string "MASTER ROSHI: Hohoho! Well done,\n"
+	.string "{PLAYER}{KUN}! That was fine work\l"
 	.string "out there!\p"
-	.string "I knew there was something special\n"
-	.string "about you when I first saw you,\l"
-	.string "but I never expected this.\p"
+	.string "I sensed something special in you\n"
+	.string "the moment we met, but this is more\l"
+	.string "than I expected.\p"
 	.string "Oh, yes. Do you still have the POKéDEX\n"
 	.string "I gave you?\p"
-	.string "I have something to show you.\n"
-	.string "Let's go to my LAB.$"
+	.string "There's something I want to show you.\n"
+	.string "Come along to my LAB.$"
 

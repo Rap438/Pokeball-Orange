@@ -180,17 +180,20 @@ Route117_EventScript_Aisha::
 
 Route117_Text_DayCarePokemonHadNewMove:
 	.string "I left my POKéMON at the DAY CARE.\p"
-	.string "When I got it back, it had a new move\n"
-	.string "that I didn't teach it.\l"
+	.string "When I got it back, it knew a new move I\n"
+	.string "never taught it. It must have trained\l"
+	.string "on its own!\p"
 	.string "I was really, really surprised.$"
 
 Route117_Text_ArentTheseFlowersPretty:
 	.string "What do you think?\n"
 	.string "Aren't these flowers pretty?\p"
-	.string "I planted them all!$"
+	.string "I planted every one myself. Gardening\n"
+	.string "takes patience, just like training!$"
 
 Route117_Text_AirIsTastyHere:
-	.string "The air is tasty here!$"
+	.string "The air is tasty here! Almost as good as\n"
+	.string "a hot meal!$"
 
 Route117_Text_RouteSignVerdanturf:
 	.string "ROUTE 117\n"
@@ -202,5 +205,5 @@ Route117_Text_RouteSignMauville:
 
 Route117_Text_DayCareSign:
 	.string "POKéMON DAY CARE\n"
-	.string "“Let us raise your POKéMON.”$"
+	.string "“We'll look after your POKéMON.”$"
 

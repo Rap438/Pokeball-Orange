@@ -28,34 +28,33 @@ Route110_TrickHousePuzzle8_EventScript_Leroy::
 	end
 
 Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened::
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
+	.string "{PLAYER} wrote the secret code on the\n"
+	.string "door.\p"
 	.string "“TRICK MASTER I love.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle8_Text_VincentIntro:
-	.string "Not many TRAINERS have made it\n"
-	.string "this far.$"
+	.string "Not many TRAINERS make it this far.$"
 
 Route110_TrickHousePuzzle8_Text_VincentDefeat:
-	.string "That must mean you're tough, too…$"
+	.string "That means you're a real fighter, too…$"
 
 Route110_TrickHousePuzzle8_Text_VincentPostBattle:
-	.string "You've beaten the POKéMON LEAGUE\n"
-	.string "CHAMPION? That's too much!$"
+	.string "You beat the POKéMON LEAGUE CHAMPION,\n"
+	.string "MR. SATAN? That's too much!$"
 
 Route110_TrickHousePuzzle8_Text_KeiraIntro:
-	.string "Consider yourself lucky to be\n"
-	.string "battling me!$"
+	.string "Consider yourself lucky to be battling\n"
+	.string "me!$"
 
 Route110_TrickHousePuzzle8_Text_KeiraDefeat:
 	.string "This isn't right!\n"
-	.string "I can't lose!$"
+	.string "My power level was higher!$"
 
 Route110_TrickHousePuzzle8_Text_KeiraPostBattle:
 	.string "It's a miracle that you beat me.\n"
-	.string "You can brag about it.$"
+	.string "Go ahead and brag about it.$"
 
 Route110_TrickHousePuzzle8_Text_LeroyIntro:
 	.string "You've been slugging through the TRICK\n"
@@ -63,9 +62,9 @@ Route110_TrickHousePuzzle8_Text_LeroyIntro:
 
 Route110_TrickHousePuzzle8_Text_LeroyDefeat:
 	.string "I see…\n"
-	.string "You possess an extraordinary style.$"
+	.string "You have an extraordinary style.$"
 
 Route110_TrickHousePuzzle8_Text_LeroyPostBattle:
-	.string "Seeing someone like you should please\n"
-	.string "the TRICK MASTER.$"
+	.string "A fighter like you should make the\n"
+	.string "TRICK MASTER very happy.$"
 

@@ -3,4 +3,4 @@ EventScript_RepelWoreOff::
 	end
 
 Text_RepelWoreOff:
-	.string "KI HIDER's effect wore off…$"
+	.string "The KI HIDER's effect faded away…$"

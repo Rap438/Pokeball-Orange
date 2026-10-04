@@ -354,64 +354,64 @@ Route120_EventScript_Callie::
 	end
 
 Route120_Text_StevenGreeting:
-	.string "SUPREME KAI: Hm? {PLAYER}{KUN}, hi.\n"
-	.string "It's been a while.\p"
-	.string "There's something here that you can't\n"
-	.string "see, right?\p"
-	.string "Now, if I were to use this device on\n"
-	.string "the invisible obstacle…\p"
-	.string "No, no. Rather than describing it,\n"
-	.string "I should just show you.\l"
-	.string "That would be more fun.\p"
-	.string "{PLAYER}{KUN}, are your POKéMON\n"
-	.string "ready for battle?$"
+	.string "SUPREME KAI: Hm? {PLAYER}{KUN}. It has been a\n"
+	.string "while.\p"
+	.string "There is something here that you\n"
+	.string "cannot see, is there not?\p"
+	.string "Now, if I were to use this device on the\n"
+	.string "invisible obstacle…\p"
+	.string "No, no. Rather than explain, I should\n"
+	.string "simply show you. That would be more fun.\p"
+	.string "{PLAYER}{KUN}, are your POKéMON ready for\n"
+	.string "battle?$"
 
 Route120_Text_StevenIllWaitHere:
-	.string "SUPREME KAI: No?\p"
-	.string "I'll wait here, so you can get ready.$"
+	.string "SUPREME KAI: Not yet?\p"
+	.string "Very well. I will wait here while you\n"
+	.string "prepare.$"
 
 Route120_Text_StevenReadyForBattle:
-	.string "SUPREME KAI: {PLAYER}{KUN}, are your\n"
-	.string "POKéMON ready for battle?$"
+	.string "SUPREME KAI: {PLAYER}{KUN}, are you and your\n"
+	.string "POKéMON ready to fight?$"
 
 Route120_Text_StevenShowMeYourPower:
-	.string "SUPREME KAI: {PLAYER}{KUN}, show me\n"
-	.string "your true power as a TRAINER!$"
+	.string "SUPREME KAI: {PLAYER}{KUN}, show me the true\n"
+	.string "power of a TRAINER!$"
 
 Route120_Text_StevenUsedDevonScope:
-	.string "SUPREME KAI used the SCOUTER.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
+	.string "SUPREME KAI raised the SCOUTER.\p"
+	.string "An invisible POKéMON flickered into\n"
+	.string "view!\p"
 	.string "The startled POKéMON attacked!$"
 
 Route120_Text_StevenGiveDevonScope:
 	.string "SUPREME KAI: I see…\n"
-	.string "Your battle style is intriguing.\p"
-	.string "Your POKéMON have obviously grown\n"
-	.string "since I first met you in DEWFORD.\p"
-	.string "I'd like you to have this\n"
-	.string "SCOUTER.\p"
-	.string "Who knows, there may be other\n"
-	.string "concealed POKéMON.$"
+	.string "Your fighting style is intriguing.\p"
+	.string "Your POKéMON have clearly grown since I\n"
+	.string "first met you in DEWFORD.\p"
+	.string "I would like you to have this SCOUTER.\p"
+	.string "Who knows, there may be other hidden\n"
+	.string "POKéMON out there.$"
 
 Route120_Text_StevenGoodbye:
 	.string "SUPREME KAI: {PLAYER}{KUN}.\p"
-	.string "I enjoy seeing POKéMON and TRAINERS\n"
-	.string "who strive together.\p"
-	.string "I think you're doing great.\p"
-	.string "Well, let's meet again somewhere.$"
+	.string "It pleases me to watch POKéMON and\n"
+	.string "TRAINERS who strive side by side.\p"
+	.string "You are doing well. Truly.\p"
+	.string "Until we meet again.$"
 
 Kecleon_Text_SomethingUnseeable:
-	.string "Something unseeable is in the way.$"
+	.string "Something invisible is in the way.\n"
+	.string "I can't make it out.$"
 
 Kecleon_Text_WantToUseDevonScope:
-	.string "Something unseeable is in the way.\p"
+	.string "Something invisible is in the way.\p"
 	.string "Want to use the SCOUTER?$"
 
 Kecleon_Text_UseDevonScopeMonAttacked:
-	.string "{PLAYER} used the SCOUTER.\p"
-	.string "An invisible POKéMON became completely\n"
-	.string "visible!\p"
+	.string "{PLAYER} put on the SCOUTER.\p"
+	.string "It beeped, and an invisible POKéMON\n"
+	.string "flickered into view!\p"
 	.string "The startled POKéMON attacked!$"
 
 Route120_Text_RouteSignFortree:

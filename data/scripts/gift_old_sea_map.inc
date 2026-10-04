@@ -35,24 +35,25 @@ OldSeaMap_Obtained:
 	end
 
 sText_MysteryGiftOldSeaMapForYou:
-	.string "Thank you for using the MYSTERY\n"
+	.string "Thanks for using the MYSTERY\n"
 	.string "GIFT System.\p"
-	.string "Let me confirm--you are {PLAYER}?\p"
-	.string "We received this OLD SEA MAP\n"
-	.string "addressed to you.$"
+	.string "Let me double-check--you're\n"
+	.string "{PLAYER}, right?\p"
+	.string "An OLD SEA MAP came in with\n"
+	.string "your name on it.$"
 
 sText_MysteryGiftOldSeaMapUseAtPort:
-	.string "It appears to be for use at the\n"
+	.string "It looks like it's meant for the\n"
 	.string "LILYCOVE CITY port.\p"
-	.string "Why not give it a try and see what\n"
-	.string "it is about?$"
+	.string "Why not go and find out what\n"
+	.string "it's all about?$"
 
 sText_MysteryGiftOldSeaMapThankYou:
-	.string "Thank you for using the MYSTERY\n"
+	.string "Thanks for using the MYSTERY\n"
 	.string "GIFT System.$"
 
 sText_MysteryGiftOldSeaMapBagFull:
-	.string "Oh, I'm sorry, {PLAYER}.\n"
+	.string "Oh, sorry, {PLAYER}.\n"
 	.string "Your BAG's KEY ITEMS POCKET is full.\p"
-	.string "Please store something on your PC,\n"
-	.string "then come back for this.$"
+	.string "Store something on your PC, then\n"
+	.string "come back and pick this up.$"

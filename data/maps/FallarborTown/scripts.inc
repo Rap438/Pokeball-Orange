@@ -52,44 +52,50 @@ FallarborTown_EventScript_MoveTutorSign::
 	end
 
 FallarborTown_Text_ShadyCharactersCozmosHome:
-	.string "Something's happening,\n"
-	.string "and I don't like it!\p"
-	.string "I've seen shady characters wandering\n"
-	.string "in and out of PROF. COZMO's home…$"
+	.string "Something's off around here, and I\n"
+	.string "don't like it!\p"
+	.string "I keep seeing guys in red armbands\n"
+	.string "marching in and out of PROF. COZMO's\l"
+	.string "home. They salute each other like it's a\l"
+	.string "parade…$"
 
 FallarborTown_Text_RegionKnownForMeteors:
-	.string "This region's been known for meteors\n"
-	.string "since the olden days.\p"
+	.string "This region's been famous for meteors\n"
+	.string "since the old days.\p"
 	.string "They say METEOR FALLS was gouged out\n"
-	.string "by a falling meteorite long ago.$"
+	.string "by a falling meteorite long ago.\p"
+	.string "My grandpa swears it lit up the sky\n"
+	.string "brighter than a KAMEHAMEHA.$"
 
 FallarborTown_Text_MyPreciousAzurill:
-	.string "See! Take a look!\n"
+	.string "Whoa, look, look!\n"
 	.string "This is my precious AZURILL!\p"
-	.string "It's slick and smooth and plushy, too!$"
+	.string "It's smooth, squishy, and bounces like a\n"
+	.string "rubber ball!$"
 
 FallarborTown_Text_Azurill:
-	.string "AZURILL: Rooreelooo.$"
+	.string "AZURILL: Roo-ree-looo!$"
 
 FallarborTown_Text_HaveYouChallengedFlannery:
-	.string "Have you already challenged VIDEL,\n"
-	.string "the LEADER of LAVARIDGE GYM?\p"
-	.string "The girl's grandfather was famous.\n"
-	.string "He was one of the ELITE FOUR in the\l"
-	.string "POKéMON LEAGUE at one point.\p"
-	.string "It wouldn't surprise me to see VIDEL\n"
-	.string "become a great TRAINER in her own\l"
+	.string "Have you challenged VIDEL, the LEADER\n"
+	.string "of LAVARIDGE GYM yet?\p"
+	.string "Her father is MR. SATAN, the loud and\n"
+	.string "famous World Champion. Everybody knows\l"
+	.string "his name.\p"
+	.string "But that girl fights on her own\n"
+	.string "strength. I wouldn't be surprised if she\l"
+	.string "became a great TRAINER in her own\l"
 	.string "right.$"
 
 FallarborTown_Text_BattleTentSign:
-	.string "BATTLE TENT FALLARBOR SITE\n"
-	.string "“May the Greatest Teams Gather!”$"
+	.string "BATTLE TENT FALLARBOR SITE “Bring\n"
+	.string "Your Best Team and Your Best Spirit!”$"
 
 FallarborTown_Text_TownSign:
-	.string "FALLARBOR TOWN\n"
-	.string "“A farm community with small gardens.”$"
+	.string "FALLARBOR TOWN “A quiet farm town of\n"
+	.string "small gardens and big appetites.”$"
 
 FallarborTown_Text_MoveTutorSign:
 	.string "MOVE TUTOR'S HOUSE\n"
-	.string "“New moves taught to POKéMON.”$"
+	.string "“New techniques taught to POKéMON.”$"
 

@@ -43,7 +43,7 @@ def write_sheet(name, frames, pal=None, idx=None):
 # ---------------------------------------------------------------- Goku (player)
 GOKU = 1156
 def g(i): return frame_rgba(GOKU + i)
-def gs(i): return frame_rgba(GOKU + i, True)  # side frames: flip to face west
+def gs(i): return frame_rgba(GOKU + i)  # Buu's Fury side frames already face west
 
 goku_walk = sheet_frames(L5(GOKU))
 goku_run_spec = dict(F=GOKU, B=GOKU + 2, S=GOKU + 3, D=(GOKU + 17, GOKU + 19), U=(GOKU + 21, GOKU + 23), W=(GOKU + 13, GOKU + 15))
@@ -146,8 +146,8 @@ VEG = 2463
 vspec = L5(VEG)
 def v(i, fl=False): return frame_rgba(VEG + i, fl)
 vwalk = sheet_frames(vspec)
-vstand = {'S': v(0), 'N': v(2), 'W': v(3, True)}
-vwalkd = {'S': [v(5), v(7)], 'N': [v(9), v(11)], 'W': [v(13, True), v(15, True)]}
+vstand = {'S': v(0), 'N': v(2), 'W': v(3)}
+vwalkd = {'S': [v(5), v(7)], 'N': [v(9), v(11)], 'W': [v(13), v(15)]}
 vmach = [canvas32(vstand['S'], -3), canvas32(vstand['N'], -3), canvas32(vstand['W'], -3)] + \
         [canvas32(vwalkd[d][k], -4) for d in 'SNW' for k in (0, 1)]
 vacro = []

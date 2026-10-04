@@ -6,19 +6,19 @@ GiddyText_SoDarling::
 	.string " so darling!$"
 
 GiddyText_SoRelaxed::
-	.string " so relaxed!$"
+	.string " so relaxing!$"
 
 GiddyText_SoSunny::
 	.string " so sunny!$"
 
 GiddyText_SoDesirable::
-	.string " so desirable!$"
+	.string " so tempting!$"
 
 GiddyText_SoExciting::
-	.string " so exciting!$"
+	.string " so thrilling!$"
 
 GiddyText_SoAmusing::
-	.string " so amusing!$"
+	.string " so hilarious!$"
 
 GiddyText_SoMagical::
 	.string " so magical!$"
@@ -32,27 +32,31 @@ GiddyText_DontYouAgree::
 
 GiddyText_ISoWantToGoOnAVacation::
 	.string "I so want to go on a vacation.\n"
-	.string "Would you happen to know a nice place?$"
+	.string "Know any nice islands? Like Kame\l"
+	.string "House, but with more sunshine?$"
 
 GiddyText_IBoughtCrayonsWith120Colors::
-	.string "I bought crayons with 120 colors!\n"
-	.string "Don't you think that's nice?$"
+	.string "I bought a capsule that pops out\n"
+	.string "120 colors of crayons!\l"
+	.string "Don't you think that's neat?$"
 
 GiddyText_WouldntItBeNiceIfWeCouldFloat::
-	.string "Wouldn't it be nice if we could float\n"
-	.string "away on a cloud of bubbles?$"
+	.string "Wouldn't it be nice to float away\n"
+	.string "on a Flying Nimbus, just drifting?$"
 
 GiddyText_WhenYouWriteOnASandyBeach::
 	.string "When you write on a sandy beach,\n"
-	.string "they wash away. It makes me sad.$"
+	.string "the waves wash it all away.\l"
+	.string "That makes me so sad.$"
 
 GiddyText_WhatsTheBottomOfTheSeaLike::
 	.string "What's the bottom of the sea like?\n"
 	.string "Just once I would so love to go!$"
 
 GiddyText_WhenYouSeeTheSettingSunDoesIt::
-	.string "When you see the setting sun, does it\n"
-	.string "make you want to go home?$"
+	.string "When you watch the setting sun,\n"
+	.string "doesn't it make you want to go home\l"
+	.string "for dinner?$"
 
 GiddyText_LyingBackInTheGreenGrass::
 	.string "Lying back in the green grass…\n"

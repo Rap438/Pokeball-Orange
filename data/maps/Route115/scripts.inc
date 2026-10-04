@@ -130,10 +130,11 @@ Route115_EventScript_Marlene::
 	end
 
 Route115_Text_NeverKnowWhenCavePokemonWillAppear:
-	.string "Exploring a cave isn't like walking\n"
-	.string "on a road.\p"
-	.string "You never know when wild POKéMON will\n"
-	.string "appear. It's full of suspense.$"
+	.string "Exploring a cave is nothing like walking\n"
+	.string "a road.\p"
+	.string "Wild POKéMON can jump out at any\n"
+	.string "moment. I can sense their ki, but never\l"
+	.string "when they'll strike. It's thrilling!$"
 
 Route115_Text_RouteSignRustboro:
 	.string "ROUTE 115\n"
@@ -141,5 +142,5 @@ Route115_Text_RouteSignRustboro:
 
 Route115_Text_MeteorFallsSign:
 	.string "METEOR FALLS\n"
-	.string "FALLARBOR TOWN THROUGH HERE$"
+	.string "PASSAGE TO FALLARBOR TOWN$"
 

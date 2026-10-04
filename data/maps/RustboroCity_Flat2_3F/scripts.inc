@@ -10,10 +10,10 @@ RustboroCity_Flat2_3F_EventScript_Woman::
 	end
 
 RustboroCity_Flat2_3F_Text_PresidentCollectsRareStones:
-	.string "CAPSULE CORP.'s PRESIDENT likes to\n"
-	.string "collect rare stones.$"
+	.string "The PRESIDENT of CAPSULE CORP. likes\n"
+	.string "to collect rare stones.$"
 
 RustboroCity_Flat2_3F_Text_PresidentsSonAlsoCollectsRareStones:
-	.string "I think the PRESIDENT's son also\n"
-	.string "collects rare stones.$"
+	.string "I hear the PRESIDENT's old friend\n"
+	.string "SUPREME KAI collects rare stones, too.$"
 

@@ -66,39 +66,38 @@ LilycoveCity_CoveLilyMotel_2F_EventScript_MetScott::
 	end
 
 LilycoveCity_CoveLilyMotel_2F_Text_ShowMeCompletedDex:
-	.string "I'm the GAME DESIGNER.\p"
+	.string "I'm the lead DESIGNER at CAPSULE CORP.\p"
 	.string "Oh, is that right?\n"
 	.string "You're working on a POKéDEX?\p"
-	.string "It's tough trying to complete it,\n"
-	.string "but don't give up.\p"
-	.string "If you do complete it, please come\n"
+	.string "It's hard to complete, but don't give up.\p"
+	.string "If you do complete it, please come and\n"
 	.string "show me.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_FilledPokedexGiveYouThis:
-	.string "Wow! That's awesome!\n"
-	.string "Yep, it's totally awesome!\p"
+	.string "Wow! That's incredible!\n"
+	.string "Yep, it's totally incredible!\p"
 	.string "This POKéDEX is completely filled!\n"
-	.string "You really must love POKéMON!\p"
+	.string "You must really love POKéMON!\p"
 	.string "I'm so impressed!\p"
-	.string "Let me give you something in\n"
-	.string "recognition of your feat!$"
+	.string "Let me give you something to honor your\n"
+	.string "feat!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ImTheProgrammer:
 	.string "Me? You're talking to me?\n"
-	.string "I'm the PROGRAMMER.\p"
-	.string "I wonder what the SLOTS are\n"
-	.string "like here.$"
+	.string "I'm a CAPSULE CORP. ENGINEER.\p"
+	.string "I wonder how the SLOT machines work\n"
+	.string "around here.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ImTheGraphicArtist:
-	.string "I'm the GRAPHIC ARTIST! Aren't the\n"
-	.string "POKéMON of HOENN interesting?$"
+	.string "I'm the CAPSULE CORP. ARTIST! Aren't\n"
+	.string "the POKéMON of HOENN fascinating?$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_GirlsAreCute:
-	.string "The girl TUBERS, they're cute, hey?\n"
-	.string "To battle against a cute TUBER…\p"
+	.string "The girl TUBERS are cute, huh?\n"
+	.string "Battling a cute TUBER…\p"
 	.string "Whoop, it's so awesome!\p"
 	.string "And the TWINS! Aren't they cute?\n"
-	.string "A 2-on-2 battle with TWINS…\p"
+	.string "A 2-on-2 battle against TWINS…\p"
 	.string "Whoop, it's unbearably fun!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart:
@@ -106,10 +105,10 @@ LilycoveCity_CoveLilyMotel_2F_Text_SeaBreezeTicklesHeart:
 	.string "It feels wonderful here!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_NeverLeaveWithoutGameBoy:
-	.string "You never know when and where\n"
-	.string "people will challenge you.\p"
+	.string "You never know when or where someone\n"
+	.string "will challenge you.\p"
 	.string "That's why I never leave home without\n"
-	.string "my GAME BOY ADVANCE.$"
+	.string "my CAPSULE CONSOLE.$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "ANNOUNCER: … … … … …\n"
@@ -117,19 +116,19 @@ LilycoveCity_CoveLilyMotel_2F_Text_SnoozingPreferBattles:
 	.string "… … … … … Huh?!\n"
 	.string "Oh, sorry, sorry! I was snoozing!\p"
 	.string "I came to check out this POKéMON\n"
-	.string "CONTEST thing.\p"
-	.string "I have to admit, it does look quite\n"
-	.string "entertaining, but…\p"
-	.string "Consider me a purist--I prefer\n"
-	.string "battles and tough TRAINERS.\p"
+	.string "CONTEST business.\p"
+	.string "I'll admit it looks entertaining, but…\p"
+	.string "I'm a purist. Give me battles and tough\n"
+	.string "fighters any day.\p"
 	.string "But that's just me.\p"
-	.string "{PLAYER}{KUN}, I hope you'll enjoy\n"
-	.string "everything like the GYMS, CONTESTS,\l"
-	.string "BATTLE TENT, the whole works!$"
+	.string "{PLAYER}{KUN}, I hope you'll enjoy it all, the\n"
+	.string "GYMS, CONTESTS, the BATTLE TENT, the\l"
+	.string "whole works!$"
 
 LilycoveCity_CoveLilyMotel_2F_Text_ContestsDoTakeStrategy:
-	.string "ANNOUNCER: I think it does take\n"
+	.string "ANNOUNCER: I think it takes real\n"
 	.string "strategy to win a CONTEST.\p"
-	.string "Devising CONTEST strategies is one way\n"
-	.string "of becoming a better TRAINER, I'd say.$"
+	.string "Working out CONTEST strategies is one\n"
+	.string "way to become a better TRAINER, I'd\l"
+	.string "say.$"
 

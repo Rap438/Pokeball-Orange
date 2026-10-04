@@ -232,40 +232,40 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "BROLY: What happened…\n"
-	.string "What is this wretched scene…\p"
-	.string "Did I…make a horrible mistake?$"
+	.string "DR. GERO: What is this…\n"
+	.string "This wretched scene…\p"
+	.string "My calculations were perfect…\n"
+	.string "Did I…make a mistake?$"
 
 Route128_Text_ArchieIOnlyWanted:
 	.string "I…\n"
-	.string "I only wanted…$"
+	.string "I only wanted to…$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "MAJIN BUU: Do you understand now,\n"
-	.string "ARCHIE?\p"
-	.string "Do you finally see how disastrous\n"
-	.string "your dream turned out to be?\p"
-	.string "We have to hurry! We have to do\n"
-	.string "something before the situation goes\l"
-	.string "completely out of control!$"
+	.string "KID BUU: Hee hee hee! Do you see now,\n"
+	.string "GERO?\p"
+	.string "Look how your dream turned out. So much\n"
+	.string "water!\p"
+	.string "Ooh, but we should hurry! If this gets\n"
+	.string "too out of control, there'll be nothing\l"
+	.string "left to play with!$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "MAJIN BUU: {PLAYER}, don't say anything.\p"
-	.string "I know that I have no right to be\n"
-	.string "critical of BROLY…\p"
-	.string "But the way things are now, I doubt\n"
-	.string "that we humans will be capable of\l"
-	.string "doing anything about it.\p"
-	.string "But neither can we stand by and\n"
-	.string "just watch helplessly.\p"
-	.string "The responsibility for putting an end\n"
-	.string "to this falls to BROLY and me…$"
+	.string "KID BUU: {PLAYER}, don't say anything.\p"
+	.string "Buu has no right to scold GERO. Not\n"
+	.string "much, anyway. Hee hee…\p"
+	.string "But the way things are, I doubt anyone\n"
+	.string "can do much about it.\p"
+	.string "Still, Buu doesn't like just watching.\p"
+	.string "Putting an end to this falls to GERO and\n"
+	.string "Buu…$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "MAJIN BUU: This defies belief…\p"
+	.string "KID BUU: This is crazy…\p"
 	.string "Those super-ancient POKéMON…\p"
-	.string "Their power is unbelievable.\n"
-	.string "They've upset the balance of nature…$"
+	.string "Their power is unbelievable. Even Buu\n"
+	.string "feels it in his bones.\p"
+	.string "They've ruined the balance of nature…$"
 
 Route128_Text_StevenWhatIsHappening:
 	.string "SUPREME KAI: {PLAYER}{KUN}!\n"
@@ -273,20 +273,20 @@ Route128_Text_StevenWhatIsHappening:
 
 Route128_Text_StevenWholeWorldWillDrown:
 	.string "This is terrible…\p"
-	.string "After the scorching heat wave ended,\n"
-	.string "this deluge began.\p"
-	.string "If this doesn't stop, all of HOENN…\n"
-	.string "No, the whole world will drown.\p"
-	.string "This huge rain cloud is spreading\n"
-	.string "from above SOOTOPOLIS…\p"
-	.string "What in the world is taking place there?\p"
+	.string "First the scorching heat wave, and now\n"
+	.string "this deluge.\p"
+	.string "If it doesn't stop, all of HOENN… No, the\n"
+	.string "whole world will drown.\p"
+	.string "This huge rain cloud is spreading from\n"
+	.string "above SOOTOPOLIS…\p"
+	.string "I sense a titanic ki there. What is going\n"
+	.string "on?\p"
 	.string "There's no point arguing here…\n"
-	.string "SOOTOPOLIS might provide answers…$"
+	.string "SOOTOPOLIS might hold the answers…$"
 
 Route128_Text_StevenImGoingToSootopolis:
-	.string "{PLAYER}{KUN}…\n"
-	.string "I don't know what you intend to do,\l"
-	.string "but don't do anything reckless.\p"
-	.string "Okay.\n"
+	.string "{PLAYER}{KUN}… I don't know what you intend\n"
+	.string "to do, but don't do anything reckless.\p"
+	.string "All right.\n"
 	.string "I'm going to SOOTOPOLIS.$"
 

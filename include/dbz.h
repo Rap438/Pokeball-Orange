@@ -72,11 +72,53 @@ void DBZ_QueueGymFight(void);
 void DBZ_ShowGokuStatus(void);
 void DBZ_Debug_SetGokuLevel(void);
 
+// Goku's health / stats (persistent between fights)
+u16 DBZ_GokuMaxHp(void);
+u16 DBZ_GokuHp(void);
+void DBZ_SetGokuHp(u16 hp);
+void DBZ_HealGoku(void);
+bool8 DBZ_GokuIsKO(void);
+u32 DBZ_GokuPowerLevel(void);
+u16 DBZ_GokuPowerStat(void);
+u16 DBZ_GokuDefenseStat(void);
+u32 DBZ_GokuExpTotal(void);
+u32 DBZ_GokuExpToNext(void);
+u16 DBZ_GokuItemHealPercent(u16 itemId);
+bool8 DBZ_UseItemOnGoku(u16 itemId);
+bool8 DBZ_PlayerOverlayActive(void);
+void DBZ_SetupVegetaFight(void);
+void DBZ_StartFightAndWait(void);
+void DBZ_WarpToLastHeal(void);
+u16 DBZ_GokuCanFight(void);
+void DBZ_ReviveGokuWeak(void);
+void DBZ_QueueFightEvolveCheck(void);
+
+// Goku's selected special move and the overworld HUD
+u8 DBZ_GetSelectedMove(void);   // 0 ki blast, 1 Kamehameha
+u8 DBZ_GetChargeLevel(void);    // 0..16
+void DBZ_UpdateHud(void);
+
+// PokeBall Orange settings
+bool8 DBZ_OptDayNight(void);
+bool8 DBZ_OptShadows(void);
+bool8 DBZ_OptMapBattleBg(void);
+bool8 DBZ_OptSparks(void);
+bool8 DBZ_OptPowerUp(void);
+bool8 DBZ_OptHints(void);
+bool8 DBZ_OptHud(void);
+u8 DBZ_OptAmbush(void);
+u8 DBZ_OptDifficulty(void);
+u8 DBZ_OptShiny(void);
+u8 DBZ_GetOptionValue(u8 id);
+void DBZ_SetOptionValue(u8 id, u8 v);
+void DBZ_ApplyShinyOdds(u32 *personality, u32 otId);
+
 // overworld style
 void DBZ_UpdateShadows(void);
 void DBZ_UpdateFormFx(void);
 bool8 DBZ_TryDrawMapBattleBackground(void);
 void DBZ_ResetTrainerPowerUp(void);
+void DBZ_RestyleBattleMenuFrame(u16 offset);
 bool8 DBZ_ShouldTrainerPowerUp(u8 battler);
 void DBZ_ApplyTimeTint(u16 offset, u16 count);
 void DBZ_ApplyTimeTintToObjSlotOnce(u8 slot);

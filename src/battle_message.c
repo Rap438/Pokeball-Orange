@@ -1486,7 +1486,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] =
         .x = 0,
         .y = 1,
         .speed = 1,
-        .fgColor = 1,
+        .fgColor = 2,   // PokeBall Orange: index 1 is the gold menu frame
         .bgColor = 15,
         .shadowColor = 6,
     },
@@ -1496,7 +1496,7 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] =
         .x = 1,
         .y = 1,
         .speed = 0,
-        .fgColor = 1,
+        .fgColor = 2,   // PokeBall Orange: index 1 is the gold menu frame
         .bgColor = 15,
         .shadowColor = 6,
     },

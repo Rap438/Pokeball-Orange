@@ -10,16 +10,15 @@ VerdanturfTown_House_EventScript_Woman2::
 	end
 
 VerdanturfTown_House_Text_TrainersGatherAtPokemonLeague:
-	.string "Far away, deep in EVER GRANDE CITY,\n"
-	.string "is the POKéMON LEAGUE.\p"
-	.string "The TRAINERS who gather there are\n"
-	.string "all frighteningly well skilled.$"
+	.string "Far away, in EVER GRANDE CITY, stands\n"
+	.string "the POKéMON LEAGUE.\p"
+	.string "Every TRAINER who gathers there has a\n"
+	.string "terrifying power level.$"
 
 VerdanturfTown_House_Text_DefeatEliteFourInARow:
-	.string "In the POKéMON LEAGUE, I think the\n"
-	.string "rules say that you have to battle the\l"
-	.string "ELITE FOUR all in a row.\p"
-	.string "If you lose to any of them, you have\n"
-	.string "to begin your challenge again from the\l"
-	.string "first one.$"
+	.string "From what I hear, you have to fight the\n"
+	.string "ELITE FOUR back to back at the POKéMON\l"
+	.string "LEAGUE.\p"
+	.string "Lose to any one of them and you start\n"
+	.string "over from the first.$"
 

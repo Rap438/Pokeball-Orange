@@ -1,309 +1,301 @@
 FallarborTown_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "I welcome you to the BATTLE TENT\n"
-	.string "FALLARBOR SITE!\p"
-	.string "I am your guide to the Set KO Tourney!$"
+	.string "Welcome to the BATTLE TENT, FALLARBOR\n"
+	.string "SITE!\p"
+	.string "I'm your host for the Set KO Tourney, a\n"
+	.string "tournament where every fight is\l"
+	.string "settled one POKéMON at a time!$"
 
 FallarborTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Now, do you wish to take the challenge\n"
-	.string "of a Set KO Tourney?$"
+	.string "Are you ready to enter the\n"
+	.string "Set KO Tourney?$"
 
 FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge:
-	.string "We await your challenge on\n"
-	.string "another occasion!$"
+	.string "Come back whenever you feel ready to\n"
+	.string "fight!$"
 
 FallarborTown_BattleTentLobby_Text_ExplainFallarborTent:
-	.string "In the FALLARBOR BATTLE TENT,\n"
-	.string "we undertake the Set KO Tourney.\p"
-	.string "All participants enter with a team of\n"
+	.string "The FALLARBOR BATTLE TENT runs the\n"
+	.string "Set KO Tourney.\p"
+	.string "Every entrant fights with a team of\n"
 	.string "three POKéMON.\p"
-	.string "The three POKéMON must be lined up\n"
-	.string "in the order that they are to appear in.\p"
-	.string "During battle, the POKéMON will appear\n"
-	.string "one at a time in the preset order.\p"
-	.string "Once a POKéMON enters battle, it must\n"
-	.string "remain out until the match is decided.\p"
-	.string "If a match remains undecided in\n"
-	.string "three turns, it goes to judging.\p"
-	.string "If you wish to interrupt your challenge,\n"
-	.string "please save the game.\p"
-	.string "If you don't save, you will not be able\n"
-	.string "to continue with your challenge.\p"
-	.string "If you pull off the feat of beating\n"
-	.string "three TRAINERS in succession,\l"
-	.string "we will present you with a fine prize.$"
+	.string "Line them up in the order you want them\n"
+	.string "to appear.\p"
+	.string "In battle, your POKéMON step out one at\n"
+	.string "a time in that order.\p"
+	.string "Once a POKéMON is in the ring, it stays\n"
+	.string "in until the match is decided.\p"
+	.string "If a match is still undecided after\n"
+	.string "three turns, it goes to the judges.\p"
+	.string "If you need to stop partway through,\n"
+	.string "save the game.\p"
+	.string "If you don't save, you won't be able to\n"
+	.string "pick your challenge back up.\p"
+	.string "Beat three TRAINERS in a row and you'll\n"
+	.string "walk away with a fine prize.$"
 
 FallarborTown_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "Before showing you to the BATTLE\n"
-	.string "TENT, I must save. Is that okay?$"
+	.string "I have to save the game before I take\n"
+	.string "you to the ring. Is that all right?$"
 
 @ Unused
 FallarborTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "We offer two levels of challenge,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice?$"
+	.string "There are two divisions, Level 50 and\n"
+	.string "Open Level. Which will you fight in?$"
 
 FallarborTown_BattleTentLobby_Text_SelectThreeMons:
-	.string "Very well, now select your\n"
-	.string "three POKéMON, please.$"
+	.string "Good! Now choose the three POKéMON\n"
+	.string "you'll fight with.$"
 
 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
-	.string "My dear challenger!\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for entry.\p"
-	.string "They also must not hold the same\n"
+	.string "Hold on, champ!\p"
+	.string "You don't have the three POKéMON you\n"
+	.string "need to enter.\p"
+	.string "They also can't be holding the same\n"
 	.string "kinds of items.\p"
 	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "When you have made your preparations,\n"
-	.string "please do return.$"
+	.string "Get your team in order, then come back\n"
+	.string "and see me.$"
 
 FallarborTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "My dear challenger!\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for entry.\p"
-	.string "To qualify, you must bring three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not hold the same\n"
+	.string "Hold on, champ!\p"
+	.string "You don't have the three POKéMON you\n"
+	.string "need to enter.\p"
+	.string "You must bring three different kinds of\n"
+	.string "POKéMON.\p"
+	.string "They also can't be holding the same\n"
 	.string "kinds of items.\p"
 	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "When you have made your preparations,\n"
-	.string "please do return.$"
+	.string "Get your team in order, then come back\n"
+	.string "and see me.$"
 
 FallarborTown_BattleTentLobby_Text_GuideYouToBattleTent:
-	.string "I shall now guide you to\n"
-	.string "the BATTLE TENT.$"
+	.string "Right this way! I'll lead you to the ring.$"
 
 FallarborTown_BattleTentLobby_Text_DidntSaveBeforeQuitting:
-	.string "My dear challenger!\p"
-	.string "You did not save the game before\n"
-	.string "shutting down, did you?\p"
-	.string "It is unfortunate, but that has\n"
-	.string "resulted in your disqualification\l"
-	.string "from your challenge.\p"
-	.string "You may, of course, start with a fresh\n"
-	.string "challenge.$"
+	.string "Oh no, champ!\p"
+	.string "You shut the game down without saving,\n"
+	.string "didn't you?\p"
+	.string "I'm sorry, but that means you've been\n"
+	.string "disqualified from your challenge.\p"
+	.string "You're always welcome to sign up and\n"
+	.string "start a fresh run.$"
 
 FallarborTown_BattleTentLobby_Text_BeatThreeTrainers:
-	.string "How splendid! You have beaten\n"
-	.string "three TRAINERS in succession!$"
+	.string "Incredible! Three TRAINERS beaten in a\n"
+	.string "row! Your power level is off the charts!$"
 
 FallarborTown_BattleTentLobby_Text_WaitWhileSaveGame:
-	.string "Please wait while I save the game.$"
+	.string "One moment while I save your game.$"
 
 FallarborTown_BattleTentLobby_Text_PresentYouWithPrize:
-	.string "In commemoration of your 3-win streak,\n"
-	.string "we present you with this prize.$"
+	.string "To celebrate your 3-win streak,\n"
+	.string "this prize is yours!$"
 
 FallarborTown_BattleTentLobby_Text_ReceivedPrize:
 	.string "{PLAYER} received the prize\n"
 	.string "{STR_VAR_1}.$"
 
 FallarborTown_BattleTentLobby_Text_BagFullReturnForPrize:
-	.string "Oh?\n"
-	.string "Your BAG seems to be full.\p"
-	.string "I urge you to clear space and\n"
-	.string "return for your prize.$"
+	.string "Huh?\n"
+	.string "Your BAG is full.\p"
+	.string "Make some room, then come back for your\n"
+	.string "prize.$"
 
 FallarborTown_BattleTentLobby_Text_ThankYouWaitWhileSaving:
-	.string "Thank you so much for participating!\p"
+	.string "Thanks for fighting in the tourney!\p"
 	.string "Please wait while I save the game.$"
 
 FallarborTown_BattleTentLobby_Text_AwaitAnotherChallenge2:
-	.string "We await your challenge on\n"
-	.string "another occasion!$"
+	.string "Come back whenever you feel ready to\n"
+	.string "fight!$"
 
 FallarborTown_BattleTentLobby_Text_LookingForwardToArrival:
-	.string "We have been looking forward to\n"
-	.string "your arrival.\p"
-	.string "Before I show you to the BATTLE TENT,\n"
-	.string "I must save the game. Please wait.$"
+	.string "There you are! We've been waiting for\n"
+	.string "you.\p"
+	.string "I have to save the game before I take\n"
+	.string "you to the ring. Please wait.$"
 
 VerdanturfTown_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "I welcome you to the BATTLE TENT\n"
-	.string "VERDANTURF SITE!\p"
-	.string "Here, the TRAINER's trust toward\n"
-	.string "POKéMON is tested.$"
+	.string "Welcome to the BATTLE TENT, VERDANTURF\n"
+	.string "SITE!\p"
+	.string "Here we test the bond between a\n"
+	.string "TRAINER and their POKéMON.$"
 
 VerdanturfTown_BattleTentLobby_Text_TakeChallenge:
-	.string "Do you wish to take the VERDANTURF\n"
+	.string "Will you take on the VERDANTURF\n"
 	.string "BATTLE TENT challenge?$"
 
 VerdanturfTown_BattleTentLobby_Text_ExplainVerdanturfTent:
-	.string "In the VERDANTURF BATTLE TENT,\n"
-	.string "there is one crucial rule that must\l"
-	.string "be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
-	.string "their POKéMON in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
-	.string "command their POKéMON.\p"
-	.string "The POKéMON are to behave according\n"
-	.string "to their nature and battle on their own.\p"
-	.string "You must put your trust in your\n"
-	.string "POKéMON and watch over them.\p"
-	.string "If you achieve the honor of beating\n"
-	.string "three TRAINERS in succession,\l"
-	.string "we will present you with a prize.\p"
-	.string "If you want to interrupt your\n"
-	.string "challenge, please save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+	.string "The VERDANTURF BATTLE TENT has one\n"
+	.string "rule you must never break.\p"
+	.string "TRAINERS may only switch their POKéMON\n"
+	.string "in and out.\p"
+	.string "Otherwise, TRAINERS may not give their\n"
+	.string "POKéMON a single command.\p"
+	.string "Your POKéMON fight on their own,\n"
+	.string "following their nature.\p"
+	.string "You must trust them and watch over\n"
+	.string "them.\p"
+	.string "Beat three TRAINERS in a row and you'll\n"
+	.string "earn a prize.\p"
+	.string "If you want to stop partway through,\n"
+	.string "save the game.\p"
+	.string "If you don't save before you stop,\n"
+	.string "you'll be disqualified.$"
 
 VerdanturfTown_BattleTentLobby_Text_ReturnFortified:
-	.string "When you have fortified your heart\n"
-	.string "and POKéMON, you must return.$"
+	.string "Come back once your heart and your\n"
+	.string "POKéMON are ready.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_WhichLevelMode:
-	.string "There are two levels of difficulty,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice of a challenge?$"
+	.string "There are two divisions, Level 50 and\n"
+	.string "Open Level. Which will you fight in?$"
 
 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLv50:
 	.string "Sigh…\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for the challenge.\p"
-	.string "To enter, you must provide three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not be holding\n"
-	.string "the same kinds of items.\p"
+	.string "You don't have the three POKéMON you\n"
+	.string "need.\p"
+	.string "To enter, bring three different kinds\n"
+	.string "of POKéMON.\p"
+	.string "They also can't be holding the same\n"
+	.string "kinds of items.\p"
 	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you have made\n"
-	.string "your preparations.$"
+	.string "Come back when your team is ready.$"
 
 VerdanturfTown_BattleTentLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "Sigh…\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for the challenge.\p"
-	.string "To enter, you must provide three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not be holding\n"
-	.string "the same kinds of items.\p"
+	.string "You don't have the three POKéMON you\n"
+	.string "need.\p"
+	.string "To enter, bring three different kinds\n"
+	.string "of POKéMON.\p"
+	.string "They also can't be holding the same\n"
+	.string "kinds of items.\p"
 	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you have made\n"
-	.string "your preparations.$"
+	.string "Come back when your team is ready.$"
 
 VerdanturfTown_BattleTentLobby_Text_SelectThreeMons:
-	.string "Good. Now, you must select your\n"
-	.string "three POKéMON.$"
+	.string "Good. Now pick the three POKéMON you'll\n"
+	.string "trust to fight.$"
 
 VerdanturfTown_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "I must save before I show you to\n"
-	.string "the BATTLE TENT. Is that okay?$"
+	.string "I have to save before I show you in. Is\n"
+	.string "that okay?$"
 
 VerdanturfTown_BattleTentLobby_Text_NowFollowMe:
 	.string "Good.\n"
-	.string "Now, follow me.$"
+	.string "Follow me.$"
 
 VerdanturfTown_BattleTentLobby_Text_ResultsWillBeRecorded:
-	.string "I feel privileged for having seen\n"
-	.string "your POKéMON's exploits.\p"
-	.string "The results will be recorded.\n"
-	.string "I must ask you to briefly wait.$"
+	.string "It was an honor to watch your POKéMON\n"
+	.string "fight.\p"
+	.string "I'll record the results. Please wait a\n"
+	.string "moment.$"
 
 VerdanturfTown_BattleTentLobby_Text_AchievedThreeWinStreak:
-	.string "To achieve a 3-win streak…\p"
-	.string "The bonds that bind your heart with\n"
-	.string "your POKéMON seem firm and true.$"
+	.string "A 3-win streak…\p"
+	.string "The bond between your heart and your\n"
+	.string "POKéMON is as strong as a true martial\l"
+	.string "artist's spirit.$"
 
 VerdanturfTown_BattleTentLobby_Text_FeatWillBeRecorded:
 	.string "Your feat will be recorded.\n"
-	.string "I must ask you to briefly wait.$"
+	.string "Please wait a moment.$"
 
 VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize:
-	.string "For the feat of your 3-win streak,\n"
-	.string "we present you with this prize.$"
+	.string "For your 3-win streak,\n"
+	.string "please accept this prize.$"
 
 SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent:
-	.string "Welcome to the BATTLE TENT\n"
-	.string "SLATEPORT SITE!\p"
-	.string "I am your guide to the Battle Swap\n"
+	.string "Welcome to the BATTLE TENT, SLATEPORT\n"
+	.string "SITE!\p"
+	.string "I'm your host for the Battle Swap\n"
 	.string "Tournament.$"
 
 SlateportCity_BattleTentLobby_Text_TakeChallenge:
-	.string "Would you like to take the Battle\n"
-	.string "Swap challenge?$"
+	.string "Want to enter the Battle Swap\n"
+	.string "challenge?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSlateportTent:
-	.string "Here at the SLATEPORT BATTLE TENT,\n"
-	.string "we hold Battle Swap events\l"
-	.string "using rental POKéMON.\p"
-	.string "First, you will be loaned three\n"
-	.string "POKéMON specifically for this event.\p"
-	.string "Using the supplied rental POKéMON,\n"
-	.string "you must conduct a SINGLE BATTLE.\p"
-	.string "If you win, you are permitted to trade\n"
-	.string "one of your rental POKéMON.\p"
-	.string "Repeat this cycle of battling and\n"
-	.string "trading--if you win three times in\l"
-	.string "a row, you will earn a fine prize.\p"
-	.string "If you want to interrupt your\n"
-	.string "challenge, please save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+	.string "At the SLATEPORT BATTLE TENT we hold\n"
+	.string "Battle Swap events with rental\l"
+	.string "POKéMON.\p"
+	.string "First, we lend you three POKéMON just\n"
+	.string "for the event.\p"
+	.string "With those rentals, you'll fight a\n"
+	.string "SINGLE BATTLE.\p"
+	.string "Win, and you may trade away one of your\n"
+	.string "rentals.\p"
+	.string "Keep battling and trading, and if you\n"
+	.string "win three in a row, a fine prize is yours.\p"
+	.string "If you want to stop partway through,\n"
+	.string "save the game.\p"
+	.string "If you don't save before you stop,\n"
+	.string "you'll be disqualified.$"
 
 SlateportCity_BattleTentLobby_Text_LookForwardToNextVisit:
-	.string "We look forward to your next visit.$"
+	.string "We hope to see you again soon!$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_WhichLevelMode:
-	.string "Which level do you wish to challenge?\n"
+	.string "Which division will you fight in?\n"
 	.string "Level 50 or Level 100?$"
 
 SlateportCity_BattleTentLobby_Text_SaveBeforeChallenge:
-	.string "Before you begin your challenge,\n"
-	.string "I need to save data. Is that okay?$"
+	.string "Before we start, I have to save your\n"
+	.string "data. Is that okay?$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_HoldMonsForSafekeeping:
-	.string "Okay, I will hold your POKéMON for\n"
-	.string "safekeeping while you compete.$"
+	.string "Okay! I'll keep your POKéMON safe while\n"
+	.string "you compete.$"
 
 SlateportCity_BattleTentLobby_Text_StepThisWay:
-	.string "Please step this way.$"
+	.string "Step this way, please!$"
 
 SlateportCity_BattleTentLobby_Text_ReturnRentalMonsSaveResults:
-	.string "Thank you for participating!\p"
-	.string "I will return your POKéMON in exchange\n"
-	.string "for our rental POKéMON.\p"
-	.string "I must also save your event results.\n"
-	.string "Please wait.$"
+	.string "Thanks for competing!\p"
+	.string "I'll give back your POKéMON in exchange\n"
+	.string "for our rentals.\p"
+	.string "I also have to save your results. Please\n"
+	.string "wait.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnMonsExchangeRentals:
-	.string "I will return your POKéMON in exchange\n"
-	.string "for our rental POKéMON.$"
+	.string "I'll give back your POKéMON in exchange\n"
+	.string "for our rentals.$"
 
 SlateportCity_BattleTentLobby_Text_WonThreeMatchesReturnMons:
 	.string "Congratulations!\n"
-	.string "You've won three straight matches!\p"
-	.string "I will return your POKéMON in exchange\n"
-	.string "for our rental POKéMON.\p"
-	.string "I must also save your event results.\n"
-	.string "Please wait.$"
+	.string "Three wins in a row! What a show!\p"
+	.string "I'll give back your POKéMON in exchange\n"
+	.string "for our rentals.\p"
+	.string "I also have to save your results. Please\n"
+	.string "wait.$"
 
 SlateportCity_BattleTentLobby_Text_AwardYouThisPrize:
-	.string "In recognition of your 3-win streak,\n"
-	.string "we award you this prize.$"
+	.string "For your 3-win streak,\n"
+	.string "this prize is yours!$"
 
 SlateportCity_BattleTentLobby_Text_NoRoomInBagMakeRoom:
-	.string "Oh?\n"
-	.string "You seem to have no room for this.\p"
-	.string "Please make room in your BAG and\n"
-	.string "let me know.$"
+	.string "Huh?\n"
+	.string "There's no room in your BAG for this.\p"
+	.string "Make some room, then come tell me.$"
 
 SlateportCity_BattleTentLobby_Text_BeenWaitingForYou:
-	.string "We've been waiting for you!\p"
-	.string "Before we resume your challenge,\n"
-	.string "I must save the game.$"
+	.string "There you are, we've been waiting!\p"
+	.string "Before we pick your challenge back up, I\n"
+	.string "have to save the game.$"
 
 SlateportCity_BattleTentLobby_Text_DidntSaveBeforeQuitting:
-	.string "I'm sorry to say this, but you didn't\n"
-	.string "save before you quit playing last time.\p"
-	.string "As a result, you have been disqualified\n"
+	.string "I hate to say this, but you quit last\n"
+	.string "time without saving.\p"
+	.string "That means you've been disqualified\n"
 	.string "from your challenge.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReturnPersonalMons:
-	.string "We'll return your personal POKéMON.$"
+	.string "Here are your own POKéMON back.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReceivedPrize:
@@ -312,122 +304,112 @@ SlateportCity_BattleTentLobby_Text_ReceivedPrize:
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_RulesAreListed:
-	.string "The Battle Swap rules are listed.$"
+	.string "Here are the Battle Swap rules.$"
 
 @ Unused
 SlateportCity_BattleTentLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "Which rule would you like to read?$"
 
 SlateportCity_BattleTentLobby_Text_ExplainBasicRules:
-	.string "In a Battle Swap event, you may use\n"
+	.string "In a Battle Swap event you fight with\n"
 	.string "only three POKéMON.\p"
-	.string "Whether you are renting or swapping,\n"
-	.string "your team may not have two or more\l"
-	.string "of the same POKéMON.$"
+	.string "Whether you rent or swap, your team\n"
+	.string "can't have two or more of the same\l"
+	.string "POKéMON.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapPartnerRules:
-	.string "You may swap POKéMON only with\n"
-	.string "the TRAINER you have just defeated.\p"
-	.string "You may swap for only those POKéMON\n"
-	.string "used by the beaten TRAINER.$"
+	.string "You may only swap with the TRAINER you\n"
+	.string "just beat.\p"
+	.string "And you may only swap for POKéMON that\n"
+	.string "TRAINER used in the battle.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNumberRules:
-	.string "After every battle you win, you may\n"
-	.string "swap for one of your defeated\l"
-	.string "opponent's POKéMON.\p"
-	.string "You will not be able to swap POKéMON\n"
-	.string "with the third TRAINER in the event.$"
+	.string "After each win, you may swap for one of\n"
+	.string "your defeated opponent's POKéMON.\p"
+	.string "There is no swap after the third\n"
+	.string "TRAINER of the event.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainSwapNotes:
-	.string "There are two key points to be aware\n"
-	.string "of when swapping POKéMON.\p"
-	.string "First, when swapping, you can't check\n"
-	.string "the stats of the POKéMON you are\l"
-	.string "about to receive.\p"
-	.string "Second, the POKéMON on your team\n"
-	.string "are lined up in sequence, depending on\l"
-	.string "the order in which you rented them.\p"
-	.string "This sequence remains unchanged\n"
-	.string "even when swaps are made.$"
+	.string "Two things to keep in mind when you\n"
+	.string "swap.\p"
+	.string "First, you can't check the stats of the\n"
+	.string "POKéMON you're about to receive.\p"
+	.string "Second, your team is lined up in the\n"
+	.string "order you rented them.\p"
+	.string "That order stays the same even after a\n"
+	.string "swap.$"
 
 SlateportCity_BattleTentLobby_Text_ExplainMonRules:
-	.string "The POKéMON of the SLATEPORT\n"
-	.string "BATTLE TENT are all rentals.\p"
-	.string "All rental POKéMON are kept at\n"
-	.string "Level 30.$"
+	.string "All the POKéMON in the SLATEPORT\n"
+	.string "BATTLE TENT are rentals.\p"
+	.string "Every rental is kept at Level 30.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed2:
-	.string "The VERDANTURF BATTLE TENT\n"
-	.string "rules are listed.$"
+	.string "Here are the VERDANTURF BATTLE\n"
+	.string "TENT rules.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+	.string "Which rule would you like to read?$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainBasicRules:
-	.string "Here at the VERDANTURF BATTLE TENT,\n"
-	.string "POKéMON are required to think and\l"
-	.string "battle by themselves.\p"
-	.string "Unlike in the wild, POKéMON that live\n"
-	.string "with people behave differently\l"
-	.string "depending on their nature.$"
+	.string "At the VERDANTURF BATTLE TENT, your\n"
+	.string "POKéMON have to think and fight on\l"
+	.string "their own.\p"
+	.string "POKéMON raised by people don't behave\n"
+	.string "like wild ones. Each acts according to\l"
+	.string "its nature.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainNatureRules:
-	.string "Depending on its nature, a POKéMON\n"
-	.string "may prefer to attack no matter what.\p"
-	.string "Another POKéMON may prefer to protect\n"
-	.string "itself from any harm.\p"
-	.string "Yet another may enjoy vexing or\n"
-	.string "confounding its foes.\p"
-	.string "Depending on its nature, a POKéMON\n"
-	.string "will have favorite moves that it is good\l"
-	.string "at using.\p"
-	.string "It may also dislike certain moves that\n"
-	.string "it has trouble using.$"
+	.string "Some POKéMON, by nature, just want to\n"
+	.string "attack no matter what.\p"
+	.string "Others would rather guard themselves\n"
+	.string "from every blow.\p"
+	.string "Others still love to tease and confuse\n"
+	.string "their foes.\p"
+	.string "A POKéMON's nature also gives it\n"
+	.string "favorite moves that it uses well.\p"
+	.string "And it may dislike certain moves it\n"
+	.string "can't handle.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainMoveRules:
-	.string "There are offensive moves that inflict\n"
-	.string "direct damage on the foe.\p"
-	.string "There are defensive moves that are\n"
-	.string "used to prepare for enemy attacks or\l"
-	.string "used to heal HP and so on.\p"
-	.string "There are also other somewhat-odd\n"
-	.string "moves that may enfeeble the foes with\l"
-	.string "stat problems including poison and \l"
-	.string "paralysis.\p"
-	.string "POKéMON will consider using moves in\n"
-	.string "these three categories.$"
+	.string "Some moves deal damage directly to the\n"
+	.string "foe.\p"
+	.string "Some prepare for enemy attacks, or heal\n"
+	.string "HP and the like.\p"
+	.string "And some odd moves weaken the foe with\n"
+	.string "stat drops, poison, or paralysis.\p"
+	.string "Your POKéMON will weigh its moves from\n"
+	.string "these three groups.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainUnderpoweredRules:
-	.string "When not under command by its TRAINER,\n"
-	.string "a POKéMON may be unable to effectively\l"
-	.string "use certain moves.\p"
-	.string "A POKéMON is not good at using any\n"
-	.string "move that it dislikes.\p"
-	.string "If a POKéMON only knows moves that\n"
-	.string "do not match its nature, it will often\l"
-	.string "be unable to live up to its potential.$"
+	.string "Without a TRAINER's orders, a POKéMON\n"
+	.string "may use some moves poorly.\p"
+	.string "A POKéMON is bad at any move it\n"
+	.string "dislikes.\p"
+	.string "If all its moves clash with its nature,\n"
+	.string "it often can't show its true power.$"
 
 @ Unused
 VerdanturfTown_BattleTentLobby_Text_ExplainWhenInDangerRules:
-	.string "Depending on its nature, a POKéMON may\n"
-	.string "start using moves that don't match its\l"
-	.string "nature when it is in trouble.\p"
-	.string "If a POKéMON begins behaving oddly\n"
-	.string "in a pinch, watch it carefully.$"
+	.string "When it's in trouble, a POKéMON may\n"
+	.string "start using moves that don't fit its\l"
+	.string "nature.\p"
+	.string "If yours starts acting strange in a\n"
+	.string "pinch, watch it closely.$"
 
 BattleTentLobby_Text_ExplainLevelRules:
-	.string "At this BATTLE TENT, the levels of\n"
-	.string "your opponents will be adjusted to\l"
-	.string "match the levels of your POKéMON.\p"
-	.string "However, no TRAINER you face will\n"
-	.string "have any POKéMON below Level 30.$"
+	.string "In this BATTLE TENT, your opponents'\n"
+	.string "levels are adjusted to match your\l"
+	.string "POKéMON.\p"
+	.string "However, none of the POKéMON you face\n"
+	.string "will be below Level 30.$"
 
 VerdanturfTown_BattleTentLobby_Text_RulesAreListed:
-	.string "The VERDANTURF BATTLE TENT\n"
-	.string "rules are listed.$"
+	.string "Here are the VERDANTURF BATTLE\n"
+	.string "TENT rules.$"

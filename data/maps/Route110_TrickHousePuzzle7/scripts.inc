@@ -305,78 +305,80 @@ Route110_TrickHousePuzzle7_EventScript_Everett::
 	end
 
 Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened::
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
+	.string "{PLAYER} wrote the secret code on the\n"
+	.string "door.\p"
 	.string "“TRICK MASTER is huggable.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaIntro:
-	.string "The TRICK MASTER always vanishes\n"
-	.string "like smoke. How does he do it?$"
+	.string "The TRICK MASTER always vanishes like\n"
+	.string "smoke. Is it some kind of ki trick?$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaDefeat:
 	.string "Aiyeeeh! You're much too strong!\n"
 	.string "How do you do it?$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaPostBattle:
-	.string "I wish I could appear and disappear as\n"
-	.string "if I were smoke, too.$"
+	.string "I wish I could appear and vanish like\n"
+	.string "smoke, too. It must take serious ki\l"
+	.string "control.$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaIntro:
 	.string "Going around the same spot…\n"
-	.string "It begets ill fortune…$"
+	.string "It brings ill fortune…$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaDefeat:
 	.string "Defeated!\n"
-	.string "It's a bad sign…$"
+	.string "It's a bad omen…$"
 
 Route110_TrickHousePuzzle7_Text_PatriciaPostBattle:
 	.string "I've circled the same spot over ten\n"
 	.string "times now… It's ill fortune…$"
 
 Route110_TrickHousePuzzle7_Text_AlexisIntro:
-	.string "Whoever wins will get through here\n"
-	.string "first. That's the feeling I get.$"
+	.string "Whoever wins gets through here first.\n"
+	.string "That's the feeling I get.$"
 
 Route110_TrickHousePuzzle7_Text_AlexisDefeat:
 	.string "Oh!\n"
 	.string "Well, go ahead, then!$"
 
 Route110_TrickHousePuzzle7_Text_AlexisPostBattle:
-	.string "You're solving all the puzzles in the\n"
+	.string "You're solving every puzzle in the\n"
 	.string "TRICK HOUSE. That's the feeling I get.$"
 
 Route110_TrickHousePuzzle7_Text_MarielaIntro:
 	.string "Nufufufu, here at last!\n"
-	.string "Let's get right with it!$"
+	.string "Let's get right to it!$"
 
 Route110_TrickHousePuzzle7_Text_MarielaDefeat:
-	.string "You're so casual about winning!$"
+	.string "You win like it's nothing! Hmph!$"
 
 Route110_TrickHousePuzzle7_Text_MarielaPostBattle:
 	.string "Humph! I'm not upset!\n"
 	.string "Not me!$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroIntro:
-	.string "I ever so closely watched you coming!$"
+	.string "I watched you coming ever so closely!$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroDefeat:
-	.string "This outcome I didn't see coming…$"
+	.string "I never sensed that ki coming…$"
 
 Route110_TrickHousePuzzle7_Text_AlvaroPostBattle:
 	.string "Well, anyway, we both picked a weird\n"
 	.string "place to get acquainted.\p"
-	.string "As one weirdo to another,\n"
-	.string "let's do our best!$"
+	.string "As one weirdo to another, let's do our\n"
+	.string "best!$"
 
 Route110_TrickHousePuzzle7_Text_EverettIntro:
-	.string "It's awfully cramped in here…$"
+	.string "It's awfully cramped in here for a\n"
+	.string "fighter my size…$"
 
 Route110_TrickHousePuzzle7_Text_EverettDefeat:
 	.string "Oh, yes, strong you are.$"
 
 Route110_TrickHousePuzzle7_Text_EverettPostBattle:
 	.string "I was hoping to switch places with you\n"
-	.string "when I beat you, but…$"
+	.string "once I won, but…$"
 

@@ -79,68 +79,66 @@ RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay::
 	end
 
 RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
-	.string "Hello and welcome to the CAPSULE CORP.\n"
-	.string "CORPORATION.\p"
-	.string "We're proud producers of items and\n"
-	.string "medicine that enhance your life.$"
+	.string "Hello, and welcome to CAPSULE CORP.\p"
+	.string "We're proud to make items and medicine\n"
+	.string "that make your life better.$"
 
 RustboroCity_DevonCorp_1F_Text_StaffGotRobbed:
-	.string "One of our research staff stupidly\n"
-	.string "got robbed of an important parcel.$"
+	.string "One of our researchers got robbed of an\n"
+	.string "important parcel. Careless, if you ask\l"
+	.string "me.$"
 
 RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct:
 	.string "Hey, those RUNNING SHOES!\n"
-	.string "They're one of our products!\p"
-	.string "It makes me happy when I see someone\n"
+	.string "One of our products!\p"
+	.string "It makes me so happy to see someone\n"
 	.string "using something we made.$"
 
 RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright:
 	.string "That stolen parcel…\p"
-	.string "Well, sure it's important, but it's not\n"
-	.string "anything that anyone can use.\p"
-	.string "In my estimation, that robber must not\n"
-	.string "have been very bright.$"
+	.string "Sure, it's important, but it's nothing\n"
+	.string "anyone else could actually use.\p"
+	.string "If you ask me, that robber wasn't very\n"
+	.string "bright.$"
 
 RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered:
-	.string "It sounds like they've recovered\n"
-	.string "the ripped-off CC GOODS.$"
+	.string "Word is the stolen CC GOODS have been\n"
+	.string "recovered.$"
 
 RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter:
-	.string "I'm sorry, only authorized people\n"
-	.string "are allowed to enter here.$"
+	.string "I'm sorry, only authorized personnel\n"
+	.string "may enter here.$"
 
 RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed:
-	.string "It's beyond stupid.\n"
+	.string "It makes no sense.\n"
 	.string "How could we get robbed?$"
 
 RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere:
-	.string "Hi, there!\n"
+	.string "Hi there!\n"
 	.string "You're always welcome here!$"
 
 RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay:
 	.string "Samples of rocks and metal are\n"
 	.string "displayed in the glass case.\p"
-	.string "There's a panel with some writing\n"
-	.string "on it…\p"
-	.string "“CAPSULE CORP. got its start as\n"
-	.string "a producer of stones from quarries.\p"
-	.string "“The company also produced iron from\n"
-	.string "filings in the sand.\p"
-	.string "“From that humble start as a producer\n"
-	.string "of raw materials, CAPSULE CORP.\l"
-	.string "developed.\p"
-	.string "“CAPSULE CORP. is now a manufacturer\n"
-	.string "of a wide range of industrial products.”$"
+	.string "There's a panel with some writing on it…\p"
+	.string "“CAPSULE CORP. began as a workshop\n"
+	.string "that shaped stone from quarries.\p"
+	.string "“It also forged iron from filings found\n"
+	.string "in the sand.\p"
+	.string "“From those humble beginnings, DR.\n"
+	.string "BRIEF invented the HOI-POI CAPSULE,\l"
+	.string "and the company took off.\p"
+	.string "“CAPSULE CORP. now manufactures a wide\n"
+	.string "range of products for everyday life.”$"
 
 RustboroCity_DevonCorp_1F_Text_ProductDisplay:
-	.string "Prototypes and test products fill\n"
-	.string "the glass display case.\p"
+	.string "Prototypes and test products fill the\n"
+	.string "glass display case.\p"
 	.string "There's a panel with a description…\p"
-	.string "“In addition to industrial products,\n"
-	.string "DEVON now markets sundries and\l"
-	.string "pharmaceuticals for better lifestyles.\p"
-	.string "“Recently, CAPSULE CORP. has begun\n"
-	.string "marketing tools for POKéMON TRAINERS,\l"
-	.string "including POKé BALLS and POKéNAV\l"
-	.string "systems.”$"
+	.string "“Besides capsules and industrial\n"
+	.string "products, CAPSULE CORP. now markets\l"
+	.string "sundries and medicine for better living.\p"
+	.string "“Recently, we've begun marketing tools\n"
+	.string "for POKéMON TRAINERS, including POKé\l"
+	.string "BALLS and POKéNAV systems.”$"
 

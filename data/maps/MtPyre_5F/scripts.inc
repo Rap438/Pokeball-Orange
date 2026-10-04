@@ -9,10 +9,10 @@ MtPyre_4F_EventScript_Tasha::
 	end
 
 MtPyre_4F_Text_TashaIntro:
-	.string "I love all things horrifying…\n"
-	.string "It's like a disease…\p"
-	.string "When I'm here…\n"
-	.string "I shiver with fear…$"
+	.string "I adore anything that makes the blood\n"
+	.string "run cold… I can't help it…\p"
+	.string "When I'm up here…\n"
+	.string "I shiver with delight…$"
 
 MtPyre_4F_Text_TashaDefeat:
 	.string "Losing, I dislike…$"

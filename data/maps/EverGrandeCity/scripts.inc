@@ -24,7 +24,8 @@ EverGrandeCity_EventScript_SetVisitedEverGrande::
 	end
 
 EverGrandeCity_Text_EnteringVictoryRoad:
-	.string "ENTERING VICTORY ROAD$"
+	.string "ENTERING VICTORY ROAD\n"
+	.string "Weaklings, turn back now!$"
 
 EverGrandeCity_Text_EnteringPokemonLeague:
 	.string "ENTERING POKéMON LEAGUE\n"
@@ -32,6 +33,6 @@ EverGrandeCity_Text_EnteringPokemonLeague:
 
 EverGrandeCity_Text_CitySign:
 	.string "EVER GRANDE CITY\p"
-	.string "“The paradise of flowers, the sea,\n"
-	.string "and POKéMON.”$"
+	.string "“Where flowers bloom, the sea shines,\n"
+	.string "and POKéMON and warriors gather.”$"
 

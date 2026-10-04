@@ -21,6 +21,8 @@ EventScript_DBZ_GymFight::
 	call_if_eq VAR_0x8009, DBZ_FORM_SSJ, EventScript_DBZ_HintSSJ
 	call_if_eq VAR_0x8009, DBZ_FORM_SSJ2, EventScript_DBZ_HintSSJ2
 	call_if_eq VAR_0x8009, DBZ_FORM_SSJ3, EventScript_DBZ_HintSSJ3
+	specialvar VAR_RESULT, DBZ_GokuCanFight
+	goto_if_eq VAR_RESULT, FALSE, EventScript_DBZ_TooHurtForGym
 	specialvar VAR_RESULT, DBZ_CanFightTrainer
 	goto_if_eq VAR_RESULT, FALSE, EventScript_DBZ_FightDone
 	msgbox Text_DBZ_GymFightIntro, MSGBOX_DEFAULT
@@ -29,6 +31,10 @@ EventScript_DBZ_GymFight::
 	special DBZ_StartFight
 	releaseall
 	end
+
+EventScript_DBZ_TooHurtForGym::
+	msgbox Text_DBZ_TooHurtForGym, MSGBOX_DEFAULT
+	goto EventScript_DBZ_FightDone
 
 EventScript_DBZ_HintSSJ::
 	msgbox Text_DBZ_HintSSJ, MSGBOX_DEFAULT
@@ -65,12 +71,19 @@ EventScript_DBZ_LevelUpNotice::
 
 EventScript_DBZ_FightEnd::
 	lockall
-	goto_if_eq VAR_RESULT, DBZ_FIGHT_LOST, EventScript_DBZ_FightLost
+	call EventScript_DBZ_FightResults
+	goto_if_eq VAR_0x8007, DBZ_FIGHT_LOST, EventScript_DBZ_KnockedOut
+	goto EventScript_DBZ_FightEvolve
+
+@ shows the outcome of a fight (VAR_RESULT = DBZ_FIGHT_WON / LOST), EXP and level reports; VAR_0x8007 = result
+EventScript_DBZ_FightResults::
+	copyvar VAR_0x8007, VAR_RESULT
+	goto_if_eq VAR_0x8007, DBZ_FIGHT_LOST, EventScript_DBZ_FightLostMsg
 	msgbox Text_DBZ_FightWon, MSGBOX_DEFAULT
 	special DBZ_FightAwardExp
-	copyvar VAR_0x8007, VAR_RESULT
+	copyvar VAR_0x800A, VAR_RESULT
 	msgbox Text_DBZ_FightExp, MSGBOX_DEFAULT
-	goto_if_eq VAR_0x8007, 0, EventScript_DBZ_FightReports
+	goto_if_eq VAR_0x800A, 0, EventScript_DBZ_FightReports
 	playfanfare MUS_LEVEL_UP
 	message Text_DBZ_GokuLevelUp
 	waitfanfare
@@ -78,7 +91,7 @@ EventScript_DBZ_FightEnd::
 	waitbuttonpress
 EventScript_DBZ_FightReports::
 	specialvar VAR_0x8008, DBZ_NextFightReport
-	goto_if_eq VAR_0x8008, DBZ_REPORT_NONE, EventScript_DBZ_FightEvolve
+	goto_if_eq VAR_0x8008, DBZ_REPORT_NONE, EventScript_DBZ_Return
 	call_if_eq VAR_0x8008, DBZ_REPORT_LEVEL, EventScript_DBZ_ReportLevel
 	call_if_eq VAR_0x8008, DBZ_REPORT_LEARNED, EventScript_DBZ_ReportLearned
 	call_if_eq VAR_0x8008, DBZ_REPORT_NO_ROOM, EventScript_DBZ_ReportNoRoom
@@ -113,12 +126,74 @@ EventScript_DBZ_FightEvolve::
 	waitstate
 	goto EventScript_DBZ_FightEvolve
 
-EventScript_DBZ_FightLost::
+EventScript_DBZ_FightLostMsg::
 	msgbox Text_DBZ_FightLost, MSGBOX_DEFAULT
+	return
+
+EventScript_DBZ_KnockedOut::
+	msgbox Text_DBZ_BlackedOut, MSGBOX_DEFAULT
+	closemessage
+	fadescreen FADE_TO_BLACK
+	special DBZ_WarpToLastHeal
+	waitstate
+	end
+
+EventScript_DBZ_WokeUp::
+	lockall
+	msgbox Text_DBZ_WokeUp, MSGBOX_DEFAULT
+	releaseall
+	end
+
+EventScript_DBZ_EvolveCheck::
+	lockall
+	goto EventScript_DBZ_FightEvolve
+
 EventScript_DBZ_FightDone::
 	closemessage
 	releaseall
 	end
+
+@ Rival VEGETA: called from the rival battle scripts right after the POKEMON battle.
+EventScript_DBZ_VegetaFight::
+	special DBZ_SetupVegetaFight
+	goto_if_eq VAR_RESULT, FALSE, EventScript_DBZ_VegetaNoFight
+	copyvar VAR_0x800B, VAR_0x8007
+	call_if_lt VAR_0x800B, 2, EventScript_DBZ_VegetaIntro1
+	call_if_eq VAR_0x800B, 2, EventScript_DBZ_VegetaIntro2
+	call_if_eq VAR_0x800B, 3, EventScript_DBZ_VegetaIntro2
+	call_if_ge VAR_0x800B, 4, EventScript_DBZ_VegetaIntro3
+	closemessage
+	special DBZ_StartFightAndWait
+	goto_if_eq VAR_RESULT, FALSE, EventScript_DBZ_Return
+	waitstate
+	lockall
+	call EventScript_DBZ_FightResults
+	goto_if_eq VAR_0x8007, DBZ_FIGHT_LOST, EventScript_DBZ_VegetaWon
+	msgbox Text_DBZ_VegetaLost, MSGBOX_DEFAULT
+	special DBZ_QueueFightEvolveCheck
+	return
+
+EventScript_DBZ_VegetaWon::
+	special DBZ_ReviveGokuWeak
+	msgbox Text_DBZ_VegetaWins, MSGBOX_DEFAULT
+	special DBZ_QueueFightEvolveCheck
+	return
+
+EventScript_DBZ_VegetaNoFight::
+	msgbox Text_DBZ_VegetaNoFight, MSGBOX_DEFAULT
+	return
+
+EventScript_DBZ_VegetaIntro1::
+	msgbox Text_DBZ_VegetaIntro1, MSGBOX_DEFAULT
+	return
+
+EventScript_DBZ_VegetaIntro2::
+	msgbox Text_DBZ_VegetaIntro2, MSGBOX_DEFAULT
+	return
+
+EventScript_DBZ_VegetaIntro3::
+	msgbox Text_DBZ_VegetaIntro3, MSGBOX_DEFAULT
+	return
 
 Text_DBZ_OfferFight:
 	.string "Your POKéMON are tough…\n"
@@ -136,8 +211,8 @@ Text_DBZ_GymFightIntro:
 	.string "Show me what YOU'VE got, GOKU!$"
 
 Text_DBZ_Ambush:
-	.string "A {STR_VAR_1} soldier jumped out!\n"
-	.string "Get ready, GOKU!$"
+	.string "A RED RIBBON ARMY soldier jumped\n"
+	.string "out! Get ready, GOKU!$"
 
 Text_DBZ_TrainingPaidOff:
 	.string "Training with the team paid off!\n"
@@ -165,8 +240,51 @@ Text_DBZ_MonNoRoom:
 	.string "The MOVE TUTOR can teach it later.$"
 
 Text_DBZ_FightLost:
-	.string "GOKU got knocked down by {STR_VAR_1}…\p"
-	.string "He needs more training!$"
+	.string "GOKU got knocked down by {STR_VAR_1}…$"
+
+Text_DBZ_BlackedOut:
+	.string "Everything went dark…$"
+
+Text_DBZ_WokeUp:
+	.string "GOKU came to after a while.\p"
+	.string "He's still sore… A rest at home or\n"
+	.string "a POKéMON CENTER will patch him up.$"
+
+Text_DBZ_TooHurtForGym:
+	.string "…But GOKU is too beat up to fight.\n"
+	.string "He needs to heal up first.$"
+
+Text_DBZ_VegetaIntro1:
+	.string "VEGETA: Hmph. Your POKéMON got lucky,\n"
+	.string "KAKAROT.\p"
+	.string "But a POKéMON battle proves nothing.\n"
+	.string "Put up your fists!$"
+
+Text_DBZ_VegetaIntro2:
+	.string "VEGETA: Don't look so smug.\n"
+	.string "I've been training every day since\l"
+	.string "our last fight.\p"
+	.string "Saiyan against Saiyan. Now!$"
+
+Text_DBZ_VegetaIntro3:
+	.string "VEGETA: You think you're the only one\n"
+	.string "who can go Super Saiyan?\p"
+	.string "The Prince of all Saiyans bows to\n"
+	.string "no one! Fight me, KAKAROT!$"
+
+Text_DBZ_VegetaLost:
+	.string "VEGETA: Grr… This isn't over.\n"
+	.string "Next time I'll surpass you!$"
+
+Text_DBZ_VegetaWins:
+	.string "VEGETA: Ha! Remember this feeling,\n"
+	.string "KAKAROT. I'm still number one!\p"
+	.string "Go rest up. I want you at full\n"
+	.string "power when I beat you again.$"
+
+Text_DBZ_VegetaNoFight:
+	.string "VEGETA: Tch. You're in no shape to\n"
+	.string "fight. I'll crush you another day.$"
 
 Text_DBZ_HintSSJ:
 	.string "The BADGE's power surges through\n"

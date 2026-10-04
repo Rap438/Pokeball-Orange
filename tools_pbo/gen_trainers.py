@@ -70,12 +70,12 @@ def save_front(name, i, palfile=None):
 
 # portrait index for each Emerald trainer front pic
 FRONT = {
-    'leader_roxanne': 151, 'leader_brawly': 127, 'leader_wattson': 9, 'leader_flannery': 144,
+    'leader_roxanne': 151, 'leader_brawly': 127, 'leader_wattson': 102, 'leader_flannery': 144,
     'leader_norman': 82, 'leader_winona': 39, 'leader_tate_and_liza': None, 'leader_juan': 104,
     'elite_four_sidney': 122, 'elite_four_phoebe': 3, 'elite_four_glacia': 1, 'elite_four_drake': 17,
     'champion_wallace': 68, 'steven': 76, 'wally': 134,
-    'magma_leader_maxie': 83, 'aqua_leader_archie': 8, 'magma_admin': 118, 'aqua_admin_m': 106, 'aqua_admin_f': 126,
-    'magma_grunt_m': 14, 'magma_grunt_f': 98, 'aqua_grunt_m': 23, 'aqua_grunt_f': 99,
+    'magma_leader_maxie': 119, 'aqua_leader_archie': 112, 'magma_admin': 118, 'aqua_admin_m': 106, 'aqua_admin_f': 126,
+    'magma_grunt_m': 23, 'magma_grunt_f': 99, 'aqua_grunt_m': 23, 'aqua_grunt_f': 99,
 }
 
 def tate_and_liza():

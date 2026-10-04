@@ -81,15 +81,16 @@ EverGrandeCity_HallOfFame_Movement_WalkIntoHallOfFame2:
 
 EverGrandeCity_HallOfFame_Text_HereWeHonorLeagueChampions:
 	.string "MR. SATAN: This room…\p"
-	.string "This is where we keep records of\n"
-	.string "POKéMON that prevailed through\l"
-	.string "harsh battles.\p"
-	.string "It is here that the LEAGUE CHAMPIONS\n"
-	.string "are honored.$"
+	.string "This is where we keep the records of\n"
+	.string "POKéMON that fought through the\l"
+	.string "harshest battles.\p"
+	.string "Here, the LEAGUE CHAMPIONS are\n"
+	.string "honored. Yes, even me!$"
 
 EverGrandeCity_HallOfFame_Text_LetsRecordYouAndYourPartnersNames:
-	.string "MR. SATAN: Come on, let's record your\n"
-	.string "name as a TRAINER who triumphed over\l"
-	.string "the POKéMON LEAGUE, and the names of\l"
-	.string "the partners who battled with you.$"
+	.string "MR. SATAN: Come on, let's put your name\n"
+	.string "on record as the TRAINER who conquered\l"
+	.string "the POKéMON LEAGUE, along with the\l"
+	.string "names of the partners who fought\l"
+	.string "beside you!$"
 

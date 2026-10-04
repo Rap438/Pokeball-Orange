@@ -44,21 +44,21 @@ LavaridgeTown_HerbShop_Text_WelcomeToHerbShop:
 	.string "effective and inexpensive medicine!$"
 
 LavaridgeTown_HerbShop_Text_YouveComeToLookAtHerbalMedicine:
-	.string "You've come to look at herbal medicine\n"
-	.string "in LAVARIDGE?\p"
-	.string "That's rather commendable.\p"
-	.string "I like you! Take this!$"
+	.string "You came all the way to LAVARIDGE just\n"
+	.string "to look at herbal medicine?\p"
+	.string "Now that's commendable.\p"
+	.string "I like you! Here, take this!$"
 
 LavaridgeTown_HerbShop_Text_ExplainCharcoal:
-	.string "That CHARCOAL I gave you, it's used\n"
-	.string "for making herbal medicine.\p"
-	.string "It also does wonders when held by\n"
-	.string "a POKéMON.\p"
-	.string "It intensifies the power of FIRE-type\n"
-	.string "moves.$"
+	.string "That CHARCOAL I gave you is used to\n"
+	.string "make herbal medicine.\p"
+	.string "It also does wonders when held by a\n"
+	.string "POKéMON.\p"
+	.string "It powers up FIRE-type moves.$"
 
 LavaridgeTown_HerbShop_Text_HerbalMedicineWorksButMonWillDislike:
-	.string "Herbal medicine works impressively well.\n"
-	.string "But your POKéMON will dislike you for it.\l"
-	.string "It must be horribly bitter!$"
+	.string "Herbal medicine works wonders. But your\n"
+	.string "POKéMON will hold it against you.\p"
+	.string "It's horribly bitter! Even a hungry\n"
+	.string "Saiyan would think twice!$"
 

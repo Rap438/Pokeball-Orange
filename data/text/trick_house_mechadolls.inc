@@ -68,13 +68,13 @@ gTrickHouse_Mechadoll_55Yen::
 	.string "¥55$"
 
 gTrickHouse_Mechadoll_Nothing::
-	.string "Nothing$"
+	.string "Nothing at all$"
 
 gTrickHouse_Mechadoll_CostMore::
-	.string "They will cost more.$"
+	.string "They'll cost more.$"
 
 gTrickHouse_Mechadoll_CostLess::
-	.string "They will cost less.$"
+	.string "They'll cost less.$"
 
 gTrickHouse_Mechadoll_SamePrice2::
 	.string "Same price$"
@@ -89,16 +89,16 @@ gTrickHouse_Mechadoll_Neither::
 	.string "Neither$"
 
 gTrickHouse_Mechadoll_ElderlyMen::
-	.string "Elderly men$"
+	.string "Old men$"
 
 gTrickHouse_Mechadoll_ElderlyLadies::
-	.string "Elderly ladies$"
+	.string "Old ladies$"
 
 gTrickHouse_Mechadoll_SameNumber::
-	.string "Same number$"
+	.string "Equal numbers$"
 
 gTrickHouse_Mechadoll_None::
-	.string "None$"
+	.string "None at all$"
 
 gTrickHouse_Mechadoll_One::
 	.string "1$"

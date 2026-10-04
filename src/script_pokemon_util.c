@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz.h"
 #include "battle.h"
 #include "battle_gfx_sfx_util.h"
 #include "berry.h"
@@ -33,6 +34,7 @@ void HealPlayerParty(void)
     u8 ppBonuses;
     u8 arg[4];
 
+    DBZ_HealGoku();   // PokeBall Orange: centers, home and other heal spots patch Goku up too
     // restore HP.
     for(i = 0; i < gPlayerPartyCount; i++)
     {

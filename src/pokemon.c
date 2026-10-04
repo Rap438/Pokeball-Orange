@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz.h"
 #include "malloc.h"
 #include "apprentice.h"
 #include "battle.h"
@@ -2240,6 +2241,8 @@ void CreateBoxMon(struct BoxPokemon *boxMon, u16 species, u8 level, u8 fixedIV, 
               | (gSaveBlock2Ptr->playerTrainerId[1] << 8)
               | (gSaveBlock2Ptr->playerTrainerId[2] << 16)
               | (gSaveBlock2Ptr->playerTrainerId[3] << 24);
+        DBZ_ApplyShinyOdds(&personality, value);   // PokeBall Orange shiny odds setting
+        SetBoxMonData(boxMon, MON_DATA_PERSONALITY, &personality);
     }
 
     SetBoxMonData(boxMon, MON_DATA_OT_ID, &value);

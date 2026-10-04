@@ -12,6 +12,7 @@
 #include "palette.h"
 #include "pokemon.h"
 #include "constants/map_types.h"
+#include "constants/rgb.h"
 
 struct DbzBattleView {
     const struct Tileset *primary;
@@ -100,6 +101,8 @@ bool8 DBZ_TryDrawMapBattleBackground(void)
     u16 next = 1;   // tile 0 stays blank
     u8 i;
 
+    if (!DBZ_OptMapBattleBg())
+        return FALSE;
     if (!IsMapTypeOutdoors(gMapHeader.mapType) && gMapHeader.mapType != MAP_TYPE_UNDERGROUND)
         return FALSE;
     view = FindView();
@@ -175,7 +178,7 @@ void DBZ_ResetTrainerPowerUp(void)
 bool8 DBZ_ShouldTrainerPowerUp(u8 battler)
 {
     u8 i, alive = 0;
-    if (sPowerUpShown || !(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+    if (sPowerUpShown || !(gBattleTypeFlags & BATTLE_TYPE_TRAINER) || !DBZ_OptPowerUp())
         return FALSE;
     if (gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_RECORDED_LINK | BATTLE_TYPE_SAFARI))
         return FALSE;
@@ -191,4 +194,28 @@ bool8 DBZ_ShouldTrainerPowerUp(u8 battler)
         return FALSE;
     sPowerUpShown = TRUE;
     return TRUE;
+}
+
+// ------------------------------------------------------------------ battle menu frame colours
+// The FIGHT/BAG and move menus use the player's window frame; recolour it by brightness into the
+// PokeBall Orange look (navy panel, orange/gold rim) whatever frame type is selected.
+void DBZ_RestyleBattleMenuFrame(u16 offset)
+{
+    u8 i;
+    for (i = 1; i < 16; i++)
+    {
+        u16 c = gPlttBufferUnfaded[offset + i];
+        u16 lum = ((c & 31) * 3 + ((c >> 5) & 31) * 6 + ((c >> 10) & 31)) / 10;
+        u16 n;
+        if (lum >= 28)
+            n = RGB(2, 3, 9);          // panel
+        else if (lum >= 19)
+            n = RGB(31, 20, 4);        // gold rim
+        else if (lum >= 11)
+            n = RGB(25, 12, 0);        // orange rim
+        else
+            n = RGB(1, 1, 4);          // outline
+        gPlttBufferUnfaded[offset + i] = n;
+        gPlttBufferFaded[offset + i] = n;
+    }
 }

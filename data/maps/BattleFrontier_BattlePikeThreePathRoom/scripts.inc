@@ -296,8 +296,8 @@ BattleFrontier_BattlePikeThreePathRoom_Text_SaveChallengeAndQuit:
 	.string "and quit the game for now?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_RetireFromChallenge:
-	.string "Do you wish to retire from your\n"
-	.string "Battle Choice challenge?$"
+	.string "Do you want to throw in the towel on\n"
+	.string "your Battle Choice challenge?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_AwaitingReturnSaveBeforeResume:
 	.string "We've been awaiting your return…\p"
@@ -317,8 +317,8 @@ BattleFrontier_BattlePike_Text_PathBlockedNoTurningBack:
 	.string "And there is no turning back…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_FindingItDifficultToChoose:
-	.string "I beg your pardon, but…\p"
-	.string "Are you perhaps finding it difficult\n"
+	.string "Pardon me, but…\p"
+	.string "Are you perhaps finding it hard\n"
 	.string "to choose your path?$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_ApologizeForImpertinence:
@@ -338,15 +338,15 @@ BattleFrontier_BattlePikeThreePathRoom_Text_SomethingAboutLeftPath:
 	.string "about the path on the left…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_AromaOfPokemon:
-	.string "It seems to have the distinct aroma\n"
-	.string "of POKéMON wafting around it…$"
+	.string "It seems to carry the distinct scent\n"
+	.string "of POKéMON…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_PresenceOfPeople:
 	.string "Is it… A TRAINER?\n"
 	.string "I sense the presence of people…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_HeardWhispering:
-	.string "I seem to have heard something…\n"
+	.string "I think I heard something…\n"
 	.string "It may have been whispering…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_WaveOfNostaliga:
@@ -357,7 +357,7 @@ BattleFrontier_BattlePikeThreePathRoom_Text_TerrifyingEvent:
 	.string "I am sorry to say…\p"
 	.string "A terrifying event, yes, a horrible one,\n"
 	.string "is about to befall you…\p"
-	.string "I urge you to pay the utmost care\n"
+	.string "I urge you to take the utmost care\n"
 	.string "and prepare for the worst…$"
 
 BattleFrontier_BattlePikeThreePathRoom_Text_DreadfulPresence:

@@ -53,42 +53,41 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 	return
 
 PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
-	.string "That PC-based POKéMON Storage\n"
-	.string "System…\p"
-	.string "Whoever made it must be some kind\n"
-	.string "of a scientific wizard!$"
+	.string "That PC POKéMON Storage System…\p"
+	.string "Whoever built it has to be a genius\n"
+	.string "on par with the CAPSULE CORP. crowd!$"
 
 PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
-	.string "When my POKéMON ate an\n"
-	.string "ORAN BERRY, it regained HP!$"
+	.string "My POKéMON ate an ORAN BERRY and\n"
+	.string "recovered its HP right away!$"
 
 PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
-	.string "There are many types of POKéMON.\p"
-	.string "All types have their strengths and\n"
-	.string "weaknesses against other types.\p"
-	.string "Depending on the types of POKéMON,\n"
-	.string "a battle could be easy or hard.$"
+	.string "POKéMON come in many types.\p"
+	.string "Every type has strengths and\n"
+	.string "weaknesses against the others.\p"
+	.string "Depending on the types in play,\n"
+	.string "a battle can be easy or tough.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
-	.string "For example, your TREECKO\n"
-	.string "is a GRASS type.\p"
-	.string "It's strong against the WATER and\n"
+	.string "Take your TREECKO, for example.\n"
+	.string "It's a GRASS type.\p"
+	.string "It's strong against WATER and\n"
 	.string "GROUND types.\p"
-	.string "But, it's weak against FIRE-type\n"
+	.string "But it's weak against FIRE-type\n"
 	.string "POKéMON.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
-	.string "For example, your TORCHIC\n"
-	.string "is a FIRE type.\p"
-	.string "It's strong against the GRASS and\n"
+	.string "Take your TORCHIC, for example.\n"
+	.string "It's a FIRE type.\p"
+	.string "It's strong against GRASS and\n"
 	.string "BUG types.\p"
-	.string "But, it's weak against WATER-type\n"
+	.string "But it's weak against WATER-type\n"
 	.string "POKéMON.$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-	.string "For example, your MUDKIP\n"
-	.string "is a WATER type.\p"
+	.string "Take your MUDKIP, for example.\n"
+	.string "It's a WATER type.\p"
 	.string "It's strong against the FIRE type.\p"
-	.string "But, it's weak against GRASS-type\n"
+	.string "But it's weak against GRASS-type\n"
 	.string "and ELECTRIC-type POKéMON.$"
 

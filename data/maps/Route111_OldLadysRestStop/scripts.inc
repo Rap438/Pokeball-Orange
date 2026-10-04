@@ -29,22 +29,22 @@ Route111_OldLadysRestStop_EventScript_DeclineRest::
 	end
 
 Route111_OldLadysRestStop_Text_RestUpHere:
-	.string "Oh, dear, dear.\n"
-	.string "Aren't your POKéMON exhausted?\p"
-	.string "If you'd like, rest up here.\n"
-	.string "That's a fine idea! You should do that.$"
+	.string "Oh my, dear, dear.\n"
+	.string "Your POKéMON look worn out.\p"
+	.string "Won't you rest up here a while?\n"
+	.string "Resting is part of training, you know.$"
 
 Route111_OldLadysRestStop_Text_TakeYourTimeRestUp:
-	.string "That's right.\n"
+	.string "There now.\n"
 	.string "Take your time and rest up!$"
 
 Route111_OldLadysRestStop_Text_StillTiredTakeAnotherRest:
-	.string "Oh, dear, dear.\n"
+	.string "Oh my, dear, dear.\n"
 	.string "Are your POKéMON still tired?\p"
-	.string "You should take another rest here.\n"
-	.string "That's a fine idea. You should do that.$"
+	.string "Why not rest here a little longer?\n"
+	.string "It's a lovely idea, don't you think?$"
 
 Route111_OldLadysRestStop_Text_DontNeedToBeShy:
 	.string "Is that so?\n"
-	.string "You don't need to be shy about it.$"
+	.string "Don't be shy about it, now.$"
 

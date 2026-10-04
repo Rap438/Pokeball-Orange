@@ -27,31 +27,30 @@ DewfordTown_House2_EventScript_Boy::
 	end
 
 DewfordTown_House2_Text_WantYouToHaveSilkScarf:
-	.string "Gorge your eyes on this!\p"
-	.string "It's a SILK SCARF. It's right at the\n"
-	.string "cutting edge of fashion, yeah!\p"
-	.string "Oh, I can see your eyes twinkling!\n"
+	.string "Behold!\p"
+	.string "This is a SILK SCARF, the cutting edge\n"
+	.string "of island fashion, yeah!\p"
+	.string "Oh, I can see your eyes sparkling!\n"
 	.string "You appreciate my dazzling style!\p"
-	.string "Oh, you're a delight!\n"
-	.string "Here you go. I want you to have it!$"
+	.string "You're a delight!\n"
+	.string "Here, I want you to have it!$"
 
 DewfordTown_House2_Text_NoRoom:
-	.string "Oh, you don't have room?\p"
-	.string "Now, listen tight, this SCARF is a must-\n"
-	.string "have! Why, I would sell all my items\l"
-	.string "in order to get it!$"
+	.string "Oh, you've got no room?\p"
+	.string "Listen up, this SCARF is a must-have!\n"
+	.string "I'd sell everything I own to get one!$"
 
 DewfordTown_House2_Text_ExplainSilkScarf:
-	.string "The SILK SCARF raises the power of\n"
+	.string "The SILK SCARF boosts the power of\n"
 	.string "NORMAL-type moves.\p"
-	.string "It's a marvelous SCARF that will go\n"
-	.string "with almost all POKéMON!$"
+	.string "It's a marvelous SCARF that goes with\n"
+	.string "almost any POKéMON!$"
 
 DewfordTown_House2_Text_BrawlySoCool:
-	.string "Wow, you bothered to cross the sea\n"
-	.string "to visit DEWFORD?\p"
-	.string "Did you maybe come here because you\n"
-	.string "heard about TIEN?\p"
-	.string "He's so cool…\n"
-	.string "Everyone idolizes him.$"
+	.string "Wow, you crossed the whole sea just to\n"
+	.string "visit DEWFORD?\p"
+	.string "Did you come because you heard about\n"
+	.string "TIEN?\p"
+	.string "He's so cool, three eyes and all…\n"
+	.string "Everyone looks up to him.$"
 

@@ -63,42 +63,42 @@ VerdanturfTown_FriendshipRatersHouse_EventScript_Pikachu::
 	end
 
 VerdanturfTown_FriendshipRatersHouse_Text_SeeHowMuchPokemonLikesYou:
-	.string "Let me see your POKéMON.\n"
-	.string "I'll check to see how much it likes you.\p"
-	.string "Oh.\n"
+	.string "Let me see your POKéMON. I can read its\n"
+	.string "ki and tell how it feels about you.\p"
+	.string "Hmm.\n"
 	.string "Your POKéMON…$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_AdoresYou:
 	.string "It adores you.\n"
-	.string "It can't possibly love you any more.\l"
-	.string "I even feel happy seeing it.$"
+	.string "It couldn't possibly love you any more.\l"
+	.string "Just looking at it makes me happy.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_VeryHappy:
-	.string "It seems to be very happy.\n"
-	.string "It obviously likes you a whole lot.$"
+	.string "It seems very happy.\n"
+	.string "It clearly likes you a whole lot.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_LikesYouQuiteALot:
-	.string "It likes you quite a lot.\n"
-	.string "It seems to want to be babied a little.$"
+	.string "It likes you quite a lot. It looks like it\n"
+	.string "wants a little pampering.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_GettingUsedToYou:
 	.string "It's getting used to you.\n"
-	.string "It seems to believe in you.$"
+	.string "It's starting to believe in you.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_NotUsedToYou:
-	.string "It's not very used to you yet.\n"
+	.string "It isn't used to you yet.\n"
 	.string "It neither loves nor hates you.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_VeryWary:
 	.string "It's very wary.\n"
-	.string "It has scary viciousness in its eyes.\l"
-	.string "It doesn't like you much at all.$"
+	.string "There's a frightening glint in its eyes.\l"
+	.string "It really doesn't like you.$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_DetestsYou:
-	.string "This is a little hard for me to say…\p"
+	.string "This is hard for me to say…\p"
 	.string "Your POKéMON simply detests you.\n"
 	.string "Doesn't that make you uncomfortable?$"
 
 VerdanturfTown_FriendshipRatersHouse_Text_Pikachu:
-	.string "PIKACHU: Pika pika!$"
+	.string "PIKACHU: Pika pi! Pikachuuu!$"
 

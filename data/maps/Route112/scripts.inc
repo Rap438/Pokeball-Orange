@@ -99,34 +99,36 @@ Route112_EventScript_Shayla::
 	end
 
 Route112_Text_LeaderGoingToAwakenThing:
-	.string "Hey, man, is our leader really going\n"
-	.string "to awaken that thing?$"
+	.string "Hey, is KID BUU really going to wake\n"
+	.string "that thing up?$"
 
 Route112_Text_YeahWeNeedMeteorite:
-	.string "Sounds like it, yeah. But I heard\n"
+	.string "Sounds like it. But GENERAL BLUE says\n"
 	.string "we need a METEORITE to do it.$"
 
 Route112_Text_OhThatsWhyCrewWentToFallarbor:
-	.string "Oh, I get it now. That's why the rest\n"
-	.string "of the crew went out to FALLARBOR.$"
+	.string "Oh, so that's why the rest of the squad\n"
+	.string "marched off to FALLARBOR.$"
 
 Route112_Text_CantLetAnyonePassUntilTheyreBack:
-	.string "You got it. And until they come back,\n"
-	.string "we're not to let anyone pass, right.$"
+	.string "Yep. And until they're back, nobody gets\n"
+	.string "past us. Sir, yes sir!$"
 
 Route112_Text_NotEasyToGetBackToLavaridge:
-	.string "Eh, I'd like to get to MAUVILLE, but if\n"
-	.string "I went down these ledges, it'd be no\l"
-	.string "easy matter to get back to LAVARIDGE.$"
+	.string "I'd love to get to MAUVILLE, but if I\n"
+	.string "hop down these ledges, I'll never get\l"
+	.string "back up to LAVARIDGE.\p"
+	.string "Maybe if I could fly like those martial\n"
+	.string "artists…$"
 
 Route112_Text_MtChimneyCableCarSign:
 	.string "MT. CHIMNEY CABLE CAR\n"
-	.string "“A short walk {UP_ARROW} way!”$"
+	.string "“Just a short walk {UP_ARROW} ahead!”$"
 
 Route112_Text_MtChimneySign:
 	.string "MT. CHIMNEY\p"
-	.string "“For LAVARIDGE TOWN or the summit,\n"
-	.string "please take the CABLE CAR.”$"
+	.string "“To reach LAVARIDGE TOWN or the\n"
+	.string "summit, please ride the CABLE CAR.”$"
 
 Route112_Text_RouteSignLavaridge:
 	.string "ROUTE 112\n"

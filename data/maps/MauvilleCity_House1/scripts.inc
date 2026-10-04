@@ -20,10 +20,12 @@ MauvilleCity_House1_EventScript_ReceivedRockSmash::
 
 MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 	.string "Woohoo!\p"
-	.string "I hear people call me the ROCK SMASH\n"
-	.string "GUY, but I find that sort of degrading.\p"
-	.string "I think I deserve a bit more respect,\n"
-	.string "like maybe the ROCK SMASH DUDE.\p"
+	.string "People call me the ROCK SMASH GUY, but I\n"
+	.string "find that sort of degrading.\p"
+	.string "I've been smashing boulders with my\n"
+	.string "bare fists since before it was cool. I\l"
+	.string "deserve more respect, like maybe the\l"
+	.string "ROCK SMASH DUDE.\p"
 	.string "Woohoo!\p"
 	.string "Anyways, your POKéMON look pretty\n"
 	.string "strong.\p"
@@ -32,15 +34,15 @@ MauvilleCity_House1_Text_ImRockSmashDudeTakeThis:
 
 MauvilleCity_House1_Text_ExplainRockSmash:
 	.string "That HM contains ROCK SMASH.\p"
-	.string "If you come across large boulders\n"
-	.string "that block your path…\p"
-	.string "Well, use that HM move and smash\n"
-	.string "them right out of your way!\p"
+	.string "If you run into big boulders blocking\n"
+	.string "your path…\p"
+	.string "Well, use that HM move and smash them\n"
+	.string "right out of your way!\p"
 	.string "Yes, sir! Smash rocks aside, I say!\n"
 	.string "Woohoo!$"
 
 MauvilleCity_House1_Text_MonCanFlyOutOfSmashedRock:
 	.string "Oh, yes, if you smash a rock, a POKéMON\n"
-	.string "could come flying out of hiding.\p"
+	.string "might come flying out of hiding.\p"
 	.string "Woohoo!$"
 

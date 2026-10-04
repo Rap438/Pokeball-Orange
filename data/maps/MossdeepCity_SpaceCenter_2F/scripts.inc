@@ -340,54 +340,56 @@ MossdeepCity_SpaceCenter_2F_EventScript_BrendanRayquazaCall::
 	return
 
 MossdeepCity_SpaceCenter_2F_Text_MossdeepIdealForRockets:
-	.string "MOSSDEEP has mainly sunny weather,\n"
-	.string "and its winds are stable.\p"
-	.string "It's an ideal location for launching\n"
+	.string "MOSSDEEP has mostly sunny weather, and\n"
+	.string "its winds are steady.\p"
+	.string "It's an ideal spot for launching\n"
 	.string "rockets.$"
 
 MossdeepCity_SpaceCenter_2F_Text_WhyWouldMagmaStealRocketFuel:
-	.string "Why would MAJIN ARMY want to steal\n"
-	.string "our rocket fuel in the first place?$"
+	.string "Why would RED RIBBON ARMY want to\n"
+	.string "steal our rocket fuel in the first\l"
+	.string "place?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WouldveLikedToBeAstronaut:
-	.string "If only I was a little younger, I would\n"
-	.string "have liked being an astronaut…\p"
+	.string "If I were just a little younger, I'd have\n"
+	.string "loved to be an astronaut…\p"
 	.string "No… It's not too late!\n"
-	.string "I can and will try!$"
+	.string "I can, and I will, try!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MagmaCantGetAwayWithThis:
-	.string "If MAJIN ARMY takes the rocket fuel,\n"
-	.string "I won't be able to go to space!\p"
-	.string "They can't be allowed to get away\n"
-	.string "with such an outrage!$"
+	.string "If RED RIBBON ARMY takes the rocket\n"
+	.string "fuel, I won't be able to go to space!\p"
+	.string "They can't be allowed to get away with\n"
+	.string "such an outrage!$"
 
 MossdeepCity_SpaceCenter_2F_Text_WishOrdinaryPeopleCouldGoIntoSpace:
 	.string "I wish ordinary people could go into\n"
-	.string "space one day…$"
+	.string "space one day, even those who can't\l"
+	.string "fly…$"
 
 MossdeepCity_SpaceCenter_2F_Text_DoesMagmaWantToGoToSpace:
-	.string "MAJIN ARMY…\n"
+	.string "RED RIBBON ARMY…\n"
 	.string "Do they want to go to space, too?$"
 
 MossdeepCity_SpaceCenter_2F_Text_YoureOutnumberedTakeUsOn:
-	.string "What's wrong with you?\p"
-	.string "You're outnumbered three to one,\n"
-	.string "but you still want to take us on?$"
+	.string "Hey, kid!\p"
+	.string "You're outnumbered three to one, and\n"
+	.string "you still want to take us on?$"
 
 MossdeepCity_SpaceCenter_2F_Text_GoodAnswer:
 	.string "Good answer!\n"
-	.string "That's what a smart person'll do!$"
+	.string "Retreating is what a smart person does!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Intro:
-	.string "A reckless go-getter, are you?\n"
-	.string "Okay, I'll go first!$"
+	.string "A reckless go-getter, huh?\n"
+	.string "Fine, I'll go first!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5Defeat:
 	.string "I lost!\n"
 	.string "But!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Intro:
-	.string "It's too soon to be relieved!\n"
+	.string "Don't relax yet!\n"
 	.string "I'm up next!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
@@ -395,97 +397,92 @@ MossdeepCity_SpaceCenter_2F_Text_Grunt6Defeat:
 	.string "But!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Intro:
-	.string "I bet you want to take a break.\n"
-	.string "But I'm not about to let you do that!$"
+	.string "You want a break, don't you? Too bad!\n"
+	.string "I'm not letting you rest!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7Defeat:
 	.string "We should've taken a break…\n"
 	.string "That's what we should've done…$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt6PostBattle:
-	.string "Three of us here, and look at the sorry\n"
-	.string "mess we got ourselves into.$"
+	.string "Three of us, and look at the sorry mess\n"
+	.string "we got ourselves into.$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt7PostBattle:
-	.string "We three losing like this…\n"
-	.string "We look worse than usual by triple!$"
+	.string "We three losing like this… We look worse\n"
+	.string "than usual by triple!$"
 
 MossdeepCity_SpaceCenter_2F_Text_Grunt5PostBattle:
-	.string "Are we being useful to our leader\n"
-	.string "at all?$"
+	.string "Are we being any use to the boss at all?$"
 
 MossdeepCity_SpaceCenter_2F_Text_WellTakeCareOfYou:
-	.string "Hehehe!\p"
-	.string "We come all the way here to get some\n"
-	.string "fuel, and we're interfered with again!\p"
-	.string "If you're going to mess with us too,\n"
-	.string "we'll take care of you at the same time!$"
+	.string "Fufufu!\p"
+	.string "We come all this way for a little fuel,\n"
+	.string "and we get interfered with again!\p"
+	.string "If you want to meddle too, fine. We'll\n"
+	.string "crush you both at once!$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieDontInterfere:
-	.string "MAJIN BUU: Clear out of the way!\n"
-	.string "Don't you dare interfere!$"
+	.string "KID BUU: Move! Hee hee hee!\n"
+	.string "Don't get in the way!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenWhyStealRocketFuel:
-	.string "SUPREME KAI: MAJIN ARMY…\p"
-	.string "What's the point of stealing rocket\n"
-	.string "fuel?$"
+	.string "SUPREME KAI: RED RIBBON ARMY…\p"
+	.string "What do you want with rocket fuel?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieUseFuelToEruptVolcano:
-	.string "MAJIN BUU: Fufufu… Since you're so\n"
-	.string "curious, you deserve an explanation.\p"
-	.string "We're going to jettison the entire\n"
-	.string "load into MT. CHIMNEY!\p"
-	.string "With GROUDON gone, we have no need\n"
-	.string "for that slag heap of a mountain!\p"
-	.string "So we'll use the fuel's power to make\n"
-	.string "the volcano erupt!\p"
-	.string "It will be savage!$"
+	.string "KID BUU: Hee hee hee! You're so curious,\n"
+	.string "so Buu will tell you.\p"
+	.string "We're going to shoot the whole load into\n"
+	.string "MT. CHIMNEY!\p"
+	.string "GROUDON is gone, so who needs that slag\n"
+	.string "heap of a mountain?\p"
+	.string "The fuel's power will make the volcano\n"
+	.string "go BOOM!\p"
+	.string "It'll be so much fun!$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
 	.string "SUPREME KAI: {PLAYER}{KUN}!\n"
-	.string "You're going to help me?\p"
-	.string "Let's go into battle together!\n"
+	.string "You'll fight alongside me?\p"
+	.string "Then let's take them on together!\n"
 	.string "Are you ready?$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
-	.string "SUPREME KAI: Then, hurry!\n"
-	.string "Get ready quickly!$"
+	.string "SUPREME KAI: Then hurry!\n"
+	.string "Get ready, quickly!$"
 
 MossdeepCity_SpaceCenter_2F_Text_JustWantToExpandLand:
-	.string "All I want…\n"
-	.string "I just want to expand the land mass…$"
+	.string "All I wanted…\n"
+	.string "Was a world with more land…$"
 
 MossdeepCity_SpaceCenter_Text_TabithaDefeat:
-	.string "I'm with our leader…$"
+	.string "Boss… I'll follow you to the end…$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeFailedIsAquaAlsoMisguided:
-	.string "MAJIN BUU: We failed to make the\n"
-	.string "volcano erupt…\p"
-	.string "We failed to control GROUDON after\n"
-	.string "we had awoken it…\p"
-	.string "Is our goal to expand the land\n"
-	.string "misguided?\p"
+	.string "KID BUU: The volcano didn't go boom…\p"
+	.string "And GROUDON wouldn't listen to Buu. Not\n"
+	.string "even a little.\p"
+	.string "Not fun. Not fun at all.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "If…\n"
-	.string "If we, MAJIN ARMY, are wrong…\l"
+	.string "Hmm…\n"
+	.string "If Buu's game is a bust…\l"
 	.string "… … … … … …\p"
-	.string "Then might SAIYAN ARMY's goal to\n"
-	.string "expand the sea also be equally\l"
-	.string "misguided?$"
+	.string "Then maybe Gero's game with the sea is a\n"
+	.string "bust, too?$"
 
 MossdeepCity_SpaceCenter_2F_Text_MaxieWeWillGiveUp:
-	.string "MAJIN BUU: All right…\n"
-	.string "We will give up on the fuel…\p"
-	.string "There appear to be more important\n"
-	.string "matters that I must examine…$"
+	.string "KID BUU: Hmph… Buu gives up on the fuel.\p"
+	.string "Something more fun is waiting\n"
+	.string "somewhere…\p"
+	.string "Buu has to go find it. Hee hee…$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenThankYouComeSeeMeAtHome:
-	.string "SUPREME KAI: Whew, that was too tense.\n"
+	.string "SUPREME KAI: Whew, that was tense.\n"
 	.string "{PLAYER}{KUN}, thank you.\p"
-	.string "I have something to give you as\n"
-	.string "thanks for your support.\p"
-	.string "Please come see me at home\n"
-	.string "after this.\p"
-	.string "Oh, yes, I don't live in RUSTBORO CITY.\n"
-	.string "I live right here on this island.$"
+	.string "I have something to give you as thanks\n"
+	.string "for your help.\p"
+	.string "Please come see me at home after this.\p"
+	.string "Oh, yes. I'm not from RUSTBORO CITY,\n"
+	.string "where DR. BRIEF lives. I live right here\l"
+	.string "on this island.$"

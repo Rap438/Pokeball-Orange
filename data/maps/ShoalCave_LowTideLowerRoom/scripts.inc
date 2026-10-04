@@ -47,12 +47,13 @@ ShoalCave_LowTideLowerRoom_EventScript_ReceivedFocusBand::
 	end
 
 ShoalCave_LowTideLowerRoom_Text_CanOvercomeColdWithFocus:
-	.string "The penetrating cold around these\n"
-	.string "parts is an impediment to training.\p"
-	.string "But with focus, one can overcome!\p"
-	.string "With this SAIYAN PRIDE, buckle down and\n"
+	.string "The bitter cold around here gets in the\n"
+	.string "way of training.\p"
+	.string "But with focus, a warrior can overcome\n"
+	.string "anything!\p"
+	.string "With this SAIYAN PRIDE, dig in and\n"
 	.string "withstand the cold!$"
 
 ShoalCave_LowTideLowerRoom_Text_EverythingStartsWithFocus:
-	.string "Everything starts with focus!$"
+	.string "Focus is where all strength begins!$"
 

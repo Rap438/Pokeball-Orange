@@ -21,11 +21,11 @@
 
 static const u32 sShadowSGfx[] = INCGFX_U32("graphics/dbz/shadow_s.png", ".4bpp");
 static const u32 sShadowLGfx[] = INCGFX_U32("graphics/dbz/shadow_l.png", ".4bpp");
-static const u16 sShadowPal[] = INCGFX_U16("graphics/dbz/shadow_s.png", ".gbapal");
+extern const u16 gDBZHudPalette[];   // shared: index 1 is the shadow colour
 
 static const struct SpriteSheet sShadowSheetS = { sShadowSGfx, 16 * 8 / 2, TAG_DBZ_SHADOW_S };
 static const struct SpriteSheet sShadowSheetL = { sShadowLGfx, 32 * 8 / 2, TAG_DBZ_SHADOW_L };
-static const struct SpritePalette sShadowPalette = { sShadowPal, TAG_DBZ_SHADOW_PAL };
+static const struct SpritePalette sShadowPalette = { gDBZHudPalette, TAG_DBZ_SHADOW_PAL };
 
 static const struct OamData sOam_ShadowS = {
     .objMode = ST_OAM_OBJ_BLEND,
@@ -75,7 +75,7 @@ static void SpriteCB_DbzShadow(struct Sprite *sprite)
     sprite->y2 = 0;
     sprite->oam.priority = linked->oam.priority;
     sprite->subpriority = linked->subpriority + 1;
-    sprite->invisible = linked->invisible || sprite->data[7];
+    sprite->invisible = (linked->invisible && !(sprite->sObjId == gPlayerAvatar.objectEventId && DBZ_PlayerOverlayActive())) || sprite->data[7];
 }
 
 static bool8 WantsShadow(u8 i)
@@ -84,7 +84,11 @@ static bool8 WantsShadow(u8 i)
     const struct ObjectEventGraphicsInfo *info;
     u8 behavior;
 
-    if (!obj->active || obj->invisible || obj->spriteId >= MAX_SPRITES || !gSprites[obj->spriteId].inUse)
+    if (!DBZ_OptShadows())
+        return FALSE;
+    if (!obj->active || obj->spriteId >= MAX_SPRITES || !gSprites[obj->spriteId].inUse)
+        return FALSE;
+    if (obj->invisible && !(i == gPlayerAvatar.objectEventId && DBZ_PlayerOverlayActive()))
         return FALSE;
     if (obj->hasShadow)   // the game's own jump shadow is showing
         return FALSE;
@@ -151,7 +155,7 @@ void DBZ_UpdateShadows(void)
         }
     }
     // shadows are semi-transparent: blend them over the map layers (unless weather is using the blender)
-    if (GetGpuReg(REG_OFFSET_BLDCNT) == 0)
+    if (DBZ_OptShadows() && GetGpuReg(REG_OFFSET_BLDCNT) == 0)
     {
         SetGpuReg(REG_OFFSET_BLDCNT, BLDCNT_TGT2_BG1 | BLDCNT_TGT2_BG2 | BLDCNT_TGT2_BG3 | BLDCNT_TGT2_BD);
         SetGpuReg(REG_OFFSET_BLDALPHA, BLDALPHA_BLEND(7, 12));
@@ -217,7 +221,7 @@ void DBZ_ApplyTimeTint(u16 offset, u16 count)
 {
     u8 tod;
     u16 i;
-    if (!MapGetsDaylight())
+    if (!MapGetsDaylight() || !DBZ_OptDayNight())
         return;
     tod = TimeOfDay();
     if (tod == TOD_DAY)

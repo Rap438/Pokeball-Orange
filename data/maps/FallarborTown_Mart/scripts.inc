@@ -46,19 +46,20 @@ FallarborTown_Mart_EventScript_Skitty::
 	end
 
 FallarborTown_Mart_Text_DecidingSkittyEvolve:
-	.string "I'm having a hard time deciding if I\n"
-	.string "should make my SKITTY evolve or not.\p"
-	.string "I only have to use this MOON STONE,\n"
-	.string "but it's so hard to decide…\p"
-	.string "If I make it evolve, it will become\n"
-	.string "much stronger.\p"
-	.string "But it will look so different, too.$"
+	.string "I can't decide whether to evolve my\n"
+	.string "SKITTY or not.\p"
+	.string "I only have to use this MOON STONE, but\n"
+	.string "it's such a hard choice…\p"
+	.string "It would get much stronger, kind of like\n"
+	.string "a power-up to the next level.\p"
+	.string "But it would look so different, too.$"
 
 FallarborTown_Mart_Text_Skitty:
-	.string "SKITTY: Miyao?$"
+	.string "SKITTY: Meeyao?$"
 
 FallarborTown_Mart_Text_SellNuggetIFound:
-	.string "This ZENI POUCH I found here…\n"
-	.string "I suppose I'll have to sell it, seeing\l"
-	.string "as how it has no other use.$"
+	.string "I found this ZENI POUCH on the road.\p"
+	.string "I guess I'll sell it, since it's no good\n"
+	.string "for anything else. At least it'll pay for\l"
+	.string "lunch!$"
 

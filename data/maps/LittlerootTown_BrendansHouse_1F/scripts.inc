@@ -275,23 +275,23 @@ LittlerootTown_BrendansHouse_1F_Movement_BrendanGoUpstairs2:
 	step_end
 
 PlayersHouse_1F_Text_IsntItNiceInHere:
-	.string "CHI-CHI: See, {PLAYER}?\n"
-	.string "Isn't it nice in here, too?$"
+	.string "CHI-CHI: Well, {PLAYER}?\n"
+	.string "It's cozy in here too, isn't it?$"
 
 PlayersHouse_1F_Text_MoversPokemonGoSetClock:
-	.string "The mover's POKéMON do all the work\n"
-	.string "of moving us in and cleaning up after.\l"
-	.string "This is so convenient!\p"
+	.string "The CAPSULE CORP. movers' POKéMON\n"
+	.string "unpacked everything and even tidied\l"
+	.string "up afterward. How wonderful!\p"
 	.string "{PLAYER}, your room is upstairs.\n"
-	.string "Go check it out, dear!\p"
-	.string "DAD bought you a new clock to mark\n"
-	.string "our move here.\l"
+	.string "Go have a look, dear!\p"
+	.string "I bought a new clock to mark our\n"
+	.string "move here.\l"
 	.string "Don't forget to set it!$"
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
 	.string "CHI-CHI: Well, {PLAYER}?\p"
-	.string "Aren't you interested in seeing your\n"
-	.string "very own room?$"
+	.string "Don't you want to see your very own\n"
+	.string "room?$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
 	.string "CHI-CHI: {PLAYER}.\p"
@@ -299,55 +299,56 @@ PlayersHouse_1F_Text_GoSetTheClock:
 
 PlayersHouse_1F_Text_OhComeQuickly:
 	.string "CHI-CHI: Oh! {PLAYER}, {PLAYER}!\n"
-	.string "Quick! Come quickly!$"
+	.string "Hurry! Come here, quick!$"
 
 PlayersHouse_1F_Text_MaybeDadWillBeOn:
 	.string "CHI-CHI: Look! It's PETALBURG GYM!\n"
-	.string "Maybe KRILLIN will be on!$"
+	.string "Maybe KRILLIN will show up!$"
 
 PlayersHouse_1F_Text_ItsOverWeMissedHim:
 	.string "CHI-CHI: Oh… It's over.\p"
-	.string "I think KRILLIN was on, but we missed\n"
-	.string "him. Too bad.$"
+	.string "I think KRILLIN was on for a second,\n"
+	.string "but we missed him. What a shame.$"
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
-	.string "Oh, yes.\n"
-	.string "One of KRILLIN's friends lives in town.\p"
-	.string "MASTER ROSHI is his name.\p"
-	.string "He lives right next door, so you should\n"
-	.string "go over and introduce yourself.$"
+	.string "Oh, that's right.\n"
+	.string "KRILLIN has an old friend in this town.\p"
+	.string "MASTER ROSHI, the Turtle Hermit.\p"
+	.string "He lives right next door, so be a\n"
+	.string "good boy and go say hello.$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
-	.string "CHI-CHI: See you, honey!$"
+	.string "CHI-CHI: See you later, honey!$"
 
 PlayersHouse_1F_Text_DidYouMeetProfBirch:
-	.string "CHI-CHI: Did you introduce yourself to\n"
-	.string "MASTER ROSHI?$"
+	.string "CHI-CHI: Did you say hello to\n"
+	.string "MASTER ROSHI yet?$"
 
 PlayersHouse_1F_Text_YouShouldRestABit:
-	.string "CHI-CHI: How are you doing, {PLAYER}?\n"
-	.string "You look a little tired.\p"
-	.string "I think you should rest a bit.$"
+	.string "CHI-CHI: How are you feeling, {PLAYER}?\n"
+	.string "You look a little worn out.\p"
+	.string "Come sit down and rest a while.$"
 
 PlayersHouse_1F_Text_TakeCareHoney:
-	.string "CHI-CHI: Take care, honey!$"
+	.string "CHI-CHI: Take care out there, honey!$"
 
 PlayersHouse_1F_Text_GotDadsBadgeHeresSomethingFromMom:
-	.string "CHI-CHI: Oh? Did KRILLIN give you that\n"
+	.string "CHI-CHI: Oh? KRILLIN gave you that\n"
 	.string "BADGE?\p"
-	.string "Then here's something from CHI-CHI!$"
+	.string "Then here's a little something from\n"
+	.string "me!$"
 
 PlayersHouse_1F_Text_DontPushYourselfTooHard:
 	.string "Don't push yourself too hard, dear.\n"
-	.string "You can always come home.\p"
-	.string "Go for it, honey!$"
+	.string "Home is always here for you.\p"
+	.string "Go get 'em, honey!$"
 
 PlayersHouse_1F_Text_IsThatAPokenav:
-	.string "CHI-CHI: What is that, honey? A\n"
+	.string "CHI-CHI: What's that, honey? A\n"
 	.string "POKéNAV? Someone from CAPSULE CORP.\l"
 	.string "gave it to you?\p"
-	.string "Well, honey, how about registering\n"
-	.string "your mom?\p"
+	.string "Well then, how about registering me?\n"
+	.string "That way you can't forget to call home!\p"
 	.string "… … …$"
 
 PlayersHouse_1F_Text_RegisteredMom:
@@ -361,70 +362,72 @@ PlayersHouse_1F_Text_Vigoroth2:
 	.string "Huggoh, uggo uggo…$"
 
 PlayersHouse_1F_Text_ReportFromPetalburgGym:
-	.string "INTERVIEWER: …We brought you this\n"
-	.string "report from in front of PETALBURG GYM.$"
+	.string "REPORTER: …And that was our live report\n"
+	.string "from outside KRILLIN's PETALBURG GYM.$"
 
 PlayersHouse_1F_Text_TheresAMovieOnTV:
-	.string "There is a movie on TV.\p"
-	.string "Two men are dancing on a big piano\n"
-	.string "keyboard.\p"
+	.string "A martial arts movie is on TV.\p"
+	.string "A man in a golden cape strikes a pose\n"
+	.string "and shouts something about being the\l"
+	.string "champion of the world.\p"
 	.string "Better get going!$"
 
 PlayersHouse_1F_Text_RunningShoesManual:
 	.string "It's the instruction booklet for the\n"
 	.string "RUNNING SHOES.\p"
-	.string "“Press the B Button to run while\n"
-	.string "wearing your RUNNING SHOES.\p"
-	.string "“Lace up your RUNNING SHOES and hit\n"
-	.string "the road running!”$"
+	.string "“Hold the B Button while wearing your\n"
+	.string "RUNNING SHOES to dash at top speed.\p"
+	.string "“Lace them up and race into the\n"
+	.string "great outdoors!”$"
 
 PlayersHouse_1F_Text_TicketFromBrineyCameForYou:
 	.string "KRILLIN: Hm?\p"
 	.string "Hey, it's {PLAYER}!\p"
-	.string "It's been a while since I saw you,\n"
-	.string "but you look…stronger, somehow.\p"
-	.string "That's the impression I get.\n"
-	.string "But your old man hasn't given up yet!\p"
-	.string "Oh, yes, I have something for you.\n"
-	.string "This came to you from someone named\l"
+	.string "It's been a while, but you look…\n"
+	.string "stronger, somehow.\p"
+	.string "I can feel it, even without a SCOUTER.\n"
+	.string "But don't count your old buddy out yet!\p"
+	.string "Oh, right, I've got something for you.\n"
+	.string "This came for you from a guy named\l"
 	.string "MR. BRINEY.$"
 
 PlayersHouse_1F_Text_PortsInSlateportLilycove:
 	.string "KRILLIN: Hm, a TICKET for a ferry?\p"
-	.string "If I recall, there are ferry ports in\n"
-	.string "SLATEPORT and LILYCOVE.$"
+	.string "If I remember right, there are ferry\n"
+	.string "ports at SLATEPORT and LILYCOVE.$"
 
 PlayersHouse_1F_Text_BetterGetBackToGym:
 	.string "I'd better get back to PETALBURG GYM.\p"
-	.string "MOM, thanks for looking after the house\n"
-	.string "while I'm away.$"
+	.string "CHI-CHI, thanks for the great meal!\n"
+	.string "The GYM won't run itself.$"
 
 PlayersHouse_1F_Text_DadShouldStayLonger:
-	.string "CHI-CHI: That KRILLIN of yours…\p"
-	.string "He comes home for the first time in a\n"
-	.string "while, but all he talks about is POKéMON.\p"
-	.string "He should relax and stay a little longer.$"
+	.string "CHI-CHI: Honestly, that KRILLIN…\p"
+	.string "He stops by for the first time in ages,\n"
+	.string "and all he talks about is POKéMON and\l"
+	.string "training.\p"
+	.string "He could at least stay for seconds.$"
 
 PlayersHouse_1F_Text_IsThatABreakingStory:
 	.string "CHI-CHI: Is that a breaking news\n"
 	.string "story?$"
 
 PlayersHouse_1F_Text_LatiEmergencyNewsFlash:
-	.string "We bring you this emergency\n"
-	.string "news flash!\p"
+	.string "We interrupt this program with an\n"
+	.string "emergency news flash!\p"
 	.string "In various HOENN locales, there have\n"
 	.string "been reports of a BZZT…colored\l"
 	.string "POKéMON in flight.\p"
 	.string "The identity of this POKéMON is\n"
 	.string "currently unknown.\p"
-	.string "We now return you to the regular\n"
-	.string "movie program.$"
+	.string "Now, back to our regularly scheduled\n"
+	.string "movie.$"
 
 PlayersHouse_1F_Text_WhatColorDidTheySay:
 	.string "CHI-CHI: {PLAYER}, did you catch that?\p"
-	.string "What color did the announcer say\n"
+	.string "What color did the newscaster say\n"
 	.string "that POKéMON was?$"
 
 PlayersHouse_1F_Text_StillUnknownPokemon:
-	.string "CHI-CHI: Well, isn't that something!\n"
-	.string "There are still unknown POKéMON.$"
+	.string "CHI-CHI: My goodness, how about that!\n"
+	.string "There are still POKéMON nobody knows.$"

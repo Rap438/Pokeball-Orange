@@ -54,31 +54,37 @@ Route103_EventScript_RivalBrendan::
 
 Route103_EventScript_StartMayBattleTreecko::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TREECKO, Route103_Text_MayDefeated
+	call EventScript_DBZ_VegetaFight
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartMayBattleTorchic::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TORCHIC, Route103_Text_MayDefeated
+	call EventScript_DBZ_VegetaFight
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartMayBattleMudkip::
 	trainerbattle_no_intro TRAINER_MAY_ROUTE_103_MUDKIP, Route103_Text_MayDefeated
+	call EventScript_DBZ_VegetaFight
 	goto Route103_EventScript_AfterMayBattle
 	end
 
 Route103_EventScript_StartBrendanBattleTreecko::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_TREECKO, Route103_Text_BrendanDefeated
+	call EventScript_DBZ_VegetaFight
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
 Route103_EventScript_StartBrendanBattleTorchic::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_TORCHIC, Route103_Text_BrendanDefeated
+	call EventScript_DBZ_VegetaFight
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
 Route103_EventScript_StartBrendanBattleMudkip::
 	trainerbattle_no_intro TRAINER_BRENDAN_ROUTE_103_MUDKIP, Route103_Text_BrendanDefeated
+	call EventScript_DBZ_VegetaFight
 	goto Route103_EventScript_AfterBrendanBattle
 	end
 
@@ -277,65 +283,62 @@ Route103_EventScript_Isabelle::
 	end
 
 Route103_Text_MayRoute103Pokemon:
-	.string "VEGETA: Let's see… The POKéMON found\n"
-	.string "on ROUTE 103 include…$"
+	.string "VEGETA: Hmph. The POKéMON that live on\n"
+	.string "ROUTE 103 include…$"
 
 Route103_Text_MayLetsBattle:
-	.string "Oh, hi, {PLAYER}{KUN}!\p"
-	.string "…Oh, I see, my dad gave you\n"
-	.string "a POKéMON as a gift.\p"
-	.string "Since we're here, let's have a quick\n"
-	.string "battle!\p"
-	.string "I'll give you a taste of what being\n"
-	.string "a TRAINER is like.$"
+	.string "Hmph. KAKAROT{KUN}.\p"
+	.string "…So the old man gave you a POKéMON.\n"
+	.string "How generous.\p"
+	.string "Since we're both here, let's fight.\p"
+	.string "I'll show you what a real TRAINER\n"
+	.string "looks like!$"
 
 Route103_Text_MayDefeated:
-	.string "Wow! That's great!\n"
-	.string "{PLAYER}{KUN}, you're pretty good!$"
+	.string "Tch… I lost?!\n"
+	.string "Not bad, KAKAROT{KUN}. Not bad at all.$"
 
 Route103_Text_MayTimeToHeadBack:
-	.string "VEGETA: I think I know why my dad has\n"
-	.string "an eye out for you now.\p"
-	.string "I mean, you just got that POKéMON,\n"
-	.string "but it already likes you.\p"
-	.string "You might be able to befriend any\n"
-	.string "kind of POKéMON easily.\p"
-	.string "Well, it's time to head back to\n"
-	.string "the LAB.$"
+	.string "VEGETA: I think I see why the old man\n"
+	.string "has his eye on you.\p"
+	.string "You only just got that POKéMON, and it\n"
+	.string "already trusts you.\p"
+	.string "You might be able to befriend any kind\n"
+	.string "of POKéMON with ease. Annoying.\p"
+	.string "Don't get comfortable. I'll surpass\n"
+	.string "you. Now, back to the LAB.$"
 
 Route103_Text_BrendanRoute103Pokemon:
-	.string "VEGETA: Okay, so it's this one and\n"
-	.string "that one that live on ROUTE 103…$"
+	.string "VEGETA: So, these are the ones that live\n"
+	.string "on ROUTE 103…$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "Hey, it's {PLAYER}!\p"
-	.string "…Oh, yeah, Dad gave you a POKéMON.\p"
-	.string "Since we're here, how about a little\n"
-	.string "battle?\p"
-	.string "I'll teach you what being a TRAINER's\n"
-	.string "about!$"
+	.string "Oh, it's you, {PLAYER}.\p"
+	.string "…So the old man gave you a POKéMON.\p"
+	.string "Since we're here, how about a battle?\p"
+	.string "I'll show you what being a TRAINER\n"
+	.string "really takes!$"
 
 Route103_Text_BrendanDefeated:
-	.string "Huh, {PLAYER}, you're not too shabby.$"
+	.string "Hmph. Not bad, {PLAYER}.$"
 
 Route103_Text_BrendanTimeToHeadBack:
-	.string "VEGETA: I think I get it.\n"
-	.string "I think I know why my dad has his eye\l"
-	.string "out for you now.\p"
-	.string "Look, your POKéMON already likes you,\n"
-	.string "even though you just got it.\p"
-	.string "{PLAYER}, I get the feeling that you\n"
-	.string "could befriend any POKéMON with ease.\p"
-	.string "We should head back to the LAB.$"
+	.string "VEGETA: Now I get it. I see why the old\n"
+	.string "man has his eye on you.\p"
+	.string "Your POKéMON already trusts you, even\n"
+	.string "though you only just got it.\p"
+	.string "{PLAYER}, I get the feeling you could\n"
+	.string "befriend any POKéMON with ease.\p"
+	.string "Let's go back to the LAB.$"
 
 Route103_Text_ShouldHaveBroughtPotion:
-	.string "My POKéMON is staggeringly tired…\n"
+	.string "My POKéMON is completely worn out…\n"
 	.string "I should have brought a SENZU SPROUT…$"
 
 Route103_Text_ShortcutToOldale:
-	.string "If you cross the sea from here,\n"
-	.string "it'll be a shortcut to OLDALE TOWN.\p"
-	.string "Fufufu, that's useful, isn't it?$"
+	.string "If you cross the water from here,\n"
+	.string "it's a shortcut to OLDALE TOWN.\p"
+	.string "Heh heh heh, handy, isn't it?$"
 
 Route103_Text_RouteSign:
 	.string "ROUTE 103\n"

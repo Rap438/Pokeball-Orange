@@ -107,54 +107,53 @@ AquaHideout_B1F_EventScript_Grunt7::
 	end
 
 AquaHideout_B1F_Text_Grunt2Intro:
-	.string "If you want to know the secret about\n"
-	.string "our HIDEOUT, you have me to beat!$"
+	.string "Want to know our SEA BASE's big secret?\p"
+	.string "You'll have to get past me first!$"
 
 AquaHideout_B1F_Text_Grunt2Defeat:
-	.string "I can't win at all…$"
+	.string "I can't beat this kid at all…$"
 
 AquaHideout_B1F_Text_Grunt2PostBattle:
-	.string "Our HIDEOUT's secret?\p"
+	.string "Our BASE's secret?\p"
 	.string "Well, let's just say…\n"
 	.string "There's a submarine at the far end!\p"
-	.string "But, by now…\n"
+	.string "But by now…\n"
 	.string "Kekekeke…$"
 
 AquaHideout_B1F_Text_Grunt3Intro:
-	.string "Fuel supply loaded A-OK!\n"
-	.string "In-cruise snacks loaded A-OK!\p"
-	.string "Nothing left to do but KO a pesky\n"
-	.string "meddler!$"
+	.string "Fuel tanks loaded, no problem!\n"
+	.string "Lunch boxes loaded, no problem!\p"
+	.string "Nothing left to do but pound one nosy\n"
+	.string "brat!$"
 
 AquaHideout_B1F_Text_Grunt3Defeat:
-	.string "I took a serious licking!$"
+	.string "I got pounded instead!$"
 
 AquaHideout_B1F_Text_Grunt3PostBattle:
-	.string "Humph!\n"
-	.string "This was supposed to happen!\p"
-	.string "My mission was to just hold you up!$"
+	.string "Hmph! This was all part of the plan!\p"
+	.string "My orders were just to hold you up!$"
 
 AquaHideout_B1F_Text_Grunt5Intro:
-	.string "Yawn… Keeping watch over the\n"
-	.string "HIDEOUT bores me. I'll take you on.$"
+	.string "Yawn… Standing guard over the BASE is\n"
+	.string "so dull. Fine, I'll fight you.$"
 
 AquaHideout_B1F_Text_Grunt5Defeat:
 	.string "Yawn…\n"
 	.string "Oh, I lost…$"
 
 AquaHideout_B1F_Text_Grunt5PostBattle:
-	.string "If you scurry too much, other TEAM\n"
-	.string "AQUA members might get you.$"
+	.string "If you go dashing around down here, the\n"
+	.string "other soldiers will catch you.$"
 
 AquaHideout_B1F_Text_Grunt7Intro:
-	.string "Hey!\n"
-	.string "You there!\p"
-	.string "Which do you think is cooler?\n"
-	.string "SAIYAN ARMY's uniform or MAJIN ARMY's?$"
+	.string "Hey! You there!\p"
+	.string "Which do you think looks cooler? The\n"
+	.string "RED RIBBON logo on the jacket, or the\l"
+	.string "one on the cap?$"
 
 AquaHideout_B1F_Text_Grunt7Defeat:
-	.string "I lost in a cool way…$"
+	.string "I lost in style, at least…$"
 
 AquaHideout_B1F_Text_Grunt7PostBattle:
-	.string "If you have a cool uniform, you look\n"
-	.string "good even in a loss, don't you think?$"
+	.string "When you wear a cool uniform, you look\n"
+	.string "good even in a loss. Don't you think?$"

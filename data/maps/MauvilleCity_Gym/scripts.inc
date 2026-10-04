@@ -258,165 +258,167 @@ MauvilleCity_Gym_EventScript_GymStatue::
 	end
 
 MauvilleCity_Gym_Text_GymGuideAdvice:
-	.string "Hey, how's it going, CHAMPION-\n"
-	.string "bound {PLAYER}?\p"
-	.string "WATTSON, the LEADER of MAUVILLE\n"
-	.string "GYM, uses ELECTRIC-type POKéMON.\p"
+	.string "Hey, how's it going, CHAMPION-bound\n"
+	.string "{PLAYER}?\p"
+	.string "OX-KING, the LEADER of MAUVILLE GYM,\n"
+	.string "uses ELECTRIC-type POKéMON.\p"
 	.string "If you challenge him with WATER-type\n"
 	.string "POKéMON, he'll zap them! Bzzt!\p"
-	.string "And, he's put in switch-controlled\n"
-	.string "doors all over his GYM! Eccentric!\p"
+	.string "And he's rigged switch-controlled doors\n"
+	.string "all over this GYM! Eccentric!\p"
 	.string "Hey, go for it!$"
 
 MauvilleCity_Gym_Text_GymGuidePostVictory:
 	.string "Whoa, you're electrifying!\n"
-	.string "You've powered the door open!$"
+	.string "Looks like you powered that door open!$"
 
 MauvilleCity_Gym_Text_KirkIntro:
-	.string "My electric soul, it'll shatter your\n"
-	.string "dreams whole, whoa-yeahah!$"
+	.string "My ki crackles like lightning! I'll shock\n"
+	.string "you right out of your boots,\l"
+	.string "whoa-yeahah!$"
 
 MauvilleCity_Gym_Text_KirkDefeat:
-	.string "That was plugged in, amped up,\n"
-	.string "over-driven electric, man!$"
+	.string "That was wired, fired, ki-amped\n"
+	.string "electric, man!$"
 
 MauvilleCity_Gym_Text_KirkPostBattle:
-	.string "POKéMON and rock, it's all about heart,\n"
-	.string "whoa-yeah!$"
+	.string "POKéMON and martial arts, it's all about\n"
+	.string "heart, whoa-yeah!$"
 
 MauvilleCity_Gym_Text_ShawnIntro:
-	.string "I trained under BULMA!\n"
-	.string "There ain't no way I'll lose easily!$"
+	.string "I trained under OX-KING!\n"
+	.string "No way I'm losing easy!$"
 
 MauvilleCity_Gym_Text_ShawnDefeat:
-	.string "Unplugged and turned off…$"
+	.string "Unplugged and powered down…$"
 
 MauvilleCity_Gym_Text_ShawnPostBattle:
-	.string "BULMA, our GYM LEADER, has been\n"
-	.string "around for a long, long time.\p"
-	.string "He was battling even before your\n"
-	.string "daddy was born, that tough coot.$"
+	.string "OX-KING, our GYM LEADER, has been\n"
+	.string "around a long, long time.\p"
+	.string "He was throwing punches before you\n"
+	.string "were even born, that tough old coot.$"
 
 MauvilleCity_Gym_Text_BenIntro:
-	.string "This GYM's got puzzles!\n"
+	.string "This GYM is full of puzzles!\n"
 	.string "Isn't it fun?$"
 
 MauvilleCity_Gym_Text_BenDefeat:
-	.string "It's no fun to lose…$"
+	.string "Lost? That's no fun at all…$"
 
 MauvilleCity_Gym_Text_BenPostBattle:
-	.string "BULMA says he likes setting up\n"
-	.string "little traps with switches.$"
+	.string "OX-KING says he loves setting up little\n"
+	.string "traps with switches.$"
 
 MauvilleCity_Gym_Text_VivianIntro:
 	.string "With my charm and my POKéMON's moves,\n"
-	.string "you'll be shocked!$"
+	.string "you're in for a shock!$"
 
 MauvilleCity_Gym_Text_VivianDefeat:
-	.string "I'm shocked by your power!$"
+	.string "I'm shocked by your power level!$"
 
 MauvilleCity_Gym_Text_VivianPostBattle:
-	.string "I've heard that MAUVILLE was founded\n"
-	.string "by BULMA.\p"
-	.string "He was a TRAINER long before we\n"
-	.string "became TRAINERS.\l"
-	.string "He must know all sorts of things!$"
+	.string "They say OX-KING founded MAUVILLE and\n"
+	.string "wired it up himself.\p"
+	.string "He was a fighter long before we became\n"
+	.string "TRAINERS. He must know all sorts of\l"
+	.string "things!$"
 
 MauvilleCity_Gym_Text_AngeloIntro:
-	.string "I love shiny things!$"
+	.string "I love shiny things! Dragon Balls, gold\n"
+	.string "medals, you name it!$"
 
 MauvilleCity_Gym_Text_AngeloDefeat:
 	.string "Oh…\n"
-	.string "My eyes are frazzled…$"
+	.string "You dimmed my shine…$"
 
 MauvilleCity_Gym_Text_AngeloPostBattle:
-	.string "MAUVILLE GYM's BULMA has a shiny\n"
-	.string "forehead. It makes me happy!$"
+	.string "OX-KING's horned helmet is so shiny. It\n"
+	.string "makes me happy!$"
 
 MauvilleCity_Gym_Text_WattsonIntro:
-	.string "I've given up on my plans to convert\n"
-	.string "the city, I have.\p"
-	.string "And so, I put my time into making\n"
-	.string "door traps in my GYM.\p"
+	.string "I've given up on my big plans to light up\n"
+	.string "the whole world, I have.\p"
+	.string "So now I pour my time into rigging door\n"
+	.string "traps in my GYM.\p"
 	.string "Oh? Now, what are you doing here?\p"
-	.string "What's that? You say you've gotten\n"
-	.string "past all my rigged doors?\p"
-	.string "Wahahahah!\n"
-	.string "Now, that is amusing!\p"
-	.string "Then, I, BULMA, the LEADER of\n"
-	.string "MAUVILLE GYM, shall electrify you!$"
+	.string "What's that? You say you got past all\n"
+	.string "my rigged doors?\p"
+	.string "Wahahahah! Now that's amusing!\p"
+	.string "Then I, OX-KING, the LEADER of\n"
+	.string "MAUVILLE GYM, shall electrify you! And\l"
+	.string "don't you hold back just because we're\l"
+	.string "family!$"
 
 MauvilleCity_Gym_Text_WattsonDefeat:
 	.string "Wahahahah!\n"
 	.string "Fine, I lost!\p"
-	.string "You ended up giving me a thrill!\n"
+	.string "You gave me a real thrill!\n"
 	.string "Take this BADGE!$"
 
 MauvilleCity_Gym_Text_ReceivedDynamoBadge:
 	.string "{PLAYER} received the DYNAMO BADGE\n"
-	.string "from BULMA.$"
+	.string "from OX-KING.$"
 
 MauvilleCity_Gym_Text_ExplainDynamoBadgeTakeThis:
-	.string "With the DYNAMO BADGE, POKéMON can\n"
-	.string "use ROCK SMASH out of battle.\p"
-	.string "And, it will make your POKéMON a little\n"
-	.string "bit faster, too.\p"
+	.string "With the DYNAMO BADGE, your POKéMON\n"
+	.string "can use ROCK SMASH outside of battle.\p"
+	.string "And it'll make your POKéMON a little bit\n"
+	.string "faster, too.\p"
 	.string "Hmm…\n"
-	.string "You should take this, too!$"
+	.string "You should take this as well!$"
 
 MauvilleCity_Gym_Text_ExplainShockWave:
-	.string "That TM34 there contains SHOCK WAVE.\p"
-	.string "It's a trustworthy move that never\n"
-	.string "misses! You can count on it!\p"
+	.string "That TM34 holds SHOCK WAVE.\p"
+	.string "It's a reliable move that never misses!\n"
+	.string "You can count on it!\p"
 	.string "… … … … … …$"
 
 MauvilleCity_Gym_Text_RegisteredWattson:
-	.string "Registered GYM LEADER BULMA\n"
+	.string "Registered GYM LEADER OX-KING\n"
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "I swell with optimism, seeing a promising\n"
-	.string "young TRAINER like you!$"
+	.string "I swell with pride seeing a promising\n"
+	.string "young fighter like you!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
-	.string "Wahahahah!\n"
-	.string "Go forth and endeavor, youngster!$"
+	.string "Wahahahah! Go forth and give it your\n"
+	.string "all, youngster!$"
 
 MauvilleCity_Gym_Text_GymStatue:
 	.string "MAUVILLE CITY POKéMON GYM$"
 
 MauvilleCity_Gym_Text_GymStatueCertified:
 	.string "MAUVILLE CITY POKéMON GYM\p"
-	.string "WATTSON'S CERTIFIED TRAINERS:\n"
+	.string "OX-KING'S CERTIFIED TRAINERS:\n"
 	.string "{PLAYER}$"
 
 MauvilleCity_Gym_Text_WattsonPreRematch:
-	.string "BULMA: Ah-ha! Here at last!\n"
+	.string "OX-KING: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my POKéMON!\p"
 	.string "Wahahahaha!\p"
-	.string "I'll make sparks fly from you!\n"
-	.string "Don't say I didn't warn you!$"
+	.string "I'll make the sparks fly! Don't say I\n"
+	.string "didn't warn you!$"
 
 MauvilleCity_Gym_Text_WattsonRematchDefeat:
 	.string "Oof…\n"
-	.string "Our batteries ran dry…$"
+	.string "We're all out of juice…$"
 
 MauvilleCity_Gym_Text_WattsonPostRematch:
-	.string "BULMA: We'll have to recharge our\n"
-	.string "batteries again.\p"
-	.string "When we're fully charged up, we'll\n"
-	.string "gladly accept your challenge.\p"
-	.string "So, come back again sometime,\n"
-	.string "won't you?$"
+	.string "OX-KING: We'll have to recharge.\p"
+	.string "Once we're fully charged up, we'll gladly\n"
+	.string "take your challenge again.\p"
+	.string "So come back and see me sometime, won't\n"
+	.string "you?$"
 
 MauvilleCity_Gym_Text_WattsonRematchNeedTwoMons:
-	.string "BULMA: Ah-ha! Here at last!\n"
+	.string "OX-KING: Ah-ha! Here at last!\n"
 	.string "I know what you want.\l"
 	.string "You want to battle my POKéMON!\p"
 	.string "Wahahahaha!\p"
 	.string "Oops! Wait!\n"
-	.string "You've only one POKéMON with you!\p"
-	.string "Come see me with two or more\n"
-	.string "POKéMON, all right?$"
+	.string "You've only got one POKéMON with you!\p"
+	.string "Come see me with two or more POKéMON,\n"
+	.string "all right?$"
 

@@ -809,5 +809,7 @@ u16 DBZ_GrantWish(void)
         VarSet(VAR_DBZ_DB_SPOT_1 + i, 0);
     }
     VarSet(VAR_DBZ_DB_STONE_STEPS, DBZ_DB_STONE_STEPS);
+    if (VarGet(VAR_DBZ_WISHES) < 999)
+        VarSet(VAR_DBZ_WISHES, VarGet(VAR_DBZ_WISHES) + 1);
     return result;
 }

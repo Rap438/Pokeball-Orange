@@ -28,26 +28,26 @@ Route110_TrickHousePuzzle4_EventScript_Paula::
 	end
 
 Route110_TrickHousePuzzle4_Text_WroteSecretCodeLockOpened:
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
+	.string "{PLAYER} wrote the secret code on the\n"
+	.string "door.\p"
 	.string "“TRICK MASTER is cool.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle4_Text_CoraIntro:
-	.string "It's too much bother to think this out.\n"
-	.string "I only wanted to battle!$"
+	.string "Thinking this all through is too much\n"
+	.string "bother. I only wanted to battle!$"
 
 Route110_TrickHousePuzzle4_Text_CoraDefeat:
-	.string "Even though I lost, I still like battling\n"
-	.string "the best!$"
+	.string "Even though I lost, battling is still my\n"
+	.string "favorite thing!$"
 
 Route110_TrickHousePuzzle4_Text_CoraPostBattle:
-	.string "Wouldn't you agree? You would go\n"
-	.string "anywhere if TRAINERS were there.$"
+	.string "Wouldn't you agree? A real fighter goes\n"
+	.string "anywhere there are TRAINERS to battle.$"
 
 Route110_TrickHousePuzzle4_Text_YujiIntro:
-	.string "Heh! Boulders like this, I can brush\n"
+	.string "Heh! Boulders like these, I can flick\n"
 	.string "aside with one finger!$"
 
 Route110_TrickHousePuzzle4_Text_YujiDefeat:
@@ -55,16 +55,16 @@ Route110_TrickHousePuzzle4_Text_YujiDefeat:
 	.string "the puzzle…$"
 
 Route110_TrickHousePuzzle4_Text_YujiPostBattle:
-	.string "It's not good enough to be brawny…\n"
-	.string "You have to use your head. Be brainy!$"
+	.string "Being brawny isn't enough… You have to\n"
+	.string "use your head, too. Be brainy!$"
 
 Route110_TrickHousePuzzle4_Text_PaulaIntro:
-	.string "The TRICK HOUSE is getting trickier,\n"
-	.string "isn't it?$"
+	.string "The TRICK HOUSE keeps getting trickier,\n"
+	.string "doesn't it?$"
 
 Route110_TrickHousePuzzle4_Text_PaulaDefeat:
 	.string "Aaak!$"
 
 Route110_TrickHousePuzzle4_Text_PaulaPostBattle:
-	.string "Has anyone made it to the end?$"
+	.string "Has anyone actually made it to the end?$"
 

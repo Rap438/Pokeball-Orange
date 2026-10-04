@@ -14,32 +14,33 @@ BattleFrontier_Lounge8_EventScript_NinjaBoy::
 	end
 
 BattleFrontier_Lounge8_Text_WhatATrainerNeeds:
-	.string "What a TRAINER needs…\p"
+	.string "What a warrior needs…\p"
 	.string "Knowledge…\n"
 	.string "Strategy…\l"
 	.string "Luck…\l"
 	.string "Guts…\l"
 	.string "Spirit…\l"
-	.string "Bravery…\l"
-	.string "And ability…\p"
-	.string "Well, I'm all set in every way!\n"
-	.string "I'll be unstoppable at every building!\p"
+	.string "Courage…\l"
+	.string "And a sky-high power level…\p"
+	.string "I have all of it!\n"
+	.string "No building can stop me!\p"
 	.string "Huh? POKéMON?\n"
 	.string "What's that?$"
 
 BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains:
-	.string "Do you know about the FRONTIER\n"
+	.string "Have you heard of the FRONTIER\n"
 	.string "BRAINS?\p"
 	.string "That's what ANNOUNCER calls the seven\n"
-	.string "special TRAINERS that run the seven\l"
-	.string "facilities in the BATTLE FRONTIER.$"
+	.string "elite fighters who each rule one of\l"
+	.string "the seven facilities in the BATTLE\l"
+	.string "FRONTIER.$"
 
 BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling:
 	.string "At the BATTLE TOWER, an older girl\n"
-	.string "told me that I have a lot of talent\l"
+	.string "told me I've got a ton of talent\l"
 	.string "for battling!\p"
-	.string "I like POKéMON CONTESTS more!\p"
-	.string "But I'm no good at CONTESTS!\p"
-	.string "I guess having talent and liking\n"
-	.string "something aren't the same.$"
+	.string "But I like POKéMON CONTESTS more!\p"
+	.string "And I'm no good at CONTESTS!\p"
+	.string "I guess having talent and loving\n"
+	.string "something are two different things.$"
 

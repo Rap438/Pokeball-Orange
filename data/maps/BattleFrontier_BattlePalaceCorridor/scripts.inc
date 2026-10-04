@@ -120,30 +120,30 @@ BattleFrontier_BattlePalaceCorridor_Movement_AttendantEnterBattleRoom:
 	step_end
 
 BattleFrontier_BattlePalaceCorridor_Text_PeopleAndMonAreSame:
-	.string "People and POKéMON, they are but\n"
-	.string "the same…\p"
+	.string "People and POKéMON are one\n"
+	.string "and the same…\p"
 	.string "Their individual nature makes them\n"
-	.string "good at certain things, and not good\l"
+	.string "good at some things and not good\l"
 	.string "at others.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_LetMonDoWhatItLikes:
-	.string "Rather than trying to make a POKéMON\n"
-	.string "do what it dislikes, try to let it do\l"
-	.string "what it likes and is good at doing.\p"
-	.string "Put yourself in the POKéMON's position\n"
-	.string "and consider what moves it would like.$"
+	.string "Instead of forcing a POKéMON to do\n"
+	.string "what it dislikes, let it do what it\l"
+	.string "likes and is good at.\p"
+	.string "Put yourself in the POKéMON's place and\n"
+	.string "think about which moves it would like.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_MonDifferentWhenCornered:
 	.string "A POKéMON's nature is a remarkable\n"
 	.string "thing…\p"
-	.string "Some POKéMON behave in a completely\n"
-	.string "different way when they are cornered.$"
+	.string "Some POKéMON act in a completely\n"
+	.string "different way when they're cornered.$"
 
 BattleFrontier_BattlePalaceCorridor_Text_BeginningToUnderstandNature:
-	.string "Are you beginning to understand how\n"
-	.string "a POKéMON's nature makes it behave?$"
+	.string "Are you beginning to understand how a\n"
+	.string "POKéMON's nature shapes its behavior?$"
 
 BattleFrontier_BattlePalaceCorridor_Text_HeartfeltBondBetweenYouAndMons:
-	.string "Ah… I see a strong, heartfelt bond\n"
+	.string "Ah… I sense a strong, heartfelt bond\n"
 	.string "between you and your POKéMON…$"
 

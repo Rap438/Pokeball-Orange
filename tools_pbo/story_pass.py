@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""PokeBall Orange story/text pass: swap Emerald's cast, teams and companies for the DBZ versions.
+"""PokeBall Orange story/text pass (BASELINE ONLY: the script was hand-rewritten on top of this output
+in v0.2 - do not rerun, it rebuilds every text file from the Emerald originals).
+Original purpose: swap Emerald's cast, teams and companies for the DBZ versions.
 Rewraps any message page that no longer fits the text box. Idempotent (works from pristine copies)."""
 import re, glob, os, shutil, sys
 sys.path.insert(0, '/home/claude/tools')
@@ -26,18 +28,21 @@ SWAPS = [
     (r"\bMAY\b", "VEGETA"), (r"\bBRENDAN\b", "VEGETA"),
     (r"\bWALLY\b", "UUB"),
     # gym leaders, elite four, champion
-    (r"\bROXANNE\b", "YAMCHA"), (r"\bBRAWLY\b", "TIEN"), (r"\bWATTSON\b", "BULMA"), (r"\bFLANNERY\b", "VIDEL"),
+    (r"\bROXANNE\b", "YAMCHA"), (r"\bBRAWLY\b", "TIEN"), (r"\bWATTSON\b", "OX-KING"), (r"\bFLANNERY\b", "VIDEL"),
     (r"\bWINONA\b", "SAIYAMAN"), (r"\bTATE\b", "GOTEN"), (r"\bLIZA\b", "TRUNKS"), (r"\bJUAN\b", "PICCOLO"),
     (r"\bSIDNEY\b", "SUPER BUU"), (r"\bPHOEBE\b", "BABA"), (r"\bGLACIA\b", "ANDROID 18"), (r"\bDRAKE\b", "DENDE"),
     (r"\bWALLACE\b", "MR. SATAN"),
     (r"STEVEN STONE", "SUPREME KAI"), (r"\bSTEVEN\b", "SUPREME KAI"),
     (r"MR\. STONE", "DR. BRIEF"),
     (r"\bSCOTT\b", "ANNOUNCER"),
-    # villains
-    (r"TEAM MAGMA", "MAJIN ARMY"), (r"TEAM AQUA", "SAIYAN ARMY"),
-    (r"\bMAGMA\b", "MAJIN"), (r"\bAQUA\b", "SAIYAN"),
-    (r"\bMAXIE\b", "MAJIN BUU"), (r"\bARCHIE\b", "BROLY"),
-    (r"\bTABITHA\b", "DABURA"), (r"\bCOURTNEY\b", "PUI PUI"), (r"\bMATT\b", "NAPPA"), (r"\bSHELLY\b", "RADITZ"),
+    # villains: one army, the RED RIBBON ARMY, run by KID BUU (Magma = land squad, Aqua = sea squad under DR. GERO)
+    (r"TEAM MAGMA'S", "the RED RIBBON ARMY's"), (r"TEAM AQUA'S", "the RED RIBBON ARMY's"),
+    (r"TEAM MAGMA", "RED RIBBON ARMY"), (r"TEAM AQUA", "RED RIBBON ARMY"),
+    (r"MAGMA HIDEOUT", "RED RIBBON BASE"), (r"AQUA HIDEOUT", "RED RIBBON SEA BASE"),
+    (r"MAGMA EMBLEM", "RED RIBBON EMBLEM"),
+    (r"\bMAGMA\b", "RED RIBBON"), (r"\bAQUA\b", "RED RIBBON"),
+    (r"\bMAXIE\b", "KID BUU"), (r"\bARCHIE\b", "DR. GERO"),
+    (r"\bTABITHA\b", "GENERAL BLUE"), (r"\bCOURTNEY\b", "MAI"), (r"\bMATT\b", "COLONEL SILVER"), (r"\bSHELLY\b", "COLONEL VIOLET"),
     # companies
     (r"DEVON CORPORATION", "CAPSULE CORP."), (r"DEVON CORP\.", "CAPSULE CORP."), (r"\bDEVON\b", "CAPSULE CORP."),
     (r"CAPSULE CORP\.\.", "CAPSULE CORP."),
@@ -157,9 +162,12 @@ if __name__ == '__main__':
         if os.path.exists(f):
             cn += process_c(f)
     # names that must fit fixed-size fields
-    fixes = {f'{PE}/src/data/trainers.h': [('_("SUPREME KAI")', '_("SHIN")')],
-             f'{PE}/src/data/text/trainer_class_names.h': [('_("SAIYAN LEADER")', '_("SAIYAN BOSS")'),
-                                                           ('_("MAJIN LEADER")', '_("MAJIN BOSS")')]}
+    fixes = {f'{PE}/src/data/trainers.h': [('_("SUPREME KAI")', '_("SHIN")'), ('_("GENERAL BLUE")', '_("BLUE")'),
+                                           ('_("COLONEL SILVER")', '_("SILVER")'), ('_("COLONEL VIOLET")', '_("VIOLET")')],
+             f'{PE}/src/data/text/trainer_class_names.h': [('_("RED RIBBON ARMY")', '_("RED RIBBON")'),
+                                                           ('_("RED RIBBON ADMIN")', '_("RR OFFICER")'),
+                                                           ('[TRAINER_CLASS_AQUA_LEADER] = _("RED RIBBON LEADER")', '[TRAINER_CLASS_AQUA_LEADER] = _("RR SCIENTIST")'),
+                                                           ('[TRAINER_CLASS_MAGMA_LEADER] = _("RED RIBBON LEADER")', '[TRAINER_CLASS_MAGMA_LEADER] = _("RR LEADER")')]}
     for f, reps in fixes.items():
         t = open(f).read()
         for a, b in reps: t = t.replace(a, b)

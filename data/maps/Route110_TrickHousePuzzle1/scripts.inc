@@ -37,41 +37,43 @@ Route110_TrickHousePuzzle1_EventScript_Robin::
 	end
 
 Route110_TrickHousePuzzle1_Text_WroteSecretCodeLockOpened::
-	.string "{PLAYER} wrote down the secret code\n"
-	.string "on the door.\p"
+	.string "{PLAYER} wrote the secret code on the\n"
+	.string "door.\p"
 	.string "“TRICK MASTER is fabulous.”\n"
 	.string "… … … … … … … …\p"
 	.string "The lock clicked open!$"
 
 Route110_TrickHousePuzzle1_Text_SallyIntro:
-	.string "I'll hack and slash my way to victory\n"
-	.string "with the CUT we just learned!$"
+	.string "I'll chop my way to victory with the CUT\n"
+	.string "we just learned!$"
 
 Route110_TrickHousePuzzle1_Text_SallyDefeat:
-	.string "Why are you so serious?$"
+	.string "Why so serious?\n"
+	.string "I was just having fun!$"
 
 Route110_TrickHousePuzzle1_Text_SallyPostBattle:
-	.string "I never get tired of hacking\n"
-	.string "and slashing!$"
+	.string "I never get tired of chopping things\n"
+	.string "up! Hack, slash, repeat!$"
 
 Route110_TrickHousePuzzle1_Text_EddieIntro:
-	.string "I wandered into this weird house\n"
-	.string "by accident…$"
+	.string "I stumbled into this weird house by\n"
+	.string "accident…$"
 
 Route110_TrickHousePuzzle1_Text_EddieDefeat:
 	.string "And now I've lost…$"
 
 Route110_TrickHousePuzzle1_Text_EddiePostBattle:
-	.string "I lost my way, I lost a battle, and I'm\n"
-	.string "now even more lost… I can't get out…$"
+	.string "I lost my way, I lost a battle, and now\n"
+	.string "I'm even more lost… I can't find the\l"
+	.string "exit…$"
 
 Route110_TrickHousePuzzle1_Text_RobinIntro:
 	.string "Just who is the TRICK MASTER?$"
 
 Route110_TrickHousePuzzle1_Text_RobinDefeat:
-	.string "I lost while I was lost in thought!$"
+	.string "I lost because I was lost in thought!$"
 
 Route110_TrickHousePuzzle1_Text_RobinPostBattle:
-	.string "You're strong!\n"
-	.string "Just who are you?$"
+	.string "Whoa, you're strong! Are you secretly a\n"
+	.string "World Tournament champion?$"
 

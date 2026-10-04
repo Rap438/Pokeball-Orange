@@ -52,38 +52,37 @@ SootopolisCity_Gym_B1F_EventScript_Daphne::
 	end
 
 SootopolisCity_Gym_B1F_Text_AndreaIntro:
-	.string "I'll show you the sublime techniques\n"
-	.string "I learned from our LEADER PICCOLO!$"
+	.string "I'll show you the techniques I learned\n"
+	.string "from our LEADER, PICCOLO!$"
 
 SootopolisCity_Gym_B1F_Text_AndreaDefeat:
-	.string "Please forgive me, PICCOLO…$"
+	.string "Forgive me, PICCOLO…$"
 
 SootopolisCity_Gym_B1F_Text_AndreaPostBattle:
-	.string "Watch what happens if you crack all\n"
-	.string "the floor tiles.$"
+	.string "Crack every last floor tile and see what\n"
+	.string "happens.$"
 
 SootopolisCity_Gym_B1F_Text_CrissyIntro:
-	.string "You came all the way here, but you won't\n"
-	.string "get to see PICCOLO.\p"
-	.string "Not if you lose to me, you won't!$"
+	.string "You came all this way, but you won't get\n"
+	.string "to see PICCOLO.\p"
+	.string "Not if you lose to me!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyDefeat:
-	.string "You're strong!\n"
-	.string "I was fooled by your cute looks!$"
+	.string "You're strong!\p"
+	.string "Your cute face fooled me!$"
 
 SootopolisCity_Gym_B1F_Text_CrissyPostBattle:
-	.string "You might be good enough to avoid\n"
-	.string "being wiped out in one hit by PICCOLO.$"
+	.string "You might be good enough to survive a\n"
+	.string "single hit from PICCOLO.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneIntro:
-	.string "The sight of PICCOLO conducting\n"
-	.string "a battle…\p"
-	.string "The very beauty of it compelled me to\n"
-	.string "become a TRAINER.$"
+	.string "Seeing PICCOLO command a battle…\p"
+	.string "The sheer intensity of it made me want\n"
+	.string "to become a TRAINER.$"
 
 SootopolisCity_Gym_B1F_Text_DaphneDefeat:
-	.string "You battled with more beauty than\n"
-	.string "I could muster…$"
+	.string "You fought with more intensity than I\n"
+	.string "could muster…$"
 
 SootopolisCity_Gym_B1F_Text_DaphnePostBattle:
 	.string "The grace you bring to battle is\n"
@@ -96,45 +95,45 @@ SootopolisCity_Gym_B1F_Text_ConnieIntro:
 	.string "can be.$"
 
 SootopolisCity_Gym_B1F_Text_ConnieDefeat:
-	.string "Oh.\n"
+	.string "Oh.\p"
 	.string "You're strong.$"
 
 SootopolisCity_Gym_B1F_Text_ConniePostBattle:
-	.string "I'll tell you something good.\p"
-	.string "If you want to reach PICCOLO, you\n"
-	.string "need to walk on each floor tile once.$"
+	.string "Let me tell you something useful.\p"
+	.string "If you want to reach PICCOLO, you need\n"
+	.string "to walk on each floor tile once.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetIntro:
-	.string "The POKéMON GYM of the highest level\n"
+	.string "The POKéMON GYM with the highest level\n"
 	.string "in the HOENN region…\p"
 	.string "That's the SOOTOPOLIS GYM.$"
 
 SootopolisCity_Gym_B1F_Text_BridgetDefeat:
-	.string "What a high level you are!$"
+	.string "What a high power level you have!$"
 
 SootopolisCity_Gym_B1F_Text_BridgetPostBattle:
-	.string "Rather than being satisfied by being\n"
-	.string "in a strong GYM, I imagine training in\l"
-	.string "other places will make you stronger.\l"
-	.string "But above all, it looks more fun.$"
+	.string "Rather than being satisfied with a\n"
+	.string "strong GYM, I think training in other\l"
+	.string "places will make you stronger. And\l"
+	.string "above all, it looks more fun.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaIntro:
 	.string "I train my POKéMON together with\n"
-	.string "JUAN.\p"
+	.string "PICCOLO.\p"
 	.string "Don't think I'm a pushover.$"
 
 SootopolisCity_Gym_B1F_Text_OliviaDefeat:
 	.string "I was beaten…$"
 
 SootopolisCity_Gym_B1F_Text_OliviaPostBattle:
-	.string "I think you have potential.\n"
+	.string "I think you have potential.\p"
 	.string "Why don't you stay and train with us?$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyIntro:
-	.string "A graceful glide across the ice while\n"
-	.string "crossing no lines…\p"
-	.string "A TRAINER putting on that performance\n"
-	.string "would be elegantly beautiful!$"
+	.string "Gliding across the ice without crossing\n"
+	.string "a single line…\p"
+	.string "A TRAINER who can pull that off has\n"
+	.string "true mastery!$"
 
 SootopolisCity_Gym_B1F_Text_TiffanyDefeat:
 	.string "Well, excuse me?!$"
@@ -145,36 +144,36 @@ SootopolisCity_Gym_B1F_Text_TiffanyPostBattle:
 	.string "with how young or old you are.$"
 
 SootopolisCity_Gym_B1F_Text_BethanyIntro:
-	.string "When I'm with my POKéMON, the time\n"
-	.string "flies by before you can say, “Oops!”$"
+	.string "When I'm training with my POKéMON, the\n"
+	.string "hours vanish before I can say “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_BethanyDefeat:
 	.string "Oops!$"
 
 SootopolisCity_Gym_B1F_Text_BethanyPostBattle:
-	.string "I wish I could forget about lost causes\n"
-	.string "before I can manage an “Oops!”$"
+	.string "I wish I could shrug off a lost cause as\n"
+	.string "fast as I say “Oops!”$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaIntro:
-	.string "I can battle with really rare POKéMON\n"
+	.string "I can battle with really rare POKéMON,\n"
 	.string "if you'd like.$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaDefeat:
-	.string "Oh, there now! Did you have a good look\n"
+	.string "Oh, there now! Did you get a good look\n"
 	.string "at my POKéMON?$"
 
 SootopolisCity_Gym_B1F_Text_AnnikaPostBattle:
 	.string "I came to this GYM because PICCOLO\n"
 	.string "praised me for my darling POKéMON.\p"
-	.string "Oh, if only I'd met PICCOLO years ago\n"
+	.string "Oh, if only I'd met PICCOLO years ago,\n"
 	.string "when I was younger…$"
 
 SootopolisCity_Gym_B1F_Text_BriannaIntro:
-	.string "Giggle…\n"
+	.string "Giggle…\p"
 	.string "Your grim look is so charming.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaDefeat:
-	.string "Oh, dear.\n"
+	.string "Oh, dear.\p"
 	.string "I went much too easy on you.$"
 
 SootopolisCity_Gym_B1F_Text_BriannaPostBattle:

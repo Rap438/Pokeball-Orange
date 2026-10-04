@@ -520,8 +520,8 @@ LilycoveCity_Harbor_Movement_SailorBoardWithBrineyEast:
 LilycoveCity_Harbor_Text_FerryUnavailable:
 	.string "I beg your pardon?\n"
 	.string "You're looking for a ship?\p"
-	.string "I'm sorry, the ferry service isn't\n"
-	.string "available at present…$"
+	.string "I'm sorry, but the ferry service isn't\n"
+	.string "running at the moment…$"
 
 LilycoveCity_Harbor_Text_MayISeeYourTicket:
 	.string "Hello, are you here for the ferry?\n"
@@ -530,13 +530,12 @@ LilycoveCity_Harbor_Text_MayISeeYourTicket:
 LilycoveCity_Harbor_Text_NoTicket:
 	.string "{PLAYER} doesn't have the TICKET…\p"
 	.string "I'm terribly sorry.\p"
-	.string "You must have a TICKET to board\n"
-	.string "the ferry.$"
+	.string "You need a TICKET to board the ferry.$"
 
 LilycoveCity_Harbor_Text_FlashTicketWhereTo:
-	.string "{PLAYER} flashed the TICKET.\p"
+	.string "{PLAYER} showed the TICKET.\p"
 	.string "Perfect! That's all you need!\p"
-	.string "And where would you like to go?$"
+	.string "Now, where would you like to go?$"
 
 LilycoveCity_Harbor_Text_SailAnotherTime:
 	.string "Please sail with us another time!$"
@@ -552,17 +551,16 @@ LilycoveCity_Harbor_Text_PleaseBoard:
 	.string "departure.$"
 
 LilycoveCity_Harbor_Text_WhereWouldYouLikeToGo:
-	.string "Then, where would you like to go?$"
+	.string "Then where would you like to go?$"
 
 LilycoveCity_Harbor_Text_SailorFerryUnavailable:
-	.string "Until they finish making the ferry,\n"
-	.string "we sailors have nothing to do…\p"
-	.string "I wish they'd get a move on, the folks\n"
-	.string "at the SHIPYARD in SLATEPORT.$"
+	.string "Until they finish building the ferry, we\n"
+	.string "sailors have nothing to do…\p"
+	.string "I wish the folks at the SHIPYARD in\n"
+	.string "SLATEPORT would hurry up.$"
 
 LilycoveCity_Harbor_Text_SailorFerryAvailable:
-	.string "The ferry S.S. TIDAL is finally in\n"
-	.string "operation.\p"
+	.string "The ferry S.S. TIDAL is finally running.\p"
 	.string "The folks at the SHIPYARD in SLATEPORT\n"
-	.string "must've worked extra hard.\p"
-	.string "Well, it's my turn to get busy now!$"
+	.string "must have worked overtime.\p"
+	.string "Well, now it's my turn to get busy!$"

@@ -43,39 +43,40 @@ FortreeCity_House2_EventScript_WrongGuess::
 
 FortreeCity_House2_Text_HiddenPowersArousedByNature:
 	.string "People… POKéMON…\p"
-	.string "Their hidden powers are aroused by\n"
-	.string "living in natural environments…$"
+	.string "The power sleeping inside each of us\n"
+	.string "wakes up when we live close to nature…$"
 
 FortreeCity_House2_Text_CoinInWhichHand:
-	.string "Let this old woman see if your hidden\n"
-	.string "power has awoken…\p"
+	.string "Let this old woman see whether your\n"
+	.string "hidden power has awoken…\p"
 	.string "I hold a coin in my hand.\p"
-	.string "Now, tell me, have I palmed it in\n"
-	.string "the right hand? Or in the left?$"
+	.string "Now tell me, have I palmed it in the\n"
+	.string "right hand? Or in the left?$"
 
 FortreeCity_House2_Text_CorrectTryAgainWhichHand:
-	.string "Oh! Yes, correct!\p"
-	.string "We shall try again.\p"
-	.string "In which hand have I palmed the coin?\n"
-	.string "The right or left?$"
+	.string "Oh! Correct!\p"
+	.string "Let us try again.\p"
+	.string "In which hand is the coin hidden now?\n"
+	.string "The right or the left?$"
 
 FortreeCity_House2_Text_CorrectTryAgainWhichHand2:
-	.string "Oh! Yes, correct!\p"
-	.string "We shall try again.\p"
-	.string "In which hand have I palmed the coin?\n"
-	.string "The right or left?$"
+	.string "Oh! Correct again!\p"
+	.string "One more time, then.\p"
+	.string "Which hand holds the coin?\n"
+	.string "The right or the left?$"
 
 FortreeCity_House2_Text_YourHiddenPowerHasAwoken:
-	.string "Oh! Splendid!\n"
-	.string "Your hidden power has awoken!\p"
+	.string "Oh! Splendid! Your hidden power has\n"
+	.string "awoken, just like a true fighter's ki!\p"
 	.string "Here, take this and awaken the hidden\n"
-	.string "power of your POKéMON.$"
+	.string "power of your POKéMON, too.$"
 
 FortreeCity_House2_Text_ExplainHiddenPower:
 	.string "HIDDEN POWER is a move that changes\n"
-	.string "with the POKéMON.$"
+	.string "with each POKéMON.\p"
+	.string "No two hidden powers are quite alike.$"
 
 FortreeCity_House2_Text_YouGuessedWrong:
-	.string "No, too bad.\n"
-	.string "You guessed wrong.$"
+	.string "Ohh, too bad.\n"
+	.string "Wrong hand, young one.$"
 

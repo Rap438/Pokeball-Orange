@@ -1,8 +1,9 @@
 BerryBlender_Text_BlendWithTheBlendMaster:
 	.string "BLEND MASTER: Indeed I am!\n"
 	.string "The BLEND MASTER am I!\p"
-	.string "Blend with me, and you shall witness\n"
-	.string "the mastery I bring to blending!$"
+	.string "Blend with me, and witness the\n"
+	.string "mastery I honed beneath mountain\l"
+	.string "waterfalls!$"
 
 BerryBlender_Text_SeeMyMasteryInAction:
 	.string "BLEND MASTER: Hmmm! So, you wish to\n"
@@ -32,10 +33,12 @@ BerryBlender_Text_BlendMasterExplainBerryBlending:
 	.string "Hmmm!\p"
 	.string "Ah, but it is a simple process!\p"
 	.string "When the BLENDER's arrow comes to\n"
-	.string "your marker, just press the A Button.\p"
-	.string "That's all you have to do.\p"
+	.string "your marker, press the A Button.\p"
+	.string "That is all you must do.\p"
 	.string "When you see how precisely I press\n"
-	.string "the A Button, you will understand.$"
+	.string "the A Button, you will understand.\p"
+	.string "Timing is everything, as any\n"
+	.string "martial artist knows!$"
 
 BerryBlender_Text_BlendMasterLetsBerryBlender:
 	.string "Fine!\p"
@@ -45,10 +48,10 @@ BerryBlender_Text_BlendMasterLetsBerryBlender:
 
 BerryBlender_Text_BlendMasterNoPokeblockCase:
 	.string "Hmmm!\p"
-	.string "You don't appear to have gotten\n"
-	.string "the {POKEBLOCK} CASE!\p"
-	.string "I shall be here all day!\n"
-	.string "Obtain the {POKEBLOCK} CASE and hurry back!$"
+	.string "You do not appear to have the\n"
+	.string "{POKEBLOCK} CASE!\p"
+	.string "I shall be here all day! Obtain the\n"
+	.string "{POKEBLOCK} CASE and hurry back!$"
 
 BerryBlender_Text_BlendMasterPokeblockCaseFull:
 	.string "Hmmm!\p"
@@ -58,13 +61,13 @@ BerryBlender_Text_BlendMasterPokeblockCaseFull:
 
 BerryBlender_Text_WhoaAwesome:
 	.string "Whoa!\n"
-	.string "Awesome!$"
+	.string "His power level is off the charts!$"
 
 BerryBlender_Text_WickedlyFast:
-	.string "Wickedly fast!$"
+	.string "Faster than the eye can see!$"
 
 BerryBlender_Text_WhatAnExpert:
-	.string "What an expert!$"
+	.string "What a true master!$"
 
 BerryBlender_Text_MadeAmazingPokeblocksWithMaster:
 	.string "When I blended with the MASTER,\n"
@@ -72,14 +75,15 @@ BerryBlender_Text_MadeAmazingPokeblocksWithMaster:
 
 BerryBlender_Text_QualitiesOfBlendMaster:
 	.string "Eyes that track the arrow with\n"
-	.string "machinelike intensity…\p"
+	.string "the focus of a trained fighter…\p"
 	.string "A hand that taps the A Button\n"
-	.string "with clockwork-like precision…\p"
-	.string "Possessing these qualities makes\n"
+	.string "with clockwork precision…\p"
+	.string "Those are the qualities that make\n"
 	.string "the BLEND MASTER truly great.$"
 
 BerryBlender_Text_MasterWorksOnSkillsInMountains:
-	.string "The BLEND MASTER's supposed to work\n"
-	.string "on his skills deep in the mountains.\p"
-	.string "Sometimes, he comes to LILYCOVE\n"
+	.string "The BLEND MASTER is said to train\n"
+	.string "his skills deep in the mountains,\l"
+	.string "the way a true martial artist would.\p"
+	.string "Sometimes he comes to LILYCOVE\n"
 	.string "to blend BERRIES all day long.$"

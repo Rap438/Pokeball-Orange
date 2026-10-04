@@ -41,10 +41,10 @@ Underwater_SeafloorCavern_EventScript_CheckStolenSub::
 	end
 
 Underwater_SeafloorCavern_Text_SubExplorer1:
-	.string "“SUBMARINE EXPLORER 1” is painted\n"
-	.string "on the hull.\p"
-	.string "This is the submarine SAIYAN ARMY\n"
+	.string "“SUBMARINE EXPLORER 1” is painted on\n"
+	.string "the hull.\p"
+	.string "This is the submarine RED RIBBON ARMY\n"
 	.string "stole in SLATEPORT!\p"
-	.string "SAIYAN ARMY must have gone\n"
-	.string "ashore here.$"
+	.string "The soldiers must have gone ashore\n"
+	.string "here.$"
 

@@ -139,6 +139,8 @@ EventScript_DBZ_Debug::
 	lockall
 	msgbox Text_DBZ_DebugFight, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Fight
+	msgbox Text_DBZ_DebugVegeta, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Vegeta
 	msgbox Text_DBZ_DebugTime, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_Time
 	msgbox Text_DBZ_DebugWild, MSGBOX_YESNO
@@ -157,6 +159,16 @@ EventScript_DBZ_Debug::
 	goto_if_eq VAR_RESULT, YES, EventScript_DBZ_Debug_WarpBall
 	releaseall
 	end
+
+EventScript_DBZ_Debug_Vegeta::
+	closemessage
+	call EventScript_DBZ_VegetaFight
+	msgbox Text_DBZ_DebugDone, MSGBOX_DEFAULT
+	releaseall
+	end
+
+Text_DBZ_DebugVegeta:
+	.string "DEBUG: fight VEGETA (rival)?$"
 
 EventScript_DBZ_Debug_Balls::
 	special DBZ_Debug_GiveSixBalls
@@ -184,6 +196,9 @@ EventScript_DBZ_Debug_Warp114::
 	end
 
 EventScript_DBZ_Debug_Badges::
+	additem ITEM_POTION, 5
+	additem ITEM_REVIVE, 2
+	additem ITEM_FULL_RESTORE, 2
 	setflag FLAG_BADGE01_GET
 	setflag FLAG_BADGE02_GET
 	setflag FLAG_BADGE03_GET

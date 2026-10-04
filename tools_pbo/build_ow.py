@@ -29,7 +29,7 @@ def L5(s):  # Goku-style: F,F,B,S,S, D4, U4, S4
 def L3(s):  # Roshi-style: F,B,S, D4, U4, S4
     return dict(F=s, B=s + 1, S=s + 2, D=(s + 3, s + 5), U=(s + 7, s + 9), W=(s + 11, s + 13))
 
-def sheet_frames(spec, flip_side=True):
+def sheet_frames(spec, flip_side=False):
     """Return list of 9 RGBA arrays in Emerald order: down, up, left, downwalk1/2, upwalk1/2, leftwalk1/2."""
     order = [(spec['F'], 0), (spec['B'], 0), (spec['S'], 1),
              (spec['D'][0], 0), (spec['D'][1], 0), (spec['U'][0], 0), (spec['U'][1], 0),
@@ -80,7 +80,7 @@ def save_jasc(pal, path):
         f.write('JASC-PAL\n0100\n16\n')
         for c in pal: f.write(f'{c[0]} {c[1]} {c[2]}\n')
 
-def build_char(name, spec, outdir, runspec=None, flip_side=True):
+def build_char(name, spec, outdir, runspec=None, flip_side=False):
     frames = sheet_frames(spec, flip_side)
     allf = list(frames)
     if runspec: allf += sheet_frames(runspec, flip_side)

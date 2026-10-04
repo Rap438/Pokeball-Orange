@@ -93,7 +93,7 @@ ProfileMan_EventScript_Ret::
 
 ProfileMan_Text_CollectTrainerProfiles:
 	.string "Hello there, TRAINER!\n"
-	.string "You've got a wonderful smile, there.\p"
+	.string "Now that's a fighting spirit!\p"
 	.string "I have a hobby--collecting the profiles\n"
 	.string "of POKéMON TRAINERS.$"
 
@@ -104,6 +104,8 @@ ProfileMan_Text_MayISeeYourProfile:
 ProfileMan_Text_EasyChatExplanation:
 	.string "You make your own profile by putting\n"
 	.string "together four words or phrases.\p"
+	.string "Think of it as your very own battle\n"
+	.string "cry, just like the great warriors use!\p"
 	.string "Here, I'll show you an example of a\n"
 	.string "profile using four pieces of text.\p"
 	.string "You can switch those four pieces with\n"
@@ -126,16 +128,18 @@ ProfileMan_Text_LetsSeeItThen:
 
 ProfileMan_Text_ImagineYouWouldHaveWonderfulProfile:
 	.string "Oh, no, really?\p"
-	.string "I imagine someone like you would have\n"
-	.string "a wonderful profile…$"
+	.string "I imagine someone with your power\n"
+	.string "would have a wonderful profile…$"
 
 ProfileMan_Text_NotIntoItRightNow:
 	.string "Oh? You're not into it right now?\p"
-	.string "Well, anytime is good by me!$"
+	.string "Well, no rush! My scouter is always\n"
+	.string "ready, anytime!$"
 
 ProfileMan_Text_YouHaveWonderfulSmile:
 	.string "Hello there, TRAINER!\n"
-	.string "You've got a wonderful smile.$"
+	.string "That's a fighting spirit if I ever\l"
+	.string "saw one.$"
 
 ProfileMan_Text_MayISeeYourNewProfile:
 	.string "May I see your new profile?$"

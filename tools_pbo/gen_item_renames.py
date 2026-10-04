@@ -21,7 +21,7 @@ R = {
     'RARE_CANDY':   ('ZENKAI CANDY', ['A SAIYAN-style', 'power surge. Raises', 'a level by one.'], True),
     'HP_UP':        ('TURTLE SHELL', ["ROSHI's training", 'shell. Raises the', 'base HP.'], False),
     'PROTEIN':      ('WEIGHTED GI',  ['A heavy training', 'gi. Raises the base', 'ATTACK stat.'], False),
-    'IRON':         ('SAIYAN ARMOR', ['SAIYAN army armor.', 'Raises the base', 'DEFENSE stat.'], False),
+    'IRON':         ('SAIYAN ARMOR', ['SAIYAN battle gear.', 'Raises the base', 'DEFENSE stat.'], False),
     'CALCIUM':      ('KI SCROLL',    ['Secret ki arts.', 'Raises the base', 'SP. ATK stat.'], False),
     'ZINC':         ('SPIRIT CHARM', ['A calming charm.', 'Raises the base', 'SP. DEF stat.'], False),
     'CARBOS':       ('KAIO WEIGHTS', ["KING KAI's gravity", 'training. Raises', 'the base SPEED.'], False),
@@ -46,7 +46,7 @@ R = {
     'NUGGET':       ('ZENI POUCH',   ['A pouch stuffed', 'with ZENI. Sells', 'for a high price.'], True),
     'DEVON_GOODS':  ('CC GOODS',     ['Parts ordered by', 'CAPSULE CORP. for', 'delivery.'], True),
     'DEVON_SCOPE':  ('SCOUTER',      ['A SAIYAN SCOUTER.', 'Spots unseeable', 'POKéMON nearby.'], True),
-    'MAGMA_EMBLEM': ('MAJIN EMBLEM', ["The mark of", "BABIDI's MAJIN", 'army.'], True),
+    'MAGMA_EMBLEM': ('RR EMBLEM',    ["The mark of", "KID BUU's RED", 'RIBBON ARMY.'], True),
     'MACH_BIKE':    ('CAPSULE BIKE', ['A folding bike in', 'a capsule. Fast,', 'smooth riding.'], True),
     'ACRO_BIKE':    ('HOVER BIKE',   ['A CAPSULE CORP.', 'hover bike for', 'tricks and jumps.'], True),
 }

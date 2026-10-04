@@ -1477,6 +1477,7 @@ static void OverworldBasic(void)
     RunTasks();
     DBZ_UpdateShadows();
     DBZ_UpdateFormFx();
+    DBZ_UpdateHud();
     AnimateSprites();
     CameraUpdate();
     UpdateCameraPanning();
