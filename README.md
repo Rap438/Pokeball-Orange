@@ -32,7 +32,24 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on the [pret/pokeemeral
   - Super Saiyan forms multiply Goku's power.
 - Turn-based Pokémon battles are unchanged.
 
-Work in progress: an overworld pass for shading, shadows and day/night, mixed DBZ pedestrians, the story text pass, location-based battle backgrounds, and the trainer power-up on their last Pokémon.
+- **Overworld style:**
+  - Soft drop shadows under every character.
+  - Deeper cel-style shading.
+  - Morning, evening and night lighting that follows the game clock.
+  - SSJ2 lightning crackles around Goku.
+- **Battle backgrounds** show the actual spot on the map where the battle started, with time-of-day lighting.
+- **Trainers power up** with an aura and a screen shake when they send out their last Pokémon. It's visual only.
+- **Pedestrians** are a mix of Buu's Fury townsfolk and Emerald's own NPCs.
+- **Story text pass:**
+  - Chi-Chi, Master Roshi, Vegeta, Krillin, Uub and the Z-fighter gym leaders and Elite Four.
+  - The Majin Army (Majin Buu) and the Saiyan Army (Broly) replace the villain teams.
+  - Capsule Corp. and Dr. Brief replace Devon and its president.
+
+## Playing
+
+Apply `PokeBall_Orange.bps` (from Releases) to a clean **Pokémon Emerald (USA)** ROM with [Flips](https://github.com/Alcaro/Flips) or any BPS patcher. The ROM's SHA-1 should be `f3ae088181bf583e55daf962a92bb46f4f1d07b7`.
+
+The debug build turns on R+SELECT for test shortcuts (badges, warps, fights, Dragon Balls, time of day). To get it, uncomment `#define DBZ_DEBUG` in `include/constants/dbz.h`.
 
 ## Building
 

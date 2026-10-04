@@ -74,6 +74,7 @@ void DBZ_Debug_SetGokuLevel(void);
 
 // overworld style
 void DBZ_UpdateShadows(void);
+void DBZ_UpdateFormFx(void);
 bool8 DBZ_TryDrawMapBattleBackground(void);
 void DBZ_ResetTrainerPowerUp(void);
 bool8 DBZ_ShouldTrainerPowerUp(u8 battler);

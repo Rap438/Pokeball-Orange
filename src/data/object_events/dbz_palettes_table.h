@@ -39,6 +39,7 @@
     {gObjectEventPal_DBZ_GreenKid, OBJ_EVENT_PAL_TAG_DBZ_GREEN_KID},
     {gObjectEventPal_DBZ_StripedMan, OBJ_EVENT_PAL_TAG_DBZ_STRIPED_MAN},
     {gObjectEventPal_DBZ_BlondeGirl, OBJ_EVENT_PAL_TAG_DBZ_BLONDE_GIRL},
+    {gObjectEventPal_DBZ_SuperBuu, OBJ_EVENT_PAL_TAG_DBZ_SUPER_BUU},
     {gObjectEventPal_DBZ_GokuSsj, OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ},
     {gObjectEventPal_DBZ_GokuSsj2, OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ2},
     {gObjectEventPal_DBZ_GokuSsj3, OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ3},

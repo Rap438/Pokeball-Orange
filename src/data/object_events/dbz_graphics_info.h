@@ -1239,6 +1239,37 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_BlondeGirl = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+static const struct SpriteFrameImage sPicTable_DBZ_SuperBuu[] = {
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 0),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 1),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 2),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 3),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 4),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 5),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 6),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 7),
+    overworld_frame(gObjectEventPic_DBZ_SuperBuu, 2, 4, 8),
+};
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_SuperBuu = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_DBZ_SUPER_BUU,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 256,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_1,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = sPicTable_DBZ_SuperBuu,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 static const struct SpriteFrameImage sPicTable_DBZ_GokuSsj[] = {
     overworld_frame(gObjectEventPic_DBZ_GokuSsj, 2, 4, 0),
     overworld_frame(gObjectEventPic_DBZ_GokuSsj, 2, 4, 1),

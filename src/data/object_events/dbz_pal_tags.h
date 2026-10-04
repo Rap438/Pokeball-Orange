@@ -39,14 +39,15 @@
 #define OBJ_EVENT_PAL_TAG_DBZ_GREEN_KID 0x1155
 #define OBJ_EVENT_PAL_TAG_DBZ_STRIPED_MAN 0x1156
 #define OBJ_EVENT_PAL_TAG_DBZ_BLONDE_GIRL 0x1157
-#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ 0x1158
-#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ2 0x1159
-#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ3 0x115A
-#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ_REFLECTION 0x115B
-#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ2_REFLECTION 0x115C
-#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ3_REFLECTION 0x115D
-#define OBJ_EVENT_PAL_TAG_DBZ_VEGETA 0x115E
-#define OBJ_EVENT_PAL_TAG_DBZ_DRAGON_BALL 0x115F
+#define OBJ_EVENT_PAL_TAG_DBZ_SUPER_BUU 0x1158
+#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ 0x1159
+#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ2 0x115A
+#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ3 0x115B
+#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ_REFLECTION 0x115C
+#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ2_REFLECTION 0x115D
+#define OBJ_EVENT_PAL_TAG_DBZ_GOKU_SSJ3_REFLECTION 0x115E
+#define OBJ_EVENT_PAL_TAG_DBZ_VEGETA 0x115F
+#define OBJ_EVENT_PAL_TAG_DBZ_DRAGON_BALL 0x1160
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_Android18;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_Announcer;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_Baba;
@@ -83,6 +84,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_PurpleM
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_Roshi;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_SaiyanSoldier;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_StripedMan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_SuperBuu;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_SupremeKai;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_Tien;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_DBZ_Trunks;

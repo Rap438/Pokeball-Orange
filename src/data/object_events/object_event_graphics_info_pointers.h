@@ -368,7 +368,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_AQUA_MEMBER_F] =            &gObjectEventGraphicsInfo_DBZ_MajinSoldier,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_M] =           &gObjectEventGraphicsInfo_DBZ_Yamu,
     [OBJ_EVENT_GFX_MAGMA_MEMBER_F] =           &gObjectEventGraphicsInfo_DBZ_Lime,
-    [OBJ_EVENT_GFX_SIDNEY] =                   &gObjectEventGraphicsInfo_Sidney,
+    [OBJ_EVENT_GFX_SIDNEY] =                   &gObjectEventGraphicsInfo_DBZ_SuperBuu,
     [OBJ_EVENT_GFX_PHOEBE] =                   &gObjectEventGraphicsInfo_DBZ_Baba,
     [OBJ_EVENT_GFX_GLACIA] =                   &gObjectEventGraphicsInfo_DBZ_Android18,
     [OBJ_EVENT_GFX_DRAKE] =                    &gObjectEventGraphicsInfo_DBZ_Dende,

@@ -182,6 +182,7 @@ NPCS = {
     'old_man': L5(1872), 'village_woman': L5(1894), 'blue_kid': L5(2214), 'farm_girl': L5(2726),
     'brown_woman': L5(2748), 'cap_kid': L5(142), 'green_kid': L5(169), 'striped_man': L5(2235),
     'blonde_girl': L5(2768),
+    'super_buu': dict(F=259, B=262, S=256, D=(260, 261), U=(263, 264), W=(255, 257)),
 }
 for name, spec in NPCS.items():
     fr = sheet_frames(spec)

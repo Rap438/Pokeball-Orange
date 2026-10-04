@@ -12,6 +12,7 @@
 #include "field_player_avatar.h"
 #include "fieldmap.h"
 #include "palette.h"
+#include "random.h"
 #include "script.h"
 #include "sound.h"
 #include "sprite.h"
@@ -314,6 +315,49 @@ static void SpriteCB_Impact(struct Sprite *sprite)
         DestroySprite(sprite);
         FreeFxGraphicsIfUnused();
     }
+}
+
+static void SpriteCB_Spark(struct Sprite *sprite)
+{
+    struct Sprite *ps = PlayerSprite();
+    sprite->x = ps->x + ps->x2 + sprite->data[1];
+    sprite->y = ps->y + ps->y2 + sprite->data[2];
+    sprite->subpriority = ps->subpriority - 1;
+    sprite->oam.priority = ps->oam.priority;
+    SetFxFrame(sprite, FX_SPARK_0 + (sprite->data[0] / 2) % 2);
+    sprite->invisible = ps->invisible;
+    if (++sprite->data[0] > 7)
+    {
+        DestroySprite(sprite);
+        FreeFxGraphicsIfUnused();
+    }
+}
+
+// SSJ2 crackles with lightning while Goku walks around
+static EWRAM_DATA u8 sSparkTimer = 0;
+void DBZ_UpdateFormFx(void)
+{
+    u8 id;
+    struct Sprite *ps;
+    if (gPlayerAvatar.spriteId >= MAX_SPRITES || !gSprites[gPlayerAvatar.spriteId].inUse)
+        return;
+    if (DBZ_GetForm() != DBZ_FORM_SSJ2 || !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
+        return;
+    if (++sSparkTimer < 22 + (Random() % 30))
+        return;
+    sSparkTimer = 0;
+    ps = PlayerSprite();
+    LoadFxGraphics();
+    id = CreateFxSprite(&sSpriteTemplate_Fx, ps->x, ps->y, 0);
+    if (id == MAX_SPRITES)
+        return;
+    gSprites[id].data[0] = 0;
+    gSprites[id].data[1] = (s16)(Random() % 17) - 8;
+    gSprites[id].data[2] = (s16)(Random() % 20) - 14;
+    gSprites[id].callback = SpriteCB_Spark;
+    SpriteCB_Spark(&gSprites[id]);
+    if ((Random() % 8) == 0)
+        PlaySE(SE_M_THUNDERBOLT2);
 }
 
 void DBZ_SpawnImpactAt(s16 x, s16 y)

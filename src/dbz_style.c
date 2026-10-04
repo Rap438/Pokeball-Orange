@@ -75,7 +75,7 @@ static void SpriteCB_DbzShadow(struct Sprite *sprite)
     sprite->y2 = 0;
     sprite->oam.priority = linked->oam.priority;
     sprite->subpriority = linked->subpriority + 1;
-    sprite->invisible = linked->invisible;
+    sprite->invisible = linked->invisible || sprite->data[7];
 }
 
 static bool8 WantsShadow(u8 i)
@@ -119,10 +119,17 @@ void DBZ_UpdateShadows(void)
         if (!want)
         {
             if (valid)
-                DestroySprite(&gSprites[sShadowSprite[i]]);
-            sShadowSprite[i] = MAX_SPRITES;
+                gSprites[sShadowSprite[i]].data[7] = 1;   // hidden
+            if (!gObjectEvents[i].active)
+            {
+                if (valid)
+                    DestroySprite(&gSprites[sShadowSprite[i]]);
+                sShadowSprite[i] = MAX_SPRITES;
+            }
             continue;
         }
+        if (valid)
+            gSprites[sShadowSprite[i]].data[7] = 0;
         if (!valid)
         {
             const struct ObjectEventGraphicsInfo *info = GetObjectEventGraphicsInfo(gObjectEvents[i].graphicsId);
