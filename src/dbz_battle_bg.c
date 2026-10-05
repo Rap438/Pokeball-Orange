@@ -2,6 +2,7 @@
 // The 16x7 metatiles around Goku are copied (pre-composited, see tools/gen_battle_views.py) into BG3,
 // with the two battle platforms shaded into the ground, and tinted for the time of day.
 #include "global.h"
+#include "seasons.h"
 #include "dbz.h"
 #include "battle.h"
 #include "battle_anim.h"
@@ -27,10 +28,6 @@ struct DbzBattleView {
 };
 
 extern const struct Tileset gTileset_General;
-extern const struct Tileset gTileset_BattleFrontierOutsideEast, gTileset_BattleFrontierOutsideWest, gTileset_Cave,
-    gTileset_Dewford, gTileset_EverGrande, gTileset_Fallarbor, gTileset_Fortree, gTileset_Lavaridge, gTileset_Lilycove,
-    gTileset_Mauville, gTileset_MeteorFalls, gTileset_Mossdeep, gTileset_Pacifidlog, gTileset_Petalburg,
-    gTileset_Rustboro, gTileset_RusturfTunnel, gTileset_Slateport, gTileset_Sootopolis;
 
 #include "data/dbz_battle_views.h"
 
@@ -52,9 +49,10 @@ static const struct DbzBattleView *FindView(void)
     const struct MapLayout *layout = gMapHeader.mapLayout;
     if (layout == NULL)
         return NULL;
-    for (i = 0; i < ARRAY_COUNT(sBattleViews); i++)
-        if (sBattleViews[i].primary == layout->primaryTileset && sBattleViews[i].secondary == layout->secondaryTileset)
-            return &sBattleViews[i];
+    const struct DbzBattleView *views = sBattleViewsBySeason[Season_Get()];   // PokeBall Orange: seasonal art
+    for (i = 0; i < NUM_BATTLE_VIEWS; i++)
+        if (views[i].primary == layout->primaryTileset && views[i].secondary == layout->secondaryTileset)
+            return &views[i];
     return NULL;
 }
 

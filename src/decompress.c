@@ -1,4 +1,5 @@
 #include "global.h"
+#include "seasons.h"
 #include "malloc.h"
 #include "data.h"
 #include "decompress.h"
@@ -261,6 +262,7 @@ void HandleLoadSpecialPokePicIsEgg(bool32 isFrontPic, void *dest, enum Species s
 void DecompressDataWithHeaderVram(const u32 *src, void *dest)
 {
     union CompressionHeader header;
+    src = Season_Resolve(src);   // PokeBall Orange: seasonal art
     CpuCopy32(src, &header, 8);
     switch (header.smol.mode)
     {
@@ -289,6 +291,7 @@ void DecompressDataWithHeaderVram(const u32 *src, void *dest)
 void DecompressDataWithHeaderWram(const u32 *src, void *dest)
 {
     union CompressionHeader header;
+    src = Season_Resolve(src);   // PokeBall Orange: seasonal art
     CpuCopy32(src, &header, 8);
     switch (header.smol.mode)
     {

@@ -1,4 +1,5 @@
 #include "global.h"
+#include "seasons.h"
 #include "dbz.h"
 #include "battle_pyramid.h"
 #include "bg.h"
@@ -950,7 +951,7 @@ static void CopyTilesetToVram(struct Tileset const *tileset, u16 numTiles, u16 o
     if (tileset)
     {
         if (!tileset->isCompressed)
-            LoadBgTiles(2, tileset->tiles, numTiles * 32, offset);
+            LoadBgTiles(2, Season_Resolve(tileset->tiles), numTiles * 32, offset);
         else
             DecompressAndCopyTileDataToVram(2, tileset->tiles, numTiles * 32, offset, 0);
     }
@@ -961,7 +962,7 @@ static void CopyTilesetToVramUsingHeap(struct Tileset const *tileset, u16 numTil
     if (tileset)
     {
         if (!tileset->isCompressed)
-            LoadBgTiles(2, tileset->tiles, numTiles * 32, offset);
+            LoadBgTiles(2, Season_Resolve(tileset->tiles), numTiles * 32, offset);
         else
             DecompressAndLoadBgGfxUsingHeap(2, tileset->tiles, numTiles * 32, offset, 0);
     }
@@ -982,10 +983,11 @@ static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u1
 {
     if (tileset)
     {
+        const u16 (*palettes)[16] = Season_Resolve(tileset->palettes);   // PokeBall Orange: seasonal art
         if (tileset->isSecondary == FALSE)
         {
             if (skipFaded)
-                CpuFastCopy(tileset->palettes, &gPlttBufferUnfaded[destOffset], size); // always word-aligned
+                CpuFastCopy(palettes, &gPlttBufferUnfaded[destOffset], size); // always word-aligned
             else
                 LoadPaletteFast(tileset->palettes, destOffset, size);
             gPlttBufferFaded[destOffset] = gPlttBufferUnfaded[destOffset] = RGB_BLACK;
@@ -996,7 +998,7 @@ static void LoadTilesetPalette(struct Tileset const *tileset, u16 destOffset, u1
             // All 'gTilesetPalettes_' arrays should have ALIGNED(4) in them,
             // but we use SmartCopy here just in case they don't
             if (skipFaded)
-                CpuCopy16(tileset->palettes[numPalsInPrimary], &gPlttBufferUnfaded[destOffset], size);
+                CpuCopy16(palettes[numPalsInPrimary], &gPlttBufferUnfaded[destOffset], size);
             else
                 LoadPaletteFast(tileset->palettes[numPalsInPrimary], destOffset, size);
         }

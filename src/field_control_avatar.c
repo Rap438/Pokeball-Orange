@@ -1,4 +1,5 @@
 #include "global.h"
+#include "constants/dbz.h"
 #include "dbz.h"
 #include "battle_setup.h"
 #include "bike.h"
@@ -926,6 +927,11 @@ static bool32 ShouldDisableRandomEncounters(void)
 {
     if (FlagGet(WE_FLAG_NO_ENCOUNTER))
         return TRUE;
+
+    // PokeBall Orange: wild Pokemon are visible on the overworld unless OPTION > WILD MONS is HIDDEN,
+    // which brings back the classic step encounters
+    if (WE_OW_ENCOUNTERS)
+        return !FlagGet(FLAG_DBZ_WILD_HIDDEN);
 
     if (!WE_VANILLA_RANDOM && WE_OW_ENCOUNTERS)
     {

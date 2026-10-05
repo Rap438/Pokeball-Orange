@@ -1,4 +1,5 @@
 #include "global.h"
+#include "seasons.h"
 #include "dbz.h"
 #include "overworld.h"
 #include "battle_pyramid.h"
@@ -675,12 +676,14 @@ static void LoadCurrentMapData(void)
     gMapHeader = *Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
     gSaveBlock1Ptr->mapLayoutId = gMapHeader.mapLayoutId;
     gMapHeader.mapLayout = GetMapLayout(gMapHeader.mapLayoutId);
+    Season_Update();   // PokeBall Orange: the season can only change while a map loads
 }
 
 static void LoadSaveblockMapHeader(void)
 {
     gMapHeader = *Overworld_GetMapHeaderByGroupAndId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum);
     gMapHeader.mapLayout = GetMapLayout(gSaveBlock1Ptr->mapLayoutId);
+    Season_Update();
 }
 
 static void SetPlayerCoordsFromWarp(void)
@@ -1810,6 +1813,8 @@ void UpdateAltBgPalettes(u16 palettes)
 {
     const struct Tileset *primary = gMapHeader.mapLayout->primaryTileset;
     const struct Tileset *secondary = gMapHeader.mapLayout->secondaryTileset;
+    const u16 *primaryPals = Season_Resolve(primary->palettes);
+    const u16 *secondaryPals = Season_Resolve(secondary->palettes);
     u32 i = 1;
     if (!MapHasNaturalLight(gMapHeader.mapType))
         return;
@@ -1824,9 +1829,9 @@ void UpdateAltBgPalettes(u16 palettes)
         if (palettes & 1)
         {
             if (i < GetNumPalsInPrimary(gMapHeader.mapLayout))
-                AvgPaletteWeighted(&((u16 *)primary->palettes)[i * 16], &((u16 *)primary->palettes)[((i + 9) % 16) * 16], gPlttBufferUnfaded + i * 16, gTimeBlend.altWeight);
+                AvgPaletteWeighted((u16 *)&primaryPals[i * 16], (u16 *)&primaryPals[((i + 9) % 16) * 16], gPlttBufferUnfaded + i * 16, gTimeBlend.altWeight);
             else
-                AvgPaletteWeighted(&((u16 *)secondary->palettes)[i * 16], &((u16 *)secondary->palettes)[((i + 9) % 16) * 16], gPlttBufferUnfaded + i * 16, gTimeBlend.altWeight);
+                AvgPaletteWeighted((u16 *)&secondaryPals[i * 16], (u16 *)&secondaryPals[((i + 9) % 16) * 16], gPlttBufferUnfaded + i * 16, gTimeBlend.altWeight);
         }
         i++;
         palettes >>= 1;
@@ -1867,6 +1872,7 @@ static void OverworldBasic(void)
     // (PokeBall Orange's own shadow sprites are retired: the expansion engine gives every object a shadow)
     DBZ_UpdateFormFx();
     DBZ_UpdateHud();
+    DBZ_UpdateDragonBallTracker();
     AnimateSprites();
     CameraUpdate();
     UpdateCameraPanning();

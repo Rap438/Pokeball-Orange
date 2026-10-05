@@ -7,15 +7,20 @@
 #include "dma3.h"
 #include "event_data.h"
 #include "field_player_avatar.h"
+#include "item.h"
 #include "main.h"
 #include "overworld.h"
 #include "script.h"
 #include "sprite.h"
 
 #include "data/dbz_hud.h"
+#include "data/dbz_hud_seasons.h"
+#include "seasons.h"
+#include "constants/items.h"
 
 #define TAG_DBZ_HUD      0x2F32
 #define TAG_DBZ_HUD_PAL  0x2F30   // shared with the drop shadows (index 1 is the shadow colour)
+#define TAG_DBZ_DB_TRACK 0x2F33
 
 static EWRAM_DATA u8 sHudTiles[32 * 32] = {0};   // 64x32 at 4bpp, 1D sprite layout (8 x 4 tiles)
 static EWRAM_DATA u8 sHudSprite = 0;
@@ -26,6 +31,12 @@ static EWRAM_DATA struct {
 } sHudLast = {0};
 
 static void SpriteCB_Hud(struct Sprite *sprite) { }
+
+// the HUD palette also colours the object drop shadows (index 1)
+const u16 *DBZ_HudPalette(void)
+{
+    return sHudPaletteBySeason[Season_Get()];
+}
 
 static const struct OamData sOam_Hud = {
     .affineMode = ST_OAM_AFFINE_OFF,
@@ -128,7 +139,7 @@ static void Draw(u16 hp, u16 maxHp, u8 move, u8 charge, u8 form, u32 pl)
 
     for (y = 0; y < 32; y++)
         for (x = 0; x < 64; x++)
-            Px(x, y, sHudPanel[y][x]);
+            Px(x, y, sHudPanelBySeason[Season_Get()][y][x]);
     // round backdrop so black hair reads against the dark panel
     for (y = 0; y < 16; y++)
         for (x = 0; x < 16; x++)
@@ -188,7 +199,7 @@ void DBZ_UpdateHud(void)
     if (!HudValid())
     {
         struct SpriteSheet sheet = { sHudTiles, sizeof(sHudTiles), TAG_DBZ_HUD };
-        struct SpritePalette pal = { gDBZHudPalette, TAG_DBZ_HUD_PAL };
+        struct SpritePalette pal = { DBZ_HudPalette(), TAG_DBZ_HUD_PAL };
         if (IndexOfSpritePaletteTag(TAG_DBZ_HUD_PAL) == 0xFF)
             LoadSpritePalette(&pal);
         if (GetSpriteTileStartByTag(TAG_DBZ_HUD) == 0xFFFF)
@@ -227,4 +238,150 @@ void DBZ_UpdateHud(void)
     sHudLast.pl = pl;
     Draw(hp, maxHp, move, charge, form, pl);
     RequestDma3Copy(sHudTiles, (void *)(OBJ_VRAM0 + GetSpriteTileStartByTag(TAG_DBZ_HUD) * TILE_SIZE_4BPP), sizeof(sHudTiles), 1);   // 32-bit copy at the next VBlank
+}
+
+// ------------------------------------------------------------------ Dragon Ball tracker
+// Once the Dragon Radar is in the bag, a strip of seven small balls sits right above the HUD:
+// the ones Goku holds glow, the missing ones are dark sockets. While the balls are stone after a
+// wish, all seven show as grey stone until they scatter again.
+#define TRACK_H 11      // drawn rows (at the bottom of a 64x32 sprite, the rest is transparent)
+#define TRACK_TOP (32 - TRACK_H)
+
+static EWRAM_DATA ALIGNED(4) u8 sTrackTiles[32 * 32] = {0};
+static EWRAM_DATA u8 sTrackSprite = 0;
+static EWRAM_DATA u16 sTrackLast = 0;   // bit 0-6 held balls, bit 7 stone, bit 15 drawn
+
+static void SpriteCB_Track(struct Sprite *sprite) { }
+
+static const struct SpriteTemplate sTrackTemplate = {
+    .tileTag = TAG_DBZ_DB_TRACK, .paletteTag = TAG_DBZ_HUD_PAL, .oam = &sOam_Hud,
+    .anims = gDummySpriteAnimTable, .images = NULL, .affineAnims = gDummySpriteAffineAnimTable,
+    .callback = SpriteCB_Track,
+};
+
+static void TPx(u8 x, u8 y, u8 c)
+{
+    u8 *b;
+    if (x >= 64 || y >= 32)
+        return;
+    b = &sTrackTiles[((y >> 3) * 8 + (x >> 3)) * 32 + (y & 7) * 4 + ((x & 7) >> 1)];
+    if (x & 1)
+        *b = (*b & 0x0F) | (c << 4);
+    else
+        *b = (*b & 0xF0) | c;
+}
+
+// 7x7 ball; 1 = rim, 2 = body
+static const u8 sBallShape[7][7] = {
+    {0,0,1,1,1,0,0},
+    {0,1,2,2,2,1,0},
+    {1,2,2,2,2,2,1},
+    {1,2,2,2,2,2,1},
+    {1,2,2,2,2,2,1},
+    {0,1,2,2,2,1,0},
+    {0,0,1,1,1,0,0},
+};
+
+static void DrawTracker(u16 state)
+{
+    u8 x, y, i;
+    bool8 stone = (state >> 7) & 1;
+
+    CpuFill32(0, sTrackTiles, sizeof(sTrackTiles));
+    // panel in the HUD's style: amber frame, dark fill, rounded corners
+    for (y = 0; y < TRACK_H; y++)
+        for (x = 0; x < 64; x++)
+        {
+            bool8 edgeX = (x == 0 || x == 63), edgeY = (y == 0 || y == TRACK_H - 1);
+            if (edgeX && edgeY)
+                continue;
+            TPx(x, TRACK_TOP + y, (edgeX || edgeY) ? 2 : 1);
+        }
+    for (i = 0; i < DBZ_DB_COUNT; i++)
+    {
+        u8 bx = 4 + i * 8, by = TRACK_TOP + 2;
+        bool8 held = !stone && (state & (1 << i));
+        for (y = 0; y < 7; y++)
+            for (x = 0; x < 7; x++)
+            {
+                u8 c, k = sBallShape[y][x];
+                if (!k)
+                    continue;
+                if (stone)
+                    c = (k == 1) ? 4 : 5;
+                else if (held)
+                    c = (k == 1) ? 14 : 13;
+                else
+                    c = (k == 1) ? 5 : 4;
+                TPx(bx + x, by + y, c);
+            }
+        if (held)
+        {
+            TPx(bx + 2, by + 2, 10);   // shine
+            TPx(bx + 3, by + 3, 8);    // red star
+            TPx(bx + 3, by + 4, 8);
+            TPx(bx + 4, by + 3, 8);
+        }
+        else if (stone)
+        {
+            TPx(bx + 3, by + 3, 4);    // crack
+        }
+    }
+}
+
+static bool8 TrackValid(void)
+{
+    u8 id = sTrackSprite;
+    return id < MAX_SPRITES && gSprites[id].inUse && gSprites[id].callback == SpriteCB_Track;
+}
+
+static u16 TrackState(void)
+{
+    u16 state = 0;
+    u8 i;
+    for (i = 0; i < DBZ_DB_COUNT; i++)
+        if (CheckBagHasItem(ITEM_DRAGON_BALL_1 + i, 1))
+            state |= 1 << i;
+    if (VarGet(VAR_DBZ_DB_STONE_STEPS) != 0)
+        state |= 1 << 7;
+    return state;
+}
+
+void DBZ_UpdateDragonBallTracker(void)
+{
+    u16 state;
+    bool8 want = HudWanted() && !DBZ_IsFighting();
+
+    // bag lookups are cheap but not free: re-check every 8 frames, or when the sprite was lost
+    if (want && TrackValid() && (gMain.vblankCounter1 & 7))
+        return;
+    if (want)
+        want = CheckBagHasItem(ITEM_DRAGON_RADAR, 1);
+    if (!want)
+    {
+        if (TrackValid())
+            gSprites[sTrackSprite].invisible = TRUE;
+        return;
+    }
+    if (!TrackValid())
+    {
+        struct SpriteSheet sheet = { sTrackTiles, sizeof(sTrackTiles), TAG_DBZ_DB_TRACK };
+        struct SpritePalette pal = { DBZ_HudPalette(), TAG_DBZ_HUD_PAL };
+        if (IndexOfSpritePaletteTag(TAG_DBZ_HUD_PAL) == 0xFF)
+            LoadSpritePalette(&pal);
+        if (GetSpriteTileStartByTag(TAG_DBZ_DB_TRACK) == 0xFFFF)
+            LoadSpriteSheet(&sheet);
+        // HUD panel spans y 124..155; the strip's visible rows end 2px above it
+        sTrackSprite = CreateSprite(&sTrackTemplate, 4 + 32, DISPLAY_HEIGHT - 4 - 32 - 2 - 16, 0);
+        if (sTrackSprite == MAX_SPRITES)
+            return;
+        sTrackLast = 0;
+    }
+    gSprites[sTrackSprite].invisible = FALSE;
+    state = TrackState() | 0x8000;
+    if (state == sTrackLast)
+        return;
+    sTrackLast = state;
+    DrawTracker(state);
+    RequestDma3Copy(sTrackTiles, (void *)(OBJ_VRAM0 + GetSpriteTileStartByTag(TAG_DBZ_DB_TRACK) * TILE_SIZE_4BPP), sizeof(sTrackTiles), 1);
 }

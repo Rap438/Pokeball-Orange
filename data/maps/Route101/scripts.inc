@@ -216,6 +216,10 @@ Route101_EventScript_BirchsBag::
 	faceplayer
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_RESCUED_BIRCH
+	msgbox Route101_Text_BagHoldsCapsules, MSGBOX_DEFAULT
+	multichoice 21, 4, MULTI_DBZ_STARTER_REGION, TRUE
+	special DBZ_SetStarterRegion
+	closemessage
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_ROUTE101_ZIGZAGOON
 	setobjectxy LOCALID_PLAYER, 6, 13
@@ -249,6 +253,11 @@ Route101_EventScript_HideBrendanInBedroom::
 Route101_Movement_BirchApproachPlayer:
 	walk_right
 	step_end
+
+Route101_Text_BagHoldsCapsules:
+	.string "ROSHI's BAG is full of POKé BALLS,\n"
+	.string "packed by region.\p"
+	.string "Which region's POKéMON?$"
 
 Route101_Text_HelpMe:
 	.string "W-whoa! Somebody help me!$"

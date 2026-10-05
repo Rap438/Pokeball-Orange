@@ -174,6 +174,11 @@ EventSnippet_PrepareSecondTrainerApproach::
 	special PrepareSecondApproachingTrainer
 	return
 
+@ PokeBall Orange: offer Goku's fistfight to a trainer who has already lost a Pokemon battle
+EventSnippet_DBZOfferTrainerFight::
+	call EventScript_DBZ_OfferTrainerFight
+	return
+
 EventSnippet_GotoPostBattleScript::
 	gotopostbattlescript
 	return

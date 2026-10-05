@@ -842,6 +842,16 @@ static const struct MenuAction MultichoiceList_DBZDebug3[] =
     {sText_DBG_Balls}, {sText_DBG_WarpBall}, {sText_DBG_Tourney}, {sText_DBG_Chamber}, {sText_DBG_Gravity}, {sText_DBG_Wish}, {sText_DBG_Clear},
 };
 
+static const u8 sText_DBZ_RegionHoenn[] = _("HOENN");
+static const u8 sText_DBZ_RegionKanto[] = _("KANTO");
+static const u8 sText_DBZ_RegionSinnoh[] = _("SINNOH");
+static const u8 sText_DBZ_RegionAlola[] = _("ALOLA");
+
+static const struct MenuAction MultichoiceList_DBZStarterRegion[] =
+{
+    {sText_DBZ_RegionHoenn}, {sText_DBZ_RegionKanto}, {sText_DBZ_RegionSinnoh}, {sText_DBZ_RegionAlola},
+};
+
 static const struct MenuAction MultichoiceList_DBZGoku[] =
 {
     {sText_DBZ_Status},
@@ -1312,6 +1322,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_DBZ_DEBUG1]                 = MULTICHOICE(MultichoiceList_DBZDebug1),
     [MULTI_DBZ_DEBUG2]                 = MULTICHOICE(MultichoiceList_DBZDebug2),
     [MULTI_DBZ_DEBUG3]                 = MULTICHOICE(MultichoiceList_DBZDebug3),
+    [MULTI_DBZ_STARTER_REGION]         = MULTICHOICE(MultichoiceList_DBZStarterRegion),
     [MULTI_BERRY_PLOT]                 = MULTICHOICE(MultichoiceList_BerryPlot),
     [MULTI_BIKE_SHOP]                  = MULTICHOICE(sMultichoiceList_BikeShop),
     [MULTI_EEVEELUTIONS]               = MULTICHOICE(sMultichoiceList_Eeveelutions),

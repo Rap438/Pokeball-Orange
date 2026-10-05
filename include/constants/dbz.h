@@ -60,6 +60,10 @@
 #define FLAG_DBZ_FOLLOWER_OFF   FLAG_UNUSED_0x02A
 #define FLAG_DBZ_CAMP_CRATE     FLAG_UNUSED_0x02B   // Littleroot camp supply crate looted
 #define FLAG_DBZ_FLOWER_FEATHER FLAG_UNUSED_0x02C   // Littleroot flower-bed Fairy Feather found
+#define FLAG_DBZ_SEASON_LOCK    FLAG_UNUSED_0x02E   // OPTION > SEASON locked (else the clock's month decides)
+#define FLAG_DBZ_SEASON_BIT0    FLAG_UNUSED_0x02F   // locked season = BIT0 + 2 * BIT1 (spring, summer, autumn, winter)
+#define FLAG_DBZ_SEASON_BIT1    FLAG_UNUSED_0x030
+#define FLAG_DBZ_WILD_HIDDEN    FLAG_UNUSED_0x031   // OPTION > WILD MONS: HIDDEN (classic random encounters instead of visible ones)
 #define FLAG_DBZ_EXP_SHARE_ON   FLAG_UNUSED_0x02D   // Training Gi (Exp. Share) switched on; engine I_EXP_SHARE_FLAG   // OPTION > FOLLOWER: OFF (engine follower flag, see config/overworld.h)
 
 // VAR_0x8008 for special DBZ_SetNextFightFlags
@@ -86,6 +90,13 @@
 #define DBZ_MISC_HIDE_KI       (1 << 2)
 #define DBZ_MISC_GRAVITY_SHIFT 3          // bits 3-12: gravity-training steps left / 2
 #define DBZ_MISC_GRAVITY_MASK  (0x3FF << DBZ_MISC_GRAVITY_SHIFT)
+#define DBZ_MISC_REGION_SHIFT  13         // bits 13-14: starter region (0 Hoenn, 1 Kanto, 2 Sinnoh, 3 Alola)
+#define DBZ_MISC_REGION_MASK   (3 << DBZ_MISC_REGION_SHIFT)
+
+#define DBZ_REGION_HOENN  0
+#define DBZ_REGION_KANTO  1
+#define DBZ_REGION_SINNOH 2
+#define DBZ_REGION_ALOLA  3
 
 // techniques (unlocked by badges, announced once via VAR_DBZ_SEEN_FORMS bits 8-10)
 #define DBZ_TECH_KAIOKEN        1

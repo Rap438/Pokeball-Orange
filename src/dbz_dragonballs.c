@@ -226,6 +226,15 @@ u16 DBZ_CountDragonBalls(void)
 void DBZ_Debug_WarpToDragonBall(void)
 {
     u8 i;
+    // test harness hook: VAR_TEMP_D = map id + 1, VAR_TEMP_E/F = x/y
+    if (VarGet(VAR_TEMP_D) != 0)
+    {
+        u16 map = VarGet(VAR_TEMP_D) - 1;
+        SetWarpDestination(map >> 8, map & 0xFF, WARP_ID_NONE, VarGet(VAR_TEMP_E), VarGet(VAR_TEMP_F));
+        DoWarp();
+        ResetInitialPlayerAvatarState();
+        return;
+    }
     for (i = 0; i < DBZ_DB_COUNT; i++)
     {
         u16 v = VarGet(VAR_DBZ_DB_SPOT_1 + i);

@@ -1,5 +1,6 @@
 // PokeBall Orange settings (stored in VAR_DBZ_OPTIONS, edited in the OPTION menu) and shiny odds.
 #include "global.h"
+#include "seasons.h"
 #include "dbz.h"
 #include "event_data.h"
 #include "random.h"
@@ -60,6 +61,8 @@ u8 DBZ_GetOptionValue(u8 id)
     case 9: return DBZ_OptShiny();
     case 10: return (o & DBZ_OPT_AUTORUN_OFF) ? 1 : 0;
     case 11: return FlagGet(FLAG_DBZ_FOLLOWER_OFF) ? 1 : 0;
+    case 12: return Season_GetSetting();
+    case 13: return FlagGet(FLAG_DBZ_WILD_HIDDEN) ? 1 : 0;
     }
     return 0;
 }
@@ -96,6 +99,8 @@ void DBZ_SetOptionValue(u8 id, u8 v)
     case 9: o = (o & ~(7 << DBZ_OPT_SHINY_SHIFT)) | ((v % 5) << DBZ_OPT_SHINY_SHIFT); break;
     case 10: o = SetBit(o, DBZ_OPT_AUTORUN_OFF, v); break;
     case 11: if (v) FlagSet(FLAG_DBZ_FOLLOWER_OFF); else FlagClear(FLAG_DBZ_FOLLOWER_OFF); break;
+    case 12: Season_SetSetting(v); Season_Update(); break;
+    case 13: if (v) FlagSet(FLAG_DBZ_WILD_HIDDEN); else FlagClear(FLAG_DBZ_WILD_HIDDEN); break;
     }
     VarSet(VAR_DBZ_OPTIONS, o);
 }

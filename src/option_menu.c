@@ -31,8 +31,8 @@ enum
     MENUITEM_SOUND,
     MENUITEM_BUTTONMODE,
     MENUITEM_FRAMETYPE,
-    MENUITEM_DBZ_FIRST,                       // DBZ settings 0..11, in DBZ_GetOptionValue order
-    MENUITEM_CANCEL = MENUITEM_DBZ_FIRST + 12,
+    MENUITEM_DBZ_FIRST,                       // DBZ settings 0..12, in DBZ_GetOptionValue order
+    MENUITEM_CANCEL = MENUITEM_DBZ_FIRST + DBZ_OPTION_COUNT,
     MENUITEM_COUNT,
 };
 
@@ -75,6 +75,8 @@ static const u8 sText_Opt_Hints[] = _("FORM HINTS");
 static const u8 sText_Opt_Shiny[] = _("SHINY ODDS");
 static const u8 sText_Opt_AutoRun[] = _("AUTO-RUN");
 static const u8 sText_Opt_Follower[] = _("FOLLOWER");
+static const u8 sText_Opt_Season[] = _("SEASON");
+static const u8 sText_Opt_Wild[] = _("WILD MONS");
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
@@ -96,6 +98,8 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_DBZ_FIRST + 9] = sText_Opt_Shiny,
     [MENUITEM_DBZ_FIRST + 10] = sText_Opt_AutoRun,
     [MENUITEM_DBZ_FIRST + 11] = sText_Opt_Follower,
+    [MENUITEM_DBZ_FIRST + 12] = sText_Opt_Season,
+    [MENUITEM_DBZ_FIRST + 13] = sText_Opt_Wild,
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
 };
 
@@ -123,6 +127,13 @@ static const u8 sText_V_1024[] = _("1/820");    // base + 64/65536
 static const u8 sText_V_256[] = _("1/240");     // base + 256/65536
 static const u8 sText_V_Always[] = _("ALWAYS");
 static const u8 sText_V_Type[] = _("TYPE ");
+static const u8 sText_V_Auto[] = _("AUTO");
+static const u8 sText_V_Visible[] = _("VISIBLE");
+static const u8 sText_V_Hidden[] = _("HIDDEN");
+static const u8 sText_V_Spring[] = _("SPRING");
+static const u8 sText_V_Summer[] = _("SUMMER");
+static const u8 sText_V_Autumn[] = _("AUTUMN");
+static const u8 sText_V_Winter[] = _("WINTER");
 static const u8 sText_LeftArrow[] = _("<");
 static const u8 sText_RightArrow[] = _(">");
 static const u8 sText_ScrollHint[] = _("{UP_ARROW}{DOWN_ARROW}");
@@ -135,6 +146,8 @@ static const u8 *const sV_Button[] = {sText_V_Normal, sText_V_LR, sText_V_LA};
 static const u8 *const sV_Difficulty[] = {sText_V_Easy, sText_V_Normal, sText_V_Hard};
 static const u8 *const sV_Ambush[] = {sText_V_Off, sText_V_Rare, sText_V_Normal, sText_V_Often};
 static const u8 *const sV_BattleBg[] = {sText_V_Map, sText_V_Classic};
+static const u8 *const sV_Wild[] = {sText_V_Visible, sText_V_Hidden};
+static const u8 *const sV_Season[] = {sText_V_Auto, sText_V_Spring, sText_V_Summer, sText_V_Autumn, sText_V_Winter};
 static const u8 *const sV_Shiny[] = {sText_V_8192, sText_V_4096, sText_V_1024, sText_V_256, sText_V_Always};
 
 static u8 ValueCount(u8 item)
@@ -147,6 +160,7 @@ static u8 ValueCount(u8 item)
     case MENUITEM_DBZ_FIRST + 3: return 3;
     case MENUITEM_DBZ_FIRST + 4: return 4;
     case MENUITEM_DBZ_FIRST + 9: return 5;
+    case MENUITEM_DBZ_FIRST + 12: return 5;
     case MENUITEM_CANCEL:     return 0;
     default:                  return 2;
     }
@@ -165,6 +179,8 @@ static const u8 *ValueText(u8 item, u8 v)
     case MENUITEM_DBZ_FIRST + 4: return sV_Ambush[v];
     case MENUITEM_DBZ_FIRST + 5: return sV_BattleBg[v];
     case MENUITEM_DBZ_FIRST + 9: return sV_Shiny[v];
+    case MENUITEM_DBZ_FIRST + 12: return sV_Season[v];
+    case MENUITEM_DBZ_FIRST + 13: return sV_Wild[v];
     default:                   return sV_OnOff[v];
     }
 }
@@ -308,7 +324,7 @@ void CB2_InitOptionMenu(void)
         sOptionValues[MENUITEM_SOUND] = gSaveBlock2Ptr->optionsSound;
         sOptionValues[MENUITEM_BUTTONMODE] = gSaveBlock2Ptr->optionsButtonMode;
         sOptionValues[MENUITEM_FRAMETYPE] = gSaveBlock2Ptr->optionsWindowFrameType;
-        for (i = 0; i < 12; i++)
+        for (i = 0; i < DBZ_OPTION_COUNT; i++)
             sOptionValues[MENUITEM_DBZ_FIRST + i] = DBZ_GetOptionValue(i);
         PutWindowTilemap(WIN_OPTIONS);
         DrawOptionMenuTexts(0, 0);
@@ -401,7 +417,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound = sOptionValues[MENUITEM_SOUND];
     gSaveBlock2Ptr->optionsButtonMode = sOptionValues[MENUITEM_BUTTONMODE];
     gSaveBlock2Ptr->optionsWindowFrameType = sOptionValues[MENUITEM_FRAMETYPE];
-    for (i = 0; i < 12; i++)
+    for (i = 0; i < DBZ_OPTION_COUNT; i++)
         DBZ_SetOptionValue(i, sOptionValues[MENUITEM_DBZ_FIRST + i]);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);

@@ -554,6 +554,7 @@ gSpecials::
 	def_special DBZ_ChooseWish
 	def_special DBZ_GrantWish
 	def_special DBZ_Debug_WarpToDragonBall
+	def_special DBZ_SetStarterRegion
 	def_special DBZ_Debug_GiveSixBalls
 	def_special DBZ_StartFight
 	def_special DBZ_PrepareAmbush

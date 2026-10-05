@@ -987,52 +987,55 @@ bool32 HasShedinjaHPHandling(enum Species species);
 void ResolveEVs(const u16 *evsTemplate, u8 *evs, bool32 ignoreTotalEvCheck);
 void CreateMonFromTemplate(struct Pokemon *mon, const struct PokemonTemplate *monTemplate);
 
+// PokeBall Orange: species without a hand-set behaviour get a temperament from their type
+enum OverworldWildEncounterBehaviors DBZ_GetOWEBehavior(enum Species speciesId);
+
 static inline u32 OWE_GetMovementTypeFromSpecies(enum Species speciesId)
 {
     speciesId = SanitizeSpeciesId(speciesId);
-    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    enum OverworldWildEncounterBehaviors behavior = DBZ_GetOWEBehavior(speciesId);
     return gOWESpeciesBehavior[behavior].movementType;
 }
 
 static inline u32 OWE_GetViewDistanceFromSpecies(enum Species speciesId)
 {
     speciesId = SanitizeSpeciesId(speciesId);
-    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    enum OverworldWildEncounterBehaviors behavior = DBZ_GetOWEBehavior(speciesId);
     return gOWESpeciesBehavior[behavior].viewDistance;
 }
 
 static inline u32 OWE_GetViewWidthFromSpecies(enum Species speciesId)
 {
     speciesId = SanitizeSpeciesId(speciesId);
-    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    enum OverworldWildEncounterBehaviors behavior = DBZ_GetOWEBehavior(speciesId);
     return gOWESpeciesBehavior[behavior].viewWidth;
 }
 
 static inline u32 OWE_GetViewActiveDistanceFromSpecies(enum Species speciesId)
 {
     speciesId = SanitizeSpeciesId(speciesId);
-    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    enum OverworldWildEncounterBehaviors behavior = DBZ_GetOWEBehavior(speciesId);
     return gOWESpeciesBehavior[behavior].activeDistance;
 }
 
 static inline enum SpeedOWE OWE_GetIdleSpeedFromSpecies(enum Species speciesId)
 {
     speciesId = SanitizeSpeciesId(speciesId);
-    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    enum OverworldWildEncounterBehaviors behavior = DBZ_GetOWEBehavior(speciesId);
     return gOWESpeciesBehavior[behavior].idleSpeed;
 }
 
 static inline enum SpeedOWE OWE_GetActiveSpeedFromSpecies(enum Species speciesId)
 {
     speciesId = SanitizeSpeciesId(speciesId);
-    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    enum OverworldWildEncounterBehaviors behavior = DBZ_GetOWEBehavior(speciesId);
     return gOWESpeciesBehavior[behavior].activeSpeed;
 }
 
 static inline enum ReturnToIdleOWE OWE_GetReturnToIdleFromSpecies(enum Species speciesId)
 {
     speciesId = SanitizeSpeciesId(speciesId);
-    enum OverworldWildEncounterBehaviors behavior = gSpeciesInfo[speciesId].overworldEncounterBehavior;
+    enum OverworldWildEncounterBehaviors behavior = DBZ_GetOWEBehavior(speciesId);
     return gOWESpeciesBehavior[behavior].returnToIdle;
 }
 

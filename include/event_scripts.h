@@ -52,6 +52,7 @@ extern const u8 EventSnippet_TrainerApproach[];
 extern const u8 EventSnippet_PrepareSecondTrainerApproach[];
 extern const u8 EventSnippet_ShowTrainerIntroMsg[];
 extern const u8 EventSnippet_GotoPostBattleScript[];
+extern const u8 EventSnippet_DBZOfferTrainerFight[];
 extern const u8 EventSnippet_DoTrainerBattle[];
 extern const u8 EventSnippet_DoRematchTrainerBattle[];
 extern const u8 EventSnippet_EndTrainerBattle[];

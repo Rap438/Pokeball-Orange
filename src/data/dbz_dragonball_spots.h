@@ -58,7 +58,7 @@ static const struct DragonBallSpot sDragonBallSpots[] = {
     {MAP_LITTLEROOT_TOWN, 3, 10, 3},
     {MAP_LITTLEROOT_TOWN, 11, 7, 3},
     {MAP_LITTLEROOT_TOWN, 15, 11, 3},
-    {MAP_LITTLEROOT_TOWN, 12, 16, 3},
+    {MAP_LITTLEROOT_TOWN, 16, 16, 3},
     {MAP_LITTLEROOT_TOWN, 7, 3, 3},
     {MAP_LITTLEROOT_TOWN, 8, 18, 3},
     {MAP_MAUVILLE_CITY, 8, 1, 3},

@@ -25,7 +25,6 @@ extern const u16 gDBZHudPalette[];   // shared: index 1 is the shadow colour
 
 static const struct SpriteSheet sShadowSheetS = { sShadowSGfx, 16 * 8 / 2, TAG_DBZ_SHADOW_S };
 static const struct SpriteSheet sShadowSheetL = { sShadowLGfx, 32 * 8 / 2, TAG_DBZ_SHADOW_L };
-static const struct SpritePalette sShadowPalette = { gDBZHudPalette, TAG_DBZ_SHADOW_PAL };
 
 static const struct OamData sOam_ShadowS = {
     .objMode = ST_OAM_OBJ_BLEND,
@@ -140,7 +139,10 @@ void DBZ_UpdateShadows(void)
             if (GetSpriteTileStartByTag(large ? TAG_DBZ_SHADOW_L : TAG_DBZ_SHADOW_S) == 0xFFFF)
                 LoadSpriteSheet(large ? &sShadowSheetL : &sShadowSheetS);
             if (IndexOfSpritePaletteTag(TAG_DBZ_SHADOW_PAL) == 0xFF)
-                LoadSpritePalette(&sShadowPalette);
+            {
+                struct SpritePalette shadowPal = { DBZ_HudPalette(), TAG_DBZ_SHADOW_PAL };
+                LoadSpritePalette(&shadowPal);
+            }
             id = CreateSprite(large ? &sShadowTemplateL : &sShadowTemplateS, 0, 0, 0);
             sShadowSprite[i] = id;
             if (id != MAX_SPRITES)

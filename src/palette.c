@@ -1,4 +1,5 @@
 #include "global.h"
+#include "seasons.h"
 #include "palette.h"
 #include "util.h"
 #include "decompress.h"
@@ -46,6 +47,7 @@ static const u8 sRoundedDownGrayscaleMap[] = {
 
 void LoadPalette(const void *src, u32 offset, u32 size)
 {
+    src = Season_Resolve(src);   // PokeBall Orange: seasonal art
     CpuCopy16(src, &gPlttBufferUnfaded[offset], size);
     CpuCopy16(src, &gPlttBufferFaded[offset], size);
 }
@@ -53,6 +55,7 @@ void LoadPalette(const void *src, u32 offset, u32 size)
 // Drop in replacement for LoadPalette, uses CpuFastCopy, size must be 0 % 32
 void LoadPaletteFast(const void *src, u32 offset, u32 size)
 {
+    src = Season_Resolve(src);   // PokeBall Orange: seasonal art
     if ((u32)src & 3) // In case palette is not 4 byte aligned
         return LoadPalette(src, offset, size);
     CpuFastCopy(src, &gPlttBufferUnfaded[offset], size);

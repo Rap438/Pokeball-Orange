@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz.h"
 #include "data.h"
 #include "main.h"
 #include "battle.h"
@@ -1228,6 +1229,8 @@ static void BattleSetup_ConfigureTrainerBattle(TrainerBattleParameter *battlePar
 
     if ((isTrainerDefeated && !battleParams->params.isRematch)
     || (!IsTrainerReadyForRematch() && battleParams->params.isRematch)) {
+        // PokeBall Orange: a beaten trainer can be challenged to a fistfight by Goku
+        PUSH(EventSnippet_DBZOfferTrainerFight)
         PUSH(EventSnippet_GotoPostBattleScript)
         return;
     }
@@ -2253,6 +2256,7 @@ void CreateNPCTrainerPartyFromTrainer(struct Pokemon *party, const struct Traine
     {
         u32 monIndex = monIndices[i];
         GenerateMonFromTrainerMon(&party[i], &trainer->party[monIndex], trainerGen);
+        DBZ_RemapRivalStarter(&party[i], trainer->trainerClass);   // PokeBall Orange: rival follows the starter region
     }
     Free(trainerGen);
 }

@@ -118,6 +118,12 @@ void DBZ_QueueFightEvolveCheck(void);
 u8 DBZ_GetSelectedMove(void);   // 0 ki blast, 1 Kamehameha
 u8 DBZ_GetChargeLevel(void);    // 0..16
 void DBZ_UpdateHud(void);
+void DBZ_UpdateDragonBallTracker(void);
+const u16 *DBZ_HudPalette(void);
+u8 DBZ_GetStarterRegion(void);
+void DBZ_SetStarterRegion(void);
+struct Pokemon;
+void DBZ_RemapRivalStarter(struct Pokemon *mon, u8 trainerClass);
 
 // techniques
 extern bool8 gDBZInstantTransmission;
@@ -148,6 +154,7 @@ bool8 DBZ_OptHud(void);
 u8 DBZ_OptAmbush(void);
 u8 DBZ_OptDifficulty(void);
 u8 DBZ_OptShiny(void);
+#define DBZ_OPTION_COUNT 14
 u8 DBZ_GetOptionValue(u8 id);
 void DBZ_SetOptionValue(u8 id, u8 v);
 bool32 DBZ_ExtraShinyRoll(void);

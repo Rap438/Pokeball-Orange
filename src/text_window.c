@@ -31,27 +31,27 @@ static const u8 sTextWindowFrame19_Gfx[] = INCGFX_U8("graphics/text_window/19.pn
 static const u8 sTextWindowFrame20_Gfx[] = INCGFX_U8("graphics/text_window/20.png", ".4bpp");
 
 const u16 gTextWindowFrame1_Pal[] = INCGFX_U16("graphics/text_window/1.png", ".gbapal");
-static const u16 sTextWindowFrame2_Pal[] = INCGFX_U16("graphics/text_window/2.png", ".gbapal");
-static const u16 sTextWindowFrame3_Pal[] = INCGFX_U16("graphics/text_window/3.png", ".gbapal");
-static const u16 sTextWindowFrame4_Pal[] = INCGFX_U16("graphics/text_window/4.png", ".gbapal");
-static const u16 sTextWindowFrame5_Pal[] = INCGFX_U16("graphics/text_window/5.png", ".gbapal");
-static const u16 sTextWindowFrame6_Pal[] = INCGFX_U16("graphics/text_window/6.png", ".gbapal");
-static const u16 sTextWindowFrame7_Pal[] = INCGFX_U16("graphics/text_window/7.png", ".gbapal");
-static const u16 sTextWindowFrame8_Pal[] = INCGFX_U16("graphics/text_window/8.png", ".gbapal");
-static const u16 sTextWindowFrame9_Pal[] = INCGFX_U16("graphics/text_window/9.png", ".gbapal");
-static const u16 sTextWindowFrame10_Pal[] = INCGFX_U16("graphics/text_window/10.png", ".gbapal");
-static const u16 sTextWindowFrame11_Pal[] = INCGFX_U16("graphics/text_window/11.png", ".gbapal");
-static const u16 sTextWindowFrame12_Pal[] = INCGFX_U16("graphics/text_window/12.png", ".gbapal");
-static const u16 sTextWindowFrame13_Pal[] = INCGFX_U16("graphics/text_window/13.png", ".gbapal");
-static const u16 sTextWindowFrame14_Pal[] = INCGFX_U16("graphics/text_window/14.png", ".gbapal");
-static const u16 sTextWindowFrame15_Pal[] = INCGFX_U16("graphics/text_window/15.png", ".gbapal");
-static const u16 sTextWindowFrame16_Pal[] = INCGFX_U16("graphics/text_window/16.png", ".gbapal");
-static const u16 sTextWindowFrame17_Pal[] = INCGFX_U16("graphics/text_window/17.png", ".gbapal");
-static const u16 sTextWindowFrame18_Pal[] = INCGFX_U16("graphics/text_window/18.png", ".gbapal");
-static const u16 sTextWindowFrame19_Pal[] = INCGFX_U16("graphics/text_window/19.png", ".gbapal");
-static const u16 sTextWindowFrame20_Pal[] = INCGFX_U16("graphics/text_window/20.png", ".gbapal");
+const u16 sTextWindowFrame2_Pal[] = INCGFX_U16("graphics/text_window/2.png", ".gbapal");
+const u16 sTextWindowFrame3_Pal[] = INCGFX_U16("graphics/text_window/3.png", ".gbapal");
+const u16 sTextWindowFrame4_Pal[] = INCGFX_U16("graphics/text_window/4.png", ".gbapal");
+const u16 sTextWindowFrame5_Pal[] = INCGFX_U16("graphics/text_window/5.png", ".gbapal");
+const u16 sTextWindowFrame6_Pal[] = INCGFX_U16("graphics/text_window/6.png", ".gbapal");
+const u16 sTextWindowFrame7_Pal[] = INCGFX_U16("graphics/text_window/7.png", ".gbapal");
+const u16 sTextWindowFrame8_Pal[] = INCGFX_U16("graphics/text_window/8.png", ".gbapal");
+const u16 sTextWindowFrame9_Pal[] = INCGFX_U16("graphics/text_window/9.png", ".gbapal");
+const u16 sTextWindowFrame10_Pal[] = INCGFX_U16("graphics/text_window/10.png", ".gbapal");
+const u16 sTextWindowFrame11_Pal[] = INCGFX_U16("graphics/text_window/11.png", ".gbapal");
+const u16 sTextWindowFrame12_Pal[] = INCGFX_U16("graphics/text_window/12.png", ".gbapal");
+const u16 sTextWindowFrame13_Pal[] = INCGFX_U16("graphics/text_window/13.png", ".gbapal");
+const u16 sTextWindowFrame14_Pal[] = INCGFX_U16("graphics/text_window/14.png", ".gbapal");
+const u16 sTextWindowFrame15_Pal[] = INCGFX_U16("graphics/text_window/15.png", ".gbapal");
+const u16 sTextWindowFrame16_Pal[] = INCGFX_U16("graphics/text_window/16.png", ".gbapal");
+const u16 sTextWindowFrame17_Pal[] = INCGFX_U16("graphics/text_window/17.png", ".gbapal");
+const u16 sTextWindowFrame18_Pal[] = INCGFX_U16("graphics/text_window/18.png", ".gbapal");
+const u16 sTextWindowFrame19_Pal[] = INCGFX_U16("graphics/text_window/19.png", ".gbapal");
+const u16 sTextWindowFrame20_Pal[] = INCGFX_U16("graphics/text_window/20.png", ".gbapal");
 
-static const u16 sTextWindowPalettes[][16] =
+const u16 sTextWindowPalettes[][16] =
 {
     INCGFX_U16("graphics/text_window/message_box.png", ".gbapal"),
     INCGFX_U16("graphics/text_window/text_pal1.pal", ".gbapal"),

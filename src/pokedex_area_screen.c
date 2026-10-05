@@ -180,7 +180,7 @@ static const struct SpriteSheet sAreaMarkerSpriteSheet =
     .data = sAreaMarkerTiles, .size = 0x80, .tag = TAG_AREA_MARKER
 };
 
-static const u16 sAreaMarkerPalette[];
+const u16 sAreaMarkerPalette[];
 static const struct SpritePalette sAreaMarkerSpritePalette =
 {
     .data = sAreaMarkerPalette, .tag = TAG_AREA_MARKER
@@ -200,7 +200,7 @@ static const struct SpriteTemplate sAreaMarkerSpriteTemplate =
     .oam = &sAreaMarkerOamData,
 };
 
-static const u16 sAreaMarkerPalette[] = INCGFX_U16("graphics/pokedex/area_marker.png", ".gbapal");
+const u16 sAreaMarkerPalette[] = INCGFX_U16("graphics/pokedex/area_marker.png", ".gbapal");
 static const u8 sAreaMarkerTiles[] = INCGFX_U8("graphics/pokedex/area_marker.png", ".4bpp");
 
 static const struct SpritePalette sAreaUnknownSpritePalette =

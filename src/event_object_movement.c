@@ -2899,7 +2899,7 @@ void TrySpawnObjectEvents(s16 cameraX, s16 cameraY)
         else if (InTrainerHill())
             objectCount = HILL_TRAINERS_PER_FLOOR;
         else
-            objectCount = gMapHeader.events->objectEventCount;
+            objectCount = DBZ_GetCurrentMapObjectEventCount();   // PokeBall Orange: + injected Dragon Balls
 
         for (i = 0; i < objectCount; i++)
         {
@@ -3713,7 +3713,7 @@ const struct ObjectEventTemplate *GetObjectEventTemplateByLocalIdAndMap(u8 local
     if (gSaveBlock1Ptr->location.mapNum == mapNum && gSaveBlock1Ptr->location.mapGroup == mapGroup)
     {
         templates = gSaveBlock1Ptr->objectEventTemplates;
-        count = gMapHeader.events->objectEventCount;
+        count = DBZ_GetCurrentMapObjectEventCount();   // PokeBall Orange: + injected Dragon Balls
     }
     else
     {

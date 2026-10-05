@@ -223,34 +223,37 @@ u16 DBZ_GokuCanFight(void)
     return !DBZ_GokuIsKO() && TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT);
 }
 
-// percent of Goku's max HP a healing item restores (0: does nothing for Goku); revives work only when KO'd
+// percent of Goku's max HP a healing item restores (0: does nothing for Goku).
+// Goku's max HP grows with his level (30 + 8 per level), so flat Pokemon amounts would be useless
+// later on; his scale is a share of his max HP instead, stepping up with how rare each medicine is.
+// The Senzu Bean is the one remedy that brings him back from a KO at full strength, as in the show.
 u16 DBZ_GokuItemHealPercent(u16 itemId)
 {
     bool8 ko = (StoredGokuHp() == 0);
     switch (itemId)
     {
-    case ITEM_REVIVE:       return ko ? 50 : 0;
-    case ITEM_MAX_REVIVE:
-    case ITEM_REVIVAL_HERB: return ko ? 100 : 0;
+    case ITEM_FULL_RESTORE:  return 100;            // Senzu Bean: full heal, revives too
+    case ITEM_REVIVE:        return ko ? 50 : 0;    // Dende's Heal
+    case ITEM_MAX_REVIVE:                           // Kami's Heal
+    case ITEM_REVIVAL_HERB:  return ko ? 100 : 0;
     }
     if (ko)
         return 0;
     switch (itemId)
     {
-    case ITEM_POTION:        return 20;
-    case ITEM_SUPER_POTION:  return 40;
-    case ITEM_HYPER_POTION:  return 70;
-    case ITEM_MAX_POTION:
-    case ITEM_FULL_RESTORE:  return 100;
-    case ITEM_FRESH_WATER:   return 40;
-    case ITEM_SODA_POP:      return 50;
-    case ITEM_LEMONADE:      return 60;
-    case ITEM_MOOMOO_MILK:   return 75;
-    case ITEM_ENERGY_POWDER: return 40;
-    case ITEM_ENERGY_ROOT:   return 70;
-    case ITEM_BERRY_JUICE:   return 20;
+    case ITEM_POTION:        return 25;   // Senzu Sprout
+    case ITEM_SUPER_POTION:  return 50;   // Senzu Leaf
+    case ITEM_HYPER_POTION:  return 75;   // Korin Water
+    case ITEM_MAX_POTION:    return 100;  // Sacred Water
     case ITEM_ORAN_BERRY:    return 10;
+    case ITEM_BERRY_JUICE:   return 20;
     case ITEM_SITRUS_BERRY:  return 25;
+    case ITEM_FRESH_WATER:   return 30;
+    case ITEM_ENERGY_POWDER: return 30;
+    case ITEM_SODA_POP:      return 40;
+    case ITEM_LEMONADE:      return 50;
+    case ITEM_MOOMOO_MILK:   return 60;   // a Saiyan appetite
+    case ITEM_ENERGY_ROOT:   return 60;
     }
     return 0;
 }

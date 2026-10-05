@@ -501,9 +501,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 200 : 300,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
-            "A tiny sprout from\n"
-            "Korin's garden.\n"
-            "Restores 20 HP."),
+            "A Korin sprout.\n"
+            "Pokémon: 20 HP.\n"
+            "GOKU: 1/4 of HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -521,13 +521,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = 700,
         .holdEffectParam = 60,
         .description = COMPOUND_STRING(
-            "Restores the HP of\n"
-            "a Pokémon by\n"
-        #if I_HEALTH_RECOVERY >= GEN_7
-            "60 points."),
-        #else
-            "50 points."),
-        #endif
+            "A Senzu leaf.\n"
+            "Pokémon: 60 HP.\n"
+            "GOKU: 1/2 of HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -545,13 +541,9 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_2 && I_PRICE <= GEN_6) ? 1200 : 1500,
         .holdEffectParam = 120,
         .description = COMPOUND_STRING(
-            "Restores the HP of\n"
-            "a Pokémon by\n"
-        #if I_HEALTH_RECOVERY >= GEN_7
-            "120 points."),
-        #else
-            "200 points."),
-        #endif
+            "Korin's water.\n"
+            "Pokémon: 120 HP.\n"
+            "GOKU: 3/4 of HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -570,8 +562,8 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "Ultra-holy water.\n"
-            "Fully restores the\n"
-            "HP of a Pokémon."),
+            "Fully restores a\n"
+            "Pokémon or GOKU."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -590,8 +582,8 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffectParam = 255,
         .description = COMPOUND_STRING(
             "One bean heals all\n"
-            "HP and status\n"
-            "problems at once."),
+            "HP and status. It\n"
+            "even revives GOKU."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -608,9 +600,9 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Dende's Heal"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 1500,
         .description = COMPOUND_STRING(
-            "Dende's healing\n"
-            "power. Revives a\n"
-            "fainted Pokémon."),
+            "Dende's healing.\n"
+            "Revives a Pokémon\n"
+            "or GOKU to half HP."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -629,7 +621,7 @@ const struct ItemInfo gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Kami's own power.\n"
             "Fully revives a\n"
-            "fainted Pokémon."),
+            "Pokémon or GOKU."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
