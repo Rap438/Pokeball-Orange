@@ -859,8 +859,8 @@ LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "This is our new home!\p"
 	.string "It's quiet and cozy, with lots of open\n"
 	.string "land to train on. Don't you think?\p"
-	.string "And there's a room of your very own\n"
-	.string "upstairs, {PLAYER}! Let's go inside.$"
+	.string "And our bedroom is upstairs,\n"
+	.string "{PLAYER}! Let's go inside.$"
 
 LittlerootTown_Text_WaitPlayer:
 	.string "CHI-CHI: Hold on, {PLAYER}!$"
@@ -967,3 +967,87 @@ LittlerootTown_Text_BirchSomethingToShowYouAtLab:
 	.string "There's something I want to show you.\n"
 	.string "Come along to my LAB.$"
 
+
+@ ---------------------------------------------------------------- PokeBall Orange v0.4: riverside camp
+LittlerootTown_EventScript_CampTent::
+	lockall
+	msgbox LittlerootTown_Text_CampTent, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, LittlerootTown_EventScript_CampTentNo
+	closemessage
+	fadescreenswapbuffers FADE_TO_BLACK
+	playfanfare MUS_HEAL
+	waitfanfare
+	special HealPlayerParty
+	fadescreenswapbuffers FADE_FROM_BLACK
+	msgbox LittlerootTown_Text_CampTentRested, MSGBOX_DEFAULT
+	releaseall
+	end
+
+LittlerootTown_EventScript_CampTentNo::
+	releaseall
+	end
+
+LittlerootTown_EventScript_Campfire::
+	msgbox LittlerootTown_Text_Campfire, MSGBOX_SIGN
+	end
+
+LittlerootTown_EventScript_SupplyCrate::
+	lockall
+	goto_if_set FLAG_DBZ_CAMP_CRATE, LittlerootTown_EventScript_SupplyCrateEmpty
+	msgbox LittlerootTown_Text_SupplyCrate, MSGBOX_DEFAULT
+	giveitem ITEM_POTION, 2
+	goto_if_eq VAR_RESULT, FALSE, LittlerootTown_EventScript_SupplyCrateEnd
+	setflag FLAG_DBZ_CAMP_CRATE
+LittlerootTown_EventScript_SupplyCrateEnd::
+	releaseall
+	end
+
+LittlerootTown_EventScript_SupplyCrateEmpty::
+	msgbox LittlerootTown_Text_SupplyCrateEmpty, MSGBOX_DEFAULT
+	releaseall
+	end
+
+LittlerootTown_EventScript_FlowerGlint::
+	lockall
+	goto_if_set FLAG_DBZ_FLOWER_FEATHER, LittlerootTown_EventScript_FlowerGlintEmpty
+	msgbox LittlerootTown_Text_FlowerGlint, MSGBOX_DEFAULT
+	giveitem ITEM_FAIRY_FEATHER
+	goto_if_eq VAR_RESULT, FALSE, LittlerootTown_EventScript_FlowerGlintEnd
+	setflag FLAG_DBZ_FLOWER_FEATHER
+LittlerootTown_EventScript_FlowerGlintEnd::
+	releaseall
+	end
+
+LittlerootTown_EventScript_FlowerGlintEmpty::
+	msgbox LittlerootTown_Text_FlowerGlintEmpty, MSGBOX_DEFAULT
+	releaseall
+	end
+
+LittlerootTown_Text_CampTent:
+	.string "GOKU's capsule tent. It still smells\n"
+	.string "like grilled fish.\p"
+	.string "Take a nap?$"
+
+LittlerootTown_Text_CampTentRested:
+	.string "GOKU and his POKéMON woke up\n"
+	.string "fully rested!$"
+
+LittlerootTown_Text_Campfire:
+	.string "The campfire crackles away.\p"
+	.string "There's a stick here that used to\n"
+	.string "have a fish on it…$"
+
+LittlerootTown_Text_SupplyCrate:
+	.string "A CAPSULE CORP. supply crate.\n"
+	.string "BULMA packed it for the trip.$"
+
+LittlerootTown_Text_SupplyCrateEmpty:
+	.string "Just instant noodles left.\n"
+	.string "GOKU already ate the good stuff.$"
+
+LittlerootTown_Text_FlowerGlint:
+	.string "Something is glittering between\n"
+	.string "the flowers!$"
+
+LittlerootTown_Text_FlowerGlintEmpty:
+	.string "Just flowers now. They smell nice.$"

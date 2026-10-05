@@ -6,8 +6,12 @@
 #include "match_call.h"
 #include "field_message_box.h"
 #include "dbz.h"
+#include "text_window.h"
+#include "script.h"
+#include "field_name_box.h"
 
 static EWRAM_DATA u8 sFieldMessageBoxMode = 0;
+EWRAM_DATA u8 gWalkAwayFromSignpostTimer = 0;
 
 static void ExpandStringAndStartDrawFieldMessage(const u8 *, bool32);
 static void StartDrawFieldMessage(void);
@@ -29,20 +33,28 @@ static void Task_DrawFieldMessage(u8 taskId)
 
     switch (task->tState)
     {
-        case 0:
+    case 0:
+        if (gMsgIsSignPost)
+            LoadSignPostWindowFrameGfx();
+        else
             LoadMessageBoxAndBorderGfx();
-            task->tState++;
-            break;
-        case 1:
-            DrawDialogueFrame(0, TRUE);
-            task->tState++;
-            break;
-        case 2:
-            if (RunTextPrintersAndIsPrinter0Active() != TRUE)
-            {
-                sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;
-                DestroyTask(taskId);
-            }
+        task->tState++;
+        break;
+    case 1:
+    {
+        u32 nameboxWinId = GetNameboxWindowId();
+        DrawDialogueFrame(0, TRUE);
+        if (nameboxWinId != WINDOW_NONE)
+            DrawNamebox(nameboxWinId, NAME_BOX_BASE_TILE_NUM - NAME_BOX_BASE_TILES_TOTAL, TRUE);
+        task->tState++;
+        break;
+    }
+    case 2:
+        if (RunTextPrintersAndIsPrinter0Active() != TRUE)
+        {
+            sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;
+            DestroyTask(taskId);
+        }
     }
 }
 
@@ -119,6 +131,7 @@ bool8 ShowFieldMessageFromBuffer(void)
 static void ExpandStringAndStartDrawFieldMessage(const u8 *str, bool32 allowSkippingDelayWithButtonPress)
 {
     StringExpandPlaceholders(gStringVar4, str);
+    TrySpawnNamebox(gStringVar4, NAME_BOX_BASE_TILE_NUM);
     DBZ_PortraitForMessage(gStringVar4);
     AddTextPrinterForMessage(allowSkippingDelayWithButtonPress);
     CreateTask_DrawFieldMessage();
@@ -136,6 +149,7 @@ void HideFieldMessageBox(void)
     DBZ_HidePortrait();
     DestroyTask_DrawFieldMessage();
     ClearDialogWindowAndFrame(0, TRUE);
+    DestroyNamebox();
     sFieldMessageBoxMode = FIELD_MESSAGE_BOX_HIDDEN;
 }
 

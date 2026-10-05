@@ -2681,8 +2681,8 @@ MatchCall_Text_Scott4::
 	.string "ANNOUNCER: Hi, {PLAYER}{KUN}!\p"
 	.string "I've been hearing about these odd\n"
 	.string "gangs being a nuisance.\p"
-	.string "RED RIBBON ARMY and RED RIBBON ARMY,\n"
-	.string "I think they were.\p"
+	.string "The RED RIBBON ARMY, they're called.\n"
+	.string "A land squad and a sea squad, I hear.\p"
 	.string "I would think there'd be some\n"
 	.string "skilled TRAINERS among them.\p"
 	.string "…But if they're thugs…$"
@@ -2924,7 +2924,7 @@ MatchCall_Text_MrStone6::
 
 MatchCall_Text_MrStone7::
 	.string "Hello!\n"
-	.string "This is CAPSULE CORP. CORPORATI…\l"
+	.string "This is CAPSULE CORPORATI…\l"
 	.string "Oh, hello, {PLAYER}!\p"
 	.string "Our PRESIDENT was here a little\n"
 	.string "while ago, but he's gone out.\p"

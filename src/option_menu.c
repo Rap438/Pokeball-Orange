@@ -31,8 +31,8 @@ enum
     MENUITEM_SOUND,
     MENUITEM_BUTTONMODE,
     MENUITEM_FRAMETYPE,
-    MENUITEM_DBZ_FIRST,                       // DBZ settings 0..10, in DBZ_GetOptionValue order
-    MENUITEM_CANCEL = MENUITEM_DBZ_FIRST + 11,
+    MENUITEM_DBZ_FIRST,                       // DBZ settings 0..11, in DBZ_GetOptionValue order
+    MENUITEM_CANCEL = MENUITEM_DBZ_FIRST + 12,
     MENUITEM_COUNT,
 };
 
@@ -55,6 +55,14 @@ static void DrawBgWindowFrames(void);
 
 static EWRAM_DATA u8 sOptionValues[MENUITEM_COUNT] = {0};
 
+static const u8 gText_Option[] = _("OPTION");
+static const u8 gText_TextSpeed[] = _("TEXT SPEED");
+static const u8 gText_BattleScene[] = _("BATTLE SCENE");
+static const u8 gText_BattleStyle[] = _("BATTLE STYLE");
+static const u8 gText_Sound[] = _("SOUND");
+static const u8 gText_ButtonMode[] = _("BUTTON MODE");
+static const u8 gText_Frame[] = _("FRAME");
+static const u8 gText_OptionMenuCancel[] = _("CANCEL");
 static const u8 sText_Opt_DayNight[] = _("DAY/NIGHT");
 static const u8 sText_Opt_Shadows[] = _("SHADOWS");
 static const u8 sText_Opt_Hud[] = _("GOKU HUD");
@@ -66,6 +74,7 @@ static const u8 sText_Opt_PowerUp[] = _("POWER-UPS");
 static const u8 sText_Opt_Hints[] = _("FORM HINTS");
 static const u8 sText_Opt_Shiny[] = _("SHINY ODDS");
 static const u8 sText_Opt_AutoRun[] = _("AUTO-RUN");
+static const u8 sText_Opt_Follower[] = _("FOLLOWER");
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
@@ -86,6 +95,7 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_DBZ_FIRST + 8] = sText_Opt_Hints,
     [MENUITEM_DBZ_FIRST + 9] = sText_Opt_Shiny,
     [MENUITEM_DBZ_FIRST + 10] = sText_Opt_AutoRun,
+    [MENUITEM_DBZ_FIRST + 11] = sText_Opt_Follower,
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
 };
 
@@ -107,10 +117,10 @@ static const u8 sText_V_Rare[] = _("RARE");
 static const u8 sText_V_Often[] = _("OFTEN");
 static const u8 sText_V_Map[] = _("MAP VIEW");
 static const u8 sText_V_Classic[] = _("CLASSIC");
-static const u8 sText_V_8192[] = _("1/8192");
-static const u8 sText_V_4096[] = _("1/4096");
-static const u8 sText_V_1024[] = _("1/1024");
-static const u8 sText_V_256[] = _("1/256");
+static const u8 sText_V_8192[] = _("1/4096");   // base rate (Gen 6+)
+static const u8 sText_V_4096[] = _("1/2048");   // base + 16/65536
+static const u8 sText_V_1024[] = _("1/820");    // base + 64/65536
+static const u8 sText_V_256[] = _("1/240");     // base + 256/65536
 static const u8 sText_V_Always[] = _("ALWAYS");
 static const u8 sText_V_Type[] = _("TYPE ");
 static const u8 sText_LeftArrow[] = _("<");
@@ -298,7 +308,7 @@ void CB2_InitOptionMenu(void)
         sOptionValues[MENUITEM_SOUND] = gSaveBlock2Ptr->optionsSound;
         sOptionValues[MENUITEM_BUTTONMODE] = gSaveBlock2Ptr->optionsButtonMode;
         sOptionValues[MENUITEM_FRAMETYPE] = gSaveBlock2Ptr->optionsWindowFrameType;
-        for (i = 0; i < 11; i++)
+        for (i = 0; i < 12; i++)
             sOptionValues[MENUITEM_DBZ_FIRST + i] = DBZ_GetOptionValue(i);
         PutWindowTilemap(WIN_OPTIONS);
         DrawOptionMenuTexts(0, 0);
@@ -391,7 +401,7 @@ static void Task_OptionMenuSave(u8 taskId)
     gSaveBlock2Ptr->optionsSound = sOptionValues[MENUITEM_SOUND];
     gSaveBlock2Ptr->optionsButtonMode = sOptionValues[MENUITEM_BUTTONMODE];
     gSaveBlock2Ptr->optionsWindowFrameType = sOptionValues[MENUITEM_FRAMETYPE];
-    for (i = 0; i < 11; i++)
+    for (i = 0; i < 12; i++)
         DBZ_SetOptionValue(i, sOptionValues[MENUITEM_DBZ_FIRST + i]);
 
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);

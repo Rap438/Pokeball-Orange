@@ -262,7 +262,7 @@ PlayersHouse_2F_Text_ClockIsStopped:
 	.string "Better set it and get it running!$"
 
 PlayersHouse_2F_Text_HowDoYouLikeYourRoom:
-	.string "CHI-CHI: {PLAYER}, how do you like your\n"
+	.string "CHI-CHI: {PLAYER}, how do you like our\n"
 	.string "new room?\p"
 	.string "Good! Everything's put away neatly!\p"
 	.string "The movers finished carrying\n"
@@ -287,4 +287,4 @@ PlayersHouse_2F_Text_ItsAGameCube:
 	.string "It's a Nintendo GameCube.\p"
 	.string "A Game Boy Advance is hooked up to\n"
 	.string "serve as the Controller.\p"
-	.string "CHI-CHI would rather you studied!$"
+	.string "CHI-CHI would rather you got a job!$"

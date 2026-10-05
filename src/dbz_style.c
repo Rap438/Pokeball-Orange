@@ -90,8 +90,6 @@ static bool8 WantsShadow(u8 i)
         return FALSE;
     if (obj->invisible && !(i == gPlayerAvatar.objectEventId && DBZ_PlayerOverlayActive()))
         return FALSE;
-    if (obj->hasShadow)   // the game's own jump shadow is showing
-        return FALSE;
     info = GetObjectEventGraphicsInfo(obj->graphicsId);
     if (info->inanimate || info->width > 32)
         return FALSE;
@@ -200,6 +198,25 @@ static u8 TimeOfDay(void)
     return TOD_DAY;
 }
 
+// BlendPalettes for DBZ flashes and darkening. When a blend ends (coeff 0) the engine's day/night tint is
+// put back, otherwise a flash would leave the map at full daylight colours.
+void DBZ_BlendPalettes(u32 selectedPalettes, u8 coeff, u32 color)
+{
+    BlendPalettes(selectedPalettes, coeff, color);
+    if (coeff == 0)
+        UpdatePalettesWithTime(selectedPalettes);
+}
+
+// debug time-of-day override (VAR_DBZ_TOD_OVERRIDE): hour to use, or -1 for the real clock
+s32 DBZ_TimeOverrideHour(void)
+{
+    static const u8 sHours[] = {12, 7, 19, 1};    // day, morning, evening, night (mid-period, so the blend is settled)
+    u16 force = VarGet(VAR_DBZ_TOD_OVERRIDE);
+    if (force >= 1 && force <= 4)
+        return sHours[force - 1];
+    return -1;
+}
+
 static bool8 MapGetsDaylight(void)
 {
     return IsMapTypeOutdoors(gMapHeader.mapType);
@@ -221,6 +238,10 @@ void DBZ_ApplyTimeTint(u16 offset, u16 count)
 {
     u8 tod;
     u16 i;
+    // v0.4: the engine's own day/night system (OW_ENABLE_DNS, with window and lamp lights) replaces
+    // this tint; DAY/NIGHT in OPTION now switches that system (see MapHasNaturalLight)
+    if (TRUE)
+        return;
     if (!MapGetsDaylight() || !DBZ_OptDayNight())
         return;
     tod = TimeOfDay();

@@ -59,6 +59,7 @@ u8 DBZ_GetOptionValue(u8 id)
     case 8: return (o & DBZ_OPT_HINTS_OFF) ? 1 : 0;
     case 9: return DBZ_OptShiny();
     case 10: return (o & DBZ_OPT_AUTORUN_OFF) ? 1 : 0;
+    case 11: return FlagGet(FLAG_DBZ_FOLLOWER_OFF) ? 1 : 0;
     }
     return 0;
 }
@@ -94,39 +95,22 @@ void DBZ_SetOptionValue(u8 id, u8 v)
     case 8: o = SetBit(o, DBZ_OPT_HINTS_OFF, v); break;
     case 9: o = (o & ~(7 << DBZ_OPT_SHINY_SHIFT)) | ((v % 5) << DBZ_OPT_SHINY_SHIFT); break;
     case 10: o = SetBit(o, DBZ_OPT_AUTORUN_OFF, v); break;
+    case 11: if (v) FlagSet(FLAG_DBZ_FOLLOWER_OFF); else FlagClear(FLAG_DBZ_FOLLOWER_OFF); break;
     }
     VarSet(VAR_DBZ_OPTIONS, o);
 }
 
 // ------------------------------------------------------------------ shiny odds
-// Called for every Pokemon the player will own (wild, gift, egg, Shenron). Keeps gender, ability and
-// nature: only the upper personality bytes are changed to make it shiny.
-static const u16 sShinyThreshold[5] = {8, 16, 64, 256, 0xFFFF};
+// Called for every Pokemon the player will own (wild, gift, egg, Shenron) on top of the normal roll.
+// The engine stores shininess as its own flag, so nothing about the Pokemon (nature, ability, gender) changes.
+static const u16 sShinyThreshold[5] = {0, 16, 64, 256, 0xFFFF};   // extra roll out of 65536 on top of the 1/4096 base: total ~1/4096, 1/2048, 1/820, 1/240, always
 
-void DBZ_ApplyShinyOdds(u32 *personality, u32 otId)
+bool32 DBZ_ExtraShinyRoll(void)
 {
     u8 setting = DBZ_OptShiny();
-    u32 p = *personality;
-    u16 t = sShinyThreshold[setting];
-    u16 otXor = (otId >> 16) ^ (otId & 0xFFFF);
-    u8 nature = p % 25;
-    u16 j;
-
     if (setting == 0)
-        return;
-    if ((otXor ^ (p >> 16) ^ (p & 0xFFFF)) < SHINY_ODDS)
-        return;   // already shiny
-    if (t != 0xFFFF && (Random() % 65536) >= (u32)(t - SHINY_ODDS))
-        return;
-    for (j = 0; j < 256; j++)
-    {
-        u16 lo = (p & 0xFF) | (((j + (Random() & 0xFF)) & 0xFF) << 8);
-        u16 hi = otXor ^ lo ^ (Random() & 7);
-        u32 np = ((u32)hi << 16) | lo;
-        if (np % 25 == nature)
-        {
-            *personality = np;
-            return;
-        }
-    }
+        return FALSE;
+    if (sShinyThreshold[setting] == 0xFFFF)
+        return TRUE;
+    return (Random() % 65536) < sShinyThreshold[setting];
 }

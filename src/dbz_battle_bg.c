@@ -213,7 +213,12 @@ bool8 DBZ_TryDrawMapBattleBackground(void)
     for (i = 0; i < 6; i++)
     {
         LoadPalette(&view->palettes[i * 16], BG_PLTT_ID(sPalSlots[i]), PLTT_SIZE_4BPP);
-        DBZ_ApplyTimeTint(BG_PLTT_ID(sPalSlots[i]), 16);
+        // same time of day as the overworld the battle started on (engine day/night blend)
+        if (MapHasNaturalLight(gMapHeader.mapType))
+        {
+            TimeMixPalettes(1u << sPalSlots[i], gPlttBufferUnfaded, gPlttBufferUnfaded, &gTimeBlend.startBlend, &gTimeBlend.endBlend, gTimeBlend.weight);
+            CpuCopy16(&gPlttBufferUnfaded[BG_PLTT_ID(sPalSlots[i])], &gPlttBufferFaded[BG_PLTT_ID(sPalSlots[i])], PLTT_SIZE_4BPP);
+        }
     }
     sMapBgDrawn = TRUE;
     return TRUE;
@@ -238,8 +243,8 @@ bool8 DBZ_ShouldTrainerPowerUp(u8 battler)
         return FALSE;
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        u16 species = GetMonData(&gEnemyParty[i], MON_DATA_SPECIES);
-        if (species != SPECIES_NONE && !GetMonData(&gEnemyParty[i], MON_DATA_IS_EGG) && GetMonData(&gEnemyParty[i], MON_DATA_HP) != 0)
+        u16 species = GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_SPECIES);
+        if (species != SPECIES_NONE && !GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_IS_EGG) && GetMonData(&gParties[B_TRAINER_OPPONENT_A][i], MON_DATA_HP) != 0)
             alive++;
     }
     if (alive != 1)

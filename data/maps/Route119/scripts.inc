@@ -584,7 +584,7 @@ Route119_Text_ScottYouWonAtFortreeGym:
 Route119_Text_StayAwayFromWeatherInstitute:
 	.string "Sir! Lookout duty, sir!\p"
 	.string "Halt! Stay away from the WEATHER\n"
-	.string "INSTITUTE, kid. It's… uh… dangerous!$"
+	.string "INSTITUTE, pal. It's… uh… dangerous!$"
 
 Route119_Text_DontGoNearWeatherInstitute:
 	.string "Lookout duty is so boring. I miss the\n"

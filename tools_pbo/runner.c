@@ -20,6 +20,8 @@ static struct mLogger quiet = { .log = noLog, .filter = NULL };
 #include <string.h>
 
 static struct mCore* core;
+// address of gSaveBlock1Ptr (pret build: 0x03005dac); override with env SB1PTR for other builds
+static unsigned sb1Ptr(void) { const char* e = getenv("SB1PTR"); return e ? (unsigned)strtoul(e, NULL, 16) : 0x03005dac; }
 static mColor* buf;
 static unsigned W, H;
 
@@ -96,11 +98,11 @@ int main(int argc, char** argv) {
 			if (cmd[4] == '8') core->busWrite8(core, addr, v); else core->busWrite16(core, addr, v);
 		} else if (!strcmp(cmd, "setvar")) {
 			unsigned var, v; sscanf(line, "%*s %x %x", &var, &v);
-			unsigned sb1 = core->busRead32(core, 0x03005dac);
+			unsigned sb1 = core->busRead32(core, sb1Ptr());
 			core->busWrite16(core, sb1 + 0x139C + (var - 0x4000) * 2, v);
 		} else if (!strcmp(cmd, "getvar")) {
 			unsigned var; sscanf(line, "%*s %x", &var);
-			unsigned sb1 = core->busRead32(core, 0x03005dac);
+			unsigned sb1 = core->busRead32(core, sb1Ptr());
 			printf("var %04X = %04X\n", var, core->busRead16(core, sb1 + 0x139C + (var - 0x4000) * 2));
 		} else if (!strncmp(cmd, "peek", 4)) {
 			unsigned addr; sscanf(line, "%*s %x", &addr);

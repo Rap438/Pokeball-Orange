@@ -37,7 +37,14 @@ for c in cmds:
     lines.append(c)
 if save: lines.append(f'save {os.path.abspath(save)}')
 scr = os.path.join(tmp, 's.txt'); open(scr, 'w').write('\n'.join(lines) + '\n')
-r = subprocess.run(['/home/claude/tools/runner', rom, scr], capture_output=True, text=True)
+env = dict(os.environ)
+if 'SB1PTR' not in env:
+    elf = os.path.splitext(rom)[0] + '.elf'
+    if os.path.exists(elf):
+        nm = subprocess.run(['/opt/xpack/xpack-arm-none-eabi-gcc-14.2.1-1.1/bin/arm-none-eabi-nm', elf], capture_output=True, text=True).stdout
+        for l in nm.splitlines():
+            if l.endswith(' gSaveBlock1Ptr'): env['SB1PTR'] = l.split()[0]
+r = subprocess.run(['/home/claude/tools/runner', rom, scr], capture_output=True, text=True, env=env)
 if r.stdout: print(r.stdout, end='')
 if r.stderr: print(r.stderr, end='', file=sys.stderr)
 if shots:

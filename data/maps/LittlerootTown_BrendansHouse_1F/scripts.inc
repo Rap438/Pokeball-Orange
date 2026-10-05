@@ -282,7 +282,7 @@ PlayersHouse_1F_Text_MoversPokemonGoSetClock:
 	.string "The CAPSULE CORP. movers' POKéMON\n"
 	.string "unpacked everything and even tidied\l"
 	.string "up afterward. How wonderful!\p"
-	.string "{PLAYER}, your room is upstairs.\n"
+	.string "{PLAYER}, our room is upstairs.\n"
 	.string "Go have a look, dear!\p"
 	.string "I bought a new clock to mark our\n"
 	.string "move here.\l"
@@ -290,12 +290,12 @@ PlayersHouse_1F_Text_MoversPokemonGoSetClock:
 
 PlayersHouse_1F_Text_ArentYouInterestedInRoom:
 	.string "CHI-CHI: Well, {PLAYER}?\p"
-	.string "Don't you want to see your very own\n"
+	.string "Don't you want to see our new\n"
 	.string "room?$"
 
 PlayersHouse_1F_Text_GoSetTheClock:
 	.string "CHI-CHI: {PLAYER}.\p"
-	.string "Go set the clock in your room, honey.$"
+	.string "Go set the clock upstairs, honey.$"
 
 PlayersHouse_1F_Text_OhComeQuickly:
 	.string "CHI-CHI: Oh! {PLAYER}, {PLAYER}!\n"
@@ -312,10 +312,11 @@ PlayersHouse_1F_Text_ItsOverWeMissedHim:
 
 PlayersHouse_1F_Text_GoIntroduceYourselfNextDoor:
 	.string "Oh, that's right.\n"
-	.string "KRILLIN has an old friend in this town.\p"
-	.string "MASTER ROSHI, the Turtle Hermit.\p"
-	.string "He lives right next door, so be a\n"
-	.string "good boy and go say hello.$"
+	.string "Your old master lives in this town!\p"
+	.string "MASTER ROSHI has a POKéMON LAB right\n"
+	.string "next door. Go say hello, dear.\p"
+	.string "And if he starts being a pervert,\n"
+	.string "you come straight home!$"
 
 PlayersHouse_1F_Text_SeeYouHoney:
 	.string "CHI-CHI: See you later, honey!$"

@@ -51,7 +51,7 @@ AquaHideout_1F_EventScript_Grunt1Defeated::
 	end
 
 AquaHideout_1F_Text_OurBossIsSnatchingSomething:
-	.string "Hey! Halt! What's a kid like you doing in\n"
+	.string "Hey! Halt! What are YOU doing in\n"
 	.string "the RED RIBBON ARMY's SEA BASE?\p"
 	.string "DR. GERO isn't here! He went off to\n"
 	.string "snatch something important!\p"
@@ -70,7 +70,7 @@ AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
 	.string "hiding?$"
 
 AquaHideout_1F_Text_BossWentToJackASubmarine:
-	.string "Hey! Halt! What's a kid like you doing in\n"
+	.string "Hey! Halt! What are YOU doing in\n"
 	.string "the RED RIBBON ARMY's SEA BASE?\p"
 	.string "DR. GERO isn't here! He went off to\n"
 	.string "hijack a submarine!\p"
@@ -80,7 +80,7 @@ AquaHideout_1F_Text_BossWentToJackASubmarine:
 	.string "the plan? Not a chance!$"
 
 AquaHideout_1F_Text_BossIsOnRoute122:
-	.string "Hey! Halt! What's a kid like you doing in\n"
+	.string "Hey! Halt! What are YOU doing in\n"
 	.string "the RED RIBBON ARMY's SEA BASE?\p"
 	.string "DR. GERO isn't here! He's headed for MT.\n"
 	.string "PYRE on ROUTE 122!\p"
@@ -97,7 +97,7 @@ AquaHideout_1F_Text_TeamMagmaAtMtChimney:
 	.string "But what is that thing even like?$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
-	.string "Hey! Halt! What's a kid like you doing in\n"
+	.string "Hey! Halt! What are YOU doing in\n"
 	.string "the RED RIBBON ARMY's SEA BASE?\p"
 	.string "DR. GERO isn't here! He's on his way to\n"
 	.string "SLATEPORT CITY!\p"

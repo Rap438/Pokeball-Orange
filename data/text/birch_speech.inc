@@ -32,7 +32,8 @@ gText_Birch_MainSpeech::
 	.string "$"
 
 gText_Birch_AndYouAre::
-	.string "Now then, who might you be?$"
+	.string "Now then… My eyes aren't what they\n"
+	.string "used to be. Who's that over there?$"
 
 gText_Birch_BoyOrGirl::
 	.string "Tell me, are you a boy?\n"
@@ -47,8 +48,8 @@ gText_Birch_SoItsPlayer::
 	.string "Ah, so your name is {PLAYER}{KUN}?$"
 
 gText_Birch_YourePlayer::
-	.string "Ohoho, so you're {PLAYER}{KUN}, the one who\n"
-	.string "moved into town next door!\l"
+	.string "Ohoho! It's {PLAYER}{KUN}, my old student!\n"
+	.string "So YOU moved in next door!\l"
 	.string "Now it all makes sense!\p"
 	.string "$"
 

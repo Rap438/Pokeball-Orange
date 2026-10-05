@@ -3,8 +3,11 @@
 
 // PokeBall Orange constants shared by C and event scripts
 
-// Debug helpers: R+SELECT on the overworld opens the debug script. Remove for release builds.
+// Debug helpers: R+SELECT on the overworld opens the debug script, START ends a personal fight.
+// Off in release builds (`make release` defines RELEASE, which also turns off the engine's own debug menus).
+#ifndef RELEASE
 #define DBZ_DEBUG
+#endif
 
 #define VAR_DBZ_FORM            VAR_UNUSED_0x40F7   // current Saiyan form of Goku
 #define VAR_DBZ_SEEN_FORMS      VAR_UNUSED_0x404E   // bitmask of forms already introduced
@@ -54,6 +57,10 @@
 #define FLAG_DBZ_TOURNEY_ROUND1 FLAG_UNUSED_0x027
 #define FLAG_DBZ_TOURNEY_ROUND2 FLAG_UNUSED_0x028
 #define FLAG_DBZ_TOURNEY_ROUND3 FLAG_UNUSED_0x029
+#define FLAG_DBZ_FOLLOWER_OFF   FLAG_UNUSED_0x02A
+#define FLAG_DBZ_CAMP_CRATE     FLAG_UNUSED_0x02B   // Littleroot camp supply crate looted
+#define FLAG_DBZ_FLOWER_FEATHER FLAG_UNUSED_0x02C   // Littleroot flower-bed Fairy Feather found
+#define FLAG_DBZ_EXP_SHARE_ON   FLAG_UNUSED_0x02D   // Training Gi (Exp. Share) switched on; engine I_EXP_SHARE_FLAG   // OPTION > FOLLOWER: OFF (engine follower flag, see config/overworld.h)
 
 // VAR_0x8008 for special DBZ_SetNextFightFlags
 #define DBZ_FIGHTF_FUSION    (1 << 0)
@@ -71,7 +78,7 @@
 #define DBZ_OPT_POWERUP_OFF    (1 << 8)
 #define DBZ_OPT_HINTS_OFF      (1 << 9)
 #define DBZ_OPT_HUD_OFF        (1 << 10)
-#define DBZ_OPT_SHINY_SHIFT    11         // 3 bits: 0 1/8192, 1 1/4096, 2 1/1024, 3 1/256, 4 always
+#define DBZ_OPT_SHINY_SHIFT    11         // 3 bits: 0 base 1/4096, 1 ~1/2048, 2 ~1/820, 3 ~1/240, 4 always
 #define DBZ_OPT_AUTORUN_OFF    (1 << 14)
 
 // VAR_DBZ_MISC bits

@@ -42,7 +42,7 @@ LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
 	.string "too.$"
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
-	.string "Hohoho! Hey, kid, you can get to the hot\n"
+	.string "Hohoho! Hey, sonny, you can get to the hot\n"
 	.string "springs from here.\p"
 	.string "If POKéMON need rest, so do their\n"
 	.string "TRAINERS. Even a Saiyan has to rest\l"

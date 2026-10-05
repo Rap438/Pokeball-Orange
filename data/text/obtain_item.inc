@@ -28,4 +28,31 @@ gText_NoRoomLeftForAnother::
 	.string "another {STR_VAR_2}…$"
 
 gText_TheDecorWasTransferredToThePC::
-	.string "The {STR_VAR_2} was transferred to the PC.$"
+	.string "The {STR_VAR_2} was transferred\n"
+	.string "to the PC.$"
+
+gText_ObtainedTheItems::
+	.string "Obtained {STR_VAR_1} {STR_VAR_2}!$"
+
+gText_PlayerFoundItems::
+	.string "{PLAYER} found {STR_VAR_1} {STR_VAR_2}!$"
+
+gText_PutCoinsAwayInCoinCase::
+	.string "{PLAYER} put the COINS away in\n"
+	.string "the COIN CASE.$"
+
+gText_FoundXCoins::
+	.string "{PLAYER} found\n"
+	.string "{STR_VAR_1} {STR_VAR_2}!$"
+
+gText_FoundXItems::
+	.string "{PLAYER} found\n"
+	.string "{STR_VAR_1} {STR_VAR_2}(s)!$"
+
+gText_CoinCaseIsFull::
+	.string "Too bad!\n"
+	.string "The COIN CASE is full…$"
+
+gText_NothingToPutThemIn::
+	.string "Too bad!\n"
+	.string "There's nothing to put them in…$"

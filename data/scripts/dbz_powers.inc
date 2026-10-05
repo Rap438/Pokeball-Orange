@@ -260,7 +260,7 @@ EventScript_DBZ_Debug_Warp116::
 	end
 
 EventScript_DBZ_Debug_Warp114::
-	warp MAP_ROUTE114, 12, 44
+	warp MAP_LITTLEROOT_TOWN, 11, 15   @ v0.4: the riverside camp demo
 	waitstate
 	releaseall
 	end

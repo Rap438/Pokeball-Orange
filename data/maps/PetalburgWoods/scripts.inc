@@ -327,12 +327,12 @@ PetalburgWoods_Text_NoOneCrossesTeamAqua:
 	.string "Huh? What do you think you're doing?\n"
 	.string "What, you're going to protect him?\p"
 	.string "Nobody crosses the RED RIBBON ARMY\n"
-	.string "and gets away with it, not even a kid!\p"
+	.string "and gets away with it, spiky hair!\p"
 	.string "Fine, let's fight! This one's for KID\n"
 	.string "BUU!$"
 
 PetalburgWoods_Text_YoureKiddingMe:
-	.string "No way! How is a kid this strong?!$"
+	.string "No way! How is one guy this strong?!$"
 
 PetalburgWoods_Text_YouveGotSomeNerve:
 	.string "Grrr… You've got some nerve meddling\n"

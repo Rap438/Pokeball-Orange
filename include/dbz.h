@@ -150,7 +150,7 @@ u8 DBZ_OptDifficulty(void);
 u8 DBZ_OptShiny(void);
 u8 DBZ_GetOptionValue(u8 id);
 void DBZ_SetOptionValue(u8 id, u8 v);
-void DBZ_ApplyShinyOdds(u32 *personality, u32 otId);
+bool32 DBZ_ExtraShinyRoll(void);
 
 // overworld style
 void DBZ_UpdateShadows(void);
@@ -161,6 +161,8 @@ void DBZ_ResetTrainerPowerUp(void);
 void DBZ_RestyleBattleMenuFrame(u16 offset);
 bool8 DBZ_ShouldTrainerPowerUp(u8 battler);
 void DBZ_ApplyTimeTint(u16 offset, u16 count);
+s32 DBZ_TimeOverrideHour(void);
+void DBZ_BlendPalettes(u32 selectedPalettes, u8 coeff, u32 color);
 void DBZ_ApplyTimeTintToObjSlotOnce(u8 slot);
 
 #endif // GUARD_DBZ_H

@@ -146,10 +146,10 @@ static const struct SpriteTemplate sSpriteTemplate_Aura = {
 };
 
 static EWRAM_DATA u8 sChargeFrames = 0;
-static EWRAM_DATA u8 sGlowSpriteId = MAX_SPRITES;
+static EWRAM_DATA u8 sGlowSpriteId = 0;   // validated by callback before use
 static EWRAM_DATA u8 sHandlerTick = 0;
 static EWRAM_DATA bool8 sFightBlast = FALSE;   // blast fired during an overworld fight (no script)
-static EWRAM_DATA u8 sSpiritSpriteId = MAX_SPRITES;
+static EWRAM_DATA u8 sSpiritSpriteId = 0;   // validated by callback before use
 static EWRAM_DATA u8 sAuraTick = 0;
 static EWRAM_DATA bool8 sLWasHeld = FALSE;
 static bool8 SpiritValid(void);
@@ -652,10 +652,10 @@ static void Task_SpiritThrow(u8 taskId)
         }
         break;
     case 1: // white-out flash
-        BlendPalettes(PALETTES_ALL, tTimer < 8 ? 14 - tTimer : 0, RGB_WHITE);
+        DBZ_BlendPalettes(PALETTES_ALL, tTimer < 8 ? 14 - tTimer : 0, RGB_WHITE);
         if (++tTimer > 8)
         {
-            BlendPalettes(PALETTES_ALL, 0, RGB_WHITE);
+            DBZ_BlendPalettes(PALETTES_ALL, 0, RGB_WHITE);
             sFightBlast = FALSE;
             DBZ_FightOnBlast(tHitType, tHitLocal, 2);
             DestroyTask(taskId);
@@ -697,7 +697,6 @@ static void ThrowSpiritBomb(void)
 #undef tStartX
 #undef tStartY
 
-// input_field_1_0 = R pressed, input_field_1_1 = L pressed, input_field_1_2 = L held
 bool8 DBZ_HandleFieldInput(struct FieldInput *input)
 {
     s16 x, y;
@@ -705,8 +704,8 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
     sHandlerTick = 0;
     // a press can land on a frame where field input isn't read (mid-step, knocked back): count the first
     // frame we see L held as the press
-    lNew = input->input_field_1_1 || (input->input_field_1_2 && !sLWasHeld);
-    sLWasHeld = input->input_field_1_2;
+    lNew = input->dbzLPressed || (input->dbzLHeld && !sLWasHeld);
+    sLWasHeld = input->dbzLHeld;
 
     if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_ON_FOOT))
     {
@@ -718,13 +717,13 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
     if (sChargeFrames == 0)
     {
 #ifdef DBZ_DEBUG
-        if (input->input_field_1_3)
+        if (input->dbzDebugCombo)
         {
             ScriptContext_SetupScript(EventScript_DBZ_Debug);
             return TRUE;
         }
 #endif
-        if (input->input_field_1_0 && !DBZ_IsFused())
+        if (input->dbzRPressed && !DBZ_IsFused())
         {
             ScriptContext_SetupScript(EventScript_DBZ_PowerUp);
             return TRUE;
@@ -741,7 +740,7 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
     }
 
     // hold L + tap R: swap the selected special move (KI BLAST -> KAMEHAMEHA -> SPIRIT BOMB once learned)
-    if (input->input_field_1_0)
+    if (input->dbzRPressed)
     {
         u16 misc = VarGet(VAR_DBZ_MISC);
         u8 next = (DBZ_GetSelectedMove() + 1) % (DBZ_HasTechnique(DBZ_TECH_SPIRIT_BOMB) ? 3 : 2);
@@ -751,7 +750,7 @@ bool8 DBZ_HandleFieldInput(struct FieldInput *input)
         return FALSE;
     }
 
-    if (input->input_field_1_2)
+    if (input->dbzLHeld)
     {
         u8 move = DBZ_GetSelectedMove();
         if (sChargeFrames < 250)
@@ -855,10 +854,10 @@ static void Task_FormFlash(u8 taskId)
 {
     s16 *data = gTasks[taskId].data;
     if (tTimer < 8)
-        BlendPalettes(PALETTES_ALL, 16 - tTimer * 2, RGB_WHITE);
+        DBZ_BlendPalettes(PALETTES_ALL, 16 - tTimer * 2, RGB_WHITE);
     else
     {
-        BlendPalettes(PALETTES_ALL, 0, RGB_WHITE);
+        DBZ_BlendPalettes(PALETTES_ALL, 0, RGB_WHITE);
         DestroyTask(taskId);
         ScriptContext_Enable();
         return;
@@ -915,7 +914,8 @@ static void ComputeBlastPath(u8 dir, u8 maxTiles, s16 *lenPx, s16 *hitType, s16 
         x += dx;
         y += dy;
         objId = GetObjectEventIdByXY(x, y);
-        if (objId != OBJECT_EVENTS_COUNT && objId != gPlayerAvatar.objectEventId && !gObjectEvents[objId].invisible)
+        if (objId != OBJECT_EVENTS_COUNT && objId != gPlayerAvatar.objectEventId && !gObjectEvents[objId].invisible
+         && gObjectEvents[objId].localId != OBJ_EVENT_ID_FOLLOWER)   // blasts fly past Goku's own Pokemon
         {
             switch (gObjectEvents[objId].graphicsId)
             {

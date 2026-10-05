@@ -84,9 +84,9 @@ static void InitGokuLevel(void)
     u8 i, best = 1;
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) != SPECIES_NONE && !GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG))
         {
-            u8 l = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            u8 l = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_LEVEL);
             if (l > best)
                 best = l;
         }
@@ -702,7 +702,7 @@ static void UpdateShakeAndFlash(void)
     if (sFight.flash)
     {
         sFight.flash--;
-        BlendPalettes(PALETTES_ALL, sFight.flash * 3, RGB_WHITE);
+        DBZ_BlendPalettes(PALETTES_ALL, sFight.flash * 3, RGB_WHITE);
         if (sFight.flash == 0)
             RestoreEnemyPalette();
     }
@@ -791,7 +791,7 @@ static void LoadAtkPalette(void)
     pal.tag = TAG_DBZ_ATK_PAL;
     slot = LoadSpritePalette(&pal);
     if (slot != 0xFF)
-        DBZ_ApplyTimeTint(OBJ_PLTT_ID(slot), 16);
+        UpdateSpritePaletteWithTime(slot);   // match the day/night tint on Goku
 }
 
 static void DestroyAtkSprite(void)
@@ -1598,8 +1598,11 @@ static void UpdateKaioken(void)
 }
 
 // ------------------------------------------------------------------ main task
+static void RestoreFollowerAfterFight(void);
+
 static void EndFight(u8 taskId)
 {
+    RestoreFollowerAfterFight();
     struct ObjectEvent *e = Enemy();
     DestroyProjectile();
     DestroyStruggleSprites();
@@ -1618,7 +1621,7 @@ static void EndFight(u8 taskId)
         SetCameraPanning(0, 0);
         InstallCameraPanAheadCallback();
     }
-    BlendPalettes(PALETTES_ALL, 0, RGB_WHITE);
+    DBZ_BlendPalettes(PALETTES_ALL, 0, RGB_WHITE);
     FlashObjectPalette(e, 0, RGB_WHITE);
     if (sChamberHidden)
     {
@@ -1686,7 +1689,7 @@ static void Task_Fight(u8 taskId)
             CreateHud();
             PlayBGM(sEnemyKinds[sFight.kind].music);
         }
-        BlendPalettes(PALETTES_BG, (sFight.timer < 8) ? (8 - sFight.timer) : 0, RGB_WHITE);
+        DBZ_BlendPalettes(PALETTES_BG, (sFight.timer < 8) ? (8 - sFight.timer) : 0, RGB_WHITE);
         if (++sFight.timer >= 30)
         {
             sFight.phase = FIGHT_ACTIVE;
@@ -1701,7 +1704,7 @@ static void Task_Fight(u8 taskId)
         UpdateKaioken();
         UpdateShakeAndFlash();
         if ((sFight.flags & FIGHT_FLAG_CHAMBER) && !sFight.flash && (sFight.timer % 8) == 1)
-            BlendPalettes(PALETTES_BG, 11, RGB_WHITE);   // the endless white void
+            DBZ_BlendPalettes(PALETTES_BG, 11, RGB_WHITE);   // the endless white void
         if (sFight.paralyzed)
         {
             sFight.paralyzed--;
@@ -1773,19 +1776,12 @@ static void Task_Fight(u8 taskId)
 
 static u8 TrainerTopLevel(u16 trainerId)
 {
-    const struct Trainer *t = &gTrainers[trainerId];
-    u8 i, best = 5, lvl;
+    const struct Trainer *t = GetTrainerStructFromId(trainerId);
+    u8 i, best = 5;
     for (i = 0; i < t->partySize; i++)
     {
-        switch (t->partyFlags & (F_TRAINER_PARTY_CUSTOM_MOVESET | F_TRAINER_PARTY_HELD_ITEM))
-        {
-        case 0:                              lvl = t->party.NoItemDefaultMoves[i].lvl; break;
-        case F_TRAINER_PARTY_CUSTOM_MOVESET: lvl = t->party.NoItemCustomMoves[i].lvl; break;
-        case F_TRAINER_PARTY_HELD_ITEM:      lvl = t->party.ItemDefaultMoves[i].lvl; break;
-        default:                             lvl = t->party.ItemCustomMoves[i].lvl; break;
-        }
-        if (lvl > best)
-            best = lvl;
+        if (t->party[i].lvl > best)
+            best = t->party[i].lvl;
     }
     return best;
 }
@@ -1830,6 +1826,31 @@ void DBZ_EndFusion(void)
 }
 
 // VAR_0x8004 = enemy kind, VAR_0x8005 = level, VAR_0x8006 = local id of the opponent object (0: spawn one)
+// The follower steps back into its Poke Ball for a personal fight (so it can't block knockback, spawns or
+// the arena) and comes back out afterwards. Only undo what we did: a cutscene may have hidden it already.
+static EWRAM_DATA bool8 sFollowerHiddenForFight = FALSE;
+
+static void HideFollowerForFight(void)
+{
+    sFollowerHiddenForFight = FALSE;
+    if (OW_FOLLOWERS_ENABLED && !FlagGet(FLAG_TEMP_HIDE_FOLLOWER))
+    {
+        FlagSet(FLAG_TEMP_HIDE_FOLLOWER);
+        RemoveFollowingPokemon();
+        sFollowerHiddenForFight = TRUE;
+    }
+}
+
+static void RestoreFollowerAfterFight(void)
+{
+    if (sFollowerHiddenForFight)
+    {
+        FlagClear(FLAG_TEMP_HIDE_FOLLOWER);
+        UpdateFollowingPokemon();
+        sFollowerHiddenForFight = FALSE;
+    }
+}
+
 static bool8 StartFightInternal(bool8 waitScript)
 {
     const struct DbzEnemyKind *k;
@@ -1891,6 +1912,7 @@ static bool8 StartFightInternal(bool8 waitScript)
         sFight.phase = FIGHT_NONE;
         return FALSE;
     }
+    HideFollowerForFight();
 
     if (gSpecialVar_0x8006 != 0)
     {
@@ -1920,16 +1942,16 @@ static bool8 StartFightInternal(bool8 waitScript)
         StringCopy(sFight.name, sFighterNames[fighter]);
     else if (k->name != NULL)
         StringCopy(sFight.name, k->name);
-    else if (gTrainerBattleOpponent_A != 0)
+    else if (TRAINER_BATTLE_PARAM.opponentA != 0)
     {
-        StringCopyN(sFight.name, gTrainers[gTrainerBattleOpponent_A].trainerName, TRAINER_NAME_LENGTH);
+        StringCopyN(sFight.name, GetTrainerStructFromId(TRAINER_BATTLE_PARAM.opponentA)->trainerName, TRAINER_NAME_LENGTH);
         sFight.name[TRAINER_NAME_LENGTH] = EOS;
     }
     else
         StringCopy(sFight.name, sText_RedRibbon);
 
-    sFight.leader = (sFight.kind == DBZ_ENEMY_TRAINER && gTrainerBattleOpponent_A != 0
-                  && gTrainers[gTrainerBattleOpponent_A].trainerClass == TRAINER_CLASS_LEADER);
+    sFight.leader = (sFight.kind == DBZ_ENEMY_TRAINER && TRAINER_BATTLE_PARAM.opponentA != 0
+                  && GetTrainerStructFromId(TRAINER_BATTLE_PARAM.opponentA)->trainerClass == TRAINER_CLASS_LEADER);
     hpBase = 20 + 7 * sFight.level;
     sFight.enemyMaxHp = (u32)hpBase * k->hpPercent / 100 * (sFight.leader ? 13 : 10) / 10 * DiffEnemyHp() / 100;
     sFight.enemyHp = sFight.enemyMaxHp;
@@ -2010,7 +2032,7 @@ u16 DBZ_CanFightTrainer(void)
 {
     if (!DBZ_GokuCanFight())
         return FALSE;
-    if (gTrainerBattleOpponent_A == 0)
+    if (TRAINER_BATTLE_PARAM.opponentA == 0)
         return FALSE;
     return GetObjectEventIdByLocalIdAndMap(gSpecialVar_LastTalked, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup) != OBJECT_EVENTS_COUNT;
 }
@@ -2018,7 +2040,7 @@ u16 DBZ_CanFightTrainer(void)
 void DBZ_SetupTrainerFight(void)
 {
     gSpecialVar_0x8004 = DBZ_ENEMY_TRAINER;
-    gSpecialVar_0x8005 = TrainerTopLevel(gTrainerBattleOpponent_A);
+    gSpecialVar_0x8005 = TrainerTopLevel(TRAINER_BATTLE_PARAM.opponentA);
     gSpecialVar_0x8006 = gSpecialVar_LastTalked;
 }
 
@@ -2049,7 +2071,7 @@ void DBZ_SetupVegetaFight(void)
         }
     }
     gSpecialVar_0x8004 = DBZ_ENEMY_VEGETA;
-    gSpecialVar_0x8005 = (gTrainerBattleOpponent_A != 0 ? TrainerTopLevel(gTrainerBattleOpponent_A) : DBZ_GokuLevel()) + 3;
+    gSpecialVar_0x8005 = (TRAINER_BATTLE_PARAM.opponentA != 0 ? TrainerTopLevel(TRAINER_BATTLE_PARAM.opponentA) : DBZ_GokuLevel()) + 3;
     if (gSpecialVar_0x8005 < DBZ_GokuLevel())
         gSpecialVar_0x8005 = DBZ_GokuLevel();
     gSpecialVar_0x8006 = (best != OBJECT_EVENTS_COUNT && bestDist <= 6) ? gObjectEvents[best].localId : 0;
@@ -2086,9 +2108,9 @@ static u8 PartyTopLevel(void)
     u8 i, best = 1;
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) != SPECIES_NONE && !GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) != SPECIES_NONE && !GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG))
         {
-            u8 l = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            u8 l = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_LEVEL);
             if (l > best)
                 best = l;
         }
@@ -2142,7 +2164,7 @@ void DBZ_SetupBossFight(void)
 // trainers whose rematch is a boss fight instead of an ordinary fistfight (until the boss is beaten)
 u16 DBZ_TrainerIsPendingBoss(void)
 {
-    if (gTrainerBattleOpponent_A == TRAINER_TABITHA_MT_CHIMNEY && !FlagGet(FLAG_DBZ_BOSS_BLUE))
+    if (TRAINER_BATTLE_PARAM.opponentA == TRAINER_TABITHA_MT_CHIMNEY && !FlagGet(FLAG_DBZ_BOSS_BLUE))
         return TRUE;
     return FALSE;
 }
@@ -2198,7 +2220,7 @@ void DBZ_PrepareAmbush(void)
     gSpecialVar_0x8004 = (Random() % 3) ? DBZ_ENEMY_SAIYAN_SOLDIER : DBZ_ENEMY_MAJIN_SOLDIER;
     gSpecialVar_0x8005 = lvl;
     gSpecialVar_0x8006 = 0;
-    gTrainerBattleOpponent_A = 0;
+    TRAINER_BATTLE_PARAM.opponentA = 0;
     StringCopy(gStringVar1, sEnemyKinds[gSpecialVar_0x8004].name);
 }
 
@@ -2298,7 +2320,7 @@ static void AddReport(u8 type, u8 partyId, u8 level, u16 move)
 
 static void GiveMonFightExp(u8 partyId, u32 amount)
 {
-    struct Pokemon *mon = &gPlayerParty[partyId];
+    struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][partyId];
     u16 species = GetMonData(mon, MON_DATA_SPECIES);
     u8 level = GetMonData(mon, MON_DATA_LEVEL);
     u32 exp, maxExp;
@@ -2366,18 +2388,19 @@ u16 DBZ_NextFightReport(void)
     if (sReportPos >= sReportCount)
         return DBZ_REPORT_NONE;
     type = sReports[sReportPos].type;
-    GetMonData(&gPlayerParty[sReports[sReportPos].partyId], MON_DATA_NICKNAME, gStringVar1);
+    GetMonData(&gParties[B_TRAINER_PLAYER][sReports[sReportPos].partyId], MON_DATA_NICKNAME, gStringVar1);
     StringGet_Nickname(gStringVar1);
     if (type == DBZ_REPORT_LEVEL)
         ConvertIntToDecimalStringN(gStringVar2, sReports[sReportPos].level, STR_CONV_MODE_LEFT_ALIGN, 3);
     else
-        StringCopy(gStringVar2, gMoveNames[sReports[sReportPos].move]);
+        StringCopy(gStringVar2, GetMoveName(sReports[sReportPos].move));
     sReportPos++;
     return type;
 }
 
 static EWRAM_DATA u8 sEvolveParty = 0;
 static EWRAM_DATA u16 sEvolveTarget = 0;
+static EWRAM_DATA bool32 sEvolveCanStop = 0;
 
 // finds the next party member that wants to evolve after a fight; TRUE if there is one
 u16 DBZ_TryEvolveAfterFight(void)
@@ -2386,9 +2409,9 @@ u16 DBZ_TryEvolveAfterFight(void)
     {
         u8 i = sEvolveCheck++;
         u16 target;
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG))
+        if (GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_IS_EGG))
             continue;
-        target = GetEvolutionTargetSpecies(&gPlayerParty[i], EVO_MODE_NORMAL, ITEM_NONE);
+        target = GetEvolutionTargetSpecies(&gParties[B_TRAINER_PLAYER][i], EVO_MODE_NORMAL, ITEM_NONE, NULL, &sEvolveCanStop, CHECK_EVO);
         if (target != SPECIES_NONE)
         {
             sEvolveParty = i;
@@ -2404,7 +2427,8 @@ void DBZ_StartFightEvolution(void)
 {
     CleanupOverworldWindowsAndTilemaps();
     gCB2_AfterEvolution = CB2_ReturnToFieldContinueScriptPlayMapMusic;
-    BeginEvolutionScene(&gPlayerParty[sEvolveParty], sEvolveTarget, TRUE, sEvolveParty);
+    GetEvolutionTargetSpecies(&gParties[B_TRAINER_PLAYER][sEvolveParty], EVO_MODE_NORMAL, ITEM_NONE, NULL, &sEvolveCanStop, DO_EVO);
+    BeginEvolutionScene(&gParties[B_TRAINER_PLAYER][sEvolveParty], sEvolveTarget, sEvolveCanStop, sEvolveParty);
 }
 
 // STR_VAR_1 level, STR_VAR_2 EXP to next level, STR_VAR_3 HP now / max
@@ -2442,7 +2466,7 @@ void DBZ_GrantPowerWish(void)
     case 2:
         for (i = 0; i < PARTY_SIZE; i++)
         {
-            struct Pokemon *mon = &gPlayerParty[i];
+            struct Pokemon *mon = &gParties[B_TRAINER_PLAYER][i];
             u16 species = GetMonData(mon, MON_DATA_SPECIES);
             u8 level, target;
             u32 exp;

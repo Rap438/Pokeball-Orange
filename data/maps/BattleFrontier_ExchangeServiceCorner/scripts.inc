@@ -1,6 +1,11 @@
 BattleFrontier_ExchangeServiceCorner_MapScripts::
 	.byte 0
 
+.macro setitemandprice item:req, price:req
+	setvar VAR_0x8009, \item
+	setvar VAR_0x8008, \price
+.endm
+
 BattleFrontier_ExchangeServiceCorner_EventScript_ClerkWelcome::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize, MSGBOX_DEFAULT
 	special ShowBattlePointsWindow
@@ -94,85 +99,52 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1::
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
-BattleFrontier_ExchangeServiceCorner_EventScript_KissPoster::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1::
+	bufferdecorationname STR_VAR_1, VAR_0x8009
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 16
-	setvar VAR_0x8009, DECOR_KISS_POSTER
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_KissPoster::
+	setitemandprice DECOR_KISS_POSTER, 16
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_KissCushion::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 32
-	setvar VAR_0x8009, DECOR_KISS_CUSHION
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_KISS_CUSHION, 32
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_SmoochumDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 32
-	setvar VAR_0x8009, DECOR_SMOOCHUM_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_SMOOCHUM_DOLL, 32
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_TogepiDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, DECOR_TOGEPI_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_TOGEPI_DOLL, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MeowthDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, DECOR_MEOWTH_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_MEOWTH_DOLL, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_ClefairyDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, DECOR_CLEFAIRY_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_CLEFAIRY_DOLL, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_DittoDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, DECOR_DITTO_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_DITTO_DOLL, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_CyndaquilDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 80
-	setvar VAR_0x8009, DECOR_CYNDAQUIL_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_CYNDAQUIL_DOLL, 80
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_ChikoritaDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 80
-	setvar VAR_0x8009, DECOR_CHIKORITA_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_CHIKORITA_DOLL, 80
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_TotodileDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor1
-	setvar VAR_0x8008, 80
-	setvar VAR_0x8009, DECOR_TOTODILE_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_TOTODILE_DOLL, 80
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor1
 
 BattleFrontier_ExchangeServiceCorner_EventScript_DecorClerk2::
 	lock
@@ -197,45 +169,32 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2::
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
-BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2::
+	bufferdecorationname STR_VAR_1, VAR_0x8009
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
-	setvar VAR_0x8008, 128
-	setvar VAR_0x8009, DECOR_LAPRAS_DOLL
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_LaprasDoll::
+	setitemandprice DECOR_LAPRAS_DOLL, 128
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_SnorlaxDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
-	setvar VAR_0x8008, 128
-	setvar VAR_0x8009, DECOR_SNORLAX_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_SNORLAX_DOLL, 128
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_VenusaurDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
-	setvar VAR_0x8008, 256
-	setvar VAR_0x8009, DECOR_VENUSAUR_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_VENUSAUR_DOLL, 256
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_CharizardDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
-	setvar VAR_0x8008, 256
-	setvar VAR_0x8009, DECOR_CHARIZARD_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_CHARIZARD_DOLL, 256
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_BlastoiseDoll::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseDecor2
-	setvar VAR_0x8008, 256
-	setvar VAR_0x8009, DECOR_BLASTOISE_DOLL
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice DECOR_BLASTOISE_DOLL, 256
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseDecor2
 
 BattleFrontier_ExchangeServiceCorner_EventScript_VitaminClerk::
 	lock
@@ -261,53 +220,37 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin::
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
-BattleFrontier_ExchangeServiceCorner_EventScript_Protein::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin::
+	bufferitemname STR_VAR_1, VAR_0x8009
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
-	setvar VAR_0x8008, 1
-	setvar VAR_0x8009, ITEM_PROTEIN
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_Protein::
+	setitemandprice ITEM_PROTEIN, 1
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Calcium::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
-	setvar VAR_0x8008, 1
-	setvar VAR_0x8009, ITEM_CALCIUM
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_CALCIUM, 1
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Iron::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
-	setvar VAR_0x8008, 1
-	setvar VAR_0x8009, ITEM_IRON
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_IRON, 1
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Zinc::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
-	setvar VAR_0x8008, 1
-	setvar VAR_0x8009, ITEM_ZINC
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_ZINC, 1
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Carbos::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
-	setvar VAR_0x8008, 1
-	setvar VAR_0x8009, ITEM_CARBOS
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_CARBOS, 1
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HPUp::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseVitamin
-	setvar VAR_0x8008, 1
-	setvar VAR_0x8009, ITEM_HP_UP
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_HP_UP, 1
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseVitamin
+
 
 BattleFrontier_ExchangeServiceCorner_EventScript_HoldItemClerk::
 	lock
@@ -336,77 +279,48 @@ BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem::
 	case MULTI_B_PRESSED, BattleFrontier_ExchangeServiceCorner_EventScript_ClerkGoodbye
 	end
 
-BattleFrontier_ExchangeServiceCorner_EventScript_Leftovers::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers, MSGBOX_YESNO
+BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem::
+	bufferitemname STR_VAR_1, VAR_0x8009
+	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, ITEM_LEFTOVERS
 	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
 	end
+
+BattleFrontier_ExchangeServiceCorner_EventScript_Leftovers::
+	setitemandprice ITEM_LEFTOVERS, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_WhiteHerb::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, ITEM_WHITE_HERB
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_WHITE_HERB, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_QuickClaw::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, ITEM_QUICK_CLAW
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_QUICK_CLAW, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_MentalHerb::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 48
-	setvar VAR_0x8009, ITEM_MENTAL_HERB
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_MENTAL_HERB, 48
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Brightpowder::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 64
-	setvar VAR_0x8009, ITEM_BRIGHT_POWDER
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_BRIGHT_POWDER, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_ChoiceBand::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 64
-	setvar VAR_0x8009, ITEM_CHOICE_BAND
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_CHOICE_BAND, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_KingsRock::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 64
-	setvar VAR_0x8009, ITEM_KINGS_ROCK
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_KINGS_ROCK, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_FocusBand::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 64
-	setvar VAR_0x8009, ITEM_FOCUS_BAND
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_FOCUS_BAND, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_ScopeLens::
-	msgbox BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, BattleFrontier_ExchangeServiceCorner_EventScript_ChooseHoldItem
-	setvar VAR_0x8008, 64
-	setvar VAR_0x8009, ITEM_SCOPE_LENS
-	goto BattleFrontier_ExchangeServiceCorner_EventScript_TryPurchasePrize
-	end
+	setitemandprice ITEM_SCOPE_LENS, 64
+	goto BattleFrontier_ExchangeServiceCorner_EventScript_PurchaseHoldItem
 
 BattleFrontier_ExchangeServiceCorner_EventScript_Man::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll, MSGBOX_NPC
@@ -431,295 +345,175 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Girl::
 	end
 
 BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
-	.string "Welcome to the EXCHANGE SERVICE\n"
-	.string "CORNER!\p"
-	.string "The tournament committee trades the\n"
-	.string "Battle Points you have earned for fine\l"
-	.string "prizes.\p"
-	.string "Take a look at the prize list and pick\n"
-	.string "one out.$"
+	.string "Hello, this is the EXCHANGE SERVICE\n"
+	.string "CORNER.\p"
+	.string "We exchange the Battle Points you\n"
+	.string "have collected for lovely prizes.\p"
+	.string "Please choose a prize from this list.$"
 
 @ Unused
 BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
-	.string "Go ahead and pick a prize from\n"
-	.string "the list.$"
+	.string "Please choose a prize from this list.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster:
-	.string "The KISS POSTER, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion:
-	.string "You want the KISS CUSHION.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll:
-	.string "The SMOOCHUM DOLL, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll:
-	.string "You want the TOGEPI DOLL.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll:
-	.string "The MEOWTH DOLL, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll:
-	.string "You want the CLEFAIRY DOLL.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll:
-	.string "The DITTO DOLL, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll:
-	.string "You want the CYNDAQUIL DOLL.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll:
-	.string "The CHIKORITA DOLL, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll:
-	.string "You want the TOTODILE DOLL.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll:
-	.string "The LAPRAS DOLL, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll:
-	.string "You want the SNORLAX DOLL.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll:
-	.string "The VENUSAUR DOLL, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
-	.string "You want the CHARIZARD DOLL.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
-	.string "The BLASTOISE DOLL, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein:
-	.string "You want the PROTEIN.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium:
-	.string "The CALCIUM, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron:
-	.string "You want the IRON.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc:
-	.string "The ZINC, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos:
-	.string "You want the CARBOS.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
-	.string "The HP UP, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
-	.string "You want the BRIGHTPOWDER.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
-	.string "The WHITE HERB, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
-	.string "You want the QUICK CLAW.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
-	.string "The MENTAL HERB, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:
-	.string "You want the MAJIN MARK.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
-	.string "The KING'S ROCK, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand:
-	.string "You want the SAIYAN PRIDE.\n"
-	.string "Is that right?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens:
-	.string "The SCOPE LENS, is it?\n"
-	.string "Is that your final pick?$"
-
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers:
-	.string "You want the SENZU POUCH.\n"
-	.string "Is that right?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmPurchase:
+	.string "You've chosen the {STR_VAR_1}.\n"
+	.string "Is that correct?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
-	.string "Wonderful!\n"
-	.string "We'll ship it to your PC back home.$"
+	.string "Thank you!\n"
+	.string "We'll send it to your PC at home.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize:
-	.string "Here's your prize. Well earned!$"
+	.string "Here is your prize!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints:
-	.string "Oh, I'm terribly sorry…\n"
-	.string "Your Battle Points fall short…$"
+	.string "I'm so sorry…\n"
+	.string "You don't have enough Battle Points…$"
 
 BattleFrontier_ExchangeServiceCorner_Text_PCIsFull:
-	.string "Oh, I'm so sorry…\n"
-	.string "Your PC looks to be packed full…$"
+	.string "I'm so sorry…\n"
+	.string "Your PC appears to be full…$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt:
-	.string "Oh, I'm so sorry…\n"
-	.string "Your bag has no room for it…$"
+	.string "I'm so sorry…\n"
+	.string "You don't have space to hold it…$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints:
 	.string "Thank you very much.\p"
-	.string "Come back once you've piled up\n"
-	.string "some more Battle Points!$"
+	.string "Please visit us when you have\n"
+	.string "saved up Battle Points.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls:
-	.string "Oh, they're all so wonderful!\n"
-	.string "I want every one of them!\l"
-	.string "Soft cushions!\l"
-	.string "Giant plush DOLLS!\l"
-	.string "Tiny plush DOLLS!\l"
-	.string "I want the whole collection!$"
+	.string "Oh, they're so nice!\n"
+	.string "I wish I had them!\l"
+	.string "Cute cushions!\l"
+	.string "Big plush DOLLS!\l"
+	.string "Little plush DOLLS!\l"
+	.string "I wish I had them all!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant:
-	.string "Leave it to Mama, sweetie!\p"
-	.string "If you want it, Mama will fight\n"
-	.string "through the whole tournament to get\l"
-	.string "it for you!$"
+	.string "Leave it to your mommy!\p"
+	.string "If it's anything you want, I'll go\n"
+	.string "through anything to get it, honey!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher:
-	.string "Once I get my hands on the items\n"
-	.string "here, my POKéMON will get stronger.\p"
-	.string "They sure will!\n"
-	.string "Believe it!$"
+	.string "If I can get hold of the items here,\n"
+	.string "my POKéMON will get tougher.\p"
+	.string "You bet they will!\n"
+	.string "No question about it!$"
 
 BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll:
-	.string "Huh?\n"
+	.string "Hah?\n"
 	.string "What are you gawking at?\p"
-	.string "Quit staring at my plush DOLL!\p"
-	.string "You want one? Win it yourself!\n"
-	.string "Right, SMOOCHUM?$"
+	.string "I don't like you staring at my plush\n"
+	.string "doll like that.\p"
+	.string "If you want it, go get one yourself!\n"
+	.string "Isn't that right, SMOOCHUM?$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord:
-	.string "Hey, did you know?\p"
-	.string "The longer your winning streak runs\n"
-	.string "at the BATTLE facilities, the more\l"
-	.string "Battle Points they hand out.$"
+	.string "Did you know?\p"
+	.string "If you stretch your record at any of\n"
+	.string "the BATTLE facilities, they start\l"
+	.string "giving you more and more Battle Points.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc::
-	.string "A huge SMOOCHUM poster to\n"
-	.string "hang up on your wall.$"
+	.string "A large poster with a SMOOCHUM print.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc::
-	.string "A soft SMOOCHUM cushion.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A SMOOCHUM cushion.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc::
-	.string "A cuddly SMOOCHUM DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A SMOOCHUM DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc::
-	.string "A cuddly TOGEPI DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A TOGEPI DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
-	.string "A cuddly MEOWTH DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A MEOWTH DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
-	.string "A cuddly CLEFAIRY DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A CLEFAIRY DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
-	.string "A cuddly DITTO DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A DITTO DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
-	.string "A cuddly CYNDAQUIL DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A CYNDAQUIL DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
-	.string "A cuddly CHIKORITA DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A CHIKORITA DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
-	.string "A cuddly TOTODILE DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A TOTODILE DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
-	.string "A jumbo DOLL.\n"
-	.string "Decorate a mat or a desk with it.$"
+	.string "A large DOLL.\n"
+	.string "Place it on a mat or a desk.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
-	.string "Boosts the ATTACK stat of one\n"
+	.string "Raises the stat ATTACK of one\n"
 	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc::
-	.string "Boosts the SP. ATK stat of one\n"
+	.string "Raises the stat SP. ATK of one\n"
 	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_IronDesc::
-	.string "Boosts the DEFENSE stat of one\n"
+	.string "Raises the stat DEFENSE of one\n"
 	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ZincDesc::
-	.string "Boosts the SP. DEF stat of one\n"
+	.string "Raises the stat SP. DEF of one\n"
 	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc::
-	.string "Boosts the SPEED stat of one\n"
+	.string "Raises the stat SPEED of one\n"
 	.string "POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc::
-	.string "Raises the HP of a single POKéMON.$"
+	.string "Raises the HP of one POKéMON.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
-	.string "A hold item that restores a little\n"
-	.string "HP every turn in battle.$"
+	.string "A hold item that gradually restores\n"
+	.string "HP in battle.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
 	.string "A hold item that restores any\n"
-	.string "stat that gets lowered.$"
+	.string "lowered stat.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
-	.string "A hold item that sometimes lets\n"
-	.string "the holder strike first.$"
+	.string "A hold item that occasionally allows\n"
+	.string "the first strike.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
-	.string "A hold item that clears the holder\n"
+	.string "A hold item that snaps POKéMON out\n"
 	.string "of infatuation.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
-	.string "A hold item that glares to lower\n"
-	.string "the foe's accuracy.$"
+	.string "A hold item that casts a glare to\n"
+	.string "reduce accuracy.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
-	.string "Boosts a move's power, but locks\n"
-	.string "the holder into that move.$"
+	.string "Raises a move's power, but permits\n"
+	.string "only that move.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
-	.string "A hold item that can make the foe\n"
-	.string "flinch when it is hit.$"
+	.string "A hold item that may cause flinching\n"
+	.string "when the foe is hit.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
-	.string "A hold item that sometimes stops\n"
-	.string "the holder from fainting.$"
+	.string "A hold item that occasionally\n"
+	.string "prevents fainting.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
-	.string "A hold item that boosts the\n"
-	.string "critical-hit ratio.$"
+	.string "A hold item that raises the\n"
+	.string "critical-hit rate.$"

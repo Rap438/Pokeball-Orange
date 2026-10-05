@@ -1,6 +1,6 @@
 # PokéBall Orange
 
-A Dragon Ball Z–themed hack of Pokémon Emerald, built on the [pret/pokeemerald](https://github.com/pret/pokeemerald) decompilation, with graphics adapted from *Dragon Ball Z: Buu's Fury*.
+A Dragon Ball Z–themed hack of Pokémon Emerald, built on [pokeemerald-expansion](https://github.com/rh-hideout/pokeemerald-expansion) 1.17.1 (from v0.4; earlier versions used [pret/pokeemerald](https://github.com/pret/pokeemerald)), with graphics adapted from *Dragon Ball Z: Buu's Fury*.
 
 **No ROMs are included.** Build it yourself from source (below), or apply a release patch to your own legally obtained Emerald ROM.
 
@@ -38,6 +38,25 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on the [pret/pokeemeral
 - **Options:** the OPTION menu scrolls and adds Day/Night, Shadows, Goku HUD, Fight Level (easy/normal/hard), Ambushes (off/rare/normal/often), Battle BG (map view/classic), SSJ2 Sparks, Power-Ups, Form Hints and Shiny Odds (1/8192, 1/4096, 1/1024, 1/256, Always — applies to wild, gift, egg and Shenron Pokémon).
 - **Battle UI** restyled: navy panels with orange and gold frames for the text box, FIGHT/BAG/POKéMON/RUN menu, move list and healthboxes.
 - Turn-based Pokémon battles are unchanged.
+
+### New in v0.4
+
+- **Modern battles.** Gen 9 rules on the expansion engine: Fairy type, physical/special split, real abilities, Gen 9 moves, items, AI and species data. Details and exceptions are in [docs/pbo/RULESET.md](docs/pbo/RULESET.md).
+- **Following Pokémon.** Your first healthy party Pokémon walks behind Goku, steps into its ball for his fistfights, and can be talked to. OPTION > FOLLOWER turns it off.
+- **New Littleroot Town and Route 101.** A riverside camp, plaza lamps, worn paths and a river.
+  - At night the campfire and lamps light up the grass around them.
+  - You can walk behind the tent, nap in it, and raid the supply crate.
+- **Day and night.** Uses the engine's system, with window and lamp lights. OPTION > DAY/NIGHT still turns it off.
+- **Early Fairy types.** Azurill and a rare Ralts on Route 101; Marill in the new river.
+- **Story fixes.** Vegeta always knows Kakarot, Roshi knows his old student, Chi-Chi talks to her husband, and assorted name typos are fixed.
+- **Saves.** v0.4 can't load v0.3 saves. The game tells you so and leaves the old save alone until you save over it. See [docs/pbo/SAVES.md](docs/pbo/SAVES.md).
+
+Full notes:
+- [changelog](docs/pbo/CHANGELOG_v0.4.md)
+- [checklist](docs/pbo/CHECKLIST.md)
+- [tests](docs/pbo/TEST_RESULTS.md)
+- [what's next](docs/pbo/CONTINUATION.md)
+- [screenshots](docs/pbo/screens)
 
 ### New in v0.3.0
 
@@ -79,21 +98,22 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on the [pret/pokeemeral
 
 ## Playing
 
-Apply `PokeBall_Orange.bps` (from Releases) to a clean **Pokémon Emerald (USA)** ROM with [Flips](https://github.com/Alcaro/Flips) or any BPS patcher. The ROM's SHA-1 should be `f3ae088181bf583e55daf962a92bb46f4f1d07b7`.
+Apply `PokeBall_Orange_v0.4.bps` (from Releases; the patched ROM is 32 MB) to a clean **Pokémon Emerald (USA)** ROM with [Flips](https://github.com/Alcaro/Flips) or any BPS patcher. The ROM's SHA-1 should be `f3ae088181bf583e55daf962a92bb46f4f1d07b7`.
 
-The debug build turns on R+SELECT for a three-page test menu (soldier, Vegeta and boss fights, the finale, badges and team, time of day, warps, Dragon Balls and Shenron, the tournament, the Time Chamber, the Gravity Room) and lets START end a fight in Goku's favor (B+START: Goku loses). To get it, uncomment `#define DBZ_DEBUG` in `include/constants/dbz.h`.
+The debug build turns on R+SELECT for a three-page test menu (soldier, Vegeta and boss fights, the finale, badges and team, time of day, warps, Dragon Balls and Shenron, the tournament, the Time Chamber, the Gravity Room) and lets START end a fight in Goku's favor (B+START: Goku loses). Since v0.4 a plain `make` gives the debug build and `make release` gives the release build. The debug build also has the engine's own debug menu on R+START and a WARP CAMP shortcut to the new Littleroot.
 
 Fight music reuses Emerald's own battle themes; there's no original soundtrack.
 
 ## Building
 
-Follow pokeemerald's [INSTALL.md](INSTALL.md) to set up agbcc and the toolchain, then run:
+Follow [INSTALL.md](INSTALL.md) to set up the arm-none-eabi toolchain (the expansion engine builds with a modern GCC, not agbcc), then run:
 
 ```
-make -j$(nproc)
+make release -j$(nproc)   # release build -> pokeemerald-release.gba
+make -j$(nproc)           # debug build   -> pokeemerald.gba
 ```
 
-The output file is `pokeemerald.gba`.
+The demo tileset and the Littleroot/Route 101 layouts are generated. If you edit `tools/pbo/build_cove.py`, run `python3 tools/pbo/build_cove.py` from the repo root before building.
 
 ## Tools
 
@@ -102,9 +122,9 @@ The output file is `pokeemerald.gba`.
 ## Credits
 
 - pret for the pokeemerald decompilation.
+- rh-hideout and the pokeemerald-expansion contributors for the engine PokéBall Orange runs on since v0.4 (battle engine, species data, followers, day/night, overworld sprites).
 - Webfoot Technologies / Atari for *Dragon Ball Z: Buu's Fury*.
 - Bird Studio, Shueisha and Toei Animation for Dragon Ball.
 - Nintendo, Game Freak and Creatures for Pokémon.
-- The rh-hideout pokeemerald-expansion project, used as a reference for the newer species' data.
 
 This is a non-commercial fan project.

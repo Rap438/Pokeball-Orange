@@ -51,7 +51,8 @@ EventScript_DBZ_ChoosePokemonWish::
 	msgbox Text_DBZ_ConfirmWish, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DBZ_ChooseWish
 	specialvar VAR_RESULT, DBZ_GrantWish
-	goto_if_eq VAR_RESULT, MON_CANT_GIVE, EventScript_DBZ_WishNoRoom
+	copyvar VAR_0x8007, VAR_RESULT   @ keep it: the messages below can clobber VAR_RESULT
+	goto_if_eq VAR_0x8007, MON_CANT_GIVE, EventScript_DBZ_WishNoRoom
 	bufferspeciesname STR_VAR_1, VAR_0x8006
 	msgbox Text_DBZ_WishGranted, MSGBOX_DEFAULT
 	playfanfare MUS_OBTAIN_ITEM
@@ -59,7 +60,7 @@ EventScript_DBZ_ChoosePokemonWish::
 	waitfanfare
 	waitmessage
 	waitbuttonpress
-	call_if_eq VAR_RESULT, MON_GIVEN_TO_PC, EventScript_DBZ_WishSentToPC
+	call_if_eq VAR_0x8007, MON_GIVEN_TO_PC, EventScript_DBZ_WishSentToPC
 	msgbox Text_DBZ_Farewell, MSGBOX_DEFAULT
 	closemessage
 	special DBZ_ShenronDepart

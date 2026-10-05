@@ -561,13 +561,13 @@ static void Task_ShenronAppear(u8 taskId)
     {
     case 0:
         PlaySE(SE_THUNDER);
-        BlendPalettes(DARK_BG_PALS, 6, RGB(2, 4, 6));
+        DBZ_BlendPalettes(DARK_BG_PALS, 6, RGB(2, 4, 6));
         task->tTimer = 0;
         task->tState++;
         break;
     case 1: // the sky goes dark
         task->tTimer++;
-        BlendPalettes(DARK_BG_PALS, 6 + task->tTimer / 2, RGB(2, 4, 6));
+        DBZ_BlendPalettes(DARK_BG_PALS, 6 + task->tTimer / 2, RGB(2, 4, 6));
         if (task->tTimer >= 14)
         {
             task->tState++;
@@ -575,7 +575,7 @@ static void Task_ShenronAppear(u8 taskId)
         }
         break;
     case 2: // golden flash, the dragon rises
-        BlendPalettes(DARK_BG_PALS, 12, RGB(31, 28, 8));
+        DBZ_BlendPalettes(DARK_BG_PALS, 12, RGB(31, 28, 8));
         PlaySE(SE_THUNDER);
         LoadSpriteSheet(&sShenronSheet);
         LoadSpritePalette(&sShenronPalette);
@@ -585,7 +585,7 @@ static void Task_ShenronAppear(u8 taskId)
         break;
     case 3:
         if (++task->tTimer == 4)
-            BlendPalettes(DARK_BG_PALS, 13, RGB(2, 4, 6));
+            DBZ_BlendPalettes(DARK_BG_PALS, 13, RGB(2, 4, 6));
         if (task->tTimer >= 40)
         {
             PlayCry_Normal(SPECIES_RAYQUAZA, 0);
@@ -629,7 +629,7 @@ static void Task_ShenronDepart(u8 taskId)
             }
             FreeSpriteTilesByTag(TAG_SHENRON);
             FreeSpritePaletteByTag(TAG_SHENRON);
-            BlendPalettes(DARK_BG_PALS, 16, RGB_WHITE);
+            DBZ_BlendPalettes(DARK_BG_PALS, 16, RGB_WHITE);
             PlaySE(SE_M_REFLECT);
             task->tTimer = 16;
             task->tState++;
@@ -637,7 +637,7 @@ static void Task_ShenronDepart(u8 taskId)
         break;
     case 2: // fade the light back to normal
         task->tTimer--;
-        BlendPalettes(DARK_BG_PALS, task->tTimer, RGB_WHITE);
+        DBZ_BlendPalettes(DARK_BG_PALS, task->tTimer, RGB_WHITE);
         if (task->tTimer == 0)
         {
             DestroyTask(taskId);
@@ -670,7 +670,8 @@ static void ShowWishPic(u16 species)
 {
     if (sWishPicSpriteId != 0xFFFF)
         FreeAndDestroyMonPicSprite(sWishPicSpriteId);
-    sWishPicSpriteId = CreateMonPicSprite_HandleDeoxys(species, 0, 0x8000, TRUE, WISH_PIC_X, WISH_PIC_Y, 0, TAG_WISH_PIC);
+    // the engine loads a pic palette under the species as its tag, so use that as the sprite tag too
+    sWishPicSpriteId = CreateMonPicSprite(species, FALSE, 0x8000, TRUE, WISH_PIC_X, WISH_PIC_Y, 0, species);
     if (sWishPicSpriteId != 0xFFFF)
         gSprites[sWishPicSpriteId].oam.priority = 0;
 }
@@ -694,7 +695,7 @@ void DBZ_ChooseWish(void)
     sWishItems = Alloc(NUM_WISHES * sizeof(struct ListMenuItem));
     for (i = 0; i < NUM_WISHES; i++)
     {
-        sWishItems[i].name = gSpeciesNames[sWishableSpecies[i]];
+        sWishItems[i].name = GetSpeciesName(sWishableSpecies[i]);
         sWishItems[i].id = i;
     }
     winTemplate = CreateWindowTemplate(0, WISH_WIN_LEFT, WISH_WIN_TOP, WISH_WIN_WIDTH, WISH_WIN_HEIGHT, 15, 0x64);
@@ -774,10 +775,10 @@ static u8 HighestPartyLevel(void)
     u8 i, best = 5;
     for (i = 0; i < PARTY_SIZE; i++)
     {
-        u16 species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES);
+        u16 species = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_SPECIES);
         if (species != SPECIES_NONE && species != SPECIES_EGG)
         {
-            u8 lvl = GetMonData(&gPlayerParty[i], MON_DATA_LEVEL);
+            u8 lvl = GetMonData(&gParties[B_TRAINER_PLAYER][i], MON_DATA_LEVEL);
             if (lvl > best)
                 best = lvl;
         }
@@ -792,7 +793,7 @@ u16 DBZ_GrantWish(void)
     u16 species = gSpecialVar_0x8006;
     u16 dexNum;
 
-    result = ScriptGiveMon(species, HighestPartyLevel(), ITEM_NONE, 0, 0, 0);
+    result = ScriptGiveMon(species, HighestPartyLevel(), ITEM_NONE);
     if (result == MON_CANT_GIVE)
         return result;
 

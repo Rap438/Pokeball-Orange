@@ -76,7 +76,7 @@ Route119_WeatherInstitute_1F_Text_Grunt1Intro:
 
 Route119_WeatherInstitute_1F_Text_Grunt1Defeat:
 	.string "Dang it…\n"
-	.string "Defeated by a kid, sir…$"
+	.string "Defeated by a guy in a gi, sir…$"
 
 Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
 	.string "DR. GERO always knows what's going on.\p"
@@ -84,7 +84,7 @@ Route119_WeatherInstitute_1F_Text_Grunt1PostBattle:
 	.string "what he's thinking?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Intro:
-	.string "Huh? What's a kid doing in here?\n"
+	.string "Huh? What's a guy in a gi doing here?\n"
 	.string "Is this a field trip?$"
 
 Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
@@ -93,7 +93,7 @@ Route119_WeatherInstitute_1F_Text_Grunt4Defeat:
 
 Route119_WeatherInstitute_1F_Text_Grunt4PostBattle:
 	.string "Oh, no… I'm going to catch an earful for\n"
-	.string "losing to a kid…\p"
+	.string "losing to a guy in a gi…\p"
 	.string "I'm taking a nap in that bed. Wake me\n"
 	.string "never.$"
 

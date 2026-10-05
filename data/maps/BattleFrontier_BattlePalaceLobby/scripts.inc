@@ -73,6 +73,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_SaveAfterChallenge::
 	frontier_checkairshow
 	special LoadPlayerParty
 	special HealPlayerParty
+	callnative UpdateFollowingPokemon
 	palace_save 0
 	playse SE_SAVE
 	waitse
@@ -148,6 +149,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_TryEnterChallenge::
 	frontier_set FRONTIER_DATA_LVL_MODE, VAR_RESULT
 	msgbox BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons, MSGBOX_DEFAULT
 	fadescreen FADE_TO_BLACK
+	callnative RemoveFollowingPokemon
 	call BattleFrontier_EventScript_GetLvlMode
 	copyvar VAR_0x8004, VAR_RESULT
 	setvar VAR_0x8005, FRONTIER_PARTY_SIZE
@@ -199,10 +201,14 @@ BattleFrontier_BattlePalaceLobby_EventScript_NotEnoughValidMons::
 
 BattleFrontier_BattlePalaceLobby_EventScript_NotEnoughValidMonsLv50::
 	msgbox BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLv50, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattlePalaceLobby_EventScript_EndCancelChallenge
 
 BattleFrontier_BattlePalaceLobby_EventScript_NotEnoughValidMonsLvOpen::
 	msgbox BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLvOpen, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattlePalaceLobby_EventScript_EndCancelChallenge
 
 BattleFrontier_BattlePalaceLobby_EventScript_CancelChallengeSaveFailed::
@@ -211,6 +217,7 @@ BattleFrontier_BattlePalaceLobby_EventScript_CancelChallengeSaveFailed::
 
 BattleFrontier_BattlePalaceLobby_EventScript_LoadPartyAndCancelChallenge::
 	special LoadPlayerParty
+	callnative LoadPlayerParty
 BattleFrontier_BattlePalaceLobby_EventScript_CancelChallenge::
 	msgbox BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified, MSGBOX_DEFAULT
 BattleFrontier_BattlePalaceLobby_EventScript_EndCancelChallenge::
@@ -373,74 +380,74 @@ BattleFrontier_BattlePalaceLobby_EventScript_ExitRules::
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForSingleBattle:
 	.string "Where the hearts of TRAINERS\n"
 	.string "are put to the test.\p"
-	.string "Welcome to the BATTLE PALACE.\p"
-	.string "I take challengers for the SINGLE\n"
+	.string "I welcome you to the BATTLE PALACE.\p"
+	.string "I accept challenges to the SINGLE\n"
 	.string "BATTLE HALLS.$"
 
 BattleFrontier_BattlePalaceLobby_Text_TakeSingleBattleChallenge:
-	.string "Do you wish to take on\n"
+	.string "Do you wish to take\n"
 	.string "the SINGLE BATTLE HALL challenge?$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
-	.string "The BATTLE PALACE has several\n"
-	.string "auditoriums for SINGLE BATTLES,\l"
-	.string "called SINGLE BATTLE HALLS.\p"
-	.string "The SINGLE BATTLES are fought in\n"
-	.string "the usual way, except for one crucial\l"
-	.string "rule you must obey.\p"
-	.string "TRAINERS may only switch their\n"
-	.string "POKéMON in and out.\p"
+	.string "In the BATTLE PALACE, there are\n"
+	.string "several auditoriums for SINGLE BATTLES\l"
+	.string "that are named SINGLE BATTLE HALLS.\p"
+	.string "The SINGLE BATTLES are conducted in\n"
+	.string "the usual way, except with one crucial\l"
+	.string "rule that must be obeyed.\p"
+	.string "TRAINERS are permitted only to switch\n"
+	.string "their POKéMON in and out.\p"
 	.string "TRAINERS are otherwise forbidden to\n"
 	.string "command their POKéMON.\p"
-	.string "The POKéMON act according\n"
-	.string "to their nature and fight on their own.\p"
+	.string "The POKéMON are to behave according\n"
+	.string "to their nature and battle on their own.\p"
 	.string "You must put your trust in your\n"
 	.string "POKéMON and watch over them.\p"
-	.string "If you earn the honor of beating\n"
-	.string "seven TRAINERS in a row,\l"
+	.string "If you achieve the honor of beating\n"
+	.string "seven TRAINERS in succession,\l"
 	.string "we will present you with Battle Points.\p"
 	.string "If you want to interrupt your\n"
 	.string "challenge, you must save the game.\p"
 	.string "If you don't save before interrupting,\n"
-	.string "you'll be disqualified.$"
+	.string "you will be disqualified.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified:
-	.string "When your heart and your POKéMON\n"
-	.string "are fortified, you must return.$"
+	.string "When you have fortified your heart\n"
+	.string "and POKéMON, you must return.$"
 
 BattleFrontier_BattlePalaceLobby_Text_WhichChallenge:
 	.string "There are two BATTLE HALLS,\n"
 	.string "Level 50 and Open Level.\l"
-	.string "Which challenge do you choose?$"
+	.string "Which is your choice of a challenge?$"
 
 BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLv50:
 	.string "Sigh…\p"
-	.string "You don't have the three POKéMON\n"
+	.string "You do not have the three POKéMON\n"
 	.string "required for the challenge.\p"
-	.string "To enter, you must bring three\n"
+	.string "To enter, you must provide three\n"
 	.string "different kinds of POKéMON.\p"
-	.string "They must all be Level 50\n"
-	.string "or lower.\p"
+	.string "These POKéMON must all be of\n"
+	.string "Level 50 or lower.\p"
 	.string "They also must not be holding\n"
 	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you've made\n"
+	.string "EGGS{STR_VAR_1}.$"
+
+BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsEnd:
+	.string "Come back when you have made\n"
 	.string "your preparations.$"
 
 BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLvOpen:
 	.string "Sigh…\p"
-	.string "You don't have the three POKéMON\n"
+	.string "You do not have the three POKéMON\n"
 	.string "required for the challenge.\p"
-	.string "To enter, you must bring three\n"
+	.string "To enter, you must provide three\n"
 	.string "different kinds of POKéMON.\p"
 	.string "They also must not be holding\n"
 	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you've made\n"
-	.string "your preparations.$"
+	.string "EGGS{STR_VAR_1}.$"
 
 BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons:
-	.string "Good. Now choose your\n"
+	.string "Good. Now, you must select your\n"
 	.string "three POKéMON.$"
 
 BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge2:
@@ -452,19 +459,19 @@ BattleFrontier_BattlePalaceLobby_Text_FollowMe:
 	.string "Now, follow me.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ResultsWillBeRecorded:
-	.string "I feel honored to have witnessed\n"
+	.string "I feel privileged for having seen\n"
 	.string "your POKéMON's exploits.\p"
 	.string "The results will be recorded.\n"
-	.string "I must ask you to wait a moment.$"
+	.string "I must ask you to briefly wait.$"
 
 BattleFrontier_BattlePalaceLobby_Text_FirmTrueBondsFor7WinStreak:
-	.string "A 7-win streak…\p"
-	.string "The bonds linking your heart to\n"
-	.string "your POKéMON are firm and true.$"
+	.string "To achieve a 7-win streak…\p"
+	.string "The bonds that bind your heart with\n"
+	.string "your POKéMON seem firm and true.$"
 
 BattleFrontier_BattlePalaceLobby_Text_FeatWillBeRecorded:
 	.string "Your feat will be recorded.\n"
-	.string "I must ask you to wait a moment.$"
+	.string "I must ask you to briefly wait.$"
 
 @ Unused
 BattleFrontier_BattlePalaceLobby_Text_BattlePointsFor7WinStreak:
@@ -472,10 +479,10 @@ BattleFrontier_BattlePalaceLobby_Text_BattlePointsFor7WinStreak:
 	.string "we present you with Battle Point(s).$"
 
 BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize:
-	.string "You seem to have no room for\n"
+	.string "You seem to have no space for\n"
 	.string "our prize.\p"
-	.string "Return once you've tidied\n"
-	.string "up your BAG.$"
+	.string "You should return when you have\n"
+	.string "organized your BAG.$"
 
 BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting:
 	.string "We have been waiting for you…$"
@@ -487,9 +494,9 @@ BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge:
 BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge:
 	.string "Sigh…\p"
 	.string "You failed to save before you ended\n"
-	.string "your last challenge.\p"
+	.string "your challenge the last time.\p"
 	.string "As a result, your challenge has been\n"
-	.string "disqualified. How unfortunate.$"
+	.string "disqualified. It is most unfortunate.$"
 
 @ Unused
 BattleFrontier_BattlePalaceLobby_Text_ReceivedPrize:
@@ -497,45 +504,45 @@ BattleFrontier_BattlePalaceLobby_Text_ReceivedPrize:
 	.string "{STR_VAR_1}.$"
 
 BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink:
-	.string "For a tough guy like me,\n"
-	.string "tough POKéMON are the best.\p"
+	.string "For a hardy fellow like me,\n"
+	.string "hardy POKéMON are the best.\p"
 	.string "Offense is the best defense!\n"
 	.string "A relentless attack is the ultimate!\p"
 	.string "But that's not what I wanted to chat\n"
 	.string "about.\p"
-	.string "Every so often a really pretty lady\n"
+	.string "Every so often a really cute lady\n"
 	.string "swings by here.\p"
-	.string "She says she can tell what\n"
+	.string "She says that she can tell what\n"
 	.string "POKéMON are thinking.\p"
 	.string "I don't know about that part,\n"
-	.string "but she sure is pretty.\p"
+	.string "but she is really cute.\p"
 	.string "Huh?\n"
 	.string "Why are you looking at me like that?$"
 
 BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere:
 	.string "Hmm…\p"
-	.string "It seems the nature of a POKéMON\n"
-	.string "and the moves it has been\l"
+	.string "It appears that the nature of POKéMON\n"
+	.string "and the moves that they have been\l"
 	.string "taught are the keys to battle here.\p"
 	.string "To be more precise, it's how well\n"
 	.string "the moves match the nature of\l"
 	.string "the POKéMON.\p"
 	.string "If your POKéMON is in trouble and\n"
-	.string "can't live up to its potential,\l"
-	.string "you may need to check how well\l"
+	.string "unable to live up to its potential,\l"
+	.string "you may need to examine how well\l"
 	.string "its moves match its nature.$"
 
 BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms:
 	.string "My POKéMON is usually very docile.\p"
-	.string "But in a BATTLE HALL,\n"
-	.string "it sometimes seems to transform\l"
-	.string "into something fierce!\p"
+	.string "But when it's in a BATTLE HALL,\n"
+	.string "it sometimes seems to become\l"
+	.string "transformed into something wicked!\p"
 	.string "It becomes totally intimidating.\n"
-	.string "It's even a little shocking.$"
+	.string "It's shocking, even.$"
 
 BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway:
-	.string "I wonder what kind of nature a POKéMON\n"
-	.string "would have if it liked wearing down its\l"
+	.string "I wonder what sort of nature a POKéMON\n"
+	.string "would have if it favored enfeebling its\l"
 	.string "opponents and chipping away slowly.\p"
 	.string "I'd be surprised if it was a LAX nature.\p"
 	.string "But, nah, that can't be right.$"
@@ -543,36 +550,36 @@ BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway:
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle:
 	.string "Where the hearts of TRAINERS\n"
 	.string "are put to the test.\p"
-	.string "Welcome to the BATTLE PALACE.\p"
-	.string "I take challengers for the DOUBLE\n"
+	.string "I welcome you to the BATTLE PALACE.\p"
+	.string "I accept challenges to the DOUBLE\n"
 	.string "BATTLE HALLS.$"
 
 BattleFrontier_BattlePalaceLobby_Text_TakeDoubleBattleChallenge:
-	.string "Do you wish to take on\n"
+	.string "Do you wish to take\n"
 	.string "the DOUBLE BATTLE HALL challenge?$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
-	.string "The BATTLE PALACE has several\n"
-	.string "auditoriums for DOUBLE BATTLES,\l"
-	.string "called DOUBLE BATTLE HALLS.\p"
-	.string "The DOUBLE BATTLES are fought in\n"
-	.string "the usual way, except for one crucial\l"
-	.string "rule you must obey.\p"
-	.string "TRAINERS may only switch their\n"
-	.string "POKéMON in and out.\p"
+	.string "In the BATTLE PALACE, there are\n"
+	.string "several auditoriums for DOUBLE BATTLES\l"
+	.string "that are named DOUBLE BATTLE HALLS.\p"
+	.string "The DOUBLE BATTLES are conducted in\n"
+	.string "the usual way, except with one crucial\l"
+	.string "rule that must be obeyed.\p"
+	.string "TRAINERS are permitted only to switch\n"
+	.string "their POKéMON in and out.\p"
 	.string "TRAINERS are otherwise forbidden to\n"
 	.string "command their POKéMON.\p"
-	.string "The POKéMON act according\n"
-	.string "to their nature and fight on their own.\p"
+	.string "The POKéMON are to behave according\n"
+	.string "to their nature and battle on their own.\p"
 	.string "You must put your trust in your\n"
 	.string "POKéMON and watch over them.\p"
-	.string "If you earn the honor of beating\n"
-	.string "seven TRAINERS in a row,\l"
+	.string "If you achieve the honor of beating\n"
+	.string "seven TRAINERS in succession,\l"
 	.string "we will present you with Battle Points.\p"
 	.string "If you want to interrupt your\n"
 	.string "challenge, please save the game.\p"
 	.string "If you don't save before interrupting,\n"
-	.string "you'll be disqualified.$"
+	.string "you will be disqualified.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ToDefeatMavenAnd7Trainers:
 	.string "To defeat the PALACE MAVEN\n"
@@ -595,10 +602,10 @@ BattleFrontier_BattlePalaceLobby_Text_ReadWhichHeading:
 	.string "Which heading do you want to read?$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesBasics:
-	.string "Here, POKéMON must think\n"
-	.string "and fight by themselves.\p"
+	.string "Here, POKéMON are required to think\n"
+	.string "and battle by themselves.\p"
 	.string "Unlike in the wild, POKéMON that live\n"
-	.string "with people act differently\l"
+	.string "with people behave differently\l"
 	.string "depending on their nature.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature:
@@ -608,39 +615,39 @@ BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature:
 	.string "itself from any harm.\p"
 	.string "Yet another may enjoy vexing or\n"
 	.string "confounding its foes.\p"
-	.string "Because of its nature, a POKéMON\n"
-	.string "has favorite moves it is good\l"
+	.string "Due to its nature, a POKéMON\n"
+	.string "will have favorite moves that it is good\l"
 	.string "at using.\p"
-	.string "It may also dislike certain moves\n"
+	.string "It may also dislike certain moves that\n"
 	.string "it has trouble using.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves:
-	.string "There are offensive moves that deal\n"
-	.string "direct damage to the foe.\p"
-	.string "There are defensive moves used to\n"
-	.string "prepare for enemy attacks or\l"
-	.string "to heal HP and so on.\p"
-	.string "There are also other, stranger\n"
-	.string "moves that may weaken the foe with\l"
-	.string "status problems such as poison and\l"
+	.string "There are offensive moves that inflict\n"
+	.string "direct damage on the foe.\p"
+	.string "There are defensive moves that are\n"
+	.string "used to prepare for enemy attacks or\l"
+	.string "used to heal HP and so on.\p"
+	.string "There are also other somewhat-odd\n"
+	.string "moves that may enfeeble the foes with\l"
+	.string "stat problems including poison and \l"
 	.string "paralysis.\p"
 	.string "POKéMON will consider using moves in\n"
 	.string "these three categories.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesUnderpowered:
-	.string "When not commanded by its TRAINER,\n"
-	.string "a POKéMON may be unable to use\l"
-	.string "certain moves effectively.\p"
+	.string "When not under command by its TRAINER,\n"
+	.string "a POKéMON may be unable to effectively\l"
+	.string "use certain moves.\p"
 	.string "A POKéMON is not good at using any\n"
-	.string "move it dislikes.\p"
+	.string "move that it dislikes.\p"
 	.string "If a POKéMON only knows moves that\n"
-	.string "don't match its nature, it will often\l"
+	.string "do not match its nature, it will often\l"
 	.string "be unable to live up to its potential.$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesWhenInDanger:
 	.string "Depending on its nature, a POKéMON may\n"
 	.string "start using moves that don't match its\l"
 	.string "nature when it is in trouble.\p"
-	.string "If a POKéMON starts acting oddly\n"
+	.string "If a POKéMON begins behaving oddly\n"
 	.string "in a pinch, watch it carefully.$"
 
