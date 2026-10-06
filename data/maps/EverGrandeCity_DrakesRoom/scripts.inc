@@ -62,9 +62,11 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
-	.string "I am DENDE, the last of the POKéMON\n"
-	.string "LEAGUE ELITE FOUR, Guardian of Earth\l"
-	.string "and friend of dragons!\p"
+	.string "{PLAYER}! I've watched your whole\n"
+	.string "journey from the LOOKOUT.\p"
+	.string "But here, I am DENDE, the last of the\n"
+	.string "POKéMON LEAGUE ELITE FOUR, Guardian of\l"
+	.string "Earth and friend of dragons!\p"
 	.string "In their natural state, POKéMON are wild\n"
 	.string "and free.\p"
 	.string "Sometimes they get in our way.\n"
@@ -72,7 +74,8 @@ EverGrandeCity_DrakesRoom_Text_IntroSpeech:
 	.string "To fight alongside POKéMON as true\n"
 	.string "partners, do you know what it takes?\p"
 	.string "Do you know what is needed?\p"
-	.string "If you don't, you will never get past me!$"
+	.string "If you don't, you will never get past me,\n"
+	.string "not even you!$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat:
 	.string "Incredible! I could feel your power\n"

@@ -279,7 +279,7 @@ Text_DBZ_TourneyNotYet:
 	.string "TOURNAMENT only takes fighters with\l"
 	.string "four GYM BADGES or more.\p"
 	.string "Come back when you've earned them,\n"
-	.string "kid!$"
+	.string "{PLAYER}!$"
 
 Text_DBZ_TourneyWelcome:
 	.string "ANNOUNCER: Ladies and gentlemen!\n"
@@ -309,7 +309,7 @@ Text_DBZ_TourneyRound1:
 	.string "old master… JACKIE CHUN!$"
 
 Text_DBZ_JackieDefeat:
-	.string "Oh ho! You've grown, boy…\n"
+	.string "Oh ho! You've grown, {PLAYER}…\n"
 	.string "I mean, er… nice match, young man!$"
 
 Text_DBZ_JackieAfter:
@@ -358,7 +358,7 @@ Text_DBZ_TourneyChampion:
 	.string "is… {PLAYER}!$"
 
 Text_DBZ_TourneyPrize:
-	.string "MR. SATAN: Hahaha! Not bad, kid!\n"
+	.string "MR. SATAN: Hahaha! Not bad, pal!\n"
 	.string "Of course, I took it easy on…\l"
 	.string "er, I mean… here's your prize!$"
 
@@ -373,7 +373,7 @@ Text_DBZ_TourneyRepeatMoney:
 Text_DBZ_TourneyOut:
 	.string "ANNOUNCER: And {PLAYER} is down!\n"
 	.string "What a fight, folks!\p"
-	.string "Train hard and try again, kid!$"
+	.string "Train hard and come back stronger!$"
 
 Text_DBZ_TourneyForfeit:
 	.string "ANNOUNCER: {PLAYER} can't continue!\n"
@@ -415,23 +415,23 @@ Text_DBZ_GravityNo:
 	.string "lives in there.$"
 
 Text_DBZ_DendeNotYet:
-	.string "DENDE: Hello, {PLAYER}! I'm the\n"
-	.string "Guardian of Earth.\p"
-	.string "Become the CHAMPION, and I'll open\n"
-	.string "the HYPERBOLIC TIME CHAMBER for you.$"
+	.string "MR. POPO: Hello, {PLAYER}. DENDE is\n"
+	.string "waiting for you up ahead.\p"
+	.string "Become the CHAMPION, and MR. POPO\n"
+	.string "opens the HYPERBOLIC TIME CHAMBER.$"
 
 Text_DBZ_DendeChamber:
-	.string "DENDE: The HYPERBOLIC TIME CHAMBER.\n"
+	.string "MR. POPO: The HYPERBOLIC TIME CHAMBER.\n"
 	.string "A year inside is a day outside.\p"
 	.string "Five waves of sparring partners,\n"
 	.string "triple EXP. Will you go in?$"
 
 Text_DBZ_DendeNo:
-	.string "DENDE: The door is always open\n"
+	.string "MR. POPO: The door is always open\n"
 	.string "for you.$"
 
 Text_DBZ_ChamberEnter:
-	.string "DENDE: Good luck! Don't let the\n"
+	.string "MR. POPO: Good luck! Don't let the\n"
 	.string "air get to you in there.$"
 
 Text_DBZ_ChamberWave:
@@ -442,11 +442,11 @@ Text_DBZ_ChamberRest:
 	.string "{PLAYER} caught his breath…$"
 
 Text_DBZ_ChamberClear:
-	.string "DENDE: You came out in one piece!\n"
+	.string "MR. POPO: You came out in one piece!\n"
 	.string "Here, a gift from the Lookout.$"
 
 Text_DBZ_ChamberClearAgain:
-	.string "DENDE: Another year of training in\n"
+	.string "MR. POPO: Another year of training in\n"
 	.string "one day. Amazing!$"
 
 Text_DBZ_ChamberLost:
@@ -475,3 +475,16 @@ Text_DBZ_WishTeamDone:
 Text_DBZ_WishZeniDone:
 	.string "¥{STR_VAR_1} rained down from the\n"
 	.string "sky!$"
+
+@ PokeBall Orange: Pokemon living in town (tools/pbo/place_ambient.py). They face Goku and cry.
+EventScript_DBZ_AmbientMon::
+	lock
+	faceplayer
+	special DBZ_AmbientMonCry
+	msgbox Text_DBZ_AmbientMon, MSGBOX_DEFAULT
+	waitmoncry
+	release
+	end
+
+Text_DBZ_AmbientMon:
+	.string "{STR_VAR_1}: {STR_VAR_2}$"

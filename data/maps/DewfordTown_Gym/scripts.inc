@@ -380,8 +380,9 @@ DewfordTown_Gym_Text_CristianPostBattle:
 	.string "Go face TIEN and claim that BADGE!$"
 
 DewfordTown_Gym_Text_BrawlyIntro:
-	.string "I'm TIEN!\n"
-	.string "DEWFORD's GYM LEADER!\p"
+	.string "{PLAYER}! So the rumors are true.\n"
+	.string "You're a POKéMON TRAINER now.\p"
+	.string "I'm DEWFORD's GYM LEADER these days.\p"
 	.string "I trained in the crashing surf and in\n"
 	.string "the pitch-black cave until my three\l"
 	.string "eyes could see through anything!\p"

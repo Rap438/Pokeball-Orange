@@ -109,8 +109,13 @@ Route119_WeatherInstitute_1F_Text_WowYoureStrong:
 
 Route119_WeatherInstitute_1F_Text_ProfStudyingRain:
 	.string "The PROFESSOR loves rain. That's a fact.\p"
+	.string "The seasons turn in HOENN, and the land\n"
+	.string "changes color with each one. Another\l"
+	.string "fact!\p"
+	.string "Some POKéMON from faraway regions even\n"
+	.string "visit as seasonal guests. Fact!\p"
 	.string "But if it never stops raining, people\n"
-	.string "are in trouble. That's another fact.\p"
+	.string "are in trouble. That's a fact, too.\p"
 	.string "So the PROFESSOR is studying whether\n"
 	.string "rain can be put to good use.$"
 

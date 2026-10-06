@@ -122,6 +122,8 @@ void DBZ_UpdateDragonBallTracker(void);
 const u16 *DBZ_HudPalette(void);
 u8 DBZ_GetStarterRegion(void);
 void DBZ_SetStarterRegion(void);
+void DBZ_AmbientMonCry(void);
+enum Species DBZ_MaybeGuestSpecies(enum Species species, u32 area, u32 level);
 struct Pokemon;
 void DBZ_RemapRivalStarter(struct Pokemon *mon, u8 trainerClass);
 

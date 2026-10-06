@@ -261,11 +261,12 @@ Route128_Text_MaxieResposibilityFallsToArchieAndMe:
 	.string "Buu…$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "KID BUU: This is crazy…\p"
+	.string "KID BUU: Hee… This is crazy…\p"
 	.string "Those super-ancient POKéMON…\p"
 	.string "Their power is unbelievable. Even Buu\n"
 	.string "feels it in his bones.\p"
-	.string "They've ruined the balance of nature…$"
+	.string "If they wreck the whole world, Buu has\n"
+	.string "nothing left to play with…$"
 
 Route128_Text_StevenWhatIsHappening:
 	.string "SUPREME KAI: {PLAYER}{KUN}!\n"

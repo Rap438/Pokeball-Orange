@@ -437,9 +437,9 @@ SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
 	.string "snatch the CC GOODS at the MUSEUM.$"
 
 SlateportCity_Harbor_Text_ArchieYouAgainHideoutInLilycove:
-	.string "DR. GERO: Oh? You again, boy? Hmph.\p"
-	.string "{PLAYER}, wasn't it? A child playing at\n"
-	.string "hero.\p"
+	.string "DR. GERO: Oh? You again? Hmph.\p"
+	.string "{PLAYER}, wasn't it? A meddling fighter\n"
+	.string "playing at hero.\p"
 	.string "I'll grant you this much: you're\n"
 	.string "tenacious, to chase us all the way here.\p"
 	.string "But it's too late. No one can stop the\n"

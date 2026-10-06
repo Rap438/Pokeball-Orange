@@ -69,25 +69,27 @@ PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
 	.string "a battle can be easy or tough.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
-	.string "Take your TREECKO, for example.\n"
+	.string "Take your partner, for example.\n"
 	.string "It's a GRASS type.\p"
-	.string "It's strong against WATER and\n"
-	.string "GROUND types.\p"
-	.string "But it's weak against FIRE-type\n"
-	.string "POKéMON.$"
+	.string "GRASS moves are strong against WATER\n"
+	.string "and GROUND types.\p"
+	.string "But GRASS types are weak against\n"
+	.string "FIRE-type POKéMON.$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
-	.string "Take your TORCHIC, for example.\n"
+	.string "Take your partner, for example.\n"
 	.string "It's a FIRE type.\p"
-	.string "It's strong against GRASS and\n"
-	.string "BUG types.\p"
-	.string "But it's weak against WATER-type\n"
-	.string "POKéMON.$"
+	.string "FIRE moves are strong against GRASS\n"
+	.string "and BUG types.\p"
+	.string "But FIRE types are weak against\n"
+	.string "WATER-type POKéMON.$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-	.string "Take your MUDKIP, for example.\n"
+	.string "Take your partner, for example.\n"
 	.string "It's a WATER type.\p"
-	.string "It's strong against the FIRE type.\p"
-	.string "But it's weak against GRASS-type\n"
-	.string "and ELECTRIC-type POKéMON.$"
+	.string "WATER moves are strong against the\n"
+	.string "FIRE type.\p"
+	.string "But WATER types are weak against\n"
+	.string "GRASS-type and ELECTRIC-type\l"
+	.string "POKéMON.$"
 

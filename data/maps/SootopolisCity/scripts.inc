@@ -1551,12 +1551,13 @@ SootopolisCity_Text_GroudonPleaseStop:
 	.string "KID BUU: Hee hee hee! Go, GROUDON!\n"
 	.string "Smash it all!\p"
 	.string "…Huh?\p"
-	.string "G… GROUDON, that's enough! Stop it! I\n"
+	.string "G… GROUDON, that's enough! Stop it! Buu\n"
 	.string "said STOP!\p"
-	.string "I get it, I get it! I've seen your power!\p"
+	.string "Buu gets it, Buu gets it! Buu saw your\n"
+	.string "power!\p"
 	.string "If you keep going, all of HOENN will be\n"
-	.string "ruined, not just SOOTOPOLIS! Then I'll\l"
-	.string "have no toys left to break!$"
+	.string "ruined, not just SOOTOPOLIS! Then Buu\l"
+	.string "has no toys left to break!$"
 
 SootopolisCity_Text_AfterAllOurScheming:
 	.string "KID BUU: So the super-ancient POKéMON\n"

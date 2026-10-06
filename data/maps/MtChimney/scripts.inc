@@ -544,7 +544,7 @@ MtChimney_Text_MeteoriteWillActivateVolcano:
 MtChimney_Text_MaxieIntro:
 	.string "KID BUU: Huh? Who are you?\p"
 	.string "… … … … … …\p"
-	.string "Oh! DR. GERO whined about a kid who\n"
+	.string "Oh! DR. GERO whined about some guy who\n"
 	.string "keeps getting in our way. Hee hee!\l"
 	.string "That's you!\p"
 	.string "You came to stop us? To stop my fun?\p"
@@ -556,17 +556,17 @@ MtChimney_Text_MaxieIntro:
 	.string "up and everything will go boom!\p"
 	.string "Oops! I told you too much!\p"
 	.string "That's okay! I'll teach you what\n"
-	.string "happens to kids who spoil my fun!$"
+	.string "happens to people who spoil my fun!$"
 
 MtChimney_Text_MaxieDefeat:
 	.string "What?!\p"
-	.string "Me, KID BUU, beaten by a kid?!$"
+	.string "Me, KID BUU, beaten?! No fair!$"
 
 MtChimney_Text_MaxieYouHaventSeenLastOfMagma:
 	.string "KID BUU: Hee hee hee! That was fun, but\n"
 	.string "I'm bored now. I'm leaving.\p"
 	.string "Don't think this is the last you'll see\n"
-	.string "of RED RIBBON ARMY!\p"
+	.string "of the RED RIBBON ARMY!\p"
 	.string "Even without the METEORITE, if we get\n"
 	.string "that ORB… Hee hee hee!$"
 
@@ -588,7 +588,7 @@ MtChimney_Text_TabithaPostBattle:
 	.string "Hehehe…$"
 
 MtChimney_Text_Grunt2Intro:
-	.string "We of RED RIBBON ARMY work hard for\n"
+	.string "We of the RED RIBBON ARMY work hard for\n"
 	.string "everyone's sake!\p"
 	.string "If that thing's power made more land,\n"
 	.string "there'd be more places to live.\p"
@@ -612,7 +612,7 @@ MtChimney_Text_Grunt1Defeat:
 	.string "My dream of a big house…$"
 
 MtChimney_Text_Grunt1PostBattle:
-	.string "Kids like you should be out playing in\n"
+	.string "Guys like you should be out training in\n"
 	.string "the surf, not wrecking people's dreams!$"
 
 MtChimney_Text_TeamAquaAlwaysMessingWithPlans:
@@ -668,7 +668,7 @@ MtChimney_Text_ArchieThankYou:
 	.string "useful.\p"
 	.string "Thanks to you, the LAND squad's\n"
 	.string "reckless scheme has failed.\p"
-	.string "But… whose side are you on, boy?\p"
+	.string "But… whose side are you even on?\p"
 	.string "Bah, it doesn't matter.\p"
 	.string "My SEA squad will stay vigilant and keep\n"
 	.string "chasing KID BUU's LAND squad.\p"
@@ -751,8 +751,8 @@ MtChimney_Text_ShelbyPostBattle:
 	.string "EXPERT now, can I?$"
 
 MtChimney_Text_ShelbyRegister:
-	.string "Thank you, child. It was fun, as if I\n"
-	.string "were battling my own grandchild.\p"
+	.string "Thank you, dear. That was as much fun\n"
+	.string "as sparring with my own grandson.\p"
 	.string "Please come see me again for a rematch.$"
 
 MtChimney_Text_ShelbyRematchIntro:
@@ -821,7 +821,7 @@ MtChimney_Text_SawyerPostBattle:
 	.string "hot springs with the locals!$"
 
 MtChimney_Text_SawyerRegister:
-	.string "I like little fireballs like you. Let me\n"
+	.string "I like fireballs like you. Let me\n"
 	.string "register you in my POKéNAV.$"
 
 MtChimney_Text_SawyerRematchIntro:

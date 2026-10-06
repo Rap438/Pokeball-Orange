@@ -709,8 +709,8 @@ LittlerootTown_ProfessorBirchsLab_Text_MightBeGoodIdeaToGoSeeRival:
 	.string "MASTER ROSHI: If you keep training with\n"
 	.string "POKéMON and gain experience, I think\l"
 	.string "you'll make an excellent TRAINER.\p"
-	.string "{RIVAL}, BULMA's husband, is also\n"
-	.string "studying POKéMON while helping with my\l"
+	.string "{RIVAL} is studying POKéMON too, since\n"
+	.string "BULMA signed him up to help with my\l"
 	.string "research. Grumbling the whole time, mind\l"
 	.string "you.\p"
 	.string "{PLAYER}{KUN}, why not go and see {RIVAL}?$"
@@ -723,7 +723,7 @@ LittlerootTown_ProfessorBirchsLab_Text_GetRivalToTeachYou:
 
 LittlerootTown_ProfessorBirchsLab_Text_DontBeThatWay:
 	.string "MASTER ROSHI: Oh, don't be like that.\n"
-	.string "Go and meet BULMA's husband.$"
+	.string "You two go way back! Go and see VEGETA.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BirchRivalGoneHome:
 	.string "MASTER ROSHI: {RIVAL}?\n"
@@ -834,7 +834,8 @@ LittlerootTown_ProfessorBirchsLab_Text_OtherRegionsUpgradeToNational:
 	.string "coming to light.\p"
 	.string "It appears that in the HOENN region,\n"
 	.string "there are also POKéMON from other\l"
-	.string "regions.\p"
+	.string "regions, and they come and go with the\l"
+	.string "seasons.\p"
 	.string "It shows how rich and varied HOENN's\n"
 	.string "natural environments are.\p"
 	.string "That's why I believe I should upgrade\n"
@@ -854,7 +855,7 @@ LittlerootTown_ProfessorBirchsLab_Text_BrendanYouCanThankMe:
 	.string "surveyed POKéMON.\p"
 	.string "You can thank me for the NATIONAL Mode\n"
 	.string "POKéDEX.\p"
-	.string "You're lucky, {PLAYER}!$"
+	.string "You're lucky, KAKAROT!$"
 
 LittlerootTown_ProfessorBirchsLab_Text_OkayAllDone:
 	.string "MASTER ROSHI: There! All done!$"
@@ -981,7 +982,7 @@ LittlerootTown_ProfessorBirchsLab_Text_MayHaveYouGoneToBattleFrontier:
 	.string "I hear only the strongest are invited.$"
 
 LittlerootTown_ProfessorBirchsLab_Text_BrendanHaveYouGoneToBattleFrontier:
-	.string "VEGETA: Hey, {PLAYER}! Have you been to\n"
+	.string "VEGETA: Hey, KAKAROT! Have you been to\n"
 	.string "that place, the BATTLE FRONTIER?$"
 
 LittlerootTown_ProfessorBirchsLab_Text_ScottAboardSSTidalCall:

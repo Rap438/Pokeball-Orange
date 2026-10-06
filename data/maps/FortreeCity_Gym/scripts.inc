@@ -241,6 +241,10 @@ FortreeCity_Gym_Text_WinonaIntro:
 	.string "Behold! I am the GREAT SAIYAMAN!\p"
 	.string "Defender of justice and LEADER of the\n"
 	.string "FORTREE POKéMON GYM!\p"
+	.string "Wait… D-Dad?! What are you doing\n"
+	.string "here?!\p"
+	.string "…Ahem! I mean, greetings, citizen! I've\n"
+	.string "never seen you before in my life!\p"
 	.string "BIRD POKéMON and I have become one,\n"
 	.string "and together we have soared the skies!\p"
 	.string "No battle is too grueling for justice.\n"
@@ -251,8 +255,8 @@ FortreeCity_Gym_Text_WinonaIntro:
 FortreeCity_Gym_Text_WinonaDefeat:
 	.string "Incredible! Justice itself has been\n"
 	.string "beaten…\p"
-	.string "Never have I met a TRAINER with such\n"
-	.string "power and grace.\p"
+	.string "I should have known. You were always\n"
+	.string "stronger, D… er, mysterious citizen!\p"
 	.string "In honor of your strength, I present\n"
 	.string "you with this GYM BADGE!$"
 

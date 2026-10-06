@@ -14,7 +14,7 @@ SeafloorCavern_Room3_EventScript_Grunt5::
 SeafloorCavern_Room3_Text_ShellyIntro:
 	.string "Ahahahaha!\p"
 	.string "How did you get here without a\n"
-	.string "submarine? What an impressive child!\p"
+	.string "submarine? What an impressive brute!\p"
 	.string "But… we can't have you meddling around\n"
 	.string "here.\p"
 	.string "And I do want payback for what\n"

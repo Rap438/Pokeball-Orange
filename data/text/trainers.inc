@@ -219,7 +219,7 @@ Route103_Text_RhettIntro:
 	.string "this small?$"
 
 Route103_Text_RhettDefeated:
-	.string "Whoa! This kid can really fight!$"
+	.string "Whoa! This guy can really fight!$"
 
 Route103_Text_RhettPostBattle:
 	.string "Do you like cramped quarters like this?\n"
@@ -237,7 +237,7 @@ Route103_Text_MarcosPostBattle:
 	.string "ever passes by, but a crowd has\l"
 	.string "gathered.\p"
 	.string "Heh, maybe I should go pro. Like the\n"
-	.string "Great Saiyaman, but with a guitar.$"
+	.string "GREAT SAIYAMAN, but with a guitar.$"
 
 Route104_Text_GinaIntro:
 	.string "GINA: Okay, let's fight together with\n"
@@ -334,7 +334,7 @@ Route104_Text_HaleyPostRematch:
 
 Route104_Text_WinstonIntro:
 	.string "Oh, sure, I'll accept your challenge. My\n"
-	.string "family owns a lot of Capsule Corp.\l"
+	.string "family owns a lot of CAPSULE CORP.\l"
 	.string "stock.$"
 
 Route104_Text_WinstonDefeat:
@@ -427,8 +427,8 @@ Route105_Text_FosterPostBattle:
 	.string "and hours without getting bored.$"
 
 Route105_Text_LuisIntro:
-	.string "Whew! When I saw you, I was worried a kid\n"
-	.string "was drowning.\p"
+	.string "Whew! When I saw you, I was worried\n"
+	.string "someone was drowning.\p"
 	.string "You look okay, so how about a battle?$"
 
 Route105_Text_LuisDefeated:
@@ -569,7 +569,8 @@ Route106_Text_DouglasPostBattle:
 
 Route106_Text_KylaIntro:
 	.string "The sea is my backyard. I won't go easy\n"
-	.string "on you just because you're a kid!$"
+	.string "on you just because you're a\l"
+	.string "landlubber!$"
 
 Route106_Text_KylaDefeated:
 	.string "Did you go easy on me, by any chance?$"
@@ -839,7 +840,8 @@ Route109_Text_RickyRematchDefeated:
 
 Route109_Text_RickyRematchPostBattle:
 	.string "Eating on a beach makes everything\n"
-	.string "taste a little better. Goku would agree!$"
+	.string "taste a little better. A big eater like\l"
+	.string "you would agree!$"
 
 Route109_Text_LolaIntro:
 	.string "Don't beach umbrellas look like giant\n"
@@ -1224,7 +1226,7 @@ Route111_Text_BeauDefeat:
 
 Route111_Text_BeauPostBattle:
 	.string "I'm going to be a real hero one day, like\n"
-	.string "the Great Saiyaman. I'll work harder to\l"
+	.string "the GREAT SAIYAMAN. I'll work harder to\l"
 	.string "make me and my POKéMON stronger.$"
 
 Route111_Text_BeckyIntro:
@@ -2160,8 +2162,8 @@ Route116_Text_KarenDefeat:
 	.string "I'm in shock. I lost?$"
 
 Route116_Text_KarenPostBattle:
-	.string "Awww, at this rate I'll never become an\n"
-	.string "elegant TRAINER like YAMCHA!$"
+	.string "Awww, at this rate I'll never become a\n"
+	.string "cool TRAINER like YAMCHA!$"
 
 Route116_Text_KarenRegister1:
 	.string "Oh, wow! Is that a POKéNAV? I have one,\n"
@@ -2510,8 +2512,8 @@ Route118_Text_ChesterDefeat:
 
 Route118_Text_ChesterPostBattle:
 	.string "If they got stronger, they could fly\n"
-	.string "more freely, like Goku on the Flying\l"
-	.string "Nimbus…$"
+	.string "more freely, like someone riding the\l"
+	.string "FLYING NIMBUS…$"
 
 Route118_Text_BarnyIntro:
 	.string "I'm a FISHERMAN, but I'm a TRAINER, too.\n"
@@ -2789,15 +2791,15 @@ Route119_Text_FabianPostBattle:
 	.string "Your win you have to atone!$"
 
 Route119_Text_DaytonIntro:
-	.string "Hohoho! I love kid TRAINERS! Let's have\n"
-	.string "a great match!$"
+	.string "Hohoho! I love young TRAINERS! Let's\n"
+	.string "have a great match!$"
 
 Route119_Text_DaytonDefeat:
 	.string "You're quite something! Hohoho!$"
 
 Route119_Text_DaytonPostBattle:
-	.string "Hohoho! I'll try to copy the pep of kid\n"
-	.string "TRAINERS like you!$"
+	.string "Hohoho! I'll try to copy the pep of\n"
+	.string "young TRAINERS like you!$"
 
 Route119_Text_RachelIntro:
 	.string "Wherever I go, whenever I go, my parasol\n"
@@ -3387,15 +3389,15 @@ Route123_Text_JazmynPostBattle:
 	.string "But often, looks don't lie…$"
 
 Route123_Text_FrederickIntro:
-	.string "Well, hello, child! Could you spare a\n"
+	.string "Well, hello, young man! Could you spare a\n"
 	.string "moment?$"
 
 Route123_Text_FrederickDefeat:
-	.string "Ah, a mighty capable child! Let me add\n"
-	.string "to your allowance.$"
+	.string "Ah, a mighty capable fellow! Let me add\n"
+	.string "to your winnings.$"
 
 Route123_Text_FrederickPostBattle:
-	.string "Add to your allowance? Wasn't the prize\n"
+	.string "Add to your winnings? Wasn't the prize\n"
 	.string "money enough?$"
 
 Route123_Text_AlbertoIntro:
@@ -3802,7 +3804,8 @@ Route126_Text_NikkiPostBattle:
 	.string "wave of despair…$"
 
 Route126_Text_BrendaIntro:
-	.string "Hello there, kiddo! Want to fight me?$"
+	.string "Hello there, young man! Want to fight\n"
+	.string "me?$"
 
 Route126_Text_BrendaDefeat:
 	.string "Oh, noooo!$"
@@ -4165,7 +4168,7 @@ Route130_Text_RodneyIntro:
 	.string "I think we should battle!$"
 
 Route130_Text_RodneyDefeat:
-	.string "This kid is awfully tough…$"
+	.string "This guy is awfully tough…$"
 
 Route130_Text_RodneyPostBattle:
 	.string "Your eyes have the look of someone\n"
@@ -4431,7 +4434,7 @@ Route133_Text_LindaDefeat:
 	.string "No! Please!$"
 
 Route133_Text_LindaPostBattle:
-	.string "A strong child TRAINER… How irritating!$"
+	.string "A strong young TRAINER… How irritating!$"
 
 Route133_Text_WarrenIntro:
 	.string "I want to win like everyone else, but I\n"

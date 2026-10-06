@@ -132,9 +132,10 @@ Route115_EventScript_Marlene::
 Route115_Text_NeverKnowWhenCavePokemonWillAppear:
 	.string "Exploring a cave is nothing like walking\n"
 	.string "a road.\p"
-	.string "Wild POKéMON can jump out at any\n"
-	.string "moment. I can sense their ki, but never\l"
-	.string "when they'll strike. It's thrilling!$"
+	.string "Wild POKéMON wander around in the dark,\n"
+	.string "and if you run into one, it's a battle!\p"
+	.string "I can sense their ki, but they still\n"
+	.string "catch me off guard. It's thrilling!$"
 
 Route115_Text_RouteSignRustboro:
 	.string "ROUTE 115\n"

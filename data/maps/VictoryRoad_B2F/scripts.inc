@@ -48,14 +48,15 @@ VictoryRoad_B2F_Text_VitoPostBattle:
 
 VictoryRoad_B2F_Text_OwenIntro:
 	.string "I heard there's a tough spiky-haired\n"
-	.string "kid around. Is that you?$"
+	.string "guy around. Is that you?$"
 
 VictoryRoad_B2F_Text_OwenDefeat:
-	.string "That kid is seriously tough!$"
+	.string "That guy is seriously tough!$"
 
 VictoryRoad_B2F_Text_OwenPostBattle:
-	.string "The rumor I heard says that tough kid\n"
-	.string "is from PETALBURG CITY.$"
+	.string "The rumor I heard says that tough guy\n"
+	.string "is best friends with PETALBURG CITY's\l"
+	.string "GYM LEADER.$"
 
 VictoryRoad_B2F_Text_CarolineIntro:
 	.string "You must be getting a little tired by\n"

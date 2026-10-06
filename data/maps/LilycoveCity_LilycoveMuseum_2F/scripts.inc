@@ -235,8 +235,7 @@ LilycoveCity_LilycoveMuseum_2F_Text_ExplainExhibitHall:
 LilycoveCity_LilycoveMuseum_2F_Text_PleaseObtainPaintingsForExhibit:
 	.string "I beg your pardon. I didn't mean to\n"
 	.string "monopolize the conversation.\p"
-	.string "Now, you are young, and yet obviously\n"
-	.string "well traveled…\p"
+	.string "Now, you are obviously well traveled…\p"
 	.string "You must meet lively POKéMON and the\n"
 	.string "works of art that depict them.\p"
 	.string "If you come across such a painting, may\n"

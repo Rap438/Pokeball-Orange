@@ -12,7 +12,7 @@ SeafloorCavern_Room1_EventScript_Grunt2::
 	end
 
 SeafloorCavern_Room1_Text_Grunt1Intro:
-	.string "We don't need kids around here!\n"
+	.string "We don't need busybodies around here!\n"
 	.string "Go home already!$"
 
 SeafloorCavern_Room1_Text_Grunt1Defeat:

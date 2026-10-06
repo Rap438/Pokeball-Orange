@@ -536,8 +536,8 @@ MossdeepCity_Gym_Text_NicholasPostBattle:
 	.string "all golden!$"
 
 MossdeepCity_Gym_Text_TateAndLizaIntro:
-	.string "GOTEN: Hehehe… Surprised?\n"
-	.string "TRUNKS: Heheh… Surprised?\p"
+	.string "GOTEN: Hehehe… Surprised, Dad?\n"
+	.string "TRUNKS: Heheh… Surprised, Mr. {PLAYER}?\p"
 	.string "GOTEN: There are two of us…\n"
 	.string "TRUNKS: Two GYM LEADERS!\p"
 	.string "GOTEN: We don't even need to talk…\n"
@@ -550,8 +550,10 @@ MossdeepCity_Gym_Text_TateAndLizaIntro:
 MossdeepCity_Gym_Text_TateAndLizaDefeat:
 	.string "GOTEN: What?! Our combination…\n"
 	.string "TRUNKS: Got broken?!\p"
-	.string "GOTEN: Aw, man. You won…\n"
-	.string "TRUNKS: So take this. You earned it!$"
+	.string "GOTEN: Aw, man. Dad won…\n"
+	.string "TRUNKS: My dad's gonna be so mad.\p"
+	.string "GOTEN: So take this…\n"
+	.string "TRUNKS: You earned it!$"
 
 MossdeepCity_Gym_Text_ReceivedMindBadge:
 	.string "{PLAYER} received the MIND BADGE\n"
@@ -585,7 +587,7 @@ MossdeepCity_Gym_Text_TateAndLizaPostBattle:
 	.string "we know!$"
 
 MossdeepCity_Gym_Text_TateAndLizaNeedTwoMons:
-	.string "GOTEN: Hehehe… Surprised?\p"
+	.string "GOTEN: Hehehe… Surprised, Dad?\p"
 	.string "TRUNKS: There are two GYM LEADERS!\p"
 	.string "GOTEN: But hey, you only have one…\n"
 	.string "TRUNKS: POKéMON that can fight.\p"

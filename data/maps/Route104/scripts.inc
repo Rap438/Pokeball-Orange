@@ -1120,7 +1120,7 @@ Route104_Text_MayPostBattle:
 	.string "too. Don't tell Bulma I said that.$"
 
 Route104_Text_BrendanWeShouldRegister:
-	.string "VEGETA: Hmph, {PLAYER}.\p"
+	.string "VEGETA: Hmph, KAKAROT.\p"
 	.string "So you had CAPSULE CORP. install MATCH\n"
 	.string "CALL on your POKéNAV.\p"
 	.string "Fine. Register me, so I can find you\n"
@@ -1131,7 +1131,7 @@ Route104_Text_RegisteredBrendan:
 	.string "in the POKéNAV.$"
 
 Route104_Text_BrendanHowsYourPokedex:
-	.string "VEGETA: {PLAYER}, how is your POKéDEX?\n"
+	.string "VEGETA: KAKAROT, how is your POKéDEX?\n"
 	.string "Or is it still a blank book?$"
 
 Route104_Text_BrendanDoingGreatLetsBattle:

@@ -59,7 +59,8 @@ EverGrandeCity_PhoebesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
-	.string "Heh heh heh!\p"
+	.string "Heh heh heh! So you've come, {PLAYER}.\n"
+	.string "My crystal ball said you would.\p"
 	.string "I'm BABA of the ELITE FOUR, the\n"
 	.string "fortuneteller. I trained on MT. PYRE.\p"
 	.string "Up there, so close to the Other World, I\n"
@@ -72,7 +73,7 @@ EverGrandeCity_PhoebesRoom_Text_IntroSpeech:
 
 EverGrandeCity_PhoebesRoom_Text_Defeat:
 	.string "Oh, my.\n"
-	.string "The cards never told me I'd lose.$"
+	.string "My crystal ball never told me I'd lose.$"
 
 EverGrandeCity_PhoebesRoom_Text_PostBattleSpeech:
 	.string "There is a definite bond between you\n"

@@ -224,7 +224,7 @@ SeafloorCavern_Room9_Text_ArchieYouMustDisappear:
 
 SeafloorCavern_Room9_Text_ArchieDefeat:
 	.string "What?!\n"
-	.string "I lost to a mere child like you?!$"
+	.string "I lost to a mere brute like you?!$"
 
 SeafloorCavern_Room9_Text_ArchieWithThisRedOrb:
 	.string "DR. GERO: Hmph…\p"

@@ -3,7 +3,7 @@
 usage: path.py MAP SX SY GX GY [FACE]  -> prints play.py commands to walk from (SX,SY) to (GX,GY)
 Uses layout collision bits and avoids object event tiles. Doesn't know ledges, water or sight lines."""
 import sys, json, os
-sys.path.insert(0, '/home/claude/pokeemerald/tools/pbo')
+os.chdir('/home/claude/pokeemerald'); sys.path.insert(0, '/home/claude/pokeemerald/tools/pbo')
 import mapkit
 from collections import deque
 m, sx, sy, gx, gy = sys.argv[1], *map(int, sys.argv[2:6])
@@ -27,6 +27,12 @@ steps = []
 p = (gx, gy)
 while prev[p]: p, k = prev[p][0], prev[p][1]; steps.append(k)
 steps.reverse()
-out = ''.join(f'press {k} 8; run 10; ' for k in steps)
-if face: out += f'press {face} 3; run 10; '
+out = ''
+prev = os.environ.get('FACING', 'DOWN')   # after a warp the player faces down
+for k in steps:
+    if k != prev:
+        out += f'press {k} 3; run 8; '   # tap to face the new direction (a tap only turns)
+        prev = k
+    out += f'press {k} 8; run 10; '
+if face and face != prev: out += f'press {face} 3; run 10; '
 print(out)

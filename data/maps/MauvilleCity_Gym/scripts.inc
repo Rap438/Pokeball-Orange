@@ -340,7 +340,7 @@ MauvilleCity_Gym_Text_WattsonIntro:
 	.string "the whole world, I have.\p"
 	.string "So now I pour my time into rigging door\n"
 	.string "traps in my GYM.\p"
-	.string "Oh? Now, what are you doing here?\p"
+	.string "Oh? Well, if it isn't my son-in-law!\p"
 	.string "What's that? You say you got past all\n"
 	.string "my rigged doors?\p"
 	.string "Wahahahah! Now that's amusing!\p"
@@ -378,12 +378,13 @@ MauvilleCity_Gym_Text_RegisteredWattson:
 	.string "in the POKéNAV.$"
 
 MauvilleCity_Gym_Text_WattsonPostBattle:
-	.string "I swell with pride seeing a promising\n"
-	.string "young fighter like you!$"
+	.string "I swell with pride seeing my son-in-law\n"
+	.string "fight like that! My CHI-CHI sure picked\l"
+	.string "a good one!$"
 
 MauvilleCity_Gym_Text_WattsonGoForthAndEndeavor:
 	.string "Wahahahah! Go forth and give it your\n"
-	.string "all, youngster!$"
+	.string "all, son-in-law!$"
 
 MauvilleCity_Gym_Text_GymStatue:
 	.string "MAUVILLE CITY POKéMON GYM$"

@@ -246,8 +246,8 @@ Route119_WeatherInstitute_2F_Text_ShellyIntro:
 	.string "VIOLET's nose?\p"
 	.string "You're either totally fearless,\n"
 	.string "hopelessly ignorant, or both!\p"
-	.string "You're so cute, you're disgusting! I'll\n"
-	.string "put you down, kiddy!$"
+	.string "You're so earnest, it's disgusting! I'll\n"
+	.string "put you down, muscle-head!$"
 
 Route119_WeatherInstitute_2F_Text_ShellyDefeat:
 	.string "Ahahahaha!\n"
@@ -262,9 +262,9 @@ Route119_WeatherInstitute_2F_Text_ShellyPostBattle:
 
 Route119_WeatherInstitute_2F_Text_TeamMagmaJustPassedBy:
 	.string "We have a situation here!\p"
-	.string "A mob of RED RIBBON soldiers in red\n"
-	.string "uniforms just marched past the WEATHER\l"
-	.string "INSTITUTE.\p"
+	.string "A mob of LAND squad soldiers from the\n"
+	.string "RED RIBBON ARMY just marched past the\l"
+	.string "WEATHER INSTITUTE.\p"
 	.string "They seem to be heading for MT. PYRE!$"
 
 Route119_WeatherInstitute_2F_Text_WeHaveToHurryToMtPyre:

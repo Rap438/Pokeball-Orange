@@ -4,6 +4,16 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on [pokeemerald-expansi
 
 **No ROMs are included.** Build it yourself from source (below), or apply a release patch to your own legally obtained Emerald ROM.
 
+## New in v0.5
+See [docs/pbo/CHANGELOG_v0.5.md](docs/pbo/CHANGELOG_v0.5.md). In short:
+- OG's art pack with **four seasons** that follow the game clock (or lock one in OPTION)
+- **Starters from Hoenn, Kanto, Sinnoh or Alola**, with Vegeta's line following the region
+- **Visible wild Pokémon**, seasonal **guest Pokémon from every region**, and Pokémon living in the towns
+- **13 towns rearranged** into new layouts
+- Dragon Balls visible on the ground with a **tracker above the HUD** once you have the Radar
+- Goku's medicine heals a **share of his HP**, and the Senzu Bean revives him
+- Fistfights with beaten trainers are back; story text consistency pass
+
 ## What's in it
 
 - **Goku as the hero.** Chi-Chi replaces Mom, Master Roshi is the professor, Vegeta is the rival, Krillin is the Normal-type gym leader, and the rest of the Z cast fills the other roles.
@@ -20,7 +30,7 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on [pokeemerald-expansi
   - After a wish, the balls turn to stone and re-scatter.
 - **Flying Nimbus.** A key item that works like Fly. You get it on Route 119 together with HM Fly, and it needs the Feather Badge.
 - **DBZ item names.** Senzu Bean, Korin Water, Kaio-Ken, Scouter, Capsule Bike and others. Every item keeps its original effect.
-- **Restyled overworld.** Buu's Fury–inspired colors with textured grass and dirt. The map layouts are unchanged.
+- **Restyled overworld.** OG's seasonal art pack (v0.5); towns rearranged into new layouts.
 - **Custom title screen.**
 - **Overworld DBZ fights** happen in real time on the map. A throws a punch/kick combo (Buu's Fury fighter frames with a hit spark at the fist), L fires the selected special, R powers up and B dashes.
   - Red Ribbon Army soldiers ambush Goku on routes and in cities. A KI HIDER keeps them away.

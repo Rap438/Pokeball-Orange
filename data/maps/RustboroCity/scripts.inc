@@ -921,9 +921,8 @@ RustboroCity_EventScript_Boy1::
 	end
 
 RustboroCity_Text_WeShortenItToDevon:
-	.string "CAPSULE CORP.… That's the name on the\n"
-	.string "sign, and nobody here ever says\l"
-	.string "anything longer.\p"
+	.string "CAPSULE CORP.… Everyone around here\n"
+	.string "just calls it CC.\p"
 	.string "That company makes all sorts of handy\n"
 	.string "products. They even store houses in\l"
 	.string "capsules!$"
@@ -1081,12 +1080,12 @@ RustboroCity_Text_MayDefeat:
 RustboroCity_Text_MayMrBrineyHint:
 	.string "VEGETA: Oh, and that old man I just\n"
 	.string "passed, MR. BRINEY…\p"
-	.string "{PLAYER}{KUN}, you've only just moved here,\n"
+	.string "KAKAROT{KUN}, you've only just moved here,\n"
 	.string "so you wouldn't know this, but MR.\l"
 	.string "BRINEY was once a revered seafarer.$"
 
 RustboroCity_Text_BrendanHiLetsRegister:
-	.string "VEGETA: Hmph, {PLAYER}.\p"
+	.string "VEGETA: Hmph, KAKAROT.\p"
 	.string "So you had MATCH CALL put on your\n"
 	.string "POKéNAV.\p"
 	.string "Register me. I want to be able to find\n"
@@ -1098,12 +1097,12 @@ RustboroCity_Text_RegisteredBrendan:
 	.string "in your POKéNAV.$"
 
 RustboroCity_Text_BrendanPassedBrineyWantToBattle:
-	.string "VEGETA: By the way, {PLAYER}, I passed\n"
+	.string "VEGETA: By the way, KAKAROT, I passed\n"
 	.string "that old sailor, MR. BRINEY, in\l"
 	.string "PETALBURG WOODS.\p"
 	.string "I'd guess he was heading home to his\n"
 	.string "cottage by the sea.\p"
-	.string "{PLAYER}, how is your POKéDEX? Filled in\n"
+	.string "KAKAROT, how is your POKéDEX? Filled in\n"
 	.string "any pages yet?\p"
 	.string "Mine is flawless.\p"
 	.string "Want to fight and test how far you've\n"
@@ -1129,7 +1128,7 @@ RustboroCity_Text_BrendanMrBrineyHint:
 	.string "VEGETA: That old man I just passed, MR.\n"
 	.string "BRINEY… do you know him?\p"
 	.string "I'd bet not, since you only just moved\n"
-	.string "here, {PLAYER}, but MR. BRINEY was once\l"
+	.string "here, KAKAROT, but MR. BRINEY was once\l"
 	.string "a great sailor.$"
 
 RustboroCity_Text_TunnelNearingCompletion:

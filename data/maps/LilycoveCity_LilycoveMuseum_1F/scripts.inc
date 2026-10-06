@@ -162,8 +162,8 @@ LilycoveCity_LilycoveMuseum_1F_Text_WelcomeToLilycoveMuseum:
 LilycoveCity_LilycoveMuseum_1F_Text_ImCuratorHaveYouViewedOurPaintings:
 	.string "I'm the CURATOR of this museum of fine\n"
 	.string "arts.\p"
-	.string "It warms my heart to see someone as\n"
-	.string "young as you in our MUSEUM.\p"
+	.string "It warms my heart to see a TRAINER like\n"
+	.string "you in our MUSEUM.\p"
 	.string "Have you already viewed our collection\n"
 	.string "of paintings?$"
 

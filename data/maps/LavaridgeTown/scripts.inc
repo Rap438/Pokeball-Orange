@@ -284,7 +284,7 @@ LavaridgeTown_Text_MayExplainGoGogglesChallengeDad:
 	.string "Don't fall behind. Hmph!$"
 
 LavaridgeTown_Text_BrendanNiceBadgesTakeThis:
-	.string "VEGETA: Kakarot. It's been a while.\p"
+	.string "VEGETA: KAKAROT. It's been a while.\p"
 	.string "Hmph. That's a respectable pile of\n"
 	.string "BADGES.\p"
 	.string "Fine. You may as well have this.$"
@@ -296,7 +296,7 @@ LavaridgeTown_Text_BrendanExplainGoGogglesChallengeDad:
 	.string "Look around for them.\p"
 	.string "As for me, I'm thinking of challenging\n"
 	.string "KRILLIN, the GYM LEADER of PETALBURG.\p"
-	.string "Unlike you, Kakarot, he actually looks\n"
+	.string "Unlike you, KAKAROT, he actually looks\n"
 	.string "like a real fighter.\p"
 	.string "Hmph. Later.$"
 
@@ -352,9 +352,9 @@ LavaridgeTown_Text_PokemonNippedBackside:
 
 LavaridgeTown_Text_OhYouLikeHotSprings:
 	.string "Oh, you came for the hot springs?\p"
-	.string "That's unusual for a kid your age. Most\n"
-	.string "young fighters would rather be out\l"
-	.string "training.$"
+	.string "That's unusual for a fighter like you.\n"
+	.string "Most fighters your age would rather be\l"
+	.string "out training.$"
 
 LavaridgeTown_Text_BatheInHotSpringsEveryDay:
 	.string "I soak in the hot springs every day.\p"

@@ -728,15 +728,17 @@ PetalburgCity_Text_WallyHouseSign:
 
 PetalburgCity_Text_AreYouATrainer:
 	.string "Excuse me!\p"
-	.string "Let me guess. Judging by your outfit,\n"
-	.string "you're a POKéMON TRAINER?$"
+	.string "Hold on… Aren't you {PLAYER}, from the\n"
+	.string "WORLD TOURNAMENT?\p"
+	.string "And judging by your outfit, you're a\n"
+	.string "POKéMON TRAINER now, too?$"
 
 PetalburgCity_Text_WellMaybeNot:
 	.string "… … … … … …\p"
-	.string "Hmm, maybe not.\n"
+	.string "Hmm, maybe not yet.\n"
 	.string "Your clothes aren't dusty enough.\p"
-	.string "You're either a rookie TRAINER,\n"
-	.string "or just an ordinary kid.$"
+	.string "As a TRAINER, you're either a rookie,\n"
+	.string "or just out for a stroll.$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
 	.string "I'm roaming the land scouting for\n"

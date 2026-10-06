@@ -57,7 +57,9 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar::
 
 CaveOfOrigin_B1F_Text_WallaceStory:
 	.string "Ah, so you are {PLAYER}{KUN}?\p"
-	.string "I've heard tales of your power.\p"
+	.string "I've heard tales of your power. My\n"
+	.string "daughter VIDEL never stops talking\l"
+	.string "about you!\p"
 	.string "I am MR. SATAN, the WORLD CHAMPION!\p"
 	.string "I was once the GYM LEADER of\n"
 	.string "SOOTOPOLIS, but something came up.\p"

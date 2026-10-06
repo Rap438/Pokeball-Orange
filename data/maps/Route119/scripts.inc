@@ -527,15 +527,15 @@ Route119_Text_MayExplainFly:
 	.string "be the one left standing!$"
 
 Route119_Text_BrendanIntro:
-	.string "VEGETA: Kakarot! So this is where you've\n"
-	.string "been hunting POKéMON?\p"
+	.string "VEGETA: KAKAROT! So this is where\n"
+	.string "you've been hunting POKéMON?\p"
 	.string "Let me see how good you've gotten. I'll\n"
 	.string "test you!\p"
 	.string "Now fight me! No excuses!$"
 
 Route119_Text_BrendanDefeat:
 	.string "Hmph…\n"
-	.string "You've become decent, Kakarot. Barely.$"
+	.string "You've become decent, KAKAROT. Barely.$"
 
 Route119_Text_BrendanIllGiveYouThis:
 	.string "VEGETA: I suppose you're strong enough\n"

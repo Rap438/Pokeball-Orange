@@ -200,7 +200,7 @@ EventScript_DBZ_VegetaIntro3::
 
 Text_DBZ_OfferFight:
 	.string "Your POKéMON are tough…\n"
-	.string "But what about you, GOKU?\p"
+	.string "But what about you, {PLAYER}?\p"
 	.string "Want to go a round,\n"
 	.string "hand to hand?$"
 
@@ -211,25 +211,25 @@ Text_DBZ_GymFightIntro:
 	.string "…Not bad at all!\p"
 	.string "But a true champion can fight\n"
 	.string "on his own two feet, too.\p"
-	.string "Show me what YOU'VE got, GOKU!$"
+	.string "Show me what YOU'VE got, {PLAYER}!$"
 
 Text_DBZ_Ambush:
 	.string "A RED RIBBON ARMY soldier jumped\n"
-	.string "out! Get ready, GOKU!$"
+	.string "out! Get ready, {PLAYER}!$"
 
 Text_DBZ_TrainingPaidOff:
 	.string "Training with the team paid off!\n"
-	.string "GOKU's power level rose to {STR_VAR_1}!$"
+	.string "{PLAYER}'s power level rose to {STR_VAR_1}!$"
 
 Text_DBZ_FightWon:
-	.string "GOKU beat {STR_VAR_1}!$"
+	.string "{PLAYER} beat {STR_VAR_1}!$"
 
 Text_DBZ_FightExp:
-	.string "GOKU gained {STR_VAR_1} EXP.!\n"
+	.string "{PLAYER} gained {STR_VAR_1} EXP.!\n"
 	.string "The team gained {STR_VAR_2} EXP. each!$"
 
 Text_DBZ_GokuLevelUp:
-	.string "GOKU's power level rose to {STR_VAR_3}!$"
+	.string "{PLAYER}'s power level rose to {STR_VAR_3}!$"
 
 Text_DBZ_MonGrew:
 	.string "{STR_VAR_1} grew to Lv. {STR_VAR_2}!$"
@@ -243,18 +243,19 @@ Text_DBZ_MonNoRoom:
 	.string "The MOVE TUTOR can teach it later.$"
 
 Text_DBZ_FightLost:
-	.string "GOKU got knocked down by {STR_VAR_1}…$"
+	.string "{PLAYER} got knocked down by {STR_VAR_1}…$"
 
 Text_DBZ_BlackedOut:
 	.string "Everything went dark…$"
 
 Text_DBZ_WokeUp:
-	.string "GOKU came to after a while.\p"
-	.string "He's still sore… A rest at home or\n"
-	.string "a POKéMON CENTER will patch him up.$"
+	.string "{PLAYER} came to after a while.\p"
+	.string "He's still sore… Some medicine, a rest\n"
+	.string "at home or a POKéMON CENTER will\l"
+	.string "patch him up.$"
 
 Text_DBZ_TooHurtForGym:
-	.string "…But GOKU is too beat up to fight.\n"
+	.string "…But {PLAYER} is too beat up to fight.\n"
 	.string "He needs to heal up first.$"
 
 Text_DBZ_VegetaIntro1:
@@ -291,18 +292,18 @@ Text_DBZ_VegetaNoFight:
 
 Text_DBZ_HintSSJ:
 	.string "The BADGE's power surges through\n"
-	.string "GOKU… Something is awakening!\p"
+	.string "{PLAYER}… Something is awakening!\p"
 	.string "Press R to go SUPER SAIYAN!\n"
 	.string "SSJ + KAMEHAMEHA can cut trees.$"
 
 Text_DBZ_HintSSJ2:
-	.string "GOKU's ki is crackling with\n"
+	.string "{PLAYER}'s ki is crackling with\n"
 	.string "lightning!\p"
 	.string "SUPER SAIYAN 2 unlocked!\n"
 	.string "Its KAMEHAMEHA smashes rocks.$"
 
 Text_DBZ_HintSSJ3:
-	.string "GOKU's hair grows long and his\n"
+	.string "{PLAYER}'s hair grows long and his\n"
 	.string "power shakes the ground!\p"
 	.string "SUPER SAIYAN 3 unlocked!\n"
-	.string "Now GOKU can push big boulders.$"
+	.string "Now {PLAYER} can push big boulders.$"

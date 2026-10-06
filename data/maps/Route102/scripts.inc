@@ -75,7 +75,7 @@ Route102_EventScript_Allen::
 
 Route102_Text_WatchMeCatchPokemon:
 	.string "UUB: {PLAYER}… um…\n"
-	.string "POKéMON hide in tall grass like this,\l"
+	.string "POKéMON live in tall grass like this,\l"
 	.string "don't they?\p"
 	.string "Please watch me. I'll try to catch one\n"
 	.string "on my own.\p"
@@ -98,7 +98,9 @@ Route102_Text_ImNotVeryTall:
 
 Route102_Text_CatchWholeBunchOfPokemon:
 	.string "I'm gonna catch every POKéMON on this\n"
-	.string "route and get super strong!$"
+	.string "route and get super strong!\p"
+	.string "Some only visit in certain seasons,\n"
+	.string "so I'll be back all year!$"
 
 Route102_Text_RouteSignOldale:
 	.string "ROUTE 102\n"

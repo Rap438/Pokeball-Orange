@@ -265,7 +265,7 @@ SlateportCity_OceanicMuseum_2F_Text_ThankYouForTheParts:
 	.string "ready for the expedition.$"
 
 SlateportCity_OceanicMuseum_2F_Text_WellTakeThoseParts:
-	.string "Hee hee, hold it right there, kid!\n"
+	.string "Hee hee, hold it right there, pal!\n"
 	.string "Hand over those parts!$"
 
 SlateportCity_OceanicMuseum_2F_Text_SternWhoAreYou:
@@ -280,7 +280,7 @@ SlateportCity_OceanicMuseum_2F_Text_WereTeamAqua:
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt1Defeat:
 	.string "Waaaaah!\n"
-	.string "A kid pounded me!$"
+	.string "Some guy in a gi pounded me!$"
 
 SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
 	.string "Oh no, oh no… DR. GERO is going to have\n"
@@ -288,7 +288,7 @@ SlateportCity_OceanicMuseum_2F_Text_BossGoingToBeFurious:
 
 SlateportCity_OceanicMuseum_2F_Text_LetMeTakeCareOfThis:
 	.string "Bah, you useless wimp!\n"
-	.string "Out of the way, I'll handle this brat!$"
+	.string "Out of the way, I'll handle this punk!$"
 
 SlateportCity_OceanicMuseum_2F_Text_Grunt2Defeat:
 	.string "What?!\n"
@@ -298,20 +298,20 @@ SlateportCity_OceanicMuseum_2F_Text_MeddlingKid:
 	.string "Now what? If we don't bring those parts\n"
 	.string "back, the colonel will have us scrubbing\l"
 	.string "decks for a year!\p"
-	.string "How could we lose to some kid who just\n"
+	.string "How could we lose to some guy who just\n"
 	.string "wandered in?!$"
 
 SlateportCity_OceanicMuseum_2F_Text_CameToSeeWhatsTakingSoLong:
 	.string "Kyahahaha… I came to see what was\n"
 	.string "taking so long.\p"
 	.string "And what do I find? My soldiers, held up\n"
-	.string "by one child.$"
+	.string "by one lone fighter.$"
 
 SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "I am DR. GERO, chief scientist of the\n"
 	.string "RED RIBBON ARMY, and master of its SEA\l"
 	.string "squad.\p"
-	.string "Hmph. So you're the brat who wrecked my\n"
+	.string "Hmph. So you're the one who wrecked my\n"
 	.string "men. I see no uniform. You are no soldier\l"
 	.string "of ours.\p"
 	.string "Then why meddle? Do you even know what\n"
@@ -325,7 +325,7 @@ SlateportCity_OceanicMuseum_2F_Text_ArchieWarning:
 	.string "Those parts would have saved me weeks\n"
 	.string "of work. No matter. There is more than\l"
 	.string "one way to skin a Magikarp.\p"
-	.string "{PLAYER}, is it? A boy with a little power\n"
+	.string "And you? A fighter with a little power\n"
 	.string "and a big mouth. A scouter wouldn't even\l"
 	.string "bother to read you.\p"
 	.string "But be warned: stand in my way again,\n"
@@ -345,7 +345,7 @@ SlateportCity_OceanicMuseum_2F_Text_SternIveGotToGo:
 	.string "The expedition to the ocean floor\n"
 	.string "leaves very soon, and the crew is\l"
 	.string "waiting.\p"
-	.string "Thanks again. I owe you one, kid!\p"
+	.string "Thanks again. I owe you one!\p"
 	.string "Feel free to look around the museum and\n"
 	.string "the shipyard while I'm gone.$"
 

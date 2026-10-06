@@ -61,9 +61,9 @@ AquaHideout_1F_Text_OurBossIsSnatchingSomething:
 	.string "the plan? Not a chance!$"
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
-	.string "Hey, you with the RED RIBBON patch!\n"
-	.string "You're one of us, right?\p"
-	.string "I hear our LAND squad is trying to wake\n"
+	.string "What? What?\n"
+	.string "Are you from the LAND squad?\p"
+	.string "I hear the LAND squad is trying to wake\n"
 	.string "some monster POKéMON at their own\l"
 	.string "BASE.\p"
 	.string "But where in the world is that BASE\n"
@@ -90,9 +90,9 @@ AquaHideout_1F_Text_BossIsOnRoute122:
 	.string "the plan? Not a chance!$"
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
-	.string "Hey, you with the RED RIBBON patch!\n"
-	.string "You're one of us, right?\p"
-	.string "I hear our LAND squad is after a\n"
+	.string "What? What?\n"
+	.string "Are you from the LAND squad?\p"
+	.string "I hear the LAND squad is after a\n"
 	.string "monster POKéMON up at MT. CHIMNEY.\p"
 	.string "But what is that thing even like?$"
 

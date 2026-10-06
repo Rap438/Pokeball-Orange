@@ -28,7 +28,7 @@ FortreeCity_PokemonCenter_1F_EventScript_Boy::
 	end
 
 FortreeCity_PokemonCenter_1F_Text_GoToSafariZone:
-	.string "Hey, kid. Are you filling out a POKéDEX?\p"
+	.string "Hey, pal. Are you filling out a POKéDEX?\p"
 	.string "Hmm… Then head for the SAFARI ZONE.\n"
 	.string "Plenty of rare POKéMON there. That's my\l"
 	.string "advice.$"

@@ -488,10 +488,9 @@ MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
 	.string "the two ORBS?\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "Oh, yes. Was it the RED RIBBON ARMY who\n"
-	.string "came and took the BLUE ORB first?\p"
-	.string "Well, in their haste, they left this\n"
-	.string "behind.\p"
+	.string "Oh, yes. The other RED RIBBON squad,\n"
+	.string "the one that took the BLUE ORB first…\p"
+	.string "In their haste, they left this behind.\p"
 	.string "I cannot imagine what it could be.\p"
 	.string "I would like you to have it.\n"
 	.string "Perhaps it will be of use somehow.$"
@@ -567,9 +566,11 @@ MtPyre_Summit_Text_WellThatTooIsFine:
 	.string "Well, that, too, is fine…$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "KID BUU: Hee hee… {PLAYER}…\p"
+	.string "KID BUU: Yaaawn… {PLAYER}…\p"
+	.string "Buu gave the shiny ORB back. Now Buu\n"
+	.string "goes to sleep for a long time…\p"
 	.string "… … … … … …\n"
-	.string "… … … … … …$"
+	.string "… … … … … Zzz…$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
 	.string "It is my role to pass the legends of\n"

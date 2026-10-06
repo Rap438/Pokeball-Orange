@@ -1033,7 +1033,7 @@ SlateportCity_Text_WhyAreWeLiningUp:
 
 SlateportCity_Text_WhatDoYouWant:
 	.string "Huh?\n"
-	.string "What do you want, kid? Move along!$"
+	.string "What do you want, pal? Move along!$"
 
 SlateportCity_Text_IllReadSignForYou:
 	.string "You want to read this sign?\n"

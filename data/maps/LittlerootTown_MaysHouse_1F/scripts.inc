@@ -308,12 +308,12 @@ LittlerootTown_MaysHouse_1F_Movement_MayGoUpstairs2:
 	step_end
 
 RivalsHouse_1F_Text_OhYoureTheNewNeighbor:
-	.string "Oh, hello there. And you are?\p"
+	.string "Oh, hello there. Who is it?\p"
 	.string "… … … … … … … … …\n"
 	.string "… … … … … … … … …\p"
-	.string "Well, if it isn't {PLAYER}{KUN}! So you're our\n"
-	.string "new next-door neighbor! I'm BULMA, of\l"
-	.string "CAPSULE CORP.\p"
+	.string "Well, if it isn't {PLAYER}{KUN}! So you and\n"
+	.string "CHI-CHI are our new next-door\l"
+	.string "neighbors? What a small world!\p"
 	.string "We have a {STR_VAR_1} too, little BRA. Our\n"
 	.string "{STR_VAR_1} naps most of the day, so you'll\l"
 	.string "meet her later.\p"

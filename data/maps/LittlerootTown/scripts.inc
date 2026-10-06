@@ -915,8 +915,10 @@ LittlerootTown_Text_BirchSpendsDaysInLab:
 
 LittlerootTown_Text_IfYouGoInGrassPokemonWillJumpOut:
 	.string "Hey, hey, hey!\p"
-	.string "If you walk out into the tall grass,\n"
-	.string "wild POKéMON will leap out at you!$"
+	.string "See those POKéMON wandering around in\n"
+	.string "the tall grass?\p"
+	.string "If you walk right into one, it'll\n"
+	.string "battle you!$"
 
 LittlerootTown_Text_DangerousIfYouDontHavePokemon:
 	.string "Don't go out there without a POKéMON\n"
@@ -1024,12 +1026,12 @@ LittlerootTown_EventScript_FlowerGlintEmpty::
 	end
 
 LittlerootTown_Text_CampTent:
-	.string "GOKU's capsule tent. It still smells\n"
+	.string "{PLAYER}'s capsule tent. It still smells\n"
 	.string "like grilled fish.\p"
 	.string "Take a nap?$"
 
 LittlerootTown_Text_CampTentRested:
-	.string "GOKU and his POKéMON woke up\n"
+	.string "{PLAYER} and his POKéMON woke up\n"
 	.string "fully rested!$"
 
 LittlerootTown_Text_Campfire:
@@ -1043,7 +1045,7 @@ LittlerootTown_Text_SupplyCrate:
 
 LittlerootTown_Text_SupplyCrateEmpty:
 	.string "Just instant noodles left.\n"
-	.string "GOKU already ate the good stuff.$"
+	.string "{PLAYER} already ate the good stuff.$"
 
 LittlerootTown_Text_FlowerGlint:
 	.string "Something is glittering between\n"

@@ -178,11 +178,12 @@ RustboroCity_Gym_Text_MarcPostBattle:
 	.string "guts.$"
 
 RustboroCity_Gym_Text_RoxanneIntro:
-	.string "Yo! I'm YAMCHA, the RUSTBORO POKéMON\n"
-	.string "GYM LEADER.\p"
-	.string "I took this job so I could put\n"
-	.string "everything I learned at the POKéMON\l"
-	.string "TRAINER'S SCHOOL to use in battle.\p"
+	.string "Yo, {PLAYER}! Long time no see!\n"
+	.string "Yeah, I'm the RUSTBORO POKéMON GYM\l"
+	.string "LEADER now.\p"
+	.string "I teach at the POKéMON TRAINER'S\n"
+	.string "SCHOOL, and I took this job to put\l"
+	.string "everything I teach to use in battle.\p"
 	.string "So show me how you fight, and with which\n"
 	.string "POKéMON! Fair warning, I'm not all that\l"
 	.string "lucky, but I don't plan on losing today.$"
@@ -257,8 +258,8 @@ RustboroCity_Gym_Text_RegisteredRoxanne:
 	.string "in the POKéNAV.$"
 
 RustboroCity_Gym_Text_RoxannePreRematch:
-	.string "YAMCHA: Great to see you again! I'm\n"
-	.string "YAMCHA, the GYM LEADER here.\p"
+	.string "YAMCHA: Great to see you again,\n"
+	.string "{PLAYER}!\p"
 	.string "I'm sure we've both fought plenty of\n"
 	.string "battles since we last met.\p"
 	.string "I'd like to see how much stronger we've\n"
@@ -275,8 +276,8 @@ RustboroCity_Gym_Text_RoxannePostRematch:
 	.string "even more!$"
 
 RustboroCity_Gym_Text_RoxanneRematchNeedTwoMons:
-	.string "YAMCHA: Great to see you again! I'm\n"
-	.string "YAMCHA, the GYM LEADER here.\p"
+	.string "YAMCHA: Great to see you again,\n"
+	.string "{PLAYER}!\p"
 	.string "I'm sure we've both fought plenty of\n"
 	.string "battles since we last met.\p"
 	.string "I'd like to see how much stronger we've\n"

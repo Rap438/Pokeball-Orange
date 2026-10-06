@@ -383,7 +383,7 @@ MossdeepCity_Text_SurfExhilarating:
 	.string "But crossing the sea on a POKéMON with\n"
 	.string "SURF… Now that's a thrill!\p"
 	.string "Almost as good as riding a flying cloud,\n"
-	.string "wouldn't you say, youngster?$"
+	.string "wouldn't you say, friend?$"
 
 MossdeepCity_Text_SpecialSpaceCenterRock:
 	.string "This rock means a lot to the people at\n"

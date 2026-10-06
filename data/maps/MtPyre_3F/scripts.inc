@@ -35,7 +35,7 @@ MtPyre_3F_EventScript_RematchGabrielle::
 MtPyre_3F_Text_WilliamIntro:
 	.string "The spiritual air of this mountain has\n"
 	.string "raised my psychic power!\p"
-	.string "A mere child like you…\n"
+	.string "A mere brawler like you…\n"
 	.string "Do you dream of winning?$"
 
 MtPyre_3F_Text_WilliamDefeat:
@@ -47,8 +47,8 @@ MtPyre_3F_Text_WilliamPostBattle:
 
 MtPyre_3F_Text_KaylaIntro:
 	.string "Ahahahaha!\p"
-	.string "This is no place for kids, least of all\n"
-	.string "you!$"
+	.string "This is no place for the faint of heart,\n"
+	.string "least of all you!$"
 
 MtPyre_3F_Text_KaylaDefeat:
 	.string "Beaten clean…$"

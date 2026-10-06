@@ -944,7 +944,8 @@ Route110_Text_ThereIsNoRecord:
 Route110_Text_ImagineSeeingYouHere:
 	.string "MASTER ROSHI: Hohoho! {PLAYER}{KUN}!\n"
 	.string "What a surprise to see you here!\p"
-	.string "Say, where might my {RIVAL} be?$"
+	.string "Say, where's {RIVAL}? He's supposed to\n"
+	.string "be helping with my research!$"
 
 Route110_Text_HeardYouInstallMatchCall:
 	.string "Oh, I see!\n"
@@ -964,7 +965,7 @@ Route110_Text_RegisteredBirchInPokenav:
 
 Route110_Text_KeepAnEyeOutForRival:
 	.string "MASTER ROSHI: {PLAYER}{KUN}…\p"
-	.string "If you run into my {RIVAL}, tell him the\n"
+	.string "If you run into {RIVAL}, tell him the\n"
 	.string "research isn't going to do itself.\p"
 	.string "… … … … … …\p"
 	.string "Well, this old turtle had better get\n"

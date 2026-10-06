@@ -714,7 +714,7 @@ MauvilleCity_GameCorner_Text_CantWinJackpot:
 	.string "can't hit the jackpot.$"
 
 MauvilleCity_GameCorner_Text_NeedCoinCaseGoNextDoor:
-	.string "Hey, kid, if you want to play here, you\n"
+	.string "Hey, pal, if you want to play here, you\n"
 	.string "need a COIN CASE.\p"
 	.string "I think the young lady next door had\n"
 	.string "one. Go see her!$"

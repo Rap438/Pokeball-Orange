@@ -313,21 +313,21 @@ Route103_Text_BrendanRoute103Pokemon:
 	.string "on ROUTE 103…$"
 
 Route103_Text_BrendanLetsBattle:
-	.string "Oh, it's you, {PLAYER}.\p"
+	.string "Oh, it's you, KAKAROT.\p"
 	.string "…So the old man gave you a POKéMON.\p"
 	.string "Since we're here, how about a battle?\p"
 	.string "I'll show you what being a TRAINER\n"
 	.string "really takes!$"
 
 Route103_Text_BrendanDefeated:
-	.string "Hmph. Not bad, {PLAYER}.$"
+	.string "Hmph. Not bad, KAKAROT.$"
 
 Route103_Text_BrendanTimeToHeadBack:
 	.string "VEGETA: Now I get it. I see why the old\n"
 	.string "man has his eye on you.\p"
 	.string "Your POKéMON already trusts you, even\n"
 	.string "though you only just got it.\p"
-	.string "{PLAYER}, I get the feeling you could\n"
+	.string "KAKAROT, I get the feeling you could\n"
 	.string "befriend any POKéMON with ease.\p"
 	.string "Let's go back to the LAB.$"
 

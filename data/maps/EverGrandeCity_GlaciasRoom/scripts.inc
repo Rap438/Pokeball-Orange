@@ -61,11 +61,14 @@ EverGrandeCity_GlaciasRoom_EventScript_Defeated::
 EverGrandeCity_GlaciasRoom_Text_IntroSpeech:
 	.string "Welcome. I'm ANDROID 18 of the ELITE\n"
 	.string "FOUR.\p"
+	.string "Oh. It's you, {PLAYER}. KRILLIN never\n"
+	.string "shuts up about his best buddy.\p"
 	.string "I came all the way to HOENN to sharpen\n"
 	.string "my ice skills.\p"
 	.string "All I've found are weak TRAINERS and\n"
 	.string "their weak POKéMON. Yawn.\p"
-	.string "What about you?\p"
+	.string "So, are you as strong as my husband\n"
+	.string "keeps saying?\p"
 	.string "It'd really make my day if I could\n"
 	.string "finally cut loose on someone.$"
 
@@ -80,5 +83,7 @@ EverGrandeCity_GlaciasRoom_Text_PostBattleSpeech:
 	.string "Go on to the next room.\p"
 	.string "There, you'll meet the truly frightening\n"
 	.string "side of the POKéMON LEAGUE.\p"
-	.string "Try not to scream. …Just kidding. Maybe.$"
+	.string "Try not to scream. …Just kidding. Maybe.\p"
+	.string "And call KRILLIN once in a while. He\n"
+	.string "misses you.$"
 

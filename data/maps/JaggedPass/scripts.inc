@@ -150,8 +150,8 @@ JaggedPass_Text_EricIntro:
 	.string "mountain itself!$"
 
 JaggedPass_Text_EricDefeat:
-	.string "Beaten by a kid! That stings worse than\n"
-	.string "the rocks!$"
+	.string "Beaten by a guy in a gi! That stings\n"
+	.string "worse than the rocks!$"
 
 JaggedPass_Text_EricPostBattle:
 	.string "Sure, I lost the POKéMON battle…\p"
@@ -218,7 +218,8 @@ JaggedPass_Text_EthanPostRematch:
 	.string "RYDEL in MAUVILLE CITY…$"
 
 JaggedPass_Text_GruntIntro:
-	.string "Wah! A kid?! What are you doing here?\p"
+	.string "Wah! Who are you?! What are you doing\n"
+	.string "here?\p"
 	.string "What am I doing in a place like this? Uh…\n"
 	.string "guarding a rock! It's top secret!\p"
 	.string "What business is it of yours?!$"

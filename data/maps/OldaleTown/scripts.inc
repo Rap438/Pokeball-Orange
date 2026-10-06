@@ -378,7 +378,7 @@ OldaleTown_Text_MayLetsGoBack:
 OldaleTown_Text_BrendanLetsGoBack:
 	.string "VEGETA: I'm heading back to the old\n"
 	.string "man's LAB now.\l"
-	.string "Try to keep up, {PLAYER}.$"
+	.string "Try to keep up, KAKAROT.$"
 
 OldaleTown_Text_TownSign:
 	.string "OLDALE TOWN\n"

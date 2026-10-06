@@ -564,9 +564,9 @@ Route111_Text_VictorPostBattle:
 	.string "I found a seriously strong TRAINER!$"
 
 Route111_Text_VictoriaIntro:
-	.string "Oh my goodness, you're so young!\p"
-	.string "But you must be quite the TRAINER to\n"
-	.string "beat my husband.\p"
+	.string "Oh my goodness, look at those muscles!\p"
+	.string "You must be quite the TRAINER to beat\n"
+	.string "my husband.\p"
 	.string "Now it's my turn!$"
 
 Route111_Text_VictoriaDefeat:

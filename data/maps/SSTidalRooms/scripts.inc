@@ -89,7 +89,7 @@ SSTidalRooms_Text_MicahPostBattle:
 	.string "To me, POKéMON are treasured friends!$"
 
 SSTidalRooms_Text_ThomasIntro:
-	.string "Child…\p"
+	.string "Young man…\p"
 	.string "Did you knock before entering?$"
 
 SSTidalRooms_Text_ThomasDefeat:
@@ -146,7 +146,7 @@ SSTidalRooms_Text_GarretPostBattle:
 	.string "A yacht for me and my POKéMON!$"
 
 SSTidalRooms_Text_NaomiIntro:
-	.string "Oh, you're such an adorable TRAINER.\p"
+	.string "Oh, you're such a charming TRAINER.\p"
 	.string "Would you like to have tea? Or would you\n"
 	.string "rather battle?$"
 

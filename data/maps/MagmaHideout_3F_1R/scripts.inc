@@ -28,7 +28,7 @@ MagmaHideout_3F_1R_Text_Grunt16Intro:
 	.string "We joined up to help KID BUU achieve his\n"
 	.string "fantastic vision.\p"
 	.string "I don't care if you're with the SEA\n"
-	.string "squad or just some kid passing by.\p"
+	.string "squad or just some nobody passing by.\p"
 	.string "Nobody interferes with us and gets\n"
 	.string "away with it!$"
 

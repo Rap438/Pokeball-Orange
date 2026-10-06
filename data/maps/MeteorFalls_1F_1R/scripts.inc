@@ -231,7 +231,7 @@ MeteorFalls_1F_1R_Text_WithThisMeteorite:
 
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
 	.string "Huh?\p"
-	.string "I don't know who you are, kid, but if you\n"
+	.string "I don't know who you are, pal, but if you\n"
 	.string "get in the way of the RED RIBBON ARMY,\l"
 	.string "you're gonna regret it!$"
 
@@ -256,9 +256,10 @@ MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
 	.string "DR. GERO: Haven't I seen you before? At\n"
 	.string "SLATEPORT's MUSEUM?\p"
 	.string "Ah, so your name is {PLAYER}.\p"
-	.string "Back then I took you for one of the\n"
-	.string "LAND squad's lackeys.\p"
-	.string "Humph… You're an odd child.\p"
+	.string "Back then I took you for some stray\n"
+	.string "do-gooder.\p"
+	.string "Humph… You're an odd one, turning up\n"
+	.string "wherever my army goes.\p"
 	.string "The LAND squad is a pack of brutes.\n"
 	.string "They chase GROUDON and call it\l"
 	.string "expanding the land.\p"

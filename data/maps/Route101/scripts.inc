@@ -263,8 +263,8 @@ Route101_Text_HelpMe:
 	.string "W-whoa! Somebody help me!$"
 
 Route101_Text_PleaseHelp:
-	.string "You there, young man!\n"
-	.string "Please, help!\p"
+	.string "You there!\n"
+	.string "Please, help me!\p"
 	.string "My BAG!\n"
 	.string "There's a POKé BALL inside!$"
 
@@ -279,7 +279,8 @@ Route101_Text_YouSavedMe:
 	.string "me.\p"
 	.string "My old bones aren't what they used to\n"
 	.string "be. You saved me! Thank you!\p"
-	.string "Oh? Why, you're {PLAYER}{KUN}!\p"
+	.string "Oh? Well, if it isn't my old student,\n"
+	.string "{PLAYER}{KUN}! Reckless as ever, I see.\p"
 	.string "This is no place to chat. Come by my\n"
 	.string "POKéMON LAB later, hm?$"
 
@@ -290,10 +291,10 @@ Route101_Text_TakeTiredPokemonToPokeCenter:
 	.string "from here.$"
 
 Route101_Text_WildPokemonInTallGrass:
-	.string "Wild POKéMON leap out at you from the\n"
-	.string "tall grass.\p"
-	.string "If you want to catch POKéMON, you have\n"
-	.string "to walk into the grass and look.$"
+	.string "Wild POKéMON wander around in the\n"
+	.string "tall grass. You can see them moving!\p"
+	.string "If you want to battle or catch one,\n"
+	.string "just walk right into it.$"
 
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"

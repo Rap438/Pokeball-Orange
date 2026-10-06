@@ -603,6 +603,9 @@ LilycoveCity_Text_GoingToMoveDeleterForHMs:
 
 LilycoveCity_Text_ImFromKanto:
 	.string "I came all the way from KANTO.\p"
+	.string "They say POKéMON from other regions\n"
+	.string "visit HOENN with the seasons, so I came\l"
+	.string "to see the place for myself.\p"
 	.string "The HOENN region is gorgeous, with all\n"
 	.string "its water and green hills.\p"
 	.string "Huh? Wait a second…\p"

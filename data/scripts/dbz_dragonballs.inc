@@ -95,7 +95,7 @@ Text_DBZ_DragonBallCount:
 
 Text_DBZ_AllDragonBalls:
 	.string "All seven DRAGON BALLS are glowing!\p"
-	.string "Use one from the BAG outside to\n"
+	.string "Use one from the BAG outdoors to\n"
 	.string "summon the Eternal Dragon!$"
 
 Text_DBZ_Summon:
@@ -146,6 +146,6 @@ Text_DBZ_Farewell:
 
 Text_DBZ_BallsScatter:
 	.string "The DRAGON BALLS turned to stone\n"
-	.string "and scattered across HOENN!\p"
-	.string "They'll be ready again after\n"
-	.string "a long journey…$"
+	.string "and flew off across HOENN!\p"
+	.string "After a long journey, they'll glow\n"
+	.string "again somewhere new…$"

@@ -191,9 +191,10 @@ RustboroCity_DevonCorp_3F_EventScript_RareRocksDisplay::
 	end
 
 RustboroCity_DevonCorp_3F_Text_MrStoneIHaveFavor:
-	.string "Hohoho! I'm DR. BRIEF, the PRESIDENT of\n"
-	.string "CAPSULE CORP.\p"
-	.string "I just got word about you!\p"
+	.string "Hohoho! Well, if it isn't {PLAYER}!\n"
+	.string "It's been ages since you dropped by\l"
+	.string "CAPSULE CORP.!\p"
+	.string "And I just got word about you!\p"
 	.string "You saved our staff not once, but\n"
 	.string "twice!\p"
 	.string "I have a favor to ask of an amazing\n"

@@ -5,6 +5,9 @@
 #include "global.h"
 #include "dbz.h"
 #include "event_data.h"
+#include "event_object_movement.h"
+#include "sound.h"
+#include "constants/event_objects.h"
 #include "pokemon.h"
 #include "string_util.h"
 #include "constants/dbz.h"
@@ -115,4 +118,122 @@ enum OverworldWildEncounterBehaviors DBZ_GetOWEBehavior(enum Species species)
         return OWE_APPROACH_PLAYER_SLOW;
 #undef HAS
     return OWE_IGNORE_PLAYER;
+}
+
+// ------------------------------------------------------------------ town Pokemon
+// special: the talked-to ambient Pokemon cries; STR_VAR_1 = its name, STR_VAR_2 = its sound
+void DBZ_AmbientMonCry(void)
+{
+    u8 id = GetObjectEventIdByLocalIdAndMap(gSpecialVar_LastTalked, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
+    u16 species = SPECIES_NONE;
+    if (id < OBJECT_EVENTS_COUNT && (gObjectEvents[id].graphicsId & OBJ_EVENT_MON))
+        species = SanitizeSpeciesId(gObjectEvents[id].graphicsId & OBJ_EVENT_MON_SPECIES_MASK);
+    if (species == SPECIES_NONE)
+        species = SPECIES_PIKACHU;
+    StringCopy(gStringVar1, GetSpeciesName(species));
+    {
+        enum Type t = gSpeciesInfo[species].types[0], t2 = gSpeciesInfo[species].types[1];
+        const u8 *sound = COMPOUND_STRING("Kyuu!");
+        if (t == TYPE_FLYING || t2 == TYPE_FLYING)        sound = COMPOUND_STRING("Pii, pii!");
+        else if (t == TYPE_WATER || t2 == TYPE_WATER)     sound = COMPOUND_STRING("Puru-ru!");
+        else if (t == TYPE_ELECTRIC || t2 == TYPE_ELECTRIC) sound = COMPOUND_STRING("Bzzt! Bzzt!");
+        else if (t == TYPE_FIRE || t2 == TYPE_FIRE)       sound = COMPOUND_STRING("Gwaa…");
+        else if (t == TYPE_FIGHTING || t2 == TYPE_FIGHTING) sound = COMPOUND_STRING("Hah! Hah!");
+        StringCopy(gStringVar2, sound);
+    }
+    PlayCry_Normal(species, 0);
+}
+
+// ------------------------------------------------------------------ guest Pokemon from every region
+// About one wild encounter in eight is a "guest": a first-stage Pokemon from any generation whose type fits
+// the place and the season (caves: rock, ground, ghost, poison, dark, steel, fighting, dragon; water and
+// fishing: water, plus ice in winter; Rock Smash: rock, ground, steel; grass by season, see sSeasonTypes).
+// Legendaries, Mythicals, Ultra Beasts and Paradox Pokemon never appear (Shenron grants those); strong
+// single-stage Pokemon only show up from level 25. This makes the whole National Dex catchable over a year.
+#include "seasons.h"
+#include "wild_encounter.h"
+#include "random.h"
+#include "constants/map_types.h"
+
+static EWRAM_DATA u8 sIsEvolvedBits[(SPECIES_PECHARUNT + 8) / 8] = {0};
+static EWRAM_DATA bool8 sIsEvolvedReady = FALSE;
+
+static void BuildEvolvedBits(void)
+{
+    u32 i, j;
+    for (i = SPECIES_BULBASAUR; i <= SPECIES_PECHARUNT; i++)
+    {
+        const struct Evolution *evo;
+        if (!IsSpeciesEnabled(i) || (evo = GetSpeciesEvolutions(i)) == NULL)
+            continue;
+        for (j = 0; evo[j].method != EVOLUTIONS_END; j++)
+        {
+            u32 t = SanitizeSpeciesId(evo[j].targetSpecies);
+            if (t <= SPECIES_PECHARUNT)
+                sIsEvolvedBits[t / 8] |= 1 << (t % 8);
+        }
+    }
+    sIsEvolvedReady = TRUE;
+}
+
+static const u8 sSeasonTypes[SEASON_COUNT][6] = {
+    [SEASON_SPRING] = {TYPE_GRASS, TYPE_BUG, TYPE_FAIRY, TYPE_NORMAL, TYPE_FLYING, TYPE_GRASS},
+    [SEASON_SUMMER] = {TYPE_FIRE, TYPE_ELECTRIC, TYPE_BUG, TYPE_GRASS, TYPE_NORMAL, TYPE_FLYING},
+    [SEASON_AUTUMN] = {TYPE_GHOST, TYPE_DARK, TYPE_GROUND, TYPE_FIGHTING, TYPE_PSYCHIC, TYPE_POISON},
+    [SEASON_WINTER] = {TYPE_ICE, TYPE_STEEL, TYPE_PSYCHIC, TYPE_DRAGON, TYPE_NORMAL, TYPE_FLYING},
+};
+static const u8 sCaveTypes[] = {TYPE_ROCK, TYPE_GROUND, TYPE_GHOST, TYPE_POISON, TYPE_DARK, TYPE_STEEL, TYPE_FIGHTING, TYPE_DRAGON};
+static const u8 sRockTypes[] = {TYPE_ROCK, TYPE_GROUND, TYPE_STEEL};
+
+static bool32 TypeIn(enum Species s, const u8 *types, u32 n)
+{
+    u32 i;
+    for (i = 0; i < n; i++)
+        if (gSpeciesInfo[s].types[0] == types[i] || gSpeciesInfo[s].types[1] == types[i])
+            return TRUE;
+    return FALSE;
+}
+
+static bool32 GuestFits(enum Species s, u32 area, u32 level)
+{
+    const struct SpeciesInfo *info = &gSpeciesInfo[s];
+    if (!IsSpeciesEnabled(s) || (sIsEvolvedBits[s / 8] & (1 << (s % 8))))
+        return FALSE;
+    if (info->isRestrictedLegendary || info->isSubLegendary || info->isMythical || info->isUltraBeast || info->isParadox || info->isTotem)
+        return FALSE;
+    if (GetSpeciesBaseStatTotal(s) >= 450 && level < 25)
+        return FALSE;
+    switch (area)
+    {
+    case WILD_AREA_WATER:
+    case WILD_AREA_FISHING:
+        if (Season_Get() == SEASON_WINTER && TypeIn(s, (const u8[]){TYPE_ICE}, 1) && TypeIn(s, (const u8[]){TYPE_WATER}, 1))
+            return TRUE;
+        return TypeIn(s, (const u8[]){TYPE_WATER}, 1);
+    case WILD_AREA_ROCKS:
+        return TypeIn(s, sRockTypes, ARRAY_COUNT(sRockTypes));
+    default:
+        if (TypeIn(s, (const u8[]){TYPE_WATER}, 1) && !TypeIn(s, (const u8[]){TYPE_BUG, TYPE_GRASS, TYPE_FLYING, TYPE_GROUND}, 4))
+            return FALSE;   // pure swimmers stay in the water
+        if (gMapHeader.mapType == MAP_TYPE_UNDERGROUND)
+            return TypeIn(s, sCaveTypes, ARRAY_COUNT(sCaveTypes));
+        return TypeIn(s, sSeasonTypes[Season_Get()], 6);
+    }
+}
+
+enum Species DBZ_MaybeGuestSpecies(enum Species species, u32 area, u32 level)
+{
+    u32 s, seen = 0;
+    enum Species pick = species;
+    if (Random() % 8 != 0)
+        return species;
+    if (!sIsEvolvedReady)
+        BuildEvolvedBits();
+    // reservoir sampling over the whole National Dex: every fitting Pokemon is equally likely
+    for (s = SPECIES_BULBASAUR; s <= SPECIES_PECHARUNT; s++)
+    {
+        if (GuestFits(s, area, level) && Random() % ++seen == 0)
+            pick = s;
+    }
+    return pick;
 }

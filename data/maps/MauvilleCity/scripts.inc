@@ -621,9 +621,11 @@ MauvilleCity_Text_RydelVeryGenerous:
 	.string "man. He gives BIKES away for free!$"
 
 MauvilleCity_Text_PokemonCanJumpYouOnBike:
-	.string "Even if you're cruising on a BIKE, wild\n"
-	.string "POKéMON can still jump you.\p"
-	.string "Keep your guard up!$"
+	.string "Even on a BIKE, watch where you ride!\p"
+	.string "Wild POKéMON roam around out in the\n"
+	.string "open. Run into one, and you're in for a\l"
+	.string "battle!\p"
+	.string "Keep your eyes peeled!$"
 
 MauvilleCity_Text_CitySign:
 	.string "MAUVILLE CITY\n"

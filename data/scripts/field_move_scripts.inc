@@ -54,8 +54,8 @@ Text_MonUsedFieldMove:
 
 Text_CantCut:
 	.string "A small tree… A POKéMON with CUT could\n"
-	.string "fell it, or a KAMEHAMEHA could blast it\l"
-	.string "away!$"
+	.string "fell it, or a SUPER SAIYAN's KAMEHAMEHA\l"
+	.string "could blast it away!$"
 
 @ Use rock smash from party menu
 EventScript_UseRockSmash::
@@ -222,9 +222,10 @@ Text_WantToSmash:
 	.string "Would you like to use ROCK SMASH?$"
 
 Text_CantSmash:
-	.string "It's a rugged rock. A POKéMON with ROCK\n"
-	.string "SMASH could break it, or a SUPER SAIYAN\l"
-	.string "could just punch it to pieces!$"
+	.string "It's a rugged rock. A POKéMON with\n"
+	.string "ROCK SMASH could break it, or a\l"
+	.string "SUPER SAIYAN 2's KAMEHAMEHA could\l"
+	.string "blast it to pieces!$"
 
 EventScript_StrengthBoulder::
 	lockall
@@ -282,9 +283,8 @@ Text_MonUsedStrength:
 
 Text_CantStrength:
 	.string "It's a huge boulder. A POKéMON with\n"
-	.string "STRENGTH could push it aside, but not\l"
-	.string "even a SUPER SAIYAN wants to carry\l"
-	.string "this one!$"
+	.string "STRENGTH could push it aside… or a\l"
+	.string "SUPER SAIYAN 3!$"
 
 Text_StrengthActivated:
 	.string "STRENGTH made it possible to move\n"

@@ -95,36 +95,36 @@ Text_DBZ_GravityLeft:
 	.string "{STR_VAR_1} steps left.$"
 
 Text_DBZ_ITNotLearned:
-	.string "GOKU hasn't learned INSTANT\n"
+	.string "{PLAYER} hasn't learned INSTANT\n"
 	.string "TRANSMISSION yet…$"
 
 Text_DBZ_ITCantHere:
-	.string "GOKU can't lock onto anyone's ki\n"
+	.string "{PLAYER} can't lock onto anyone's ki\n"
 	.string "from here.$"
 
 Text_DBZ_KiHidden:
-	.string "GOKU hid his ki.\p"
+	.string "{PLAYER} hid his ki.\p"
 	.string "Weak wild POKéMON and RED RIBBON\n"
-	.string "soldiers won't notice him now.$"
+	.string "soldiers won't come after him now.$"
 
 Text_DBZ_KiShown:
-	.string "GOKU stopped hiding his ki.$"
+	.string "{PLAYER} stopped hiding his ki.$"
 
 Text_DBZ_HintKaioken:
-	.string "KING KAI's voice echoes in GOKU's\n"
+	.string "KING KAI's voice echoes in {PLAYER}'s\n"
 	.string "head: “Time you learned the KAIO-KEN!”\p"
 	.string "In an overworld fight, press SELECT\n"
 	.string "to power up x1.5 for a short time.\l"
 	.string "It strains the body, so watch your HP!$"
 
 Text_DBZ_HintIT:
-	.string "GOKU learned INSTANT TRANSMISSION!\p"
-	.string "Choose GOKU in the START menu to\n"
+	.string "{PLAYER} learned INSTANT TRANSMISSION!\p"
+	.string "Choose KI POWER in the START menu to\n"
 	.string "teleport to any town he's visited.$"
 
 Text_DBZ_HintSpiritBomb:
-	.string "KING KAI: GOKU! Raise your hands and\n"
+	.string "KING KAI: {PLAYER}! Raise your hands and\n"
 	.string "gather energy from all living things!\p"
-	.string "GOKU learned the SPIRIT BOMB!\p"
+	.string "{PLAYER} learned the SPIRIT BOMB!\p"
 	.string "Hold L and tap R to select it, then\n"
 	.string "hold L until it's fully charged.$"

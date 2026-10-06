@@ -200,7 +200,7 @@ Text_DBZ_BossTooHurt:
 
 Text_DBZ_BlueIntro:
 	.string "GENERAL BLUE: Hmph. Beating my\n"
-	.string "POKéMON proves nothing, boy.\p"
+	.string "POKéMON proves nothing, monkey.\p"
 	.string "Let me show you why the RED RIBBON\n"
 	.string "ARMY made me a GENERAL!\p"
 	.string "Look into my eyes… You can't move,\n"
@@ -213,7 +213,7 @@ Text_DBZ_BlueBeaten:
 
 Text_DBZ_BlueWins:
 	.string "GENERAL BLUE: Ha! Know your place,\n"
-	.string "monkey boy. Come back when you've\l"
+	.string "monkey. Come back when you've\l"
 	.string "grown a spine!$"
 
 Text_DBZ_BuuIntro:
@@ -224,7 +224,7 @@ Text_DBZ_BuuIntro:
 
 Text_DBZ_BuuBeaten:
 	.string "KID BUU: Grrr… Buu not done!\n"
-	.string "Buu go wake big red thing!\p"
+	.string "Buu go find big red thing!\p"
 	.string "Then Buu squish monkey man!\n"
 	.string "Hee hee hee!$"
 
@@ -234,7 +234,7 @@ Text_DBZ_BuuWins:
 
 Text_DBZ_GeroIntro:
 	.string "DR. GERO: Your ki readings are\n"
-	.string "remarkable, boy. Truly.\p"
+	.string "remarkable, Saiyan. Truly.\p"
 	.string "My machines will drink every last\n"
 	.string "drop of it. Attack me with energy\l"
 	.string "and you only make me stronger!$"
@@ -266,12 +266,12 @@ Text_DBZ_FinaleVegeta1:
 
 Text_DBZ_FinaleGoku1:
 	.string "{PLAYER}: VEGETA! You came!\p"
-	.string "Hey… are those the earrings the\n"
-	.string "SUPREME KAI was talking about?$"
+	.string "Hey… aren't those the SUPREME\n"
+	.string "KAI's POTARA earrings?$"
 
 Text_DBZ_FinaleVegeta2:
 	.string "VEGETA: The Potara. Put one on and\n"
-	.string "we fuse. Forever.\p"
+	.string "we fuse into one warrior.\p"
 	.string "…Don't look so happy about it!\n"
 	.string "Just this once, KAKAROT!$"
 

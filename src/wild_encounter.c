@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz.h"
 #include "battle_setup.h"
 #include "battle_pike.h"
 #include "battle_pyramid.h"
@@ -578,15 +579,15 @@ bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, enum WildPok
     if (gMapHeader.mapLayoutId != LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
         return FALSE;
 
-    CreateWildMon(wildMonInfo->wildPokemon[wildMonIndex].species, level);
+    CreateWildMon(DBZ_MaybeGuestSpecies(wildMonInfo->wildPokemon[wildMonIndex].species, area, level), level);   // PokeBall Orange: guests from every region
     return TRUE;
 }
 
 static u16 GenerateFishingWildMon(const struct WildPokemonInfo *wildMonInfo, u8 rod)
 {
     u8 wildMonIndex = ChooseWildMonIndex_Fishing(rod);
-    enum Species wildMonSpecies = wildMonInfo->wildPokemon[wildMonIndex].species;
     u8 level = ChooseWildMonLevel(wildMonInfo->wildPokemon, wildMonIndex, WILD_AREA_FISHING);
+    enum Species wildMonSpecies = DBZ_MaybeGuestSpecies(wildMonInfo->wildPokemon[wildMonIndex].species, WILD_AREA_FISHING, level);
 
     UpdateChainFishingStreak();
     CreateWildMon(wildMonSpecies, level);

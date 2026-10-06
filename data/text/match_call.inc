@@ -2202,7 +2202,7 @@ MatchCall_Text_Winona_PostRematch::
 	.string "your dream.$"
 
 MatchCall_Text_TateLiza_Preparing::
-	.string "GOTEN: Oh! You're…\n"
+	.string "GOTEN: Oh! It's…\n"
 	.string "TRUNKS: {PLAYER}!\p"
 	.string "GOTEN: We're training again…\n"
 	.string "TRUNKS: So we can reopen our GYM!\p"
@@ -2318,34 +2318,32 @@ MatchCall_Text_Wallace::
 	.string "All I can think of is a METEORITE…$"
 
 MatchCall_Text_MayRayquazaCall:
-	.string "MR. SATAN: Hahaha! This is the WORLD\n"
-	.string "CHAMPION, {PLAYER}{KUN}!\p"
-	.string "Have you met SUPREME KAI?\p"
-	.string "He's… actually incredibly skilled.\n"
-	.string "Almost as good as me!\p"
-	.string "But he's an odd soul who rarely\n"
-	.string "battles.\p"
-	.string "He'd rather go looking for rare\n"
-	.string "stones.\p"
-	.string "I bet he's digging around a cave\n"
-	.string "or a craggy mountain somewhere.\p"
-	.string "But what is a rare stone, exactly?\n"
-	.string "All I can think of is a METEORITE…$"
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "VEGETA: KAKAROT{KUN}. Listen.\p"
+	.string "I was in PACIFIDLOG a little\n"
+	.string "while ago.\p"
+	.string "A giant green POKéMON flew\n"
+	.string "right over me, high in the sky.\p"
+	.string "A dragon… but not SHENRON.\n"
+	.string "I've never felt power like that.\p"
+	.string "Whatever it was, I'll be the one\n"
+	.string "who defeats it. Remember that.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_BrendanRayquazaCall:
-	.string "MR. SATAN: Hahaha! This is the WORLD\n"
-	.string "CHAMPION, {PLAYER}!\p"
-	.string "Have you met SUPREME KAI?\p"
-	.string "He's… actually incredibly skilled.\n"
-	.string "Almost as good as me!\p"
-	.string "But he's an odd soul who rarely\n"
-	.string "battles.\p"
-	.string "He'd rather go looking for rare\n"
-	.string "stones.\p"
-	.string "I bet he's digging around a cave\n"
-	.string "or a craggy mountain somewhere.\p"
-	.string "But what is a rare stone, exactly?\n"
-	.string "All I can think of is a METEORITE…$"
+	.string "… … … … … …\n"
+	.string "… … … … … Beep!\p"
+	.string "VEGETA: KAKAROT. Listen.\n"
+	.string "I was in PACIFIDLOG just now.\p"
+	.string "A huge green POKéMON flew\n"
+	.string "across the sky.\p"
+	.string "A dragon… but not SHENRON.\n"
+	.string "I've never felt power like that.\p"
+	.string "You should have seen it, KAKAROT.\p"
+	.string "… … … … … …\n"
+	.string "… … … … … Click!$"
 
 MatchCall_Text_May1::
 	.string "VEGETA: Hmph. KAKAROT{KUN}.\p"
@@ -2637,7 +2635,7 @@ MatchCall_Text_Wally5::
 MatchCall_Text_Wally6::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "WALLY appears to be out of\n"
+	.string "UUB appears to be out of\n"
 	.string "the POKéNAV's service area…$"
 
 MatchCall_Text_Wally7::
@@ -2715,7 +2713,7 @@ MatchCall_Text_Scott6::
 MatchCall_Text_Scott7::
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
-	.string "SCOTT appears to be out of\n"
+	.string "THE ANNOUNCER appears to be out of\n"
 	.string "the POKéNAV's service area…$"
 
 MatchCall_Text_Norman1::
@@ -2729,9 +2727,10 @@ MatchCall_Text_Norman2::
 	.string "KRILLIN: Hm… Little by little, but also\n"
 	.string "very surely, you're getting\l"
 	.string "tougher, {PLAYER}.\p"
-	.string "The stronger you get, the farther\n"
-	.string "and higher you soar from Mother\l"
-	.string "and me…\p"
+	.string "Back when we trained under MASTER\n"
+	.string "ROSHI, I could keep up with you.\p"
+	.string "Now you're soaring higher and\n"
+	.string "higher, leaving me behind…\p"
 	.string "This feeling is hard to explain.$"
 
 MatchCall_Text_Norman3::
@@ -2744,7 +2743,7 @@ MatchCall_Text_Norman3::
 
 MatchCall_Text_Norman4::
 	.string "KRILLIN: {PLAYER}! You'd better go visit\n"
-	.string "Mother every so often.\p"
+	.string "CHI-CHI every so often.\p"
 	.string "I'm going to remain here and\n"
 	.string "redouble my training.\p"
 	.string "The way of battling is deep\n"
@@ -2753,9 +2752,10 @@ MatchCall_Text_Norman4::
 MatchCall_Text_Norman5::
 	.string "KRILLIN: Oh, hi, {PLAYER}!\p"
 	.string "What's that? RR EMBLEM?\n"
-	.string "I don't know what that's about.\p"
-	.string "But with a name like that, it may\n"
-	.string "be somehow linked to a volcano!$"
+	.string "RR… As in the RED RIBBON ARMY?!\p"
+	.string "I hear their LAND squad hangs\n"
+	.string "around the volcano. Maybe it's\l"
+	.string "somehow linked to that!$"
 
 MatchCall_Text_Norman_Preparing::
 	.string "KRILLIN: Hiyah! Haah! Dwah!\p"
@@ -2829,8 +2829,8 @@ MatchCall_Text_Steven5::
 
 MatchCall_Text_Steven6::
 	.string "… … … … … …\p"
-	.string "STEVEN appears not to be getting\n"
-	.string "the call…$"
+	.string "SUPREME KAI appears not to be\n"
+	.string "getting the call…$"
 
 MatchCall_Text_Steven7::
 	.string "SUPREME KAI: {PLAYER}{KUN}…\n"
@@ -2882,8 +2882,8 @@ MatchCall_Text_MrStone2::
 	.string "about that little errand of mine?\p"
 	.string "I need you to deliver my letter\n"
 	.string "to SUPREME KAI in DEWFORD.\p"
-	.string "After that, deliver our parcel to\n"
-	.string "CAPT. STERN in SLATEPORT.\p"
+	.string "After that, deliver the CC GOODS\n"
+	.string "to CAPT. STERN in SLATEPORT.\p"
 	.string "You remember, don't you?\p"
 	.string "Now, since I am a busy PRESIDENT,\n"
 	.string "I have to go! Bye-bye!$"
@@ -2916,8 +2916,8 @@ MatchCall_Text_MrStone5::
 
 MatchCall_Text_MrStone6::
 	.string "DR. BRIEF: What's that?\p"
-	.string "You battled your own father and\n"
-	.string "defeated him?\p"
+	.string "You battled your best friend\n"
+	.string "KRILLIN and defeated him?\p"
 	.string "That's astounding!\p"
 	.string "I had no idea that I befriended\n"
 	.string "someone so special! Wahaha!$"
