@@ -4,6 +4,15 @@ A Dragon Ball Z–themed hack of Pokémon Emerald, built on [pokeemerald-expansi
 
 **No ROMs are included.** Build it yourself from source (below), or apply a release patch to your own legally obtained Emerald ROM.
 
+## Coming in v0.6 (unreleased)
+See [docs/pbo/CHANGELOG_v0.6.md](docs/pbo/CHANGELOG_v0.6.md). In short:
+- A fresh clone builds again (missing tool source and battle-view art restored)
+- **Gyms 2-8, the Elite Four, Mr. Satan and Vegeta rebuilt** for Gen 9: abilities, items, coverage and a plan per team
+- Mawile in Granite Cave, plus other encounter tweaks
+- Goku's battle EXP share follows Gen 9 level scaling
+- Pokémon Center/Mart signs and Rustboro's lamps glow at night
+- Bag pocket-switch and Nimbus text display fixes
+
 ## New in v0.5
 See [docs/pbo/CHANGELOG_v0.5.md](docs/pbo/CHANGELOG_v0.5.md). In short:
 - OG's art pack with **four seasons** that follow the game clock (or lock one in OPTION)
