@@ -210,7 +210,7 @@ SINGLE_BATTLE_TEST("Final Gambit triggers the target's Focus Band")
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FINAL_GAMBIT, player);
         HP_BAR(opponent, hp: 1);
-        MESSAGE("The opposing Wobbuffet hung on using its Focus Band!");
+        MESSAGE("The opposing Wobbuffet hung on using its Saiyan Pride!");
         HP_BAR(player, hp: 0);
     } THEN {
         EXPECT_EQ(opponent->hp, 1);

@@ -69,3 +69,4 @@ __pycache__
 
 # PokeBall Orange: pre-generated title art (tools_pbo/gen_title.py)
 !graphics/title_screen/pbo/*
+tools_pbo/runner

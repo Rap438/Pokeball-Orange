@@ -41,10 +41,10 @@ env = dict(os.environ)
 if 'SB1PTR' not in env:
     elf = os.path.splitext(rom)[0] + '.elf'
     if os.path.exists(elf):
-        nm = subprocess.run(['/opt/xpack/xpack-arm-none-eabi-gcc-14.2.1-1.1/bin/arm-none-eabi-nm', elf], capture_output=True, text=True).stdout
+        nm = subprocess.run(['arm-none-eabi-nm', elf], capture_output=True, text=True).stdout
         for l in nm.splitlines():
             if l.endswith(' gSaveBlock1Ptr'): env['SB1PTR'] = l.split()[0]
-r = subprocess.run(['/home/claude/tools/runner', rom, scr], capture_output=True, text=True, env=env)
+r = subprocess.run([os.path.join(os.path.dirname(os.path.abspath(__file__)), 'runner'), rom, scr], capture_output=True, text=True, env=env)
 if r.stdout: print(r.stdout, end='')
 if r.stderr: print(r.stderr, end='', file=sys.stderr)
 if shots:

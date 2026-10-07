@@ -631,7 +631,7 @@ SINGLE_BATTLE_TEST("Fling reveals the user's item before dealing damage")
     } WHEN {
         TURN { MOVE(opponent, MOVE_FLING); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet flung its Potion!");
+        MESSAGE("The opposing Wobbuffet flung its Senzu Sprout!");
         ANIMATION(ANIM_TYPE_MOVE, MOVE_FLING, opponent);
         HP_BAR(player);
     }
@@ -647,7 +647,7 @@ SINGLE_BATTLE_TEST("Fling doesn't reveal the user's item if it failed to use the
         TURN { MOVE(opponent, MOVE_FLING); }
     } SCENE {
         NONE_OF {
-            MESSAGE("The opposing Wobbuffet flung its Potion!");
+            MESSAGE("The opposing Wobbuffet flung its Senzu Sprout!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FLING, opponent);
             HP_BAR(player);
         };
@@ -665,7 +665,7 @@ SINGLE_BATTLE_TEST("Fling doesn't reveal the user's item if it missed")
         TURN { MOVE(opponent, MOVE_FLING, hit: FALSE); }
     } SCENE {
         NONE_OF {
-            MESSAGE("The opposing Wobbuffet flung its Potion!");
+            MESSAGE("The opposing Wobbuffet flung its Senzu Sprout!");
             ANIMATION(ANIM_TYPE_MOVE, MOVE_FLING, opponent);
             HP_BAR(player);
         };

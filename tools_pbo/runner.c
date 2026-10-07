@@ -1,5 +1,5 @@
 // Headless mGBA runner for automated testing of PokeBall Orange.
-// Usage: runner rom.gba script.txt
+// Usage: runner rom.gba script.txt   (script "-" reads commands from stdin, for interactive driving)
 // Script commands (one per line):
 //   run N               - run N frames with no input
 //   press KEYS N        - hold KEYS (comma list: A,B,SELECT,START,RIGHT,LEFT,UP,DOWN,R,L) for N frames, then release 1 frame
@@ -7,6 +7,7 @@
 //   shot FILE.ppm       - write screenshot
 //   save FILE / load FILE - savestate
 //   peek8/peek16/peek32 ADDR - print memory
+//   echo TEXT           - print TEXT (lets a driver wait for the commands before it to finish)
 #include <mgba/flags.h>
 #include <mgba/core/core.h>
 #include <mgba/core/config.h>
@@ -73,12 +74,14 @@ int main(int argc, char** argv) {
 	if (!mCoreLoadFile(core, argv[1])) { fprintf(stderr, "load fail\n"); return 1; }
 	if (getenv("SAV")) { if (!mCoreLoadSaveFile(core, getenv("SAV"), getenv("SAVTMP") != NULL)) fprintf(stderr, "sav load fail\n"); }
 	core->reset(core);
-	FILE* s = fopen(argv[2], "r");
+	FILE* s = strcmp(argv[2], "-") ? fopen(argv[2], "r") : stdin;
+	if (!s) { fprintf(stderr, "no script %s\n", argv[2]); return 1; }
 	char line[512];
 	while (fgets(line, sizeof line, s)) {
 		char cmd[32], a[256]; int n = 0; a[0] = 0;
 		if (sscanf(line, "%31s", cmd) != 1 || cmd[0] == '#') continue;
-		if (!strcmp(cmd, "run")) { sscanf(line, "%*s %d", &n); frames(0, n); }
+		if (!strcmp(cmd, "echo")) { char* t = line + 4; while (*t == ' ') t++; fputs(t, stdout); }
+		else if (!strcmp(cmd, "run")) { sscanf(line, "%*s %d", &n); frames(0, n); }
 		else if (!strcmp(cmd, "press")) { sscanf(line, "%*s %255s %d", a, &n); frames(parseKeys(a), n ? n : 2); frames(0, 1); }
 		else if (!strcmp(cmd, "hold")) { sscanf(line, "%*s %255s %d", a, &n); frames(parseKeys(a), n); }
 		else if (!strcmp(cmd, "shot")) { sscanf(line, "%*s %255s", a); shot(a); }
@@ -116,7 +119,10 @@ int main(int argc, char** argv) {
 			fclose(o);
 		} else if (!strcmp(cmd, "poke8")) {
 			unsigned addr, v; sscanf(line, "%*s %x %x", &addr, &v); core->busWrite8(core, addr, v);
+		} else if (!strcmp(cmd, "poke32")) {
+			unsigned addr, v; sscanf(line, "%*s %x %x", &addr, &v); core->busWrite32(core, addr, v);
 		}
+		fflush(stdout);
 	}
 	core->deinit(core);
 	return 0;

@@ -391,7 +391,7 @@ SINGLE_BATTLE_TEST("Pickpocket steals from the original U-turn user before it sw
         ANIMATION(ANIM_TYPE_MOVE, MOVE_U_TURN, player);
         HP_BAR(opponent);
         ABILITY_POPUP(opponent, ABILITY_PICKPOCKET);
-        MESSAGE("The opposing Sneasel stole Wobbuffet's Potion!");
+        MESSAGE("The opposing Sneasel stole Wobbuffet's Senzu Sprout!");
     } THEN {
         EXPECT(opponent->item == ITEM_POTION);
         EXPECT(player->item == ITEM_NONE);
@@ -437,7 +437,7 @@ SINGLE_BATTLE_TEST("Pickpocket does not activate if its user switches out with E
         MESSAGE("The opposing Sneasel is switched out with the Eject Button!");
         NONE_OF {
             ABILITY_POPUP(opponent, ABILITY_PICKPOCKET);
-            MESSAGE("The opposing Sneasel stole Wobbuffet's Potion!");
+            MESSAGE("The opposing Sneasel stole Wobbuffet's Senzu Sprout!");
         }
     } THEN {
         EXPECT(opponent->item == ITEM_NONE);
