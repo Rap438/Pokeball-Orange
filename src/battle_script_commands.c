@@ -2248,7 +2248,18 @@ static void Cmd_getexp(void)
                 if (gBattleStruct->expShareExpValue == 0)
                     gBattleStruct->expShareExpValue = 1;
             }
-            DBZ_GokuGainExpFromBattle(calculatedExp);   // PokeBall Orange: Goku trains alongside the team
+            // PokeBall Orange: Goku trains alongside the team. His share follows the same Gen 9 level
+            // scaling as a Pokemon's would (more when the foe outlevels him, less when he outlevels it).
+            {
+                u64 gokuExp = calculatedExp;
+                if (GetConfig(B_SCALED_EXP) >= GEN_5 && GetConfig(B_SCALED_EXP) != GEN_6)
+                {
+                    u8 faintedLevel = gBattleMons[gBattlerFainted].level;
+                    gokuExp *= sExperienceScalingFactors[(faintedLevel * 2) + 10];
+                    gokuExp /= sExperienceScalingFactors[faintedLevel + DBZ_GokuLevel() + 10];
+                }
+                DBZ_GokuGainExpFromBattle(gokuExp);
+            }
 
             gBattleScripting.getexpState++;
             gBattleStruct->expOrderId = 0;
