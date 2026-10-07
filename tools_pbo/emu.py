@@ -160,10 +160,10 @@ class Emu:
         objs = self.dump(self.sym('gObjectEvents'), 16 * 0x24)
         for i in range(16):
             o = objs[i * 0x24:(i + 1) * 0x24]
-            if o[0] & 1 and not o[2] & 1:
+            if o[0] & 1 and not o[2] & 1 and o[8] < 0xF0:   # active, not the player, not a follower
                 x, y = struct.unpack_from('<hh', o, 0x10)
                 npcs.add((x - MAP_OFFSET, y - MAP_OFFSET))
-        W, H = w - 2 * MAP_OFFSET, h - 2 * MAP_OFFSET
+        W, H = struct.unpack('<ii', self.dump(layout, 8))   # the map itself, without the border margin
         ok = [[False] * W for _ in range(H)]
         for y in range(H):
             for x in range(W):
@@ -180,6 +180,8 @@ class Emu:
             if (px, py) == (x, y):
                 return True
             ok = self.grid()
+            if not (0 <= y < len(ok) and 0 <= x < len(ok[0])):
+                return False
             ok[y][x] = True
             prev = {(px, py): None}
             q = deque([(px, py)])
@@ -201,11 +203,24 @@ class Emu:
                 if m != m0:
                     return False
                 d = 'RIGHT' if nx > cx else 'LEFT' if nx < cx else 'DOWN' if ny > cy else 'UP'
-                self.hold(d, 16); self.run(2)
+                self.step(d)
                 if self.pos()[0] != (nx, ny):
                     self.run(30)
                     break   # blocked (NPC moved in, or script): re-plan
         return self.pos()[0] == (x, y)
+
+    def step(self, d):
+        """one tile in direction d (a tap that only turns Goku is retried once)"""
+        for _ in range(2):
+            p0 = self.pos()[0]
+            self.hold(d, 3)
+            for _ in range(10):
+                self.run(3)
+                if self.pos()[0] != p0:
+                    self.run(14)   # let the step finish
+                    return True
+            self.run(4)
+        return False
 
     def face(self, d):
         self.hold(d, 3); self.run(10)
