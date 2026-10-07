@@ -16096,7 +16096,7 @@ const struct ItemInfo gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A magic cloud only\n"
             "the pure of heart\n"
-            "can ride. Fly anywhere!"),
+            "can ride. Flies far!"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,

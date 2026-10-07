@@ -1,47 +1,22 @@
-# Continuation checklist (after v0.4)
+# Continuation checklist
 
-Ordered so that every step leaves a working, testable build. Branch: `expansion-port`. Test states: `mkex.sh`, `capture_all.sh`.
+The v0.4 plan, with where each step stands after v0.6 (unreleased). Details are in CHANGELOG_v0.6.md and TEST_RESULTS_v0.6.md.
 
-## Stage 4: expand the art and maps, rebalance the progression
-1. **Oldale Town + Route 103/102.** Apply `build_cove.py`'s approach:
-   - one `MapPaint` function per map
-   - add the map's layout to `main()`
-   - switch it to `gTileset_PboCove` (a superset of Petalburg)
-   - run `check_connections.py`
+| # | Step | Status |
+|---|---|---|
+| 1 | Oldale Town + Routes 103/102 with the `build_cove.py` approach | **Superseded.** Oldale moved to PboCove in v0.4 and was rearranged in v0.5. Routes 102 and 103 already get OG's hand-made seasonal art through the Petalburg tileset, and `build_cove.py`'s procedural repaint would replace it. Only revisit with new hand art. |
+| 2 | Light pass for towns | **Partly done.** Pokémon Center and Mart sign glows in every town and Rustboro's street lamps (`tools/pbo/place_lights.py`). **Window glow is left:** each town tileset needs its window colours on palette slots nothing else uses, then a `.pla` listing them (docs/tutorials/dns.md). Check with the debug build at night (libfaketime works for the emulator). |
+| 3 | Encounters route by route | **Done** for the listed areas: Granite Cave Mawile, Petalburg Woods Shroomish, Rusturf Tunnel, Routes 116/117. Routes 102, 104 and 115 were already on plan. Snubbull comes as a spring guest instead of a swarm. Later routes are still vanilla Emerald tables, which keep the Gen 3 level bands. |
+| 4 | Gyms 2-8, Elite Four, Champion, Vegeta | **Done** (`tools/pbo/rebalance_trainers.py`, checked by `tools/pbo/check_trainers.py`). Gym leader rematch teams (`_2`-`_5`) are still vanilla. |
+| 5 | Goku's EXP share vs Gen 9 scaled EXP | **Done.** His Pokémon-battle share now uses Gen 9 level scaling. Logging party levels at each badge in a real play-through is still worth doing. |
+| 6 | Untested systems | **Partly done.** Tested: Nimbus and its badge/indoor rules, trainer power-up line, Surf and doors with a follower, Dragon Ball pickup and tracker (v0.5). **Still untested:** 1500-step re-scatter, tournament, gravity room, time chamber, bosses, fusion finale. |
+| 7 | Opening-to-first-badge play-through (release build) | **Partly done.** Played from the title screen to Roshi's lab. Oldale → Petalburg → Woods → Rustboro → Yamcha is left. |
+| 8 | v0.3 save converter | Not started. Only worth doing if players ask for it. |
+| 9 | Uppercase-name option | Not started. Only if wanted; would need width checks against the battle UI. |
+| 10 | Hardware check on a flash cart (32 MB ROM, 128 KB flash save) | Not possible from here. |
 
-   Budget: 121 tiles and 263 metatiles left in PboCove. Larger towns need their own superset tileset built the same way.
-2. **Light pass for towns with windows.**
-   - Add `.pla` light colours to the window palettes of each secondary tileset. Expansion's DNS docs point at commit a5b079d8 for ready-made Hoenn palettes.
-   - Add `OBJ_EVENT_GFX_LIGHT_SPRITE` objects on lamps and Pokémon Center and Mart signs.
-3. **Encounters, route by route** (`src/data/wild_encounters.json`): give each area a habitat theme and roughly a 5-10% Fairy option where it fits.
-   - Route 102: Ralts up to 4%.
-   - Petalburg Woods: Shroomish and Breloom line.
-   - Route 104: Marill.
-   - Rusturf Tunnel.
-   - Dewford/Granite Cave: Sableye and Mawile, a Fairy/Steel answer to Tien's Fighting gym.
-   - Route 116/117: Azurill, Marill, Ralts, Snubbull via swarm.
-
-   Keep Gen 3 level bands.
-4. **Gyms 2-8, Elite Four, rivals** (`src/data/trainers.party`). Same method as Yamcha:
-   - same levels
-   - real abilities, held items and coverage moves
-   - AI flags `Basic Trainer` and above
-   - Vegeta's teams scaled to the player's starter and rebuilt for Gen 9 typings
-
-   Play-test each gym with a fresh state.
-5. **Personal fight scaling.** Re-check Goku's EXP share against Gen 9 scaled EXP. Log party levels at each badge using the debug fight/level tools.
-
-## Stage 5: cleanup and release
-6. **Untested systems** to re-run on v0.4:
-   - Nimbus flight and its Feather Badge rule
-   - Dragon Ball pickup and Radar on the overworld
-   - 1500-step re-scatter
-   - tournament, gravity room, time chamber
-   - bosses and fusion finale
-   - trainer power-up line
-   - Surf with a follower
-   - house doors with a follower
-7. **Opening to first badge play-through** in the release build: intro → Route 101 rescue → Roshi → Oldale → Route 102 → Petalburg (Krillin) → Petalburg Woods → Rustboro → Yamcha. Then the first personal fight after the badge and the first SSJ.
-8. **Optional v0.3 save converter** (offline tool): read the v0.3 sectors, map species, items and flags to v0.4 IDs, write a v0.4 save. Only worth doing if players ask for it.
-9. **Uppercase-name option** (if wanted): a build-time switch that uppercases species, move and item names, with width checks against the battle UI.
-10. **Hardware check** on a flash cart. The 32 MB ROM needs a cart with 32 MB and 128 KB flash save support.
+## How to test
+- Build the runner against libmgba: `MGBA=/path/to/mgba tools_pbo/build.sh`.
+- Drive it with `tools_pbo/emu.py`; see its docstring.
+- `make debug` builds the debug ROM. Its debug menu opens with R held + START; hold R through Goku's power-up message first.
+- The Script 1-8 slots in `data/scripts/debug.inc` are handy for one-off test setups (give a party, then `trainerbattle_no_intro`). Don't commit them.

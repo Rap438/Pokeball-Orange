@@ -52,4 +52,12 @@ The Exp. Share toggle exists partly to offset this.
 - **Tournament trainers** (J. Chun, M. Mask, Vegeta) moved into expansion format, with IVs scaled by round.
 - **Cast data:** names and classes carried over, genders and encounter music fixed (Yamcha and Vegeta were set female).
 
-**Still to do:** the rest of the region. The method and order are in CONTINUATION.md.
+**v0.6 changes** (details in CHANGELOG_v0.6.md)
+- **Gyms 2-8, the Elite Four, the Champion and Vegeta** follow Yamcha's method: same species, levels and IVs, with real abilities, held items, coverage and a plan per team.
+  - Gyms use the AI flags Basic Trainer, HP Aware and Ace Pokémon. Gym 6 onward adds Smart Switching.
+  - Sheer Cold is gone from Android 18's team.
+- **Fairy and Steel access before Tien:** Mawile in Granite Cave. Plus habitat tweaks in Petalburg Woods, Rusturf Tunnel and Routes 116/117.
+- **Goku's share of Pokémon-battle EXP** uses Gen 9 level scaling instead of a flat quarter, so grinding weak wild Pokémon no longer levels him faster than his team.
+- **Obedience** is the engine's Gen 8+ rule (unchanged, noted here because it surprises people): a Pokémon may ignore orders when the level it was *met* at is above the badge cap, even if Goku caught it. Training a low-level catch past the cap is fine.
+
+**Still to do:** gym leader rematch teams and the later routes' encounter tables are vanilla Emerald data. See CONTINUATION.md.

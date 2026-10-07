@@ -29,9 +29,9 @@ SINGLE_BATTLE_TEST("Frisk triggers in a Single Battle")
         TURN {}
     } SCENE {
         ABILITY_POPUP(player, ABILITY_FRISK);
-        MESSAGE("The opposing Sentret was frisked, revealing its Potion!");
+        MESSAGE("The opposing Sentret was frisked, revealing its Senzu Sprout!");
         ABILITY_POPUP(opponent, ABILITY_FRISK);
-        MESSAGE("Furret was frisked, revealing its Potion!");
+        MESSAGE("Furret was frisked, revealing its Senzu Sprout!");
     }
 }
 
@@ -54,7 +54,7 @@ DOUBLE_BATTLE_TEST("Frisk triggers for player in a Double Battle after switching
         MESSAGE("The opposing Wynaut used Pound!");
         MESSAGE("Wobbuffet fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("The opposing Wynaut was frisked, revealing its Potion!");
+        MESSAGE("The opposing Wynaut was frisked, revealing its Senzu Sprout!");
     }
 }
 
@@ -77,6 +77,6 @@ DOUBLE_BATTLE_TEST("Frisk triggers for opponent in a Double Battle after switchi
         MESSAGE("Wynaut used Pound!");
         MESSAGE("The opposing Wobbuffet fainted!");
         ABILITY_POPUP(target, ABILITY_FRISK);
-        MESSAGE("Wynaut was frisked, revealing its Potion!");
+        MESSAGE("Wynaut was frisked, revealing its Senzu Sprout!");
     }
 }
