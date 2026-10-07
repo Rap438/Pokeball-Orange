@@ -193,6 +193,13 @@ static void InitPocketListPositions(void);
 static void InitPocketScrollPositions(void);
 static u8 CreateBagInputHandlerTask(u8);
 static void DrawItemListBgRow(u8);
+
+// PokeBall Orange: tile numbers in the art pack's bag graphics (graphics/bag/menu.png + menu.bin), which
+// differ from vanilla's: the plain item list background, the navy left panel (the pocket switch wipes the
+// list from it), and the bottom edge of the pocket name box.
+#define BAG_LIST_BG_TILE          12
+#define BAG_PANEL_BG_TILE         1
+#define BAG_NAME_BOX_BOTTOM_TILE  0x11
 static void BagMenu_MoveCursorCallback(s32, bool8, struct ListMenu *);
 static void BagMenu_ItemPrintCallback(u8, u32, u8);
 static void ItemMenu_UseOutOfBattle(u8);
@@ -1431,7 +1438,7 @@ static void SwitchBagPocket(u8 taskId, s16 deltaBagPocketId, bool16 skipEraseLis
     }
     DrawPocketIndicatorSquare(gBagPosition.pocket, FALSE);
     DrawPocketIndicatorSquare(newPocket, TRUE);
-    FillBgTilemapBufferRect_Palette0(2, 11, 14, 2, 15, 16);
+    FillBgTilemapBufferRect_Palette0(2, BAG_PANEL_BG_TILE, 14, 2, 15, 16);
     ScheduleBgCopyTilemapToVram(2);
     SetBagVisualPocketId(newPocket, TRUE);
     RemoveBagSprite(ITEMMENUSPRITE_BALL);
@@ -1490,16 +1497,16 @@ static void Task_SwitchBagPocket(u8 taskId)
 // When the pocket is switched this lighter background is redrawn row by row
 static void DrawItemListBgRow(u8 y)
 {
-    FillBgTilemapBufferRect_Palette0(2, 17, 14, y + 2, 15, 1);
+    FillBgTilemapBufferRect_Palette0(2, BAG_LIST_BG_TILE, 14, y + 2, 15, 1);
     ScheduleBgCopyTilemapToVram(2);
 }
 
 static void DrawPocketIndicatorSquare(u8 x, bool8 isCurrentPocket)
 {
-    if (!isCurrentPocket)
-        FillBgTilemapBufferRect_Palette0(2, 0x1017, x + 5, 3, 1, 1);
-    else
-        FillBgTilemapBufferRect_Palette0(2, 0x102B, x + 5, 3, 1, 1);
+    // PokeBall Orange: the art pack has no pocket indicator tiles (vanilla's 0x17/0x2B are blank or past
+    // the end of its 26 tiles, which drew a black bar over the pocket name box). The name box between the
+    // arrows already shows the pocket, so the box's own bottom edge stays.
+    FillBgTilemapBufferRect_Palette0(2, BAG_NAME_BOX_BOTTOM_TILE, x + 5, 3, 1, 1);
     ScheduleBgCopyTilemapToVram(2);
 }
 
