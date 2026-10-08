@@ -19,6 +19,7 @@ bool8 DBZ_OptPowerUp(void)    { return !(Opts() & DBZ_OPT_POWERUP_OFF); }
 bool8 DBZ_OptHints(void)      { return !(Opts() & DBZ_OPT_HINTS_OFF); }
 bool8 DBZ_OptHud(void)        { return !(Opts() & DBZ_OPT_HUD_OFF); }
 bool8 DBZ_OptAutoRun(void)    { return !(Opts() & DBZ_OPT_AUTORUN_OFF); }
+bool8 DBZ_OptNimbus3D(void)   { return !(Opts() & DBZ_OPT_NIMBUS_MAP); }
 
 // 0 off, 1 rare, 2 normal, 3 often
 u8 DBZ_OptAmbush(void)
@@ -63,6 +64,7 @@ u8 DBZ_GetOptionValue(u8 id)
     case 11: return FlagGet(FLAG_DBZ_FOLLOWER_OFF) ? 1 : 0;
     case 12: return Season_GetSetting();
     case 13: return FlagGet(FLAG_DBZ_WILD_HIDDEN) ? 1 : 0;
+    case 14: return (o & DBZ_OPT_NIMBUS_MAP) ? 1 : 0;
     }
     return 0;
 }
@@ -101,6 +103,7 @@ void DBZ_SetOptionValue(u8 id, u8 v)
     case 11: if (v) FlagSet(FLAG_DBZ_FOLLOWER_OFF); else FlagClear(FLAG_DBZ_FOLLOWER_OFF); break;
     case 12: Season_SetSetting(v); Season_Update(); break;
     case 13: if (v) FlagSet(FLAG_DBZ_WILD_HIDDEN); else FlagClear(FLAG_DBZ_WILD_HIDDEN); break;
+    case 14: o = SetBit(o, DBZ_OPT_NIMBUS_MAP, v); break;
     }
     VarSet(VAR_DBZ_OPTIONS, o);
 }

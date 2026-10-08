@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz_voxel.h"
 #include "dbz.h"
 #include "main.h"
 #include "text.h"
@@ -2488,6 +2489,8 @@ static void CB_ExitFlyMap(void)
                 struct RegionMap* tempRegionMap = &sFlyMap->regionMap;
 
                 SetFlyDestination(tempRegionMap);
+                if (gDBZNimbusFly && !gDBZInstantTransmission)   // PokeBall Orange: 3D Nimbus flight
+                    DBZ_VoxelFlight_Prepare(gMapHeader.regionMapSectionId, tempRegionMap->mapSecId);
                 ReturnToFieldFromFlyMapSelect();
             }
             else if (gDBZNimbusFly)

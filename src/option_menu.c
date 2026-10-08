@@ -77,6 +77,7 @@ static const u8 sText_Opt_AutoRun[] = _("AUTO-RUN");
 static const u8 sText_Opt_Follower[] = _("FOLLOWER");
 static const u8 sText_Opt_Season[] = _("SEASON");
 static const u8 sText_Opt_Wild[] = _("WILD MONS");
+static const u8 sText_Opt_Nimbus[] = _("NIMBUS VIEW");
 
 static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
 {
@@ -100,6 +101,7 @@ static const u8 *const sOptionMenuItemsNames[MENUITEM_COUNT] =
     [MENUITEM_DBZ_FIRST + 11] = sText_Opt_Follower,
     [MENUITEM_DBZ_FIRST + 12] = sText_Opt_Season,
     [MENUITEM_DBZ_FIRST + 13] = sText_Opt_Wild,
+    [MENUITEM_DBZ_FIRST + 14] = sText_Opt_Nimbus,
     [MENUITEM_CANCEL]      = gText_OptionMenuCancel,
 };
 
@@ -147,6 +149,9 @@ static const u8 *const sV_Difficulty[] = {sText_V_Easy, sText_V_Normal, sText_V_
 static const u8 *const sV_Ambush[] = {sText_V_Off, sText_V_Rare, sText_V_Normal, sText_V_Often};
 static const u8 *const sV_BattleBg[] = {sText_V_Map, sText_V_Classic};
 static const u8 *const sV_Wild[] = {sText_V_Visible, sText_V_Hidden};
+static const u8 sText_V_3D[] = _("3D");
+static const u8 sText_V_FlyMap[] = _("MAP");
+static const u8 *const sV_Nimbus[] = {sText_V_3D, sText_V_FlyMap};
 static const u8 *const sV_Season[] = {sText_V_Auto, sText_V_Spring, sText_V_Summer, sText_V_Autumn, sText_V_Winter};
 static const u8 *const sV_Shiny[] = {sText_V_8192, sText_V_4096, sText_V_1024, sText_V_256, sText_V_Always};
 
@@ -181,6 +186,7 @@ static const u8 *ValueText(u8 item, u8 v)
     case MENUITEM_DBZ_FIRST + 9: return sV_Shiny[v];
     case MENUITEM_DBZ_FIRST + 12: return sV_Season[v];
     case MENUITEM_DBZ_FIRST + 13: return sV_Wild[v];
+    case MENUITEM_DBZ_FIRST + 14: return sV_Nimbus[v];
     default:                   return sV_OnOff[v];
     }
 }

@@ -144,6 +144,7 @@ bool8 DBZ_InstantTransmissionOutActive(void);
 void DBZ_StartInstantTransmissionIn(void);
 bool8 DBZ_InstantTransmissionInActive(void);
 bool8 DBZ_OptAutoRun(void);
+bool8 DBZ_OptNimbus3D(void);
 
 // PokeBall Orange settings
 bool8 DBZ_OptDayNight(void);
@@ -156,7 +157,7 @@ bool8 DBZ_OptHud(void);
 u8 DBZ_OptAmbush(void);
 u8 DBZ_OptDifficulty(void);
 u8 DBZ_OptShiny(void);
-#define DBZ_OPTION_COUNT 14
+#define DBZ_OPTION_COUNT 15
 u8 DBZ_GetOptionValue(u8 id);
 void DBZ_SetOptionValue(u8 id, u8 v);
 bool32 DBZ_ExtraShinyRoll(void);

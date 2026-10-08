@@ -84,6 +84,7 @@
 #define DBZ_OPT_HUD_OFF        (1 << 10)
 #define DBZ_OPT_SHINY_SHIFT    11         // 3 bits: 0 base 1/4096, 1 ~1/2048, 2 ~1/820, 3 ~1/240, 4 always
 #define DBZ_OPT_AUTORUN_OFF    (1 << 14)
+#define DBZ_OPT_NIMBUS_MAP     (1 << 15)   // Flying Nimbus without the 3D flight
 
 // VAR_DBZ_MISC bits
 #define DBZ_MISC_MOVE_MASK     0x0003     // selected special: 0 ki blast, 1 Kamehameha, 2 Spirit Bomb

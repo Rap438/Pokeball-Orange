@@ -1,4 +1,5 @@
 #include "global.h"
+#include "dbz_voxel.h"
 #include "dbz.h"
 #include "data.h"
 #include "decompress.h"
@@ -81,6 +82,7 @@ static void SpriteCB_PokeballGlow(struct Sprite *);
 
 static void Task_UseFly(u8);
 static void FieldCallback_FlyIntoMap(void);
+static void CB2_ArriveAfterVoxelFlight(void);
 static void Task_FlyIntoMap(u8);
 
 static void Task_FallWarpFieldEffect(u8);
@@ -1545,6 +1547,13 @@ static void Task_UseFly(u8 taskId)
         if (gDBZInstantTransmission ? !DBZ_InstantTransmissionOutActive() : !FieldEffectActiveListContains(FLDEFF_USE_FLY))
         {
             Overworld_ResetStateAfterFly();
+            if (!gDBZInstantTransmission && DBZ_VoxelFlight_IsPending())
+            {
+                // PokeBall Orange: fly there in 3D, then arrive as usual
+                DestroyTask(taskId);
+                DBZ_VoxelFlight_Start(CB2_ArriveAfterVoxelFlight);
+                return;
+            }
             WarpIntoMap();
             SetMainCallback2(CB2_LoadMap);
             gFieldCallback = FieldCallback_FlyIntoMap;
@@ -1554,6 +1563,13 @@ static void Task_UseFly(u8 taskId)
 }
 
 #undef taskState
+
+static void CB2_ArriveAfterVoxelFlight(void)
+{
+    WarpIntoMap();
+    SetMainCallback2(CB2_LoadMap);
+    gFieldCallback = FieldCallback_FlyIntoMap;
+}
 
 static void FieldCallback_FlyIntoMap(void)
 {
